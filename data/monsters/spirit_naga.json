@@ -1,0 +1,70 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 7,
+            "damage_bonus": 4,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one creature. Hit: 7 (1d6 + 4) piercing damage, and the target must make a DC 13 Constitution saving throw, taking 31 (7d8) poison damage on a failed save, or half as much damage on a successful one.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "8",
+    "charisma": 16,
+    "charisma_save": 6,
+    "condition_immunities": "charmed, poisoned",
+    "constitution": 14,
+    "constitution_save": 5,
+    "damage_immunities": "poison",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 17,
+    "dexterity_save": 6,
+    "group": "Nagas",
+    "hit_dice": "10d10+20",
+    "hit_points": 75,
+    "id": "spirit_naga",
+    "intelligence": 16,
+    "languages": "Abyssal, Common",
+    "name": "Spirit Naga",
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If it dies, the naga returns to life in 1d6 days and regains all its hit points. Only a wish spell can prevent this trait from functioning.",
+            "name": "Rejuvenation"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The naga is a 10th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following wizard spells prepared:\n\n\u2022 Cantrips (at will): mage hand, minor illusion, ray of frost\n\u2022 1st level (4 slots): charm person, detect magic, sleep\n\u2022 2nd level (3 slots): detect thoughts, hold person\n\u2022 3rd level (3 slots): lightning bolt, water breathing\n\u2022 4th level (3 slots): blight, dimension door\n\u2022 5th level (2 slots): dominate person",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "spells": [
+        "mage hand",
+        "minor illusion",
+        "ray of frost",
+        "charm person",
+        "detect magic",
+        "sleep",
+        "detect thoughts",
+        "hold person",
+        "lightning bolt",
+        "water breathing",
+        "blight",
+        "dimension door",
+        "dominate person"
+    ],
+    "strength": 18,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 15,
+    "wisdom_save": 5
+}

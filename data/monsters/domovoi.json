@@ -1,0 +1,48 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The domovoi makes two slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+            "name": "Slam"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "4",
+    "charisma": 16,
+    "constitution": 18,
+    "damage_immunities": "acid, lightning",
+    "dexterity": 13,
+    "hit_dice": "11d8+44",
+    "hit_points": 93,
+    "id": "domovoi",
+    "intelligence": 6,
+    "intimidation": 5,
+    "languages": "Common, Dwarvish, Elvish",
+    "name": "Domovoi",
+    "perception": 2,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the domovoi's innate spellcasting ability is Charisma (spell save DC 15). He can innately cast the following spells, requiring no material components:\n\nat will: alter self, invisibility\n\n3/day each: darkness, dimension door, haste",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 19,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 10
+}

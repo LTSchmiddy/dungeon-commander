@@ -1,0 +1,37 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage.",
+            "name": "Hooves"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "challenge_rating": "1/4",
+    "charisma": 7,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "3d10",
+    "hit_points": 19,
+    "id": "draft_horse",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Draft Horse",
+    "senses": "passive Perception 10",
+    "size": "Large",
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 11
+}

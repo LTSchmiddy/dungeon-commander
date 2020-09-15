@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6+3",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage. If the target is a creature, it must succeed on a DC 14 Charisma saving throw or use its reaction to move up to its speed and make a melee attack against the nearest enemy of the witch queen.",
+            "name": "Maddening Scimitar"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "arcana": 3,
+    "armor_class": "15",
+    "armor_desc": "studded leather armor",
+    "challenge_rating": "5",
+    "charisma": "16",
+    "constitution": "14",
+    "dexterity": "16",
+    "hit_dice": "14d6+28",
+    "hit_points": "77",
+    "id": "witch_queen",
+    "intelligence": "11",
+    "languages": "Common, Dwarvish, Undercommon",
+    "name": "Witch Queen",
+    "senses": "darkvision 120 ft., passive Perception 9",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "As a bonus action, a target of the witch queen's choice within 60 feet of her has disadvantage on its saving throw against her next spell.",
+            "name": "Heightened Spell (3/Day)"
+        },
+        {
+            "desc": "The witch queen has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "desc": "While in sunlight, the witch queen has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
+            "name": "Sunlight Sensitivity"
+        },
+        {
+            "desc": "The witch queen is an 8th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). She has the following wizard spells prepared: \nCantrips (at will): acid splash, mage hand, message, ray of frost\n1st level (4 slots): burning hands, magic missile, sleep\n2nd level (3 slots): invisibility, spider climb, suggestion\n3rd level (3 slots): blink, fear, lightning bolt\n4th level (2 slots): blight, confusion",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": "9",
+    "subtype": "derro",
+    "type": "humanoid",
+    "wisdom": "9"
+}

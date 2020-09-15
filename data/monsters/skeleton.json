@@ -1,0 +1,46 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Shortsword"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Shortbow"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 13,
+    "armor_desc": "armor scraps",
+    "challenge_rating": "1/4",
+    "charisma": 5,
+    "condition_immunities": "exhaustion, poisoned",
+    "constitution": 15,
+    "damage_immunities": "",
+    "damage_resistances": "poison",
+    "damage_vulnerabilities": "bludgeoning",
+    "dexterity": 14,
+    "group": "Skeletons",
+    "hit_dice": "2d8+4",
+    "hit_points": 13,
+    "id": "skeleton",
+    "intelligence": 6,
+    "languages": "understands the languages it knew in life but can't speak",
+    "name": "Skeleton",
+    "senses": "darkvision 60 ft., passive Perception 9",
+    "size": "Medium",
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 10,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 8
+}

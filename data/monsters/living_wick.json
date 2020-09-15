@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A living wick can be commanded to rapidly burn through the remains of its wick, creating a devastating fireball. All creatures within 20 feet of the living wick take 7 (2d6) fire damage, or half damage with a successful DC 13 Dexterity saving throw. The fire spreads around corners and ignites flammable objects in the area that aren't being worn or carried. The wick is reduced to a lifeless puddle of wax.",
+            "name": "Consume Self"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/4",
+    "charisma": 5,
+    "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, unconscious",
+    "constitution": 10,
+    "damage_immunities": "poison, psychic",
+    "dexterity": 10,
+    "hit_dice": "8d6",
+    "hit_points": 28,
+    "id": "living_wick",
+    "intelligence": 5,
+    "languages": "shares a telepathic link with the individual that lit its wick",
+    "name": "Living Wick",
+    "senses": "sight 20 ft. (blind beyond the radius of its own light), passive Perception 10",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Living wicks cannot move, attack, or perform actions when they are not lit. Living wicks only respond to the telepathic commands of the individual that lit them.",
+            "name": "Controlled"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Activated living wicks produce light as a torch.",
+            "name": "Light"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A living wick loses one hit point for every 24 hours it remains lit.",
+            "name": "Melting"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "strength": 10,
+    "subtype": "",
+    "type": "construct",
+    "vulnerable": "fire",
+    "wisdom": 5
+}

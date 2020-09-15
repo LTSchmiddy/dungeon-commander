@@ -1,0 +1,44 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "5d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 0 ft., up to 4 creatures in the swarm's space. Hit: 17 (5d6) piercing damage plus 3 (1d6) poison damage.",
+            "name": "Bites"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": 7,
+    "condition_immunities": "charmed, frightened, paralyzed, petrified, prone, restrained, stunned",
+    "constitution": 12,
+    "damage_immunities": "fire, poison, psychic",
+    "damage_resistances": "bludgeoning, piercing, and slashing",
+    "dexterity": 16,
+    "hit_dice": "8d10+8",
+    "hit_points": 52,
+    "id": "clockwork_beetle_swarm",
+    "intelligence": 4,
+    "languages": "-",
+    "name": "Clockwork Beetle Swarm",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny construct. The swarm can't regain hit points or gain temporary hit points.",
+            "name": "Swarm"
+        }
+    ],
+    "speed": "30 ft., fly 50 ft.",
+    "speed_json": {
+        "fly": 50,
+        "walk": 30
+    },
+    "strength": 8,
+    "subtype": "",
+    "type": "Swarm of Tiny constructs",
+    "wisdom": 12
+}

@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 10 Constitution saving throw or be paralyzed for 1 minute. A paralyzed target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 12,
+    "armor_desc": "",
+    "challenge_rating": "1/2",
+    "charisma": 14,
+    "condition_immunities": "charmed, exhaustion, poisoned",
+    "constitution": 10,
+    "damage_immunities": "poison",
+    "dexterity": 15,
+    "hit_dice": "3d8",
+    "hit_points": 13,
+    "id": "beggar_ghoul",
+    "intelligence": 12,
+    "languages": "Undercommon",
+    "name": "Beggar Ghoul",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The beggar ghoul has advantage on an attack roll against a creature if at least one of the beggar ghoul's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A beggar ghoul that hits with its bite attack against a creature that hasn't acted yet in this combat scores a critical hit.",
+            "name": "Savage Hunger"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 10,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 11
+}

@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "1d6",
+    "class": "Javelin",
+    "cost": "5 sp",
+    "damage_bonus": 0,
+    "damage_type": "p",
+    "features_applied": false,
+    "id": "BasicJavelin",
+    "is_finesse": false,
+    "name": "Javelin",
+    "properties": "Thrown (range 30/120)",
+    "weight": 2
+}

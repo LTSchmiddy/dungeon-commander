@@ -1,0 +1,88 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The cambium makes four needle fingers attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "3d10",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 21 (3d10 + 5) piercing damage. In addition, the target must make a DC 19 Constitution saving throw; if it fails, the cambium can either inflict Ability Damage or Imbalance Humors. A target makes this saving throw just once per turn, even if struck by more than one needle fingers attack.",
+            "name": "Needle Fingers"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When the target of the cambium's needle fingers fails its Constitution saving throw, one of its ability scores (cambium's choice) is reduced by 1d4 until it finishes a long rest. If this reduces a score to 0, the creature is unconscious until it regains at least one point.",
+            "name": "Ability Damage (3/Day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When the target of the cambium's needle fingers fails its Constitution saving throw, apply one of the following effects:",
+            "name": "Imbalance Humors (3/Day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The target cannot be healed-naturally or magically-until after their next long rest.",
+            "name": "Sanguine Flux: The target cannot be healed"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The target can repeat the saving throw at the end of each of its turns to shrug off the flux before the duration ends.",
+            "name": "Choleric Flux: The target becomes confused (as the spell) for 3d6 rounds"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The target can repeat the saving throw at the end of each of its turns to shrug off the flux before the duration ends.",
+            "name": "Melancholic Flux: The target is incapacitated for 1d4 rounds and slowed (as the spell) for 3d6 rounds"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A failed saving throw means the target gains one level of exhaustion which lasts for 3d6 rounds.",
+            "name": "Phlegmatic Flux: A successful DC 18 Constitution saving throw negates this effect"
+        }
+    ],
+    "alignment": "neutral evil",
+    "arcana": 8,
+    "armor_class": 19,
+    "armor_desc": "natural armor",
+    "challenge_rating": "14",
+    "charisma": 18,
+    "charisma_save": 9,
+    "condition_immunities": "exhaustion, poisoned",
+    "constitution": 23,
+    "constitution_save": 11,
+    "damage_immunities": "poison",
+    "deception": 9,
+    "dexterity": 16,
+    "dexterity_save": 8,
+    "hit_dice": "23d10+138",
+    "hit_points": 264,
+    "id": "cambium",
+    "insight": 8,
+    "intelligence": 17,
+    "intelligence_save": 8,
+    "languages": "Common, Draconic, Infernal",
+    "medicine": 8,
+    "name": "Cambium",
+    "perception": 8,
+    "senses": "darkvision 60 ft., passive Perception 18",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the cambium's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). The cambium can innately cast the following spells, requiring no material components:\n\nconstant: levitate\n\nat will: alter self, detect thoughts, hold person, plane shift, spare the dying\n\n3/day: cure wounds 21 (4d8 + 3), ray of sickness 18 (4d8), protection from poison, heal\n\n1/day: finger of death",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "stealth": 8,
+    "strength": 21,
+    "subtype": "",
+    "type": "fiend",
+    "wisdom": 16,
+    "wisdom_save": 8
+}

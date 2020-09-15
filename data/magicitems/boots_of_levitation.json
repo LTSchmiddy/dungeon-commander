@@ -1,0 +1,8 @@
+{
+    "desc": "While you wear these boots, you can use an action to cast the _levitate_ spell on yourself at will.",
+    "id": "boots_of_levitation",
+    "name": "Boots of Levitation",
+    "rarity": "rare",
+    "requires-attunement": "requires attunement",
+    "type": "Wondrous item"
+}

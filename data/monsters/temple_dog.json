@@ -1,0 +1,62 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) piercing damage plus 9 (2d4 + 4) bludgeoning damage, and the target is grappled (escape DC 14). The target must also make a successful DC 15 Constitution saving throw or be stunned until the end of its next turn.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d6+4",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage, and the target must succeed on a DC 15 Strength saving throw or be knocked prone and pushed 5 feet. The temple dog can immediately enter the position the target was pushed out of, if it chooses to.",
+            "name": "Slam"
+        }
+    ],
+    "alignment": "good",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 10,
+    "constitution": 15,
+    "constitution_save": 5,
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 14,
+    "hit_dice": "15d8+30",
+    "hit_points": 97,
+    "id": "temple_dog",
+    "intelligence": 8,
+    "intelligence_save": 2,
+    "languages": "understands Celestial and Common but can't speak",
+    "name": "Temple Dog",
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The temple dog has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If the temple dog is entering combat against a clear threat to its temple, it has advantage on its initiative roll.",
+            "name": "Protector's Initiative"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If the temple dog moves at least 10 feet straight toward a target and then makes a slam attack against that target, it can make an additional slam attack against a second creature within 5 feet of the first target as a bonus action.",
+            "name": "Rushing Slam"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 18,
+    "strength_save": 7,
+    "subtype": "",
+    "type": "celestial",
+    "wisdom": 14,
+    "wisdom_save": 5
+}

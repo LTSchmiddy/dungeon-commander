@@ -1,0 +1,67 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "A shadhavar makes one gore attack and one hooves attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "name": "Gore"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "3d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 12 (3d6 + 2) bludgeoning damage.",
+            "name": "Hooves"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "natural",
+    "challenge_rating": "2",
+    "charisma": 16,
+    "constitution": 14,
+    "dexterity": 15,
+    "hit_dice": "13d10+26",
+    "hit_points": 97,
+    "id": "shadhavar",
+    "intelligence": 8,
+    "languages": "understands Elvish and Umbral but can't speak",
+    "name": "Shadhavar",
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "a shadhavar's innate spellcasting ability score is Charisma (spell save DC 13). It can cast the following spells, requiring no components:\n\nat will: disguise self (as horse or unicorn only)\n\n2/day: darkness (centered on itself, moves with the shadhavar)",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A shadhavar's gore attacks are magical.",
+            "name": "Magic Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "As a bonus action, a shadhavar can play a captivating melody through its hollow horn. Creatures within 60 feet that can hear the shadhavar must make a successful DC 13 Wisdom saving throw or be charmed until the start of the shadhavar's next turn. A creature charmed in this way is incapacitated, its speed is reduced to 0, and a shadhavar has advantage on attack rolls against it.",
+            "name": "Plaintive Melody (3/day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A shadhavar's darkvision functions in magical darkness.",
+            "name": "Shadesight"
+        }
+    ],
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "stealth": 4,
+    "strength": 14,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 10
+}

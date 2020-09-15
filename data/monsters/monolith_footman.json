@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 9 (2d8) cold or fire damage.",
+            "name": "Longsword"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage plus 9 (2d8) cold or fire damage.",
+            "name": "Slam"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": 10,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
+    "constitution": 14,
+    "damage_immunities": "poison, bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
+    "dexterity": 12,
+    "hit_dice": "8d10+16",
+    "hit_points": 60,
+    "id": "monolith_footman",
+    "intelligence": 10,
+    "languages": "Elvish, Umbral",
+    "name": "Monolith Footman",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "While in the courts or castles of the fey, a monolith footman that scores a successful hit with its longsword can try to force the substitution of the target with a shadow double. The target must succeed at a DC 10 Charisma saving throw or become invisible, silent, and paralyzed, while an illusory version of itself remains visible and audible-and under the monolith footman's control, shouting for a retreat or the like. Outside fey locales, this ability does not function.",
+            "name": "Blatant Dismissal"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The ritual powering a monolith footman grants it an inner flame that it can use to enhance its weapon or its fists with additional fire or cold damage, depending on the construct's needs.",
+            "name": "Fey Flame"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Monolith footmen are designed with a delicate fey construction. They burst into pieces and are destroyed when they receive a critical hit.",
+            "name": "Simple Construction"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 10
+}

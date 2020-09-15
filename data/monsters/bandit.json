@@ -1,0 +1,45 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage.",
+            "name": "Scimitar"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
+            "name": "Light Crossbow"
+        }
+    ],
+    "alignment": "any non-lawful alignment",
+    "armor_class": 12,
+    "armor_desc": "leather armor",
+    "challenge_rating": "1/8",
+    "charisma": 10,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 12,
+    "hit_dice": "2d8",
+    "hit_points": 11,
+    "id": "bandit",
+    "intelligence": 10,
+    "languages": "any one language (usually Common)",
+    "name": "Bandit",
+    "senses": "passive Perception 10",
+    "size": "Medium",
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 11,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 10
+}

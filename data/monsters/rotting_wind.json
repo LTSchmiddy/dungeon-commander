@@ -1,0 +1,55 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 0 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage plus 14 (4d6) necrotic damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or be cursed with tomb rot. The cursed target can't regain hit points, and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies and its body turns to dust. The curse lasts until removed by the remove curse spell or comparable magic.",
+            "name": "Wind of Decay"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 15,
+    "armor_desc": "",
+    "challenge_rating": "6",
+    "charisma": 10,
+    "condition_immunities": "charmed, exhaustion, grappled, frightened, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+    "constitution": 15,
+    "damage_immunities": "necrotic, poison",
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 20,
+    "hit_dice": "11d10+22",
+    "hit_points": 82,
+    "id": "rotting_wind",
+    "intelligence": 7,
+    "languages": "-",
+    "name": "Rotting Wind",
+    "senses": "blindsight 60 ft. (blind beyond this), passive Perception 10",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The rotting wind can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Air Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "All normal plant life and liquid in the same space as a rotting wind at the end of the wind's turn is blighted and cursed. Normal vegetation dies in 1d4 days, while plant creatures take double damage from the wind of decay action. Unattended liquids become noxious and undrinkable.",
+            "name": "Befouling Presence"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The rotting wind is invisible as per a greater invisibility spell.",
+            "name": "Invisibility"
+        }
+    ],
+    "speed": "0 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "hover": true,
+        "walk": 0
+    },
+    "strength": 14,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 12
+}

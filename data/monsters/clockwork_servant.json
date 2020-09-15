@@ -1,0 +1,51 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.",
+            "name": "Slam"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "11",
+    "challenge_rating": "1/8",
+    "charisma": "7",
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": "13",
+    "damage_immunities": "poison, psychic",
+    "dexterity": "12",
+    "handling": 3,
+    "hit_dice": "4d8+4",
+    "hit_points": "22",
+    "id": "clockwork_servant",
+    "intelligence": "8",
+    "investigation": 3,
+    "languages": "Common",
+    "name": "Clockwork Servant",
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The servant can cast the mending and prestidigitation cantrips at will without requiring spell components.",
+            "name": "Domestic Retainer"
+        },
+        {
+            "desc": "The servant is immune to any spell or effect that would alter its form.",
+            "name": "Immutable Form"
+        },
+        {
+            "desc": "The servant has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "25 ft.",
+    "speed_json": {
+        "walk": 25
+    },
+    "strength": "14",
+    "subtype": "",
+    "type": "construct",
+    "wisdom": "12"
+}

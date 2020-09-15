@@ -1,0 +1,60 @@
+{
+    "acrobatics": 5,
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., range 20/60, one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Kukri Dagger"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 25/100 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned and unconscious for 1d4 hours. Another creature can use an action to shake the target awake and end its unconsciousness but not the poisoning.",
+            "name": "Blowgun"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 13,
+    "armor_desc": "16 with mage armor",
+    "challenge_rating": "4",
+    "charisma": 10,
+    "constitution": 12,
+    "dexterity": 16,
+    "hit_dice": "15d6+15",
+    "hit_points": 67,
+    "id": "lemurfolk_greyfur",
+    "intelligence": 16,
+    "languages": "Common, Lemurfolk",
+    "name": "Lemurfolk Greyfur",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The lemurfolk can glide for 1 minute, making almost no sound. It gains a fly speed of 40 feet, and it must move at least 20 feet on its turn to keep flying. A gliding lemurfolk has advantage on Dexterity (Stealth) checks.",
+            "name": "Silent Glide"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The greyfur deals an extra 7 (2d6) damage when it hits with a weapon attack and it has advantage, or when the target is within 5 feet of an ally of the greyfur that isn't incapacitated and the greyfur doesn't have disadvantage on the attack roll.",
+            "name": "Sneak Attack (1/Turn)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the greyfur is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). The greyfur has the following wizard spells prepared:\n\ncantrips (at will): light, mage hand, minor illusion, poison spray, resistance\n\n1st Level (4 slots): mage armor, sleep\n\n2nd Level (3 slots): detect thoughts, misty step\n\n3rd Level (2 slots): lightning bolt",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "20 ft., climb 10 ft., fly 40 ft.",
+    "speed_json": {
+        "climb": 10,
+        "fly": 40,
+        "walk": 20
+    },
+    "stealth": 5,
+    "strength": 9,
+    "subtype": "lemurfolk",
+    "type": "humanoid",
+    "wisdom": 12
+}

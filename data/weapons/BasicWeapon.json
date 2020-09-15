@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "1d4",
+    "class": "Weapon",
+    "cost": "0 gp",
+    "damage_bonus": 0,
+    "damage_type": "p",
+    "features_applied": false,
+    "id": "BasicWeapon",
+    "is_finesse": false,
+    "name": "",
+    "properties": "",
+    "weight": 1
+}

@@ -1,0 +1,52 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/4",
+    "charisma": 6,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "hit_dice": "2d8",
+    "hit_points": 11,
+    "id": "wolf",
+    "intelligence": 3,
+    "languages": "",
+    "name": "Wolf",
+    "perception": 3,
+    "senses": "passive Perception 13",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+            "name": "Keen Hearing and Smell"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "stealth": 4,
+    "strength": 12,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

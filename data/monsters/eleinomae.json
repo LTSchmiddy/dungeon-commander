@@ -1,0 +1,71 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The eleinomae makes three dagger attacks and one reed flower net attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d4",
+            "desc": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) slashing damage plus 3 (1d6) poison damage.",
+            "name": "Dagger"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "0",
+            "desc": "Ranged Weapon Attack: +7 to hit, range 5/15 ft., one Large or smaller creature. Hit: The target has disadvantage on Wisdom saving throws for 1 minute, and is restrained. A creature can free itself or another creature within reach from restraint by using an action to make a successful DC 15 Strength check or by doing 5 slashing damage to the net (AC 10).",
+            "name": "Reed Flower Net"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 18,
+    "armor_desc": "",
+    "challenge_rating": "5",
+    "charisma": 19,
+    "charisma_save": 7,
+    "constitution": 16,
+    "constitution_save": 6,
+    "deception": 7,
+    "dexterity": 19,
+    "dexterity_save": 7,
+    "hit_dice": "15d8+45",
+    "hit_points": 112,
+    "id": "eleinomae",
+    "insight": 5,
+    "intelligence": 14,
+    "intelligence_save": 5,
+    "languages": "Aquan, Common, Elvish, Sylvan",
+    "name": "Eleinomae",
+    "perception": 5,
+    "senses": "passive Perception $1",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The eleinomae's Charisma modifier is added to its armor class (included above).",
+            "name": "Unearthly Grace"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The eleinomae can move across undergrowth or rivers without making an ability check. Additionally, difficult terrain of this kind doesn't cost it extra moment.",
+            "name": "Reed Walk"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the eleinomae's innate spellcasting ability is Charisma (spell save DC 15). It can innately cast the following spells, requiring no material components:\n\nat will: dancing lights\n\n3/day each: charm person, suggestion\n\n2/day each: hallucinatory terrain, major image",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "30 ft., swim 30 ft.",
+    "speed_json": {
+        "swim": 30,
+        "walk": 30
+    },
+    "strength": 13,
+    "strength_save": 4,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 14,
+    "wisdom_save": 5
+}

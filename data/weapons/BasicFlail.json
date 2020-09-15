@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "1d8",
+    "class": "Flail",
+    "cost": "10gp",
+    "damage_bonus": 0,
+    "damage_type": "b",
+    "features_applied": false,
+    "id": "BasicFlail",
+    "is_finesse": false,
+    "name": "Flail",
+    "properties": "",
+    "weight": 2
+}

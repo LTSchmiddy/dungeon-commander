@@ -1,0 +1,57 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The elemental makes two slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_bonus": 5,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Each creature in the elemental's space must make a DC 13 Strength saving throw. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity saving throw or take the same damage and be knocked prone.\nIf the saving throw is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.",
+            "name": "Whirlwind (Recharge 4-6)"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 15,
+    "challenge_rating": "5",
+    "charisma": 6,
+    "condition_immunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+    "constitution": 14,
+    "damage_immunities": "poison",
+    "damage_resistances": "lightning; thunder; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "damage_vulnerabilities": "",
+    "dexterity": 20,
+    "group": "Elementals",
+    "hit_dice": "12d10+24",
+    "hit_points": 90,
+    "id": "air_elemental",
+    "intelligence": 6,
+    "languages": "Auran",
+    "name": "Air Elemental",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Air Form"
+        }
+    ],
+    "speed": "0 ft., fly 90 ft. (hover)",
+    "speed_json": {
+        "fly": 90,
+        "hover": true,
+        "walk": 0
+    },
+    "strength": 14,
+    "subtype": "",
+    "type": "elemental",
+    "wisdom": 10
+}

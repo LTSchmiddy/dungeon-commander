@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "desc": "The ooze makes one pseudopod attack and then uses Snuff Out.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d6+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage plus 7 (2d6) necrotic damage and 3 (1d6) acid damage.",
+            "name": "Pseudopod"
+        },
+        {
+            "desc": "The ooze extinguishes one natural or magical light source within 60 feet of it. If the light source is created by a spell, it is dispelled.",
+            "name": "Snuff Out"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "8",
+    "challenge_rating": "3",
+    "charisma": "2",
+    "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+    "constitution": "18",
+    "damage_immunities": "acid, necrotic",
+    "dexterity": "6",
+    "hit_dice": "9d8+36",
+    "hit_points": "76",
+    "id": "shadow_ooze",
+    "intelligence": "2",
+    "languages": "-",
+    "name": "Shadow Ooze",
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The ooze can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Amorphous"
+        },
+        {
+            "desc": "The ooze devours all natural and magical light within 30 feet of it. This area is heavily obscured by darkness for all creatures except shadow fey.",
+            "name": "Aura of Darkness"
+        },
+        {
+            "desc": "The ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+            "name": "Spider Climb"
+        }
+    ],
+    "speed": "20 ft., climb 20 ft.",
+    "speed_json": {
+        "climb": 20,
+        "walk": 20
+    },
+    "stealth": 2,
+    "strength": "16",
+    "subtype": "",
+    "type": "ooze",
+    "wisdom": "6"
+}

@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage, or 7 (1d8 + 3) bludgeoning damage with shillelagh.",
+            "name": "Club"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d6+1",
+            "desc": "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage plus 5 (2d4) poison damage.",
+            "name": "Shortbow"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": "13",
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/2",
+    "charisma": "8",
+    "constitution": "11",
+    "dexterity": "12",
+    "hit_dice": "6d8",
+    "hit_points": "27",
+    "id": "woodwose",
+    "intelligence": "10",
+    "languages": "Common, Elvish, Sylvan",
+    "name": "Woodwose",
+    "nature": 2,
+    "perception": 4,
+    "senses": "passive Perception 14",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The woodwose has advantage on saving throws against being charmed, and magic can't put the woodwose to sleep.",
+            "name": "Fey Touched"
+        },
+        {
+            "desc": "The woodwose can communicate with beasts and plants as if they shared a language.",
+            "name": "Speak with Beasts and Plants"
+        },
+        {
+            "desc": "The woodwose's innate spellcasting ability is Wisdom (spell save DC 12). The woodwose can innately cast the following spells, requiring no material components:\nAt will: shillelagh\n3/day: pass without trace\n1/day: entangle",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "30 ft., climb 20 ft.",
+    "speed_json": {
+        "climb": 20,
+        "walk": 30
+    },
+    "stealth": 3,
+    "strength": "16",
+    "subtype": "",
+    "survival": 4,
+    "type": "humanoid",
+    "wisdom": "14"
+}

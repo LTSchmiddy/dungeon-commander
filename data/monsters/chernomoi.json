@@ -1,0 +1,50 @@
+{
+    "acrobatics": 6,
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage.",
+            "name": "Scimitar"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The chernomoi emits a loud shriek. All creatures within 60 feet who can hear take 10 (3d6) thunder damage, or half damage with a successful DC 13 Constitution saving throw.",
+            "name": "Shriek (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 13,
+    "armor_desc": "",
+    "challenge_rating": "1",
+    "charisma": 16,
+    "constitution": 18,
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks not made with silver weapons",
+    "dexterity": 18,
+    "hit_dice": "5d4+20",
+    "hit_points": 32,
+    "id": "chernomoi",
+    "intelligence": 12,
+    "languages": "Common, Draconic, Sylvan",
+    "name": "Chernomoi",
+    "perception": 2,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the chernomoi's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components:\n\nat will: detect magic, invisibility, mage hand, mending, message, prestidigitation\n\n1/day each: detect poison and disease, dimension door",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "20 ft., fly 20 ft.",
+    "speed_json": {
+        "fly": 20,
+        "walk": 20
+    },
+    "stealth": 6,
+    "strength": 9,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 11
+}

@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "1d4",
+    "class": "Whip",
+    "cost": "2 gp",
+    "damage_bonus": 0,
+    "damage_type": "s",
+    "features_applied": false,
+    "id": "BasicWhip",
+    "is_finesse": true,
+    "name": "Whip",
+    "properties": "Finesse, reach",
+    "weight": 3
+}

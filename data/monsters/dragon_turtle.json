@@ -1,0 +1,74 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon turtle makes three attacks: one with its bite and two with its claws. It can make one tail attack in place of its two claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 13,
+            "damage_bonus": 7,
+            "damage_dice": "3d12",
+            "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 26 (3d12 + 7) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 13,
+            "damage_bonus": 7,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 16 (2d8 + 7) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 13,
+            "damage_bonus": 7,
+            "damage_dice": "3d12",
+            "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 26 (3d12 + 7) bludgeoning damage. If the target is a creature, it must succeed on a DC 20 Strength saving throw or be pushed up to 10 feet away from the dragon turtle and knocked prone.",
+            "name": "Tail"
+        },
+        {
+            "attack_bonus": 0,
+            "damage_dice": "15d6",
+            "desc": "The dragon turtle exhales scalding steam in a 60-foot cone. Each creature in that area must make a DC 18 Constitution saving throw, taking 52 (15d6) fire damage on a failed save, or half as much damage on a successful one. Being underwater doesn't grant resistance against this damage.",
+            "name": "Steam Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 20,
+    "armor_desc": "natural armor",
+    "challenge_rating": "17",
+    "charisma": 12,
+    "condition_immunities": "",
+    "constitution": 20,
+    "constitution_save": 11,
+    "damage_immunities": "",
+    "damage_resistances": "fire",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "dexterity_save": 6,
+    "hit_dice": "22d20+110",
+    "hit_points": 341,
+    "id": "dragon_turtle",
+    "intelligence": 10,
+    "languages": "Aquan, Draconic",
+    "name": "Dragon Turtle",
+    "senses": "darkvision 120 ft., passive Perception 11",
+    "size": "Gargantuan",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon turtle can breathe air and water.",
+            "name": "Amphibious"
+        }
+    ],
+    "speed": "20 ft., swim 40 ft.",
+    "speed_json": {
+        "swim": 40,
+        "walk": 20
+    },
+    "strength": 25,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 12,
+    "wisdom_save": 7
+}

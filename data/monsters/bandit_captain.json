@@ -1,0 +1,62 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The captain makes three melee attacks: two with its scimitar and one with its dagger. Or the captain makes two ranged attacks with its daggers.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+            "name": "Scimitar"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d4",
+            "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Dagger"
+        }
+    ],
+    "alignment": "any non-lawful alignment",
+    "armor_class": 15,
+    "armor_desc": "studded leather",
+    "athletics": 4,
+    "challenge_rating": "2",
+    "charisma": 14,
+    "condition_immunities": "",
+    "constitution": 14,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "deception": 4,
+    "dexterity": 16,
+    "dexterity_save": 5,
+    "hit_dice": "10d8",
+    "hit_points": 65,
+    "id": "bandit_captain",
+    "intelligence": 14,
+    "languages": "any two languages",
+    "name": "Bandit Captain",
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The captain adds 2 to its AC against one melee attack that would hit it. To do so, the captain must see the attacker and be wielding a melee weapon.",
+            "name": "Parry"
+        }
+    ],
+    "senses": "passive Perception 10",
+    "size": "Medium",
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 15,
+    "strength_save": 4,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 11,
+    "wisdom_save": 2
+}

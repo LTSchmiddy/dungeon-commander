@@ -1,0 +1,61 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The scout makes two melee attacks or two ranged attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Shortsword"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "name": "Longbow"
+        }
+    ],
+    "alignment": "any alignment",
+    "armor_class": 13,
+    "armor_desc": "leather armor",
+    "challenge_rating": "1/2",
+    "charisma": 11,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 14,
+    "hit_dice": "3d8",
+    "hit_points": 16,
+    "id": "scout",
+    "intelligence": 11,
+    "languages": "any one language (usually Common)",
+    "name": "Scout",
+    "nature": 4,
+    "perception": 5,
+    "senses": "passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight.",
+            "name": "Keen Hearing and Sight"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": 11,
+    "subtype": "any race",
+    "survival": 5,
+    "type": "humanoid",
+    "wisdom": 13
+}

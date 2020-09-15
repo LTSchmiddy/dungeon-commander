@@ -1,0 +1,7 @@
+{
+    "desc": "You can breathe underwater for 1 hour after drinking this potion. Its cloudy green fluid smells of the sea and has a jellyfish-like bubble floating in it.",
+    "id": "potion_of_water_breathing",
+    "name": "Potion of Water Breathing",
+    "rarity": "uncommon",
+    "type": "Potion"
+}

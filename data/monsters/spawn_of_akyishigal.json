@@ -1,0 +1,60 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The spawn makes one bite attack and two sting attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d10",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage plus 5 (1d10) poison damage, and the target must succeed on a DC 15 Constitution saving throw or become poisoned for 1d6 rounds.",
+            "name": "Sting"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 12,
+    "condition_immunities": "poisoned",
+    "constitution": 19,
+    "damage_immunities": "poison",
+    "dexterity": 13,
+    "dexterity_save": 4,
+    "hit_dice": "14d8+56",
+    "hit_points": 119,
+    "id": "spawn_of_akyishigal",
+    "intelligence": 10,
+    "languages": "Infernal, Spawn of Akyishigal",
+    "name": "Spawn Of Akyishigal",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Spawn of Akyishigal can command tiny beasts of Intelligence 2 or less within 30 feet that aren't under any magical control. The vermin obey the spawn's commands to the best of their ability, heedless of their own safety.",
+            "name": "Command Vermin"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The spawn can belch forth a swarm of insects. The swarm is completely under the spawn's control. It remains for 1 minute or until destroyed.",
+            "name": "Swarming Cough (recharge 5-6)"
+        }
+    ],
+    "speed": "30 ft., climb 15 ft.",
+    "speed_json": {
+        "climb": 15,
+        "walk": 30
+    },
+    "strength": 15,
+    "subtype": "demon",
+    "type": "fiend",
+    "wisdom": 11
+}

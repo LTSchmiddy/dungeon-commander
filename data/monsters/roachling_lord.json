@@ -1,0 +1,60 @@
+{
+    "acrobatics": 5,
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The roachling lord makes two melee attacks or throws two darts.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) poison damage.",
+            "name": "Begrimed Shortsword"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 7 (2d6) poison damage.",
+            "name": "Begrimed Dart"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 10,
+    "constitution": 12,
+    "constitution_save": 3,
+    "dexterity": 16,
+    "dexterity_save": 5,
+    "hit_dice": "14d6+14",
+    "hit_points": 63,
+    "id": "roachling_lord",
+    "intelligence": 10,
+    "languages": "Common",
+    "name": "Roachling Lord",
+    "senses": "darkvision 60 ft., tremorsense 10 ft., passive Perception 9",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The roachling skirmisher has advantage on Constitution saving throws.",
+            "name": "Resistant"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The skirmisher has disadvantage on Performance and Persuasion checks in interactions with nonroachlings.",
+            "name": "Unlovely"
+        }
+    ],
+    "speed": "25 ft.",
+    "speed_json": {
+        "walk": 25
+    },
+    "stealth": 7,
+    "strength": 10,
+    "subtype": "roachling",
+    "type": "humanoid",
+    "wisdom": 10
+}

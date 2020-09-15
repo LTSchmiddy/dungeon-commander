@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+            "name": "Dagger"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "name": "Light crossbow"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "studded leather armor",
+    "challenge_rating": "1/4",
+    "charisma": 10,
+    "constitution": 11,
+    "dexterity": 15,
+    "hit_dice": "2d6",
+    "hit_points": 7,
+    "id": "ratfolk",
+    "intelligence": 14,
+    "languages": "Common",
+    "name": "Ratfolk",
+    "perception": 2,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The ratfolk can move through the space of any creature size Medium or larger.",
+            "name": "Nimbleness"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The ratfolk has advantage on its attack roll against a creature if at least one of the ratfolk's allies is within 5 feet of the creature and the ally is capable of attacking.",
+            "name": "Pack Tactics"
+        }
+    ],
+    "speed": "25 ft., swim 10 ft.",
+    "speed_json": {
+        "swim": 10,
+        "walk": 25
+    },
+    "strength": 7,
+    "subtype": "ratfolk",
+    "type": "humanoid",
+    "wisdom": 10
+}

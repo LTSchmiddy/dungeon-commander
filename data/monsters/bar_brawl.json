@@ -1,0 +1,62 @@
+{
+    "actions": [
+        {
+            "desc": "The bar brawl makes two melee attacks or two darts attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "4d6",
+            "desc": "Melee Weapon Attack: +4 to hit, range 0 ft., one target in the bar brawl's space. Hit: 14 (4d6) bludgeoning damage, or 7 (2d6) if the bar brawl has half its hit points or fewer.",
+            "name": "Barstool"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "4d4",
+            "desc": "Melee Weapon Attack: +4 to hit, range 0 ft., one target in the bar brawl's space. Hit: 10 (4d4) slashing damage, or 5 (2d4) if the bar brawl has half its hit points or fewer.",
+            "name": "Broken Bottles"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "4d4",
+            "desc": "Ranged Weapon Attack: +3 to hit, range 20/40 ft. Hit: 10 (4d4) piercing damage, or 5 (2d4) if the bar brawl has half its hit points or fewer.",
+            "name": "Darts"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "12",
+    "armor_desc": "leather armor",
+    "challenge_rating": "3",
+    "charisma": "9",
+    "condition_immunities": "charmed, frightened, paralyzed, petrified, prone, restrained, stunned",
+    "constitution": "13",
+    "damage_resistances": "piercing, slashing",
+    "damage_vulnerabilities": "bludgeoning",
+    "dexterity": "12",
+    "hit_dice": "9d12+9",
+    "hit_points": "67",
+    "id": "bar_brawl",
+    "intelligence": "11",
+    "languages": "any two languages",
+    "name": "Bar Brawl",
+    "senses": "passive Perception 10",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "desc": "As a bonus action, the bar brawl imbibes nearby alcohol to gain access to a hidden reservoir of audacity and grit. The bar brawl gains 7 (2d6) temporary hp for 1 minute.",
+            "name": "Liquid Courage (Recharge 5-6)"
+        },
+        {
+            "desc": "The bar brawl can occupy another creature's space and vice versa, and the bar brawl can move through any opening large enough for a Medium humanoid. Except for Liquid Courage, the bar brawl can't regain hp or gain temporary hp.",
+            "name": "Swarm"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": "14",
+    "subtype": "",
+    "type": "humanoids",
+    "wisdom": "10"
+}

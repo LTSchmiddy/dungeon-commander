@@ -1,0 +1,47 @@
+<details class="spell" data-spell-id="{{ spell.id }}">
+    <summary>
+        {{ spell.name }} - Level {{ spell.level }}
+        {% if spell.ritual %}
+            <strong>R</strong>
+        {% endif %}
+        {% if spell.concentration %}
+            <strong>C</strong>
+        {% endif %}
+
+    </summary>
+
+    <div class="spell-desc">
+        {% if spell.ritual %}
+            <p><strong>Can be performed as a ritual.</strong></p>
+        {% endif %}
+        {% if spell.concentration %}
+            <p><strong>Requires concentration to maintain.</strong></p>
+        {% endif %}
+
+        <p>{{ spell.spell_desc }}</p>
+    </div>
+
+    {% if spell.higher_level != "" %}
+        <div class="higher-level">
+            {{ spell.higher_level }}
+        </div>
+    {% endif %}
+
+
+
+    <dl class="spell-info">
+        <dd>Casting Time: </dd><dt>{{ spell.casting_time }}</dt>
+        <dd>Casting Range: </dd><dt>{{ spell.casting_range }}</dt>
+        <dd>Duration: </dd><dt>{{ spell.duration }}</dt>
+        <dd>Casting Time: </dd><dt>{{ spell.casting_time }}</dt>
+        <dd>Components: </dd><dt>{{ spell.components_string }}</dt>
+        {% if spell.material_components %}
+            <dd>Required Materials: </dd><dt>{{ spell.materials }}</dt>
+        {% endif %}
+        <dd>School of Magic: </dd><dt>{{ spell.magic_school }}</dt>
+        <dd>Available to: </dd><dt>{{ spell.classes }}</dt>
+
+    </dl>
+
+
+</details>

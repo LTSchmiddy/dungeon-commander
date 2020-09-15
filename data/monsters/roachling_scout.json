@@ -1,0 +1,67 @@
+{
+    "acrobatics": 6,
+    "actions": [
+        {
+            "desc": "The roachling scout makes two begrimed shortsword attacks or two begrimed dart attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 7 (2d6) poison damage.",
+            "name": "Begrimed Shortsword"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d4+4",
+            "desc": "Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage plus 7 (2d6) poison damage.",
+            "name": "Begrimed Dart"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": "14",
+    "challenge_rating": "2",
+    "charisma": "8",
+    "constitution": "13",
+    "constitution_save": 3,
+    "dexterity": "18",
+    "dexterity_save": 6,
+    "hit_dice": "14d6+14",
+    "hit_points": "63",
+    "id": "roachling_scout",
+    "intelligence": "10",
+    "languages": "Common",
+    "name": "Roachling Scout",
+    "perception": 6,
+    "senses": "darkvision 60 ft., tremorsense 10 ft., passive Perception 16",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The roachling scout has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        },
+        {
+            "desc": "The roachling scout has advantage on Constitution saving throws.",
+            "name": "Resistant"
+        },
+        {
+            "desc": "The roachling scout can move stealthily while traveling at a normal pace.",
+            "name": "Stealthy Traveler"
+        },
+        {
+            "desc": "The roachling scout has disadvantage on Charisma (Performance) and Charisma (Persuasion) checks in interactions with non-roachlings.",
+            "name": "Unlovely"
+        }
+    ],
+    "speed": "25 ft., climb 15 ft.",
+    "speed_json": {
+        "climb": 15,
+        "walk": 25
+    },
+    "stealth": 6,
+    "strength": "10",
+    "subtype": "roachling",
+    "survival": 6,
+    "type": "humanoid",
+    "wisdom": "14"
+}

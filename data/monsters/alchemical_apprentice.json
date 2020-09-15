@@ -1,0 +1,61 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "2d8+1",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 10 (2d8 + 1) bludgeoning damage.",
+            "name": "Pseudopod"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "3d6",
+            "desc": "Ranged Spell Attack: +5 to hit, range 60 ft., one target. Hit: 10 (3d6) acid, cold, fire, or poison damage.",
+            "name": "Magical Burble"
+        }
+    ],
+    "alignment": "unaligned",
+    "arcana": 5,
+    "armor_class": "11",
+    "armor_desc": "natural armor",
+    "challenge_rating": "1",
+    "charisma": "10",
+    "condition_immunities": "blinded, charmed, deafened, frightened, poisoned, prone",
+    "constitution": "13",
+    "damage_resistances": "acid, cold, fire, poison",
+    "dexterity": "6",
+    "hit_dice": "14d6+14",
+    "hit_points": "63",
+    "id": "alchemical_apprentice",
+    "intelligence": "16",
+    "languages": "understands Common but can't speak, telepathy 10 ft.",
+    "name": "Alchemical Apprentice",
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The ooze can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Amorphous"
+        },
+        {
+            "desc": "The ooze can absorb any potion, oil, tincture, or alchemical draught that touches it, choosing to be affected by the substance or to nullify it.",
+            "name": "Absorb Potion"
+        },
+        {
+            "desc": "These oozes don't fare well in sunlight and don't easily endure the rigors of travel. The creature dies if it is directly exposed to sunlight for more than 1 minute. Each day it is more than 1 mile from its \u201cbirth\u201d place, the ooze must succeed on a DC 12 Constitution saving throw or die.",
+            "name": "Perishable"
+        },
+        {
+            "desc": "The alchemical apprentice can produce one common potion, oil, tincture, or alchemical draught each day. If no creature is there to bottle, or otherwise collect, the substance when it is produced, it trickles away and is wasted.",
+            "name": "Produce Potion (1/Day)"
+        }
+    ],
+    "speed": "10 ft., climb 10 ft.",
+    "speed_json": {
+        "climb": 10,
+        "walk": 10
+    },
+    "strength": "13",
+    "subtype": "",
+    "type": "ooze",
+    "wisdom": "6"
+}

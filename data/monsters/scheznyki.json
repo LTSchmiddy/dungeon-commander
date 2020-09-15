@@ -1,0 +1,60 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The scheznyki makes four war pick attacks or two hand crossbow attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
+            "name": "Heavy Pick"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Hand Crossbow"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 16,
+    "condition_immunities": "unconscious",
+    "constitution": 18,
+    "constitution_save": 10,
+    "dexterity": 15,
+    "hit_dice": "18d6+72",
+    "hit_points": 153,
+    "id": "scheznyki",
+    "intelligence": 15,
+    "languages": "Common, Darakhul, Elvish",
+    "name": "Scheznyki",
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the scheznyki's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nat will: dancing lights, darkness, detect evil and good, faerie fire, invisibility*, fly*, mage hand, ray of frost (*only when wearing a vanisher hat)\n\n5/day each: magic missile, ray of enfeeblement, silent image\n\n3/day each: locate object (radius 3,000 ft to locate a vanisher hat), hideous laughter, web\n\n1/day each: dispel magic, dominate person, hold person",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The scheznyki has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "20 ft., climb 15 ft.",
+    "speed_json": {
+        "climb": 15,
+        "walk": 20
+    },
+    "strength": 19,
+    "strength_save": 10,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 16
+}

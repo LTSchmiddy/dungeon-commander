@@ -1,0 +1,75 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon exhales a blast of wind in a 30-foot cone. Each creature in that cone takes 11 (2d10) bludgeoning damage and is pushed 25 feet away from the dragon and knocked prone; a successful DC 16 Strength saving throw halves the damage and prevents being pushed and knocked prone. Unprotected flames in the cone are extinguished, and sheltered flames (such as those in lanterns) have a 75 percent chance of being extinguished.",
+            "name": "Breath of Gales (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 16,
+    "charisma_save": 6,
+    "condition_immunities": "charmed, exhausted, paralyzed, restrained",
+    "constitution": 18,
+    "constitution_save": 7,
+    "damage_immunities": "lightning",
+    "dexterity": 19,
+    "dexterity_save": 7,
+    "hit_dice": "16d10+62",
+    "hit_points": 150,
+    "id": "young_wind_dragon",
+    "intelligence": 14,
+    "languages": "Common, Draconic, Primordial",
+    "name": "Young Wind Dragon",
+    "perception": 7,
+    "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 17",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the dragon's innate spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spell, requiring no material components:\n\nat will: feather fall",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon sees normally through light or heavy obscurement caused by fog, mist, clouds, or high wind.",
+            "name": "Fog Vision"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon's movement is never impeded by difficult terrain, and its speed can't be reduced by spells or magical effects. It can't be restrained (per the condition), and it escapes automatically from any nonmagical restraints (such as chains, entanglement, or grappling) by spending 5 feet of movement. Being underwater imposes no penalty on its movement or attacks.",
+            "name": "Uncontrollable"
+        }
+    ],
+    "speed": "40 ft., fly 90 ft.",
+    "speed_json": {
+        "fly": 90,
+        "walk": 40
+    },
+    "stealth": 7,
+    "strength": 20,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 13,
+    "wisdom_save": 4
+}

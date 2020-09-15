@@ -1,0 +1,60 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "Melee Weapon Attack. +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage.",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 12,
+    "charisma_save": 3,
+    "constitution": 14,
+    "constitution_save": 4,
+    "damage_resistances": "cold",
+    "dexterity": 12,
+    "hit_dice": "14d8+28",
+    "hit_points": 91,
+    "id": "deep_one",
+    "intelligence": 10,
+    "languages": "Common, Void Speech",
+    "name": "Deep One",
+    "senses": "darkvision 120 ft., passive Perception 9",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A deep one can breathe air or water with equal ease.",
+            "name": "Amphibious"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "On its next turn after a deep one takes 10 or more damage from a single attack, it has advantage on its claws attack and adds +2 to damage.",
+            "name": "Frenzied Rage"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A deep one is immune to the pressure effects of the deep ocean.",
+            "name": "Lightless Depths"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A deep one born to a human family resembles a human child, but transforms into an adult deep one between the ages of 16 and 30.",
+            "name": "Ocean Change"
+        }
+    ],
+    "speed": "30 ft., swim 30 ft.",
+    "speed_json": {
+        "swim": 30,
+        "walk": 30
+    },
+    "strength": 16,
+    "strength_save": 5,
+    "subtype": "",
+    "type": "humanoid",
+    "vulnerable": "fire",
+    "wisdom": 8
+}

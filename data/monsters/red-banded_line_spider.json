@@ -1,0 +1,56 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must succeed on a DC 10 Constitution saving throw or take 3 (1d6) poison damage and be poisoned until the start of the spider's next turn. The target fails the saving throw automatically and takes an extra 1d6 poison damage if it is bitten by another red-banded line spider while poisoned this way.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "0",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 60 ft., one target. Hit: the spider immediately moves the full length of the webbing (up to 60 feet) to the target and delivers a bite with advantage. This attack can be used only if the spider is higher than its target and at least 10 feet away.",
+            "name": "Swingline"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "",
+    "challenge_rating": "1/4",
+    "charisma": 2,
+    "condition_immunities": "charmed, frightened",
+    "constitution": 10,
+    "damage_immunities": "psychic",
+    "dexterity": 16,
+    "hit_dice": "1d4",
+    "hit_points": 2,
+    "id": "red-banded_line_spider",
+    "intelligence": 1,
+    "languages": "-",
+    "name": "Red-Banded Line Spider",
+    "perception": 2,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The spider can climb difficult surfaces, including upside down and on ceilings, without needing to make an ability check.",
+            "name": "Spider Climb"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The spider ignores movement restrictions caused by webbing.",
+            "name": "Web Walker"
+        }
+    ],
+    "speed": "30 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 30
+    },
+    "stealth": 5,
+    "strength": 4,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

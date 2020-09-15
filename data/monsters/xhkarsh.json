@@ -1,0 +1,59 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The xhkarsh makes two claw attacks and two stinger attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 12 (2d6 + 5) piercing damage, and the target must succeed on a DC 15 Charisma saving throw or have its fate corrupted. A creature with corrupted fate has disadvantage on Charisma checks and Charisma saving throws, and it is immune to divination spells and to effects that sense emotions or read thoughts. The target's fate can be restored by a dispel evil and good spell or comparable magic.",
+            "name": "Stinger"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The xhkarsh targets one creature within 5 feet of it whose fate has been corrupted. The target creature must succeed on a DC 15 Charisma saving throw or a portion of the xhkarsh's consciousness inhabits its body. The target retains control of its body, but the xhkarsh can control its actions for 1 minute each day and can modify its memories as a bonus action (as if using the modify memory spell, DC 15). The target is unaware of the xhkarsh's presence, but can make a DC 18 Wisdom (Insight) check once every 24 hours to notice the presence of the xhkarsh. This effect lasts until the xhkarsh ends it or the target's fate is restored by a dispel evil and good spell or comparable magic. A creature becomes immune to this effect for 24 hours when it succeeds on the saving throw to resist the effect or after the effect ends on it for any reason. A single xhkarsh can seize up to four strands at the same time.",
+            "name": "Seize Strand"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The xhkarsh turns invisible until it attacks or casts a spell, or until its concentration ends. Equipment the xhkarsh wears or carries becomes invisible with it.",
+            "name": "Invisibility"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 19,
+    "armor_desc": "natural and mystic armor",
+    "challenge_rating": "8",
+    "charisma": 15,
+    "charisma_save": 5,
+    "constitution": 18,
+    "dexterity": 21,
+    "hit_dice": "14d10+56",
+    "hit_points": 133,
+    "id": "xhkarsh",
+    "insight": 6,
+    "intelligence": 15,
+    "languages": "Common, Deep Speech, Undercommon",
+    "name": "Xhkarsh",
+    "perception": 6,
+    "senses": "darkvision 60 ft., tremorsense 120 ft., passive Perception 16",
+    "size": "Large",
+    "speed": "50 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 50
+    },
+    "stealth": 8,
+    "strength": 17,
+    "subtype": "",
+    "type": "aberration",
+    "wisdom": 16
+}

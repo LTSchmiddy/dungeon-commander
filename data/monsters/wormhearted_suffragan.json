@@ -1,0 +1,48 @@
+{
+    "ac": "12",
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The wormhearted suffragan can make two helminth infestation attacks, or it can cast one spell and make one helminth infestation attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (2d6) bludgeoning damage plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw or be afflicted with a helminth infestation (parasitic worms). An afflicted creature can't regain hit points and its hit point maximum decreases by 10 (3d6) for every 24 hours that elapse. If the affliction reduces the target's hit point maximum to 0, the victim dies. The affliction lasts until removed by any magic that cures disease.",
+            "name": "Helminth Infestation"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "challenge_rating": "5",
+    "charisma": 8,
+    "constitution": 16,
+    "damage_resistances": "necrotic; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 14,
+    "hit_dice": "13d8+39",
+    "hit_points": 97,
+    "id": "wormhearted_suffragan",
+    "intelligence": 11,
+    "languages": "the languages it knew in life",
+    "medicine": 6,
+    "name": "Wormhearted Suffragan",
+    "religion": 3,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the wormhearted suffragan's innate spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). It can cast the following spells, requiring no material components:\n\nat will: command, detect evil and good\n\n4/day: inflict wounds\n\n2/day each: blindness-deafness, hold person\n\n1/day each: animate dead, speak with dead",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 10,
+    "subtype": "",
+    "type": "undead",
+    "vulnerable": "radiant",
+    "wisdom": 16
+}

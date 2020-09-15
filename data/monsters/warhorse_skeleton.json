@@ -1,0 +1,39 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
+            "name": "Hooves"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 13,
+    "armor_desc": "barding scraps",
+    "challenge_rating": "1/2",
+    "charisma": 5,
+    "condition_immunities": "exhaustion, poisoned",
+    "constitution": 15,
+    "damage_immunities": "poison",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "bludgeoning",
+    "dexterity": 12,
+    "group": "Skeletons",
+    "hit_dice": "3d10+6",
+    "hit_points": 22,
+    "id": "warhorse_skeleton",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Warhorse Skeleton",
+    "senses": "darkvision 60 ft., passive Perception 9",
+    "size": "Large",
+    "speed": "60 ft.",
+    "speed_json": {
+        "walk": 60
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 8
+}

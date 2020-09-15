@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant makes two falchion attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 12,
+            "damage_dice": "6d4",
+            "desc": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 23 (6d4 + 8) slashing damage.",
+            "name": "Falchion"
+        },
+        {
+            "attack_bonus": 12,
+            "damage_dice": "4d10",
+            "desc": "Ranged Weapon Attack: +12 to hit, range 60/240 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage.",
+            "name": "Rock"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "9",
+    "charisma": 15,
+    "charisma_save": 6,
+    "constitution": 22,
+    "constitution_save": 10,
+    "damage_immunities": "fire",
+    "dexterity": 10,
+    "hit_dice": "14d12+84",
+    "hit_points": 175,
+    "id": "desert_giant",
+    "intelligence": 13,
+    "languages": "Common, Giant",
+    "name": "Desert Giant",
+    "perception": 8,
+    "senses": "passive Perception $1",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant has advantage on Dexterity (Stealth) checks made to hide in sandy terrain.",
+            "name": "Sand Camouflage"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The giant ignores difficult terrain caused by sand, gravel, or rocks.",
+            "name": "Wasteland Stride"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "stealth": 4,
+    "strength": 27,
+    "strength_save": 12,
+    "subtype": "",
+    "survival": 8,
+    "type": "giant",
+    "wisdom": 18
+}

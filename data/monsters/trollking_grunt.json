@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "desc": "The trollkin grunt makes two attacks, either with its spear or its longbow.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6+4",
+            "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack.",
+            "name": "Spear"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d8+1",
+            "desc": "Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
+            "name": "Longbow"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": "14",
+    "armor_desc": "hide armor",
+    "challenge_rating": "2",
+    "charisma": "10",
+    "constitution": "16",
+    "dexterity": "13",
+    "hit_dice": "6d8+18",
+    "hit_points": "45",
+    "id": "trollking_grunt",
+    "intelligence": "9",
+    "languages": "Common, Trollkin",
+    "name": "Trollking Grunt",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The trollkin grunt regains 3 hp at the start of its turn. If the grunt takes acid or fire damage, this trait doesn't function at the start of the grunt's next turn. The grunt dies only if it starts its turn with 0 hp and doesn't regenerate.",
+            "name": "Regeneration"
+        },
+        {
+            "desc": "The trollkin grunt's skin is thick and tough, granting it a +1 bonus to Armor Class. This bonus is already factored into the trollkin's AC.",
+            "name": "Thick Hide"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": "18",
+    "subtype": "trollkin",
+    "type": "humanoid",
+    "wisdom": "11"
+}

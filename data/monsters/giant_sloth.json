@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "desc": "The giant sloth makes two attacks: one with its claw and one with its bite. If the giant sloth is grappling a creature, it can also use its Sloth's Embrace once.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d6+4",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) slashing damage. The target is grappled (escape DC 15) if it is a Large or smaller creature and the sloth doesn't have another creature grappled.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d8+4",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "desc": "The giant sloth crushes a creature it is grappling by pulling the creature against its fetid, furry chest. The target must make a DC 15 Strength saving throw, taking 27 (6d8) bludgeoning damage on a failed save, or half as much damage on a successful one. A creature that fails the save is also stunned until the end of its next turn.",
+            "name": "Sloth's Embrace"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "15",
+    "armor_desc": "natural armor",
+    "athletics": 7,
+    "challenge_rating": "7",
+    "charisma": "10",
+    "condition_immunities": "poisoned",
+    "constitution": "19",
+    "damage_resistances": "poison",
+    "dexterity": "10",
+    "hit_dice": "16d10+80",
+    "hit_points": "168",
+    "id": "giant_sloth",
+    "intelligence": "3",
+    "languages": "-",
+    "name": "Giant Sloth",
+    "perception": 4,
+    "senses": "darkvision 120 ft., passive Perception 14",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "desc": "Any creature that starts its turn within 15 feet of the giant sloth must succeed on a DC 15 Constitution saving throw or have disadvantage on its next attack roll or ability check.",
+            "name": "Foul Odor"
+        },
+        {
+            "desc": "The giant sloth moves double its normal speed and has advantage on all of its attacks for 1 round.",
+            "name": "Hunter's Dash (1/Day)"
+        }
+    ],
+    "speed": "20 ft., climb 20 ft.",
+    "speed_json": {
+        "climb": 20,
+        "walk": 20
+    },
+    "strength": "19",
+    "strength_save": 7,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": "12"
+}

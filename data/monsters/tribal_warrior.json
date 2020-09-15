@@ -1,0 +1,45 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "1d6",
+            "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.",
+            "name": "Spear"
+        }
+    ],
+    "alignment": "any alignment",
+    "armor_class": 12,
+    "armor_desc": "hide armor",
+    "challenge_rating": "1/8",
+    "charisma": 8,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 11,
+    "hit_dice": "2d8",
+    "hit_points": 11,
+    "id": "tribal_warrior",
+    "intelligence": 8,
+    "languages": "any one language",
+    "name": "Tribal Warrior",
+    "senses": "passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 ft. of the creature and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 13,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 11
+}

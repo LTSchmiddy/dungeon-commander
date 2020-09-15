@@ -1,0 +1,44 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "challenge_rating": "0",
+    "charisma": 5,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 13,
+    "hit_dice": "1d8",
+    "hit_points": 5,
+    "id": "hyena",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Hyena",
+    "perception": 3,
+    "senses": "passive Perception 13",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The hyena has advantage on an attack roll against a creature if at least one of the hyena's allies is within 5 ft. of the creature and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        }
+    ],
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "strength": 11,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

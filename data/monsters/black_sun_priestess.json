@@ -1,0 +1,54 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.",
+            "name": "Greatclub"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "13",
+    "armor_desc": "hide armor",
+    "challenge_rating": "3",
+    "charisma": "14",
+    "constitution": "16",
+    "dexterity": "12",
+    "hit_dice": "9d8+27",
+    "hit_points": "67",
+    "id": "black_sun_priestess",
+    "insight": 6,
+    "intelligence": "9",
+    "intimidation": 6,
+    "languages": "Common, Orc",
+    "name": "Black Sun Priestess",
+    "religion": 1,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "As a bonus action, the priestess can move up to her speed toward a hostile creature that she can see.",
+            "name": "Aggressive"
+        },
+        {
+            "desc": "Magical darkness doesn't impede the the Black Sun priestess' darkvision.",
+            "name": "Black Sun Sight"
+        },
+        {
+            "desc": "While in bright light, the orc has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
+            "name": "Light Sensitivity"
+        },
+        {
+            "desc": "The priestess is a 6th-level spellcaster. Her spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The priestess has the following cleric spells prepared:\nCantrips (at will): guidance, mending, resistance, sacred flame\n1st level (4 slots): bane, command, cure wounds, detect magic\n2nd level (3 slots): augury, spiritual weapon\n3rd level (3 slots): animate dead, bestow curse, spirit guardians",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": "16",
+    "subtype": "orc",
+    "type": "humanoid",
+    "wisdom": "16"
+}

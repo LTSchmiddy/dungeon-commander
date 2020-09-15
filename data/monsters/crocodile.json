@@ -1,0 +1,47 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d10",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained, and the crocodile can't bite another target.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/2",
+    "charisma": 5,
+    "condition_immunities": "",
+    "constitution": 13,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "3d10",
+    "hit_points": 19,
+    "id": "crocodile",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Crocodile",
+    "senses": "passive Perception 10",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The crocodile can hold its breath for 15 minutes.",
+            "name": "Hold Breath"
+        }
+    ],
+    "speed": "20 ft., swim 20 ft.",
+    "speed_json": {
+        "swim": 20,
+        "walk": 20
+    },
+    "stealth": 2,
+    "strength": 15,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

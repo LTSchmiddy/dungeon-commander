@@ -1,0 +1,60 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) piercing damage.",
+            "name": "Morningstar"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "2d6",
+            "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 9 (2d6 + 2) piercing damage in melee or 5 (1d6 + 2) piercing damage at range.",
+            "name": "Javelin"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 16,
+    "armor_desc": "hide armor, shield",
+    "challenge_rating": "1",
+    "charisma": 9,
+    "condition_immunities": "",
+    "constitution": 13,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 14,
+    "hit_dice": "5d8+5",
+    "hit_points": 27,
+    "id": "bugbear",
+    "intelligence": 8,
+    "languages": "Common, Goblin",
+    "name": "Bugbear",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A melee weapon deals one extra die of its damage when the bugbear hits with it (included in the attack).",
+            "name": "Brute"
+        },
+        {
+            "attack_bonus": 0,
+            "damage_dice": "2d6",
+            "desc": "If the bugbear surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.",
+            "name": "Surprise Attack"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": 15,
+    "subtype": "goblinoid",
+    "survival": 2,
+    "type": "humanoid",
+    "wisdom": 11
+}

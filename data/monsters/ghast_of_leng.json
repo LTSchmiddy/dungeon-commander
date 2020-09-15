@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d6+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": "14",
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": "6",
+    "constitution": "14",
+    "constitution_save": 4,
+    "damage_resistances": "cold",
+    "damage_vulnerabilities": "radiant",
+    "dexterity": "17",
+    "hit_dice": "17d10+34",
+    "hit_points": "127",
+    "id": "ghast_of_leng",
+    "intelligence": "4",
+    "languages": "Void Speech",
+    "name": "Ghast of Leng",
+    "perception": 1,
+    "senses": "darkvision 120 ft., passive Perception 11",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "desc": "The ghast of Leng has advantage on melee attack rolls against any creature that doesn't have all its hp.",
+            "name": "Blood Frenzy"
+        },
+        {
+            "desc": "The ghast of Leng has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        },
+        {
+            "desc": "The ghast of Leng takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks.",
+            "name": "Sunlight Hypersensitivity"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": "15",
+    "subtype": "",
+    "type": "aberration",
+    "wisdom": "9",
+    "wisdom_save": 1
+}

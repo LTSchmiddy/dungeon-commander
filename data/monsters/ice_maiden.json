@@ -1,0 +1,98 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The frost maiden makes two ice dagger attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 3) piercing damage plus 3 (1d6) cold damage.",
+            "name": "Ice Dagger"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The ice maiden adopts the form of a swirling snow cloud. Her stats are identical to an air elemental that deals cold damage instead of bludgeoning.",
+            "name": "Flurry-Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Ice and snow hinder her opponent's movement, as the entangle spell (DC 17).",
+            "name": "Icy Entangle"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "An ice maiden may kiss a willing individual, freezing the target's heart. The target falls under the sway of a dominate spell, his or her alignment shifts to LE, and he or she gains immunity to cold. The ice maiden can have up to three such servants at once. The effect can be broken by dispel magic (DC 17), greater restoration, or the kiss of someone who loves the target.",
+            "name": "Kiss of the Frozen Heart"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "In a snowy environment, the ice maiden attempts to blind all creatures within 30 feet of herself. Those who fail a DC 17 Charisma saving throw are blinded for 1 hour. Targets that are immune to cold damage are also immune to this effect.",
+            "name": "Snowblind Burst"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 23,
+    "charisma_save": 9,
+    "constitution": 15,
+    "constitution_save": 5,
+    "damage_immunities": "cold",
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
+    "deception": 9,
+    "dexterity": 17,
+    "hit_dice": "13d8+26",
+    "hit_points": 84,
+    "id": "ice_maiden",
+    "intelligence": 19,
+    "languages": "Common, Giant, Sylvan",
+    "name": "Ice Maiden",
+    "persuasion": 9,
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Cold air surrounds the ice maiden. Small non-magical flames are extinguished in her presence and water begins to freeze. Unprotected characters spending more than 10 minutes within 15 feet of her must succeed on a DC 15 Constitution saving throw or suffer as if exposed to severe cold. Spells that grant protection from cold damage are targeted by an automatic dispel magic effect.",
+            "name": "Chilling Presence"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Ice maidens see perfectly in snowy conditions, including driving blizzards, and are immune to snow blindness.",
+            "name": "Cold Eyes"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Ice maidens move across icy and snowy surfaces without penalty.",
+            "name": "Ice Walk"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "In snowy environments, the ice maiden can turn invisible as a bonus action.",
+            "name": "Snow Invisibility"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The ice maiden has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the ice maiden's innate spellcasting ability is Charisma (spell save DC 17). She can innately cast the following spells:\n\nat will: chill touch, detect magic, light, mage hand, prestidigitation, resistance\n\n5/day each: endure elements (cold only), fear, fog cloud, misty step\n\n3/day each: alter self, protection from energy, sleet storm\n\n1/day: ice storm",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": 12,
+    "subtype": "",
+    "type": "fey",
+    "vulnerable": "fire",
+    "wisdom": 13
+}

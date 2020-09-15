@@ -1,0 +1,46 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d6+1",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
+            "name": "Proboscis"
+        },
+        {
+            "desc": "A 20-foot radius cloud of smoldering ash disperses from the sootwing. Each creature in that area must make a DC 11 Constitution saving throw. On a failure, a creature takes 4 (1d8) fire damage and is blinded until the end of its next turn. On a success, a creature takes half the damage and isn't blinded.",
+            "name": "Sooty Wings (1/Day)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "11",
+    "challenge_rating": "1/4",
+    "charisma": "7",
+    "constitution": "12",
+    "damage_immunities": "fire",
+    "dexterity": "12",
+    "hit_dice": "3d6+3",
+    "hit_points": "13",
+    "id": "sootwing",
+    "intelligence": "3",
+    "languages": "-",
+    "name": "Sootwing",
+    "perception": 2,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The giant moth has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Antennae"
+        }
+    ],
+    "speed": "25 ft., fly 30 ft.",
+    "speed_json": {
+        "fly": 30,
+        "walk": 25
+    },
+    "stealth": 3,
+    "strength": "11",
+    "subtype": "",
+    "type": "beast",
+    "wisdom": "10"
+}

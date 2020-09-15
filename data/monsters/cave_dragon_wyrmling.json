@@ -1,0 +1,59 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage plus 3 (1d6) poison damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon exhales a cone of black poison gas in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 14 (4d6) poison damage on a failed save and the target is poisoned if it is a creature. The poisoned condition lasts until the target takes a long or short rest or removes the condition with lesser restoration. If the save is successful, the target takes half the damage and does not become poisoned.",
+            "name": "Poison Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 12,
+    "charisma_save": 3,
+    "condition_immunities": "poisoned",
+    "constitution": 17,
+    "constitution_save": 5,
+    "damage_immunities": "acid, poison, thunder",
+    "dexterity": 12,
+    "dexterity_save": 3,
+    "hit_dice": "10d8+30",
+    "hit_points": 75,
+    "id": "cave_dragon_wyrmling",
+    "intelligence": 8,
+    "languages": "Draconic",
+    "name": "Cave Dragon Wyrmling",
+    "perception": 2,
+    "senses": "blindsight 120 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The cave dragon can burrow through solid rock at half its burrowing speed and leaves a 5-foot wide, 5-foot high tunnel in its wake.",
+            "name": "Tunneler"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the dragon's innate spellcasting ability is Charisma. It can innately cast the following spell, requiring no material components:\n\n3/day: darkness",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "30 ft., burrow 20 ft., fly 20 ft.",
+    "speed_json": {
+        "burrow": 20,
+        "fly": 20,
+        "walk": 30
+    },
+    "stealth": 5,
+    "strength": 19,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 10
+}

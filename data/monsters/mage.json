@@ -1,0 +1,67 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 2,
+            "damage_dice": "1d4",
+            "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+            "name": "Dagger"
+        }
+    ],
+    "alignment": "any alignment",
+    "arcana": 6,
+    "armor_class": 12,
+    "armor_desc": "15 with _mage armor_",
+    "challenge_rating": "6",
+    "charisma": 11,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 14,
+    "history": 6,
+    "hit_dice": "9d8",
+    "hit_points": 40,
+    "id": "mage",
+    "intelligence": 17,
+    "intelligence_save": 6,
+    "languages": "any four languages",
+    "name": "Mage",
+    "senses": "passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The mage has the following wizard spells prepared:\n\n\u2022 Cantrips (at will): fire bolt, light, mage hand, prestidigitation\n\u2022 1st level (4 slots): detect magic, mage armor, magic missile, shield\n\u2022 2nd level (3 slots): misty step, suggestion\n\u2022 3rd level (3 slots): counterspell, fireball, fly\n\u2022 4th level (3 slots): greater invisibility, ice storm\n\u2022 5th level (1 slot): cone of cold",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "spells": [
+        "fire bolt",
+        "light",
+        "mage hand",
+        "prestidigitation",
+        "detect magic",
+        "mage armor",
+        "magic missile",
+        "shield",
+        "misty step",
+        "suggestion",
+        "counterspell",
+        "fireball",
+        "fly",
+        "greater invisibility",
+        "ice storm",
+        "cone of cold"
+    ],
+    "strength": 9,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 12,
+    "wisdom_save": 4
+}

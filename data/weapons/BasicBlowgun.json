@@ -1,0 +1,15 @@
+{
+    "ability": "dexterity",
+    "attack_bonus": 0,
+    "base_damage": "1",
+    "class": "Blowgun",
+    "cost": "10 gp",
+    "damage_bonus": 0,
+    "damage_type": "p",
+    "features_applied": false,
+    "id": "BasicBlowgun",
+    "is_finesse": false,
+    "name": "Blowgun",
+    "properties": "Ammunition (range 25/100), loading",
+    "weight": 1
+}

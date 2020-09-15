@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d8",
+            "desc": "Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 1 piercing damage plus 9 (2d8) lightning damage. If the attack misses, the target still takes 4 (1d8) lightning damage. Whether the attack hits or misses its intended target, every other creature within 10 feet of the target takes 9 (2d8) lightning damage, or half damage with a successful DC 14 Dexterity saving throw.",
+            "name": "Lightning Dart"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": 14,
+    "constitution": 14,
+    "damage_immunities": "lightning, thunder",
+    "damage_resistances": "piercing from nonmagical weapons",
+    "dexterity": 18,
+    "dexterity_save": 7,
+    "hit_dice": "11d4+22",
+    "hit_points": 38,
+    "id": "spire_walker",
+    "intelligence": 11,
+    "languages": "Common, Sylvan",
+    "name": "Spire Walker",
+    "senses": "passive Perception $1",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A creature that hits the spire walker with a melee attack using a metal weapon takes 5 (1d10) lightning damage.",
+            "name": "Energized Body"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the spire walker's innate spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). The spire walker can innately cast the following spells, requiring no material components:\n\nat will: produce spark (as the cantrip produce flame, but it does lightning damage)\n\n3/day each: dancing lights, feather fall, invisibility\n\n1/day each: faerie fire, thunderwave",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The spire walker can use 10 feet of its movement to step magically from its position to the point of a steeple, mast, or other spire-like feature that is in view within 30 feet. The spire walker has advantage on Dexterity (Acrobatics) checks and Dexterity saving throws while it is standing on a steeple or any similar narrow, steep structure or feature.",
+            "name": "Steeple Step"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "strength": 3,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 10
+}

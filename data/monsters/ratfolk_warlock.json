@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4+3",
+            "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Dagger"
+        },
+        {
+            "attack_bonus": 1,
+            "damage_dice": "1d6-1",
+            "desc": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage or 3 (1d8 - 1) bludgeoning damage if used with two hands.",
+            "name": "Quarterstaff"
+        },
+        {
+            "desc": "The ratfolk warlock causes tendrils of shadow to reach out from its body toward all creatures within 10 feet of it. Each creature in the area must succeed on a DC 13 Wisdom saving throw or be restrained by the tendrils until the end of the ratfolk warlock's next turn.",
+            "name": "Darken"
+        }
+    ],
+    "alignment": "any alignment",
+    "arcana": 4,
+    "armor_class": "13",
+    "armor_desc": "16 with mage armor",
+    "challenge_rating": "1",
+    "charisma": "17",
+    "charisma_save": 5,
+    "constitution": "12",
+    "deception": 5,
+    "dexterity": "16",
+    "hit_dice": "6d6+6",
+    "hit_points": "27",
+    "id": "ratfolk_warlock",
+    "intelligence": "14",
+    "languages": "Common",
+    "name": "Ratfolk Warlock",
+    "perception": 3,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The ratfolk warlock can move through the space of any Medium or larger creature.",
+            "name": "Nimbleness"
+        },
+        {
+            "desc": "The ratfolk has advantage on attack rolls against a creature if at least one of the ratfolk's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        },
+        {
+            "desc": "The ratfolk warlock's innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\nAt will: dancing lights, eldritch blast, fire bolt, mage armor, mage hand, minor illusion, poison spray, speak with animals\n3/day each: command, darkness, hellish rebuke\n1/day each: blindness/deafness, hold person",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "25 ft., swim 10 ft.",
+    "speed_json": {
+        "swim": 10,
+        "walk": 25
+    },
+    "strength": "8",
+    "subtype": "ratfolk",
+    "type": "humanoid",
+    "wisdom": "12",
+    "wisdom_save": 3
+}

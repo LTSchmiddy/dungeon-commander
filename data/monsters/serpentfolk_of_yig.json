@@ -1,0 +1,64 @@
+{
+    "actions": [
+        {
+            "desc": "The serpentfolk makes two attacks: one with its bite and one with its scimitar.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage plus 3 (1d6) poison damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
+            "name": "Scimitar"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6+2",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Shortbow"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": "12",
+    "challenge_rating": "1",
+    "charisma": "14",
+    "charisma_save": 4,
+    "condition_immunities": "poisoned",
+    "constitution": "11",
+    "damage_immunities": "poison",
+    "deception": 6,
+    "dexterity": "14",
+    "hit_dice": "9d8",
+    "hit_points": "40",
+    "id": "serpentfolk_of_yig",
+    "intelligence": "14",
+    "languages": "Abyssal, Common, Draconic, Infernal, Void Speech",
+    "name": "Serpentfolk of Yig",
+    "perception": 2,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The serpentfolk has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "desc": "The serpentfolk's innate spellcasting ability is Charisma (spell save DC 12). The serpentfolk can innately cast the following spells, requiring no material components:\n3/day each: charm person, disguise self",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 4,
+    "strength": "11",
+    "subtype": "",
+    "type": "humanoid",
+    "wisdom": "11"
+}

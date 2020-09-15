@@ -1,0 +1,71 @@
+{
+    " Intimidation": 5,
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The black knight commander makes two melee attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft, one target. Hit: 8 (1d6 + 5) bludgeoning damage.",
+            "name": "Mace"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "1d12",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 11 (1d12 + 5) piercing damage.",
+            "name": "Lance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The black knight commander lets loose a terrifying cry and makes one melee attack at the end of a charge. Whether the attack hits or misses, all enemies within 15 feet of the target and aware of the black knight commander's presence must succeed on a DC 13 Wisdom saving throw or become frightened for 1 minute. A frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "name": "Frightful Charge (Recharges after a Short or Long Rest)"
+        }
+    ],
+    "alignment": "lawful evil",
+    "animal Handling": 4,
+    "armor_class": 18,
+    "armor_desc": "plate",
+    "athletics": 7,
+    "challenge_rating": "5",
+    "charisma": 15,
+    "charisma_save": 5,
+    "constitution": 14,
+    "dexterity": 10,
+    "hit_dice": "12d8+24",
+    "hit_points": 78,
+    "id": "black_knight_commander",
+    "intelligence": 12,
+    "languages": "any two languages",
+    "name": "Black Knight Commander",
+    "senses": "passive Perception $1",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If the black knight commander is mounted and moves at least 30 feet in a straight line toward a target and then hits it with a melee attack on the same turn, the target takes an extra 10 (3d6) damage.",
+            "name": "Charge"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The black knight commander and allies within 10 feet of the commander add its Charisma modifier to weapon damage rolls (included in damage below).",
+            "name": "Hateful Aura"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The black knight commander's weapon attacks are made with magical (+1) weapons.",
+            "name": "Magic Weapons"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 18,
+    "strength_save": 7,
+    "type": "Humanoid (Any Race)",
+    "wisdom": 13,
+    "wisdom_save": 4
+}

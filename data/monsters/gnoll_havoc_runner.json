@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The gnoll makes one bite attack and two battleaxe attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage or 8 (1d10 + 3) slashing damage if used in two hands.",
+            "name": "Battleaxe"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armor_desc": "chain shirt",
+    "athletics": 5,
+    "challenge_rating": "3",
+    "charisma": 9,
+    "constitution": 14,
+    "dexterity": 14,
+    "hit_dice": "9d8+18",
+    "hit_points": 58,
+    "id": "gnoll_havoc_runner",
+    "intelligence": 8,
+    "languages": "Gnoll",
+    "name": "Gnoll Havoc Runner",
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If the gnoll attacks two creatures in the same turn, the first target has disadvantage on attack rolls until the end of its next turn.",
+            "name": "Harrying Attacks"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The gnoll can Dash or Disengage as a bonus action.",
+            "name": "Lightning Lope"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The gnoll has advantage on its attack rolls against a target if at least one of the gnoll's allies is within 5 feet of the target and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 16,
+    "subtype": "gnoll",
+    "type": "humanoid",
+    "wisdom": 12
+}

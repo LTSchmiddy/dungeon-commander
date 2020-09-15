@@ -1,0 +1,60 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The amphiptere makes one bite attack and one stinger attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d6 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 7 (1d6 + 4) piercing damage plus 10 (3d6) poison damage, and the target must make a successful DC 13 Constitution saving throw or be poisoned for 1 hour.",
+            "name": "Stinger"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": 6,
+    "constitution": 17,
+    "dexterity": 18,
+    "hit_dice": "8d8+24",
+    "hit_points": 60,
+    "id": "amphiptere",
+    "intelligence": 2,
+    "languages": "-",
+    "name": "Amphiptere",
+    "perception": 5,
+    "senses": "blindsight 10 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The amphiptere doesn't provoke an opportunity attack when it flies out of an enemy's reach.",
+            "name": "Flyby"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Up to two amphipteres can share the same space at the same time. The amphiptere has advantage on melee attack rolls if it is sharing its space with another amphiptere that isn't incapacitated.",
+            "name": "Swarming"
+        }
+    ],
+    "speed": "20 ft., climb 20 ft., fly 60 ft., swim 20 ft.",
+    "speed_json": {
+        "climb": 20,
+        "fly": 60,
+        "swim": 20,
+        "walk": 20
+    },
+    "strength": 11,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 16
+}

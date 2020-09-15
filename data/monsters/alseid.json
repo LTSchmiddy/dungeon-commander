@@ -1,0 +1,50 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d6",
+            "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.",
+            "name": "Spear"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6+3",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "name": "Shortbow"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 14,
+    "armor_desc": "leather armor",
+    "challenge_rating": "1/2",
+    "charisma": 8,
+    "constitution": 12,
+    "dexterity": 17,
+    "hit_dice": "9d8+9",
+    "hit_points": 49,
+    "id": "alseid",
+    "intelligence": 8,
+    "languages": "Common, Elvish, Sylvan",
+    "name": "Alseid",
+    "nature": 3,
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "When in a forest, alseid leave no tracks and automatically discern true north.",
+            "name": "Woodfriend"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "stealth": 5,
+    "strength": 13,
+    "subtype": "",
+    "survival": 5,
+    "type": "monstrosity",
+    "wisdom": 16
+}

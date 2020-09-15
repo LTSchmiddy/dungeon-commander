@@ -1,0 +1,74 @@
+{
+    "acrobatics": 6,
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The coral drake makes one bite attack, one claw attack, and one stinger attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "4d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 4) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage, and the target must succeed on a DC 15 Constitution saving throw or take 7 (2d6) poison damage at the start of each of its turns for 4 rounds. The creature can repeat the saving throw at the end of its turns, ending the effect on itself on a success.",
+            "name": "Stinger"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Coral drakes nurture their offspring in specialized throat sacs. They can pressurize these sacs to spew forth a 15-foot cone of spawn. Each target in this area takes 21 (6d6) piercing damage from thousands of tiny bites and is blinded for 1d4 rounds; a successful DC 15 Dexterity saving throw reduces the damage by half and negates the blindness.",
+            "name": "Breath Weapon (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "7",
+    "charisma": 10,
+    "condition_immunities": "paralyzed, poisoned, prone, unconscious",
+    "constitution": 18,
+    "damage_resistances": "cold",
+    "dexterity": 1,
+    "dexterity_save": 6,
+    "hit_dice": "15d8+60",
+    "hit_points": 127,
+    "id": "coral_drake",
+    "intelligence": 10,
+    "languages": "Draconic",
+    "name": "Coral Drake",
+    "perception": 4,
+    "senses": "darkvision 120 ft., passive Perception 17",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A coral drake's coloration and shape lend to its stealth, granting the creature advantage on all Stealth checks while it's underwater.",
+            "name": "Camouflage"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The coral drake can breathe only underwater.",
+            "name": "Water Breathing"
+        }
+    ],
+    "speed": "30 ft., swim 60 ft.",
+    "speed_json": {
+        "swim": 60,
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": 19,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 13
+}

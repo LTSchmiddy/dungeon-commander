@@ -1,0 +1,77 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The vrock makes two attacks: one with its beak and one with its talons.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 3,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.",
+            "name": "Beak"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 3,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) slashing damage.",
+            "name": "Talons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A 15-foot-radius cloud of toxic spores extends out from the vrock. The spores spread around corners. Each creature in that area must succeed on a DC 14 Constitution saving throw or become poisoned. While poisoned in this way, a target takes 5 (1d10) poison damage at the start of each of its turns. A target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Emptying a vial of holy water on the target also ends the effect on it.",
+            "name": "Spores (Recharge 6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The vrock emits a horrific screech. Each creature within 20 feet of it that can hear it and that isn't a demon must succeed on a DC 14 Constitution saving throw or be stunned until the end of the vrock's next turn.",
+            "name": "Stunning Screech (1/Day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The demon chooses what to summon and attempts a magical summoning.\nA vrock has a 30 percent chance of summoning 2d4 dretches or one vrock.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+            "name": "Variant: Summon Demon (1/Day)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 8,
+    "charisma_save": 2,
+    "condition_immunities": "poisoned",
+    "constitution": 18,
+    "damage_immunities": "poison",
+    "damage_resistances": "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "dexterity_save": 5,
+    "group": "Demons",
+    "hit_dice": "11d10+44",
+    "hit_points": 104,
+    "id": "vrock",
+    "intelligence": 8,
+    "languages": "Abyssal, telepathy 120 ft.",
+    "name": "Vrock",
+    "senses": "darkvision 120 ft., passive Perception 11",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The vrock has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "40 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 40
+    },
+    "strength": 17,
+    "subtype": "demon",
+    "type": "fiend",
+    "wisdom": 13,
+    "wisdom_save": 4
+}

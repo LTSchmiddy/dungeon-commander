@@ -1,0 +1,61 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "arcana": 5,
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/2",
+    "charisma": 12,
+    "charisma_save": 3,
+    "condition_immunities": "paralyzed, unconscious",
+    "constitution": 13,
+    "dexterity": 12,
+    "dexterity_save": 3,
+    "history": 5,
+    "hit_dice": "8d4+8",
+    "hit_points": 28,
+    "id": "lantern_dragonette",
+    "intelligence": 16,
+    "languages": "Common, Draconic, Elvish, Primordial; telepathy 60 ft.",
+    "name": "Lantern Dragonette",
+    "nature": 5,
+    "perception": 3,
+    "religion": 5,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If the dragonette has eaten 8 ounces of candle wax in the last 24 hours, it can emit a continual flame for 3d20 minutes. The continual flame can be dispelled, but the dragonette can resume it with a bonus action except in areas of magical darkness, if the time limit hasn't expired.",
+            "name": "Lantern Belly (1/Day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the lantern dragonette's innate spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\n1/day each: burning hands, color spray, scorching ray",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A lantern dragonette in an area of magical darkness loses its lantern belly ability and its ability to fly. It also suffers 1d6 radiant damage for every minute of exposure.",
+            "name": "Vulnerable to Magical Darkness"
+        }
+    ],
+    "speed": "15 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "hover": true,
+        "walk": 15
+    },
+    "strength": 7,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 13,
+    "wisdom_save": 3
+}

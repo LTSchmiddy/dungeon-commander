@@ -1,0 +1,54 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Shortspear"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The behtu exhales fire in a 15-foot cone. Each creature in that area takes 21 (5d8) fire damage, or half damage with a successful DC 13 Dexterity saving throw.",
+            "name": "Fire Breath (Recharge 6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Behtu war parties carry 1d6 vials of ichorous infusions. They often ingest an infusion before an ambush. For the next 2d6 rounds, the behtus gain a +4 bonus to their Strength and Constitution scores and quadruple their base speed (including their climb speed). Behtus also take a -4 penalty to their Intelligence and Wisdom scores for the duration of the infusion. A non-behtu character who ingests a behtu infusion becomes poisoned and takes 10 (3d6) poison damage; a successful DC 14 Constitution saving throw against poison reduces damage to half and negates the poisoned condition.",
+            "name": "Ichorous Infusions"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 14,
+    "armor_desc": "hide armor",
+    "athletics": 5,
+    "challenge_rating": "2",
+    "charisma": 7,
+    "constitution": 16,
+    "damage_resistances": "cold, fire, lightning",
+    "dexterity": 16,
+    "dexterity_save": 5,
+    "hit_dice": "8d6+24",
+    "hit_points": 52,
+    "id": "behtu",
+    "intelligence": 12,
+    "languages": "Behtu, Common, Infernal",
+    "name": "Behtu",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Small",
+    "speed": "20 ft., climb 20 ft.",
+    "speed_json": {
+        "climb": 20,
+        "walk": 20
+    },
+    "stealth": 5,
+    "strength": 17,
+    "subtype": "",
+    "type": "humanoid",
+    "wisdom": 11
+}

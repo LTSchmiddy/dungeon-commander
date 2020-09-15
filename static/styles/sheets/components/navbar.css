@@ -1,0 +1,20 @@
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5 !important;
+}
+
+@media (min-width: 590px) {
+  .main-nav {
+    height: 40px;
+  }
+}
+@media (max-width: 590px) {
+  .main-nav {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=navbar.css.map */

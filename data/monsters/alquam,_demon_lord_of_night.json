@@ -1,0 +1,120 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "Alquam makes one bite attack, one wing attack, and one talons attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 11,
+            "damage_dice": "4d10",
+            "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 26 (4d10 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 11,
+            "damage_dice": "3d8",
+            "desc": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 17 (3d8 + 4) bludgeoning damage and the target must succeed on a DC 17 Strength saving throw or be knocked prone.",
+            "name": "Wing"
+        },
+        {
+            "attack_bonus": 11,
+            "damage_dice": "3d6",
+            "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) slashing damage and the target is grappled and restrained (escape DC 17). Alquam can grapple one creature at a time if it is on the ground or two if it is flying. Talons grappling a creature can't attack any other creature.",
+            "name": "Talons"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 20,
+    "armor_desc": "natural armor",
+    "challenge_rating": "21",
+    "charisma": 16,
+    "condition_immunities": "charmed, exhaustion, frightened, poisoned",
+    "constitution": 23,
+    "constitution_save": 13,
+    "damage_immunities": "cold, poison; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "damage_resistances": "fire, lightning",
+    "deception": 10,
+    "dexterity": 19,
+    "dexterity_save": 11,
+    "hit_dice": "28d12+168",
+    "hit_points": 350,
+    "id": "alquam,_demon_lord_of_night",
+    "intelligence": 16,
+    "languages": "all, telepathy 120 ft.",
+    "legendary_actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "Alquam makes one attack.",
+            "name": "Attack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Alquam flies half its speed without provoking opportunity attacks.",
+            "name": "Move"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Alquam radiates magical darkness in a 30.foot radius. The darkness lasts until the start of Alquam's next turn.",
+            "name": "Shroud (2 actions)"
+        }
+    ],
+    "legendary_desc": "Alquam can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Alquam regains spent legendary actions at the start of its turn.",
+    "name": "Alquam, Demon Lord Of Night",
+    "perception": 12,
+    "senses": "truesight 120 ft., passive Perception 22",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Alquam can take the Hide action as a bonus action on each turn while it is in dim light or darkness, even if it is being observed.",
+            "name": "Born of Darkness"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "alquam's innate spellcasting ability is Charisma (save DC 18). It can innately cast the following spells without material components.\n\nat will: darkness, silence\n\n3/day each: fear, invisibility, teleport\n\n1/day: circle of death",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Alquam has advantage on Wisdom (Perception) checks that rely on sight.",
+            "name": "Keen Senses"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If Alquam fails a saving throw, it can choose to succeed instead.",
+            "name": "Legendary Resistance (3/day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Alquam has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Alquam's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "on initiative count 20 (losing initiative ties), Alquam takes a lair action to cause one of the following effects; Alquam can't use the same effect two rounds in a row:\n\n- Alquam snuffs all light sources within the lair. Spells that create light are dispelled, mundane light sources are extinguished, and magical light sources are suppressed. Even light created by artifacts is reduced to dim light with half its normal radius of illumination. This lasts until initiative count 20 on the following round.\n\n- Haunting, maddening music emanates from a point Alquam can see. Creatures within 50 feet of the origin that can hear the music must make a DC 15 Wisdom saving throw. Those that fail are charmed, incapacitated, and have their speed reduced to 0 until they take damage or until initiative count 20 on the following round.\n\n- Black tendrils writhe around up to three creatures Alquam can see within 100 feet. The creatures must succeed on a DC 15 Strength saving throw or be restrained until initiative count 20 on the following round.",
+            "name": "Alquam's Lair"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the region containing Alquam's lair is warped by the demon lord's magic, which creates one or more of the following effects:\n\n- Within 1 mile of the lair all light sources except artifacts shed light to only half the usual radius.\n\n- Owls and other nocturnal beasts become enraged and hostile within 5 miles of the lair, attacking intruders individually and in swarms.\n\n- Within 1 mile of the lair, Alquam can cast his senses into any area of dim light or darkness as if using clairvoyance.\n\nif Alquam dies, conditions in the area surrounding the lair return to normal over the course of 1d10 days.",
+            "name": "Regional Effects"
+        }
+    ],
+    "speed": "20 ft., fly 100 ft.",
+    "speed_json": {
+        "fly": 100,
+        "walk": 20
+    },
+    "stealth": 11,
+    "strength": 14,
+    "subtype": "demon",
+    "type": "fiend",
+    "wisdom": 20,
+    "wisdom_save": 12
+}

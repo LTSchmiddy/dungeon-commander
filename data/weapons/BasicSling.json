@@ -1,0 +1,15 @@
+{
+    "ability": "dexterity",
+    "attack_bonus": 0,
+    "base_damage": "1d4",
+    "class": "Sling",
+    "cost": "1 sp",
+    "damage_bonus": 0,
+    "damage_type": "b",
+    "features_applied": false,
+    "id": "BasicSling",
+    "is_finesse": false,
+    "name": "Sling",
+    "properties": "Ammunition (range 30/120)",
+    "weight": 0
+}

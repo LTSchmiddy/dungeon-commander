@@ -1,0 +1,86 @@
+{
+    "actions": [
+        {
+            "desc": "Gugalanna makes two attacks: one with its horns and one with its kick.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 14,
+            "damage_dice": "5d10+7",
+            "desc": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 34 (5d10 + 7) piercing damage and 14 (4d6) fire damage.",
+            "name": "Horns"
+        },
+        {
+            "attack_bonus": 14,
+            "damage_dice": "2d10+7",
+            "desc": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 18 (2d10 + 7) bludgeoning damage.",
+            "name": "Kick"
+        }
+    ],
+    "alignment": "chaotic good",
+    "armor_class": "18",
+    "armor_desc": "natural armor",
+    "athletics": 14,
+    "challenge_rating": "21",
+    "charisma": "18",
+    "condition_immunities": "charmed, exhaustion, frightened",
+    "constitution": "20",
+    "constitution_save": 12,
+    "damage_immunities": "fire, radiant; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "damage_resistances": "necrotic",
+    "dexterity": "16",
+    "dexterity_save": 10,
+    "hit_dice": "22d12+110",
+    "hit_points": "253",
+    "id": "gugalanna",
+    "insight": 12,
+    "intelligence": "10",
+    "intimidation": 11,
+    "languages": "understands all but can't speak, telepathy 120 ft.",
+    "legendary_actions": [
+        {
+            "desc": "Gugalanna makes a kick attack.",
+            "name": "Kick"
+        },
+        {
+            "desc": "Gugalanna spreads his wings and stomps his hooves, shaking the earth. Each creature within 10 feet of Gugalanna must make a DC 22 Strength saving throw. On a failure, a target takes 18 (2d10 + 7) bludgeoning damage and is pushed 20 feet away from Gugalanna. On a success, a target takes half the damage and isn't pushed. Gugalanna can then fly up to half his flying speed.",
+            "name": "Rearing Stomp (Costs 2 Actions)"
+        },
+        {
+            "desc": "The sun disc floating between Gugalanna's horns flares. Each creature within 30 feet of Gugalanna must make a DC 18 Dexterity saving throw, taking 21 (6d6) fire damage on a failed save, or half as much damage on a successful one.",
+            "name": "Blazing Sun Disc (Costs 2 Actions, Recharge 5-6)"
+        }
+    ],
+    "legendary_desc": "Gugalanna can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Gugalanna regains spent legendary actions at the start of his turn.",
+    "name": "Gugalanna",
+    "senses": "truesight 60 ft., passive Perception 15",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "desc": "Gugalanna doesn't provoke an opportunity attack when it flies out of an enemy's reach.",
+            "name": "Flyby"
+        },
+        {
+            "desc": "Gugalanna has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "desc": "Gugalanna's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        },
+        {
+            "desc": "If Gugalanna moves at least 20 feet straight toward a creature and then hits it with a horns attack on the same turn, that target must succeed on a DC 22 Strength saving throw or be knocked prone. If the target is prone, Gugalanna can make one kick attack against it as a bonus action.",
+            "name": "Trampling Charge"
+        }
+    ],
+    "speed": "60 ft., fly 80 ft.",
+    "speed_json": {
+        "fly": 80,
+        "walk": 60
+    },
+    "strength": "24",
+    "subtype": "",
+    "type": "celestial",
+    "wisdom": "20",
+    "wisdom_save": 12
+}

@@ -1,0 +1,65 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "A child of the briar makes two claw attacks. If both attacks hit the same target, the target is grappled (escape DC 13) and the child of the briar uses its Thorny Grapple on it.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6+3",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage. Every child of the briar can shoot thorns from its mouth.",
+            "name": "Spitdart Tongue (Recharge 4-6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Two children of the briar working together can cast a version of the entangle spell with no components, at will. Both creatures must be within 10 feet of each other, and both must use their action to cast the spell. The entangled area must include at least one of the casters but doesn't need to be centered on either caster. Creatures in the area must make a DC 13 Strength saving throw or be restrained. All children of the briar are immune to the spell's effects.",
+            "name": "Entangle"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A child of the briar's long thorny limbs help it grapple creatures up to Medium size. A grappled creature takes 2 (1d4) piercing damage at the end of the child's turn for as long as it remains grappled.",
+            "name": "Thorny Grapple"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 13,
+    "armor_desc": "",
+    "challenge_rating": "1",
+    "charisma": 14,
+    "constitution": 11,
+    "dexterity": 17,
+    "hit_dice": "20d4",
+    "hit_points": 50,
+    "id": "child_of_the_briar",
+    "intelligence": 13,
+    "languages": "Briarclick, Common, Sylvan",
+    "name": "Child Of The Briar",
+    "perception": 4,
+    "senses": "darkvision 60 ft., passive Perception 14",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Children of the briar count as both plant and fey for any effect related to type.",
+            "name": "Fey Blood"
+        }
+    ],
+    "speed": "20 ft., climb 10 ft.",
+    "speed_json": {
+        "climb": 10,
+        "walk": 20
+    },
+    "stealth": 7,
+    "strength": 6,
+    "subtype": "",
+    "type": "plant",
+    "vulnerable": "fire",
+    "wisdom": 10
+}

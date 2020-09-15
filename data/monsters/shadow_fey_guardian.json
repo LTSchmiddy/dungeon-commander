@@ -1,0 +1,83 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The shadow fey makes two pike attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage.",
+            "name": "Pike"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d6",
+            "desc": "Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage.",
+            "name": "Javelin"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 15,
+    "armor_desc": "chain shirt",
+    "athletics": 6,
+    "challenge_rating": "4",
+    "charisma": 8,
+    "condition_immunities": "charmed, frightened",
+    "constitution": 16,
+    "constitution_save": 5,
+    "dexterity": 14,
+    "hit_dice": "13d10+39",
+    "hit_points": 110,
+    "id": "shadow_fey_guardian",
+    "intelligence": 6,
+    "languages": "Common, Elvish, Umbral",
+    "name": "Shadow Fey Guardian",
+    "perception": 4,
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The shadow fey guardian imposes disadvantage on an attack roll against an ally within 5 feet. The guardian must be wielding a melee weapon to use this reaction.",
+            "name": "Protect"
+        }
+    ],
+    "senses": "darkvision 60 ft., passive Perception 14",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The shadow fey guardian has advantage on saving throws against being charmed, and magic can't put it to sleep",
+            "name": "Fey Ancestry"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the shadow fey's innate spellcasting ability is Charisma. It can cast the following spells innately, requiring no material components.\n\n1/day: misty step (when in shadows, dim light, or darkness only)",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The shadow fey has advantage on Wisdom (Perception) checks, and magical darkness does not inhibit its darkvision.",
+            "name": "Shadow's Vigil"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in sunlight, the shadow fey has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight.",
+            "name": "Sunlight Sensitivity"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The shadow fey has advantage on Intelligence (Arcana) checks made to know about shadow roads and shadow magic spells or items.",
+            "name": "Traveler in Darkness"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 18,
+    "strength_save": 6,
+    "subtype": "elf",
+    "type": "humanoid",
+    "wisdom": 14
+}

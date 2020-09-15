@@ -1,0 +1,95 @@
+{
+    "acrobatics": 14,
+    "actions": [
+        {
+            "desc": "The Monkey King makes three golden staff attacks or two golden staff attacks and one tail attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 14,
+            "damage_dice": "2d10+7",
+            "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) bludgeoning damage plus 7 (2d6) radiant damage.",
+            "name": "Golden Staff"
+        },
+        {
+            "attack_bonus": 12,
+            "damage_dice": "4d8",
+            "desc": "Ranged Spell Attack: +12 to hit, range 100 ft., one target. Hit: 18 (4d8) radiant damage. The target must succeed on a DC 18 Charisma saving throw or be stunned until the end of its next turn.",
+            "name": "Enlightened Ray"
+        },
+        {
+            "attack_bonus": 14,
+            "damage_dice": "2d8+7",
+            "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage, and the target must succeed on a DC 22 Dexterity saving throw or be knocked prone.",
+            "name": "Tail"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": "21",
+    "armor_desc": "natural armor",
+    "challenge_rating": "21",
+    "charisma": "17",
+    "condition_immunities": "charmed, frightened, poisoned, stunned",
+    "constitution": "22",
+    "constitution_save": 13,
+    "damage_immunities": "necrotic, poison, radiant",
+    "deception": 10,
+    "dexterity": "24",
+    "dexterity_save": 14,
+    "hit_dice": "25d8+150",
+    "hit_points": "262",
+    "id": "monkey_king",
+    "insight": 12,
+    "intelligence": "16",
+    "languages": "Celestial, Common, Simian",
+    "legendary_actions": [
+        {
+            "desc": "The Monkey King moves up to his speed without provoking opportunity attacks.",
+            "name": "Great Leap"
+        },
+        {
+            "desc": "The Monkey King makes a golden staff attack.",
+            "name": "Quick Staff"
+        },
+        {
+            "desc": "Each creature of the Monkey King's choice within 10 feet of him must make a DC 18 Charisma saving throw, taking 36 (8d8) radiant damage on a failed save, or half as much damage on a successful one.",
+            "name": "Golden Burst (Costs 3 Actions)"
+        }
+    ],
+    "legendary_desc": "The Monkey King can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Monkey King regains spent legendary actions at the start of his turn.",
+    "name": "Monkey King",
+    "perception": 12,
+    "reactions": [
+        {
+            "desc": "When the Monkey King is hit by a weapon attack, he gains resistance to bludgeoning, piercing, and slashing damage until the end of that turn.",
+            "name": "Drunken Dodge"
+        }
+    ],
+    "senses": "truesight 120 ft., passive Perception 22",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "If the Monkey King fails a saving throw, he can choose to succeed instead.",
+            "name": "Legendary Resistance (3/Day)"
+        },
+        {
+            "desc": "The Monkey King has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "desc": "The Monkey King can communicate with primates as if they shared a language. In addition, he can control primates with an Intelligence of 8 or lower that are within 120 feet of him.",
+            "name": "Simian Affinity"
+        }
+    ],
+    "speed": "60 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 60
+    },
+    "stealth": 14,
+    "strength": "19",
+    "subtype": "",
+    "type": "celestial",
+    "wisdom": "21",
+    "wisdom_save": 12
+}

@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "1d6",
+    "class": "Trident",
+    "cost": "5 gp",
+    "damage_bonus": 0,
+    "damage_type": "p",
+    "features_applied": false,
+    "id": "BasicTrident",
+    "is_finesse": false,
+    "name": "Trident",
+    "properties": "Thrown (range 20/60), versatile (1d8)",
+    "weight": 4
+}

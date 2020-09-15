@@ -1,0 +1,61 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The sarcophagus slime uses its Frightful Presence, uses its Corrupting Gaze, and makes two slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) bludgeoning damage plus 14 (4d6) acid damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Each creature of the sarcophagus slime's choice that is within 60 feet of the sarcophagus slime and aware of it must succeed on a DC 15 Wisdom saving throw or become frightened for 1 minute. A frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the sarcophagus slime's Frightful Presence for the next 24 hours.",
+            "name": "Frightful Presence"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The sarcophagus slime targets one creature it can see within 30 feet of it. If the target can see the sarcophagus slime, the target must succeed on a DC 15 Constitution saving throw or take 14 (4d6) necrotic damage and its hit point maximum is reduced by an amount equal to the necrotic damage taken. If this effect reduces a creature's hit point maximum to 0, the creature dies and its corpse becomes a sarcophagus slime within 24 hours. This reduction lasts until the creature finishes a long rest or until it is affected by greater restoration or comparable magic.",
+            "name": "Corrupting Gaze"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 11,
+    "armor_desc": "",
+    "challenge_rating": "5",
+    "charisma": 12,
+    "charisma_save": 4,
+    "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, poisoned, prone",
+    "constitution": 18,
+    "damage_immunities": "poison",
+    "damage_resistances": "acid, necrotic",
+    "dexterity": 12,
+    "hit_dice": "14d8+42",
+    "hit_points": 105,
+    "id": "sarcophagus_slime",
+    "intelligence": 3,
+    "languages": "understands the languages of its creator but can't speak",
+    "name": "Sarcophagus Slime",
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The sarcophagus slime can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Amorphous"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "stealth": 4,
+    "strength": 14,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 12,
+    "wisdom_save": 4
+}

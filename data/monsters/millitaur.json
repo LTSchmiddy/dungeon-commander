@@ -1,0 +1,43 @@
+{
+    "acrobatics": 4,
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The millitaur makes two handaxe attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage plus 2 (1d4) poison damage.",
+            "name": "Handaxe"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": 10,
+    "condition_immunities": "prone",
+    "constitution": 16,
+    "damage_resistances": "poison; bludgeoning and slashing from nonmagical weapons",
+    "dexterity": 14,
+    "hit_dice": "10d10+30",
+    "hit_points": 85,
+    "id": "millitaur",
+    "intelligence": 8,
+    "languages": "Common",
+    "name": "Millitaur",
+    "senses": "darkvision 60 ft., tremorsense 30 ft., passive Perception 11",
+    "size": "Large",
+    "speed": "40 ft., burrow 20 ft., climb 30 ft.",
+    "speed_json": {
+        "burrow": 20,
+        "climb": 30,
+        "walk": 40
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 12
+}

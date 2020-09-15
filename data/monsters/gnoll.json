@@ -1,0 +1,59 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack.",
+            "name": "Spear"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
+            "name": "Longbow"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armor_desc": "hide armor, shield",
+    "challenge_rating": "1/2",
+    "charisma": 7,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 12,
+    "hit_dice": "5d8",
+    "hit_points": 22,
+    "id": "gnoll",
+    "intelligence": 6,
+    "languages": "Gnoll",
+    "name": "Gnoll",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack.",
+            "name": "Rampage"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 14,
+    "subtype": "gnoll",
+    "type": "humanoid",
+    "wisdom": 10
+}

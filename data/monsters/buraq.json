@@ -1,0 +1,73 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The buraq makes two attacks with its hooves.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage plus 18 (4d8) radiant damage.",
+            "name": "Hooves"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The buraq magically teleports itself and its rider, along with any equipment it is wearing or carrying, to a location the buraq is familiar with, up to 1 mile away.",
+            "name": "Teleport (1/Day)"
+        }
+    ],
+    "alignment": "lawful good",
+    "armor_class": 17,
+    "armor_desc": "",
+    "challenge_rating": "11",
+    "charisma": 20,
+    "charisma_save": 9,
+    "condition_immunities": "charmed, exhaustion, frightened",
+    "constitution": 20,
+    "constitution_save": 9,
+    "damage_resistances": "radiant; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 18,
+    "history": 8,
+    "hit_dice": "16d8+80",
+    "hit_points": 152,
+    "id": "buraq",
+    "intelligence": 18,
+    "languages": "Celestial, Common, Primordial, telepathy 120 ft.",
+    "name": "Buraq",
+    "religion": 8,
+    "senses": "truesight 120 ft., passive Perception 14",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The buraq's attacks are magical. When the buraq hits with its hooves, it deals an extra 4d8 radiant damage (included in the attack).",
+            "name": "Angelic Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the buraq's innate spellcasting ability is Charisma (spell save DC 17). The buraq can innately cast the following spells, requiring no components:\n\nat will: comprehend languages, detect evil and good, holy aura, pass without trace\n\n3/day each: haste, longstrider\n\n1/day each: plane shift, wind walk",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The buraq has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When outdoors at night, a buraq's vision is not limited by nonmagical darkness. Once per month, the buraq can declare it is on a night journey; for the next 24 hours, it can use its Teleport once per round. Its destination must always be in an area of nonmagical darkness within its line of sight. At any point during the night journey, as a bonus action, the buraq can return itself and its rider to the location where it began the night journey.",
+            "name": "Night Journey"
+        }
+    ],
+    "speed": "60 ft., fly 90 ft.",
+    "speed_json": {
+        "fly": 90,
+        "walk": 60
+    },
+    "strength": 15,
+    "subtype": "",
+    "type": "celestial",
+    "wisdom": 18,
+    "wisdom_save": 8
+}

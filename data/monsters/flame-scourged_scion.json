@@ -1,0 +1,62 @@
+{
+    "actions": [
+        {
+            "desc": "The flame-scourged scion makes three tentacle attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d10+4",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage. If the target is a Large or smaller creature, it is grappled (escape DC 16). Until the grapple ends, the target is restrained, the flame-scourged scion can automatically hit the target with its tentacle, and it can't use the same tentacle on another target. The flame-scourged scion can grapple up to two creatures at one time.",
+            "name": "Tentacle"
+        },
+        {
+            "desc": "The flame-scourged scion fills the area around itself with a cloud of burning embers. Each creature within 10 feet of the flame-scourged scion must make a DC 18 Constitution saving throw, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one. The embers die out within moments.",
+            "name": "Embers (Recharge 6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "16",
+    "armor_desc": "natural armor",
+    "challenge_rating": "9",
+    "charisma": "15",
+    "charisma_save": 6,
+    "condition_immunities": "grappled, paralyzed, restrained",
+    "constitution": "22",
+    "constitution_save": 10,
+    "damage_resistances": "fire; slashing from nonmagical attacks",
+    "dexterity": "17",
+    "hit_dice": "10d12+60",
+    "hit_points": "125",
+    "id": "flame-scourged_scion",
+    "insight": 6,
+    "intelligence": "16",
+    "languages": "Common, Deep Speech, Sylvan",
+    "name": "Flame-Scourged Scion",
+    "perception": 6,
+    "senses": "darkvision 60 ft., passive Perception 16",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "desc": "When a flame-scourged scion takes fire damage, it has advantage on its attack rolls until the end of its next turn. If it takes more than 5 fire damage, it has advantage on its attack rolls for 2 rounds.",
+            "name": "Burning Rage"
+        },
+        {
+            "desc": "A flame-scourged scion can see through areas obscured by fire, smoke, and fog without penalty.",
+            "name": "Firesight"
+        },
+        {
+            "desc": "Difficult terrain caused by rocks, sand, or natural vegetation, living or dead, doesn't cost the flamescourged scion extra movement. Its speed can't be reduced by any effect.",
+            "name": "Groundbreaker"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": "19",
+    "subtype": "",
+    "type": "aberration",
+    "wisdom": "6",
+    "wisdom_save": 2
+}

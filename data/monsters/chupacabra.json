@@ -1,0 +1,57 @@
+{
+    "acrobatics": 4,
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) piercing damage, and the chupacabra attaches to the target. While attached, the chupacabra doesn't attack. Instead, at the start of each of the chupacabra's turns, the target loses 6 (1d6 + 3) hp due to blood loss. The chupacabra can detach itself by spending 5 feet of its movement. It does so after the target is reduced to 0 hp. A creature, including the target, can use its action to detach the chupacabra.",
+            "name": "Bite"
+        },
+        {
+            "desc": "The chupacabra fixes its gaze on one creature it can see within 10 feet of it. The target must succeed on a DC 11 Wisdom saving throw or be paralyzed for 1 minute. A paralyzed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the chupacabra's Fearful Gaze for the next 24 hours.",
+            "name": "Fearful Gaze"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "13",
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/2",
+    "charisma": "6",
+    "condition_immunities": "poisoned",
+    "constitution": "12",
+    "dexterity": "15",
+    "hit_dice": "8d6+8",
+    "hit_points": "36",
+    "id": "chupacabra",
+    "intelligence": "3",
+    "languages": "-",
+    "name": "Chupacabra",
+    "perception": 3,
+    "reactions": [
+        {
+            "desc": "When the chupacabra is reduced to less than half of its maximum hp, it releases a foul, sulphurous stench. Each creature within 5 feet of the chupacabra must succeed on a DC 11 Constitution saving throw or be poisoned until the end of its next turn.",
+            "name": "Malodorous Stench"
+        }
+    ],
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The chupacabra has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+            "name": "Keen Hearing and Smell"
+        },
+        {
+            "desc": "With a 10-foot running start, the chupacabra can long jump up to 25 feet.",
+            "name": "Running Leap"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 4,
+    "strength": "16",
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": "12"
+}

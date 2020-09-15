@@ -1,0 +1,69 @@
+{
+    "actions": [
+        {
+            "desc": "The golem makes two slam attacks. If both attacks hit a single living creature, the creature is stunned until the end of its next turn.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d10+3",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) force damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "4d10+3",
+            "desc": "Ranged Spell Attack: +6 to hit, range 120/480 ft., one target. Hit: 25 (4d10 + 3) force damage.",
+            "name": "Force Bolt"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "14",
+    "armor_desc": "natural armor",
+    "challenge_rating": "8",
+    "charisma": "1",
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": "14",
+    "damage_immunities": "acid, cold, fire, lightning, necrotic, poison, psychic, radiant, thunder",
+    "damage_resistances": "bludgeoning, piercing, and slashing from magical weapons",
+    "dexterity": "14",
+    "hit_dice": "12d10+24",
+    "hit_points": "90",
+    "id": "manastorm_golem",
+    "intelligence": "16",
+    "languages": "understands the languages of its creator but can't speak",
+    "name": "Manastorm Golem",
+    "senses": "truesight 120 ft., passive Perception 9",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The manastorm golem can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Amorphous"
+        },
+        {
+            "desc": "Any spell or effect that would alter the golem's form only alters it for 1 round. Afterwards, the manastorm golem returns to its humanoid-shaped cloud form.",
+            "name": "Limited Mutability"
+        },
+        {
+            "desc": "The golem has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "desc": "The golem's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        },
+        {
+            "desc": "The manastorm golem can communicate with its maker via magical whispers at a distance up to 120 feet. Only its master hears these messages and can reply. Its messages go through solid objects but rm are halted by stone, magical silence, a sheet of lead, and similar obstacles. Its voice can travel through keyholes and around corners.",
+            "name": "Mystic Messages"
+        }
+    ],
+    "speed": "60 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 60
+    },
+    "strength": "6",
+    "subtype": "",
+    "type": "construct",
+    "wisdom": "8"
+}

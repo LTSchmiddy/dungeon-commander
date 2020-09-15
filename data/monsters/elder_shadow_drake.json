@@ -1,0 +1,75 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The drake makes one bite attack and one tail slap attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "3d10",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "3d8",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.",
+            "name": "Tail Slap"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The elder shadow drake exhales a ball of black liquid that travels up to 60 feet before exploding into a cloud of frigid black mist with a 20-foot radius. Each creature in that sphere takes 42 (12d6) cold damage, or half damage with a successful DC 15 Constitution saving throw. Within the area of effect, the mist snuffs out nonmagical light sources and dispels magical light of 1st level or lower.",
+            "name": "Stygian Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "7",
+    "charisma": 13,
+    "charisma_save": 4,
+    "condition_immunities": "paralyzed, unconscious",
+    "constitution": 18,
+    "constitution_save": 7,
+    "damage_immunities": "cold",
+    "dexterity": 13,
+    "dexterity_save": 4,
+    "hit_dice": "12d10+48",
+    "hit_points": 114,
+    "id": "elder_shadow_drake",
+    "intelligence": 8,
+    "languages": "Common, Draconic, Umbral",
+    "name": "Elder Shadow Drake",
+    "perception": 5,
+    "senses": "darkvision 120 ft., passive Perception 15",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "In areas of dim light or darkness, an elder shadow drake is treated as invisible. Artificial illumination, such as a lantern or a light or continual flame spell, does not negate this ability; nothing less than true sunlight or a daylight spell does. The drake cannot use its Speed Surge or its Stygian Breath while invisible. An elder shadow drake can suspend or resume this ability at will, so long as the drake is in dim light or darkness.",
+            "name": "Shadow Blend"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "An elder shadow drake can travel between shadows as if by means of a dimension door spell. This magical transport must begin and end in an area of dim light or darkness, and the distance must be no more than 60 feet.",
+            "name": "Shadow Jump (3/Day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The elder shadow drake takes one additional move action on its turn. It can use only one speed surge per round.",
+            "name": "Speed Surge (3/Day)"
+        }
+    ],
+    "speed": "20 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 20
+    },
+    "stealth": 7,
+    "strength": 22,
+    "subtype": "",
+    "type": "dragon",
+    "vulnerable": "radiant",
+    "wisdom": 9
+}

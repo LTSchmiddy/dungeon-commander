@@ -1,0 +1,79 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing or bludgeoning damage.",
+            "name": "Great Sword or Maul"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 30 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 6 (1d12) poison damage and the target is poisoned until the start of the moss lurker's next turn. A successful DC 11 Constitution save halves the poison damage and prevents poisoning.",
+            "name": "Mushroom-Poisoned Javelin"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "vertically",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 100 ft. (vertically), one target. Hit: 10 (3d6) bludgeoning damage.",
+            "name": "Dropped Boulder"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1",
+    "charisma": 10,
+    "condition_immunities": "blind, poisoned",
+    "constitution": 12,
+    "damage_immunities": "fire, poison",
+    "dexterity": 14,
+    "dexterity_save": 4,
+    "hit_dice": "10d6+10",
+    "hit_points": 45,
+    "id": "moss_lurker",
+    "intelligence": 12,
+    "languages": "Giant, Sylvan, Trollkin",
+    "name": "Moss Lurker",
+    "perception": 2,
+    "senses": "blindsight 60 ft., passive Perception 12",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A moss lurker has advantage on Dexterity (Stealth) checks to hide in forested or swampy terrain.",
+            "name": "Camouflage"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While moss lurkers can use heavy weapons, they have disadvantage while wielding them.",
+            "name": "Love of Heavy Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The moss lurker has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+            "name": "Keen Hearing and Smell"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A moss lurker can contaminate liquids or food with poison. Someone who consumes the contaminated substance must make a successful DC 11 Constitution saving throw or become poisoned for 1 hour. When the poison is introduced, the moss lurker can choose a poison that also causes the victim to fall unconscious, or to become paralyzed while poisoned in this way. An unconscious creature wakes if it takes damage, or if a creature uses an action to shake it awake.",
+            "name": "Poisoned Gifts"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 4,
+    "strength": 14,
+    "strength_save": 4,
+    "subtype": "",
+    "type": "humanoid",
+    "wisdom": 10
+}

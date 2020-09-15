@@ -1,0 +1,68 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage, or 7 (1d8 + 3) piercing damage if used with two hands to make a melee attack.",
+            "name": "Assegai"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d8",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 12 (2d8 + 3) piercing damage, and the thorn explodes in a 10-foot-radius sphere centered on the target. Every creature in the affected area other than the original target takes 4 (1d8) piercing damage, or half damage with a successful DC 13 Dexterity saving throw.",
+            "name": "Hurl Thorns"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "armor_class": 13,
+    "armor_desc": "studded leather armor",
+    "challenge_rating": "2",
+    "charisma": 8,
+    "condition_immunities": "blinded, deafened",
+    "constitution": 18,
+    "dexterity": 12,
+    "hit_dice": "4d8+16",
+    "hit_points": 34,
+    "id": "vine_lord's_tendril_puppet",
+    "intelligence": 6,
+    "languages": "-",
+    "name": "Vine Lord's Tendril Puppet",
+    "senses": "blindsight 30 ft. (blind beyond this radius), passive Perception 8",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Tendril puppets see almost nothing beyond 30 feet away.",
+            "name": "Poor Vision"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The tendril puppet regains 5 hit points at the start of its turn if it has at least 1 hit point and is in jungle terrain.",
+            "name": "Regeneration"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Within a vine lord's forest or jungle, the tendril puppet's blindsight extends to 60 feet, it succeeds on all Wisdom (Perception) checks, and it can't be surprised.",
+            "name": "Root Mind"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The tendril puppet ignores movement restrictions and damage caused by natural undergrowth.",
+            "name": "Green Strider"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The tendril puppet has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 16,
+    "subtype": "",
+    "type": "plant",
+    "vulnerable": "fire",
+    "wisdom": 6
+}

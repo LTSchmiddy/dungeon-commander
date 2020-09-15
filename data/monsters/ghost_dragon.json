@@ -1,0 +1,68 @@
+{
+    "actions": [
+        {
+            "desc": "The ghost dragon makes one claw attack and one withering bite attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d6+4",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d10+4",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage, and the target must succeed on a DC 17 Constitution saving throw or take 18 (4d8) necrotic damage.",
+            "name": "Withering Bite"
+        },
+        {
+            "desc": "The ghost dragon enters the Ethereal Plane from the Material Plane, or vice versa. It is visible on the Material Plane while it is in the Border Ethereal, and vice versa, yet it can't affect or be affected by anything on the other plane.",
+            "name": "Etherealness"
+        },
+        {
+            "desc": "The ghost dragon exhales a blast of icy terror in a 30-foot cone. Each living creature in that area must make a DC 16 Wisdom saving throw. On a failure, a creature takes 44 (8d10) psychic damage and is frightened for 1 minute. On a success, it takes half the damage and isn't frightened. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "name": "Horrifying Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "any alignment",
+    "armor_class": "14",
+    "challenge_rating": "11",
+    "charisma": "19",
+    "condition_immunities": "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
+    "constitution": "10",
+    "damage_immunities": "cold, necrotic, poison",
+    "damage_resistances": "acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "dexterity": "19",
+    "dexterity_save": 8,
+    "hit_dice": "23d10",
+    "hit_points": "126",
+    "id": "ghost_dragon",
+    "intelligence": "14",
+    "languages": "any languages it knew in life",
+    "name": "Ghost Dragon",
+    "perception": 7,
+    "senses": "darkvision 120 ft., passive Perception 17",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "desc": "The ghost dragon can see 60 feet into the Ethereal Plane when it is on the Material Plane, and vice versa.",
+            "name": "Ethereal Sight"
+        },
+        {
+            "desc": "The ghost dragon can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.",
+            "name": "Incorporeal Movement"
+        }
+    ],
+    "speed": "0 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 0
+    },
+    "stealth": 8,
+    "strength": "10",
+    "subtype": "",
+    "type": "undead",
+    "wisdom": "16",
+    "wisdom_save": 7
+}

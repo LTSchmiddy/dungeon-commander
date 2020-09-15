@@ -1,0 +1,59 @@
+{
+    "actions": [
+        {
+            "desc": "The cacus giant makes two greatclub attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "3d8+5",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage.",
+            "name": "Greatclub"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "4d10+5",
+            "desc": "Ranged Weapon Attack: +8 to hit, range 30/120 ft., one target. Hit: 27 (4d10 + 5) bludgeoning damage.",
+            "name": "Rock"
+        },
+        {
+            "desc": "The cacus giant exhales fire in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.",
+            "name": "Fire Breath (Recharge 4-6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "16",
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": "10",
+    "constitution": "20",
+    "constitution_save": 8,
+    "damage_immunities": "fire",
+    "dexterity": "11",
+    "hit_dice": "12d12+60",
+    "hit_points": "138",
+    "id": "cacus_giant",
+    "intelligence": "7",
+    "languages": "Giant",
+    "name": "Cacus Giant",
+    "perception": 5,
+    "senses": "passive Perception 15",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "desc": "When the cacus giant dies, it exhales a final breath of divine essence in a gout of intense fire. Each creature within 5 feet of it must make a DC 16 Dexterity saving throw, taking 27 (6d8) fire damage on a failed save, or half as much damage on a successful one.",
+            "name": "Final Breath"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": "21",
+    "strength_save": 8,
+    "subtype": "",
+    "survival": 5,
+    "type": "giant",
+    "wisdom": "14",
+    "wisdom_save": 5
+}

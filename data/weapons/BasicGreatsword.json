@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "2d6",
+    "class": "Greatsword",
+    "cost": "50 gp",
+    "damage_bonus": 0,
+    "damage_type": "s",
+    "features_applied": false,
+    "id": "BasicGreatsword",
+    "is_finesse": false,
+    "name": "Greatsword",
+    "properties": "Heavy, two-handed",
+    "weight": 6
+}

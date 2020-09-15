@@ -1,0 +1,76 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The herald of darkness uses Majesty of the Abyss, if it is available, and makes one melee attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Melee Weapon Attack. +8 to hit, reach 5 ft., all creatures in reach. Hit: 6 (1d12) necrotic damage and targets are paralyzed until the start of the herald's next turn. Making a DC 17 Constitution saving throw negates the paralysis.",
+            "name": "Embrace Darkness"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The herald of darkness emits a sinister burst of infernal power. All creatures within 30 feet and in direct line of sight of the herald take 19 (3d12) necrotic damage and must make a DC 17 Constitution saving throw. Those who fail the saving throw are blinded for 2 rounds; those who succeed are frightened for 2 rounds.",
+            "name": "Majesty of the Abyss (Recharge 4-6)"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d12",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (2d12 + 5) slashing damage.",
+            "name": "Shadow Sword"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 15,
+    "armor_desc": "chain shirt",
+    "athletics": 8,
+    "challenge_rating": "7",
+    "charisma": 20,
+    "charisma_save": 8,
+    "condition_immunities": "exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 20,
+    "constitution_save": 8,
+    "damage_immunities": "cold, lightning, necrotic, poison",
+    "damage_resistances": "bludgeoning, thunder",
+    "deception": 8,
+    "dexterity": 14,
+    "hit_dice": "10d10+50",
+    "hit_points": 105,
+    "id": "herald_of_darkness",
+    "intelligence": 12,
+    "languages": "Common, Elvish, Goblin, Infernal, Sylvan",
+    "name": "Herald Of Darkness",
+    "perception": 5,
+    "senses": "darkvision 200 ft., passive Perception 15",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A herald of darkness can destroy any wooden, leather, copper, iron, or paper object by touching it as a bonus action. A mundane item is destroyed automatically; a magical item survives if its owner makes a successful DC 16 Dexterity saving throw.",
+            "name": "Corrupting Touch"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A herald of darkness can transform any fey, human, or goblin into one of the shadow fey, if the target willingly accepts this transformation.",
+            "name": "Gift of Darkness"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A herald of darkness can become incorporeal as a shadow as a bonus action. In this form, it has a fly speed of 10 feet; it can enter and occupy spaces occupied by other creatures; it gains resistance to all nonmagical damage; it has advantage on physical saving throws; it can pass through any gap or opening; it can't attack, interact with physical objects, or speak. It can return to its corporeal form also as a bonus action.",
+            "name": "Shadow Form"
+        }
+    ],
+    "speed": "30 ft., swim 30 ft., fly 50 ft.",
+    "speed_json": {
+        "fly": 50,
+        "swim": 30,
+        "walk": 30
+    },
+    "strength": 20,
+    "strength_save": 8,
+    "subtype": "",
+    "type": "fiend",
+    "wisdom": 15
+}

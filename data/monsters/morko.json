@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d6+1",
+            "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. and range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack.",
+            "name": "Spear"
+        },
+        {
+            "desc": "The morko fixes its gaze on a creature it can see within 30 feet. The target must make a DC 13 Wisdom saving throw or become cursed with ill manners, taking disadvantage on all ability checks and saving throws based on",
+            "name": "Disdainful Eye (Recharge 6)"
+        },
+        {
+            "desc": "The curse lasts until removed by the remove curse spell or other magic, or until the creature drinks a pitcher of curdled milk.",
+            "name": "Charisma"
+        },
+        {
+            "desc": "For 1 minute, the morko magically decreases in size, along with anything it is wearing or carrying. While shrunken, the morko is Tiny, halves its damage dice on Strength-based weapon attacks, and makes Strength checks and Strength saving throws with disadvantage. If the morko lacks the room to grow back to its regular size, it attains the maximum size possible in the space available.",
+            "name": "Shrink (Recharges after a Short or Long Rest)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "12",
+    "challenge_rating": "1/4",
+    "charisma": "8",
+    "constitution": "11",
+    "damage_immunities": "fire, poison",
+    "dexterity": "15",
+    "hit_dice": "5d6",
+    "hit_points": "17",
+    "id": "morko",
+    "intelligence": "12",
+    "languages": "Elvish, Sylvan",
+    "name": "Morko",
+    "perception": 2,
+    "senses": "passive Perception 12",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The morko has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": "12",
+    "subtype": "",
+    "type": "fey",
+    "wisdom": "10"
+}

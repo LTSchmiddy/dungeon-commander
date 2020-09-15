@@ -1,0 +1,65 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d8) piercing damage plus 7 (2d6) poison damage.",
+            "name": "Morningstar"
+        },
+        {
+            "desc": "The cueyatl moon priest harnesses moonlight, dispelling magical light in a 30-foot radius. In addition, each hostile creature within 30 feet must make a DC 13 Constitution saving throw, taking 16 (3d10) cold damage on a failed save, and half as much damage on a successful one. A creature that has total cover from the moon priest is not affected.",
+            "name": "Night's Chill (Recharge 5-6)"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": "13",
+    "armor_desc": "studded leather",
+    "challenge_rating": "5",
+    "charisma": "12",
+    "constitution": "12",
+    "constitution_save": 4,
+    "dexterity": "12",
+    "hit_dice": "18d6+18",
+    "hit_points": "81",
+    "id": "cueyatl_moon_priest",
+    "intelligence": "10",
+    "languages": "Common, Cueyatl",
+    "medicine": 6,
+    "name": "Cueyatl Moon Priest",
+    "perception": 6,
+    "religion": 3,
+    "senses": "darkvision 60 ft., passive Perception 16",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The cueyatl can breathe air and water.",
+            "name": "Amphibious"
+        },
+        {
+            "desc": "The cueyatl has advantage on Dexterity (Stealth) checks made to hide in jungle terrain.",
+            "name": "Jungle Camouflage"
+        },
+        {
+            "desc": "The cueyatl moon priest has advantage on saving throws and ability checks made to escape a grapple.",
+            "name": "Slippery"
+        },
+        {
+            "desc": "The cueyatl's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.",
+            "name": "Standing Leap"
+        },
+        {
+            "desc": "The cueyatl moon priest is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). It has the following cleric spells prepared: \nCantrips (at will): guidance, resistance, sacred flame, spare the dying\n1st level (4 slots): bane, cure wounds, protection from evil and good\n2nd level (3 slots): hold person, silence, spiritual weapon\n3rd level (2 slots): bestow curse, spirit guardians",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "30 ft., climb 20 ft., swim 30 ft.",
+    "speed_json": {
+        "climb": 20,
+        "swim": 30,
+        "walk": 30
+    },
+    "strength": "10",
+    "subtype": "",
+    "type": "humanoid",
+    "wisdom": "16"
+}

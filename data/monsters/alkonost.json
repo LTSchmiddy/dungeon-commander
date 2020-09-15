@@ -1,0 +1,44 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4 + 2) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "desc": "The alkonost sings a beautiful melody. Each creature within 30 feet of it that can hear the melody must succeed on a DC 12 Charisma saving throw or take 7 (2d6) lightning damage the next time it moves.",
+            "name": "Charged Melody (Recharge 6)"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": "12",
+    "challenge_rating": "1/2",
+    "charisma": "13",
+    "constitution": "10",
+    "damage_resistances": "lightning",
+    "dexterity": "14",
+    "hit_dice": "5d6",
+    "hit_points": "17",
+    "id": "alkonost",
+    "intelligence": "7",
+    "languages": "Common",
+    "name": "Alkonost",
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "An alkonost is immune to the effects of magical and natural wind, including effects that would force it to move, impose disadvantage on Wisdom (Perception) checks, or force it to land when flying. In addition, its weapon attacks do an extra 2 (1d4) lightning damage if it is within 1 mile of a lightning storm.",
+            "name": "One with Wind"
+        }
+    ],
+    "speed": "20 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "walk": 20
+    },
+    "strength": "11",
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": "14"
+}

@@ -1,0 +1,70 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The golem makes two slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "6d10",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 39 (6d10 + 6) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The hoard golem transforms into a 20-foot radius whirlwind of the treasures of which it is composed. In this form, it has immunity to all slashing and piercing damage. As a whirlwind, it can enter other creatures' spaces and stop there. Every creature in a space the whirlwind occupies must make a DC 17 Dexterity saving throw. On a failure, a target takes 40 (6d10 + 7) bludgeoning damage and the whirlwind removes the most valuable visible item on the target, including wielded items, but not armor. If the saving throw is successful, the target takes half the bludgeoning damage and retains all possessions. The golem can remain in whirlwind form for up to 3 rounds, or it can transform back to its normal form on any of its turns as a bonus action.",
+            "name": "Thieving Whirlwind (Recharge 5-6)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "athletics": 10,
+    "challenge_rating": "12",
+    "charisma": 1,
+    "condition_immunities": "charmed, exhausted, frightened, paralyzed, petrified, poisoned",
+    "constitution": 20,
+    "constitution_save": 9,
+    "damage_immunities": "poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
+    "dexterity": 15,
+    "hit_dice": "14d12+70",
+    "hit_points": 161,
+    "id": "hoard_golem",
+    "intelligence": 3,
+    "languages": "understands the language of its creator but can't speak",
+    "name": "Hoard Golem",
+    "perception": 4,
+    "senses": "darkvision 120 ft., passive Perception 14",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Creatures within 120 feet of an immobile hoard golem suffer disadvantage on Wisdom (Perception) checks. A creature's sheer glee on discovering a vast hoard of treasure distracts it from its surroundings.",
+            "name": "Strike with Awe"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The golem is immune to any spell or effect that would alter its form.",
+            "name": "Immutable Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The golem has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The golem's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 22,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 11
+}

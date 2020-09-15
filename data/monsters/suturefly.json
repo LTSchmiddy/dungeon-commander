@@ -1,0 +1,48 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the suturefly sews the target's mouth, nose, or eye closed. With supernatural speed, the suturefly repeatedly pierces the target's face, each time threading a loop of the target's own skin through the previous hole. These skin loops rapidly blacken, shrink, and draw the orifice tightly closed. It takes two actions and a sharp blade to sever the loops and reopen the orifice, and the process causes intense pain and 2 slashing damage. A victim whose mouth and nose have been sewn shut begins suffocating at the start of his or her next turn.",
+            "name": "Sew"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "",
+    "challenge_rating": "1/4",
+    "charisma": 4,
+    "constitution": 10,
+    "dexterity": 19,
+    "hit_dice": "3d4",
+    "hit_points": 7,
+    "id": "suturefly",
+    "intelligence": 1,
+    "languages": "-",
+    "name": "Suturefly",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A suturefly in forest surroundings has advantage on Dexterity (Stealth) checks.",
+            "name": "Camouflage"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The most common variety of suturefly attacks any creature that blasphemes aloud, which it can detect at a range of 100 feet unless the blasphemer makes a successful DC 13 Charisma saving throw.",
+            "name": "Detect Blasphemy"
+        }
+    ],
+    "speed": "10 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "hover": true,
+        "walk": 10
+    },
+    "stealth": 6,
+    "strength": 1,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

@@ -1,0 +1,59 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The fraughashar makes one bite attack and one dagger attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4",
+            "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+            "name": "Dagger"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
+            "name": "Sling"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 15,
+    "armor_desc": "leather armor, shield",
+    "challenge_rating": "1/2",
+    "charisma": 7,
+    "constitution": 12,
+    "damage_immunities": "cold",
+    "dexterity": 14,
+    "hit_dice": "4d6+4",
+    "hit_points": 18,
+    "id": "fraughashar",
+    "intelligence": 10,
+    "languages": "Sylvan",
+    "name": "Fraughashar",
+    "senses": "passive Perception $1",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The fraughashar's speed is unimpeded by rocky, snowy, or icy terrain. It never needs to make Dexterity checks to move or avoid falling prone because of icy or snowy ground.",
+            "name": "Frost Walker"
+        }
+    ],
+    "speed": "25 ft.",
+    "speed_json": {
+        "walk": 25
+    },
+    "stealth": 4,
+    "strength": 8,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 11
+}

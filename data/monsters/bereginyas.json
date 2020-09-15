@@ -1,0 +1,48 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The bereginyas makes two claw attacks. If both attacks hit the same target, the target is grappled (escape DC 12) and the bereginyas immediately uses Smother against it as a bonus action.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If the bereginyas grapples an opponent, it extends a semi-solid gaseous tendril down the target's throat as a bonus action. The target must make a successful DC 14 Strength saving or it is immediately out of breath and begins suffocating. Suffocation ends if the grapple is broken or if the bereginyas is killed.",
+            "name": "Smother"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 15,
+    "armor_desc": "",
+    "challenge_rating": "4",
+    "charisma": 11,
+    "constitution": 12,
+    "damage_immunities": "bludgeoning",
+    "dexterity": 20,
+    "dexterity_save": 7,
+    "hit_dice": "20d4+20",
+    "hit_points": 70,
+    "id": "bereginyas",
+    "intelligence": 13,
+    "languages": "Common, Elvish, Sylvan",
+    "name": "Bereginyas",
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Tiny",
+    "speed": "20 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 20
+    },
+    "stealth": 9,
+    "strength": 14,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 12
+}

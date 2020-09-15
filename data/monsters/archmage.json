@@ -1,0 +1,71 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 2,
+            "damage_dice": "1d4",
+            "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+            "name": "Dagger"
+        }
+    ],
+    "alignment": "any alignment",
+    "arcana": 13,
+    "armor_class": 12,
+    "armor_desc": "15 with _mage armor_",
+    "challenge_rating": "12",
+    "charisma": 16,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "damage from spells; non magical bludgeoning, piercing, and slashing (from stoneskin)",
+    "damage_vulnerabilities": "",
+    "dexterity": 14,
+    "history": 13,
+    "hit_dice": "18d8",
+    "hit_points": 99,
+    "id": "archmage",
+    "intelligence": 20,
+    "intelligence_save": 9,
+    "languages": "any six languages",
+    "name": "Archmage",
+    "senses": "passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The archmage has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The archmage is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The archmage can cast disguise self and invisibility at will and has the following wizard spells prepared:\n\n\u2022 Cantrips (at will): fire bolt, light, mage hand, prestidigitation, shocking grasp\n\u2022 1st level (4 slots): detect magic, identify, mage armor*, magic missile\n\u2022 2nd level (3 slots): detect thoughts, mirror image, misty step\n\u2022 3rd level (3 slots): counterspell,fly, lightning bolt\n\u2022 4th level (3 slots): banishment, fire shield, stoneskin*\n\u2022 5th level (3 slots): cone of cold, scrying, wall of force\n\u2022 6th level (1 slot): globe of invulnerability\n\u2022 7th level (1 slot): teleport\n\u2022 8th level (1 slot): mind blank*\n\u2022 9th level (1 slot): time stop\n* The archmage casts these spells on itself before combat.",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "spells": [
+        "sacred-flame",
+        "spare-the-dying",
+        "thaumaturgy",
+        "command",
+        "detect-evil-and-good",
+        "detect-magic",
+        "lesser-restoration",
+        "zone-of-truth",
+        "dispel-magic",
+        "tongues",
+        "banishment",
+        "freedom-of-movement",
+        "flame-strike",
+        "greater-restoration",
+        "heroes-feast"
+    ],
+    "strength": 10,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 15,
+    "wisdom_save": 6
+}

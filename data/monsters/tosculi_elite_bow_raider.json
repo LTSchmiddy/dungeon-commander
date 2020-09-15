@@ -1,0 +1,69 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The tosculi elite bow raider makes two longbow attacks or two claws attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d8",
+            "desc": "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 17 (3d8 + 4) piercing damage.",
+            "name": "Longbow"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 12,
+    "constitution": 17,
+    "dexterity": 18,
+    "hit_dice": "13d8+39",
+    "hit_points": 97,
+    "id": "tosculi_elite_bow_raider",
+    "intelligence": 12,
+    "languages": "Gnoll, Infernal, Tosculi",
+    "name": "Tosculi Elite Bow Raider",
+    "perception": 6,
+    "senses": "darkvision 60 ft., passive Perception 16",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The tosculi elite bow raider's ranged attacks do an extra 9 (2d8) damage (included below).",
+            "name": "Deadly Precision"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Ranged weapon attacks against the tosculi elite bow raider have disadvantage.",
+            "name": "Evasive"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The tosculi elite bow raider has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The tosculi elite bow raider can Dash as a bonus action.",
+            "name": "Skirmisher"
+        }
+    ],
+    "speed": "30 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 30
+    },
+    "stealth": 7,
+    "strength": 14,
+    "subtype": "tosculi",
+    "type": "humanoid",
+    "wisdom": 14
+}

@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "1d4",
+    "class": "SimpleWeapon",
+    "cost": "0 gp",
+    "damage_bonus": 0,
+    "damage_type": "p",
+    "features_applied": false,
+    "id": "BasicSimpleWeapon",
+    "is_finesse": false,
+    "name": "Simple Weapons",
+    "properties": "",
+    "weight": 1
+}

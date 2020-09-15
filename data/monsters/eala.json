@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The eala makes two attacks with its wing blades.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.",
+            "name": "Wing Blades"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The eala breathes fire in a 20-foot cone. Every creature in the area must make a DC 11 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save or half as much on a successful one. The eala's fire breath ignites flammable objects and melts soft metals in the area that aren't being worn or carried.",
+            "name": "Fire Breath (recharge 5-6)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 15,
+    "armor_desc": "natural",
+    "challenge_rating": "2",
+    "charisma": 16,
+    "constitution": 12,
+    "damage_immunities": "fire",
+    "dexterity": 16,
+    "dexterity_save": 5,
+    "hit_dice": "9d6+9",
+    "hit_points": 40,
+    "id": "eala",
+    "intelligence": 2,
+    "languages": "-",
+    "name": "Eala",
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "When the eala is reduced to 0 hit points, it can use its last breath sing a plaintive and beautiful melody. Creatures within 20 feet that can hear the eala must succeed on a DC 13 Charisma saving throw or be incapacitated for 1 round. A creature incapacitated in this way has its speed reduced to 0.",
+            "name": "Swan Song"
+        }
+    ],
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Small",
+    "speed": "10 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 10
+    },
+    "strength": 10,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 12
+}

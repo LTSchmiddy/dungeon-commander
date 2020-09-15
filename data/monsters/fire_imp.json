@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "2d4+2",
+            "desc": "Melee Spell Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) fire damage and if the target is a flammable object that isn't being worn or carried, it also catches fire. If the target is a creature, it must succeed on a DC 12 Dexterity saving throw or take another 2 (1d4) fire damage at the start of its next turn.",
+            "name": "Fire Touch"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "2d4",
+            "desc": "Ranged Spell Attack: +4 to hit, range 150 ft., one target. Hit: 5 (2d4) fire damage and if the target is a flammable object that isn't being worn or carried, it also catches fire.",
+            "name": "Hurl Flame"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": "13",
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/2",
+    "charisma": "14",
+    "condition_immunities": "poisoned",
+    "constitution": "12",
+    "damage_immunities": "fire, poison",
+    "damage_resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks not made with silver",
+    "deception": 3,
+    "dexterity": "14",
+    "hit_dice": "4d4+4",
+    "hit_points": "14",
+    "id": "fire_imp",
+    "intelligence": "10",
+    "languages": "Common, Infernal",
+    "name": "Fire Imp",
+    "senses": "darkvision 120 ft., passive Perception 10",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "desc": "Magical darkness doesn't impede the imp's darkvision.",
+            "name": "Devil's Sight"
+        },
+        {
+            "desc": "Whenever the imp is subjected to fire damage, it takes no damage and instead regains a number of hp equal to the fire damage dealt.",
+            "name": "Fire Absorption"
+        },
+        {
+            "desc": "As a bonus action, the imp casts the heat metal spell without expending any material components (spell save DC 12).",
+            "name": "Heat Metal (1/Day)"
+        },
+        {
+            "desc": "The imp has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "20 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "walk": 20
+    },
+    "stealth": 4,
+    "strength": "5",
+    "subtype": "devil",
+    "type": "fiend",
+    "wisdom": "10"
+}

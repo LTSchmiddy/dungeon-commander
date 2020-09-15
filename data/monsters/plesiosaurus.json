@@ -1,0 +1,49 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "3d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 5,
+    "condition_immunities": "",
+    "constitution": 16,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "group": "Dinosaurs",
+    "hit_dice": "8d10+24",
+    "hit_points": 68,
+    "id": "plesiosaurus",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Plesiosaurus",
+    "perception": 3,
+    "senses": "passive Perception 13",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The plesiosaurus can hold its breath for 1 hour.",
+            "name": "Hold Breath"
+        }
+    ],
+    "speed": "20 ft., swim 40 ft.",
+    "speed_json": {
+        "swim": 40,
+        "walk": 20
+    },
+    "stealth": 4,
+    "strength": 18,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

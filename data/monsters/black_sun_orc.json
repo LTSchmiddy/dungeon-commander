@@ -1,0 +1,65 @@
+{
+    "actions": [
+        {
+            "desc": "The orc makes two attacks with its greatclub or with its sling.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage.",
+            "name": "Greatclub"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4+2",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
+            "name": "Sling"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "14",
+    "armor_desc": "hide armor",
+    "challenge_rating": "2",
+    "charisma": "8",
+    "constitution": "14",
+    "dexterity": "14",
+    "hit_dice": "10d8+20",
+    "hit_points": "65",
+    "id": "black_sun_orc",
+    "intelligence": "9",
+    "languages": "Common, Orc",
+    "name": "Black Sun Orc",
+    "perception": 3,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "As a bonus action, the orc can move up to its speed toward a hostile creature that it can see.",
+            "name": "Aggressive"
+        },
+        {
+            "desc": "Magical darkness doesn't impede the Black Sun orc's darkvision.",
+            "name": "Black Sun Sight"
+        },
+        {
+            "desc": "While in bright light, the orc has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
+            "name": "Light Sensitivity"
+        },
+        {
+            "desc": "The orc has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.",
+            "name": "Stone Camouflage"
+        }
+    ],
+    "speed": "30 ft., climb 20 ft.",
+    "speed_json": {
+        "climb": 20,
+        "walk": 30
+    },
+    "stealth": 4,
+    "strength": "16",
+    "subtype": "orc",
+    "survival": 3,
+    "type": "humanoid",
+    "wisdom": "12"
+}

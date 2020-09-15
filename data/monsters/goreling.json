@@ -1,0 +1,48 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage plus 2 (1d4) necrotic damage. ++ Reactions",
+            "name": "Slam"
+        },
+        {
+            "desc": "When a goreling is hit but not reduced to 0 hp, it splits into two new gorelings. Each new goreling has 1 hp, doesn't have this reaction, and is one size smaller than the original goreling.",
+            "name": "Multiplying"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "12",
+    "challenge_rating": "1/4",
+    "charisma": "1",
+    "condition_immunities": "poisoned",
+    "constitution": "14",
+    "damage_immunities": "necrotic, poison",
+    "dexterity": "14",
+    "hit_dice": "2d6+4",
+    "hit_points": "11",
+    "id": "goreling",
+    "intelligence": "1",
+    "languages": "-",
+    "name": "Goreling",
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 7",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "If 6 or more gorelings are within 30 feet of one another, they become frenzied and their attacks deal an extra 2 (1d4) necrotic damage.",
+            "name": "Bloodthirsty"
+        },
+        {
+            "desc": "Up to five gorelings can occupy the same space.",
+            "name": "Swarming"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "strength": "12",
+    "subtype": "",
+    "type": "undead",
+    "wisdom": "5"
+}

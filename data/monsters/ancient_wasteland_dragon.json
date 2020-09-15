@@ -1,0 +1,88 @@
+{
+    "actions": [
+        {
+            "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 16,
+            "damage_dice": "2d10+9",
+            "desc": "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 20 (2d10 + 9) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 16,
+            "damage_dice": "2d6+9",
+            "desc": "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 16,
+            "damage_dice": "2d8+9",
+            "desc": "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 18 (2d8 + 9) bludgeoning damage.",
+            "name": "Tail"
+        },
+        {
+            "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 20 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+            "name": "Frightful Presence"
+        },
+        {
+            "desc": "The dragon blasts warped arcane energy in a 90-foot line that is 5 feet wide. Each creature in that line must make a DC 20 Dexterity saving throw, taking 90 (20d8) force damage on a failed save, or half as much damage on a successful one.",
+            "name": "Warped Energy Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "22",
+    "armor_desc": "natural armor",
+    "challenge_rating": "23",
+    "charisma": "19",
+    "charisma_save": 11,
+    "constitution": "26",
+    "constitution_save": 15,
+    "damage_immunities": "force",
+    "dexterity": "10",
+    "dexterity_save": 7,
+    "hit_dice": "18d20+144",
+    "hit_points": "333",
+    "id": "ancient_wasteland_dragon",
+    "intelligence": "16",
+    "languages": "Common, Draconic",
+    "legendary_actions": [
+        {
+            "desc": "The dragon makes a Wisdom (Perception) check.",
+            "name": "Detect"
+        },
+        {
+            "desc": "The dragon makes a tail attack.",
+            "name": "Tail Attack"
+        },
+        {
+            "desc": "The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+            "name": "Wing Attack (Costs 2 Actions)"
+        }
+    ],
+    "legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
+    "name": "Ancient Wasteland Dragon",
+    "perception": 9,
+    "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 19",
+    "size": "Gargantuan",
+    "special_abilities": [
+        {
+            "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+            "name": "Legendary Resistance (3/Day)"
+        }
+    ],
+    "speed": "40 ft., burrow 30 ft., climb 40 ft., fly 80 ft.",
+    "speed_json": {
+        "burrow": 30,
+        "climb": 40,
+        "fly": 80,
+        "walk": 40
+    },
+    "stealth": 7,
+    "strength": "28",
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": "15",
+    "wisdom_save": 9
+}

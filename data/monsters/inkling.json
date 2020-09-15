@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
+            "name": "Lash"
+        }
+    ],
+    "alignment": "unaligned",
+    "arcana": 4,
+    "armor_class": "12",
+    "challenge_rating": "1/4",
+    "charisma": "10",
+    "constitution": "10",
+    "dexterity": "14",
+    "hit_dice": "4d4",
+    "hit_points": "10",
+    "id": "inkling",
+    "intelligence": "14",
+    "languages": "understands the languages of its creator but can't speak",
+    "name": "Inkling",
+    "reactions": [
+        {
+            "desc": "If a spell attack hits the inkling, it can force the attacker to make a DC 12 Intelligence saving throw. If the attacker fails the saving throw, the spell is redirected to hit another creature of the inkling's choice within 30 feet.",
+            "name": "Redirect Spell"
+        }
+    ],
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 11",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "desc": "The inkling can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Amorphous"
+        },
+        {
+            "desc": "If an inkling spends 24 hours with a spellbook or a spell scroll, it can learn the magic of one 2nd level or lower spell, erasing and absorbing all the ink and magic used to inscribe the spell. The inkling can then cast the spell once per day.",
+            "name": "A Thirst for Knowledge"
+        },
+        {
+            "desc": "The inkling has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "desc": "The inkling's innate spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It can innately cast the following spells, requiring only somatic components:\nAt will: fire bolt, mending, minor illusion, prestidigitation\n1/day each: color spray, detect magic, magic missile",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "stealth": 4,
+    "strength": "4",
+    "subtype": "",
+    "type": "construct",
+    "wisdom": "12"
+}

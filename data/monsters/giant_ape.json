@@ -1,0 +1,52 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The ape makes two fist attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_bonus": 6,
+            "damage_dice": "3d10",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) bludgeoning damage.",
+            "name": "Fist"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_bonus": 6,
+            "damage_dice": "7d6",
+            "desc": "Ranged Weapon Attack: +9 to hit, range 50/100 ft., one target. Hit: 30 (7d6 + 6) bludgeoning damage.",
+            "name": "Rock"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "athletics": 9,
+    "challenge_rating": "7",
+    "charisma": 7,
+    "condition_immunities": "",
+    "constitution": 18,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 14,
+    "hit_dice": "15d12",
+    "hit_points": 157,
+    "id": "giant_ape",
+    "intelligence": 7,
+    "languages": "",
+    "name": "Giant Ape",
+    "perception": 4,
+    "senses": "passive Perception 14",
+    "size": "Huge",
+    "speed": "40 ft., climb 40 ft.",
+    "speed_json": {
+        "climb": 40,
+        "walk": 40
+    },
+    "strength": 23,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

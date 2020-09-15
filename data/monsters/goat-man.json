@@ -1,0 +1,57 @@
+{
+    "acrobatics": 4,
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The goat-man makes one bite attack and one slam attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+            "name": "Slam"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "athletics": 6,
+    "challenge_rating": "3",
+    "charisma": 8,
+    "condition_immunities": "charmed, frightened",
+    "constitution": 14,
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
+    "dexterity": 14,
+    "dexterity_save": 4,
+    "hit_dice": "10d8+20",
+    "hit_points": 65,
+    "id": "goat-man",
+    "intelligence": 10,
+    "languages": "Common, Giant, Trollkin, but cannot speak",
+    "name": "Goat-Man",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If the goat-man moves at least 10 feet straight toward a creature and then hits it with a slam attack on the same turn, the target must succeed on a DC 14 Strength saving throw or be knocked prone and stunned for 1 round. If the target is prone, the goat-man can make one bite attack against it immediately as a bonus action.",
+            "name": "Headbutt"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "stealth": 6,
+    "strength": 19,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 13
+}

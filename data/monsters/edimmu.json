@@ -1,0 +1,50 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 7,
+            "damage_dice": "6d6",
+            "desc": "Melee Spell Attack: +7 to hit, reach 5 ft., one creature. Hit: 21 (6d6) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken and it is stunned for 1 minute and gains one level of exhaustion. A stunned creature repeats the saving throw at the end of each of its turns, ending the stun on itself on a success. The hit point reduction lasts until the creature finishes a long rest and drinks abundant water or until it is affected by greater restoration or comparable magic. The target dies if this effect reduces its hit point maximum to 0.",
+            "name": "Water Siphon"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armor_desc": "",
+    "challenge_rating": "4",
+    "charisma": 13,
+    "condition_immunities": "charmed, exhaustion, grappled, frightened, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+    "constitution": 16,
+    "damage_immunities": "necrotic, poison",
+    "damage_resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 19,
+    "hit_dice": "10d8+30",
+    "hit_points": 75,
+    "id": "edimmu",
+    "intelligence": 12,
+    "languages": "Common but can't speak",
+    "name": "Edimmu",
+    "senses": "blindsight 60 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If destroyed, an edimmu rises again in 2d4 days. Permanently destroying one requires properly burying its mortal remains in consecrated or hallowed ground. Edimmus rarely venture more than a mile from the place of their death.",
+            "name": "Rejuvenation"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The edimmu can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.",
+            "name": "Incorporeal Movement"
+        }
+    ],
+    "speed": "0 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "hover": true,
+        "walk": 0
+    },
+    "strength": 1,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 13
+}

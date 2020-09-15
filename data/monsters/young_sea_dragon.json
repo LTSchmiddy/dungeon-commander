@@ -1,0 +1,70 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 5 (1d10) cold damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon exhales a crushing wave of frigid seawater in a 30-foot cone. Each creature in that area must make a DC 16 Dexterity saving throw. On a failure, the target takes 27 (5d10) bludgeoning damage and 27 (5d10) cold damage, and is pushed 30 feet away from the dragon and knocked prone. On a successful save the creature takes half as much damage and isn't pushed or knocked prone.",
+            "name": "Tidal Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "challenge_rating": "9",
+    "charisma": 17,
+    "charisma_save": 7,
+    "constitution": 19,
+    "constitution_save": 8,
+    "damage_immunities": "cold",
+    "dexterity": 10,
+    "dexterity_save": 4,
+    "hit_dice": "16d10+64",
+    "hit_points": 152,
+    "id": "young_sea_dragon",
+    "intelligence": 15,
+    "languages": "Common, Draconic",
+    "name": "Young Sea Dragon",
+    "perception": 9,
+    "senses": "blindsight 30 ft. darkvision 120 ft., passive Perception 19",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon can breathe air and water.",
+            "name": "Amphibious"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon deals double damage to objects and structures",
+            "name": "Siege Monster"
+        }
+    ],
+    "speed": "40 ft., fly 80 ft., swim 50 ft.",
+    "speed_json": {
+        "fly": 80,
+        "swim": 50,
+        "walk": 40
+    },
+    "stealth": 4,
+    "strength": 21,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 13,
+    "wisdom_save": 5
+}

@@ -1,0 +1,36 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 2,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
+            "name": "Club"
+        }
+    ],
+    "alignment": "any alignment",
+    "armor_class": 10,
+    "challenge_rating": "0",
+    "charisma": 10,
+    "condition_immunities": "",
+    "constitution": 10,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "1d8",
+    "hit_points": 4,
+    "id": "commoner",
+    "intelligence": 10,
+    "languages": "any one language (usually Common)",
+    "name": "Commoner",
+    "senses": "passive Perception 10",
+    "size": "Medium",
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 10,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 10
+}

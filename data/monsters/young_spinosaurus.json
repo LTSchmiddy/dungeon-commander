@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The spinosaurus makes one bite attack and two claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "3d12",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 10ft., one target. Hit: 25 (3d12 + 6) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained and the spinosaurus can't bite another target.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
+            "name": "Claw"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 8,
+    "constitution": 19,
+    "dexterity": 11,
+    "hit_dice": "10d12+40",
+    "hit_points": 105,
+    "id": "young_spinosaurus",
+    "intelligence": 2,
+    "languages": "-",
+    "name": "Young Spinosaurus",
+    "perception": 3,
+    "senses": "passive Perception $1",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The spinosaurus never willingly attacks any reptilian humanoid, and if forced or magically compelled to do so it suffers disadvantage on attack rolls. Up to three Medium or one Large creatures can ride the spinosaurus. This trait disappears if the spinosaurus spends a month away from any reptilian humanoid.",
+            "name": "Tamed"
+        }
+    ],
+    "speed": "50 ft., swim 30 ft.",
+    "speed_json": {
+        "swim": 30,
+        "walk": 50
+    },
+    "strength": 23,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 11
+}

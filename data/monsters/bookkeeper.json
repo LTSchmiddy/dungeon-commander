@@ -1,0 +1,60 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 20 ft., one target. Hit: 3 (1d6) poison damage and the target must succeed on a DC 13 Dexterity saving throw or be blinded until the end of its next turn.",
+            "name": "Ink Splash"
+        },
+        {
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 1 poison damage.",
+            "name": "Bite"
+        },
+        {
+            "desc": "While inside its book, the bookkeeper magically turns its book invisible until it attacks, or until its concentration ends (as if concentrating on a spell). The bookkeeper is also invisible while inside the invisible book",
+            "name": "Elusive Pages"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "12",
+    "challenge_rating": "1/8",
+    "charisma": "3",
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": "10",
+    "damage_immunities": "either cold or fire (designated at the time of the bookkeeper's creation), poison, psychic",
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+    "dexterity": "14",
+    "hit_dice": "2d4",
+    "hit_points": "5",
+    "id": "bookkeeper",
+    "intelligence": "6",
+    "languages": "understands the languages of its creator but can't speak",
+    "name": "Bookkeeper",
+    "perception": 1,
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 11",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "desc": "As a bonus action while within 30 feet of its book, the bookkeeper can hop inside its book. While inside its book, the bookkeeper has a flying speed of 30 feet and is indistinguishable from ink on a page.",
+            "name": "Between the Lines"
+        },
+        {
+            "desc": "A bookkeeper makes all attacks, saving throws, and skill checks with advantage when its creator is within 60 feet of its book. The bookkeeper's hp maximum is reduced by 1 for every minute it is further than 60 feet from its book. When its hp maximum reaches 0, it dies. If its creator dies, the bookkeeper can be convinced to pass ownership of the book to a new creature if the creature succeeds on a DC 13 Charisma check. The new owner becomes the bookkeeper's new \u201ccreator\u201d and inherits the bookkeeper along with the book.",
+            "name": "Book Bound"
+        },
+        {
+            "desc": "When the bookkeeper dies, the book it is bound to is also destroyed.",
+            "name": "Disintegrate"
+        }
+    ],
+    "speed": "20 ft., fly 30 ft. (while within the book)",
+    "speed_json": {
+        "fly": 30,
+        "walk": 20
+    },
+    "stealth": 4,
+    "strength": "8",
+    "subtype": "",
+    "type": "construct",
+    "wisdom": "8"
+}

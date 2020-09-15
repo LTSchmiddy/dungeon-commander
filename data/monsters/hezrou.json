@@ -1,0 +1,71 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The hezrou makes three attacks: one with its bite and two with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_bonus": 4,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_bonus": 4,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The demon chooses what to summon and attempts a magical summoning.\nA hezrou has a 30 percent chance of summoning 2d6 dretches or one hezrou.\nA summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action.",
+            "name": "Variant: Summon Demon (1/Day)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "8",
+    "charisma": 13,
+    "condition_immunities": "poisoned",
+    "constitution": 20,
+    "constitution_save": 8,
+    "damage_immunities": "poison",
+    "damage_resistances": "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "damage_vulnerabilities": "",
+    "dexterity": 17,
+    "group": "Demons",
+    "hit_dice": "13d10+65",
+    "hit_points": 136,
+    "id": "hezrou",
+    "intelligence": 5,
+    "languages": "Abyssal, telepathy 120 ft.",
+    "name": "Hezrou",
+    "senses": "darkvision 120 ft., passive Perception 11",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The hezrou has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Any creature that starts its turn within 10 feet of the hezrou must succeed on a DC 14 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the hezrou's stench for 24 hours.",
+            "name": "Stench"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 19,
+    "strength_save": 7,
+    "subtype": "demon",
+    "type": "fiend",
+    "wisdom": 12,
+    "wisdom_save": 4
+}

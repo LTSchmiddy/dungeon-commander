@@ -1,0 +1,51 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dog makes two bite attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 12,
+    "challenge_rating": "1",
+    "charisma": 6,
+    "condition_immunities": "",
+    "constitution": 14,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 14,
+    "hit_dice": "6d8",
+    "hit_points": 39,
+    "id": "death_dog",
+    "intelligence": 3,
+    "languages": "",
+    "name": "Death Dog",
+    "perception": 5,
+    "senses": "darkvision 120 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dog has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.",
+            "name": "Two-Headed"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "stealth": 4,
+    "strength": 15,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 13
+}

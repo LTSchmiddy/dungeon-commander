@@ -1,0 +1,49 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "challenge_rating": "1/8",
+    "charisma": 4,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "hit_dice": "2d6",
+    "hit_points": 7,
+    "id": "giant_rat",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Giant Rat",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The rat has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 ft. of the creature and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 7,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

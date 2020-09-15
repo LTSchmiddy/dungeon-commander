@@ -1,0 +1,97 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The sphinx makes one bite attack and two claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "3d10",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 21 (3d10 + 5) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "6d8",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 32 (6d8 + 5) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If the sphinx succeeds with both claw attacks, it automatically follows up with a rake attack. If the target fails a DC 17 Dexterity check, it is knocked prone and takes 14 (2d8 + 5) slashing damage.",
+            "name": "Rake"
+        }
+    ],
+    "alignment": "neutral evil",
+    "arcana": 9,
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "14",
+    "charisma": 18,
+    "condition_immunities": "poisoned",
+    "constitution": 18,
+    "damage_immunities": "psychic, poison",
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 14,
+    "history": 9,
+    "hit_dice": "18d10+72",
+    "hit_points": 171,
+    "id": "gypsosphinx",
+    "intelligence": 18,
+    "languages": "Abyssal, Common, Darakhul, Sphinx",
+    "legendary_actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The sphinx makes one bite attack.",
+            "name": "Bite Attack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The sphinx magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see.",
+            "name": "Teleport (Costs 2 Actions)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The sphinx casts a spell from its list of prepared spells, using a spell slot as normal.",
+            "name": "Cast a Spell (Costs 3 Actions)"
+        }
+    ],
+    "legendary_desc": "The sphinx can take 3 legendary actions, choosing from the options below. Only one option can be used at a time and only at the end of another creature's turn. It regains spent legendary actions at the start of its turn.",
+    "name": "Gypsosphinx",
+    "perception": 9,
+    "religion": 9,
+    "senses": "truesight 90 ft., passive Perception 19",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The sphinx is immune to any effect that would sense its emotions or read its thoughts, as well as any divination spell that it refuses. Wisdom (Insight) checks made to ascertain the sphinx's intentions or sincerity have disadvantage.",
+            "name": "Inscrutable"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The sphinx's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A gypsosphinx sees death coming and can foretell the manner of a person's death. This ability does not come with any urge to share that information. Gypsosphinxes are notorious for hinting, teasing, and even lying about a creature's death (\"If we fight, I will kill you and eat your heart. I have seen it,\"is a favorite bluff).",
+            "name": "Mystic Sight"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the sphinx is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). It requires no material components to cast its spells. The sphinx has the following wizard spells prepared:\n\ncantrips: (at will): mage hand, mending, minor illusion, poison spray\n\n1st level (4 slots): comprehend languages, detect magic, identify\n\n2nd level (3 slots): blur, darkness, locate object\n\n3rd level (3 slots): dispel magic, glyph of warding, major image\n\n4th level (3 slots): blight, greater invisibility\n\n5th level (1 slot): cloudkill",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "40 ft., fly 70 ft.",
+    "speed_json": {
+        "fly": 70,
+        "walk": 40
+    },
+    "strength": 20,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 18
+}

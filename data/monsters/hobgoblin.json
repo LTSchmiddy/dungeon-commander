@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage, or 6 (1d10 + 1) slashing damage if used with two hands.",
+            "name": "Longsword"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
+            "name": "Longbow"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 18,
+    "armor_desc": "chain mail, shield",
+    "challenge_rating": "1/2",
+    "charisma": 9,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 12,
+    "hit_dice": "2d8+2",
+    "hit_points": 11,
+    "id": "hobgoblin",
+    "intelligence": 10,
+    "languages": "Common, Goblin",
+    "name": "Hobgoblin",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "damage_dice": "2d6",
+            "desc": "Once per turn, the hobgoblin can deal an extra 7 (2d6) damage to a creature it hits with a weapon attack if that creature is within 5 ft. of an ally of the hobgoblin that isn't incapacitated.",
+            "name": "Martial Advantage"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 13,
+    "subtype": "goblinoid",
+    "type": "humanoid",
+    "wisdom": 10
+}

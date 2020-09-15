@@ -1,0 +1,51 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
+            "name": "Ram"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/2",
+    "charisma": 6,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 11,
+    "hit_dice": "3d10",
+    "hit_points": 19,
+    "id": "giant_goat",
+    "intelligence": 3,
+    "languages": "",
+    "name": "Giant Goat",
+    "senses": "passive Perception 11",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "damage_dice": "2d4",
+            "desc": "If the goat moves at least 20 ft. straight toward a target and then hits it with a ram attack on the same turn, the target takes an extra 5 (2d4) bludgeoning damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+            "name": "Charge"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The goat has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.",
+            "name": "Sure-Footed"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 17,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

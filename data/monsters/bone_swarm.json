@@ -1,0 +1,66 @@
+{
+    "acrobatics": 8,
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The bone swarm can attack every hostile creature in its space with swirling bones.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "5d8",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 0 ft., one creature in the swarm's space. Hit: 31 (5d8 + 9) bludgeoning, piercing, or slashing damage (includes Strength of Bone special ability).",
+            "name": "Swirling Bones"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Melee Weapon Attack: +10 to hit, reach 0 ft., one creature in the swarm's space. Hit: the target is grappled (escape DC 16) and enveloped within the swarm's bones. The swarm can force the creature to move at its normal speed wherever the bone swarm wishes. Any non-area attack against the bone swarm has a 50 percent chance of hitting a creature grappled in Death's Embrace instead.",
+            "name": "Death's Embrace (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "10",
+    "charisma": 20,
+    "charisma_save": 9,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned, prone, restrained, stunned",
+    "constitution": 10,
+    "damage_immunities": "poison",
+    "damage_resistances": "piercing and slashing from nonmagical weapons",
+    "dexterity": 18,
+    "dexterity_save": 8,
+    "hit_dice": "36d10",
+    "hit_points": 198,
+    "id": "bone_swarm",
+    "intelligence": 9,
+    "languages": "Common, Void Speech",
+    "name": "Bone Swarm",
+    "perception": 6,
+    "senses": "darkvision 60 ft., passive Perception 16",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A bone swarm can choose to deal bludgeoning, piercing, or slashing damage, and adds 1.5x its Strength bonus on swarm damage rolls as bits and pieces of broken skeletons claw, bite, stab, and slam at the victim.",
+            "name": "Strength of Bone"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a human skull. The swarm can't regain hit points or gain temporary hit points.",
+            "name": "Swarm"
+        }
+    ],
+    "speed": "20 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 20
+    },
+    "stealth": 8,
+    "strength": 22,
+    "subtype": "",
+    "type": "swarm of Tiny undead",
+    "vulnerable": "bludgeoning",
+    "wisdom": 15,
+    "wisdom_save": 6
+}

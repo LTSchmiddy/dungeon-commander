@@ -1,0 +1,67 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) bludgeoning damage.",
+            "name": "Ram"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "name": "Shortsword"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d6",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "name": "Shortbow"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Gentle Lullaby. The creature falls asleep and is unconscious for 1 minute. The effect ends if the creature takes damage or if someone takes an action to shake the creature awake.",
+            "name": "Variant: Panpipes"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 14,
+    "armor_desc": "leather armor",
+    "challenge_rating": "1/2",
+    "charisma": 14,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 16,
+    "hit_dice": "7d8",
+    "hit_points": 31,
+    "id": "satyr",
+    "intelligence": 12,
+    "languages": "Common, Elvish, Sylvan",
+    "name": "Satyr",
+    "perception": 2,
+    "performance": 6,
+    "senses": "passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The satyr has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "stealth": 5,
+    "strength": 12,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 10
+}

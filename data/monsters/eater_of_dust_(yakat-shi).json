@@ -1,0 +1,69 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The eater of dust makes two mawblade attacks, or makes one mawblade attack and casts inflict wounds.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "4d6",
+            "desc": "Melee Weapon Attack: +9 to hit, one target. Hit: 19 (4d6 + 5) piercing damage, and the target must make a successful DC 17 Constitution saving throw or gain one level of exhaustion.",
+            "name": "Mawblade"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "athletics": 9,
+    "challenge_rating": "9",
+    "charisma": 17,
+    "charisma_save": 7,
+    "condition_immunities": "blindness, lightning, poisoned",
+    "constitution": 20,
+    "constitution_save": 9,
+    "damage_immunities": "bludgeoning, piercing, poison and slashing from nonmagical weapons",
+    "damage_resistances": "acid, cold",
+    "dexterity": 14,
+    "hit_dice": "12d8+60",
+    "hit_points": 114,
+    "id": "eater_of_dust_(yakat-shi)",
+    "intelligence": 10,
+    "intimidate": 7,
+    "languages": "understands Abyssal, Common, Infernal, Void Speech, but cannot speak; telepathy 100 ft.",
+    "name": "Eater Of Dust (Yakat-Shi)",
+    "perception": 6,
+    "senses": "blindsight 60 ft, passive Perception 16",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the eater of dust's innate spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\n3/day each: freedom of movement, inflict wounds, true strike\n\n1/day each: cure wounds (as 3rd level), magic weapon (as 6th level), misty step",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The eater of dust regains 5 hit points at the start of its turn. If it takes fire damage, this trait does not function at the start of its next turn. The eater of dust dies only if it starts its turn with 0 hit points and does not regenerate.",
+            "name": "Regeneration"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "An eater of dust can devour any substance with its mawblade, regardless of composition, and never get full. It can even gain nourishment from eating dust or soil (hence the name given to the race by various fiends). If an eater of dust's mawblade is ever stolen, lost, or destroyed, it slowly starves to death.",
+            "name": "Unending Hunger"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A mawblade is part of the eater of dust. It can strike any creature as if it were magically enchanted and made of silver, iron, or other materials required to overcome immunities or resistances. An eater of dust always knows the location of its mawblade as if using the locate creature spell.",
+            "name": "Weapon Bond"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 20,
+    "strength_save": 9,
+    "subtype": "",
+    "type": "aberration",
+    "wisdom": 15
+}

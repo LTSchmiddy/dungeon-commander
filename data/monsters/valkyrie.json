@@ -1,0 +1,90 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 8,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage or 9 (1d10 + 4) slashing damage if used with two hands, plus 11 (2d10) radiant damage.",
+            "name": "Longsword"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "1d6",
+            "desc": "Melee or Ranged Weapon Attack: +8 to hit, reach 10 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack, plus 11 (2d10) radiant damage.",
+            "name": "Spear"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 16,
+    "armor_desc": "chain mail) or 18 (chain mail with shield",
+    "challenge_rating": "11",
+    "charisma": 18,
+    "charisma_save": 12,
+    "condition_immunities": "frightened",
+    "constitution": 16,
+    "constitution_save": 11,
+    "damage_immunities": "bludgeoning, piercing, and slashing from nonmagical weapons",
+    "damage_resistances": "acid, cold, fire, lightning, thunder",
+    "dexterity": 18,
+    "dexterity_save": 12,
+    "hit_dice": "15d8+45",
+    "hit_points": 112,
+    "id": "valkyrie",
+    "intelligence": 12,
+    "intelligence_save": 5,
+    "languages": "Common, Dwarvish, Giant, and see Gift of Tongues",
+    "legendary_actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The valkyrie casts one spell from her at-will list.",
+            "name": "Cast a Cantrip"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The valkyrie makes one longsword or spear attack.",
+            "name": "Spear or Longsword Attack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A valkyrie can take the soul of a newly dead body and bind it into a weapon or shield. Only one soul can be bound to any object. Individuals whose souls are bound can't be raised by any means short of a wish or comparable magic. A valkyrie can likewise release any soul that has been bound by another valkyrie, or transfer a bound soul from one object to another. Once bound, the soul grants the item a +1 bonus for every 4 character levels of the soul (maximum of +3), and this replaces any other magic on the item. At the DM's discretion, part of this bonus can become an appropriate special quality (a fire giant's soul might create a flaming weapon, for example).",
+            "name": "Harvest the Fallen (Costs 2 Actions)"
+        }
+    ],
+    "legendary_desc": "A valkyrie can take 3 legendary actions, choosing from the options below. Only one option can be used at a time and only at the end of another creature's turn. A valkyrie regains spent legendary actions at the start of her turn.",
+    "name": "Valkyrie",
+    "perception": 8,
+    "senses": "truesight 60 ft., passive Perception 18",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The valkyrie's weapon attacks are magical. When she hits with any weapon, it does an extra 11 (2d10) radiant damage (included in attacks listed below).",
+            "name": "Asgardian Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Any living creature that starts its turn within 60 feet of a valkyrie senses her unsettling presence and must succeed on a DC 16 Charisma saving throw or be frightened for 1d4 rounds. Those who succeed are immune to the effect for 24 hours. The valkyrie can suppress this aura at will.",
+            "name": "Cloak of Doom"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Valkyries become fluent in any language they hear spoken for at least 1 minute, and they retain this knowledge forever.",
+            "name": "Gift of Tongues"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the valkyrie's innate spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). She can innately cast the following spells, requiring no material components:\n\nat will: bane, bless, invisibility, sacred flame, spare the dying, speak with animals, thaumaturgy\n\n5/day each: gentle repose, healing word, warding bond\n\n3/day each: beacon of hope, mass healing word, revivify\n\n1/day each: commune, death ward, freedom of movement, geas",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "30 ft., fly 30 ft.",
+    "speed_json": {
+        "fly": 30,
+        "walk": 30
+    },
+    "strength": 18,
+    "strength_save": 12,
+    "subtype": "",
+    "type": "celestial",
+    "wisdom": 19,
+    "wisdom_save": 8
+}

@@ -1,0 +1,69 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The devil makes three attacks: two with its claws and one with its sting.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_bonus": 4,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 8 (1d8 + 4) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_bonus": 4,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) piercing damage plus 17 (5d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or become poisoned for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "name": "Sting"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 19,
+    "armor_desc": "natural armor",
+    "challenge_rating": "12",
+    "charisma": 16,
+    "charisma_save": 7,
+    "condition_immunities": "poisoned",
+    "constitution": 18,
+    "damage_immunities": "fire, poison",
+    "damage_resistances": "cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
+    "damage_vulnerabilities": "",
+    "deception": 7,
+    "dexterity": 16,
+    "group": "Devils",
+    "hit_dice": "15d10+60",
+    "hit_points": 142,
+    "id": "bone_devil",
+    "insight": 6,
+    "intelligence": 13,
+    "intelligence_save": 5,
+    "languages": "Infernal, telepathy 120 ft.",
+    "name": "Bone Devil",
+    "senses": "darkvision 120 ft., passive Perception 9",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Magical darkness doesn't impede the devil's darkvision.",
+            "name": "Devil's Sight"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The devil has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "40 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "walk": 40
+    },
+    "strength": 18,
+    "subtype": "devil",
+    "type": "fiend",
+    "wisdom": 14,
+    "wisdom_save": 6
+}

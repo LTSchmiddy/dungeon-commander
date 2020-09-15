@@ -1,0 +1,68 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+            "name": "Claw"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "challenge_rating": "1",
+    "charisma": 8,
+    "condition_immunities": "",
+    "constitution": 13,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "hit_dice": "4d10",
+    "hit_points": 26,
+    "id": "lion",
+    "intelligence": 3,
+    "languages": "",
+    "name": "Lion",
+    "perception": 3,
+    "senses": "passive Perception 13",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The lion has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The lion has advantage on an attack roll against a creature if at least one of the lion's allies is within 5 ft. of the creature and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If the lion moves at least 20 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the lion can make one bite attack against it as a bonus action.",
+            "name": "Pounce"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "With a 10-foot running start, the lion can long jump up to 25 ft..",
+            "name": "Running Leap"
+        }
+    ],
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "stealth": 6,
+    "strength": 17,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

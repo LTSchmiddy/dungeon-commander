@@ -1,0 +1,57 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage plus 7 (2d6) acid damage, and if the target is wearing nonmagical metal armor, its armor is partly corroded and takes a permanent and cumulative -1 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10.",
+            "name": "Pseudopod"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 8,
+    "challenge_rating": "1/2",
+    "charisma": 2,
+    "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+    "constitution": 16,
+    "damage_immunities": "",
+    "damage_resistances": "acid, cold, fire",
+    "damage_vulnerabilities": "",
+    "dexterity": 6,
+    "group": "Oozes",
+    "hit_dice": "3d8+9",
+    "hit_points": 22,
+    "id": "gray_ooze",
+    "intelligence": 1,
+    "languages": "",
+    "name": "Gray Ooze",
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The ooze can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Amorphous"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Any nonmagical weapon made of metal that hits the ooze corrodes. After dealing damage, the weapon takes a permanent and cumulative -1 penalty to damage rolls. If its penalty drops to -5, the weapon is destroyed. Nonmagical ammunition made of metal that hits the ooze is destroyed after dealing damage.\nThe ooze can eat through 2-inch-thick, nonmagical metal in 1 round.",
+            "name": "Corrode Metal"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While the ooze remains motionless, it is indistinguishable from an oily pool or wet rock.",
+            "name": "False Appearance"
+        }
+    ],
+    "speed": "10 ft., climb 10 ft.",
+    "speed_json": {
+        "climb": 10,
+        "walk": 10
+    },
+    "stealth": 2,
+    "strength": 12,
+    "subtype": "",
+    "type": "ooze",
+    "wisdom": 6
+}

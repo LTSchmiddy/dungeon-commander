@@ -1,0 +1,45 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 1,
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 1 piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "challenge_rating": "0",
+    "charisma": 3,
+    "condition_immunities": "",
+    "constitution": 8,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 16,
+    "hit_dice": "1d4",
+    "hit_points": 1,
+    "id": "weasel",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Weasel",
+    "perception": 3,
+    "senses": "passive Perception 13",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+            "name": "Keen Hearing and Smell"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 5,
+    "strength": 3,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

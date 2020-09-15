@@ -1,0 +1,68 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The ancient titan makes two greatsword attacks or two longbow attacks",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 12,
+            "damage_dice": "8d6",
+            "desc": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 38 (8d6 + 8) slashing damage.",
+            "name": "Greatsword"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "4d8",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 150/640 ft., one target. Hit: 19 (4d8 + 1) piercing damage.",
+            "name": "Longbow"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The ancient titan opens a momentary rupture in the eldritch source that fuels its words of power. This rupture appears at a spot designated by the titan within 100 feet. Any creature within 60 feet of the spot must make a DC 17 Constitution saving throw. On a failure, the creature takes 28 (8d6) force damage, falls prone, and is pulled 1d6 x 10 feet toward the eldritch singularity, taking an additional 3 (1d6) bludgeoning damage per 10 feet they were dragged. If the saving throw succeeds, the target takes half as much force damage and isn't knocked prone or pulled. The spot where the rupture occurs becomes the center of a 60-foot-radius antimagic field until the end of the ancient titan's next turn. The titan's spells are not affected by this antimagic field.",
+            "name": "Eldritch Singularity (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral good",
+    "armor_class": 15,
+    "armor_desc": "breastplate",
+    "athletics": 14,
+    "challenge_rating": "12",
+    "charisma": 20,
+    "charisma_save": 9,
+    "constitution": 22,
+    "constitution_save": 10,
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 13,
+    "hit_dice": "12d20+72",
+    "hit_points": 198,
+    "id": "ancient_titan",
+    "intelligence": 16,
+    "intimidation": 9,
+    "languages": "Common, Giant, Primordial, Titan, telepathy 120 ft.",
+    "name": "Ancient Titan",
+    "perception": 7,
+    "senses": "darkvision 120 ft., passive Perception 17",
+    "size": "Gargantuan",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The ancient titan has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the ancient titan's spellcasting ability is Charisma (spell save DC 17). The ancient titan can innately cast the following spells, requiring no material components:\n\n3/day: power word stun\n\n1/day: power word kill",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "strength": 27,
+    "subtype": "titan",
+    "type": "celestial",
+    "wisdom": 16,
+    "wisdom_save": 7
+}

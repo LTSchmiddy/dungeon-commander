@@ -1,0 +1,47 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) slashing damage.",
+            "name": "Scimitar"
+        }
+    ],
+    "alignment": "any non-good alignment",
+    "armor_class": 12,
+    "armor_desc": "leather armor",
+    "challenge_rating": "1/8",
+    "charisma": 10,
+    "condition_immunities": "",
+    "constitution": 10,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "deception": 2,
+    "dexterity": 12,
+    "hit_dice": "2d8",
+    "hit_points": 9,
+    "id": "cultist",
+    "intelligence": 10,
+    "languages": "any one language (usually Common)",
+    "name": "Cultist",
+    "religion": 2,
+    "senses": "passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The cultist has advantage on saving throws against being charmed or frightened.",
+            "name": "Dark Devotion"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 11,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 11
+}

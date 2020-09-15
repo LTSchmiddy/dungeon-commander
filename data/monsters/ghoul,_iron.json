@@ -1,0 +1,66 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The iron ghoul makes one bite attack and one claw attack, or three glaive attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) piercing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target is humanoid, it must succeed on a separate DC 13 Constitution saving throw or contract darakhul fever.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "4d6",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (4d6 + 4) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If the target is humanoid, it must succeed on a separate DC 13 Constitution saving throw or contract darakhul fever.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d10",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 20 (1d10 + 4) slashing damage.",
+            "name": "Glaive"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d10",
+            "desc": "Ranged Weapon Attack: +6 to hit, range 100/400, one target. Hit: 8 (1d10 + 3) piercing damage.",
+            "name": "Heavy Bone Crossbow"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 16,
+    "armor_desc": "breastplate",
+    "challenge_rating": "5",
+    "charisma": 14,
+    "condition_immunities": "charmed, exhaustion, poisoned",
+    "constitution": 14,
+    "damage_immunities": "poison",
+    "dexterity": 16,
+    "hit_dice": "22d8+44",
+    "hit_points": 143,
+    "id": "ghoul,_iron",
+    "intelligence": 14,
+    "languages": "Common, Darakhul, Undercommon",
+    "name": "Ghoul, Iron",
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The iron ghoul and any ghouls within 30 feet of it have advantage on saving throws against effects that turn undead.",
+            "name": "Turning Defiance"
+        }
+    ],
+    "speed": "30 ft., burrow 20 ft.",
+    "speed_json": {
+        "burrow": 20,
+        "walk": 30
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 14
+}

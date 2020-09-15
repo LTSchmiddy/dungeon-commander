@@ -1,0 +1,15 @@
+{
+    "ability": "dexterity",
+    "attack_bonus": 0,
+    "base_damage": "1d6",
+    "class": "HandCrossbow",
+    "cost": "75 gp",
+    "damage_bonus": 0,
+    "damage_type": "p",
+    "features_applied": false,
+    "id": "BasicHandCrossbow",
+    "is_finesse": false,
+    "name": "Crossbow, hand",
+    "properties": "Ammunition (range 30/120), light, loading",
+    "weight": 3
+}

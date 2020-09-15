@@ -1,0 +1,65 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The manticore makes three attacks: one with its bite and two with its claws or three with its tail spikes.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 100/200 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+            "name": "Tail Spike"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": 8,
+    "condition_immunities": "",
+    "constitution": 17,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 16,
+    "hit_dice": "8d10+24",
+    "hit_points": 68,
+    "id": "manticore",
+    "intelligence": 7,
+    "languages": "",
+    "name": "Manticore",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The manticore has twenty-four tail spikes. Used spikes regrow when the manticore finishes a long rest.",
+            "name": "Tail Spike Regrowth"
+        }
+    ],
+    "speed": "30 ft., fly 50 ft.",
+    "speed_json": {
+        "fly": 50,
+        "walk": 30
+    },
+    "strength": 17,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 12
+}

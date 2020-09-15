@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d10+1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) lightning damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 0,
+            "damage_dice": "4d10",
+            "desc": "The dragon exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one.",
+            "name": "Lightning Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": 15,
+    "charisma_save": 4,
+    "condition_immunities": "",
+    "constitution": 15,
+    "constitution_save": 4,
+    "damage_immunities": "lightning",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "dexterity_save": 2,
+    "group": "Blue Dragon",
+    "hit_dice": "8d8+16",
+    "hit_points": 52,
+    "id": "blue_dragon_wyrmling",
+    "intelligence": 12,
+    "languages": "Draconic",
+    "name": "Blue Dragon Wyrmling",
+    "perception": 4,
+    "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
+    "size": "Medium",
+    "speed": "30 ft., burrow 15 ft., fly 60 ft.",
+    "speed_json": {
+        "burrow": 15,
+        "fly": 60,
+        "walk": 30
+    },
+    "stealth": 2,
+    "strength": 17,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 11,
+    "wisdom_save": 2
+}

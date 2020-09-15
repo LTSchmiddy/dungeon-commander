@@ -1,0 +1,70 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The xorn makes three claw attacks and one bite attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 3,
+            "damage_dice": "3d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 3,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+            "name": "Claw"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 19,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 11,
+    "condition_immunities": "",
+    "constitution": 22,
+    "damage_immunities": "",
+    "damage_resistances": "piercing and slashing from nonmagical weapons that aren't adamantine",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "7d8+42",
+    "hit_points": 73,
+    "id": "xorn",
+    "intelligence": 11,
+    "languages": "Terran",
+    "name": "Xorn",
+    "perception": 6,
+    "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 16",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The xorn can burrow through nonmagical, unworked earth and stone. While doing so, the xorn doesn't disturb the material it moves through.",
+            "name": "Earth Glide"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The xorn has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.",
+            "name": "Stone Camouflage"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The xorn can pinpoint, by scent, the location of precious metals and stones, such as coins and gems, within 60 ft. of it.",
+            "name": "Treasure Sense"
+        }
+    ],
+    "speed": "20 ft., burrow 20 ft.",
+    "speed_json": {
+        "burrow": 20,
+        "walk": 20
+    },
+    "stealth": 3,
+    "strength": 17,
+    "subtype": "",
+    "type": "elemental",
+    "wisdom": 10
+}

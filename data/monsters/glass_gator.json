@@ -1,0 +1,70 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage, and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained and the glass gator can't attack a different target.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "One creature that's already grappled by the glass gator takes 7 (2d4 + 2) bludgeoning damage plus 7 (2d6) poison damage, or half as much poison damage with a successful DC 11 Constitution saving throw.",
+            "name": "Constrict"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1",
+    "charisma": 5,
+    "constitution": 12,
+    "dexterity": 14,
+    "hit_dice": "7d10+7",
+    "hit_points": 45,
+    "id": "glass_gator",
+    "intelligence": 4,
+    "languages": "-",
+    "name": "Glass Gator",
+    "perception": 2,
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "After taking damage while in water, the glass gator thrashes to stir up a 10-foot-radius cloud of silt around itself. The area inside the sphere is heavily obscured for 1 minute (10 rounds) in still water or 5 (2d4) rounds in a strong current. After stirring up the silt, the glass gator can move its speed.",
+            "name": "Silt Cloud (Recharges after a Short or Long Rest)"
+        }
+    ],
+    "senses": "Blindsight 30 ft., passive Perception 12",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The glass gator can breathe air and water.",
+            "name": "Amphibious"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When the glass gator leaps at least 10 feet toward a creature and hits that creature with a claws attack on the same turn, it can immediately constrict the target as a bonus action.",
+            "name": "Lunge"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The glass gator has advantage on Dexterity (Stealth) checks while underwater or in dim light.",
+            "name": "Transparency"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The glass gator can long jump up to 15 feet from water or up to 10 feet on land, with or without a running start.",
+            "name": "Standing Leap"
+        }
+    ],
+    "speed": "30 ft., swim 50 ft.",
+    "speed_json": {
+        "swim": 50,
+        "walk": 30
+    },
+    "stealth": 4,
+    "strength": 15,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

@@ -1,0 +1,67 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The centaur makes two attacks: one with its pike and one with its hooves or two with its longbow.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "1d10",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) piercing damage.",
+            "name": "Pike"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.",
+            "name": "Hooves"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "name": "Longbow"
+        }
+    ],
+    "alignment": "neutral good",
+    "armor_class": 12,
+    "athletics": 6,
+    "challenge_rating": "2",
+    "charisma": 11,
+    "condition_immunities": "",
+    "constitution": 14,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 14,
+    "hit_dice": "6d10+12",
+    "hit_points": 45,
+    "id": "centaur",
+    "intelligence": 9,
+    "languages": "Elvish, Sylvan",
+    "name": "Centaur",
+    "perception": 3,
+    "senses": "passive Perception 13",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "damage_dice": "3d6",
+            "desc": "If the centaur moves at least 30 ft. straight toward a target and then hits it with a pike attack on the same turn, the target takes an extra 10 (3d6) piercing damage.",
+            "name": "Charge"
+        }
+    ],
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "strength": 18,
+    "subtype": "",
+    "survival": 3,
+    "type": "monstrosity",
+    "wisdom": 13
+}

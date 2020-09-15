@@ -1,0 +1,54 @@
+{
+    "actions": [
+        {
+            "desc": "A ghoulsteed makes two bite attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d8+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage and the ghoulsteed gains 5 (1d10) temporary hp. These temporary hp stack with each other, but the ghoulsteed can only have a maximum of 10 temporary hp at one time.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": "13",
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": "6",
+    "condition_immunities": "poisoned",
+    "constitution": "16",
+    "damage_immunities": "poison",
+    "dexterity": "10",
+    "hit_dice": "10d10+30",
+    "hit_points": "85",
+    "id": "ghoulsteed",
+    "intelligence": "6",
+    "languages": "Common, Darakhul",
+    "name": "Ghoulsteed",
+    "perception": 2,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "desc": "If the ghoulsteed moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the ghoulsteed can make one bite attack against it as a bonus action.",
+            "name": "Pounce"
+        },
+        {
+            "desc": "When the ghoulsteed uses the Dash action, it can Dash again as a bonus action.",
+            "name": "Sprint (3/Day)"
+        },
+        {
+            "desc": "If damage reduces the ghoulsteed to 0 hp, it makes a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the ghoulsteed drops to 1 hp instead.",
+            "name": "Undead Fortitude"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": "18",
+    "subtype": "",
+    "type": "undead",
+    "wisdom": "10"
+}

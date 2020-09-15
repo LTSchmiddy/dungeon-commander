@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "desc": "The gnoll makes three attacks: one with its bite and two with its whip or three with its longbow.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d4+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 10ft., one target. Hit: 6 (1d4 + 4) slashing damage.",
+            "name": "Whip"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d8+2",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "name": "Longbow"
+        },
+        {
+            "desc": "The gnoll selects up to three creatures it has taken captive within 30 feet. Each creature must succeed on a DC 15 Wisdom saving throw or have disadvantage for 1 minute on any attack rolls or skill checks to take actions other than those the gnoll has ordered it to take.",
+            "name": "Menace Captives (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "15",
+    "armor_desc": "chain shirt",
+    "athletics": 6,
+    "challenge_rating": "3",
+    "charisma": "12",
+    "constitution": "14",
+    "dexterity": "15",
+    "hit_dice": "11d8+22",
+    "hit_points": "71",
+    "id": "gnoll_slaver",
+    "intelligence": "12",
+    "intimidation": 5,
+    "languages": "Common, Gnoll",
+    "name": "Gnoll Slaver",
+    "perception": 2,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "When the gnoll reduces a creature to 0 hp with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack.",
+            "name": "Rampage"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": "18",
+    "subtype": "gnoll",
+    "type": "humanoid",
+    "wisdom": "11"
+}

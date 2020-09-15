@@ -1,0 +1,76 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d10",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) cold damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon uses one of the following breath weapons:",
+            "name": "Breath Weapons (Recharge 5-6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon exhales a 15-foot cube of powerful localized gravity, originating from the dragon. Falling damage in the area increases to 1d10 per 10 feet fallen. When a creature starts its turn within the area or enters it for the first time in a turn, including when the dragon creates the field, must make a DC 13 Dexterity saving throw. On a failure the creature is restrained. On a success the creature's speed is halved as long as it remains in the field. A restrained creature repeats the saving throw at the end of its turn. The field persists until the dragon's breath recharges, and it can't use gravitic breath twice consecutively.",
+            "name": "Gravitic Breath"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon exhales star fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 10 (3d6) fire damage and 10 (3d6) radiant damage on a failed save, or half as much damage on a successful one.",
+            "name": "Stellar Flare Breath"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 17,
+    "charisma_save": 5,
+    "constitution": 17,
+    "constitution_save": 5,
+    "damage_immunities": "cold",
+    "dexterity": 10,
+    "dexterity_save": 4,
+    "hit_dice": "6d8+18",
+    "hit_points": 45,
+    "id": "void_dragon_wyrmling",
+    "intelligence": 12,
+    "languages": "Common, Draconic, Void Speech",
+    "name": "Void Dragon Wyrmling",
+    "perception": 3,
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "When the dragon is hit by a ranged attack it can create a small rift in space to increase its AC by 2 against that attack. If the attack misses because of this increase the dragon can choose a creature within 30 feet to become the new target for that attack. Use the original attack roll to determine if the attack hits the new target.",
+            "name": "Void Twist"
+        }
+    ],
+    "senses": "passive Perception $1",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Cold damage dealt by the void dragon ignores resistance to cold damage, but not cold immunity.",
+            "name": "Chill of the Void"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "As ancient void dragon.",
+            "name": "Void Dweller"
+        }
+    ],
+    "speed": "30 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "hover": true,
+        "walk": 30
+    },
+    "stealth": 2,
+    "strength": 16,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 9,
+    "wisdom_save": 1
+}

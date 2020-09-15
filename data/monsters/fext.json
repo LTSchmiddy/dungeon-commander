@@ -1,0 +1,72 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The fext makes two melee or ranged attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d6+2",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage plus 16 (3d10) force damage.",
+            "name": "Eldritch Blade"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "4d10",
+            "desc": "Ranged Weapon Attack: +6 to hit, range 60/200 ft., one creature. Hit: 25 (4d10 + 3) force damage.",
+            "name": "Eldritch Fury"
+        }
+    ],
+    "alignment": "any alignment",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 18,
+    "charisma_save": 7,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
+    "constitution": 1,
+    "damage_resistances": "bludgeoning, piercing, and slashing damage with nonmagical weapons",
+    "dexterity": 16,
+    "dexterity_save": 6,
+    "hit_dice": "11d8+11",
+    "hit_points": 60,
+    "id": "fext",
+    "intelligence": 14,
+    "languages": "the languages spoken by its patron",
+    "name": "Fext",
+    "perception": 4,
+    "senses": "darkvision 60 ft., passive Perception 14",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the fext's innate spellcasting ability is Charisma (spell save DC 15). It can innately cast the following spells, requiring no material components:at will: hex3/day each: counterspell, fear, gaseous form1/day each: hold monster, true seeing",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The fext has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The fext's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A fext is infused with a portion of their patron's power. They have an Armor Class equal to 10 + their Charisma modifier + their Dexterity modifier.",
+            "name": "Patron Blessing"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 14,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 12,
+    "wisdom_save": 4
+}

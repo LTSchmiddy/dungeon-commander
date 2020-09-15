@@ -1,0 +1,56 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant makes two greatsword attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 11,
+            "damage_bonus": 7,
+            "damage_dice": "6d6",
+            "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 28 (6d6 + 7) slashing damage.",
+            "name": "Greatsword"
+        },
+        {
+            "attack_bonus": 11,
+            "damage_bonus": 7,
+            "damage_dice": "4d10",
+            "desc": "Ranged Weapon Attack: +11 to hit, range 60/240 ft., one target. Hit: 29 (4d10 + 7) bludgeoning damage.",
+            "name": "Rock"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 18,
+    "armor_desc": "plate",
+    "athletics": 11,
+    "challenge_rating": "9",
+    "charisma": 13,
+    "charisma_save": 5,
+    "condition_immunities": "",
+    "constitution": 23,
+    "constitution_save": 10,
+    "damage_immunities": "fire",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 9,
+    "dexterity_save": 3,
+    "group": "Giants",
+    "hit_dice": "13d12+78",
+    "hit_points": 162,
+    "id": "fire_giant",
+    "intelligence": 10,
+    "languages": "Giant",
+    "name": "Fire Giant",
+    "perception": 6,
+    "senses": "passive Perception 16",
+    "size": "Huge",
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 25,
+    "subtype": "",
+    "type": "giant",
+    "wisdom": 14
+}

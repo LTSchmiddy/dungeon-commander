@@ -1,0 +1,100 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The hundun makes four slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "3d6",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 15 (3d6 + 5) bludgeoning damage.",
+            "name": "Slam"
+        }
+    ],
+    "alignment": "chaotic good",
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "athletics": 9,
+    "challenge_rating": "10",
+    "charisma": 18,
+    "charisma_save": 8,
+    "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, stunned, unconscious",
+    "constitution": 16,
+    "constitution_save": 7,
+    "damage_immunities": "acid, psychic",
+    "damage_resistances": "lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 14,
+    "hit_dice": "18d10+54",
+    "hit_points": 153,
+    "id": "hundun",
+    "insight": 9,
+    "intelligence": 4,
+    "languages": "understands Celestial and Primordial, but cannot speak intelligibly",
+    "name": "Hundun",
+    "perception": 9,
+    "senses": "blindsight 60 ft., passive Perception 20",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Hunduns are immune to any spell or effect that allows an Intelligence, Wisdom, or Charisma saving throw. Trying to contact or read a Hundun's mind confuses the caster as the spell for 1 round.",
+            "name": "Brainless"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Hunduns can perform an act of magical creation almost unlimited in scope every 1d8 days. The effect is equivalent to a wish spell, but it must create something.",
+            "name": "Dance of Creation"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "when a hundun's confusion spell affects a target, it can elect to use the following table rather than the standard one:\n\n1d100 Result",
+            "name": "Enlightening Befuddlement"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Advantage on attack rolls, ability checks, and saving throws",
+            "name": "01-10 Inspired:"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Disadvantage on attack rolls, ability checks, and saving throws",
+            "name": "11-20 Distracted:"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The target does nothing but babble or scribble incoherent notes on a new idea",
+            "name": "21-50 Incoherent:"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Target is recipient of geas to create a quality magical object",
+            "name": "51-75 Obsessed:"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Target receives a suggestion from the hundun",
+            "name": "76-100 Suggestible:"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the hundun's innate spellcasting ability is Wisdom (spell save DC 17). It can cast the following spells, requiring no material components:\n\nconstant: confusion (always centered on the hundun), detect thoughts\n\nat will: create or destroy water, dancing lights, mending, prestidigitation\n\n3/day each: compulsion, dimension door, black tentacles, irresistible dance\n\n1/day each: awaken, creation, heroes' feast, magnificent mansion, plant growth, reincarnate, stone shape",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The hundun's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        }
+    ],
+    "speed": "40 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "walk": 40
+    },
+    "strength": 20,
+    "subtype": "",
+    "type": "celestial",
+    "wisdom": 20,
+    "wisdom_save": 9
+}

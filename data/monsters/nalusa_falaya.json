@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage. If the target is a creature, it must succeed on a DC 12 Strength saving throw or be knocked prone.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d8+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "desc": "The nalusa falaya targets one creature it can see within 30 feet of it. If the target can see the nalusa falaya, the target must succeed on a DC 12 Wisdom saving throw or be frightened until the end of the nalusa falaya's next turn.",
+            "name": "Terrifying Glare"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": "13",
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/2",
+    "charisma": "9",
+    "constitution": "13",
+    "dexterity": "15",
+    "hit_dice": "6d8+6",
+    "hit_points": "33",
+    "id": "nalusa_falaya",
+    "intelligence": "11",
+    "languages": "Umbral, Void Speech",
+    "name": "Nalusa Falaya",
+    "senses": "darkvision 120 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "While in dim light or darkness, the nalusa falaya can take the Hide action as a bonus action.",
+            "name": "Shadow Stealth"
+        },
+        {
+            "desc": "As an action, the nalusa falaya can teleport itself to a shadow it can see within 30 feet.",
+            "name": "Shadow Step"
+        },
+        {
+            "desc": "While in sunlight, the nalusa falaya has disadvantage on ability checks, attack rolls, and saving throws.",
+            "name": "Sunlight Weakness"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 4,
+    "strength": "12",
+    "subtype": "",
+    "type": "aberration",
+    "wisdom": "13"
+}

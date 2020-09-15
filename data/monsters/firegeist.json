@@ -1,0 +1,68 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The firegeist makes two slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The firegeist may ignite a target when making a slam attack. The target must immediately succeed at a DC 13 Dexterity saving throw or catch fire, taking an additional 5 (1d10) fire damage at the beginning of its next turn. Until someone takes an action to douse the fire, the creature takes 5 (1d10) fire damage at the start of each of its turns.",
+            "name": "Combustion Touch (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 14,
+    "armor_desc": "",
+    "challenge_rating": "2",
+    "charisma": 6,
+    "condition_immunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+    "constitution": 10,
+    "damage_immunities": "fire, poison",
+    "dexterity": 18,
+    "hit_dice": "25d6",
+    "hit_points": 87,
+    "id": "firegeist",
+    "intelligence": 4,
+    "languages": "Primordial",
+    "name": "Firegeist",
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "In an area lit only by nonmagical flame, a Firegeist gains a +2 bonus on Stealth checks. This becomes +4 when hiding within the fire.",
+            "name": "Hide By Firelight"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The firegeist sheds dim light in a 30-foot radius.",
+            "name": "Illumination"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in magical light, the firegeist has disadvantage on attack rolls and ability checks.",
+            "name": "Magical Light Sensitivity"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "For every 5 feet the firegeist moves in water, or for every gallon of water splashed on it, it takes 3 cold damage.",
+            "name": "Water Susceptibility"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 7,
+    "subtype": "",
+    "type": "elemental",
+    "wisdom": 16
+}

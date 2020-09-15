@@ -1,0 +1,49 @@
+{
+    "actions": [
+        {
+            "desc": "The xenabsorber makes two melee attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d10+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) bludgeoning damage.",
+            "name": "Slam"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": "15",
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": "15",
+    "constitution": "15",
+    "deception": 4,
+    "dexterity": "12",
+    "hit_dice": "10d8+20",
+    "hit_points": "65",
+    "id": "xenabsorber",
+    "intelligence": "10",
+    "languages": "Common",
+    "name": "Xenabsorber",
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The xenabsorber has advantage on Charisma (Deception) checks to pass itself off as the type of creature it is impersonating as long as it has at least 1 trait from that creature.",
+            "name": "Disguise"
+        },
+        {
+            "desc": "As a bonus action, a xenabsorber can take on 1 nonmagical physical trait, attack, or reaction of a beast or humanoid with a challenge rating equal to or less than its own that it has seen within the last week (see Trait Mimicry sidebar). It can have up to 5 such traits at a time, no more than two of which can be attacks. Each trait lasts until the xenabsorber replaces it with another trait as a bonus action. If the xenabsorber goes a week without exposure to a single beast or humanoid, it loses all of its traits and reverts back to its true, blue crystalline form.",
+            "name": "Trait Mimicry"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": "17",
+    "subtype": "",
+    "type": "aberration",
+    "wisdom": "13"
+}

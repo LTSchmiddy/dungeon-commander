@@ -1,0 +1,80 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The horseman makes three attacks with its lance or longsword. It can use Temporal Strike with one of these attacks when it is available.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "1d12+6",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft. (disadvantage within 5 ft.), one target. Hit: 12 (1d12 + 6) piercing damage.",
+            "name": "Lance"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) slashing damage.",
+            "name": "Longsword"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When the horseman strikes a target with a melee attack, in addition to taking normal damage, the target must succeed on a DC 17 Constitution saving throw or instantly age 3d10 years. A creature that ages this way has disadvantage on attack rolls, ability checks, and saving throws based on Strength, Dexterity, and Constitution until the aging is reversed. A creature that ages beyond its lifespan dies immediately. The aging reverses automatically after 24 hours, or it can be reversed magically by greater restoration or comparable magic. A creature that succeeds on the save is immune to the temporal strike effect for 24 hours.",
+            "name": "Temporal Strike (recharge 5-6)"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "arcana": 7,
+    "armor_class": 20,
+    "armor_desc": "plate and shield",
+    "athletics": 10,
+    "challenge_rating": "11",
+    "charisma": 18,
+    "condition_immunities": "blinded, charmed, exhaustion, frightened, paralyzed, poisoned",
+    "constitution": 21,
+    "damage_immunities": "fire, lightning, poison",
+    "damage_resistances": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
+    "dexterity": 11,
+    "dexterity_save": 4,
+    "history": 7,
+    "hit_dice": "18d8+90",
+    "hit_points": 171,
+    "id": "baba_yaga's_horsemen,_red_sun",
+    "intelligence": 16,
+    "languages": "Celestial, Common, Infernal; telepathy 100 ft.",
+    "name": "Baba Yaga's Horsemen, Red Sun",
+    "perception": 8,
+    "senses": "passive Perception $1",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the horseman is a 12th-level spellcaster. Its spellcasting ability is Charisma (save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\n1/day each: dimension door, fire shield, haste, slow\n\n2/day each: continual flame, scorching ray\n\n3/day each: ethereal jaunt, phantom steed (appears as a horse colored appropriately to the horseman), plane shift (self and steed only)",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The horseman has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Any attacks directed at the horseman's mount targets the horseman instead. Its mount gains the benefit of the rider's damage and condition immunities, and if the horseman passes a saving throw against an area effect, the mount takes no damage.",
+            "name": "Peerless Rider"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The horseman can switch between wielding its lance and longsword as a bonus action.",
+            "name": "Quick Draw"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 22,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 18,
+    "wisdom_save": 8
+}

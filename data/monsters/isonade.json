@@ -1,0 +1,82 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The isonade makes one tail slap attack and one bite attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 14,
+            "damage_dice": "5d12+10",
+            "desc": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 42 (5d12 + 10) piercing damage and the target is grappled (escape DC 20). If the target was already grappled from a previous bite, it's also swallowed whole (see below).",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 14,
+            "damage_dice": "6d6",
+            "desc": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 31 (6d6 + 10) bludgeoning damage.",
+            "name": "Tail Slap"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The isonade leaps out of the water to crash down onto a target with devastating effect. The isonade must move 30 feet in a straight line toward its target before jumping. When jumping, the isonade travels up to 30 feet through the air before landing. Any creature occupying the space where the isonade lands takes 76 (12d10 + 10) bludgeoning damage and becomes submerged 10 feet below the surface of the water. Targets that make a successful DC 20 Strength saving throw take half damage and are not submerged, but are moved to the nearest unoccupied space. Boats and structures are not immune to this attack.",
+            "name": "Breach"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When the isonade's bite attack hits a target grappled from a previous bite attack, the target is also swallowed. The grapple ends, but the target is blinded and restrained, it has total cover against attacks and other effects outside the isonade, and it takes 36 (8d8) acid damage at the start of each of the isonade's turns. An isonade can have two Large, four Medium, or six Small creatures swallowed at a time. If the isonade takes 40 damage or more from a swallowed creature in a single turn, it must succeed on a DC 20 Constitution saving throw or regurgitate all swallowed creatures, which fall prone within 10 feet of the isonade. If the isonade dies, a swallowed creature is no longer restrained by it and can escape by using 20 feet of movement, exiting prone.",
+            "name": "Swallow Whole"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "athletics": 14,
+    "challenge_rating": "14",
+    "charisma": 8,
+    "constitution": 26,
+    "constitution_save": 12,
+    "damage_immunities": "ability damage/drain",
+    "dexterity": 14,
+    "hit_dice": "12d20+96",
+    "hit_points": 222,
+    "id": "isonade",
+    "intelligence": 6,
+    "languages": "understands Aquan and Elvish, but cannot speak",
+    "name": "Isonade",
+    "perception": 8,
+    "senses": "darkvision 90 ft., passive Perception 18",
+    "size": "Gargantuan",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The isonade can comfortably exist at any level of the sea and suffers no penalties at any depth.",
+            "name": "Atmospheric Immunity"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The isonade has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The isonade can breathe only underwater.",
+            "name": "Water Breathing"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the isonade's innate spellcasting ability is Wisdom (spell save DC 16). It can innately cast the following spells, requiring no material components:\n\nat will: animal messenger\n\n3/day each: control water, earthquake\n\n1/day each: control weather, storm of vengeance, tsunami",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "swim 100 ft.",
+    "speed_json": {
+        "swim": 100
+    },
+    "strength": 30,
+    "strength_save": 14,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 18,
+    "wisdom_save": 8
+}

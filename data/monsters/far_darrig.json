@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The far darrig makes four antler glaive attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d10",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft. or 10 ft., one target. Hit: 7 (1d10 + 2) slashing damage and the target must make a successful DC 13 Strength saving throw or either be disarmed or fall prone; the attacking far darrig chooses which effect occurs.",
+            "name": "Antler Glaive"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A far darrig can magically extend or shrink its antler glaive as a bonus action to give it either a 10-foot or 5-foot reach.",
+            "name": "Enchanted Glaive Maneuvers"
+        }
+    ],
+    "alignment": "neutral",
+    "animal Handling": 6,
+    "armor_class": 14,
+    "armor_desc": "hide armor",
+    "challenge_rating": "3",
+    "charisma": 17,
+    "charisma_save": 7,
+    "constitution": 17,
+    "constitution_save": 7,
+    "dexterity": 16,
+    "dexterity_save": 5,
+    "hit_dice": "16d6+48",
+    "hit_points": 104,
+    "id": "far_darrig",
+    "intelligence": 11,
+    "languages": "Common, Elvish, Sylvan",
+    "medicine": 6,
+    "name": "Far Darrig",
+    "nature": 4,
+    "perception": 6,
+    "senses": "darkvision 60 ft., passive Perception 16",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the far darrig's innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nconstant: magic weapon (antler glaive only), speak with animals\n\nat will: calm emotions, charm animal (as charm person but affects beasts only), cure wounds, detect poison and disease, water breathing, water walk\n\n3/day each: barkskin, conjure woodland beings, hold animal (as hold person but affects beasts only), jump, longstrider\n\n1/day each: commune with nature, freedom of movement, nondetection, tree stride",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "strength": 15,
+    "subtype": "",
+    "survival": 6,
+    "type": "fey",
+    "wisdom": 15
+}

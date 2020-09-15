@@ -1,0 +1,45 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 1,
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 7 (3d4) poison damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "challenge_rating": "1/8",
+    "charisma": 5,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 18,
+    "hit_dice": "2d4",
+    "hit_points": 5,
+    "id": "flying_snake",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Flying Snake",
+    "senses": "blindsight 10 ft., passive Perception 11",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The snake doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
+            "name": "Flyby"
+        }
+    ],
+    "speed": "30 ft., fly 60 ft., swim 30 ft.",
+    "speed_json": {
+        "fly": 60,
+        "swim": 30,
+        "walk": 30
+    },
+    "strength": 4,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

@@ -1,0 +1,60 @@
+{
+    "actions": [
+        {
+            "desc": "The undead phoenix makes three attacks: two with its claws and one with its decaying bite.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "4d6+6",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 20 (4d6 + 6) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "2d8+6",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) piercing damage plus 14 (4d6) necrotic damage. The target must succeed on a DC 15 Constitution saving throw or be cursed with perpetual decay. The cursed target can't regain hp until the curse is lifted by the remove curse spell or similar magic.",
+            "name": "Decaying Bite"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "17",
+    "armor_desc": "natural armor",
+    "challenge_rating": "12",
+    "charisma": "9",
+    "condition_immunities": "poisoned",
+    "constitution": "17",
+    "constitution_save": 7,
+    "damage_immunities": "necrotic, fire, poison",
+    "dexterity": "14",
+    "hit_dice": "15d12+45",
+    "hit_points": "142",
+    "id": "undead_phoenix",
+    "intelligence": "8",
+    "languages": "-",
+    "name": "Undead Phoenix",
+    "perception": 7,
+    "senses": "darkvision 120 ft., passive Perception 17",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "desc": "A living creature that starts its turn within 10 feet of the undead phoenix can't regain hp and has disadvantage on Constitution saving throws until the start of its next turn.",
+            "name": "Bilious Aura"
+        },
+        {
+            "desc": "If it dies, the undead phoenix reverts into a pile of necrotic-tainted ooze and is reborn in 24 hours with all of its hp. Only killing it with radiant damage prevents this trait from functioning.",
+            "name": "Eternal Unlife"
+        }
+    ],
+    "speed": "30 ft., fly 90 ft.",
+    "speed_json": {
+        "fly": 90,
+        "walk": 30
+    },
+    "strength": "23",
+    "strength_save": 10,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": "17",
+    "wisdom_save": 7
+}

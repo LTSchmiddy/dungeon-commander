@@ -1,0 +1,85 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "A ravenfolk warrior makes two runespear attacks, or two longbow attacks, or one ghost wings attack and one runespear attack. It can substitute one peck attack for any other attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The ravenfolk warrior furiously \"beats\"a set of phantasmal wings. Every creature within 5 feet of the ravenfolk must make a successful DC 13 Dexterity saving throw or be blinded until the start of the ravenfolk's next turn.",
+            "name": "Ghost Wings"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Ranged Weapon Attack. +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+            "name": "Longbow"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Peck"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d12",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 10 ft., one target. Hit: 7 (1d12 + 1) piercing damage plus 2 (1d4) radiant damage.",
+            "name": "Radiant Runespear"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+            "name": "Rapier"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 15,
+    "armor_desc": "studded leather armor",
+    "challenge_rating": "3",
+    "charisma": 10,
+    "charisma_save": 2,
+    "constitution": 14,
+    "deception": 2,
+    "dexterity": 16,
+    "dexterity_save": 5,
+    "hit_dice": "12d8+24",
+    "hit_points": 78,
+    "id": "ravenfolk_warrior",
+    "intelligence": 10,
+    "languages": "Common, Feather Speech, Huginn",
+    "name": "Ravenfolk Warrior",
+    "perception": 5,
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "A ravenfolk warrior can disengage after an attack reduces it to 10 hp or less.",
+            "name": "Odin's Call"
+        }
+    ],
+    "senses": "darkvision 120 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Kept keen with runic magic, runespears and runestaves are two-handed weapons that count as magical, though they provide no bonus to attack. Their magic must be renewed each week by a doom croaker or by Odin's own hand.",
+            "name": "Rune Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Ravenfolk warriors can mimic the voices of others with uncanny accuracy. They have advantage on Charisma (Deception) checks involving audible mimicry.",
+            "name": "Mimicry"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 5,
+    "strength": 12,
+    "subtype": "kenku",
+    "type": "humanoid",
+    "wisdom": 13,
+    "wisdom_save": 3
+}

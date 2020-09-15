@@ -1,0 +1,36 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 2,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "challenge_rating": "0",
+    "charisma": 5,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 16,
+    "hit_dice": "1d8",
+    "hit_points": 4,
+    "id": "deer",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Deer",
+    "senses": "passive Perception 12",
+    "size": "Medium",
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "strength": 11,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 14
+}

@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The gargoyle makes two attacks: one with its bite and one with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 7,
+    "condition_immunities": "exhaustion, petrified, poisoned",
+    "constitution": 16,
+    "damage_immunities": "poison",
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
+    "damage_vulnerabilities": "",
+    "dexterity": 11,
+    "hit_dice": "7d8+21",
+    "hit_points": 52,
+    "id": "gargoyle",
+    "intelligence": 6,
+    "languages": "Terran",
+    "name": "Gargoyle",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "While the gargoyle remains motion less, it is indistinguishable from an inanimate statue.",
+            "name": "False Appearance"
+        }
+    ],
+    "speed": "30 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 30
+    },
+    "strength": 15,
+    "subtype": "",
+    "type": "elemental",
+    "wisdom": 11
+}

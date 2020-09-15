@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
+            "name": "Talons"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 13,
+    "armor_desc": "",
+    "challenge_rating": "1/8",
+    "charisma": 6,
+    "constitution": 11,
+    "dexterity": 17,
+    "hit_dice": "4d4",
+    "hit_points": 10,
+    "id": "stryx",
+    "intelligence": 8,
+    "languages": "Common, Elvish",
+    "name": "Stryx",
+    "perception": 4,
+    "senses": "darkvision 120 ft., passive Perception 14",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Until a stryx speaks or opens its mouth, it is indistinguishable from a normal owl.",
+            "name": "False Appearance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The stryx doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
+            "name": "Flyby"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the stryx's innate spellcasting ability is Wisdom. It can cast the following spell, requiring no components:\n\n3/day: comprehend languages",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The stryx has advantage on Wisdom (Perception) checks that rely on hearing or sight.",
+            "name": "Keen Hearing and Sight"
+        }
+    ],
+    "speed": "10 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 10
+    },
+    "stealth": 5,
+    "strength": 3,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 15
+}

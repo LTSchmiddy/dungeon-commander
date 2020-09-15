@@ -1,0 +1,59 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d6+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Intelligent creatures within 60 feet of the cat who are able to hear its voice must make a DC 13 Charisma saving throw. Those who fail find the sound of the wampus cat's voice pleasant and alluring, so that the cat has advantage on Charisma checks against them for 1 minute. The affected characters cannot attack the wampus cat during this time unless they are wounded in that time.",
+            "name": "Yowl (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 14,
+    "armor_desc": "",
+    "challenge_rating": "1",
+    "charisma": 16,
+    "constitution": 15,
+    "deception": 5,
+    "dexterity": 18,
+    "hit_dice": "9d8+18",
+    "hit_points": 58,
+    "id": "wampus_cat",
+    "intelligence": 12,
+    "languages": "Common",
+    "name": "Wampus Cat",
+    "persuasion": 5,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The wampus cat has advantage on melee attacks against any male she has seen employ divine magic or wield a holy symbol.",
+            "name": "Focused Animosity"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the wampus cat's innate spellcasting ability is Charisma (spell save DC 13). She can innately cast the following spells, requiring no material components:\n\nat will: disguise self (appearance of a female human), mage hand\n\n2/day: hex",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The wampus cat has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "40 ft., climb 20 ft., swim 20 ft.",
+    "speed_json": {
+        "climb": 20,
+        "swim": 20,
+        "walk": 40
+    },
+    "strength": 14,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 14
+}

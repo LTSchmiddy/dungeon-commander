@@ -1,0 +1,92 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The drider makes three attacks, either with its longsword or its longbow. It can replace one of those attacks with a bite attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 2,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 2 (1d4) piercing damage plus 9 (2d8) poison damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 3,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands.",
+            "name": "Longsword"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 3,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 4 (1d8) poison damage.",
+            "name": "Longbow"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 19,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 12,
+    "condition_immunities": "",
+    "constitution": 18,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 16,
+    "hit_dice": "13d10+52",
+    "hit_points": 123,
+    "id": "drider",
+    "intelligence": 13,
+    "languages": "Elvish, Undercommon",
+    "name": "Drider",
+    "perception": 5,
+    "senses": "darkvision 120 ft., passive Perception 15",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The drider has advantage on saving throws against being charmed, and magic can't put the drider to sleep.",
+            "name": "Fey Ancestry"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The drider's innate spellcasting ability is Wisdom (spell save DC 13). The drider can innately cast the following spells, requiring no material components:\nAt will: dancing lights\n1/day each: darkness, faerie fire",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The drider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+            "name": "Spider Climb"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in sunlight, the drider has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
+            "name": "Sunlight Sensitivity"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The drider ignores movement restrictions caused by webbing.",
+            "name": "Web Walker"
+        }
+    ],
+    "speed": "30 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 30
+    },
+    "spells": [
+        "dancing lights",
+        "darkness",
+        "faerie fire"
+    ],
+    "stealth": 9,
+    "strength": 16,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 14
+}

@@ -1,0 +1,54 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage.",
+            "name": "Longsword"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/4",
+    "charisma": 1,
+    "condition_immunities": "blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned",
+    "constitution": 11,
+    "damage_immunities": "poison, psychic",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "dexterity_save": 4,
+    "group": "Animated Objects",
+    "hit_dice": "5d6",
+    "hit_points": 17,
+    "id": "flying_sword",
+    "intelligence": 1,
+    "languages": "",
+    "name": "Flying Sword",
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 7",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The sword is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the sword must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
+            "name": "Antimagic Susceptibility"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While the sword remains motionless and isn't flying, it is indistinguishable from a normal sword.",
+            "name": "False Appearance"
+        }
+    ],
+    "speed": "0 ft., fly 50 ft. (hover)",
+    "speed_json": {
+        "fly": 50,
+        "hover": true,
+        "walk": 0
+    },
+    "strength": 12,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 5
+}

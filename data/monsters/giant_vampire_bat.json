@@ -1,0 +1,43 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic damage and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the bat can't bite another target. The bat regains hp equal to the necrotic damage dealt.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "13",
+    "challenge_rating": "2",
+    "charisma": "6",
+    "constitution": "14",
+    "dexterity": "16",
+    "hit_dice": "8d10+16",
+    "hit_points": "60",
+    "id": "giant_vampire_bat",
+    "intelligence": "2",
+    "languages": "-",
+    "name": "Giant Vampire Bat",
+    "senses": "blindsight 60 ft., passive Perception 11",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "desc": "The bat can't use its blindsight while deafened.",
+            "name": "Echolocation"
+        },
+        {
+            "desc": "The bat has advantage on Wisdom (Perception) checks that rely on hearing.",
+            "name": "Keen Hearing"
+        }
+    ],
+    "speed": "10 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 10
+    },
+    "strength": "16",
+    "subtype": "",
+    "type": "beast",
+    "wisdom": "12"
+}

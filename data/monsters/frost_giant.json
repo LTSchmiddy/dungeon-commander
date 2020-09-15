@@ -1,0 +1,56 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant makes two greataxe attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_bonus": 6,
+            "damage_dice": "3d12",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 25 (3d12 + 6) slashing damage.",
+            "name": "Greataxe"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_bonus": 6,
+            "damage_dice": "4d10",
+            "desc": "Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage.",
+            "name": "Rock"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 15,
+    "armor_desc": "patchwork armor",
+    "athletics": 9,
+    "challenge_rating": "8",
+    "charisma": 12,
+    "charisma_save": 4,
+    "condition_immunities": "",
+    "constitution": 21,
+    "constitution_save": 8,
+    "damage_immunities": "cold",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 9,
+    "group": "Giants",
+    "hit_dice": "12d12+60",
+    "hit_points": 138,
+    "id": "frost_giant",
+    "intelligence": 9,
+    "languages": "Giant",
+    "name": "Frost Giant",
+    "perception": 3,
+    "senses": "passive Perception 13",
+    "size": "Huge",
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 23,
+    "subtype": "",
+    "type": "giant",
+    "wisdom": 10,
+    "wisdom_save": 3
+}

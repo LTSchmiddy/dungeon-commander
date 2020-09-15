@@ -1,0 +1,105 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "Boreas makes 4 spear attacks, or 4 longbow attacks, or 2 whirlwind blasts.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Melee Weapon Attack. +13 to hit, reach 5 ft., one target. Hit: 11 (1d8 + 7) piercing damage plus 17 (5d6) cold damage.",
+            "name": "Ice Spear (Humanoid Form)"
+        },
+        {
+            "attack_bonus": 12,
+            "damage_dice": "1d8+6",
+            "desc": "Ranged Weapon Attack: +12 to hit, range 150/600 ft., one target. Hit: 10 (1d8 + 6) piercing damage plus 9 (2d8) cold damage.",
+            "name": "North Wind Longbow"
+        },
+        {
+            "attack_bonus": 11,
+            "damage_dice": "5d12+5",
+            "desc": "Ranged Spell Attack: +11 to hit, range 50 ft., one target. Hit: 37 (5d12 + 5) slashing damage.",
+            "name": "Whirlwind Blast (Wind Form Only)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 20,
+    "armor_desc": "natural armor",
+    "challenge_rating": "17",
+    "charisma": 21,
+    "charisma_save": 11,
+    "condition_immunities": "petrification, poisoned",
+    "constitution": 22,
+    "damage_immunities": "cold, lightning, poison, thunder",
+    "damage_resistances": "acid",
+    "deception": 11,
+    "dexterity": 22,
+    "dexterity_save": 12,
+    "hit_dice": "16d8+96",
+    "hit_points": 168,
+    "id": "avatar_of_boreas",
+    "intelligence": 18,
+    "languages": "Common, Dwarvish, Giant, Infernal",
+    "legendary_actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "Boreas makes an ice spear attack.",
+            "name": "Ice Spear"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Boreas freezes a foe with a look. One creature within 60 feet that the avatar of Boreas can see must make a successful DC 19 Constitution saving throw or be petrified until the start of the avatar's next turn.",
+            "name": "North Wind's Glare"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Boreas erupts into an icy whirlwind. Mundane and magical light sources alike within 20 feet are automatically extinguished. Each creature within 20 feet of the avatar must succeed on a DC 21 Dexterity saving throw or take 14 (4d6) cold damage. The avatar can then fly up to half its flying speed.",
+            "name": "Whirlwind Movement (Costs 2 Actions)"
+        }
+    ],
+    "legendary_desc": "Boreas can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. Boreas regains spent legendary actions at the start of its turn.",
+    "name": "Avatar Of Boreas",
+    "nature": 10,
+    "perception": 10,
+    "senses": "darkvision 60 ft., truesight 120 ft., passive Perception 20",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Boreas freezes everything within 150 feet of him. After 5 rounds, nonmagical fires up to the size of a campfire are quenched. Water freezes within 1 minute. Spells that protect against cold are subjected to an immediate dispel magic (at +10 spellcasting ability) when within 150 feet of Boreas.",
+            "name": "Chilling Presence"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Boreas can shift between his humanoid body and a body made of wind and mist as an action; he can never be forced to shift forms. In wind form, he can use a whirlwind blast attack and use his spells, but no weapon attack. Truesight reveals both forms at once.",
+            "name": "Wind Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Locks, shackles, ropes, and other bindings cannot hold Boreas.",
+            "name": "Freedom of the Wind"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "boreas's innate spellcasting ability is Charisma (spell save DC 19). He can innately cast the following spells, requiring no material components:\n\nat will: create water, detect magic, guidance, invisibility, polymorph, speak with animals, true seeing, wind wall\n\n3/day each: call lightning, control weather, cure wounds, dispel magic, ice storm, lesser restoration\n\n1/day each: chain lightning, earthquake, finger of death, heal, shapechange, wall of ice, word of recall",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The avatar of Boreas regains 10 hit points at the start of its turn. If the avatar of Boreas takes fire damage, this trait does not function at the start of its next turn. The avatar of Boreas dies only if it starts its turn with 0 hit points and does not regenerate.",
+            "name": "Regeneration"
+        }
+    ],
+    "speed": "50 ft., fly 120 ft.",
+    "speed_json": {
+        "fly": 120,
+        "walk": 50
+    },
+    "stealth": 12,
+    "strength": 25,
+    "subtype": "shapechanger",
+    "type": "elemental",
+    "wisdom": 19,
+    "wisdom_save": 10
+}

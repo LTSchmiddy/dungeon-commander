@@ -1,0 +1,52 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant makes two greatclub attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_bonus": 5,
+            "damage_dice": "3d8",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage.",
+            "name": "Greatclub"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_bonus": 5,
+            "damage_dice": "3d10",
+            "desc": "Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage.",
+            "name": "Rock"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 6,
+    "condition_immunities": "",
+    "constitution": 19,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 8,
+    "group": "Giants",
+    "hit_dice": "10d12+40",
+    "hit_points": 105,
+    "id": "hill_giant",
+    "intelligence": 5,
+    "languages": "Giant",
+    "name": "Hill Giant",
+    "perception": 2,
+    "senses": "passive Perception 12",
+    "size": "Huge",
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 21,
+    "subtype": "",
+    "type": "giant",
+    "wisdom": 9
+}

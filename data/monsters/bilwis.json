@@ -1,0 +1,47 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d8+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "desc": "Each creature in the bilwis' space and within 5 feet of it must make a DC 12 Strength saving throw. On a failure, a target takes 14 (4d6) bludgeoning damage and is knocked prone. On a success, a target takes half the bludgeoning damage and isn't knocked prone.",
+            "name": "Whirlwind (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "13",
+    "challenge_rating": "1",
+    "charisma": "16",
+    "condition_immunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+    "constitution": "10",
+    "damage_immunities": "poison",
+    "damage_resistances": "lightning, thunder",
+    "dexterity": "16",
+    "hit_dice": "11d8",
+    "hit_points": "49",
+    "id": "bilwis",
+    "intelligence": "10",
+    "languages": "Auran",
+    "name": "Bilwis",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The bilwis can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Air Form"
+        }
+    ],
+    "speed": "0 ft., fly 40 ft. (hover)",
+    "speed_json": {
+        "fly": 40,
+        "hover": true,
+        "walk": 0
+    },
+    "strength": "12",
+    "subtype": "",
+    "type": "elemental",
+    "wisdom": "13"
+}

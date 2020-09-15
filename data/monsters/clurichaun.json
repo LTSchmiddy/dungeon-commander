@@ -1,0 +1,60 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 2 (1 + 1) bludgeoning damage.",
+            "name": "Unarmed Strike"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d4",
+            "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: 3 (1d4 + 1) bludgeoning, piercing, or slashing damage, depending on weapon.",
+            "name": "Improvised Weapon"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 14,
+    "armor_desc": "",
+    "challenge_rating": "1/4",
+    "charisma": 16,
+    "condition_immunities": "frightened, poisoned",
+    "constitution": 16,
+    "constitution_save": 5,
+    "dexterity": 12,
+    "hit_dice": "4d4+12",
+    "hit_points": 22,
+    "id": "clurichaun",
+    "intelligence": 10,
+    "languages": "Common, Elvish, Sylvan",
+    "name": "Clurichaun",
+    "perception": 1,
+    "senses": "darkvision 60ft., passive Perception 11",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Clurichauns add both their Dexterity and Charisma modifiers to their Armor Class.",
+            "name": "Clurichaun's Luck"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the clurichaun's innate spellcasting ability is Charisma (spell save DC 13). The clurichaun can cast the following spells, requiring only alcohol as a component.\n\nat will: friends, mending, minor illusion, purify food and drink, vicious mockery\n\n1/day each: blur, calm emotions, heroism, sleep, suggestion",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The clurichaun has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 3,
+    "strength": 13,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 8
+}

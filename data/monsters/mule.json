@@ -1,0 +1,49 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
+            "name": "Hooves"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "challenge_rating": "1/8",
+    "charisma": 5,
+    "condition_immunities": "",
+    "constitution": 13,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "2d8",
+    "hit_points": 11,
+    "id": "mule",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Mule",
+    "senses": "passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The mule is considered to be a Large animal for the purpose of determining its carrying capacity.",
+            "name": "Beast of Burden"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The mule has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.",
+            "name": "Sure-Footed"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 14,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

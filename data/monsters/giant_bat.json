@@ -1,0 +1,50 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "challenge_rating": "1/4",
+    "charisma": 6,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 16,
+    "hit_dice": "4d10",
+    "hit_points": 22,
+    "id": "giant_bat",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Giant Bat",
+    "senses": "blindsight 60 ft., passive Perception 11",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The bat can't use its blindsight while deafened.",
+            "name": "Echolocation"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The bat has advantage on Wisdom (Perception) checks that rely on hearing.",
+            "name": "Keen Hearing"
+        }
+    ],
+    "speed": "10 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 10
+    },
+    "strength": 15,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

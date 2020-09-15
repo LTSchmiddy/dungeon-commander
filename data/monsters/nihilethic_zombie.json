@@ -1,0 +1,73 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "4d6+1",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage and the target must make a successful DC 13 Constitution saving throw or become diseased. The disease has little effect for 1 minute; during that time, it can be removed by bless, lesser restoration, or comparable magic. After 1 minute, the diseased creature's skin becomes translucent and slimy. The creature cannot regain hit points unless it is at least partially underwater, and the disease can only be removed by heal or comparable magic. Unless the creature is either fully submerged or frequently doused with water, it takes 6 (1d12) acid damage every 10 minutes. If a creature dies while diseased, it rises in 2d6 rounds as a nihilethic zombie. This zombie is permanently dominated by the nihileth that commands the attacking zombie.",
+            "name": "Slam (Material Form Only)"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d6+1",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) necrotic damage.",
+            "name": "Withering Touch (Ethereal Form)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "As a bonus action, the nihilethic zombie can alter between its material and ethereal forms at will.",
+            "name": "Form Swap"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A nihilethic zombie can sacrifice itself to heal a nihileth within 30 feet of it. All of its remaining hit points transfer to the nihileth in the form of healing. The nihilethic zombie is reduced to 0 hit points and it doesn't make an Undead Fortitude saving throw. A nihileth cannot be healed above its maximum hit points in this manner.",
+            "name": "Sacrifice Life"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 9,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1",
+    "charisma": 5,
+    "condition_immunities": "poisoned",
+    "constitution": 16,
+    "damage_immunities": "cold, necrotic, poison; bludgeoning, piercing and slashing from nonmagical weapons (only when in ethereal form)",
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 6,
+    "hit_dice": "3d8+9",
+    "hit_points": 22,
+    "id": "nihilethic_zombie",
+    "intelligence": 3,
+    "languages": "understand Void Speech and the languages it knew in life but can't speak",
+    "name": "Nihilethic Zombie",
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The nihilethic zombie can reduce the damage it takes from a single source by 1d12 points. This reduction cannot be applied to radiant damage.",
+            "name": "Void Body"
+        }
+    ],
+    "senses": "darkvision 60 ft., passive Perception 8",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If damage reduces the nihileth to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the nihileth drops to 1 hit point instead.",
+            "name": "Undead Fortitude"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Like its nihileth creator, a nihilethic zombie can assume either a material or ethereal form. When in its material form, it has resistance to nonmagical weapons. In its ethereal form, it is immune to nonmagical weapons. Its ethereal form appears as a dark purple outline of its material form, with a blackish-purple haze within.",
+            "name": "Dual State"
+        }
+    ],
+    "speed": "20 ft., swim 30 ft.",
+    "speed_json": {
+        "swim": 30,
+        "walk": 20
+    },
+    "strength": 13,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 6,
+    "wisdom_save": 0
+}

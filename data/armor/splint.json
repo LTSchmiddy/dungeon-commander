@@ -1,0 +1,14 @@
+{
+    "ac": 17,
+    "cost": "200 gp",
+    "disadvantage": true,
+    "id": "splint",
+    "modifier": [],
+    "name": "Splint",
+    "rarity": "Standard",
+    "requirements": {
+        "strength": 15
+    },
+    "type": "Heavy Armor",
+    "weight": "60 lb."
+}

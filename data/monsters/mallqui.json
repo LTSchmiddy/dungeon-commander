@@ -1,0 +1,74 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The mallqui can use its xeric aura and makes two attacks with its desiccating touch.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "5d6",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 20 (5d6 + 3) necrotic damage.",
+            "name": "Desiccating Touch"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "All creatures within 20 feet of the mallqui must succeed on a DC 15 Constitution saving throw or take 11 (2d10) necrotic damage and gain a level of exhaustion. A creature becomes immune to the mallqui's xeric aura for the next 24 hours after making a successful save against it.",
+            "name": "Xeric Aura"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d6",
+            "desc": "Ranged Spell Attack: +7 to hit, range 30/90 ft., one target. Hit: 13 (3d6 + 3) necrotic damage.",
+            "name": "Xeric Blast"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "8",
+    "charisma": 14,
+    "charisma_save": 5,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
+    "constitution": 16,
+    "damage_immunities": "necrotic, poison",
+    "damage_resistances": "cold, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 9,
+    "history": 3,
+    "hit_dice": "16d8+48",
+    "hit_points": 120,
+    "id": "mallqui",
+    "insight": 6,
+    "intelligence": 11,
+    "intelligence_save": 3,
+    "languages": "the languages it knew in life",
+    "name": "Mallqui",
+    "religion": 3,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The mallqui regains 10 hit points at the start of its turn. If the mallqui takes damage from its Water Sensitivity trait, its regeneration doesn't function at the start of the mallqui's next turn. The mallqui dies only if it starts its turn with 0 hit points and doesn't regenerate.",
+            "name": "Regeneration"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the mallqui's innate spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). It can cast the following spells, requiring no material components:\n\nat will: druidcraft, produce flame\n\n4/day each: create or destroy water, entangle\n\n2/day: locate animals or plants\n\n1/day each: dispel magic, plant growth, wind wall",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the flesh of a mallqui putrefies and dissolves rapidly when soaked with water in the following ways:\n\n- Splashed with a waterskin or equivalent: 1d10 damage\n\n- Attacked by creature made of water: Normal damage plus an extra 1d10 damage\n\n- Caught in rain: 2d10 damage per round (DC 11 Dexterity saving throw for half)\n\n- Immersed in water: 4d10 damage per round (DC 13 Dexterity saving throw for half)\n\nalternatively, the saving throw and DC of the spell used to conjure or control the water damaging the mallqui can be used in place of the saving throws above",
+            "name": "Water Sensitivity"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "strength": 16,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 16
+}

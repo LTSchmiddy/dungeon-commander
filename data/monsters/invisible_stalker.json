@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The stalker makes two slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 3,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage.",
+            "name": "Slam"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 14,
+    "challenge_rating": "6",
+    "charisma": 11,
+    "condition_immunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+    "constitution": 14,
+    "damage_immunities": "poison",
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
+    "damage_vulnerabilities": "",
+    "dexterity": 19,
+    "hit_dice": "16d8+32",
+    "hit_points": 104,
+    "id": "invisible_stalker",
+    "intelligence": 10,
+    "languages": "Auran, understands Common but doesn't speak it",
+    "name": "Invisible Stalker",
+    "perception": 8,
+    "senses": "darkvision 60 ft., passive Perception 18",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The stalker is invisible.",
+            "name": "Invisibility"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The stalker is given a quarry by its summoner. The stalker knows the direction and distance to its quarry as long as the two of them are on the same plane of existence. The stalker also knows the location of its summoner.",
+            "name": "Faultless Tracker"
+        }
+    ],
+    "speed": "50 ft., fly 50 ft. (hover)",
+    "speed_json": {
+        "fly": 50,
+        "hover": true,
+        "walk": 50
+    },
+    "stealth": 10,
+    "strength": 16,
+    "subtype": "",
+    "type": "elemental",
+    "wisdom": 15
+}

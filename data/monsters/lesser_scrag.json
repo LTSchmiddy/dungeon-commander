@@ -1,0 +1,54 @@
+{
+    "actions": [
+        {
+            "desc": "The lesser scrag makes two attacks: one with its bite and one with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d8+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4)",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d4+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4)",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "13",
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": "9",
+    "constitution": "15",
+    "dexterity": "10",
+    "hit_dice": "7d8+14",
+    "hit_points": "45",
+    "id": "lesser_scrag",
+    "intelligence": "8",
+    "languages": "Abyssal, Aquan",
+    "name": "Lesser Scrag",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The scrag can breathe air and water",
+            "name": "Amphibious"
+        },
+        {
+            "desc": "The lesser scrag regains 5 hp at the start of its turn if it is in contact with water. If the scrag takes acid or fire damage, this trait doesn't function at the start of the scrag's next turn. The scrag dies only if it starts its turn with 0 hp and doesn't regenerate.",
+            "name": "Regeneration"
+        }
+    ],
+    "speed": "10 ft., swim 40 ft.",
+    "speed_json": {
+        "swim": 40,
+        "walk": 10
+    },
+    "strength": "18",
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": "10"
+}

@@ -1,0 +1,44 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +4 to hit, range 5 ft., one target. Hit: 7 (1d4 + 2) piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 12,
+    "armor_desc": "",
+    "challenge_rating": "1/8",
+    "charisma": 4,
+    "constitution": 10,
+    "damage_resistances": "acid, fire, poison",
+    "dexterity": 15,
+    "hit_dice": "7d4",
+    "hit_points": 17,
+    "id": "cikavak",
+    "intelligence": 12,
+    "languages": "understands Common; telepathy (touch)",
+    "name": "Cikavak",
+    "perception": 5,
+    "senses": "passive Perception $1",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the cikavak's innate spellcasting ability is Wisdom (spell save DC 11). It can innately cast the following spells, requiring no material components:\n\nat will: speak with animals\n\n1/day: silence",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "10 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "walk": 10
+    },
+    "stealth": 9,
+    "strength": 4,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 12
+}

@@ -1,0 +1,62 @@
+{
+    "actions": [
+        {
+            "desc": "The cauldronborn makes two slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "2d4+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "desc": "The cauldronborn releases a hungry screech, magically reaching out to nearby potions. All potions within 10 feet of the cauldronborn magically move toward the cauldronborn by rolling out of backpacks, hopping off of belts, unburying themselves, etc. A creature wearing or carrying a potion must succeed on a DC 13 Dexterity saving throw or its potion moves to within 5 feet of the cauldronborn. The target must make a separate saving throw for each potion it is attempting to keep in its possession.",
+            "name": "Call Potion (Recharge 5-6)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "13",
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": "1",
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": "12",
+    "damage_immunities": "poison",
+    "damage_resistances": "piercing and slashing from nonmagical attacks not made with adamantine",
+    "dexterity": "7",
+    "hit_dice": "3d6+3",
+    "hit_points": "13",
+    "id": "cauldronborn",
+    "intelligence": "3",
+    "languages": "-",
+    "name": "Cauldronborn",
+    "senses": "darkvision 60 ft., passive Perception 8",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "As a bonus action, a cauldronborn can consume one potion within 5 feet of it that is not being worn or carried. Along with the potion's effect, the cauldronborn's hp maximum increases by 3 (1d6) and it gains the same number of hp.",
+            "name": "Consumption"
+        },
+        {
+            "desc": "The cauldronborn can pinpoint the location of potions and magic items within 60 feet of it. Outside of 60 feet, it can sense the general direction of potions within 1 mile of it.",
+            "name": "Detect Elixir"
+        },
+        {
+            "desc": "The cauldronborn regains 2 hp at the start of its turn if it has at least 1 hp.",
+            "name": "Regeneration"
+        },
+        {
+            "desc": "The cauldronborn triples its speed until the end of its turn when moving toward a potion it has detected.",
+            "name": "Sprint"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "strength": "14",
+    "subtype": "",
+    "type": "construct",
+    "wisdom": "6"
+}

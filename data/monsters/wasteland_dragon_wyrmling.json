@@ -1,0 +1,47 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d10+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "desc": "The dragon blasts warped arcane energy in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (5d8) force damage on a failed save, or half as much damage on a successful one.",
+            "name": "Warped Energy Breath (Recharge 6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "17",
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": "13",
+    "charisma_save": 3,
+    "constitution": "17",
+    "constitution_save": 5,
+    "damage_immunities": "force",
+    "dexterity": "10",
+    "dexterity_save": 2,
+    "hit_dice": "8d8+24",
+    "hit_points": "60",
+    "id": "wasteland_dragon_wyrmling",
+    "intelligence": "12",
+    "languages": "Draconic",
+    "name": "Wasteland Dragon Wyrmling",
+    "perception": 2,
+    "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 12",
+    "size": "Medium",
+    "speed": "30 ft., burrow 15 ft., climb 30 ft., fly 50 ft.",
+    "speed_json": {
+        "burrow": 15,
+        "climb": 30,
+        "fly": 50,
+        "walk": 30
+    },
+    "stealth": 2,
+    "strength": "17",
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": "11",
+    "wisdom_save": 2
+}

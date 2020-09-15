@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d6+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+            "name": "Tusk"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "13",
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": "7",
+    "constitution": "16",
+    "dexterity": "10",
+    "hit_dice": "8d10+24",
+    "hit_points": "68",
+    "id": "ghost_boar",
+    "intelligence": "7",
+    "languages": "understands Common but can't speak it",
+    "name": "Ghost Boar",
+    "reactions": [
+        {
+            "desc": "When a creature hits the ghost boar with a melee weapon attack, the ghost boar can make one tusk attack against the creature. The ghost boar must see the attacker and be within 5 feet of it.",
+            "name": "Tusk Swipe"
+        }
+    ],
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "desc": "If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 10 (3d6) slashing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone.",
+            "name": "Charge"
+        },
+        {
+            "desc": "When the ghost boar moves, it becomes temporarily incorporeal. It can move through creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage and is pushed to the closest unoccupied space if it ends its turn inside an object.",
+            "name": "Incorporeal Jaunt"
+        },
+        {
+            "desc": "If the boar takes 15 damage or less that would reduce it to 0 hp, it is reduced to 1 hp instead.",
+            "name": "Relentless (Recharges after a Short or Long Rest)"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": "18",
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": "12"
+}

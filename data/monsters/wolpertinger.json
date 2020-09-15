@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Gore"
+        },
+        {
+            "desc": "The wolpertinger emits a piercing shriek. Each creature within 30 feet that can hear the wolpertinger must succeed on a DC 13 Constitution saving throw or be deafened for 1 minute. A beast with an Intelligence of 4 or lower that is in the area must also succeed on a DC 13 Wisdom saving throw or be frightened until the beginning of its next turn.",
+            "name": "Keening (Recharge 6)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "13",
+    "challenge_rating": "1/4",
+    "charisma": "6",
+    "constitution": "14",
+    "dexterity": "16",
+    "hit_dice": "2d4+4",
+    "hit_points": "9",
+    "id": "wolpertinger",
+    "intelligence": "5",
+    "languages": "-",
+    "name": "Wolpertinger",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "desc": "If the wolpertinger moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 2 (1d4) piercing damage.",
+            "name": "Charge"
+        },
+        {
+            "desc": "The wolpertinger doesn't provoke an opportunity attack when it flies out of an enemy's reach.",
+            "name": "Flyby"
+        },
+        {
+            "desc": "The wolpertinger's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start.",
+            "name": "Standing Leap"
+        }
+    ],
+    "speed": "30 ft., burrow 10 ft., fly 30 ft.",
+    "speed_json": {
+        "burrow": 10,
+        "fly": 30,
+        "walk": 30
+    },
+    "strength": "6",
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": "12"
+}

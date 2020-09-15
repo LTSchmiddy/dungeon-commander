@@ -1,0 +1,55 @@
+{
+    "actions": [
+        {
+            "desc": "The orthrus makes three bite attacks: two with its canine heads and one with its snake head. If the orthrus bites the same creature with both of its canine heads in the same round, that creature must succeed on a DC 12 Strength saving throw or be knocked prone.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "name": "Bite (Canine Head)"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage, and the target must make a DC 12 Constitution saving throw. On a failed save, it takes 14 (4d6) poison damage and is poisoned for 1 minute. On a success, it takes half the damage and isn't poisoned.",
+            "name": "Bite (Snake Head)"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "armor_class": "13",
+    "challenge_rating": "3",
+    "charisma": "7",
+    "constitution": "16",
+    "dexterity": "16",
+    "hit_dice": "8d8+24",
+    "hit_points": "60",
+    "id": "orthrus",
+    "intelligence": "8",
+    "languages": "understands Common but can't speak",
+    "name": "Orthrus",
+    "perception": 5,
+    "senses": "darkvision 120 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The orthrus has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious.",
+            "name": "Three-Headed"
+        },
+        {
+            "desc": "While the orthrus sleeps, at least one of its heads is awake.",
+            "name": "Wakeful"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": "15",
+    "subtype": "",
+    "survival": 3,
+    "type": "monstrosity",
+    "wisdom": "12",
+    "wisdom_save": 3
+}

@@ -1,0 +1,65 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The merrow makes two attacks: one with its bite and one with its claws or harpoon.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "2d6",
+            "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage. If the target is a Huge or smaller creature, it must succeed on a Strength contest against the merrow or be pulled up to 20 feet toward the merrow.",
+            "name": "Harpoon"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 9,
+    "condition_immunities": "",
+    "constitution": 15,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "6d10+12",
+    "hit_points": 45,
+    "id": "merrow",
+    "intelligence": 8,
+    "languages": "Abyssal, Aquan",
+    "name": "Merrow",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The merrow can breathe air and water.",
+            "name": "Amphibious"
+        }
+    ],
+    "speed": "10 ft., swim 40 ft.",
+    "speed_json": {
+        "swim": 40,
+        "walk": 10
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 10
+}

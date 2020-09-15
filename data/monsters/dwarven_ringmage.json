@@ -1,0 +1,66 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dwarven ringmage makes two melee attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft, one target. Hit: 3 (1d6) bludgeoning damage.",
+            "name": "Ring-Staff"
+        }
+    ],
+    "alignment": "any",
+    "arcana": 7,
+    "armor_class": 16,
+    "armor_desc": "breastplate",
+    "challenge_rating": "7",
+    "charisma": 9,
+    "constitution": 13,
+    "constitution_save": 4,
+    "damage_resistances": "poison",
+    "dexterity": 14,
+    "history": 7,
+    "hit_dice": "15d8+15",
+    "hit_points": 82,
+    "id": "dwarven_ringmage",
+    "intelligence": 18,
+    "intelligence_save": 7,
+    "languages": "Common, Dwarvish",
+    "name": "Dwarven Ringmage",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dwarven ringmage has advantage on saving throws against poison.",
+            "name": "Dwarven Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dwarven ringmage can imbue a nonmagical ring with a spell that has a range of self or touch. Doing so expends components as if the dwarven ringmage had cast the spell normally and uses a spell slot one level higher than the spell normally requires. When the wearer of the ring activates the ring as an action, the spell is cast as if the dwarven ringmage had cast the spell. The dwarven ringmage does not regain the spell slot until the ring is discharged or the dwarven ringmage chooses to dismiss the spell.",
+            "name": "Ring Magic"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dwarven ringmage can use his ring-staff as a focus for spells that require rings as a focus or component, or for his Ring Magic ability. If used as a focus for Ring Magic, the spell does not require a spell slot one level higher than the spell normally requires. Once per day, the dwarven ringmage can imbue a spell of 4th level or lower into his ring-staff by expending a spell slot equal to the spell being imbued.",
+            "name": "Ring-Staff Focus"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the mage is a 9th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). The mage has the following wizard spells prepared:\n\ncantrips (at will): fire bolt, mage hand, shocking grasp, true strike\n\n1st level (4 slots): expeditious retreat, magic missile, shield, thunderwave\n\n2nd level (3 slots): misty step, web\n\n3rd level (3 slots): counterspell, fireball, fly\n\n4th level (3 slots): greater invisibility, ice storm\n\n5th level (1 slot): cone of cold",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 10,
+    "subtype": "dwarf",
+    "type": "Humanoid",
+    "wisdom": 12,
+    "wisdom_save": 4
+}

@@ -1,0 +1,72 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_bonus": 4,
+            "damage_dice": "2d10+1d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage plus 4 (1d8) acid damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_bonus": 4,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 0,
+            "damage_dice": "11d8",
+            "desc": "The dragon exhales acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 14 Dexterity saving throw, taking 49 (11d8) acid damage on a failed save, or half as much damage on a successful one.",
+            "name": "Acid Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "challenge_rating": "7",
+    "charisma": 15,
+    "charisma_save": 5,
+    "condition_immunities": "",
+    "constitution": 17,
+    "constitution_save": 6,
+    "damage_immunities": "acid",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 14,
+    "dexterity_save": 5,
+    "group": "Black Dragon",
+    "hit_dice": "15d10+45",
+    "hit_points": 127,
+    "id": "young_black_dragon",
+    "intelligence": 12,
+    "languages": "Common, Draconic",
+    "name": "Young Black Dragon",
+    "perception": 6,
+    "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 16",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon can breathe air and water.",
+            "name": "Amphibious"
+        }
+    ],
+    "speed": "40 ft., fly 80 ft., swim 40 ft.",
+    "speed_json": {
+        "fly": 80,
+        "swim": 40,
+        "walk": 40
+    },
+    "stealth": 5,
+    "strength": 19,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 11,
+    "wisdom_save": 3
+}

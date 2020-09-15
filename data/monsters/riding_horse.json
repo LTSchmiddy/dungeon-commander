@@ -1,0 +1,37 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage.",
+            "name": "Hooves"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "challenge_rating": "1/4",
+    "charisma": 7,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "2d10",
+    "hit_points": 13,
+    "id": "riding_horse",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Riding Horse",
+    "senses": "passive Perception 10",
+    "size": "Large",
+    "speed": "60 ft.",
+    "speed_json": {
+        "walk": 60
+    },
+    "strength": 16,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 11
+}

@@ -1,0 +1,14 @@
+{
+    "ac": 18,
+    "cost": "1500 gp",
+    "disadvantage": true,
+    "id": "plate_mail",
+    "modifier": [],
+    "name": "Plate Mail",
+    "rarity": "Standard",
+    "requirements": {
+        "strength": 15
+    },
+    "type": "Heavy Armor",
+    "weight": "65 lb."
+}

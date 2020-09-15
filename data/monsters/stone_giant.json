@@ -1,0 +1,70 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant makes two greatclub attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_bonus": 6,
+            "damage_dice": "3d8",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.",
+            "name": "Greatclub"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_bonus": 6,
+            "damage_dice": "4d10",
+            "desc": "Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone.",
+            "name": "Rock"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "athletics": 12,
+    "challenge_rating": "7",
+    "charisma": 9,
+    "condition_immunities": "",
+    "constitution": 20,
+    "constitution_save": 8,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "dexterity_save": 5,
+    "group": "Giants",
+    "hit_dice": "11d12+55",
+    "hit_points": 126,
+    "id": "stone_giant",
+    "intelligence": 10,
+    "languages": "Giant",
+    "name": "Stone Giant",
+    "perception": 4,
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "If a rock or similar object is hurled at the giant, the giant can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it.",
+            "name": "Rock Catching"
+        }
+    ],
+    "senses": "darkvision 60 ft., passive Perception 14",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.",
+            "name": "Stone Camouflage"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 23,
+    "subtype": "",
+    "type": "giant",
+    "wisdom": 12,
+    "wisdom_save": 4
+}

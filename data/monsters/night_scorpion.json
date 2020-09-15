@@ -1,0 +1,44 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The scorpion makes three attacks: two with its claws and one with its sting.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d8+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 12). The scorpion has two claws, each of which can grapple one target.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d10",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target takes 7 (2d6) poison damage and is blinded for 1d3 hours; a successful DC 12 Constitution saving throw reduces damage by half and prevents blindness. If the target fails the saving throw by 5 or more, the target is also paralyzed while poisoned. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.",
+            "name": "Sting"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": 3,
+    "constitution": 14,
+    "dexterity": 14,
+    "hit_dice": "12d10+24",
+    "hit_points": 90,
+    "id": "night_scorpion",
+    "intelligence": 1,
+    "languages": "-",
+    "name": "Night Scorpion",
+    "senses": "blindsight 60 ft., passive Perception 9",
+    "size": "Large",
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 15,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 9
+}

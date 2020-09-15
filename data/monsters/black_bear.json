@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The bear makes two attacks: one with its bite and one with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 2,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage.",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/2",
+    "charisma": 7,
+    "condition_immunities": "",
+    "constitution": 14,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "3d8",
+    "hit_points": 19,
+    "id": "black_bear",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Black Bear",
+    "senses": "passive Perception 13",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The bear has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        }
+    ],
+    "speed": "40 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 40
+    },
+    "strength": 15,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

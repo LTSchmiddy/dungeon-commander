@@ -1,0 +1,56 @@
+{
+    "actions": [
+        {
+            "desc": "The yakirian makes two attacks: one with its gore and one with its ritual knife.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+            "name": "Gore"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "name": "Ritual Knife"
+        },
+        {
+            "desc": "The yakiran consumes the heart of a dead humanoid or giant within 5 feet. If the creature also less than 1 minute ago, the yakirian gains the following benefits: \n* The yakirian absorbs the dead creature's knowledge and asks two questions. If the dead creature knew the answers in life, the yakirian learns them instantly. \n* The yakirian's maximum and current hp increase by 10 for 1 hour. \n* The yakirian has advantage on Strength-based attack rolls and ability checks, as well as on all saving throws for 1 hour.",
+            "name": "Consume Heart"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "arcana": 4,
+    "armor_class": "13",
+    "armor_desc": "chain shirt",
+    "challenge_rating": "2",
+    "charisma": "8",
+    "constitution": "16",
+    "damage_resistances": "cold",
+    "dexterity": "11",
+    "hit_dice": "9d8+27",
+    "hit_points": "67",
+    "id": "yakirian",
+    "intelligence": "10",
+    "languages": "Common, Yakirian, understands Void Speech but won't speak it",
+    "name": "Yakirian",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The yakirian has advantage on saving throws against being charmed, frightened, or confused, as well as against any effect that causes corruption or madness.",
+            "name": "Resilient Soul"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": "17",
+    "subtype": "yakirian",
+    "type": "humanoid",
+    "wisdom": "12",
+    "wisdom_save": 3
+}

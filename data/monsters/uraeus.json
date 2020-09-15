@@ -1,0 +1,62 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 9 (2d8) poison damage, and the target must make a successful DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target takes 9 (2d8) fire damage at the start of its turn. A poisoned creature repeats the saving throw at the end of its turn, ending the effect on a success.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The uraeus exhales a 15-foot cone of fire. Creatures in the area take 10 (3d6) fire damage, or half damage with a successful DC 12 Dexterity saving throw.",
+            "name": "Searing Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 9,
+    "condition_immunities": "poisoned",
+    "constitution": 14,
+    "damage_immunities": "poison",
+    "damage_resistances": "fire; bludgeoning, piercing, and slashing damage from nonmagical weapons",
+    "dexterity": 15,
+    "hit_dice": "9d4+18",
+    "hit_points": 40,
+    "id": "uraeus",
+    "intelligence": 10,
+    "languages": "understands Celestial and Common but can't speak",
+    "name": "Uraeus",
+    "perception": 4,
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "When the uraeus' bonded ward takes damage, the uraeus can transfer the damage to itself instead. The uraeus' damage resistance and immunity don't apply to transferred damage.",
+            "name": "Bonded Savior"
+        }
+    ],
+    "senses": "blindsight 10 ft., passive Perception 14",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The uraeus doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
+            "name": "Flyby"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "As a bonus action, the uraeus forms a magical bond with a willing creature within 5 feet. Afterward, no matter how great the distance between them, the uraeus knows the distance and direction to its bonded ward and is aware of the creature's general state of health. The bond lasts until the uraeus or the ward dies, or the uraeus ends the bond as an action.",
+            "name": "Ward Bond"
+        }
+    ],
+    "speed": "30 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 30
+    },
+    "strength": 6,
+    "subtype": "",
+    "type": "celestial",
+    "wisdom": 14
+}

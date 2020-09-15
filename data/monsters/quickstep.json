@@ -1,0 +1,74 @@
+{
+    "actions": [
+        {
+            "desc": "A quickstep makes two attacks with its moonlight rapier and one with its hidden dagger.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d8+4",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 7 (2d6) cold damage.",
+            "name": "Moonlight Rapier"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d4+4",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage plus 3 (1d6) cold damage.",
+            "name": "Hidden Dagger"
+        },
+        {
+            "desc": "Each creature within 10 feet of the quickstep must make a DC 15 Constitution saving throw as the quickstep whirls in a blur of cold steel. On a failure, a target takes 9 (2d8) piercing damage and 7 (2d6) cold damage and is paralyzed for 1 round. On a success, a target takes half the piercing and cold damage and isn't paralyzed.",
+            "name": "Freezing Steel (Recharge 6)"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": "16",
+    "armor_desc": "studded leather",
+    "challenge_rating": "5",
+    "charisma": "14",
+    "condition_immunities": "unconscious",
+    "constitution": "15",
+    "constitution_save": 5,
+    "deception": 5,
+    "dexterity": "19",
+    "dexterity_save": 7,
+    "hit_dice": "9d6+18",
+    "hit_points": "49",
+    "id": "quickstep",
+    "intelligence": "10",
+    "intimidation": 5,
+    "languages": "Common, Elvish, Umbral",
+    "name": "Quickstep",
+    "perception": 4,
+    "reactions": [
+        {
+            "desc": "When a creature the quickstep can see targets it with an attack, the quickstep can move to an unoccupied space within 5 feet of it without provoking opportunity attacks. If this movement would put the quickstep out of reach of the attacker, the attack misses.",
+            "name": "Quick Dodge"
+        }
+    ],
+    "senses": "darkvision 60 ft., truesight 60 ft., passive Perception 14",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "If the quickstep is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the quickstep instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
+            "name": "Evasion"
+        },
+        {
+            "desc": "The quickstep has advantage on saving throws against being charmed, and magic can't put it to sleep.",
+            "name": "Fey Ancestry"
+        },
+        {
+            "desc": "The movements of a quickstep are so swift that it is almost invisible when in motion. If the quickstep moves at least 10 feet on its turn, attack rolls against it have disadvantage until the start of its next turn unless the quickstep is incapacitated or restrained.",
+            "name": "Startling Speed"
+        }
+    ],
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "strength": "14",
+    "subtype": "",
+    "type": "fey",
+    "wisdom": "12",
+    "wisdom_save": 4
+}

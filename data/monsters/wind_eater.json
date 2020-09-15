@@ -1,0 +1,61 @@
+{
+    "actions": [
+        {
+            "desc": "The wind eater makes two claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d6+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+            "name": "Claw"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": "14",
+    "challenge_rating": "2",
+    "charisma": "13",
+    "condition_immunities": "charmed, exhaustion, grappled, paralyzed, poisoned, prone, restrained, unconscious",
+    "constitution": "14",
+    "constitution_save": 4,
+    "damage_immunities": "poison",
+    "damage_resistances": "acid, cold, fire, lightning, necrotic, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "dexterity": "18",
+    "hit_dice": "10d8+20",
+    "hit_points": "65",
+    "id": "wind_eater",
+    "intelligence": "12",
+    "languages": "understands Common but can't speak",
+    "name": "Wind Eater",
+    "perception": 5,
+    "senses": "truesight 60 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "A creature within 120 feet of the wind eater has disadvantage on Wisdom (Perception) checks that rely on hearing. All creatures within 20 feet of the wind eater are immune to thunder damage and are deafened. This trait works like the silence spell, except the effect moves with the wind eater and persists unless it is incapacitated or until it dies.",
+            "name": "Aura of Silence"
+        },
+        {
+            "desc": "The wind eater can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.",
+            "name": "Incorporeal Movement"
+        },
+        {
+            "desc": "As a bonus action while in dim light or darkness, the wind eater becomes invisible. The invisibility lasts until the wind eater uses a bonus action to end it or until the wind eater attacks, is in bright light, or is incapacitated. Any equipment the wind eater wears or carries is invisible with it.",
+            "name": "Shadow Blend"
+        },
+        {
+            "desc": "The wind eater's innate spellcasting ability is Wisdom (spell save DC 13). It can innately cast the following spells, requiring only somatic components:\nAt will: silent image\n3/day each: blur, major image\n1/day: mirage arcane",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": "8",
+    "subtype": "",
+    "type": "undead",
+    "wisdom": "16",
+    "wisdom_save": 5
+}

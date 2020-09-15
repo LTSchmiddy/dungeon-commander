@@ -1,0 +1,15 @@
+{
+    "ability": "dexterity",
+    "attack_bonus": 0,
+    "base_damage": "1d10",
+    "class": "Pistol",
+    "cost": "150 gp",
+    "damage_bonus": 0,
+    "damage_type": "p",
+    "features_applied": false,
+    "id": "BasicPistol",
+    "is_finesse": false,
+    "name": "Pistol",
+    "properties": "Ammunition (range 60/240), Reload 4, Misfire 1",
+    "weight": 3
+}

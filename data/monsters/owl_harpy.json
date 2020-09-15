@@ -1,0 +1,76 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The owl harpy makes two claw attacks and two talon attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
+            "name": "Talons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "An owl harpy that hovers in flight can shake a fine, magical dander from her wings over a creature within 20 feet and directly below her. The creature must succeed on a DC 15 Constitution saving throw or fall unconscious and be poisoned for 10 minutes. It wakes up if it takes damage or if a creature uses an action to shake it awake, but waking up doesn't end the poisoning.",
+            "name": "Hovering Darkness"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The owl harpy sings a magical melody. Every humanoid and giant within 300 feet of the harpy that can hear the song must succeed on a DC 15 Wisdom saving throw or be charmed until the song ends. The harpy must use a bonus action on its subsequent turns to continue singing. It can stop singing at any time. The song ends if the harpy becomes incapacitated. While charmed by the harpy, a target is incapacitated and ignores the songs of other harpies. A charmed target that is more than 5 feet away from the harpy must move at its highest rate (including dashing, if necessary) along the most direct route to get within 5 feet of the harpy. The charmed creature doesn't maneuver to avoid opportunity attacks, but it can repeat the saving throw every time it takes damage from anything other than the harpy. It also repeats the saving throw before entering damaging terrain (lava or a pit, for example), if the most direct route includes a dangerous space. A creature also repeats the saving throw at the end of each of its turns. A successful saving throw ends the effect on that creature and makes the creature immune to this harpy's song for 24 hours.",
+            "name": "Luring Song"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 14,
+    "armor_desc": "",
+    "challenge_rating": "5",
+    "charisma": 14,
+    "constitution": 16,
+    "dexterity": 17,
+    "hit_dice": "15d8+45",
+    "hit_points": 112,
+    "id": "owl_harpy",
+    "intelligence": 11,
+    "languages": "Common, Abyssal, Giant",
+    "name": "Owl Harpy",
+    "performance": 7,
+    "senses": "blindsight 60 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The owl harpy gains an additional +3 to Stealth (+9 in total) while flying.",
+            "name": "Quiet Flight"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The owl harpy can't use its blindsight while deafened.",
+            "name": "Dissonance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the owl harpy's innate spellcasting ability is Charisma. The owl harpy can innately cast the following spells, requiring no material components:\n\n3/day: darkness",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "20 ft., fly 80 ft. (hover)",
+    "speed_json": {
+        "fly": 80,
+        "hover": true,
+        "walk": 20
+    },
+    "stealth": 6,
+    "strength": 12,
+    "subtype": "",
+    "type": "monstrosity",
+    "vulnerable": "thunder",
+    "wisdom": 14
+}

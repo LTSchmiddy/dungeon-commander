@@ -1,0 +1,69 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The Emerald Order cult leader makes one melee attack and casts a cantrip.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft, one target. Hit: 3 (1d6) bludgeoning damage.",
+            "name": "Mace"
+        }
+    ],
+    "alignment": "lawful neutral or evil",
+    "arcana": 5,
+    "armor_class": 14,
+    "armor_desc": "breastplate",
+    "challenge_rating": "8",
+    "charisma": 15,
+    "charisma_save": 5,
+    "constitution": 14,
+    "damage_resistances": "cold, fire, lightning",
+    "deception": 5,
+    "dexterity": 10,
+    "history": 5,
+    "hit_dice": "18d8+36",
+    "hit_points": 117,
+    "id": "emerald_order_cult_leader",
+    "intelligence": 15,
+    "intelligence_save": 5,
+    "languages": "any three languages",
+    "name": "Emerald Order Cult Leader",
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "As a reaction when struck by a melee attack, the emerald order cult leader can expend a spell slot to do 10 (3d6) necrotic damage to the attacker. If the emerald order cult leader expends a spell slot of 2nd level or higher, the damage increases by 1d6 for each level above 1st.",
+            "name": "Esoteric Vengeance"
+        }
+    ],
+    "religion": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The Emerald Order cult leader can always act in a surprise round, but if he fails to notice a foe, he is still considered surprised until he takes an action. He receives a +3 bonus on initiative checks.",
+            "name": "Key of Prophecy"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the Emerald Order cult leader's innate spellcasting ability is Wisdom (spell save DC 16). He can innately cast the following spells, requiring no material components:\n\n2/day each: detect thoughts, dimension door, haste, slow\n\n1/day each: suggestion, teleport",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the Emerald Order cult leader is a 10th-level spellcaster. His spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). The cult leader has the following cleric spells prepared:\n\ncantrips (at will): guidance, light, sacred flame, spare the dying, thaumaturgy\n\n1st level (4 slots): cure wounds, identify, guiding bolt\n\n2nd level (3 slots): lesser restoration, silence, spiritual weapon\n\n3rd level (3 slots): dispel magic, mass healing word, spirit guardians\n\n4th level (3 slots): banishment, death ward, guardian of faith\n\n5th level (2 slots): flame strike",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 10,
+    "type": "Humanoid (any race)",
+    "wisdom": 20,
+    "wisdom_save": 8
+}

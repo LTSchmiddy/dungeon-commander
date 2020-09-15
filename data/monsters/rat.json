@@ -1,0 +1,43 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "damage_bonus": 1,
+            "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "challenge_rating": "0",
+    "charisma": 4,
+    "condition_immunities": "",
+    "constitution": 9,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 11,
+    "hit_dice": "1d4",
+    "hit_points": 1,
+    "id": "rat",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Rat",
+    "senses": "darkvision 30 ft., passive Perception 10",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The rat has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "strength": 2,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

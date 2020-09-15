@@ -1,0 +1,59 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The sap demon makes two slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) bludgeoning damage. If both attacks hit a Medium or smaller target, the target is grappled (escape DC 12), and the sap demon uses Soul Sap on it as a bonus action.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The sap demon slides down the throat of a sleeping, helpless, or grappled living creature of Medium size or smaller. Once inside, the sap demon takes control of its host, as per the dominate monster spell (Wisdom DC 12 negates). While dominated, the host gains blindsight 90 feet. The host drips blood from its ears, nose, eyes, or from a wound that resembles the injury done to the sap demon's tree (1 damage/ hour). Damage inflicted on the host has no effect on the sap demon. If the host dies or is reduced to 0 hit points, the sap demon must leave the body within one hour.",
+            "name": "Soul Sap"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 13,
+    "armor_desc": "natural",
+    "challenge_rating": "4",
+    "charisma": 10,
+    "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+    "constitution": 12,
+    "damage_immunities": "bludgeoning; acid, lightning",
+    "damage_resistances": "piercing and slashing from nonmagical weapons",
+    "dexterity": 6,
+    "hit_dice": "15d6+15",
+    "hit_points": 67,
+    "id": "sap_demon",
+    "intelligence": 10,
+    "languages": "none in its natural form; knows the same languages as a creature it dominates",
+    "name": "Sap Demon",
+    "senses": "blindsight 90 ft. (blind beyond this radius), passive Perception 12",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The sap demon can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Amorphous"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If a sap demon (or its host) takes at least 10 fire damage, it also gains the effect of a haste spell until the end of its next turn. If it takes at least 10 cold damage, it gains the effect of a slow spell until the end of its next turn.",
+            "name": "Season's Change"
+        }
+    ],
+    "speed": "20 ft., climb 20 ft.",
+    "speed_json": {
+        "climb": 20,
+        "walk": 20
+    },
+    "strength": 14,
+    "subtype": "",
+    "type": "ooze",
+    "wisdom": 14
+}

@@ -1,0 +1,50 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 5 (2d4) poison damage, or one-half poison damage with a successful DC 10 Constitution saving throw.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/2",
+    "charisma": 7,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 10,
+    "damage_immunities": "poison, psychic",
+    "dexterity": 16,
+    "dexterity_save": 5,
+    "hit_dice": "6d4",
+    "hit_points": 15,
+    "id": "clockwork_beetle",
+    "intelligence": 4,
+    "languages": "understands Common, telepathy 100 ft. (creator only)",
+    "name": "Clockwork Beetle",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The clockwork beetle is immune to any spell or effect that would alter its form.",
+            "name": "Immutable Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The clockwork beetle has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "30 ft., fly 50 ft.",
+    "speed_json": {
+        "fly": 50,
+        "walk": 30
+    },
+    "stealth": 5,
+    "strength": 8,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 12
+}

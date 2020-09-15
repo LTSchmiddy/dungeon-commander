@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "1d4",
+    "class": "MartialWeapon",
+    "cost": "0 gp",
+    "damage_bonus": 0,
+    "damage_type": "p",
+    "features_applied": false,
+    "id": "BasicMartialWeapon",
+    "is_finesse": false,
+    "name": "Martial Weapons",
+    "properties": "",
+    "weight": 1
+}

@@ -1,0 +1,50 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The ostrich makes two kicking claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage.",
+            "name": "Claw"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "armor_desc": "",
+    "challenge_rating": "1/2",
+    "charisma": 5,
+    "constitution": 16,
+    "dexterity": 12,
+    "hit_dice": "5d10+15",
+    "hit_points": 42,
+    "id": "nkosi_war_ostrich",
+    "intelligence": 2,
+    "languages": "-",
+    "name": "Nkosi War Ostrich",
+    "senses": "passive Perception $1",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The ostrich can jump horizontally up to 20 feet and vertically up to 10 feet, with or without a running start.",
+            "name": "Standing Leap"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If a riderless ostrich jumps at least 10 feet and lands within 5 feet of a creature, it has advantage on attacks against that creature this turn.",
+            "name": "Battle Leaper"
+        }
+    ],
+    "speed": "60 ft.",
+    "speed_json": {
+        "walk": 60
+    },
+    "strength": 15,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

@@ -1,0 +1,73 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The bandit lord makes three melee or ranged attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft, one target. Hit: 10 (2d6 + 3) slashing damage.",
+            "name": "Greatsword"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Dagger"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "For 1 minute, the bandit lord can utter a special command or warning whenever a nonhostile creature that it can see within 30 feet of it makes an attack roll or a saving throw. The creature can add a d4 to its roll provided it can hear and understand the bandit lord. A creature can benefit from only one Leadership die at a time. This effect ends if the bandit lord is incapacitated.",
+            "name": "Leadership (Recharges after a Short or Long Rest)"
+        }
+    ],
+    "alignment": "any non-lawful",
+    "armor_class": 16,
+    "armor_desc": "breastplate",
+    "athletics": 5,
+    "challenge_rating": "4",
+    "charisma": 14,
+    "constitution": 14,
+    "deception": 4,
+    "dexterity": 15,
+    "dexterity_save": 4,
+    "hit_dice": "14d8+28",
+    "hit_points": 91,
+    "id": "bandit_lord",
+    "intelligence": 14,
+    "intimidation": 4,
+    "languages": "any two languages",
+    "name": "Bandit Lord",
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The bandit lord adds 2 to its AC against one melee attack that would hit it. To do so the bandit lord must see the attacker and be wielding a weapon.",
+            "name": "Parry"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When a creature the bandit lord can see targets it with an attack, the bandit lord chooses an ally within 5 feet of it. The bandit lord and the ally swap places, and the chosen ally becomes the target instead.",
+            "name": "Redirect Attack"
+        }
+    ],
+    "senses": "passive Perception $1",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The bandit lord has advantage on an attack roll against a creature if at least one of the bandit lord's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 16,
+    "strength_save": 5,
+    "type": "Humanoid (Any Race)",
+    "wisdom": 11,
+    "wisdom_save": 2
+}

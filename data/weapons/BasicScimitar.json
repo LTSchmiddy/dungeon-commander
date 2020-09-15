@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "1d6",
+    "class": "Scimitar",
+    "cost": "25 gp",
+    "damage_bonus": 0,
+    "damage_type": "s",
+    "features_applied": false,
+    "id": "BasicScimitar",
+    "is_finesse": true,
+    "name": "Scimitar",
+    "properties": "Finesse, light",
+    "weight": 3
+}

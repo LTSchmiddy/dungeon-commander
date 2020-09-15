@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "1d6",
+    "class": "ThrowingHammer",
+    "cost": "15 gp",
+    "damage_bonus": 0,
+    "damage_type": "b",
+    "features_applied": false,
+    "id": "BasicThrowingHammer",
+    "is_finesse": false,
+    "name": "Throwing Hammer",
+    "properties": "Thrown (range 60/120)",
+    "weight": 4
+}

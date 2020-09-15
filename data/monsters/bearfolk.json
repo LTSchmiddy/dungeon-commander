@@ -1,0 +1,62 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The bearfolk makes three attacks: one with its battleaxe, one with its warhammer, and one with its bite.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used two-handed.",
+            "name": "Battleaxe"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage, or 9 (1d10 + 4) bludgeoning damage if used two-handed.",
+            "name": "Warhammer"
+        }
+    ],
+    "alignment": "chaotic good",
+    "armor_class": 14,
+    "armor_desc": "hide armor",
+    "challenge_rating": "3",
+    "charisma": 9,
+    "constitution": 16,
+    "dexterity": 14,
+    "hit_dice": "6d8+18",
+    "hit_points": 45,
+    "id": "bearfolk",
+    "intelligence": 8,
+    "languages": "Common, Giant",
+    "name": "Bearfolk",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "As a bonus action, the bearfolk can trigger a berserk frenzy that lasts 1 minute. While in frenzy, it gains resistance to bludgeoning, piercing, and slashing damage and has advantage on attack rolls. Attack rolls made against a frenzied bearfolk have advantage.",
+            "name": "Frenzy (1/rest)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The bearfolk has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 19,
+    "subtype": "bearfolk",
+    "type": "humanoid",
+    "wisdom": 12
+}

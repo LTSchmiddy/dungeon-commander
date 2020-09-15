@@ -1,0 +1,5 @@
+{
+    "desc": "* A restrained creature's speed becomes 0, and it can't benefit from any bonus to its speed.\n* Attack rolls against the creature have advantage, and the creature's attack rolls have disadvantage.\n* The creature has disadvantage on Dexterity saving throws.",
+    "id": "restrained",
+    "name": "Restrained"
+}

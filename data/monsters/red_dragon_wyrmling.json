@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "1d10+1d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 3 (1d6) fire damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 0,
+            "damage_dice": "7d6",
+            "desc": "The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC l3 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.",
+            "name": "Fire Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "4",
+    "charisma": 15,
+    "charisma_save": 4,
+    "condition_immunities": "",
+    "constitution": 17,
+    "constitution_save": 5,
+    "damage_immunities": "fire",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "dexterity_save": 2,
+    "group": "Red Dragon",
+    "hit_dice": "10d8+30",
+    "hit_points": 75,
+    "id": "red_dragon_wyrmling",
+    "intelligence": 12,
+    "languages": "Draconic",
+    "name": "Red Dragon Wyrmling",
+    "perception": 4,
+    "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
+    "size": "Medium",
+    "speed": "30 ft., climb 30 ft., fly 60 ft.",
+    "speed_json": {
+        "climb": 30,
+        "fly": 60,
+        "walk": 30
+    },
+    "stealth": 2,
+    "strength": 19,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 11,
+    "wisdom_save": 2
+}

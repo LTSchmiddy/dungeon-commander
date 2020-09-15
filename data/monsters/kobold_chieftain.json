@@ -1,0 +1,73 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The kobold makes 2 attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 10 (3d6) poison damage and the target must make a successful DC 12 Constitution saving throw or be poisoned for 1 minute. A poisoned creature repeats the saving throw at the end of each of its turns, ending the effect on a success.",
+            "name": "Shortsword"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 10 (3d6) poison damage and the target must make a successful DC 12 Constitution saving throw or be poisoned for 1 minute. A poisoned creature repeats the saving throw at the end of each of its turns, ending the effect on a success.",
+            "name": "Shortbow"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The chieftain chooses up to six allied kobolds it can see within 30 feet. For the next minute, the kobolds gain immunity to the charmed and frightened conditions, and add the chieftain's Charisma bonus to attack rolls.",
+            "name": "Inspiring Presence (Recharge after Short or Long Rest)"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 17,
+    "armor_desc": "studded leather and shield",
+    "challenge_rating": "4",
+    "charisma": 14,
+    "charisma_save": 4,
+    "condition_immunities": "charmed, frightened",
+    "constitution": 14,
+    "constitution_save": 5,
+    "dexterity": 17,
+    "hit_dice": "15d6+30",
+    "hit_points": 82,
+    "id": "kobold_chieftain",
+    "intelligence": 11,
+    "intimidation": 6,
+    "languages": "Common, Draconic",
+    "name": "Kobold Chieftain",
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "When the kobold chieftain is hit by a melee attack within 5 feet, the kobold chieftain can fire one of its shield spikes at the attacker. The attacker takes 3 (1d6) piercing damage plus 3 (1d6) poison damage.",
+            "name": "Springspike Shield (5/rest)"
+        }
+    ],
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The kobold chieftain has advantage on an attack roll against a target if at least one of the chieftain's allies is within 5 feet of the target and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in sunlight, the kobold chieftain has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight.",
+            "name": "Sunlight Sensitivity"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 5,
+    "strength": 10,
+    "subtype": "kobold",
+    "type": "humanoid",
+    "wisdom": 13
+}

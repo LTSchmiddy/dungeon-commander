@@ -1,0 +1,8 @@
+{
+    "desc": "You gain a +1 bonus to AC and saving throws while wearing this ring.",
+    "id": "ring_of_protection",
+    "name": "Ring of Protection",
+    "rarity": "rare",
+    "requires-attunement": "requires attunement",
+    "type": "Ring"
+}

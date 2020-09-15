@@ -1,0 +1,56 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
+            "name": "Cavalry Saber"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d6+1",
+            "desc": "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage.",
+            "name": "Shortbow"
+        },
+        {
+            "desc": "The dragonborn breathes fire in a 15-foot cone. All creatures in that area must make a DC 12 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save, or half as much damage on a successful one.",
+            "name": "Fire Breath (Recharges after a Short or Long Rest)"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "armor_class": "14",
+    "armor_desc": "leather, shield",
+    "athletics": 4,
+    "challenge_rating": "1",
+    "charisma": "9",
+    "constitution": "15",
+    "damage_resistances": "fire",
+    "dexterity": "12",
+    "hit_dice": "6d8+12",
+    "hit_points": "39",
+    "id": "light_cavalry",
+    "intelligence": "8",
+    "languages": "Common, Draconic",
+    "name": "Light Cavalry",
+    "perception": 4,
+    "senses": "passive Perception 14",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "While mounted, the dragonborn has advantage on melee weapon attacks against creatures that are Medium or smaller and are not mounted.",
+            "name": "Infantry Slayer"
+        },
+        {
+            "desc": "While mounted, the dragonborn's mount can't be charmed or frightened.",
+            "name": "Mounted Warrior"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": "15",
+    "subtype": "dragonborn",
+    "type": "humanoid",
+    "wisdom": "14"
+}

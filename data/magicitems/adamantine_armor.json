@@ -1,0 +1,7 @@
+{
+    "desc": "This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.",
+    "id": "adamantine_armor",
+    "name": "Adamantine Armor",
+    "rarity": "uncommon",
+    "type": "Armor (medium or heavy)"
+}

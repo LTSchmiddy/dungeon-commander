@@ -1,0 +1,69 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The temple cat makes one bite attack and one claws attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 6 (1d4 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The temple cat purrs loudly, targeting a humanoid it can see within 30 feet that can hear the temple cat. The target must succeed on a DC 14 Wisdom saving throw or be charmed. While charmed by the temple cat, the target must move toward the cat at normal speed and try to pet it or pick it up. A charmed target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful, the creature is immune to the temple cat's Fascinating Lure for the next 24 hours. The temple cat has advantage on attack rolls against any creature petting or holding it.",
+            "name": "Fascinating Lure"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 14,
+    "armor_desc": "",
+    "challenge_rating": "1",
+    "charisma": 18,
+    "constitution": 12,
+    "dexterity": 19,
+    "hit_dice": "9d6+9",
+    "hit_points": 40,
+    "id": "bastet_temple_cat",
+    "intelligence": 12,
+    "languages": "Common, Nurian, and Sylvan",
+    "name": "Bastet Temple Cat",
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The temple cat has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the temple cat's innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). The temple cat can innately cast the following spells, requiring no material components:\n\nat will: guidance\n\n3/day each: charm person, cure wounds\n\n1/day: enhance ability (only Cat's Grace)",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When a cleric or paladin who worships Bastet spends an hour preparing spells while a Bastet temple cat is within 5 feet, that spellcaster can choose two 1st-level spells and one 2nd-level spell that they are able to cast and imbue them into the temple cat. The temple cat can cast these spells 1/day each without a verbal component. These spells are cast as if they were included in the temple cat's Innate Spellcasting trait.",
+            "name": "Priestly Purr"
+        }
+    ],
+    "speed": "40 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 40
+    },
+    "stealth": 6,
+    "strength": 8,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 16
+}

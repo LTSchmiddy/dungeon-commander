@@ -1,0 +1,71 @@
+{
+    "actions": [
+        {
+            "desc": "The wyvern knight makes two lance attacks. If the wyvern knight is riding a war wyvern, its mount can then make one bite, claw, or stinger attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d12+3",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) piercing damage plus 10 (3d6) poison damage. The wyvern knight has disadvantage on attacks with this weapon against creatures within 5 feet of it and can wield this weapon in one hand instead of two while mounted.",
+            "name": "Lance"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d10",
+            "desc": "Ranged Weapon Attack: +3 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage plus 10 (3d6) poison damage.",
+            "name": "Heavy Crossbow"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d4+3",
+            "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 10 (3d6) poison damage.",
+            "name": "Dagger"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": "20",
+    "armor_desc": "plate, shield",
+    "challenge_rating": "5",
+    "charisma": "15",
+    "constitution": "18",
+    "constitution_save": 7,
+    "damage_immunities": "poisoned",
+    "damage_resistances": "poison",
+    "dexterity": "10",
+    "handling": 4,
+    "hit_dice": "12d8+48",
+    "hit_points": "102",
+    "id": "wyvern_knight",
+    "intelligence": "10",
+    "languages": "Common, Draconic",
+    "name": "Wyvern Knight",
+    "perception": 4,
+    "reactions": [
+        {
+            "desc": "When a creature the wyvern knight can see attacks a target that is within 5 feet of it, including a creature it is riding, the knight can use a reaction to impose disadvantage on the attack roll. The knight must be wielding a shield.",
+            "name": "Protection"
+        }
+    ],
+    "senses": "passive Perception 14",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The wyvern knight has advantage on saving throws against being frightened.",
+            "name": "Brave"
+        },
+        {
+            "desc": "When the wyvern knight falls while wearing this ring, it descends 60 feet per round and takes no damage from falling.",
+            "name": "Ring of Feather Falling"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": "16",
+    "strength_save": 6,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": "12"
+}

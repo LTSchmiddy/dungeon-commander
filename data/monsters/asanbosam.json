@@ -1,0 +1,60 @@
+{
+    "acrobatics": 4,
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The asanbosam makes one bite attack and one claws attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage. If the target is a creature, it must succeed on a DC 14 Constitution saving throw against disease. If the saving throw fails, the target takes 11 (2d10) poison damage immediately and becomes poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw and reduce its hit point maximum by 5 (1d10) on a failure. This reduction lasts until the disease is cured. The creature dies if the disease reduces its hit point maximum to 0.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d10",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 20 (3d10 + 4) piercing damage, and the target is grappled (escape DC 14). Until this grapple ends, the target is restrained and the asanbosam can't claw a different target. If the target is a creature, it must succeed on a DC 14 Constitution saving throw against disease or contract the disease described in the bite attack.",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 5,
+    "constitution": 17,
+    "dexterity": 13,
+    "hit_dice": "12d10+36",
+    "hit_points": 102,
+    "id": "asanbosam",
+    "intelligence": 11,
+    "languages": "Giant",
+    "name": "Asanbosam",
+    "perception": 3,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The asanbosam can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check.",
+            "name": "Spider Climb"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While up in trees, the asanbosam can take the Disengage or Hide action as a bonus action on each of its turns.",
+            "name": "Arboreal"
+        }
+    ],
+    "speed": "40 ft., climb 15 ft.",
+    "speed_json": {
+        "climb": 15,
+        "walk": 40
+    },
+    "stealth": 4,
+    "strength": 18,
+    "subtype": "",
+    "type": "aberration",
+    "wisdom": 10
+}

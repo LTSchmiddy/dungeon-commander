@@ -1,0 +1,50 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage plus 3 (1d6) acid damage, and the target is grappled (escape DC 13).",
+            "name": "Slam"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 12,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 1,
+    "condition_immunities": "exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 22,
+    "damage_immunities": "acid, fire, poison",
+    "damage_resistances": "slashing, bludgeoning",
+    "dexterity": 10,
+    "hit_dice": "10d10+60",
+    "hit_points": 115,
+    "id": "corrupting_ooze",
+    "intelligence": 4,
+    "languages": "-",
+    "name": "Corrupting Ooze",
+    "senses": "blindsight 60 ft., tremorsense 60 ft., passive Perception 5",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "When a corrupting ooze scores a critical hit or starts its turn with a foe grappled, it can dissolve one leather, metal, or wood item of its choosing in the possession of the target creature. A mundane item is destroyed automatically; a magical item is destroyed if its owner fails to make a successful DC 16 Dexterity saving throw.",
+            "name": "Corrupting Touch"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A corrupting ooze naturally floats on the surface of water. It swims with a pulsating motion that propels it faster than walking speed.",
+            "name": "Strong Swimmer"
+        }
+    ],
+    "speed": "20 ft., swim 30 ft.",
+    "speed_json": {
+        "swim": 30,
+        "walk": 20
+    },
+    "stealth": 3,
+    "strength": 16,
+    "subtype": "",
+    "type": "ooze",
+    "wisdom": 2
+}

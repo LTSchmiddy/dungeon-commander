@@ -1,0 +1,55 @@
+{
+    "actions": [
+        {
+            "desc": "The sentinel makes two stone fist attacks. If both attacks hit a Large or smaller creature, the target must succeed on a DC 15 Wisdom saving throw or lose one non-weapon, non-armor object that is small enough to fit in one hand. The object is teleported to a random unoccupied space within 200 feet of the sentinel. The target feels a mental tug in the general direction of the item until it is recovered.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d12+5",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (2d12 + 5) bludgeoning damage.",
+            "name": "Stone Fist"
+        },
+        {
+            "desc": "One creature the sentinel can see within 30 feet of it must succeed on a DC 15 Wisdom saving throw or suffer the Curse of the Wanderer. While cursed, the creature's speed is halved and it can't regain hp. For every 24 hours it goes without discovering or learning new information, it takes 10 (3d6) psychic damage. The curse lasts until it is lifted by a remove curse spell or similar magic.",
+            "name": "Curse of the Wanderer (Recharge 6)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "13",
+    "armor_desc": "natural armor",
+    "challenge_rating": "7",
+    "charisma": "1",
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": "16",
+    "damage_immunities": "poison",
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
+    "dexterity": "9",
+    "hit_dice": "15d10+45",
+    "hit_points": "127",
+    "id": "sentinel_in_darkness",
+    "intelligence": "6",
+    "languages": "understands the languages of its creator but can't speak",
+    "name": "Sentinel in Darkness",
+    "perception": 7,
+    "senses": "truesight 60 ft., passive Perception 17",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "desc": "The sentinel has advantage on attack rolls against creatures with darkvision, blindsight, or truesight.",
+            "name": "Scourge of the Seekers"
+        },
+        {
+            "desc": "Secret doors and illusory walls within 1,500 feet of the sentinel have the DC to detect their presence increased by 5.",
+            "name": "Vault Keeper"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": "20",
+    "subtype": "",
+    "type": "construct",
+    "wisdom": "18"
+}

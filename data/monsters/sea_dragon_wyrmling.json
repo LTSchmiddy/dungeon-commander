@@ -1,0 +1,47 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d10",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) cold damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon exhales a crushing wave of frigid seawater in a 15-foot cone. Each creature in that area must make a DC 12 Dexterity saving throw. On a failure, the target takes 11 (2d10) bludgeoning damage and 11 (2d10) cold damage, and is pushed 15 feet away from the dragon and knocked prone. On a successful save the creature takes half as much damage and isn't pushed or knocked prone.",
+            "name": "Tidal Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 15,
+    "charisma_save": 4,
+    "constitution": 15,
+    "constitution_save": 4,
+    "damage_immunities": "cold",
+    "dexterity": 10,
+    "dexterity_save": 2,
+    "hit_dice": "8d8+16",
+    "hit_points": 52,
+    "id": "sea_dragon_wyrmling",
+    "intelligence": 13,
+    "languages": "Common, Draconic, Primordial",
+    "name": "Sea Dragon Wyrmling",
+    "perception": 4,
+    "senses": "blindsight 10 ft. darkvision 60 ft., passive Perception 14",
+    "size": "Medium",
+    "speed": "30 ft., fly 60 ft., swim 40 ft.",
+    "speed_json": {
+        "fly": 60,
+        "swim": 40,
+        "walk": 30
+    },
+    "stealth": 2,
+    "strength": 17,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 11,
+    "wisdom_save": 2
+}

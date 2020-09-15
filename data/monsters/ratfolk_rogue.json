@@ -1,0 +1,71 @@
+{
+    "acrobatics": 5,
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Dagger"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+            "name": "Light Crossbow"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., three targets. Hit: 7 (1d4 + 3) piercing damage.",
+            "name": "Rat Dagger Flurry"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 15,
+    "armor_desc": "studded leather armor",
+    "challenge_rating": "1",
+    "charisma": 10,
+    "constitution": 12,
+    "dexterity": 16,
+    "hit_dice": "4d6+4",
+    "hit_points": 18,
+    "id": "ratfolk_rogue",
+    "intelligence": 14,
+    "languages": "Common, Thieves Cant",
+    "name": "Ratfolk Rogue",
+    "perception": 2,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A ratfolk rogue can use a bonus action to Dash, Disengage, or Hide.",
+            "name": "Cunning Action"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A ratfolk rogue can move through the space of any creature size Medium or larger.",
+            "name": "Nimbleness"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A ratfolk rogue has advantage on its attack roll against a creature if at least one of the ratfolk's allies is within 5 feet of the creature and the ally is capable of attacking.",
+            "name": "Pack Tactics"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A ratfolk rogue deals an extra 3 (1d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of one of its allies that isn't incapacitated and the rogue doesn't have disadvantage on the attack roll.",
+            "name": "Sneak Attack (1/Turn)"
+        }
+    ],
+    "speed": "25 ft., swim 10 ft.",
+    "speed_json": {
+        "swim": 10,
+        "walk": 25
+    },
+    "stealth": 7,
+    "strength": 7,
+    "subtype": "ratfolk",
+    "type": "humanoid",
+    "wisdom": 10
+}

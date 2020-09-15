@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Shortsword"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Shortbow"
+        }
+    ],
+    "alignment": "lawful evil",
+    "arcana": 2,
+    "armor_class": 15,
+    "armor_desc": "chain shirt",
+    "challenge_rating": "1/4",
+    "charisma": 13,
+    "constitution": 10,
+    "dexterity": 14,
+    "hit_dice": "7d8",
+    "hit_points": 31,
+    "id": "shadow_fey",
+    "intelligence": 11,
+    "languages": "Common, Elvish, Umbral",
+    "name": "Shadow Fey",
+    "perception": 2,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The shadow fey has advantage on saving throws against being charmed, and magic can't put it to sleep.",
+            "name": "Fey Ancestry"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the shadow fey's innate spellcasting ability is Charisma. It can cast the following spells innately, requiring no material components.\n\n1/day: misty step (when in shadows, dim light, or darkness only)",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in sunlight, the shadow fey has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight.",
+            "name": "Sunlight Sensitivity"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The shadow fey has advantage on Intelligence (Arcana) checks made to know about shadow roads and shadow magic spells or items.",
+            "name": "Traveler in Darkness"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 10,
+    "subtype": "elf",
+    "type": "humanoid",
+    "wisdom": 11
+}

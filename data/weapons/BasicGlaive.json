@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "1d10",
+    "class": "Glaive",
+    "cost": "20 gp",
+    "damage_bonus": 0,
+    "damage_type": "s",
+    "features_applied": false,
+    "id": "BasicGlaive",
+    "is_finesse": false,
+    "name": "Glaive",
+    "properties": "Heavy, reach, two-handed",
+    "weight": 6
+}

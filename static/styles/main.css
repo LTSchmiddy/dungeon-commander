@@ -1,0 +1,177 @@
+body {
+  background-color: #E6E6E6;
+  font-size: 15px;
+}
+
+.ui-bar {
+  color: #111111;
+  background-color: #7777ff;
+}
+
+.middle-field {
+  position: fixed;
+  top: 40px;
+  /*display: flex;*/
+  left: 0;
+  overflow: hidden;
+  height: calc(100% - 110px);
+  width: 100%;
+  z-index: -5;
+}
+.middle-field .main-view {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+}
+
+a, a:visited {
+  color: #111111;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #444444;
+  text-decoration: none;
+}
+
+.ace-editor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5 !important;
+}
+
+@media (min-width: 590px) {
+  .main-nav {
+    height: 40px;
+  }
+}
+@media (max-width: 590px) {
+  .main-nav {
+    display: none;
+  }
+}
+.drag-handle {
+  width: 6px;
+  height: 100%;
+  background-color: black;
+  cursor: e-resize;
+  float: right;
+}
+
+.sidebar {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 400px;
+}
+
+div.sidebar-content {
+  margin: 0;
+  padding: 20px;
+  width: calc(100% - 6px);
+  height: calc(100vh - 110px);
+  float: left;
+  overflow: scroll;
+  overflow-wrap: unset;
+}
+
+div.sidebar-content a {
+  display: block;
+}
+
+div.sidebar-content a:hover {
+  background-color: #ffffff99;
+  color: #5555ff;
+}
+
+div.sidebar-content summary:hover {
+  background-color: #ffffff99;
+  color: #5555ff;
+}
+
+div.sidebar-content a.sidebar-active {
+  background-color: #ffffff;
+}
+
+.content-field {
+  position: absolute;
+  right: 0;
+  height: 100%;
+  overflow: auto;
+  padding: 10px;
+  width: calc(100vw - 400px);
+}
+
+.bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.playback-buttons-container {
+  height: 100%;
+  margin: auto 10px;
+  align-self: flex-start;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+.playback-buttons-container button {
+  height: 100%;
+}
+
+.tab-container {
+  height: 100%;
+  width: 80%;
+  margin: auto 10px;
+  vertical-align: middle;
+  text-align: right;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.tab-container button {
+  height: calc(100% - 20px);
+  margin-top: 10px;
+}
+.tab-container button.main-tab {
+  min-width: 150px;
+}
+.tab-container button.secondary-tab {
+  width: 50px;
+}
+.tab-container button.active-view {
+  background-color: lightgrey;
+  color: black;
+}
+
+.seek-range {
+  width: 100%;
+}
+
+#settings-editor-view .settings-buttons-area {
+  padding: 10px;
+}
+
+.character-view details {
+  padding-left: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */

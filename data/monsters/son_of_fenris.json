@@ -1,0 +1,86 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The son of Fenris makes one bite attack and one slam attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 12,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 5 (1d10) poison damage, and the target is grappled (escape DC 18). If the target was already grappled, it is swallowed instead. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects from outside the son of Fenris, and it takes 28 (8d6) acid damage at the start of each of the son of Fenris's turns. It can swallow only one creature at a time. If it takes 45 damage or more on a single turn from the swallowed creature, it must succeed on a DC 17 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the son of Fenris. If the son of Fenris dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 12,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The son of Fenris exhales acid in a 60-foot line that is 10 feet wide. Each creature in the line takes 45 (10d8) acid damage, or half damage with a successful DC 18 Dexterity saving throw.",
+            "name": "Acid Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "arcana": 7,
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "12",
+    "charisma": 14,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 23,
+    "constitution_save": 10,
+    "damage_immunities": "cold, lightning, poison; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "damage_resistances": "psychic, radiant",
+    "dexterity": 16,
+    "dexterity_save": 7,
+    "hit_dice": "14d12+84",
+    "hit_points": 175,
+    "id": "son_of_fenris",
+    "intelligence": 16,
+    "intimidation": 6,
+    "languages": "Common, Celestial, Draconic, Elvish, Dwarvish, Giant, Infernal, telepathy 60 ft.",
+    "name": "Son Of Fenris",
+    "religion": 12,
+    "senses": "truesight 60 ft., tremorsense 100 ft., passive Perception 14",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The son of Fenris has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+            "name": "Keen Hearing and Smell"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The son of Fenris' weapon attacks are magical.",
+            "name": "Magic Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in snow or ice, the Son of Fenris' burrow speed increases to 30 ft.",
+            "name": "Arctic Tunneler"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the son of Fenris is a 15th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks). It requires no material components to cast its spells. It has the following cleric spells prepared:\n\ncantrips (at will): guidance, light, sacred flame, spare the dying, thaumaturgy\n\n1st level (4 slots): bane, command, guiding bolt, sanctuary\n\n2nd level (3 slots): blindness/deafness, hold person, silence\n\n3rd level (3 slots): animate dead, bestow curse, dispel magic\n\n4th level (3 slots): banishment, death ward, locate creature\n\n5th level (2 slots): contagion, scrying\n\n6th level (1 slot): harm\n\n7th level (1 slot): plane shift\n\n8th level (1 slot): earthquake",
+            "name": "Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If the son of Fenris moves at least 20 feet straight toward a creature and hits it with a slam attack on that turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone. If it is knocked prone, the son of Fenris can make another slam attack against it as a bonus action.",
+            "name": "Trampling Charge"
+        }
+    ],
+    "speed": "60 ft., burrow 15 ft. (30 ft. in ice or snow)",
+    "speed_json": {
+        "burrow": 15,
+        "walk": 60
+    },
+    "strength": 26,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 18,
+    "wisdom_save": 8
+}

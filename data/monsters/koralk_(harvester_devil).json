@@ -1,0 +1,73 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The koralk can make three stinger attacks and two scythe attacks. It can also make a bite attack if it has a target grappled.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d12",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 16 (2d12 + 3) slashing damage, OR a Medium-sized or smaller target can be grappled by the koralk's smaller, vestigial arms instead (no damage, escape DC 13).",
+            "name": "Scythe"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d10",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one grappled target. Hit: 19 (3d10 + 3) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage and the target must make a successful DC 15 Constitution saving throw or become poisoned. While poisoned this way, the target takes 10 (3d6) poison damage at the start of each of its turns, from liquefaction of its innards. A successful save renders the target immune to the koralk's poison for 24 hours. If a creature dies while poisoned by a koralk, its body bursts open, spewing vile liquid and a newly-formed lemure devil. The lemure is under the command of any higher-order devil nearby. The poison can be neutralized by lesser restoration, protection from poison, or comparable magic. If the lemure is killed, the original creature can be restored to life by resurrection or comparable magic.",
+            "name": "Stinger"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "11",
+    "charisma": 13,
+    "charisma_save": 5,
+    "condition_immunities": "poisoned",
+    "constitution": 17,
+    "constitution_save": 7,
+    "damage_immunities": "fire, poison",
+    "damage_resistances": "cold; bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered",
+    "dexterity": 13,
+    "hit_dice": "16d10+48",
+    "hit_points": 136,
+    "id": "koralk_(harvester_devil)",
+    "intelligence": 10,
+    "languages": "Infernal, telepathy 120 ft.",
+    "name": "Koralk (Harvester Devil)",
+    "senses": "darkvision 120 ft., passive Perception 10",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Magical darkness does not impair the koralk's darkvision.",
+            "name": "Devil's Sight"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The koralk has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The koralk cannot be frightened while it can see an allied creature within 30 feet of it",
+            "name": "Steadfast"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 16,
+    "subtype": "devil",
+    "type": "fiend",
+    "wisdom": 11,
+    "wisdom_save": 4
+}

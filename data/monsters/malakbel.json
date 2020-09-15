@@ -1,0 +1,71 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The malakbel makes two scorching blast attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "3d8",
+            "desc": "Ranged Spell Attack: +9 to hit, range 120 ft., one target. Hit: 18 (3d8 + 5) fire damage.",
+            "name": "Scorching Blast"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The malakbel intensifies its Blistering Radiance to withering levels. All creatures in the malakbel's aura take 31 (7d8) radiant damage and gain a level of exhaustion; a successful DC 16 Constitution saving throw reduces damage by half and negates exhaustion.",
+            "name": "Searing Flare (Recharge 5-6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The malakbel magically teleports to an unoccupied space it can see within 100 feet.",
+            "name": "Teleport"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "9",
+    "charisma": 20,
+    "condition_immunities": "blinded, poisoned",
+    "constitution": 19,
+    "damage_immunities": "fire, radiant, poison",
+    "damage_resistances": "cold, lightning; bludgeoning, piercing, and slashing damage from nonmagical weapons",
+    "dexterity": 17,
+    "dexterity_save": 7,
+    "hit_dice": "12d8+48",
+    "hit_points": 102,
+    "id": "malakbel",
+    "intelligence": 13,
+    "languages": "Abyssal, telepathy 120 ft.",
+    "name": "Malakbel",
+    "perception": 7,
+    "senses": "truesight 30 ft., passive Perception 17",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The malakbel generates a 30-foot-radius aura of searing light and heat. A creature that starts its turn in the aura, or who enters it for the first time on a turn, takes 11 (2d10) radiant damage. The area in the aura is brightly lit, and it sheds dim light for another 30 feet. The aura dispels magical darkness of 3rd level or lower where the areas overlap.",
+            "name": "Blistering Radiance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Ranged attacks against the malakbel have disadvantage.",
+            "name": "Distortion"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The malakbel has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 14,
+    "subtype": "demon",
+    "type": "fiend",
+    "wisdom": 16,
+    "wisdom_save": 7
+}

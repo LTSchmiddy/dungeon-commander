@@ -1,0 +1,66 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The rime worm makes two tendril attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack. +8 to hit, reach 10 ft., one target. Hit: 8 (1d6 + 5) slashing damage. If both tendril attacks hit the same target in a single turn, that target is grappled (escape DC 15). The rime worm can grapple one creature at a time, and it can't use its tendril or devour attacks against a different target while it has a creature grappled.",
+            "name": "Tendril"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d12",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (2d12 + 5) slashing damage. If the target was grappled by the rime worm, it takes an additional 13 (2d12) cold damage.",
+            "name": "Devour"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The rime worm sprays slivers of ice in a line 30 feet long and 5 feet wide. All creatures in the line take 26 (4d12) necrotic damage and are blinded; a successful DC 15 Constitution saving throw prevents the blindness. A blinded creature repeats the saving throw at the end of its turn, ending the effect on itself with a successful save.",
+            "name": "Black Ice Spray (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 3,
+    "constitution": 20,
+    "constitution_save": 8,
+    "damage_immunities": "cold, necrotic",
+    "dexterity": 14,
+    "hit_dice": "10d10+50",
+    "hit_points": 105,
+    "id": "adult_rime_worm",
+    "intelligence": 6,
+    "languages": "-",
+    "name": "Adult Rime Worm",
+    "senses": "darkvision 200 ft., passive Perception 12",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A rime worm can breathe air or water with equal ease.",
+            "name": "Born of Rime"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A rime worm is surrounded by an aura of cold, necrotic magic. At the start of the rime worm's turn, enemies within 5 feet take 2 (1d4) cold damage plus 2 (1d4) necrotic damage. If two or more enemies take damage from the aura on a single turn, the rime worm's black ice spray recharges immediately.",
+            "name": "Ringed by Ice and Death"
+        }
+    ],
+    "speed": "30 ft., swim 30 ft., burrow (snow, ice) 30 ft.",
+    "speed_json": {
+        "burrow": 30,
+        "swim": 30,
+        "walk": 30
+    },
+    "strength": 20,
+    "strength_save": 8,
+    "subtype": "",
+    "type": "elemental",
+    "wisdom": 14
+}

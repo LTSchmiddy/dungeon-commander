@@ -1,0 +1,52 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d4+4",
+            "desc": "Ranged Weapon Attack: +6 to hit, range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage.",
+            "name": "Thorn Dart"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage.",
+            "name": "Grass Blade"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": "14",
+    "challenge_rating": "1/4",
+    "charisma": "9",
+    "constitution": "12",
+    "dexterity": "18",
+    "hit_dice": "4d6+4",
+    "hit_points": "18",
+    "id": "alliumite",
+    "intelligence": "7",
+    "languages": "Sylvan",
+    "name": "Alliumite",
+    "perception": 3,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The alliumite has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life.",
+            "name": "Plant Camouflage"
+        },
+        {
+            "desc": "Each creature other than an alliumite within 5 feet of the alliumite when it takes damage must succeed on a DC 13 Constitution saving throw or be blinded until the start of the creature's next turn. On a successful saving throw, the creature is immune to the Tearful Stench of all alliumites for 1 minute.",
+            "name": "Tearful Stench"
+        }
+    ],
+    "speed": "30 ft., burrow 20 ft.",
+    "speed_json": {
+        "burrow": 20,
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": "6",
+    "subtype": "",
+    "survival": 3,
+    "type": "plant",
+    "wisdom": "12"
+}

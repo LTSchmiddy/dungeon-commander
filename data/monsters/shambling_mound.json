@@ -1,0 +1,57 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The shambling mound makes two slam attacks. If both attacks hit a Medium or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_bonus": 4,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The shambling mound engulfs a Medium or smaller creature grappled by it. The engulfed target is blinded, restrained, and unable to breathe, and it must succeed on a DC 14 Constitution saving throw at the start of each of the mound's turns or take 13 (2d8 + 4) bludgeoning damage. If the mound moves, the engulfed target moves with it. The mound can have only one creature engulfed at a time.",
+            "name": "Engulf"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 5,
+    "condition_immunities": "blinded, deafened, exhaustion",
+    "constitution": 16,
+    "damage_immunities": "lightning",
+    "damage_resistances": "cold, fire",
+    "damage_vulnerabilities": "",
+    "dexterity": 8,
+    "hit_dice": "16d10+48",
+    "hit_points": 136,
+    "id": "shambling_mound",
+    "intelligence": 5,
+    "languages": "",
+    "name": "Shambling Mound",
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 10",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Whenever the shambling mound is subjected to lightning damage, it takes no damage and regains a number of hit points equal to the lightning damage dealt.",
+            "name": "Lightning Absorption"
+        }
+    ],
+    "speed": "20 ft., swim 20 ft.",
+    "speed_json": {
+        "swim": 20,
+        "walk": 20
+    },
+    "stealth": 2,
+    "strength": 18,
+    "subtype": "",
+    "type": "plant",
+    "wisdom": 10
+}

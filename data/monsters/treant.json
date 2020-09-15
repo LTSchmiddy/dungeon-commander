@@ -1,0 +1,67 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The treant makes two slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_bonus": 6,
+            "damage_dice": "3d6",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 16 (3d6 + 6) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_bonus": 6,
+            "damage_dice": "4d10",
+            "desc": "Ranged Weapon Attack: +10 to hit, range 60/180 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage.",
+            "name": "Rock"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The treant magically animates one or two trees it can see within 60 feet of it. These trees have the same statistics as a treant, except they have Intelligence and Charisma scores of 1, they can't speak, and they have only the Slam action option. An animated tree acts as an ally of the treant. The tree remains animate for 1 day or until it dies; until the treant dies or is more than 120 feet from the tree; or until the treant takes a bonus action to turn it back into an inanimate tree. The tree then takes root if possible.",
+            "name": "Animate Trees (1/Day)"
+        }
+    ],
+    "alignment": "chaotic good",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "9",
+    "charisma": 12,
+    "condition_immunities": "",
+    "constitution": 21,
+    "damage_immunities": "",
+    "damage_resistances": "bludgeoning, piercing",
+    "damage_vulnerabilities": "fire",
+    "dexterity": 8,
+    "hit_dice": "12d12+60",
+    "hit_points": 138,
+    "id": "treant",
+    "intelligence": 12,
+    "languages": "Common, Druidic, Elvish, Sylvan",
+    "name": "Treant",
+    "senses": "passive Perception 13",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "While the treant remains motionless, it is indistinguishable from a normal tree.",
+            "name": "False Appearance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The treant deals double damage to objects and structures.",
+            "name": "Siege Monster"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 23,
+    "subtype": "",
+    "type": "plant",
+    "wisdom": 16
+}

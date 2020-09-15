@@ -1,0 +1,37 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "damage_bonus": 1,
+            "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 10,
+    "challenge_rating": "0",
+    "charisma": 3,
+    "condition_immunities": "",
+    "constitution": 10,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 11,
+    "hit_dice": "1d4",
+    "hit_points": 2,
+    "id": "lizard",
+    "intelligence": 1,
+    "languages": "",
+    "name": "Lizard",
+    "senses": "darkvision 30 ft., passive Perception 9",
+    "size": "Tiny",
+    "speed": "20 ft., climb 20 ft.",
+    "speed_json": {
+        "climb": 20,
+        "walk": 20
+    },
+    "strength": 2,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 8
+}

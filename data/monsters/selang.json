@@ -1,0 +1,68 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The selang makes two dagger attacks or two short bow attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d4",
+            "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage, plus sleep poison.",
+            "name": "Dagger"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 80/320, one target. Hit: 5 (1d6 + 2) piercing damage plus sleep poison.",
+            "name": "Short Bow"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "An injured creature must succeed on a DC 14 Constitution saving throw or be poisoned for 2d6 rounds. A creature poisoned in this way is unconscious. An unconscious creature wakes if it takes damage, or if a creature uses its action to shake it awake.",
+            "name": "Sleep Poison"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A selang can confuse and injure its enemies by playing weird, ear-bending harmonies on alien pipes, made from the beaks, cartilage, and throat sacs of a dorreq. When the selang plays a tune on these pipes, all creatures within 60 feet must make a successful DC 14 Wisdom saving throw or be affected by contagion, confusion, irresistible dance, or hideous laughter, depending on what alien and otherworldly music the dark satyr chooses to play. A creature that saves successfully against this psychic effect is immune to the piping for 24 hours. The selang can use each of these spell-like effects once per day.",
+            "name": "Alien Piping"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "4",
+    "charisma": 19,
+    "charisma_save": 6,
+    "constitution": 18,
+    "constitution_save": 6,
+    "damage_immunities": "acid, lightning",
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 15,
+    "dexterity_save": 4,
+    "hit_dice": "9d8+36",
+    "hit_points": 76,
+    "id": "selang",
+    "intelligence": 12,
+    "languages": "Common, Elvish, Sylvan, Void Speech",
+    "name": "Selang",
+    "perception": 6,
+    "performance": 8,
+    "senses": "darkvision 60 ft., passive Perception 16",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the selang's innate spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring no material components:\n\nat will: dancing lights, minor illusion\n\n3/day each: alter self, fear, sleep, suggestion",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "fey",
+    "wisdom": 14
+}

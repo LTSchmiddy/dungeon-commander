@@ -1,0 +1,51 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
+            "name": "Tusk"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 5,
+    "condition_immunities": "",
+    "constitution": 16,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "5d10",
+    "hit_points": 42,
+    "id": "giant_boar",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Giant Boar",
+    "senses": "passive Perception 8",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "damage_dice": "2d6",
+            "desc": "If the boar moves at least 20 ft. straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 (2d6) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone.",
+            "name": "Charge"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead.",
+            "name": "Relentless (Recharges after a Short or Long Rest)"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 17,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 7
+}

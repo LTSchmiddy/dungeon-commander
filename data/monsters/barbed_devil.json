@@ -1,0 +1,82 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The devil makes three melee attacks: one with its tail and two with its claws. Alternatively, it can use Hurl Flame twice.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 3,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 3,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.",
+            "name": "Tail"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "3d6",
+            "desc": "Ranged Spell Attack: +5 to hit, range 150 ft., one target. Hit: 10 (3d6) fire damage. If the target is a flammable object that isn't being worn or carried, it also catches fire.",
+            "name": "Hurl Flame"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 14,
+    "charisma_save": 5,
+    "condition_immunities": "poisoned",
+    "constitution": 18,
+    "constitution_save": 7,
+    "damage_immunities": "fire, poison",
+    "damage_resistances": "cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
+    "damage_vulnerabilities": "",
+    "deception": 5,
+    "dexterity": 17,
+    "group": "Devils",
+    "hit_dice": "13d8+52",
+    "hit_points": 110,
+    "id": "barbed_devil",
+    "insight": 5,
+    "intelligence": 12,
+    "languages": "Infernal, telepathy 120 ft.",
+    "name": "Barbed Devil",
+    "perception": 8,
+    "senses": "darkvision 120 ft., passive Perception 18",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "damage_dice": "1d10",
+            "desc": "At the start of each of its turns, the barbed devil deals 5 (1d10) piercing damage to any creature grappling it.",
+            "name": "Barbed Hide"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Magical darkness doesn't impede the devil's darkvision.",
+            "name": "Devil's Sight"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The devil has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 16,
+    "strength_save": 6,
+    "subtype": "devil",
+    "type": "fiend",
+    "wisdom": 14,
+    "wisdom_save": 5
+}

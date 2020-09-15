@@ -1,0 +1,47 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage, and the target is grappled (escape DC 11). The crab has two claws, each of which can grapple only one target.",
+            "name": "Claw"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/8",
+    "charisma": 3,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "hit_dice": "3d8",
+    "hit_points": 13,
+    "id": "giant_crab",
+    "intelligence": 1,
+    "languages": "",
+    "name": "Giant Crab",
+    "senses": "blindsight 30 ft., passive Perception 9",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The crab can breathe air and water.",
+            "name": "Amphibious"
+        }
+    ],
+    "speed": "30 ft., swim 30 ft.",
+    "speed_json": {
+        "swim": 30,
+        "walk": 30
+    },
+    "stealth": 4,
+    "strength": 13,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 9
+}

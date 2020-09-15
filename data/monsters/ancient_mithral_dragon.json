@@ -1,0 +1,115 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 15,
+            "damage_dice": "2d12",
+            "desc": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 22 (2d12 + 9) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 15,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 18 (2d8 + 9) slashing damage, and the target loses 5 hit point from bleeding at the start of each of its turns for six rounds unless it receives magical healing. Bleeding damage is cumulative; the target loses 5 hp per round for each bleeding wound it's taken from a mithral dragon's claws.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 15,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 20 (2d10 + 9) bludgeoning damage.",
+            "name": "Tail"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 21 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of its turn, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+            "name": "Frightful Presence"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A mithral dragon can spit a 60-foot-long, 5-foot-wide line of metallic shards. Targets in its path take 59 (17d6) magical slashing damage and lose another 10 hit points from bleeding at the start of their turns for 6 rounds; slashing and bleed damage is halved by a successful DC 21 Dexterity saving throw. Only magical healing stops the bleeding before 6 rounds. The shards dissolve into wisps of smoke 1 round after the breath weapon's use.",
+            "name": "Breath Weapon (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 20,
+    "armor_desc": "natural armor",
+    "athletics": 15,
+    "challenge_rating": "18",
+    "charisma": 24,
+    "charisma_save": 13,
+    "condition_immunities": "charmed",
+    "constitution": 25,
+    "constitution_save": 13,
+    "damage_immunities": "acid, thunder",
+    "damage_resistances": "bludgeoning, piercing, and slashing from",
+    "dexterity": 16,
+    "dexterity_save": 9,
+    "history": 13,
+    "hit_dice": "17d20+119",
+    "hit_points": 297,
+    "id": "ancient_mithral_dragon",
+    "insight": 13,
+    "intelligence": 24,
+    "intelligence_save": 13,
+    "intimidation": 13,
+    "languages": "Celestial, Common, Draconic, Primordial",
+    "legendary_actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon makes a Wisdom (Perception) check.",
+            "name": "Detect"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon makes a tail attack.",
+            "name": "Tail Attack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon beats its wings. Each creature within 10 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 18 (2d8 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+            "name": "Wing Attack (Costs 2 Actions)"
+        }
+    ],
+    "legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
+    "name": "Ancient Mithral Dragon",
+    "perception": 13,
+    "persuasion": 13,
+    "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 23",
+    "size": "Gargantuan",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+            "name": "Legendary Resistance (3/Day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the dragon's innate spellcasting ability is Intelligence (spell save DC 21). It can innately cast the following spells, requiring no material components:\n\nat will: tongues\n\n5/day each: counterspell, dispel magic, enhance ability",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Ancient mithral dragons can choose to retain the mithral shards of their breath weapon as a hazardous zone of spikes. Treat as a spike growth zone that does 2d8 magical slashing damage for every 5 feet travelled.",
+            "name": "Mithral Shards"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the dragon is a 15th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 21, +13 to hit with spell attacks). It requires no material components to cast its spells. The dragon has the following wizard spells prepared:\n\ncantrips (at will): acid splash, light, mage hand, minor illusion, prestidigitation\n\n1st level (4 slots): charm person, expeditious retreat, magic missile, unseen servant\n\n2nd level (3 slots): blur, hold person, see invisibility\n\n3rd level (3 slots): haste, lightning bolt, protection from energy\n\n4th level (3 slots): dimension door, stoneskin, wall of fire\n\n5th level (2 slots): polymorph, teleportation circle\n\n6th level (1 slot): guards and wards\n\n7th level (1 slot): forcecage\n\n8th level (1 slot): antimagic field",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "40 ft., fly 80 ft.",
+    "speed_json": {
+        "fly": 80,
+        "walk": 40
+    },
+    "strength": 29,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 25,
+    "wisdom_save": 13
+}

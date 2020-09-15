@@ -1,0 +1,64 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The burrowling makes one bite attack and one claw attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage.",
+            "name": "Sling"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "armor_class": 13,
+    "armor_desc": "",
+    "challenge_rating": "1/2",
+    "charisma": 13,
+    "constitution": 12,
+    "dexterity": 16,
+    "hit_dice": "6d6+6",
+    "hit_points": 27,
+    "id": "burrowling",
+    "intelligence": 9,
+    "languages": "Common",
+    "name": "Burrowling",
+    "perception": 3,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A burrowling gets advantage on Perception checks if at least one other burrowling is awake within 10 feet.",
+            "name": "Burrow Awareness"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The burrowling has advantage on attack rolls when its target is adjacent to at least one other burrowling that's capable of attacking.",
+            "name": "Pack Tactics"
+        }
+    ],
+    "speed": "30 ft., burrow 10 ft.",
+    "speed_json": {
+        "burrow": 10,
+        "walk": 30
+    },
+    "strength": 10,
+    "subtype": "burrowling",
+    "type": "humanoid",
+    "wisdom": 12
+}

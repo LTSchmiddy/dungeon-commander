@@ -1,0 +1,65 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_bonus": 6,
+            "damage_dice": "2d10+1d6",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage plus 3 (1d6) fire damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_bonus": 6,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 0,
+            "damage_dice": "16d6",
+            "desc": "The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 56 (16d6) fire damage on a failed save, or half as much damage on a successful one.",
+            "name": "Fire Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "challenge_rating": "10",
+    "charisma": 19,
+    "charisma_save": 8,
+    "condition_immunities": "",
+    "constitution": 21,
+    "constitution_save": 9,
+    "damage_immunities": "fire",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "dexterity_save": 4,
+    "group": "Red Dragon",
+    "hit_dice": "17d10+85",
+    "hit_points": 178,
+    "id": "young_red_dragon",
+    "intelligence": 14,
+    "languages": "Common, Draconic",
+    "name": "Young Red Dragon",
+    "perception": 8,
+    "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 18",
+    "size": "Large",
+    "speed": "40 ft., climb 40 ft., fly 80 ft.",
+    "speed_json": {
+        "climb": 40,
+        "fly": 80,
+        "walk": 40
+    },
+    "stealth": 4,
+    "strength": 23,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 11,
+    "wisdom_save": 4
+}

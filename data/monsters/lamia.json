@@ -1,0 +1,74 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The lamia makes two attacks: one with its claws and one with its dagger or Intoxicating Touch.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Dagger"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: The target is magically cursed for 1 hour. Until the curse ends, the target has disadvantage on Wisdom saving throws and all ability checks.",
+            "name": "Intoxicating Touch"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "4",
+    "charisma": 16,
+    "condition_immunities": "",
+    "constitution": 15,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "deception": 7,
+    "dexterity": 13,
+    "hit_dice": "13d10+26",
+    "hit_points": 97,
+    "id": "lamia",
+    "insight": 4,
+    "intelligence": 14,
+    "languages": "Abyssal, Common",
+    "name": "Lamia",
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The lamia's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components.\n\nAt will: disguise self (any humanoid form), major image\n3/day each: charm person, mirror image, scrying, suggestion\n1/day: geas",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "spells": [
+        "disguise self",
+        "major image",
+        "charm person",
+        "mirror image",
+        "scrying",
+        "suggestion",
+        "geas"
+    ],
+    "stealth": 3,
+    "strength": 16,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 15
+}

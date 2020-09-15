@@ -1,0 +1,69 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 7,
+            "damage_dice": "4d6",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 18 (4d6 + 4) cold damage and the target's Strength score is reduced by 1d6. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a shadow rises from the corpse 1d4 hours later.",
+            "name": "Umbral Grasp"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 14,
+    "armor_desc": "",
+    "challenge_rating": "7",
+    "charisma": 19,
+    "charisma_save": 7,
+    "condition_immunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
+    "constitution": 15,
+    "constitution_save": 7,
+    "damage_immunities": "cold, necrotic, poison",
+    "damage_resistances": "acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 18,
+    "hit_dice": "13d8+26",
+    "hit_points": 84,
+    "id": "umbral_vampire",
+    "intelligence": 14,
+    "languages": "Common, Umbral, Void Speech",
+    "name": "Umbral Vampire",
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The umbral vampire can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.",
+            "name": "Incorporeal Movement"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the umbral vampire's innate spellcasting ability is Charisma (spell save DC 15). The umbral vampire can innately cast the following spells, requiring no material components:\n\nat will: mirror image, plane shift (plane of shadows only)\n\n1/day each: bane (when in dim light or darkness only), black tentacles",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When in dim light or darkness, the umbral vampire can Hide as a bonus action, even while being observed.",
+            "name": "Shadow Blend"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The reach of the umbral vampire's umbral grasp attack increases by 10 feet and its damage increases by 4d6 when both the umbral vampire and the target of the attack are in dim light or darkness and the umbral vampire is hidden from its target.",
+            "name": "Strike from Shadow"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in direct sunlight, the umbral vampire has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight.",
+            "name": "Sunlight Sensitivity"
+        }
+    ],
+    "speed": "0 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "hover": true,
+        "walk": 0
+    },
+    "stealth": 7,
+    "strength": 1,
+    "subtype": "",
+    "type": "fiend",
+    "wisdom": 14
+}

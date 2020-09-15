@@ -1,0 +1,67 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The pillar makes two slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "3d8",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage.",
+            "name": "Slam"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "7",
+    "charisma": 1,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 19,
+    "damage_immunities": "poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
+    "dexterity": 8,
+    "hit_dice": "10d10+40",
+    "hit_points": 95,
+    "id": "possessed_pillar",
+    "intelligence": 3,
+    "languages": "understands the languages of its creator but can't speak",
+    "name": "Possessed Pillar",
+    "senses": "darkvision 120 ft., passive Perception 10",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The pillar is immune to any spell or effect that would alter its form.",
+            "name": "Immutable Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The pillar has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The pillar's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The eldritch magic that powers the pillar produces a magnetic power that seizes metal objects that touch it, including metal weapons. When a creature successfully strikes the pillar with a metal melee weapon, the attacker must make a successful DC 15 Strength or Dexterity saving throw or the weapon becomes stuck to the pillar until the pillar releases it or is destroyed. The saving throw uses the same ability as the attack used. The pillar can release all metal weapons stuck to it whenever it wants. A pillar always drops all weapons stuck to it when it believes it's no longer threatened. This ability affects armor only during a grapple.",
+            "name": "Steal Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While the pillar remains motionless, it is indistinguishable from a statue or a carved column.",
+            "name": "False Appearance"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "strength": 20,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 11
+}

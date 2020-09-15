@@ -1,0 +1,64 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "A wolf spirit swarm uses icy doom, if it's available, and makes 3 bite attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d4+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) piercing damage plus 3 (1d6) cold damage. The target is also knocked prone if the attack scored a critical hit.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "All creatures within 5 feet of the wolf spirit swarm take 22 (4d10) cold damage, or half damage with a successful DC 14 Constitution saving throw. Those that fail the saving throw also gain one level of exhaustion and become frightened until the start of the swarm's next turn.",
+            "name": "Icy Doom (Recharge 5-6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "As a bonus action on its first turn of combat, the wolf spirit swarm howls, emitting an unnatural and eerie cacophony that chills the blood. All creatures within 300 feet that hear the howl must make a successful DC 12 Charisma saving throw or be frightened until the start of the swarm's next turn.",
+            "name": "Chilling Howl"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 12,
+    "condition_immunities": "exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 12,
+    "damage_immunities": "cold",
+    "damage_resistances": "necrotic; bludgeoning, piercing, slashing",
+    "dexterity": 16,
+    "dexterity_save": 6,
+    "hit_dice": "15d10+15",
+    "hit_points": 97,
+    "id": "wolf_spirit_swarm",
+    "intelligence": 4,
+    "languages": "understands Common",
+    "name": "Wolf Spirit Swarm",
+    "perception": 3,
+    "senses": "darkvision 120 ft., passive Perception 13",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A swarm of wolf spirits is not affected by difficult terrain caused by snowy or icy conditions.",
+            "name": "Speed Over Snow"
+        }
+    ],
+    "speed": "50 ft., fly 50 ft.",
+    "speed_json": {
+        "fly": 50,
+        "hover": true,
+        "walk": 50
+    },
+    "stealth": 6,
+    "strength": 14,
+    "strength_save": 5,
+    "subtype": "",
+    "type": "swarm of Medium undead",
+    "wisdom": 10
+}

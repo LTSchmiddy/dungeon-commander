@@ -1,0 +1,67 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The rat king makes four bite attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage, and a bitten creature must succeed on a DC 15 Constitution saving throw or be infected with a disease. A diseased creature gains one level of exhaustion immediately. When the creature finishes a long rest, it must repeat the saving throw. On a failure, the creature gains another level of exhaustion. On a success, the disease does not progress. The creature recovers from the disease if its saving throw succeeds after two consecutive long rests or if it receives a lesser restoration spell or comparable magic. The creature then recovers from one level of exhaustion after each long rest.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The rat king summons three swarms of rats. The swarms appear immediately within 60 feet of the rat king. They can appear in spaces occupied by other creatures. The swarms act as allies of the rat king. They remain for 1 hour or until the rat king dies.",
+            "name": "Summon Swarm (1/Day)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 16,
+    "condition_immunities": "charmed, frightened, paralyzed, petrified, prone, restrained, stunned",
+    "constitution": 18,
+    "damage_immunities": "poison",
+    "damage_resistances": "bludgeoning, piercing, slashing",
+    "dexterity": 16,
+    "hit_dice": "9d8+36",
+    "hit_points": 76,
+    "id": "rat_king",
+    "intelligence": 11,
+    "languages": "Common, Thieves' Cant",
+    "name": "Rat King",
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "When the rat king does damage to a rat or rat swarm, it can absorb the rat, or part of the swarm, into its own mass. The rat king regains hit points equal to the damage it did to the rat or swarm.",
+            "name": "Absorption"
+        }
+    ],
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The rat king has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The rat king radiates a magical aura of misfortune in a 30-foot radius. A foe of the rat king that starts its turn in the aura must make a successful DC 14 Charisma saving throw or be cursed with bad luck until the start of its next turn. When a cursed character makes an attack roll, ability check, or saving throw, it must subtract 1d4 from the result.",
+            "name": "Plague of Ill Omen"
+        }
+    ],
+    "speed": "30 ft., burrow 20 ft.",
+    "speed_json": {
+        "burrow": 20,
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": 6,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 15
+}

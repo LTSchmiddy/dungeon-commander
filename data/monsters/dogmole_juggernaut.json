@@ -1,0 +1,69 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dogmole juggernaut makes one claw attack and one bite attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "1d12",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "4d6",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (4d6 + 5) slashing damage.",
+            "name": "Claw"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 15,
+    "armor_desc": "chain armor",
+    "challenge_rating": "5",
+    "charisma": 2,
+    "constitution": 20,
+    "constitution_save": 11,
+    "dexterity": 14,
+    "hit_dice": "12d10+60",
+    "hit_points": 126,
+    "id": "dogmole_juggernaut",
+    "intelligence": 2,
+    "languages": "-",
+    "name": "Dogmole Juggernaut",
+    "senses": "blindsight 30 ft., passive Perception 10",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Dogmole juggernauts cannot burrow into solid rock, but they can move through softer material like soil or loose rubble, leaving a usable tunnel 10 ft. in diameter.",
+            "name": "Burrow"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When the dogmole juggernaut is reduced to 0 hit points, it doesn't die until the end of its next turn.",
+            "name": "Ferocity (1/Day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A dogmole juggernaut is treated as one size larger if doing so is advantageous to it (such as during grapple checks, pushing attempts, and tripping attempts, but not for the purposes of squeezing or AC). It gains advantage against magical pushing attempts such as gust of wind or Repelling Blast.",
+            "name": "Powerful Build"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Wild dogmole juggernaut packs are famed for their battles against the monsters of the dark caverns of the world. If a dogmole juggernaut draws blood against vermin, purple worms, or other underground invertebrate, it gains a +4 bonus to Strength and Constitution but suffers a -2 penalty to AC. The wormkiller rage lasts for a number of rounds equal to 1+ its Constitution modifier (minimum 1 round). It cannot end the rage voluntarily while the creatures that sent it into a rage still live.",
+            "name": "Wormkiller Rage"
+        }
+    ],
+    "speed": "30 ft., burrow 10 ft., swim 10 ft.",
+    "speed_json": {
+        "burrow": 10,
+        "swim": 10,
+        "walk": 30
+    },
+    "strength": 21,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 10
+}

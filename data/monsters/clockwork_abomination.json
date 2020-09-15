@@ -1,0 +1,80 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The clockwork abomination makes one bite attack and one slam attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The clockwork abomination's Infernal Power Source allows it to breathe fire in a 20-foot cone. Targets in this cone take 22 (4d10) fire damage, or half damage with a successful DC 14 Dexterity saving throw.",
+            "name": "Breath Weapon (Recharge 5-6)"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "athletics": 9,
+    "challenge_rating": "5",
+    "charisma": 12,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 18,
+    "constitution_save": 7,
+    "damage_immunities": "poison",
+    "damage_resistances": "acid, cold, fire; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 12,
+    "dexterity_save": 4,
+    "hit_dice": "8d10+32",
+    "hit_points": 76,
+    "id": "clockwork_abomination",
+    "intelligence": 10,
+    "languages": "Common, Infernal",
+    "name": "Clockwork Abomination",
+    "perception": 4,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Four legs allow the clockwork abomination to climb at a speed equal to its base speed and to ignore difficult terrain.",
+            "name": "Additional Legs"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The abomination's melee attacks have a deceptively long reach thanks to the pistons powering them.",
+            "name": "Piston Reach"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The clockwork abomination is immune to any spell or effect that would alter its form.",
+            "name": "Immutable Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When a clockwork abomination falls to 0 hp, its infernal battery explodes. Creatures within 10 feet of the clockwork abomination take 14 (4d6) fire damage, or half damage with a successful DC 14 Dexterity saving throw.",
+            "name": "Infernal Power Source"
+        }
+    ],
+    "speed": "30 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 30
+    },
+    "stealth": 4,
+    "strength": 21,
+    "subtype": "devil",
+    "type": "construct",
+    "wisdom": 10
+}

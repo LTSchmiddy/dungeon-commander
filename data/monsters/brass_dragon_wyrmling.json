@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d10",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 0,
+            "damage_dice": "4d6",
+            "desc": "The dragon uses one of the following breath weapons.\n**Fire Breath.** The dragon exhales fire in an 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.\n**Sleep Breath.** The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.",
+            "name": "Breath Weapons (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic good",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1",
+    "charisma": 13,
+    "charisma_save": 3,
+    "condition_immunities": "",
+    "constitution": 13,
+    "constitution_save": 3,
+    "damage_immunities": "fire",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "dexterity_save": 2,
+    "group": "Brass Dragon",
+    "hit_dice": "3d8+3",
+    "hit_points": 16,
+    "id": "brass_dragon_wyrmling",
+    "intelligence": 10,
+    "languages": "Draconic",
+    "name": "Brass Dragon Wyrmling",
+    "perception": 4,
+    "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
+    "size": "Medium",
+    "speed": "30 ft., burrow 15 ft., fly 60 ft.",
+    "speed_json": {
+        "burrow": 15,
+        "fly": 60,
+        "walk": 30
+    },
+    "stealth": 2,
+    "strength": 15,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 11,
+    "wisdom_save": 2
+}

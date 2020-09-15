@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 9,
+            "damage_bonus": 6,
+            "damage_dice": "4d8",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (4d8 + 6) piercing damage.",
+            "name": "Gore"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_bonus": 6,
+            "damage_dice": "3d10",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one prone creature. Hit: 22 (3d10 + 6) bludgeoning damage.",
+            "name": "Stomp"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 5,
+    "condition_immunities": "",
+    "constitution": 17,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 9,
+    "group": "Dinosaurs",
+    "hit_dice": "10d12+30",
+    "hit_points": 95,
+    "id": "triceratops",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Triceratops",
+    "senses": "passive Perception 10",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If the triceratops moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the triceratops can make one stomp attack against it as a bonus action.",
+            "name": "Trampling Charge"
+        }
+    ],
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "strength": 22,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 11
+}

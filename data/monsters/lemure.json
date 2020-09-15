@@ -1,0 +1,49 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage",
+            "name": "Fist"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 7,
+    "challenge_rating": "0",
+    "charisma": 3,
+    "condition_immunities": "charmed, frightened, poisoned",
+    "constitution": 11,
+    "damage_immunities": "fire, poison",
+    "damage_resistances": "cold",
+    "damage_vulnerabilities": "",
+    "dexterity": 5,
+    "group": "Devils",
+    "hit_dice": "3d8",
+    "hit_points": 13,
+    "id": "lemure",
+    "intelligence": 1,
+    "languages": "understands infernal but can't speak",
+    "name": "Lemure",
+    "senses": "darkvision 120 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Magical darkness doesn't impede the lemure's darkvision.",
+            "name": "Devil's Sight"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A lemure that dies in the Nine Hells comes back to life with all its hit points in 1d10 days unless it is killed by a good-aligned creature with a bless spell cast on that creature or its remains are sprinkled with holy water.",
+            "name": "Hellish Rejuvenation"
+        }
+    ],
+    "speed": "15 ft.",
+    "speed_json": {
+        "walk": 15
+    },
+    "strength": 10,
+    "subtype": "devil",
+    "type": "fiend",
+    "wisdom": 11
+}

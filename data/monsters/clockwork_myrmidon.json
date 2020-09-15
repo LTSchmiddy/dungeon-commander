@@ -1,0 +1,77 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The clockwork myrmidon makes two attacks: two pick attacks or two slam attacks, or one of each.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) piercing damage.",
+            "name": "Heavy Pick"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "1d12",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 11 (1d12 + 5) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The clockwork myrmidon can spew a jet of alchemical fire in a line 20 feet long and 5 feet wide. Any creature in the path of the jet takes 26 (4d12) fire damage, or half damage with a successful DC 15 Dexterity saving throw. The clockwork myrmidon can use this attack four times before its internal reservoir is emptied.",
+            "name": "Alchemical Flame Jet (Recharge 5-6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "As a bonus action, the clockwork myrmidon's chest can fire a spray of alchemical grease with a range of 30 feet, covering a 10-by-10 foot square area and turning it into difficult terrain. Each creature standing in the affected area must succeed on a DC 15 Dexterity saving throw or fall prone. A creature that enters the area or ends its turn there must also succeed on a DC 15 Dexterity saving throw or fall prone. The clockwork myrmidon can use this attack four times before its internal reservoir is emptied.",
+            "name": "Grease Spray (Recharge 5-6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The clockwork myrmidon's alchemical flame reservoir explodes when the construct is destroyed, spraying nearby creatures with burning fuel. A creature within 5 feet of the myrmidon takes 19 (3d12) fire damage, or half damage with a successful DC 15 Dexterity saving throw. This explosion doesn't occur if the clockwork myrmidon has already fired its alchemical flame jet four times.",
+            "name": "Alchemical Fireball"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "athletics": 8,
+    "challenge_rating": "6",
+    "charisma": 1,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 16,
+    "damage_immunities": "poison, psychic",
+    "dexterity": 14,
+    "dexterity_save": 5,
+    "hit_dice": "18d10+54",
+    "hit_points": 153,
+    "id": "clockwork_myrmidon",
+    "intelligence": 10,
+    "languages": "understands Common",
+    "name": "Clockwork Myrmidon",
+    "perception": 6,
+    "senses": "darkvision 60 ft., passive Perception 16",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The clockwork myrmidon is immune to any spell or effect that would alter its form.",
+            "name": "Immutable Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The clockwork myrmidon has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 20,
+    "strength_save": 11,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 10
+}

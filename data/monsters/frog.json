@@ -1,0 +1,43 @@
+{
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "challenge_rating": "0",
+    "charisma": 3,
+    "condition_immunities": "",
+    "constitution": 8,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 13,
+    "hit_dice": "1d4",
+    "hit_points": 1,
+    "id": "frog",
+    "intelligence": 1,
+    "languages": "",
+    "name": "Frog",
+    "perception": 1,
+    "senses": "darkvision 30 ft., passive Perception 11",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The frog can breathe air and water",
+            "name": "Amphibious"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The frog's long jump is up to 10 ft. and its high jump is up to 5 ft., with or without a running start.",
+            "name": "Standing Leap"
+        }
+    ],
+    "speed": "20 ft., swim 20 ft.",
+    "speed_json": {
+        "swim": 20,
+        "walk": 20
+    },
+    "stealth": 3,
+    "strength": 1,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 8
+}

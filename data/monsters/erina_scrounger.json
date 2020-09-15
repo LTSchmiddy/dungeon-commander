@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
+            "name": "Dagger"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d4",
+            "desc": "Ranged Weapon Attack: +3 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
+            "name": "Sling"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 12,
+    "armor_desc": "leather armor",
+    "challenge_rating": "1/4",
+    "charisma": 11,
+    "constitution": 14,
+    "damage_resistances": "poison",
+    "dexterity": 12,
+    "hit_dice": "4d6+8",
+    "hit_points": 22,
+    "id": "erina_scrounger",
+    "intelligence": 13,
+    "languages": "Common, Erina",
+    "name": "Erina Scrounger",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The erina has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The erina has advantage on saving throws against poison.",
+            "name": "Hardy"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "An enemy who hits the erina with a melee attack while within 5 feet of it takes 2 (1d4) piercing damage.",
+            "name": "Spines"
+        }
+    ],
+    "speed": "20 ft., burrow 20 ft.",
+    "speed_json": {
+        "burrow": 20,
+        "walk": 20
+    },
+    "strength": 9,
+    "subtype": "erina",
+    "type": "humanoid",
+    "wisdom": 10
+}

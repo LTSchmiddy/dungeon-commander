@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The griffon makes two attacks: one with its beak and one with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
+            "name": "Beak"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "challenge_rating": "2",
+    "charisma": 8,
+    "condition_immunities": "",
+    "constitution": 16,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "hit_dice": "7d10+21",
+    "hit_points": 59,
+    "id": "griffon",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Griffon",
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The griffon has advantage on Wisdom (Perception) checks that rely on sight.",
+            "name": "Keen Sight"
+        }
+    ],
+    "speed": "30 ft., fly 80 ft.",
+    "speed_json": {
+        "fly": 80,
+        "walk": 30
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 13
+}

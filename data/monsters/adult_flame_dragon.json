@@ -1,0 +1,107 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon can use its Frightful Presence. It then makes one bite attack and two claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 15 (2d10 + 4) piercing damage plus 7 (2d6) fire damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+            "name": "Tail"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours.",
+            "name": "Frightful Presence"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon exhales fire in a 60-foot cone. Each creature in that area takes 63 (18d6) fire damage, or half damage with a successful DC 19 Dexterity saving throw. Each creature in that area must also succeed on a DC 18 Wisdom saving throw or go on a rampage for 1 minute. A rampaging creature must attack the nearest living creature or smash some object smaller than itself if no creature can be reached with a single move. A rampaging creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "name": "Fire Breath (Recharge 5-6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon magically polymorphs into a creature that has immunity to fire damage and a size and challenge rating no higher than its own, or back into its true form. It reverts to its true form if it dies. Any equipment it is wearing or carrying is absorbed or borne by the new form (the dragon's choice). In a new form, the dragon retains its alignment, hit points, Hit Dice, ability to speak, proficiencies, Legendary Resistance, lair actions, and Intelligence, Wisdom, and Charisma scores, as well as this action. Its statistics and capabilities are otherwise replaced by those of the new form, except any class features or legendary actions of that form.",
+            "name": "Shifting Flames"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 19,
+    "armor_desc": "natural armor",
+    "challenge_rating": "16",
+    "charisma": 20,
+    "charisma_save": 10,
+    "constitution": 23,
+    "constitution_save": 11,
+    "damage_immunities": "fire",
+    "deception": 10,
+    "dexterity": 14,
+    "dexterity_save": 7,
+    "hit_dice": "17d12+102",
+    "hit_points": 212,
+    "id": "adult_flame_dragon",
+    "insight": 7,
+    "intelligence": 17,
+    "languages": "Common, Draconic, Giant, Ignan, Infernal, Orc",
+    "legendary_actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon makes a Wisdom (Perception) check.",
+            "name": "Detect"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon makes a tail attack.",
+            "name": "Tail Attack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 17 Dexterity saving throw or take 11 (2d6 + 4) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+            "name": "Wing Attack (Costs 2 Actions)"
+        }
+    ],
+    "legendary_desc": "The dragon can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn.",
+    "name": "Adult Flame Dragon",
+    "perception": 12,
+    "persuasion": 10,
+    "senses": "passive Perception $1",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If the dragon fails a saving throw, it can choose to succeed instead.",
+            "name": "Legendary Resistance (3/Day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "All fire damage dealt by the dragon ignores fire resistance but not fire immunity.",
+            "name": "Fire Incarnate"
+        }
+    ],
+    "speed": "40 ft., climb 40 ft., fly 80 ft.",
+    "speed_json": {
+        "climb": 40,
+        "fly": 80,
+        "walk": 40
+    },
+    "stealth": 7,
+    "strength": 19,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 14,
+    "wisdom_save": 7
+}

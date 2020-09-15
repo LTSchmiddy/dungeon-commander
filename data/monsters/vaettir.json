@@ -1,0 +1,82 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The vaettir makes two greataxe attacks or two longbow attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d12",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) slashing damage plus 3 (1d6) necrotic damage.",
+            "name": "Greataxe"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "name": "Longbow"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The vaettir spews forth a 15.foot cone of putrid gas. Those caught in the area must succeed on a DC 13 Constitution saving throw or become poisoned for 1d4 rounds.",
+            "name": "Corpse Breath (Recharge 5-6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The vaettir can lock eyes with a creature and drive it mad. Any creature within 30 feet of a vaettir that is the focus of its gaze must make a DC 12 Charisma saving throw or become confused (as the spell) for 1d4 rounds. If the save is successful, the target is immune to the effect for 24 hours.",
+            "name": "Maddening Gaze (1/Day)"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 15,
+    "armor_desc": "chain shirt",
+    "challenge_rating": "4",
+    "charisma": 14,
+    "charisma_save": 4,
+    "condition_immunities": "charmed, frightened, poisoned",
+    "constitution": 16,
+    "constitution_save": 5,
+    "damage_immunities": "necrotic, poison",
+    "dexterity": 14,
+    "dexterity_save": 4,
+    "hit_dice": "16d8+48",
+    "hit_points": 120,
+    "id": "vaettir",
+    "intelligence": 10,
+    "languages": "the languages it knew in life",
+    "name": "Vaettir",
+    "senses": "truesight 30 ft., darkvision 60 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Corpse-black vaettir can see the face of any creature holding or carrying any item the vaettir ever claimed as its own. It also detects the direction and distance to items it ever owned, so long as that item is currently owned by another. If the item changes hands, the new owner becomes the target of the vaettir's hunt. Bone-white vaettir see individuals who have offended them. Neither time nor distance affects these abilities, so long as both parties are on the same plane.",
+            "name": "Covetous Bond"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The vaettir is destroyed when reduced to 0 hit points, but it returns to unlife where it fell on the next nightfall with full hit points. It can be killed only by removing its head, burning the corpse, and dumping the ashes in the sea, or by returning it to its burial mound, placing an open pair of scissors on its chest, and driving pins through its feet.",
+            "name": "Deathless"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the vaettir's innate spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring no material components:\n\n2/day each: gaseous form, hunter's mark\n\n1/day each: enlarge/reduce, phantom steed\n\n1/week each: bestow curse, geas, remove curse",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Vaettir avoid daylight. A vaettir in direct sunlight has disadvantage on attack rolls and ability checks.",
+            "name": "Sunlight Sensitivity"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 20,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 12,
+    "wisdom_save": 3
+}

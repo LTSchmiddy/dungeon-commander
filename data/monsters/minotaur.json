@@ -1,0 +1,64 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "2d12",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing damage.",
+            "name": "Greataxe"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.",
+            "name": "Gore"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": 9,
+    "condition_immunities": "",
+    "constitution": 16,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 11,
+    "hit_dice": "9d10+27",
+    "hit_points": 76,
+    "id": "minotaur",
+    "intelligence": 6,
+    "languages": "Abyssal",
+    "name": "Minotaur",
+    "perception": 7,
+    "senses": "darkvision 60 ft., passive Perception 17",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "damage_dice": "2d8",
+            "desc": "If the minotaur moves at least 10 ft. straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 ft. away and knocked prone.",
+            "name": "Charge"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The minotaur can perfectly recall any path it has traveled.",
+            "name": "Labyrinthine Recall"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "At the start of its turn, the minotaur can gain advantage on all melee weapon attack rolls it makes during that turn, but attack rolls against it have advantage until the start of its next turn.",
+            "name": "Reckless"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 16
+}

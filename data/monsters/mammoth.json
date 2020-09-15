@@ -1,0 +1,52 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 10,
+            "damage_bonus": 7,
+            "damage_dice": "4d8",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 25 (4d8 + 7) piercing damage.",
+            "name": "Gore"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_bonus": 7,
+            "damage_dice": "4d10",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one prone creature. Hit: 29 (4d10 + 7) bludgeoning damage.",
+            "name": "Stomp"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 6,
+    "condition_immunities": "",
+    "constitution": 21,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 9,
+    "hit_dice": "11d12",
+    "hit_points": 126,
+    "id": "mammoth",
+    "intelligence": 3,
+    "languages": "",
+    "name": "Mammoth",
+    "senses": "passive Perception 10",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If the mammoth moves at least 20 ft. straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone. If the target is prone, the mammoth can make one stomp attack against it as a bonus action.",
+            "name": "Trampling Charge"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 24,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 11
+}

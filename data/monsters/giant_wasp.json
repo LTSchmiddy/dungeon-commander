@@ -1,0 +1,38 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way.",
+            "name": "Sting"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "challenge_rating": "1/2",
+    "charisma": 3,
+    "condition_immunities": "",
+    "constitution": 10,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 14,
+    "hit_dice": "3d8",
+    "hit_points": 13,
+    "id": "giant_wasp",
+    "intelligence": 1,
+    "languages": "",
+    "name": "Giant Wasp",
+    "senses": "passive Perception 10",
+    "size": "Medium",
+    "speed": "10 ft., fly 50 ft.",
+    "speed_json": {
+        "fly": 50,
+        "walk": 10
+    },
+    "strength": 10,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

@@ -1,0 +1,80 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The demon makes one bite attack and three spear attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 12 (2d6 + 5) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d6",
+            "desc": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack.",
+            "name": "Spear"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 18,
+    "armor_desc": "natural armor, shield",
+    "challenge_rating": "8",
+    "charisma": 22,
+    "condition_immunities": "poisoned",
+    "constitution": 19,
+    "constitution_save": 7,
+    "damage_immunities": "poison",
+    "damage_resistances": "cold, fire, lightning, poison; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "deception": 9,
+    "dexterity": 20,
+    "dexterity_save": 8,
+    "hit_dice": "14d8+56",
+    "hit_points": 119,
+    "id": "kishi_demon",
+    "intelligence": 15,
+    "languages": "Celestial, Common, Draconic, Infernal, telepathy",
+    "name": "Kishi Demon",
+    "perception": 3,
+    "performance": 9,
+    "senses": "darkvision 120 ft., passive Perception 13",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The demon has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious.",
+            "name": "Two Heads"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the demon's spellcasting ability is Charisma (spell save DC 17). The demon can innately cast the following spells, requiring no material components: At will: detect evil and good, detect magic, suggestion\n\n3/day: glibness\n\n1/day: dominate person",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The demon has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If the kishi demon killed an opponent this turn, as a bonus action, it takes part of the slain creature's essence along with a grisly trophy and mounts it upon its shield. For 24 hours, the Armor Class of the kishi demon becomes 20, and creatures of the same race as the slain creature have disadvantage on attack rolls against the kishi demon.",
+            "name": "Trophy Shield"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "some kishi demons have an action option that allows them to summon other demons.\n\nsummon Demon (1/Day): The kishi demon has a 35 percent chance of summoning one kishi demon",
+            "name": "Variant: Demon Summoning"
+        }
+    ],
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "strength": 19,
+    "subtype": "demon",
+    "type": "fiend",
+    "wisdom": 11,
+    "wisdom_save": 3
+}

@@ -1,0 +1,15 @@
+{
+    "ability": "strength",
+    "attack_bonus": 0,
+    "base_damage": "-",
+    "class": "Net",
+    "cost": "1 gp",
+    "damage_bonus": 0,
+    "damage_type": "",
+    "features_applied": false,
+    "id": "BasicNet",
+    "is_finesse": false,
+    "name": "Net",
+    "properties": "Special, thrown (range 5/15)",
+    "weight": 3
+}

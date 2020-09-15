@@ -1,0 +1,74 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_bonus": 6,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_bonus": 6,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 0,
+            "damage_dice": "10d10",
+            "desc": "The dragon uses one of the following breath weapons.\n**Fire Breath.** The dragon exhales fire in a 30-foot cone. Each creature in that area must make a DC 17 Dexterity saving throw, taking 55 (10d10) fire damage on a failed save, or half as much damage on a successful one.\n**Weakening Breath.** The dragon exhales gas in a 30-foot cone. Each creature in that area must succeed on a DC 17 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "name": "Breath Weapons (Recharge 5-6)"
+        }
+    ],
+    "alignment": "lawful good",
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "challenge_rating": "10",
+    "charisma": 20,
+    "charisma_save": 9,
+    "condition_immunities": "",
+    "constitution": 21,
+    "constitution_save": 9,
+    "damage_immunities": "fire",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 14,
+    "dexterity_save": 6,
+    "group": "Gold Dragon",
+    "hit_dice": "17d10+85",
+    "hit_points": 178,
+    "id": "young_gold_dragon",
+    "insight": 5,
+    "intelligence": 16,
+    "languages": "Common, Draconic",
+    "name": "Young Gold Dragon",
+    "perception": 9,
+    "persuasion": 9,
+    "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 19",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon can breathe air and water.",
+            "name": "Amphibious"
+        }
+    ],
+    "speed": "40 ft., fly 80 ft., swim 40 ft.",
+    "speed_json": {
+        "fly": 80,
+        "swim": 40,
+        "walk": 40
+    },
+    "stealth": 6,
+    "strength": 23,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 13,
+    "wisdom_save": 5
+}

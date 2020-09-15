@@ -1,0 +1,66 @@
+{
+    "actions": [
+        {
+            "desc": "The giant makes two greatclub attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "3d8+5",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage.",
+            "name": "Greatclub"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "3d10+5",
+            "desc": "Ranged Weapon Attack: +8 to hit, range 60/240 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage.",
+            "name": "Rock"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": "20",
+    "armor_desc": "natural armor",
+    "athletics": 8,
+    "challenge_rating": "6",
+    "charisma": "6",
+    "constitution": "19",
+    "constitution_save": 7,
+    "dexterity": "8",
+    "dexterity_save": 2,
+    "hit_dice": "12d12+48",
+    "hit_points": "126",
+    "id": "haunted_giant",
+    "intelligence": "5",
+    "languages": "Giant",
+    "name": "Haunted Giant",
+    "perception": 2,
+    "senses": "passive Perception 12",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "desc": "Three ghostly spirits haunt the giant. The spirits are incorporeal, remain within 10 feet of the giant at all times, and can't take actions. Each uses the giant's AC and saving throws, has 15 hp and can only be harmed by radiant damage. If an ancestral spirit is reduced to 0 hp, it disappears temporarily. Reduce the giant's AC by 1 and remove one trait granted by the spirits for each spirit that is driven off. Ancestral spirits can't be turned.",
+            "name": "Ancestral Spirits"
+        },
+        {
+            "desc": "At the start of its turn, the giant can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn. This trait is granted by the ancestral spirits.",
+            "name": "Reckless"
+        },
+        {
+            "desc": "The giant can see invisible creatures and objects as if they were visible and can see into the Ethereal Plane. This trait is granted by the ancestral spirits.",
+            "name": "See Invisibility"
+        },
+        {
+            "desc": "The giant is immune to the charmed and frightened conditions. This trait is granted by the ancestral spirits.",
+            "name": "Steadfast"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": "21",
+    "subtype": "",
+    "type": "giant",
+    "wisdom": "9",
+    "wisdom_save": 2
+}

@@ -1,0 +1,64 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "4d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 14 (4d6) psychic damage and the target must make a successful DC 14 Wisdom saving throw or be charmed for 1 round. While charmed in this way, the creature regards one randomly determined ally as a foe.",
+            "name": "Gore"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Up to six creatures within 30 feet that can hear the ratatosk must make DC 14 Charisma saving throws. On a failure, the creature is affected as if by a confusion spell for 1 minute. An affected creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "name": "Divisive Chatter (recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 14,
+    "armor_desc": "",
+    "challenge_rating": "4",
+    "charisma": 18,
+    "charisma_save": 4,
+    "constitution": 12,
+    "damage_resistances": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
+    "deception": 6,
+    "dexterity": 18,
+    "hit_dice": "12d4+12",
+    "hit_points": 42,
+    "id": "ratatosk",
+    "intelligence": 17,
+    "languages": "Celestial, Common; telepathy 100 ft.",
+    "name": "Ratatosk",
+    "persuasion": 6,
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "A creature that can hear the ratatosk must make a DC 14 Wisdom saving throw when it attacks the ratatosk. If the saving throw fails, the creature still attacks, but it must choose a different target creature. An ally must be chosen if no other enemies are within the attack's reach or range. If no other target is in the attack's range or reach, the attack is still made (and ammunition or a spell slot is expended, if appropriate) but it automatically misses and has no effect.",
+            "name": "Desperate Lies"
+        }
+    ],
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the ratatosk's spellcasting attribute is Charisma (save DC 14). It can innately cast the following spells without requiring material or somatic components:\n\nat will: animal messenger, message, vicious mockery\n\n1/day each: commune, mirror image\n\n3/day each: sending, suggestion",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The ratatosk can take the Dash, Disengage, or Hide action as a bonus action on each of its turns.",
+            "name": "Skitter"
+        }
+    ],
+    "speed": "20 ft., climb 20 ft.",
+    "speed_json": {
+        "climb": 20,
+        "walk": 20
+    },
+    "stealth": 6,
+    "strength": 4,
+    "subtype": "",
+    "type": "celestial",
+    "wisdom": 10,
+    "wisdom_save": 4
+}

@@ -1,0 +1,46 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "damage_bonus": 1,
+            "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 slashing damage.",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "challenge_rating": "0",
+    "charisma": 7,
+    "condition_immunities": "",
+    "constitution": 10,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "hit_dice": "1d4",
+    "hit_points": 2,
+    "id": "cat",
+    "intelligence": 3,
+    "languages": "",
+    "name": "Cat",
+    "perception": 3,
+    "senses": "passive Perception 13",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The cat has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        }
+    ],
+    "speed": "40 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 40
+    },
+    "stealth": 4,
+    "strength": 3,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

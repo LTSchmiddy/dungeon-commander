@@ -1,0 +1,69 @@
+{
+    "acrobatics": 8,
+    "actions": [
+        {
+            "desc": "The ichneumon makes three attacks: two with its bite and one with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "4d6+6",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 20 (4d6 + 6) piercing damage and the target is grappled (escape DC 18). Until this grapple ends, the target is restrained, and the ichneumon can't use its bite on another target.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "3d6+6",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 16 (3d6 + 6) slashing damage.",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "16",
+    "armor_desc": "natural armor; 18 with Mud Armor",
+    "athletics": 10,
+    "challenge_rating": "11",
+    "charisma": "12",
+    "constitution": "18",
+    "constitution_save": 8,
+    "damage_resistances": "acid, cold, fire, lightning, poison; bludgeoning, piercing, and slashing from nonmagical attacks",
+    "dexterity": "18",
+    "dexterity_save": 8,
+    "hit_dice": "13d10+52",
+    "hit_points": "123",
+    "id": "ichneumon",
+    "intelligence": "6",
+    "languages": "-",
+    "name": "Ichneumon",
+    "senses": "darkvision 120 ft., passive Perception 12",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "desc": "The ichneumon is immune to a dragon's Frightful Presence and has advantage on saving throws against the breath weapons of dragons.",
+            "name": "Draconic Predator"
+        },
+        {
+            "desc": "If the ichneumon is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the ichneumon instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
+            "name": "Evasion"
+        },
+        {
+            "desc": "The ichneumon has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+            "name": "Keen Hearing and Smell"
+        },
+        {
+            "desc": "If the ichneumon spends an hour applying mud to itself, it can increase its AC by 2 for 8 hours.",
+            "name": "Mud Armor"
+        }
+    ],
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "stealth": 8,
+    "strength": "22",
+    "subtype": "",
+    "survival": 6,
+    "type": "monstrosity",
+    "wisdom": "14",
+    "wisdom_save": 6
+}

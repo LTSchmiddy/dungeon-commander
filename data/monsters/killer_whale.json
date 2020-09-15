@@ -1,0 +1,54 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 21 (5d6 + 4) piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": 7,
+    "condition_immunities": "",
+    "constitution": 13,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "12d12",
+    "hit_points": 90,
+    "id": "killer_whale",
+    "intelligence": 3,
+    "languages": "",
+    "name": "Killer Whale",
+    "perception": 3,
+    "senses": "blindsight 120 ft., passive Perception 13",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The whale can't use its blindsight while deafened.",
+            "name": "Echolocation"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The whale can hold its breath for 30 minutes",
+            "name": "Hold Breath"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The whale has advantage on Wisdom (Perception) checks that rely on hearing.",
+            "name": "Keen Hearing"
+        }
+    ],
+    "speed": "swim 60 ft.",
+    "speed_json": {
+        "swim": 60
+    },
+    "strength": 19,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 12
+}

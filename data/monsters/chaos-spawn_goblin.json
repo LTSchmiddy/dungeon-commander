@@ -1,0 +1,50 @@
+{
+    "actions": [
+        {
+            "desc": "The chaos-spawn goblin makes two attacks with its scimitar.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
+            "name": "Scimitar"
+        },
+        {
+            "desc": "The chaos-spawn goblin targets one creature that it can sense within 30 feet of it. The target must make a DC 12 Intelligence saving throw, taking 7 (2d6) psychic damage on a failed save, or half as much damage on a successful one.",
+            "name": "Psychic Stab (Recharge 6)"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": "13",
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/2",
+    "charisma": "6",
+    "condition_immunities": "frightened",
+    "constitution": "12",
+    "damage_resistances": "psychic",
+    "dexterity": "14",
+    "hit_dice": "5d6+5",
+    "hit_points": "22",
+    "id": "chaos-spawn_goblin",
+    "intelligence": "10",
+    "languages": "telepathy 120 ft.",
+    "name": "Chaos-Spawn Goblin",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The chaos-spawn goblin can take the Disengage or Hide action as a bonus action on each of its turns.",
+            "name": "Nimble Escape"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": "10",
+    "subtype": "goblinoid",
+    "type": "humanoid",
+    "wisdom": "10"
+}

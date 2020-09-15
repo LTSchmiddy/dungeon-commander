@@ -1,0 +1,73 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The mngwa makes one bite attack and two claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage.",
+            "name": "Claw"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 16,
+    "armor_desc": "",
+    "challenge_rating": "4",
+    "charisma": 17,
+    "constitution": 15,
+    "dexterity": 17,
+    "hit_dice": "14d8+28",
+    "hit_points": 91,
+    "id": "mngwa",
+    "intelligence": 11,
+    "languages": "Common, Sylvan, can speak with felines",
+    "name": "Mngwa",
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The mngwa has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The mngwa has advantage on attack rolls against a creature if at least one of the mngwa's allies is within 5 feet of the creature and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "With a 10-foot running start, the mngwa can long jump up to 25 feet.",
+            "name": "Running Leap"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The mngwa has advantage on Wisdom (Animal Handling) checks to deal with felines.",
+            "name": "Feline Empathy"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The armor class of the mngwa includes its Charisma modifier. All attack rolls against the mngwa have disadvantage. If the mngwa is adjacent to an area of smoke or mist, it can take a Hide action even if under direct observation.",
+            "name": "Ethereal Coat"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "stealth": 7,
+    "strength": 19,
+    "subtype": "",
+    "type": "aberration",
+    "wisdom": 17
+}

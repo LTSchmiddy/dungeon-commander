@@ -1,0 +1,65 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon makes three attacks: one with its bite and two with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_bonus": 5,
+            "damage_dice": "2d10+1d10",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage plus 5 (1d10) lightning damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_bonus": 5,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 0,
+            "damage_dice": "10d10",
+            "desc": "The dragon exhales lightning in an 60-foot line that is 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 55 (10d10) lightning damage on a failed save, or half as much damage on a successful one.",
+            "name": "Lightning Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "challenge_rating": "9",
+    "charisma": 17,
+    "charisma_save": 7,
+    "condition_immunities": "",
+    "constitution": 19,
+    "constitution_save": 8,
+    "damage_immunities": "lightning",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "dexterity_save": 4,
+    "group": "Blue Dragon",
+    "hit_dice": "16d10+64",
+    "hit_points": 152,
+    "id": "young_blue_dragon",
+    "intelligence": 14,
+    "languages": "Common, Draconic",
+    "name": "Young Blue Dragon",
+    "perception": 9,
+    "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 19",
+    "size": "Large",
+    "speed": "40 ft., burrow 40 ft., fly 80 ft.",
+    "speed_json": {
+        "burrow": 40,
+        "fly": 80,
+        "walk": 40
+    },
+    "stealth": 4,
+    "strength": 21,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 13,
+    "wisdom_save": 5
+}

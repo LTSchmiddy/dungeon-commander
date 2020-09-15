@@ -1,0 +1,15 @@
+{
+    "ability": "dexterity",
+    "attack_bonus": 0,
+    "base_damage": "1d4",
+    "class": "SunBolt",
+    "cost": "0 gp",
+    "damage_bonus": 0,
+    "damage_type": "r",
+    "features_applied": false,
+    "id": "BasicSunBolt",
+    "is_finesse": false,
+    "name": "Sun Bolt",
+    "properties": "(range 20/60)",
+    "weight": 0
+}

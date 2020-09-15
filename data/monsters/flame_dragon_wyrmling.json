@@ -1,0 +1,50 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d10+1",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) piercing damage plus 3 (1d6) fire damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon exhales fire in a 10-foot cone. Each creature in that area takes 24 (7d6) fire damage, or half damage with a successful DC 12 Dexterity saving throw.",
+            "name": "Fire Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": 16,
+    "charisma_save": 5,
+    "constitution": 15,
+    "constitution_save": 4,
+    "damage_immunities": "fire",
+    "deception": 5,
+    "dexterity": 14,
+    "dexterity_save": 4,
+    "hit_dice": "8d8+16",
+    "hit_points": 52,
+    "id": "flame_dragon_wyrmling",
+    "insight": 3,
+    "intelligence": 13,
+    "languages": "Common, Draconic, Ignan",
+    "name": "Flame Dragon Wyrmling",
+    "perception": 5,
+    "persuasion": 5,
+    "senses": "passive Perception $1",
+    "size": "Medium",
+    "speed": "30 ft., climb 30 ft., fly 60 ft.",
+    "speed_json": {
+        "climb": 30,
+        "fly": 60,
+        "walk": 30
+    },
+    "stealth": 4,
+    "strength": 12,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 12,
+    "wisdom_save": 3
+}

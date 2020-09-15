@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "desc": "The forest drake makes one bite attack and one claw attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 3 (1d6) fire damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d6+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "desc": "The drake exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 17 (5d6) fire damage on a failed save, or half as much damage on a successful one.",
+            "name": "Fire Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": "15",
+    "armor_desc": "natural armor",
+    "athletics": 5,
+    "challenge_rating": "2",
+    "charisma": "12",
+    "condition_immunities": "paralyzed, unconscious",
+    "constitution": "19",
+    "damage_immunities": "fire",
+    "dexterity": "8",
+    "hit_dice": "8d6+32",
+    "hit_points": "60",
+    "id": "forest_drake",
+    "intelligence": "12",
+    "languages": "Draconic, Druidic, Sylvan",
+    "name": "Forest Drake",
+    "nature": 3,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The drake's long jump is up to 30 feet and its high jump is up to 15 feet with or without a running start. Additionally, if it ends its jump within 5 feet of a creature, the first attack roll it makes against that creature before the end of its turn has advantage.",
+            "name": "Mighty Leap"
+        }
+    ],
+    "speed": "30 ft., climb 50 ft.",
+    "speed_json": {
+        "climb": 50,
+        "walk": 30
+    },
+    "strength": "16",
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": "15"
+}

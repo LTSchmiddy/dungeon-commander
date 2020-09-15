@@ -1,0 +1,64 @@
+{
+    "actions": [
+        {
+            "desc": "The kappa makes two claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d4+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage. The target is grappled (escape DC 14) if it is a Large or smaller creature and the kappa doesn't already have another creature grappled.",
+            "name": "Claw"
+        }
+    ],
+    "alignment": "chaotic neutral or chaotic evil",
+    "armor_class": "16",
+    "armor_desc": "natural armor",
+    "athletics": 6,
+    "challenge_rating": "2",
+    "charisma": "8",
+    "constitution": "12",
+    "dexterity": "14",
+    "hit_dice": "11d6+11",
+    "hit_points": "49",
+    "id": "kappa",
+    "intelligence": "7",
+    "languages": "Common, Sylvan",
+    "medicine": 4,
+    "name": "Kappa",
+    "perception": 4,
+    "senses": "passive Perception 14",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The kappa can breathe air and water.",
+            "name": "Amphibious"
+        },
+        {
+            "desc": "The kappa can grapple creatures that are two sizes larger than itself and can move at full speed when dragging a creature it has grappled.",
+            "name": "Expert Wrestler"
+        },
+        {
+            "desc": "The kappa has a bowl-like indentation on its head which holds water from the river or lake where it lives. If the kappa's head bowl is empty, it has disadvantage on attack rolls and ability checks until the bowl is refilled with water. \n\nNormal movement and combat do not cause water to spill from the bowl, but an opponent can empty the bowl by knocking the kappa prone or by making two successful grapple attacks - one to grab the kappa, and one to tip its head while it is grappled.",
+            "name": "Head Bowl"
+        },
+        {
+            "desc": "The kappa has advantage on ability checks and saving throws made to escape a grapple.",
+            "name": "Slippery"
+        },
+        {
+            "desc": "The kappa has advantage on Strength and Dexterity saving throws made against effects that would knock it prone.",
+            "name": "Sure-Footed"
+        }
+    ],
+    "speed": "25 ft., swim 40 ft.",
+    "speed_json": {
+        "swim": 40,
+        "walk": 25
+    },
+    "stealth": 4,
+    "strength": "18",
+    "subtype": "",
+    "type": "fey",
+    "wisdom": "14"
+}

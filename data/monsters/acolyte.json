@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 2,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
+            "name": "Club"
+        }
+    ],
+    "alignment": "any alignment",
+    "armor_class": 10,
+    "challenge_rating": "1/4",
+    "charisma": 11,
+    "condition_immunities": "",
+    "constitution": 10,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "2d8",
+    "hit_points": 9,
+    "id": "acolyte",
+    "intelligence": 10,
+    "languages": "any one language (usually Common)",
+    "medicine": 4,
+    "name": "Acolyte",
+    "religion": 2,
+    "senses": "passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The acolyte is a 1st-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The acolyte has following cleric spells prepared:\n\n\u2022 Cantrips (at will): light, sacred flame, thaumaturgy\n\u2022 1st level (3 slots): bless, cure wounds, sanctuary",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "spells": [
+        "light",
+        "sacred-flame",
+        "thaumaturgy",
+        "bless",
+        "cure-wounds",
+        "sanctuary"
+    ],
+    "strength": 10,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 14
+}

@@ -1,0 +1,57 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The thug makes two melee attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) bludgeoning damage.",
+            "name": "Mace"
+        },
+        {
+            "attack_bonus": 2,
+            "damage_dice": "1d10",
+            "desc": "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage.",
+            "name": "Heavy Crossbow"
+        }
+    ],
+    "alignment": "any non-good alignment",
+    "armor_class": 11,
+    "armor_desc": "leather armor",
+    "challenge_rating": "1/2",
+    "charisma": 11,
+    "condition_immunities": "",
+    "constitution": 14,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 11,
+    "hit_dice": "5d8",
+    "hit_points": 32,
+    "id": "thug",
+    "intelligence": 10,
+    "intimidation": 2,
+    "languages": "any one language (usually Common)",
+    "name": "Thug",
+    "senses": "passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 ft. of the creature and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 15,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 10
+}

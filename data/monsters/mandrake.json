@@ -1,0 +1,38 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 2,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 5 (2d4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "desc": "All creatures within 60 feet of the mandrake that can hear it must succeed on a DC 13 Constitution saving throw or take 5 (2d4) thunder damage. If a creature fails the saving throw by 5 or more, it is stunned until the end of its next turn. If it fails by 10 or more, it falls unconscious. An unconscious creature can repeat the saving throw at the end of each of its turns, regaining consciousness on a success.",
+            "name": "Shriek (Recharge 4-6)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "8",
+    "challenge_rating": "1/2",
+    "charisma": "12",
+    "condition_immunities": "exhaustion, poisoned",
+    "constitution": "16",
+    "damage_immunities": "poison",
+    "dexterity": "6",
+    "hit_dice": "4d4+12",
+    "hit_points": "22",
+    "id": "mandrake",
+    "intelligence": "1",
+    "languages": "-",
+    "name": "Mandrake",
+    "senses": "tremorsense 60 ft. (blind beyond this radius), passive Perception 9",
+    "size": "Tiny",
+    "speed": "5 ft.",
+    "speed_json": {
+        "walk": 5
+    },
+    "strength": "10",
+    "subtype": "",
+    "type": "plant",
+    "wisdom": "9"
+}

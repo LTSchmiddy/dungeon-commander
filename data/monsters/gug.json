@@ -1,0 +1,88 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The gug makes two slam attacks, two stomp attacks, or one of each.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 11,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one creature. Hit: 16 (2d8 + 7) bludgeoning damage. If a creature is hit by this attack twice in the same turn, the target must make a successful DC 19 Constitution saving throw or gain one level of exhaustion.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Melee Weapon Attack. +11 to hit, reach 10 ft. Hit: 20 (2d12 + 7) bludgeoning damage.",
+            "name": "Stomp"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "athletics": 11,
+    "challenge_rating": "12",
+    "charisma": 14,
+    "charisma_save": 6,
+    "condition_immunities": "confusion, exhaustion, paralysis, poisoned",
+    "constitution": 25,
+    "constitution_save": 11,
+    "damage_immunities": "poison",
+    "dexterity": 10,
+    "dexterity_save": 4,
+    "hit_dice": "20d12+140",
+    "hit_points": 270,
+    "id": "gug",
+    "intelligence": 10,
+    "languages": "Deep Speech, Giant, Undercommon",
+    "legendary_actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The gug moves up to half its speed.",
+            "name": "Move"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The gug makes one slam or stomp attack.",
+            "name": "Attack"
+        },
+        {
+            "attack_bonus": 11,
+            "damage_dice": "0",
+            "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: the target is grappled (escape DC 17).",
+            "name": "Grab"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The gug swallows one creature it has grappled. The creature takes 26 (3d12 + 7) bludgeoning damage immediately plus 13 (2d12) acid damage at the start of each of the gug's turns. A swallowed creature is no longer grappled but is blinded and restrained, and has total cover against attacks and other effects from outside the gug. If the gug takes 75 points of damage in a single turn, the swallowed creature is expelled and falls prone next to the gug. When the gug dies, a swallowed creature can crawl from the corpse by using 10 feet of movement.",
+            "name": "Swallow"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The gug throws one creature it has grappled. The creature is thrown a distance of 2d4 times 10 feet in the direction the gug chooses, and takes 20 (2d12 + 7) bludgeoning damage (plus falling damage if they are thrown into a chasm or off a cliff). A gug can throw a creature up to Large size. Small creatures are thrown twice as far, but the damage is the same.",
+            "name": "Throw"
+        }
+    ],
+    "legendary_desc": "A gug can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. A gug regains spent legendary actions at the start of its turn.",
+    "name": "Gug",
+    "perception": 3,
+    "senses": "darkvision 240 ft., passive Perception 13",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A gug can lift items up to 4,000 pounds as a bonus action.",
+            "name": "Towering Strength"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "stealth": 4,
+    "strength": 24,
+    "strength_save": 12,
+    "subtype": "",
+    "type": "giant",
+    "wisdom": 8
+}

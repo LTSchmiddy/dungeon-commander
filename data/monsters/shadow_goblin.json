@@ -1,0 +1,66 @@
+{
+    "actions": [
+        {
+            "desc": "The shadow goblin can make two attacks with its kitchen knife. The second attack has disadvantage.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4+3",
+            "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Kitchen Knife"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": "13",
+    "challenge_rating": "1/2",
+    "charisma": "8",
+    "constitution": "12",
+    "dexterity": "16",
+    "hand": 5,
+    "hit_dice": "3d6+3",
+    "hit_points": "13",
+    "id": "shadow_goblin",
+    "intelligence": "13",
+    "languages": "Common, Elvish, Goblin, Umbral",
+    "name": "Shadow Goblin",
+    "reactions": [
+        {
+            "desc": "When the shadow goblin is hit by an attack from a creature it can see, it can curse the attacker. The attacker has disadvantage on attack rolls until the end of its next turn.",
+            "name": "Vengeful Jinx"
+        }
+    ],
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The shadow goblin can take the Disengage or Hide action as a bonus action on each of its turns.",
+            "name": "Nimble Escape"
+        },
+        {
+            "desc": "The shadow goblin has advantage on Dexterity (Stealth) checks made to hide in dim light or darkness.",
+            "name": "Shadow Camouflage"
+        },
+        {
+            "desc": "While in sunlight, the shadow goblin has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight.",
+            "name": "Sunlight Sensitivity"
+        },
+        {
+            "desc": "The shadow goblin has advantage on Intelligence (Arcana) checks made to know about shadow roads and shadow magic spells or items.",
+            "name": "Traveler in Darkness"
+        },
+        {
+            "desc": "The shadow goblin has advantage on saving throws against being charmed, and magic can't put it to sleep.",
+            "name": "Unseelie Blessing"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 5,
+    "strength": "10",
+    "subtype": "goblinoid",
+    "type": "humanoid",
+    "wisdom": "12"
+}

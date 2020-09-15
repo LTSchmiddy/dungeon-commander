@@ -1,0 +1,51 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage.",
+            "name": "Light Crossbow"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 13,
+    "armor_desc": "",
+    "challenge_rating": "1/2",
+    "charisma": 4,
+    "constitution": 14,
+    "dexterity": 16,
+    "hit_dice": "4d6+8",
+    "hit_points": 22,
+    "id": "tosculi_drone",
+    "intelligence": 8,
+    "languages": "Tosculi",
+    "name": "Tosculi Drone",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The tosculi drone can use its wings to slowly descend when falling (as if under the effect of the feather fall spell). It can move up to 5 feet horizontally for every foot it falls. The tosculi drone can't gain height with these wings alone. If subjected to a strong wind or lift of any kind, it can use the updraft to glide farther.",
+            "name": "Gliding Wings"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Up to two tosculi can share the same space at one time. The tosculi has advantage on melee attack rolls while sharing its space with another tosculi that isn't incapacitated.",
+            "name": "Skittering"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "strength": 8,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 12
+}

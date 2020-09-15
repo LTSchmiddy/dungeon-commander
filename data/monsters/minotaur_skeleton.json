@@ -1,0 +1,54 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "2d12",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing damage.",
+            "name": "Greataxe"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_bonus": 4,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage.",
+            "name": "Gore"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 12,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 5,
+    "condition_immunities": "exhaustion, poisoned",
+    "constitution": 15,
+    "damage_immunities": "poison",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "bludgeoning",
+    "dexterity": 11,
+    "group": "Skeletons",
+    "hit_dice": "9d10+18",
+    "hit_points": 67,
+    "id": "minotaur_skeleton",
+    "intelligence": 6,
+    "languages": "understands Abyssal but can't speak",
+    "name": "Minotaur Skeleton",
+    "senses": "darkvision 60 ft., passive Perception 9",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "damage_dice": "2d8",
+            "desc": "If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone.",
+            "name": "Charge"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 8
+}

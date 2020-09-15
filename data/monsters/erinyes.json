@@ -1,0 +1,80 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The erinyes makes three attacks",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_bonus": 4,
+            "damage_dice": "1d8+3d8",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used with two hands, plus 13 (3d8) poison damage.",
+            "name": "Longsword"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_bonus": 3,
+            "damage_dice": "1d8+3d8",
+            "desc": "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 13 (3d8) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned. The poison lasts until it is removed by the lesser restoration spell or similar magic.",
+            "name": "Longbow"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Some erinyes carry a rope of entanglement (detailed in the Dungeon Master's Guide). When such an erinyes uses its Multiattack, the erinyes can use the rope in place of two of the attacks.",
+            "name": "Variant: Rope of Entanglement"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 18,
+    "armor_desc": "plate",
+    "challenge_rating": "12",
+    "charisma": 18,
+    "charisma_save": 8,
+    "condition_immunities": "poisoned",
+    "constitution": 18,
+    "constitution_save": 8,
+    "damage_immunities": "fire, poison",
+    "damage_resistances": "cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
+    "damage_vulnerabilities": "",
+    "dexterity": 16,
+    "dexterity_save": 7,
+    "group": "Devils",
+    "hit_dice": "18d8+72",
+    "hit_points": 153,
+    "id": "erinyes",
+    "intelligence": 14,
+    "languages": "Infernal, telepathy 120 ft.",
+    "name": "Erinyes",
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The erinyes adds 4 to its AC against one melee attack that would hit it. To do so, the erinyes must see the attacker and be wielding a melee weapon.",
+            "name": "Parry"
+        }
+    ],
+    "senses": "truesight 120 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The erinyes's weapon attacks are magical and deal an extra 13 (3d8) poison damage on a hit (included in the attacks).",
+            "name": "Hellish Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The erinyes has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "30 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 30
+    },
+    "strength": 18,
+    "subtype": "devil",
+    "type": "fiend",
+    "wisdom": 14,
+    "wisdom_save": 6
+}

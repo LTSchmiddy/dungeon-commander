@@ -1,0 +1,48 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage.",
+            "name": "Scimitar"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Shortbow"
+        }
+    ],
+    "alignment": "neutral",
+    "arcana": 5,
+    "armor_class": 13,
+    "armor_desc": "leather armor",
+    "challenge_rating": "1/4",
+    "charisma": 11,
+    "constitution": 10,
+    "dexterity": 14,
+    "hit_dice": "6d8",
+    "hit_points": 27,
+    "id": "ramag",
+    "intelligence": 16,
+    "investigation": 5,
+    "languages": "Common",
+    "name": "Ramag",
+    "senses": "passive Perception $1",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The ramag has advantage on saving throws against spells or other magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 9,
+    "subtype": "ramag",
+    "type": "humanoid",
+    "wisdom": 12
+}

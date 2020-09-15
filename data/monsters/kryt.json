@@ -1,0 +1,62 @@
+{
+    "actions": [
+        {
+            "desc": "The kryt makes three attacks: one with its bite and two with its quarterstaff.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d8+5",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "1d6+5",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) bludgeoning damage, or 9 (1d8 + 5) bludgeoning damage if used with two hands.",
+            "name": "Quarterstaff"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": "15",
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": "6",
+    "condition_immunities": "exhaustion",
+    "constitution": "16",
+    "dexterity": "10",
+    "hit_dice": "16d8+48",
+    "hit_points": "120",
+    "id": "kryt",
+    "insight": 7,
+    "intelligence": "6",
+    "languages": "Common",
+    "name": "Kryt",
+    "perception": 7,
+    "reactions": [
+        {
+            "desc": "When a kryt is attacked by a creature it can see within 30 feet of it, the kryt can haunt the creature with a vision of the creature's death. The haunted creature has disadvantage on its next attack roll. Undead creatures and creatures that are unable to be killed are immune to this reaction.",
+            "name": "Haunting Vision"
+        }
+    ],
+    "senses": "darkvision 60 ft., passive Perception 17",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The kryt can hold its breath for 15 minutes.",
+            "name": "Hold Breath"
+        },
+        {
+            "desc": "The kryt catches a glimpse of the immediate future and gains advantage on one attack roll or one saving throw.",
+            "name": "Prophetic Vision (1/Turn)"
+        }
+    ],
+    "speed": "25 ft.",
+    "speed_json": {
+        "walk": 25
+    },
+    "strength": "20",
+    "subtype": "kryt",
+    "type": "humanoid",
+    "wisdom": "18"
+}

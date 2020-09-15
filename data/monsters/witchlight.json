@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d4",
+            "desc": "Ranged Weapon Attack: +6 to hit, range 30 ft., one target. Hit: 6 (1d4 + 4) radiant damage.",
+            "name": "Light Ray"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The witchlight emits a bright burst of light that blinds all sighted creatures within 30 feet for 1d4 rounds unless they succeed on a DC 10 Constitution saving throw.",
+            "name": "Flash (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "",
+    "challenge_rating": "1/4",
+    "charisma": 7,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 10,
+    "damage_immunities": "poison, radiant",
+    "dexterity": 18,
+    "hit_dice": "4d4",
+    "hit_points": 10,
+    "id": "witchlight",
+    "intelligence": 10,
+    "languages": "understands the language of its creator but can't speak",
+    "name": "Witchlight",
+    "perception": 3,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Casting dispel magic on a witchlight paralyzes it for 1d10 rounds.",
+            "name": "Dispel Magic Weakness"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A witchlight normally glows as brightly as a torch. The creature can dim itself to the luminosity of a candle, but it cannot extinguish its light. Because of its glow, the witchlight has disadvantage on Dexterity (Stealth) checks.",
+            "name": "Luminance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While a witchlight is not incorporeal, it can pass through any opening that light can.",
+            "name": "Thin As Light"
+        }
+    ],
+    "speed": "fly 50 ft.",
+    "speed_json": {
+        "fly": 50
+    },
+    "strength": 1,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 13
+}

@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The loxoda makes two attacks, but no more than one of them can be a maul or javelin attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "6d6",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 25 (6d6 + 4) bludgeoning damage.",
+            "name": "Maul"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d10",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 20 (3d10 + 4) bludgeoning damage.",
+            "name": "Stomp"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d6",
+            "desc": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 14 (3d6 + 4) piercing damage.",
+            "name": "Javelin"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 10,
+    "constitution": 19,
+    "dexterity": 12,
+    "hit_dice": "14d12+56",
+    "hit_points": 147,
+    "id": "loxoda",
+    "intelligence": 12,
+    "languages": "Loxodan",
+    "name": "Loxoda",
+    "senses": "passive Perception $1",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If the loxoda moves at least 20 feet straight toward a Large or smaller creature it then attacks with a stomp, the stomp attack is made with advantage. If the stomp attack hits, the target must also succeed on a DC 15 Strength saving throw or be knocked prone.",
+            "name": "Trampling Charge"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 19,
+    "subtype": "",
+    "survival": 5,
+    "type": "monstrosity",
+    "wisdom": 14
+}

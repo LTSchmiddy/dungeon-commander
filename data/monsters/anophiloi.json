@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "desc": "The anophiloi makes two attacks: one with its claws and one with its bite.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage, and if the target is Large or smaller, the anophiloi attaches to it. While attached, the anophiloi doesn't attack. Instead, at the start of each of the anophiloi's turns, the target loses 5 (1d6 + 2) hp due to blood loss.\n\nThe anophiloi can detach itself by spending 5 feet of its movement. It does so after it drains 20 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the anophiloi by succeed on a DC 13 Strength check.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4+2",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage.",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": "12",
+    "challenge_rating": "1",
+    "charisma": "6",
+    "condition_immunities": "poisoned",
+    "constitution": "14",
+    "damage_resistances": "poison",
+    "damage_vulnerabilities": "cold",
+    "dexterity": "14",
+    "hit_dice": "6d6+12",
+    "hit_points": "33",
+    "id": "anophiloi",
+    "intelligence": "5",
+    "languages": "-",
+    "name": "Anophiloi",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The anophiloi has advantage on melee attack rolls against any creature that doesn't have all its hp.",
+            "name": "Blood Frenzy"
+        },
+        {
+            "desc": "The anophiloi can pinpoint, by scent, the location of living creatures within 30 feet of it.",
+            "name": "Blood Sense"
+        }
+    ],
+    "speed": "30 ft., climb 20 ft., fly 40 ft.",
+    "speed_json": {
+        "climb": 20,
+        "fly": 40,
+        "walk": 30
+    },
+    "stealth": 4,
+    "strength": "12",
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": "12"
+}

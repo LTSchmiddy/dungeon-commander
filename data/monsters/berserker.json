@@ -1,0 +1,45 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d12",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.",
+            "name": "Greataxe"
+        }
+    ],
+    "alignment": "any chaotic alignment",
+    "armor_class": 13,
+    "armor_desc": "hide armor",
+    "challenge_rating": "2",
+    "charisma": 9,
+    "condition_immunities": "",
+    "constitution": 17,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 12,
+    "hit_dice": "9d8",
+    "hit_points": 67,
+    "id": "berserker",
+    "intelligence": 9,
+    "languages": "any one language (usually Common)",
+    "name": "Berserker",
+    "senses": "passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "At the start of its turn, the berserker can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn.",
+            "name": "Reckless"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 16,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 11
+}

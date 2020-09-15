@@ -1,0 +1,78 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The shadow fey makes two ranged attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
+            "name": "Rapier"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 7 (2d6) poison damage.",
+            "name": "Longbow"
+        }
+    ],
+    "alignment": "lawful evil",
+    "arcana": 3,
+    "armor_class": 15,
+    "armor_desc": "chain shirt",
+    "challenge_rating": "5",
+    "charisma": 16,
+    "charisma_save": 6,
+    "constitution": 12,
+    "constitution_save": 4,
+    "dexterity": 18,
+    "dexterity_save": 7,
+    "hit_dice": "19d8+19",
+    "hit_points": 104,
+    "id": "shadow_fey_forest_hunter",
+    "intelligence": 11,
+    "languages": "Common, Elvish, Umbral",
+    "name": "Shadow Fey Forest Hunter",
+    "perception": 4,
+    "senses": "darkvision 60 ft., passive Perception 14",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The shadow fey has advantage on saving throws against being charmed, and magic can't put it to sleep.",
+            "name": "Fey Ancestry"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the shadow fey's innate spellcasting ability is Charisma. It can cast the following spells innately, requiring no material components.\n\n3/day: misty step (when in shadows, dim light, or darkness only)",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The shadow fey forest hunter does an extra 7 (2d6) damage when it hits a target with a weapon attack that had advantage, or when the target is within 5 feet of an ally of the forest hunter that isn't incapacitated and the forest hunter doesn't have disadvantage on the attack roll.",
+            "name": "Sneak Attack (1/turn)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in sunlight, the shadow fey has disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight.",
+            "name": "Sunlight Sensitivity"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The shadow fey has advantage on Intelligence (Arcana) checks made to know about shadow roads and shadow magic spells or items.",
+            "name": "Traveler in Darkness"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 10,
+    "strength": 12,
+    "subtype": "elf",
+    "survival": 4,
+    "type": "humanoid",
+    "wisdom": 12
+}

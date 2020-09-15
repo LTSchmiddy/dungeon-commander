@@ -1,0 +1,59 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The swarm makes a Bite attack against every target in its spaces.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "6d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 0 ft., every target in the swarm's space. Hit: 24 (6d6 + 3) piercing damage, or 13 (3d6 + 3) piercing damage if the swarm has half of its hit points or fewer. The target also takes 17 (5d6) poison damage and becomes poisoned for 1d4 rounds; a successful DC 15 Constitution saving throw reduces poison damage by half and prevents the poisoned condition.",
+            "name": "Bites"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 12,
+    "condition_immunities": "charmed, frightened, paralyzed, petrified, prone, restrained, petrified",
+    "constitution": 10,
+    "damage_resistances": "bludgeoning, piercing, and slashing",
+    "dexterity": 16,
+    "hit_dice": "13d12",
+    "hit_points": 84,
+    "id": "greater_death_butterfly_swarm",
+    "intelligence": 1,
+    "name": "Greater Death Butterfly Swarm",
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The death butterfly swarm's poison affects corporeal undead who are otherwise immune to poison.",
+            "name": "Potent Poison"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit point.",
+            "name": "Swarm"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "As death butterfly swarm but with DC 16 Dexterity saving throw",
+            "name": "Weight of Wings"
+        }
+    ],
+    "speed": "5 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "hover": true,
+        "walk": 5
+    },
+    "strength": 1,
+    "subtype": "",
+    "type": "swarm of tiny beasts",
+    "vulnerable": "cold, fire",
+    "wisdom": 15
+}

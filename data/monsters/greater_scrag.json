@@ -1,0 +1,60 @@
+{
+    "actions": [
+        {
+            "desc": "The greater scrag makes three attacks: one with its bite and two with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d8+5",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5)",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "3d4+5",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 12 (3d4 + 5)",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "16",
+    "armor_desc": "natural armor",
+    "challenge_rating": "7",
+    "charisma": "11",
+    "constitution": "17",
+    "constitution_save": 6,
+    "dexterity": "10",
+    "hit_dice": "15d10+45",
+    "hit_points": "127",
+    "id": "greater_scrag",
+    "intelligence": "10",
+    "languages": "Abyssal, Aquan, Giant",
+    "name": "Greater Scrag",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "desc": "The scrag can breathe air and water.",
+            "name": "Amphibious"
+        },
+        {
+            "desc": "The scrag has advantage on melee attack rolls against any creature that doesn't have all of its hp.",
+            "name": "Blood Frenzy"
+        },
+        {
+            "desc": "The greater scrag regains 10 hp at the start of its turn if it is in contact with water. If the scrag takes acid or fire damage, this trait doesn't function at the start of the scrag's next turn. The scrag dies only if it starts its turn with 0 hp and doesn't regenerate.",
+            "name": "Regeneration"
+        }
+    ],
+    "speed": "30 ft., swim 40 ft.",
+    "speed_json": {
+        "swim": 40,
+        "walk": 30
+    },
+    "strength": "20",
+    "strength_save": 8,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": "10"
+}

@@ -1,0 +1,56 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant ant queen makes two bite attacks and one sting attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the giant ant can't bite a different target.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 22 (4d10) poison damage, or half as much poison damage with a successful DC 14 Constitution saving throw.",
+            "name": "Sting"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "4",
+    "charisma": 4,
+    "constitution": 16,
+    "dexterity": 13,
+    "hit_dice": "10d10+30",
+    "hit_points": 85,
+    "id": "giant_ant_queen",
+    "intelligence": 2,
+    "languages": "-",
+    "name": "Giant Ant Queen",
+    "senses": "blindsight 60 ft., passive Perception 10",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant ant queen has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Giant ants defending a queen gain advantage on all attack rolls.",
+            "name": "Queen's Scent"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 17,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 11
+}

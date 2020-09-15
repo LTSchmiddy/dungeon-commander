@@ -1,0 +1,39 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.\nThe stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.",
+            "name": "Blood Drain"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/8",
+    "charisma": 6,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 16,
+    "hit_dice": "1d4",
+    "hit_points": 2,
+    "id": "stirge",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Stirge",
+    "senses": "darkvision 60 ft., passive Perception 9",
+    "size": "Tiny",
+    "speed": "10 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "walk": 10
+    },
+    "strength": 4,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 8
+}

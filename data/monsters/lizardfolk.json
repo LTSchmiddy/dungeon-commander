@@ -1,0 +1,75 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The lizardfolk makes two melee attacks, each one with a different weapon.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.",
+            "name": "Heavy Club"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Javelin"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Spiked Shield"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 15,
+    "armor_desc": "natural armor, shield",
+    "challenge_rating": "1/2",
+    "charisma": 7,
+    "condition_immunities": "",
+    "constitution": 13,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 10,
+    "hit_dice": "4d8+4",
+    "hit_points": 22,
+    "id": "lizardfolk",
+    "intelligence": 7,
+    "languages": "Draconic",
+    "name": "Lizardfolk",
+    "perception": 3,
+    "senses": "passive Perception 13",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The lizardfolk can hold its breath for 15 minutes.",
+            "name": "Hold Breath"
+        }
+    ],
+    "speed": "30 ft., swim 30 ft.",
+    "speed_json": {
+        "swim": 30,
+        "walk": 30
+    },
+    "stealth": 4,
+    "strength": 15,
+    "subtype": "lizardfolk",
+    "survival": 5,
+    "type": "humanoid",
+    "wisdom": 12
+}

@@ -1,0 +1,16 @@
+{
+    "ac": 12,
+    "cost": "10 gp",
+    "disadvantage": false,
+    "id": "hide",
+    "modifier": [
+        {
+            "ability": "dexterity",
+            "max": 2
+        }
+    ],
+    "name": "Hide",
+    "requirements": {},
+    "type": "Medium Armor",
+    "weight": "12 lb."
+}

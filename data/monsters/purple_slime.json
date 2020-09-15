@@ -1,0 +1,55 @@
+{
+    "actions": [
+        {
+            "desc": "The purple slime makes two spike attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8+2",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) piercing damage and 10 (3d6) poison damage. In addition, the target must succeed on a DC 14 Constitution saving throw or its Strength score is reduced by 1d4. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest.",
+            "name": "Spike"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "7",
+    "challenge_rating": "3",
+    "charisma": "1",
+    "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+    "constitution": "18",
+    "damage_immunities": "acid, cold",
+    "dexterity": "8",
+    "hit_dice": "8d10+32",
+    "hit_points": "76",
+    "id": "purple_slime",
+    "intelligence": "2",
+    "languages": "-",
+    "name": "Purple Slime",
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "desc": "The purple slime can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Amorphous"
+        },
+        {
+            "desc": "The purple slime can breathe air and water.",
+            "name": "Amphibious"
+        },
+        {
+            "desc": "The purple slime has advantage on Dexterity (Stealth) checks made while underwater.",
+            "name": "Underwater Camouflage"
+        }
+    ],
+    "speed": "20 ft., climb 10 ft., swim 30 ft.",
+    "speed_json": {
+        "climb": 10,
+        "swim": 30,
+        "walk": 20
+    },
+    "stealth": 1,
+    "strength": "17",
+    "subtype": "",
+    "type": "ooze",
+    "wisdom": "6"
+}

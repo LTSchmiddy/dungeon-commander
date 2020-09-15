@@ -1,0 +1,66 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The spider thief makes two sickle claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 10 (2d8 + 1) slashing damage.",
+            "name": "Sickle Claw"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 15 ft., one target. Hit: 3 (1d4 + 1) slashing damage, and the target is grappled (escape DC 10). Instead of moving, the spider thief can retract the razor line and pull itself onto the grappled creature (the spider thief enters and remains in the target's space). The spider thief's sickle claw attacks have advantage against a grappled creature in the same space. If the grappled creature escapes, the spider thief immediately displaces into an unoccupied space within 5 feet.",
+            "name": "Razor Line (Recharge 5-6)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 1,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 12,
+    "damage_immunities": "poison, psychic",
+    "damage_resistances": "fire",
+    "dexterity": 12,
+    "hit_dice": "12d6+12",
+    "hit_points": 54,
+    "id": "spider_thief",
+    "intelligence": 3,
+    "languages": "understands Common but can't speak",
+    "name": "Spider Thief",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The spider thief is immune to any spell or effect that would alter its form.",
+            "name": "Immutable Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The spider thief has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If its razor line attack is available, a spider thief can use its movement to leap 20 feet in any direction by launching the wire like a spider's web so that it spears or snags an object, then immediately reeling it back in. It can carry up to 25 lb. of additional weight while moving this way. Moving this way doesn't expend its razor line attack.",
+            "name": "Wire-Assisted Jump"
+        }
+    ],
+    "speed": "30 ft., climb 20 ft.",
+    "speed_json": {
+        "climb": 20,
+        "walk": 30
+    },
+    "stealth": 3,
+    "strength": 10,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 10
+}

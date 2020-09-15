@@ -1,0 +1,50 @@
+{
+    "actions": [
+        {
+            "desc": "The swarm can make two bite attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 0 ft., one creature in the swarm's space. Hit: 7 (2d6) piercing damage, or 3 (1d6) piercing damage if the swarm has half of its hp or fewer.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "12",
+    "challenge_rating": "2",
+    "charisma": "4",
+    "condition_immunities": "charmed, frightened, paralyzed, petrified, prone, restrained, stunned",
+    "constitution": "12",
+    "damage_immunities": "fire",
+    "damage_resistances": "bludgeoning, piercing, slashing",
+    "dexterity": "15",
+    "hit_dice": "6d8+6",
+    "hit_points": "33",
+    "id": "flame_eater_swarm",
+    "intelligence": "2",
+    "languages": "-",
+    "name": "Flame Eater Swarm",
+    "senses": "blindsight 30 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "Any normal fire in the flame eater swarm's space at the end of the swarm's turn is extinguished. Magical fire (a flaming weapon or wall of fire spell, for example) is extinguished if the swarm makes a successful DC 13 Constitution check. Only the swarm's space is affected; fires larger than the swarm continue burning outside the swarm's space. For 1 minute after the swarm consumes any flame, its bite attack deals an extra 9 (2d8) fire damage and any creature that ends its turn in the swarm's space takes 4 (1d8) fire damage.",
+            "name": "Consume Flame"
+        },
+        {
+            "desc": "The swarm can occupy the same space as another creature and vice versa. The swarm can move through any opening large enough for a Tiny bat. The swarm can't regain hp or gain temporary hp.",
+            "name": "Swarm"
+        }
+    ],
+    "speed": "0 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "walk": 0
+    },
+    "strength": "3",
+    "subtype": "",
+    "type": "beasts",
+    "wisdom": "14"
+}

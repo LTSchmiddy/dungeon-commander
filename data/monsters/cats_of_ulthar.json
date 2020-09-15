@@ -1,0 +1,49 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 6,
+            "damage_dice": "4d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 0 ft., up to two creatures in the swarm's space. Hit: 14 (4d6) piercing damage, or 7 (2d6) piercing damage if the swarm has half of its hit points or fewer.",
+            "name": "Bites"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "14",
+    "challenge_rating": "4",
+    "charisma": "3",
+    "condition_immunities": "charmed, frightened, paralyzed, petrified, prone, restrained, stunned",
+    "constitution": "10",
+    "damage_resistances": "bludgeoning, piercing, slashing",
+    "dexterity": "18",
+    "hit_dice": "10d10",
+    "hit_points": "55",
+    "id": "cats_of_ulthar",
+    "intelligence": "2",
+    "languages": "-",
+    "name": "Cats of Ulthar",
+    "senses": "darkvision 30 ft., passive Perception 12",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "desc": "Each creature in the swarm must succeed on a DC 12 Wisdom saving throw or fall prone and become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the swarm's Feline Terror for the next 24 hours.",
+            "name": "Feline Terror"
+        },
+        {
+            "desc": "The swarm has advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell.",
+            "name": "Keen Senses"
+        },
+        {
+            "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny cat. The swarm can't regain hp or gain temporary hp.",
+            "name": "Swarm"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "stealth": 6,
+    "strength": "9",
+    "subtype": "",
+    "type": "beasts",
+    "wisdom": "14"
+}

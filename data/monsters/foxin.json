@@ -1,0 +1,49 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage, and the target must succeed on a DC 12 Strength saving throw or be knocked prone.",
+            "name": "Bite"
+        },
+        {
+            "desc": "The foxin targets any number of non-foxin creatures within 30 feet. Each creature in that area must succeed on a DC 13 Wisdom saving throw or be treated as charmed against all enemies and dangers for 1 minute. A charmed creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the foxin's Illusory Calm for the next 24 hours. A creature has advantage on the saving throw if it suffers any harm while charmed.",
+            "name": "Illusory Calm"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": "14",
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/2",
+    "charisma": "16",
+    "condition_immunities": "charmed",
+    "constitution": "14",
+    "dexterity": "16",
+    "hit_dice": "3d6+6",
+    "hit_points": "16",
+    "id": "foxin",
+    "intelligence": "10",
+    "languages": "understands Common and Sylvan but can't speak",
+    "name": "Foxin",
+    "perception": 4,
+    "senses": "darkvision 60 ft., passive Perception 14",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The foxin has advantage on Wisdom (Perception) checks that rely on sight, hearing, or smell.",
+            "name": "Keen Senses"
+        },
+        {
+            "desc": "A foxin naturally emits an air of total belonging. It doesn't go unnoticed, but other creatures always behave as though the foxin's presence is normal and unobtrusive.",
+            "name": "Neutral Presence"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": "14",
+    "subtype": "",
+    "type": "fey",
+    "wisdom": "14"
+}

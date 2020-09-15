@@ -1,0 +1,50 @@
+{
+    "actions": [
+        {
+            "desc": "The archaeopteryx makes two attacks: one with its beak and one with its talons.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d4+1",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage.",
+            "name": "Beak"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d4+1",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage.",
+            "name": "Talons"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": "12",
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/4",
+    "charisma": "6",
+    "constitution": "10",
+    "dexterity": "13",
+    "hit_dice": "3d4",
+    "hit_points": "7",
+    "id": "archaeopteryx",
+    "intelligence": "2",
+    "languages": "-",
+    "name": "Archaeopteryx",
+    "senses": "passive Perception 12",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "desc": "The archaeopteryx doesn't provoke opportunity attacks when it flies out of an enemy's reach.",
+            "name": "Flyby"
+        }
+    ],
+    "speed": "5 ft., fly 50 ft.",
+    "speed_json": {
+        "fly": 50,
+        "walk": 5
+    },
+    "strength": "6",
+    "subtype": "",
+    "type": "beast",
+    "wisdom": "14"
+}

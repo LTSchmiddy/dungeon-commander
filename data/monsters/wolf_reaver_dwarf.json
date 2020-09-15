@@ -1,0 +1,74 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The wolf reaver dwarf makes two melee or ranged attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d8+4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit: 8 (1d8 + 4) slashing damage.",
+            "name": "Battleaxe"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d4+4",
+            "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage.",
+            "name": "Dagger"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6+4",
+            "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) piercing damage, or 8 (1d8 + 4) piercing damage if used with two hands to make a melee attack.",
+            "name": "Spear"
+        }
+    ],
+    "alignment": "any chaotic",
+    "armor_class": 16,
+    "armor_desc": "chain shirt, shield",
+    "athletics": 6,
+    "challenge_rating": "3",
+    "charisma": 9,
+    "constitution": 19,
+    "dexterity": 12,
+    "hit_dice": "9d8+36",
+    "hit_points": "76",
+    "id": "wolf_reaver_dwarf",
+    "intelligence": 9,
+    "intimidation": 1,
+    "languages": "Common, Dwarvish",
+    "name": "Wolf Reaver Dwarf",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The wolf reaver dwarf has advantage on Dexterity saving throws against attacks it can see when it is not blinded, deafened, or incapacitated.",
+            "name": "Danger Sense"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The wolf reaver dwarf has advantage on saving throws against poison.",
+            "name": "Dwarven Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The wolf reaver dwarf has advantage on attacks if at least one of the dwarf's allies is within 5 feet of the target and the ally isn't incapacitated.",
+            "name": "Pack Tactics"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "At the start of its turn, the wolf reaver dwarf can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn.",
+            "name": "Reckless"
+        }
+    ],
+    "speed": "35 ft.",
+    "speed_json": {
+        "walk": 35
+    },
+    "strength": 18,
+    "subtype": "dwarf",
+    "type": "Humanoid",
+    "wisdom": 11
+}

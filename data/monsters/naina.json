@@ -1,0 +1,93 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The naina makes two claw attacks and one bite attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "3d12",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (3d12 + 5) piercing damage.",
+            "name": "Bite (drake form only)"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "3d12",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 24 (3d12 + 5) slashing damage.",
+            "name": "Claw (drake form only)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in drake form (only), the naina breathes a 20-foot cone of poison gas, paralytic gas, or sleep gas.",
+            "name": "Poison Breath (Recharge 5-6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A creature caught in this poison gas takes 18 (4d8) poison damage and is poisoned; a successful DC 17 Constitution saving throw reduces damage to half and negates the poisoned condition. While poisoned this way, the creature must repeat the saving throw at the end of each of its turns. On a failure, it takes 9 (2d8) poison damage and the poisoning continues; on a success, the poisoning ends.",
+            "name": "Poison"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A creature caught in this paralytic gas must succeed on a DC 17 Constitution saving throw or be paralyzed for 2d4 rounds. A paralyzed creature repeats the saving throw at the end of each of its turns; a successful save ends the paralysis.",
+            "name": "Paralysis"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A creature caught in this sleeping gas must succeed on a DC 17 Constitution saving throw or fall unconscious for 6 rounds. A sleeping creature repeats the saving throw at the end of each of its turns; it wakes up if it makes the save successfully.",
+            "name": "Sleep"
+        }
+    ],
+    "alignment": "lawful evil",
+    "arcana": 6,
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "11",
+    "charisma": 18,
+    "charisma_save": 8,
+    "condition_immunities": "paralyzed, poisoned, unconscious",
+    "constitution": 21,
+    "constitution_save": 9,
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
+    "deception": 8,
+    "dexterity": 16,
+    "dexterity_save": 7,
+    "hit_dice": "22d10+110",
+    "hit_points": 231,
+    "id": "naina",
+    "insight": 8,
+    "intelligence": 15,
+    "intelligence_save": 6,
+    "languages": "Common, Darakhul, Draconic, Elvish, Sylvan",
+    "name": "Naina",
+    "perception": 8,
+    "senses": "darkvision 60 ft., passive Perception 18",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The naina detects magic as if it were permanently under the effect of a detect magic spell.",
+            "name": "Magic Sensitive"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the naina is a 9th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). The naina has the following sorcerer spells prepared:\n\ncantrips (at will): dancing lights, mage hand, mending, ray of frost, resistance, silent image\n\n1st level (4 slots): charm person, thunderwave, witch bolt\n\n2nd level (3 slots): darkness, invisibility, locate object\n\n3rd level (3 slots): dispel magic, hypnotic pattern\n\n4th level (3 slots): dimension door\n\n5th level (1 slot): dominate person",
+            "name": "Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The naina can use her action to polymorph into one of her two forms: a drake or a female humanoid. She cannot alter either form's appearance or capabilities (with the exception of her breath weapon) using this ability, and damage sustained in one form transfers to the other form.",
+            "name": "Shapechanger"
+        }
+    ],
+    "speed": "40 ft., fly 120 ft.",
+    "speed_json": {
+        "fly": 120,
+        "walk": 40
+    },
+    "strength": 20,
+    "subtype": "shapechanger",
+    "type": "dragon",
+    "wisdom": 18,
+    "wisdom_save": 8
+}

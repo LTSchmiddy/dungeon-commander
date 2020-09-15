@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 8,
+            "damage_dice": "3d10",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 21 (3d10 + 5) piercing damage, and the target must succeed on a DC 15 Strength saving throw or be knocked prone.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The hound exhales a 15-foot cone of frost. Those in the area of effect take 44 (8d10) cold damage, or half damage with a successful DC 13 Dexterity saving throw.",
+            "name": "Frost Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 10,
+    "constitution": 14,
+    "constitution_save": 5,
+    "damage_immunities": "cold",
+    "dexterity": 16,
+    "dexterity_save": 6,
+    "hit_dice": "15d10+30",
+    "hit_points": 112,
+    "id": "hound_of_the_night",
+    "intelligence": 9,
+    "intimidation": 3,
+    "languages": "understands Elvish and Umbral but can't speak",
+    "name": "Hound Of The Night",
+    "perception": 5,
+    "senses": "darkvision 60 ft., passive Perception 15",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A hound of the night can follow a scent through phase shifts, ethereal movement, dimension door, and fey steps of any kind. Teleport and plane shift are beyond their ability to follow.",
+            "name": "Blood Scent"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the hound's innate spellcasting ability is Wisdom (spell save DC 13). It can innately cast the following spells, requiring no material components:\n\nat will: dimension door",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": 20,
+    "subtype": "",
+    "type": "monstrosity",
+    "vulnerable": "fire",
+    "wisdom": 14,
+    "wisdom_save": 5
+}

@@ -1,0 +1,66 @@
+{
+    "actions": [
+        {
+            "desc": "The blood giant makes two blood spear attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "3d8+6",
+            "desc": "Melee Weapon Attack: +9 to hit, range 15 ft., one target. Hit: 19 (3d8 + 6) piercing damage plus 7 (2d6) cold damage.",
+            "name": "Blood Spear"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "4d10+6",
+            "desc": "Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage.",
+            "name": "Rock"
+        },
+        {
+            "desc": "The blood giant uses one of the following:\nImpale. The blood giant causes 10-foot-high blood spikes to burst from the ground within 15 feet of it. Each creature in the area must make a DC 15 Dexterity saving throw, taking 26 (4d12) piercing damage plus 7 (2d6) cold damage on a failed save, or half as much damage on a successful one.\nDrown. The blood giant sends blood pouring down the throat of one creature within 30 feet, which must make a DC 15 Constitution saving throw. On a failure, the creature is incapacitated until the end of its next turn as it coughs up the blood and is poisoned for 1 minute after that.\nVaporize. A red mist surrounds the blood giant in a 20-foot-radius sphere. The mist spreads around corners, and its area is heavily obscured. It moves with the blood giant and doesn't impede the giant's vision. The mist dissipates after 1d4 rounds.",
+            "name": "Blood Magic (Recharge 5-6)"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "armor_class": "15",
+    "armor_desc": "natural armor",
+    "challenge_rating": "8",
+    "charisma": "5",
+    "condition_immunities": "exhaustion, poisoned",
+    "constitution": "18",
+    "constitution_save": 7,
+    "damage_immunities": "cold, poison",
+    "damage_resistances": "necrotic",
+    "dexterity": "12",
+    "dexterity_save": 4,
+    "history": 2,
+    "hit_dice": "12d12+48",
+    "hit_points": "126",
+    "id": "blood_giant",
+    "intelligence": "8",
+    "languages": "Giant",
+    "name": "Blood Giant",
+    "perception": 6,
+    "religion": 2,
+    "senses": "darkvision 60 ft., passive Perception 16",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "desc": "A blood giant can pinpoint the location of living creatures within 60 feet of it and can sense the general direction of living creatures within 1 mile of it.",
+            "name": "Blood Sense"
+        },
+        {
+            "desc": "The blood giant's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": "23",
+    "subtype": "",
+    "type": "giant",
+    "wisdom": "16",
+    "wisdom_save": 6
+}

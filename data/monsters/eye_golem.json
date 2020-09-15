@@ -1,0 +1,73 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The golem makes two melee attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "4d8",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 5ft., one target. Hit: 24 (4d8 + 6) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The golem emits a burst of blinding light, affecting all opponents within 30 feet who are visible to it. These creatures must make a successful DC 17 Constitution saving throw or be permanently blinded. All affected creatures, including those that save successfully, are stunned until the end of their next turn.",
+            "name": "Gaze of Ancient Light (Recharge 6)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The golem intones a disturbing invocation of the sun god. Creatures within 30 feet of the golem must make a successful DC 17 Wisdom saving throw or become frightened Deaf or unhearing creatures are unaffected.",
+            "name": "Primal Voice of Doom (1/Day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When roused for combat, the golem opens many of its eyes, emitting blinding light. All ranged attacks, including ranged spells that require a spell attack roll, are made with disadvantage against the golem. The effect persists as long as the eye golem desires, up to a total of 1 minute (10 rounds) per day.",
+            "name": "Shoot into the Sun (1 minute/day)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 20,
+    "armor_desc": "natural armor",
+    "challenge_rating": "11",
+    "charisma": 1,
+    "condition_immunities": "charmed, exhausted, frightened, paralyzed, petrified, poisoned",
+    "constitution": 20,
+    "damage_immunities": "fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
+    "dexterity": 9,
+    "hit_dice": "15d10+75",
+    "hit_points": 157,
+    "id": "eye_golem",
+    "intelligence": 5,
+    "languages": "understands the language of its creator, but can't speak",
+    "name": "Eye Golem",
+    "perception": 8,
+    "senses": "truesight 120 ft., passive Perception 18",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The golem is immune to any spell or effect that would alter its form.",
+            "name": "Immutable Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The golem has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The golem's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 22,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 11
+}

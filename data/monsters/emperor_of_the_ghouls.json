@@ -1,0 +1,117 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The emperor makes one bite attack and two claw attacks. He can make one attack with its scepter in place of a claw attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage, and a creature must make a successful DC 18 Constitution saving throw or contract darakhul fever (see page 215).",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "2d6+4",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage, and a creature must make a successful DC 18 Constitution saving throw or be paralyzed for 1 minute. A paralyzed creature repeats the saving throw at the ends of its turns, ending the effect on itself on a success.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "1d10",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) bludgeoning damage plus 17 (5d6) necrotic damage.",
+            "name": "Scepter"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 20,
+    "armor_desc": "natural armor",
+    "challenge_rating": "20",
+    "charisma": 21,
+    "condition_immunities": "charmed, exhaustion, frightened, poisoned",
+    "constitution": 19,
+    "damage_immunities": "poison; bludgeoning, piercing, and slashing damage from nonmagical weapons.",
+    "damage_resistances": "cold, necrotic",
+    "deception": 11,
+    "dexterity": 14,
+    "dexterity_save": 8,
+    "hit_dice": "24d8+96",
+    "hit_points": 204,
+    "id": "emperor_of_the_ghouls",
+    "insight": 9,
+    "intelligence": 20,
+    "languages": "Common, Darakhul, Draconic, Gnoll, Undercommon",
+    "legendary_actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The emperor makes one claw or bite attack.",
+            "name": "Attack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The emperor casts a cantrip.",
+            "name": "Cantrip"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Roll 1d8. The emperor regains a spell slot of that level or lower.",
+            "name": "Font of Power (3 actions)"
+        }
+    ],
+    "legendary_desc": "The Emperor can take 3 legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The Emperor regains spent legendary actions at the start of his turn.",
+    "name": "Emperor Of The Ghouls",
+    "perception": 9,
+    "persuasion": 11,
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "When the emperor takes damage from a creature it can see within 60 feet, the attacker takes necrotic damage equal to half the damage it did to the emperor.",
+            "name": "Blood Armor"
+        }
+    ],
+    "senses": "darkvision 120 ft., passive Perception 19",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "If the emperor fails a saving throw, he can choose to succeed instead.",
+            "name": "Legendary Resistance (3/day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the emperor is a 17th-level spellcaster. His spellcasting attribute is Charisma (spell save DC 19, +11 to hit with spell attacks). The emperor knows the following sorcerer spells:\n\ncantrips (at will): blade ward, chill touch, message, prestidigitation, shocking grasp, true strike\n\n1st level (4 slots): magic missile, shield\n\n2nd level (3 slots): mirror image, phantasmal force\n\n3rd level (3 slots): fear, fireball\n\n4th level (3 slots): blight, dimension door\n\n5th level (2 slots): cloudkill, hold monster\n\n6th level (1 slot): circle of death\n\n7th level (1 slot): finger of death, teleport\n\n8th level (1 slot): power word stun\n\n9th level (1 slot): power word kill",
+            "name": "Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in direct sunlight, the emperor has disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight.",
+            "name": "Sunlight Sensitivity"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The emperor has advantage on saving throws against effects that turn undead.",
+            "name": "Turn Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "on initiative count 20 (losing initiative ties), the Emperor takes a lair action to cause one of the following effects. The Emperor can't use the same effect two rounds in a row:\n\n- Until initiative count 20 on the following round, all creatures other than undead and constructs who take necrotic damage take an additional 7 (2d6) necrotic damage.\n\n- The emperor targets a creature within 30 feet that he can see. The creature must succeed on a DC 15 Constitution saving throw or take 18 (4d8) necrotic damage. The emperor regains hit points equal to the damage.\n\n- A wall of ice springs up from a surface within 100 feet of the emperor. The wall is 60 feet long, 10 feet high, and 5 feet thick. A creature in the wall's space when it appears must succeed on a DC 15 Dexterity saving throw or take 10 (3d6) cold damage; then the creature is pushed to either side of the wall (the creature's choice). Each 5-foot section of the wall has AC 10, 15 hit points, resistance to piercing and slashing damage, immunity to cold, poison, and psychic damage, and vulnerability to fire damage. The wall lasts until the emperor uses this action again, or dies.",
+            "name": "Emperor Of The Ghouls' Lair Actions"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the region around the emperor's lair is warped by its magic, which creates one or more of the following effects:\n\n- Creatures within 1 mile of the lair who are infected with darakhul fever have disadvantage on Wisdom saving throws against spells and effects generated by ghouls or darakhul.\n\n- Dead bodies within 1 mile of the lair have an 80 percent chance to reanimate as skeletons or zombies 24 hours after their death. These undead never attack ghouls or dharakul, but instinctively obey their commands.\n\n- Phantom lights appear within 10 miles of the lair, more frequently the closer they are to the lair. The lights shed dim light out to 10 feet. Undead within such a light gain 1d6 temporary hit points at the start of their turn; the light can't raise an undead's hit points above 150 percent of its normal hit point maximum.\n\nif the emperor dies, conditions in the area surrounding the lair return to normal over the course of 1d10 days.",
+            "name": "Regional Effects"
+        }
+    ],
+    "speed": "30 ft., burrow 15 ft.",
+    "speed_json": {
+        "burrow": 15,
+        "walk": 30
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 17,
+    "wisdom_save": 9
+}

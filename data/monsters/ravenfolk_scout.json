@@ -1,0 +1,68 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The ravenfolk scout makes one peck attack and one other melee or ranged attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The ravenfolk scout furiously \"beats\"a set of phantasmal wings. Every creature within 5 feet of the ravenfolk must make a successful DC 12 Dexterity saving throw or be blinded until the start of the ravenfolk's next turn.",
+            "name": "Ghost Wings"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Ranged Weapon Attack. +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "name": "Longbow"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+            "name": "Peck"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+            "name": "Rapier"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "studded leather armor",
+    "challenge_rating": "1/2",
+    "charisma": 12,
+    "charisma_save": 3,
+    "constitution": 8,
+    "constitution_save": 1,
+    "deception": 3,
+    "dexterity": 14,
+    "dexterity_save": 4,
+    "hit_dice": "6d8 . 6",
+    "hit_points": 21,
+    "id": "ravenfolk_scout",
+    "intelligence": 10,
+    "languages": "Common, Feather Speech, Huginn",
+    "name": "Ravenfolk Scout",
+    "perception": 6,
+    "senses": "darkvision 120 ft., passive Perception 16",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Ravenfolk scouts can mimic the voices of others with uncanny accuracy. They have advantage on Charisma (Deception) checks involving audible mimicry.",
+            "name": "Mimicry"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 6,
+    "strength": 10,
+    "subtype": "kenku",
+    "type": "humanoid",
+    "wisdom": 15,
+    "wisdom_save": 4
+}

@@ -1,0 +1,59 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant makes two warhammer attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
+            "name": "Warhammer"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d10",
+            "desc": "Ranged Weapon Attack: +6 to hit, range 40/160 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage.",
+            "name": "Rock"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Thursir giants can inscribe the thurs rune on a weapon. A creature hit by the weapon takes an additional 1d8 lightning damage, and the target can't take reactions until the start of its next turn. The thurs rune lasts for one hour, or for three hits, whichever comes first.",
+            "name": "Runic Blood (3/day)"
+        }
+    ],
+    "alignment": "neutral evil (50%) lawful evil (50%)",
+    "armor_class": 13,
+    "armor_desc": "chain shirt",
+    "athletics": 6,
+    "challenge_rating": "3",
+    "charisma": 11,
+    "constitution": 18,
+    "constitution_save": 6,
+    "dexterity": 10,
+    "hit_dice": "12d10+48",
+    "hit_points": 114,
+    "id": "thursir_giant",
+    "intelligence": 13,
+    "languages": "Common, Dwarven, Giant",
+    "name": "Thursir Giant",
+    "perception": 4,
+    "senses": "darkvision 60 ft., passive Perception 14",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant can consume half of its weight in food without ill effect, and it has advantage against anything that would give it the poisoned condition. Poisonous and spoiled foodstuffs are common in a thursir lair.",
+            "name": "Cast Iron Stomach"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 19,
+    "subtype": "",
+    "type": "giant",
+    "wisdom": 15
+}

@@ -1,0 +1,51 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The treacle assumes the shape of any tiny creature or object. A reshaped treacle gains the movement of its new form but no other special qualities.",
+            "name": "Reshape"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A treacle touching the skin of a warm-blooded creature inflicts 4 (1d8) necrotic damage per hour of contact, and the victim's maximum hit points are reduced by the same number. Blood is drained so slowly that the victim doesn't notice the damage unless he or she breaks contact with the treacle (sets it down or hands it to someone else, for example). When contact is broken, the victim notices blood on his or her skin or clothes with a successful DC 13 Wisdom (Perception) check.",
+            "name": "Blood Drain (1/hour)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/4",
+    "charisma": 10,
+    "constitution": 17,
+    "deception": 4,
+    "dexterity": 6,
+    "hit_dice": "4d4+12",
+    "hit_points": 22,
+    "id": "treacle",
+    "intelligence": 1,
+    "languages": "-",
+    "name": "Treacle",
+    "senses": "blindsight 60 ft., passive Perception 10",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The treacle can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Amorphous"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The treacle has an uncanny ability to sense and to play off of another creature's emotions. It uses Charisma (Deception) to oppose Wisdom (Insight or Perception) skill checks made to see through its ruse, and it has advantage on its check.",
+            "name": "Charming Presence"
+        }
+    ],
+    "speed": "15 ft., climb 10 ft.",
+    "speed_json": {
+        "climb": 10,
+        "walk": 15
+    },
+    "strength": 4,
+    "subtype": "",
+    "type": "ooze",
+    "wisdom": 1
+}

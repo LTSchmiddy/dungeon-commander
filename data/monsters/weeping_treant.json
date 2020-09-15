@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The treant makes three slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "3d6",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., single target. Hit: 15 (3d6 + 5) bludgeoning damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "3d10",
+            "desc": "Ranged Weapon Attack: +8 to hit, range 60/180 ft., one target. Hit: 21 (3d10 + 5) bludgeoning damage.",
+            "name": "Rock"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 11,
+    "constitution": 20,
+    "damage_resistances": "bludgeoning and piercing",
+    "dexterity": 8,
+    "hit_dice": "10d12+40",
+    "hit_points": 105,
+    "id": "weeping_treant",
+    "intelligence": 12,
+    "languages": "Common, Druidic, Elvish, Sylvan",
+    "name": "Weeping Treant",
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The treant deals double damage to objects and structures.",
+            "name": "Siege Monster"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A weeping treant can converse with plants, and most plants greet them with a friendly or helpful attitude.",
+            "name": "Treespeech"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Thick tears of dark sap stream continuously down the treant's face and trunk. These tears are highly acidic - anyone who attacks the treant from a range of 5 feet or less must succeed on a DC 15 Dexterity saving throw or take 6 (1d12) acid damage from splashed tears. This acidic matter continues doing 6 (1d12) acid damage at the start of each of the creature's turns until it or an adjacent ally uses an action to wipe off the tears or three rounds elapse.",
+            "name": "Acidic Tears"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 21,
+    "subtype": "",
+    "type": "plant",
+    "vulnerable": "fire",
+    "wisdom": 16
+}

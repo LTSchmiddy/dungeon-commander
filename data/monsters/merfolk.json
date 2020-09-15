@@ -1,0 +1,45 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack.",
+            "name": "Spear"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 11,
+    "challenge_rating": "1/8",
+    "charisma": 12,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 13,
+    "hit_dice": "2d8+2",
+    "hit_points": 11,
+    "id": "merfolk",
+    "intelligence": 11,
+    "languages": "Aquan, Common",
+    "name": "Merfolk",
+    "perception": 2,
+    "senses": "passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The merfolk can breathe air and water.",
+            "name": "Amphibious"
+        }
+    ],
+    "speed": "10 ft., swim 40 ft.",
+    "speed_json": {
+        "swim": 40,
+        "walk": 10
+    },
+    "strength": 10,
+    "subtype": "merfolk",
+    "type": "humanoid",
+    "wisdom": 11
+}

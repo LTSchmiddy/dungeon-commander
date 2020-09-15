@@ -1,0 +1,66 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The horakh makes two claw attacks and one bite attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "4d8",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 4) slashing damage. If the bite attack hits a target that's grappled by the horakh, the target must make a successful DC 16 Dexterity saving throw or one of its eyes is bitten out. A creature with just one remaining eye has disadvantage on ranged attack rolls and on Wisdom (Perception) checks that rely on sight. If both (or all) eyes are lost, the target is blinded. The regenerate spell and comparable magic can restore lost eyes. Also see Implant Egg, below.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "3d8",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) piercing damage. If both attacks hit the same Medium or smaller target in a single turn, the target is grappled (escape DC 14).",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If a horakh's bite attack reduces a grappled creature to 0 hit points, or it bites a target that's already at 0 hit points, it implants an egg in the creature's eye socket. The deposited egg grows for 2 weeks before hatching. If the implanted victim is still alive, it loses 1d2 Constitution every 24 hours and has disadvantage on attack rolls and ability checks. After the first week, the victim is incapacitated and blinded. When the egg hatches after 2 weeks, an immature horakh erupts from the victim's head, causing 1d10 bludgeoning, 1d10 piercing, and 1d10 slashing damage. A lesser restoration spell can kill the egg during its incubation.",
+            "name": "Implant Egg"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "athletics": 8,
+    "challenge_rating": "9",
+    "charisma": 10,
+    "constitution": 19,
+    "dexterity": 19,
+    "dexterity_save": 12,
+    "hit_dice": "19d8+76",
+    "hit_points": 161,
+    "id": "horakh",
+    "intelligence": 8,
+    "languages": "understands Undercommon",
+    "name": "Horakh",
+    "perception": 6,
+    "senses": "darkvision 60 ft., tremorsense 30 ft., passive Perception 20",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A horakh can hide as a bonus action if it's in dim light or darkness.",
+            "name": "Shadow Stealth"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "As part of its movement, the horakh can jump up to 20 feet horizontally and 10 feet vertically, with or without a running start.",
+            "name": "Standing Leap"
+        }
+    ],
+    "speed": "40 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 40
+    },
+    "stealth": 8,
+    "strength": 18,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 15
+}

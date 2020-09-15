@@ -1,0 +1,46 @@
+{
+    "actions": [
+        {
+            "desc": "The shadow skeleton makes two scimitar attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 7 (1d8 + 3) slashing damage.",
+            "name": "Scimitar"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4+3",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 30 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 3 (1d6) necrotic damage. If the target is a creature other than an undead or a construct, it must make a DC 12 Constitution saving throw. On a failure, the target is surrounded by a shadowy aura for 1 minute. While surrounded by the aura, the target takes an extra 7 (2d6) necrotic damage when hit by the scimitar attack of a shadow skeleton. Any creature can take an action to extinguish the shadow with a successful DC 12 Intelligence (Arcana) check. The shadow also extinguishes if the target receives magical healing.",
+            "name": "Finger Darts"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": "13",
+    "challenge_rating": "2",
+    "charisma": "9",
+    "condition_immunities": "exhaustion, poisoned",
+    "constitution": "15",
+    "damage_immunities": "poison",
+    "damage_resistances": "fire, piercing, slashing",
+    "dexterity": "16",
+    "hit_dice": "8d8+16",
+    "hit_points": "52",
+    "id": "shadow_skeleton",
+    "intelligence": "9",
+    "languages": "understands all languages it knew in life but can't speak",
+    "name": "Shadow Skeleton",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "speed": "30 ft., swim 40 ft.",
+    "speed_json": {
+        "swim": 40,
+        "walk": 30
+    },
+    "strength": "10",
+    "subtype": "",
+    "type": "undead",
+    "wisdom": "11"
+}

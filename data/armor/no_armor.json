@@ -1,0 +1,16 @@
+{
+    "ac": 10,
+    "cost": "5 gp",
+    "disadvantage": false,
+    "id": "no_armor",
+    "modifier": [
+        {
+            "ability": "dexterity",
+            "max": null
+        }
+    ],
+    "name": "No Armor",
+    "rarity": "Standard",
+    "requirements": {},
+    "type": "No Armor"
+}

@@ -1,0 +1,51 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant ant makes one bite attack and one sting attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage and the target is grappled (escape DC 12). Until this grapple ends, the target is restrained and the giant ant can't bite a different target.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage plus 22 (4d10) poison damage, or half as much poison damage with a successful DC 12 Constitution saving throw.",
+            "name": "Sting"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 2,
+    "constitution": 15,
+    "dexterity": 13,
+    "hit_dice": "7d10+14",
+    "hit_points": 52,
+    "id": "giant_ant",
+    "intelligence": 1,
+    "languages": "-",
+    "name": "Giant Ant",
+    "senses": "blindsight 60 ft., passive Perception 9",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The giant ant has advantage on Wisdom (Perception) checks that rely on smell.",
+            "name": "Keen Smell"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 15,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 9
+}

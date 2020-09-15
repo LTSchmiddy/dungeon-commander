@@ -1,0 +1,77 @@
+{
+    "acrobatics": 8,
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The lindwurm makes one bite attack, one claw attack, and one constrict attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) piercing damage, and the target must succeed on a DC 14 Constitution saving throw or contract lindwurm fever.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 17 (3d8 + 4) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the target is restrained, and the lindwurm can constrict only this target.",
+            "name": "Constrict"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 15,
+    "armor_desc": "",
+    "athletics": 8,
+    "challenge_rating": "5",
+    "charisma": 8,
+    "condition_immunities": "paralyzed, prone, unconscious",
+    "constitution": 16,
+    "constitution_save": 6,
+    "damage_immunities": "cold",
+    "dexterity": 20,
+    "dexterity_save": 8,
+    "hit_dice": "16d10+48",
+    "hit_points": 136,
+    "id": "lindwurm",
+    "intelligence": 6,
+    "name": "Lindwurm",
+    "perception": 4,
+    "senses": "darkvision 60 ft., tremorsense 120 ft. on ice, passive Perception 14",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A creature infected with this disease by a lindwurm's bite gains one level of exhaustion an hour after being infected. The creature must make a DC 14 Constitution saving throw after each long rest. On a failure, the creature gains one level of exhaustion and recovers no hit dice from the long rest. On a success, the creature recovers from one level of exhaustion and regains hit dice normally. If the infected creature reduces itself to zero exhaustion by making successful saving throws, the disease is cured.",
+            "name": "Lindwurm Fever"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Lindwurms suffer no penalties from difficult terrain on ice and are immune to the effects of the grease spell.",
+            "name": "Skittering Skater"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When lying with its sensitive stomach on the ice, a lindwurm can sense approaching creatures by the vibrations they cause, granting them tremorsense.",
+            "name": "Snake Belly"
+        }
+    ],
+    "speed": "40 ft., swim 20 ft.",
+    "speed_json": {
+        "swim": 20,
+        "walk": 40
+    },
+    "stealth": 9,
+    "strength": 18,
+    "strength_save": 7,
+    "subtype": "",
+    "type": "dragon",
+    "vulnerable": "fire",
+    "wisdom": 12
+}

@@ -1,0 +1,54 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 0 ft., one creature in the swarm's space. Hit: 5 (2d4) piercing damage, or 2 (1d4) piercing damage if the swarm has half of its hit points or fewer.",
+            "name": "Bites"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 12,
+    "challenge_rating": "1/4",
+    "charisma": 4,
+    "condition_immunities": "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
+    "constitution": 10,
+    "damage_immunities": "",
+    "damage_resistances": "bludgeoning, piercing, slashing",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "hit_dice": "5d8",
+    "hit_points": 22,
+    "id": "swarm_of_bats",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Swarm of Bats",
+    "senses": "blindsight 60 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The swarm can't use its blindsight while deafened.",
+            "name": "Echolocation"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The swarm has advantage on Wisdom (Perception) checks that rely on hearing.",
+            "name": "Keen Hearing"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny bat. The swarm can't regain hit points or gain temporary hit points.",
+            "name": "Swarm"
+        }
+    ],
+    "speed": "0 ft., fly 30 ft.",
+    "speed_json": {
+        "fly": 30,
+        "walk": 0
+    },
+    "strength": 5,
+    "subtype": "",
+    "type": "swarm of Tiny beasts",
+    "wisdom": 12
+}

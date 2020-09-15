@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The grick makes one attack with its tentacles. If that attack hits, the grick can make one beak attack against the same target.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage.",
+            "name": "Tentacles"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+            "name": "Beak"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "2",
+    "charisma": 5,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
+    "damage_vulnerabilities": "",
+    "dexterity": 14,
+    "hit_dice": "6d8",
+    "hit_points": 27,
+    "id": "grick",
+    "intelligence": 3,
+    "languages": "",
+    "name": "Grick",
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The grick has advantage on Dexterity (Stealth) checks made to hide in rocky terrain.",
+            "name": "Stone Camouflage"
+        }
+    ],
+    "speed": "30 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 30
+    },
+    "strength": 14,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 14
+}

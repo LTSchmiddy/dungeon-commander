@@ -1,0 +1,64 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The tosculi warrior makes one bite attack, one claws attack, and one stinger attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 7 (1d4 + 5) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d4 + 5) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 7 (1d4 + 5) piercing damage, and the target must succeed on a DC 13 Constitution saving throw against poison or be paralyzed for 1 minute. A paralyzed target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "name": "Stinger"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one paralyzed creature. Hit: 10 (2d4 + 5) piercing damage, and the target is paralyzed for 8 hours. The paralysis can be ended with a successful DC 20 Wisdom (Medicine) check or by a spell or magical effect that cures disease. (Because only paralyzed creatures can be targeted, a hit by this attack is automatically a critical hit; bonus damage is included in the damage listing.)",
+            "name": "Prepare Host"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 15,
+    "armor_desc": "",
+    "challenge_rating": "2",
+    "charisma": 12,
+    "constitution": 16,
+    "dexterity": 20,
+    "hit_dice": "9d6+27",
+    "hit_points": 58,
+    "id": "tosculi_warrior",
+    "intelligence": 10,
+    "languages": "Tosculi",
+    "name": "Tosculi Warrior",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Up to two tosculi can share the same space at one time. The tosculi has advantage on attack rolls while sharing its space with another tosculi that isn't incapacitated.",
+            "name": "Skittering"
+        }
+    ],
+    "speed": "20 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 20
+    },
+    "strength": 12,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 12
+}

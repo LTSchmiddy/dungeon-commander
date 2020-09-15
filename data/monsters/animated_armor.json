@@ -1,0 +1,56 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The armor makes two melee attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.",
+            "name": "Slam"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1",
+    "charisma": 1,
+    "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 13,
+    "damage_immunities": "poison, psychic",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 11,
+    "group": "Animated Objects",
+    "hit_dice": "6d8+6",
+    "hit_points": 33,
+    "id": "animated_armor",
+    "intelligence": 1,
+    "languages": "",
+    "name": "Animated Armor",
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 6",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The armor is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the armor must succeed on a Constitution saving throw against the caster's spell save DC or fall unconscious for 1 minute.",
+            "name": "Antimagic Susceptibility"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While the armor remains motionless, it is indistinguishable from a normal suit of armor.",
+            "name": "False Appearance"
+        }
+    ],
+    "speed": "25 ft.",
+    "speed_json": {
+        "walk": 25
+    },
+    "strength": 14,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 3
+}

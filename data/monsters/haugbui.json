@@ -1,0 +1,83 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The haugbui makes two psychic claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 10,
+            "damage_dice": "6d8",
+            "desc": "Ranged Magical Attack: +10 to hit, range 40 ft., one target. Hit: 32 (6d8 + 5) psychic damage.",
+            "name": "Psychic Claw"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "arcana": 7,
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "challenge_rating": "13",
+    "charisma": 16,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
+    "constitution": 18,
+    "constitution_save": 9,
+    "damage_immunities": "poison; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "damage_resistances": "cold, lightning, necrotic",
+    "dexterity": 17,
+    "dexterity_save": 8,
+    "history": 7,
+    "hit_dice": "16d8+64",
+    "hit_points": 136,
+    "id": "haugbui",
+    "intelligence": 15,
+    "intimidation": 8,
+    "languages": "the languages it spoke in life; telepathy 120 ft.",
+    "name": "Haugbui",
+    "perception": 10,
+    "religion": 12,
+    "senses": "truesight 60 ft., passive Perception 20",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The haugbui can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object.",
+            "name": "Incorporeal Movement"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the haugbui's innate spellcasting ability is Wisdom (spell save DC 18). It can innately cast the following spells, requiring no material components:\n\nconstant: detect thoughts, invisibility, mage hand, scrying\n\nat will: dancing lights, druidcraft, mending, spare the dying\n\n7/day each: bane, create or destroy water, fog cloud, purify food and drink\n\n5/day each: blindness/deafness, gust of wind, locate object, moonbeam, shatter\n\n3/day each: bestow curse, dispel magic, plant growth, remove curse, telekinesis\n\n1/day each: blight, contagion, dream\n\n1/week each: geas, hallow",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If the haugbui fails a saving throw it can choose to succeed instead.",
+            "name": "Legendary Resistance (3/Day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "An invisible magical eye is created under the haugbui's control, allowing it to watch its territory without leaving the burial mound. The eye travels at the speed of thought and can be up to 5 miles from the haugbui's location. The haugbui can see and hear as if it were standing at the eye's location, and it can use its innate spellcasting abilities as if it were at the eye's location. The eye can be noticed with a successful DC 18 Wisdom (Perception) check and can be dispelled as if it were 3rd-level spell. Spells that block other scrying spells work against Sepulchral Scrying as well. Unless dismissed by its creator or dispelled, lasts for up to 12 hours after its creation; only one can be created per 24-hour period.",
+            "name": "Sepulchral Scrying (1/Day)"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in sunlight, the haugbui has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight.",
+            "name": "Sunlight Sensitivity"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The haugbui has advantage on saving throws against any effect that turns undead.",
+            "name": "Turn Resistance"
+        }
+    ],
+    "speed": "0 ft., fly 40 ft.",
+    "speed_json": {
+        "fly": 40,
+        "hover": true,
+        "walk": 0
+    },
+    "strength": 18,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 20,
+    "wisdom_save": 10
+}

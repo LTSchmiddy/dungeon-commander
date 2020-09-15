@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 2,
+            "damage_dice": "1d8",
+            "desc": "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft., or +5 to hit, range 20/60 ft., one target. Hit: 4 (1d8) piercing damage if used with both hands to make a melee attack, or 6 (1d6 + 3) if thrown.",
+            "name": "Trident"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage.",
+            "name": "Shortbow"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": 13,
+    "armor_desc": "may be higher with armor",
+    "challenge_rating": "1/2",
+    "charisma": 15,
+    "constitution": 13,
+    "dexterity": 16,
+    "hit_dice": "6d8+6",
+    "hit_points": 33,
+    "id": "morphoi",
+    "intelligence": 14,
+    "languages": "Common",
+    "name": "Morphoi",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The morphoi can breathe air and water.",
+            "name": "Amphibious"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The morphoi is immune to all time-related spells and effects.",
+            "name": "Immunity to Temporal Effects"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The morphoi can use its action to polymorph into a Medium creature or back into its true form. Its statistics are the same in each form. Any equipment the morphoi is carrying or wearing isn't transformed. The morphoi reverts to its true form when it dies.",
+            "name": "Shapeshifter"
+        }
+    ],
+    "speed": "30 ft., swim 30 ft.",
+    "speed_json": {
+        "swim": 30,
+        "walk": 30
+    },
+    "strength": 11,
+    "subtype": "shapechanger",
+    "type": "plant",
+    "wisdom": 10
+}

@@ -1,0 +1,107 @@
+2020-09-14 23:41:16,926 INFO sqlalchemy.engine.base.Engine SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+[2020-09-14 23:41:16,926] INFO in log: SELECT CAST('test plain returns' AS VARCHAR(60)) AS anon_1
+2020-09-14 23:41:16,928 INFO sqlalchemy.engine.base.Engine ()
+[2020-09-14 23:41:16,928] INFO in log: ()
+2020-09-14 23:41:16,928 INFO sqlalchemy.engine.base.Engine SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+[2020-09-14 23:41:16,928] INFO in log: SELECT CAST('test unicode returns' AS VARCHAR(60)) AS anon_1
+2020-09-14 23:41:16,929 INFO sqlalchemy.engine.base.Engine ()
+[2020-09-14 23:41:16,929] INFO in log: ()
+2020-09-14 23:41:16,929 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("item")
+[2020-09-14 23:41:16,929] INFO in log: PRAGMA main.table_info("item")
+2020-09-14 23:41:16,930 INFO sqlalchemy.engine.base.Engine ()
+[2020-09-14 23:41:16,930] INFO in log: ()
+2020-09-14 23:41:16,931 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("spell")
+[2020-09-14 23:41:16,931] INFO in log: PRAGMA main.table_info("spell")
+2020-09-14 23:41:16,931 INFO sqlalchemy.engine.base.Engine ()
+[2020-09-14 23:41:16,931] INFO in log: ()
+2020-09-14 23:41:16,931 INFO sqlalchemy.engine.base.Engine PRAGMA main.table_info("weapon")
+[2020-09-14 23:41:16,931] INFO in log: PRAGMA main.table_info("weapon")
+2020-09-14 23:41:16,932 INFO sqlalchemy.engine.base.Engine ()
+[2020-09-14 23:41:16,932] INFO in log: ()
+D:\Github Repos\dungeon-commander\templates
+D:\Github Repos\dungeon-commander\static
+ Found Free Port @: 10000
+2020-09-14 23:41:18,854 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+[2020-09-14 23:41:18,854] INFO in log: BEGIN (implicit)
+2020-09-14 23:41:18,856 INFO sqlalchemy.engine.base.Engine SELECT spell.id AS spell_id, spell.level AS spell_level, spell.name AS spell_name, spell.spell_desc AS spell_spell_desc, spell.higher_level AS spell_higher_level, spell.casting_time AS spell_casting_time, spell.casting_range AS spell_casting_range, spell.verbal_components AS spell_verbal_components, spell.semantic_components AS spell_semantic_components, spell.material_components AS spell_material_components, spell.materials AS spell_materials, spell.duration AS spell_duration, spell.ritual AS spell_ritual, spell.concentration AS spell_concentration, spell.magic_school AS spell_magic_school, spell.classes AS spell_classes 
+FROM spell 
+WHERE spell.id = ?
+ LIMIT ? OFFSET ?
+[2020-09-14 23:41:18,856] INFO in log: SELECT spell.id AS spell_id, spell.level AS spell_level, spell.name AS spell_name, spell.spell_desc AS spell_spell_desc, spell.higher_level AS spell_higher_level, spell.casting_time AS spell_casting_time, spell.casting_range AS spell_casting_range, spell.verbal_components AS spell_verbal_components, spell.semantic_components AS spell_semantic_components, spell.material_components AS spell_material_components, spell.materials AS spell_materials, spell.duration AS spell_duration, spell.ritual AS spell_ritual, spell.concentration AS spell_concentration, spell.magic_school AS spell_magic_school, spell.classes AS spell_classes 
+FROM spell 
+WHERE spell.id = ?
+ LIMIT ? OFFSET ?
+2020-09-14 23:41:18,857 INFO sqlalchemy.engine.base.Engine ('MinorIllusion', 1, 0)
+[2020-09-14 23:41:18,857] INFO in log: ('MinorIllusion', 1, 0)
+processed...
+lang processed...
+2020-09-14 23:41:18,859 INFO sqlalchemy.engine.base.Engine SELECT item.id AS item_id, item.name AS item_name, item.item_desc AS item_item_desc, item.rarity AS item_rarity, item.type AS item_type, item.attunement AS item_attunement 
+FROM item 
+WHERE item.id = ?
+ LIMIT ? OFFSET ?
+[2020-09-14 23:41:18,859] INFO in log: SELECT item.id AS item_id, item.name AS item_name, item.item_desc AS item_item_desc, item.rarity AS item_rarity, item.type AS item_type, item.attunement AS item_attunement 
+FROM item 
+WHERE item.id = ?
+ LIMIT ? OFFSET ?
+2020-09-14 23:41:18,860 INFO sqlalchemy.engine.base.Engine ('bag_of_holding', 1, 0)
+[2020-09-14 23:41:18,860] INFO in log: ('bag_of_holding', 1, 0)
+2020-09-14 23:41:18,862 INFO sqlalchemy.engine.base.Engine ROLLBACK
+[2020-09-14 23:41:18,862] INFO in log: ROLLBACK
+2020-09-14 23:41:18,863 INFO sqlalchemy.engine.base.Engine BEGIN (implicit)
+[2020-09-14 23:41:18,863] INFO in log: BEGIN (implicit)
+2020-09-14 23:41:18,865 INFO sqlalchemy.engine.base.Engine SELECT weapon.id AS weapon_id, weapon.name AS weapon_name, weapon.weap_class AS weapon_weap_class, weapon.ability AS weapon_ability, weapon.attack_bonus AS weapon_attack_bonus, weapon.base_damage AS weapon_base_damage, weapon.cost AS weapon_cost, weapon.damage_bonus AS weapon_damage_bonus, weapon.damage_type AS weapon_damage_type, weapon.features_applied AS weapon_features_applied, weapon.is_finesse AS weapon_is_finesse, weapon.properties AS weapon_properties, weapon.weight AS weapon_weight, weapon.original_json AS weapon_original_json 
+FROM weapon 
+WHERE weapon.id = ?
+ LIMIT ? OFFSET ?
+[2020-09-14 23:41:18,865] INFO in log: SELECT weapon.id AS weapon_id, weapon.name AS weapon_name, weapon.weap_class AS weapon_weap_class, weapon.ability AS weapon_ability, weapon.attack_bonus AS weapon_attack_bonus, weapon.base_damage AS weapon_base_damage, weapon.cost AS weapon_cost, weapon.damage_bonus AS weapon_damage_bonus, weapon.damage_type AS weapon_damage_type, weapon.features_applied AS weapon_features_applied, weapon.is_finesse AS weapon_is_finesse, weapon.properties AS weapon_properties, weapon.weight AS weapon_weight, weapon.original_json AS weapon_original_json 
+FROM weapon 
+WHERE weapon.id = ?
+ LIMIT ? OFFSET ?
+2020-09-14 23:41:18,865 INFO sqlalchemy.engine.base.Engine ('PoopAxe', 1, 0)
+[2020-09-14 23:41:18,865] INFO in log: ('PoopAxe', 1, 0)
+[2020-09-14 23:41:18,936] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:18] "[37mGET / HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:18,950] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:18] "[37mGET /static/libs/bootstrap/css/bootstrap.css HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:18,959] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:18] "[37mGET /static/libs/josdejong-json-editor/jsoneditor.min.css HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:18,962] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:18] "[37mGET /static/styles/fa5-icons.css HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:18,966] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:18] "[37mGET /static/styles/main.css HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:18,969] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:18] "[37mGET /static/libs/jquery/jquery.js HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:18,976] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:18] "[37mGET /static/libs/popper/popper.js HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:18,980] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:18] "[37mGET /static/libs/bootstrap/js/bootstrap.js HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:18,984] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:18] "[37mGET /static/libs/josdejong-json-editor/jsoneditor.js HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:19,011] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:19] "[37mGET /static/libs/sortablejs/Sortable.js HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:19,015] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:19] "[37mGET /static/libs/ace-editor/ace.js HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:19,028] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:19] "[37mGET /static/libs/showdown/showdown.js HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:19,033] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:19] "[37mGET /static/scripts/python_wrapper_2.js HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:19,036] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:19] "[37mGET /static/scripts/components/sidebar.js HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:19,038] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:19] "[37mGET /static/scripts/components/tab_section_view.js HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:19,040] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:19] "[37mGET /static/scripts/components/time_func.js HTTP/1.1[0m" 200 -
+[2020-09-14 23:41:19,043] INFO in _internal: 127.0.0.1 - - [14/Sep/2020 23:41:19] "[37mGET /static/scripts/common.js HTTP/1.1[0m" 200 -
+CLOSED
+TRYING TO SHUTDOWN...
+[2020-09-14 23:42:45,680] ERROR in base: Exception during reset or similar
+Traceback (most recent call last):
+  File "D:\Github Repos\dungeon-commander\venv\lib\site-packages\sqlalchemy\pool\base.py", line 697, in _finalize_fairy
+    fairy._reset(pool)
+  File "D:\Github Repos\dungeon-commander\venv\lib\site-packages\sqlalchemy\pool\base.py", line 893, in _reset
+    pool._dialect.do_rollback(self)
+  File "D:\Github Repos\dungeon-commander\venv\lib\site-packages\sqlalchemy\engine\default.py", line 543, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 20732 and this is thread id 3908.
+[2020-09-14 23:42:45,685] ERROR in base: Exception closing connection <sqlite3.Connection object at 0x04FF8720>
+Traceback (most recent call last):
+  File "D:\Github Repos\dungeon-commander\venv\lib\site-packages\sqlalchemy\pool\base.py", line 697, in _finalize_fairy
+    fairy._reset(pool)
+  File "D:\Github Repos\dungeon-commander\venv\lib\site-packages\sqlalchemy\pool\base.py", line 893, in _reset
+    pool._dialect.do_rollback(self)
+  File "D:\Github Repos\dungeon-commander\venv\lib\site-packages\sqlalchemy\engine\default.py", line 543, in do_rollback
+    dbapi_connection.rollback()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 20732 and this is thread id 3908.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Github Repos\dungeon-commander\venv\lib\site-packages\sqlalchemy\pool\base.py", line 270, in _close_connection
+    self._dialect.do_close(connection)
+  File "D:\Github Repos\dungeon-commander\venv\lib\site-packages\sqlalchemy\engine\default.py", line 549, in do_close
+    dbapi_connection.close()
+sqlite3.ProgrammingError: SQLite objects created in a thread can only be used in that same thread. The object was created in thread id 20732 and this is thread id 3908.

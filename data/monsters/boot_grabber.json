@@ -1,0 +1,54 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d4+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage and the target is subjected to its Adhesive trait. Until this grapple ends, the target is restrained, and the boot grabber can't make adhesive hands attacks against other targets.",
+            "name": "Adhesive Hands"
+        },
+        {
+            "desc": "The boot grabber targets one creature it can see within 60 feet of it. It emits a high frequency humming noise which can only be heard by the target. The target must succeed on a DC 11 Wisdom saving throw or move toward the boot grabber on its turn by the shortest and most direct route, ending its turn when it comes within 5 feet of the boot grabber.",
+            "name": "Unearthly Hum"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": "11",
+    "challenge_rating": "1/2",
+    "charisma": "2",
+    "condition_immunities": "prone",
+    "constitution": "14",
+    "damage_resistances": "acid",
+    "dexterity": "12",
+    "hit_dice": "4d6+8",
+    "hit_points": "22",
+    "id": "boot_grabber",
+    "intelligence": "4",
+    "languages": "understands Void Speech but can't speak",
+    "name": "Boot Grabber",
+    "perception": 3,
+    "senses": "blindsight 60 ft. (blind beyond this radius), tremorsense 60 ft., passive Perception 13",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The boot grabber adheres to anything that touches it. A Large or smaller creature adhered to the boot grabber is also grappled by it (escape DC 13). Ability checks made to escape this grapple have disadvantage.",
+            "name": "Adhesive"
+        },
+        {
+            "desc": "The boot grabber can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Amorphous"
+        },
+        {
+            "desc": "While the boot grabber remains motionless, it is indistinguishable from a dirty puddle of water.",
+            "name": "False Appearance"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "stealth": 3,
+    "strength": "17",
+    "subtype": "",
+    "type": "aberration",
+    "wisdom": "12"
+}

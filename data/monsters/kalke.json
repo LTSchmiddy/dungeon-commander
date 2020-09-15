@@ -1,0 +1,53 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage.",
+            "name": "Dagger"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/4",
+    "charisma": 13,
+    "constitution": 12,
+    "dexterity": 17,
+    "hit_dice": "2d6+2",
+    "hit_points": 9,
+    "id": "kalke",
+    "intelligence": 13,
+    "languages": "Abyssal, Common, Infernal",
+    "name": "Kalke",
+    "perception": 0,
+    "senses": "darkvision 120 ft., passive Perception 10",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "Kalkes can extinguish candles, lamps, lanterns and low-burning campfires within 120 feet as a bonus action.",
+            "name": "Extinguish Flames"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Kalkes can sense spellcasting in a 5-mile radius, as long as the effect is not innate.",
+            "name": "Detect Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Kalkes have advantage on saving throws against spells and magical effects.",
+            "name": "Magic Resistance"
+        }
+    ],
+    "speed": "30 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 30
+    },
+    "stealth": 5,
+    "strength": 8,
+    "subtype": "",
+    "type": "fiend",
+    "wisdom": 7
+}

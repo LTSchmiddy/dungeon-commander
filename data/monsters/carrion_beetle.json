@@ -1,0 +1,52 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The beetle makes one bite attack and two claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d12",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft, one target. Hit: 10 (1d12 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The carrion beetle spits a line of acid that is 30 ft. long and 5 ft. wide. Each creature in that line takes 32 (5d12) acid damage, or half damage with a successful DC 13 Dexterity saving throw.",
+            "name": "Acid Spit (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 15,
+    "armor_desc": "natural armor",
+    "challenge_rating": "4",
+    "charisma": 10,
+    "condition_immunities": "paralysis",
+    "constitution": 17,
+    "dexterity": 12,
+    "hit_dice": "15d10+45",
+    "hit_points": 127,
+    "id": "carrion_beetle",
+    "intelligence": 1,
+    "languages": "-",
+    "name": "Carrion Beetle",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Large",
+    "speed": "30 ft., burrow 20 ft., climb 10 ft.",
+    "speed_json": {
+        "burrow": 20,
+        "climb": 10,
+        "walk": 30
+    },
+    "strength": 19,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 13
+}

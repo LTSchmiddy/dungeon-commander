@@ -1,0 +1,60 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The imperial ghoul makes one bite attack and one claws attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d8+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage, and if the target creature is humanoid it must succeed on a DC 11 Constitution saving throw or contract darakhul fever.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "4d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach, one target. Hit: 17 (4d6 + 3) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 11 Constitution saving throw or be paralyzed for 1 minute. The target repeats the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +4 to hit, range 80/320, one target. Hit: 8 (1d8 + 2) piercing damage.",
+            "name": "Light Crossbow"
+        }
+    ],
+    "alignment": "lawful evil",
+    "armor_class": 16,
+    "armor_desc": "breastplate",
+    "challenge_rating": "4",
+    "charisma": 14,
+    "condition_immunities": "charmed, exhaustion, poisoned",
+    "constitution": 12,
+    "damage_immunities": "poison",
+    "dexterity": 14,
+    "hit_dice": "17d8+17",
+    "hit_points": 93,
+    "id": "ghoul,_imperial",
+    "intelligence": 13,
+    "languages": "Common, Darakhul, Undercommon",
+    "name": "Ghoul, Imperial",
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The iron ghoul and any ghouls within 30 feet of it have advantage on saving throws against effects that turn undead.",
+            "name": "Turning Defiance"
+        }
+    ],
+    "speed": "30 ft., burrow 15 ft.",
+    "speed_json": {
+        "burrow": 15,
+        "walk": 30
+    },
+    "strength": 16,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 14
+}

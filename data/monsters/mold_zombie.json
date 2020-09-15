@@ -1,0 +1,55 @@
+{
+    "actions": [
+        {
+            "desc": "The zombie makes two slam attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 7 (2d6) necrotic damage.",
+            "name": "Slam"
+        },
+        {
+            "desc": "The zombie breathes a cloud of spores in 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or take 10 (3d6) necrotic damage and contract iumenta pox (see Iumenta Pox sidebar).",
+            "name": "Plague Breath (Recharge 6)"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "13",
+    "armor_desc": "natural armor",
+    "challenge_rating": "3",
+    "charisma": "5",
+    "condition_immunities": "exhaustion, poisoned",
+    "constitution": "16",
+    "damage_immunities": "necrotic, poison",
+    "dexterity": "8",
+    "hit_dice": "10d8+30",
+    "hit_points": "75",
+    "id": "mold_zombie",
+    "intelligence": "3",
+    "languages": "-",
+    "name": "Mold Zombie",
+    "senses": "darkvision 60 ft., passive Perception 8",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "When the zombie is reduced to 0 hp and doesn't survive with its Undead Fortitude, it explodes in a cloud of spores. Each creature within 5 feet of the zombie must succeed on a DC 13 Constitution saving throw or take 9 (2d8) necrotic damage and contract iumenta pox (see Iumenta Pox sidebar).",
+            "name": "Spore Death"
+        },
+        {
+            "desc": "If damage reduces the zombie to 0 hp, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hp instead.",
+            "name": "Undead Fortitude"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "strength": "17",
+    "strength_save": 5,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": "6",
+    "wisdom_save": 0
+}

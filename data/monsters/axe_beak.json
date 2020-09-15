@@ -1,0 +1,37 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_bonus": 2,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage.",
+            "name": "Beak"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "challenge_rating": "1/4",
+    "charisma": 5,
+    "condition_immunities": "",
+    "constitution": 12,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 12,
+    "hit_dice": "3d10",
+    "hit_points": 19,
+    "id": "axe_beak",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Axe Beak",
+    "senses": "passive Perception 10",
+    "size": "Large",
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "strength": 14,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

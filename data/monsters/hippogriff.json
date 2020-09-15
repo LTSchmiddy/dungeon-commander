@@ -1,0 +1,58 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The hippogriff makes two attacks: one with its beak and one with its claws.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "1d10",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.",
+            "name": "Beak"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage.",
+            "name": "Claws"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "challenge_rating": "1",
+    "charisma": 8,
+    "condition_immunities": "",
+    "constitution": 13,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 13,
+    "hit_dice": "3d10+3",
+    "hit_points": 19,
+    "id": "hippogriff",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Hippogriff",
+    "perception": 5,
+    "senses": "passive Perception 15",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The hippogriff has advantage on Wisdom (Perception) checks that rely on sight.",
+            "name": "Keen Sight"
+        }
+    ],
+    "speed": "40 ft, fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 40
+    },
+    "strength": 17,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 12
+}

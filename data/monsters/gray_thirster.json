@@ -1,0 +1,60 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The gray thirster makes two claw attacks and one Withering Turban attack",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 5 (1d4 + 3) necrotic damage. If the target failed a saving throw against the Thirst trait at any point in this encounter, its hit point maximum is reduced by an amount equal to the damage it took from this attack. This reduction lasts until the target has no exhaustion levels.",
+            "name": "Withering Turban"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The gray thirster draws the moisture from a 20-foot radius area centered on itself. Nonmagical water and other liquids in this area turn to dust. Each creature that is neither undead nor a construct in the area takes 9 (2d8) necrotic damage, or half damage with a successful DC 13 Constitution saving throw. Plants, oozes, and creatures with the Amphibious, Water Breathing, or Water Form traits have disadvantage on this saving throw. Liquids carried by a creature that makes a successful saving throw are not destroyed.",
+            "name": "Drought (1/Day)"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 13,
+    "armor_desc": "",
+    "challenge_rating": "2",
+    "charisma": 14,
+    "condition_immunities": "charmed, exhaustion, frightened, poisoned",
+    "constitution": 15,
+    "damage_immunities": "fire, poison",
+    "damage_resistances": "bludgeoning, necrotic",
+    "dexterity": 16,
+    "hit_dice": "6d8+12",
+    "hit_points": 39,
+    "id": "gray_thirster",
+    "intelligence": 6,
+    "languages": "understands all languages it knew in life but can't speak",
+    "name": "Gray Thirster",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The gray thirster projects a 30-foot aura of desiccating thirst. The first time a creature enters the aura on its turn, or when it starts its turn in the aura, it must make a successful DC 12 Constitution saving throw or gain one level of exhaustion. If the saving throw is successful, the creature is immune to the gray thirster's Thirst for the next 24 hours.",
+            "name": "Thirst"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 5,
+    "strength": 12,
+    "subtype": "",
+    "type": "undead",
+    "wisdom": 12
+}

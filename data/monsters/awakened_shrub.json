@@ -1,0 +1,44 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 1,
+            "damage_bonus": -1,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 (1d4 - 1) slashing damage.",
+            "name": "Rake"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 9,
+    "challenge_rating": "0",
+    "charisma": 6,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "piercing",
+    "damage_vulnerabilities": "fire",
+    "dexterity": 8,
+    "hit_dice": "3d6",
+    "hit_points": 10,
+    "id": "awakened_shrub",
+    "intelligence": 10,
+    "languages": "one language known by its creator",
+    "name": "Awakened Shrub",
+    "senses": "passive Perception 10",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "While the shrub remains motionless, it is indistinguishable from a normal shrub.",
+            "name": "False Appearance"
+        }
+    ],
+    "speed": "20 ft.",
+    "speed_json": {
+        "walk": 20
+    },
+    "strength": 3,
+    "subtype": "",
+    "type": "plant",
+    "wisdom": 10
+}

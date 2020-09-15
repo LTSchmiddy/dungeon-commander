@@ -1,0 +1,66 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "A tophet makes two attacks, no more than one of which can be a gout of flame.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Melee Weapon Attack. +10 to hit, reach 5 ft., one target.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The target is also knocked inside the tophet's burning belly if the attack scores a critical hit.",
+            "name": "Hit: 12 (1d10+7) bludgeoning damage"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The tophet targets a point within 100 feet of itself that it can see. All targets within 10 feet of that point take 22 (4d10) fire damage, or half damage with a successful DC 16 Dexterity saving throw.",
+            "name": "Gout of Flame"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "8",
+    "charisma": 10,
+    "condition_immunities": "exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 20,
+    "constitution_save": 8,
+    "damage_immunities": "fire, cold, poison",
+    "damage_resistances": "necrotic",
+    "dexterity": 10,
+    "dexterity_save": 3,
+    "hit_dice": "16d12+80",
+    "hit_points": 184,
+    "id": "tophet",
+    "intelligence": 6,
+    "languages": "Common",
+    "name": "Tophet",
+    "perception": 3,
+    "senses": "darkvision 200 ft., passive Perception 13",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A tophet's inner fire can be ignited or doused at will. Its heat is such that all creatures have resistance to cold damage while within 30 feet of the tophet.",
+            "name": "Fiery Heart"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Creatures inside a tophet's burning core take 21 (6d6) fire damage at the start of each of the tophet's turns. Escaping from a tophet's belly takes 10 feet of movement and a successful DC 16 Dexterity (Acrobatics) check.",
+            "name": "Burning Belly"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 24,
+    "strength_save": 10,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 10
+}

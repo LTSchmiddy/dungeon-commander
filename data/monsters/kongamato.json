@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The kongamato makes one bite attack and two claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "4d6",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the target is restrained and the kongamato can't bite another target. When the kongamato moves, any target it is grappling moves with it.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d6",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) slashing damage.",
+            "name": "Claw"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 7,
+    "constitution": 14,
+    "dexterity": 18,
+    "hit_dice": "15d10+30",
+    "hit_points": 112,
+    "id": "kongamato",
+    "intelligence": 2,
+    "languages": "-",
+    "name": "Kongamato",
+    "perception": 3,
+    "senses": "passive Perception $1",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The kongamato doesn't provoke an opportunity attacks when it flies out of an enemy's reach.",
+            "name": "Flyby"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The kongamato deals double damage to objects and structures made of wood or lighter materials.",
+            "name": "Breaker of Boats"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A single kongamato can carry away prey up to 50 lbs, or a single rider under that weight. A grouo of them can carry up to 100 lbs.",
+            "name": "Carry Off"
+        }
+    ],
+    "speed": "10 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 10
+    },
+    "strength": 19,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

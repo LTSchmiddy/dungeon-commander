@@ -1,0 +1,62 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 10,
+            "damage_dice": "4d12",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 15 ft., one target. Hit: 31 (4d12 + 5) bludgeoning damage plus 9 (2d8) piercing damage.",
+            "name": "Slam"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The slow storm exhales its electrical power in a 30-foot cone. Targets in the area of effect take 54 (12d8) lightning damage, 1d4 Dexterity loss, and suffer bone wrack. A successful DC 18 Constitution saving throw halves the Dexterity loss and prevents the bone wrack.",
+            "name": "Static Shock (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 19,
+    "armor_desc": "",
+    "challenge_rating": "15",
+    "charisma": 11,
+    "condition_immunities": "prone",
+    "constitution": 22,
+    "constitution_save": 11,
+    "damage_immunities": "lightning",
+    "damage_resistances": "acid, cold, fire",
+    "dexterity": 19,
+    "dexterity_save": 9,
+    "hit_dice": "18d12+108",
+    "hit_points": 225,
+    "id": "slow_storm",
+    "intelligence": 11,
+    "languages": "Common, Primordial",
+    "name": "Slow Storm",
+    "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 13",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "When hit by the slow storm's slam or breath weapon attack, the storm absorbs moisture from the living creatures' joints, causing stiffness and pain. In addition to 1d4 Dexterity drain, any creature caught within the slow storm's breath weapon that fails another DC 18 Constitution save suffers crushing pain in bones and joints. Any round in which the pained creature moves, it takes 1d4 necrotic damage per 5 feet moved. Bone wracking pain lasts until the affected creature regains at least 1 point of lost Dexterity.",
+            "name": "Bone Wrack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the slow storm's innate spellcasting ability is Wisdom (spell save DC 16). It can innately cast the following spells, requiring no material components:\n\nat will: lightning bolt\n\n3/day: chain lightning",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A creature that enters or starts its turn inside the slow storm's whirlwind takes 9 (2d8) force damage. A creature can take this damage just once per round. In addition, ranged missile weapon attacks against the slow storm have disadvantage because of the high-speed wind.",
+            "name": "Storm Form"
+        }
+    ],
+    "speed": "0 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "hover": true,
+        "walk": 0
+    },
+    "strength": 20,
+    "subtype": "",
+    "type": "elemental",
+    "wisdom": 16
+}

@@ -1,0 +1,70 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The subek makes one bite attack and one claws attack. If both attacks hit the same target, the subek can make a thrash attack as a bonus action against that target.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "4d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 4) slashing damage.",
+            "name": "Claws"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d10",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d10) slashing damage.",
+            "name": "Thrash"
+        }
+    ],
+    "alignment": "lawful neutral",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 13,
+    "constitution": 18,
+    "dexterity": 10,
+    "history": 5,
+    "hit_dice": "8d10+32",
+    "hit_points": 76,
+    "id": "subek",
+    "intelligence": 14,
+    "investigation": 5,
+    "languages": "Common",
+    "name": "Subek",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The subek can hold its breath for 15 minutes.",
+            "name": "Hold Breath"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "During flood season, the subek is overcome with bloodthirsty malice. Its alignment shifts to chaotic evil, it gains the Blood Frenzy trait, and it loses the capacity to speak Common and its bonuses to History and Investigation.",
+            "name": "Flood Fever"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The subek has advantage on melee attack rolls against any creature that doesn't have all its hit points.",
+            "name": "Blood Frenzy"
+        }
+    ],
+    "speed": "30 ft., swim 20 ft.",
+    "speed_json": {
+        "swim": 20,
+        "walk": 30
+    },
+    "strength": 19,
+    "subtype": "subek",
+    "type": "humanoid",
+    "wisdom": 13
+}

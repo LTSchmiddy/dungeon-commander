@@ -1,0 +1,43 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 4,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage, and the target is grappled (escape DC 8). While grappled, the target cannot speak or cast spells with verbal components.",
+            "name": "Whip-claw"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/4",
+    "charisma": 2,
+    "condition_immunities": "charmed, frightened",
+    "constitution": 14,
+    "damage_immunities": "psychic",
+    "dexterity": 14,
+    "hit_dice": "4d4+8",
+    "hit_points": 18,
+    "id": "garroter_crab",
+    "intelligence": 1,
+    "languages": "-",
+    "name": "Garroter Crab",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Tiny",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The crab can breathe air and water.",
+            "name": "Amphibious"
+        }
+    ],
+    "speed": "30 ft., swim 20 ft.",
+    "speed_json": {
+        "swim": 20,
+        "walk": 30
+    },
+    "strength": 7,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

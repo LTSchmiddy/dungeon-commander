@@ -1,0 +1,56 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The noctiny makes two melee attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage or 8 (1d8 + 4) bludgeoning damage if used in two hands.",
+            "name": "Pact Staff"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 13,
+    "armor_desc": "studded leather armor",
+    "challenge_rating": "2",
+    "charisma": 16,
+    "condition_immunities": "frightened",
+    "constitution": 14,
+    "dexterity": 13,
+    "hit_dice": "8d8+16",
+    "hit_points": 52,
+    "id": "noctiny",
+    "intelligence": 10,
+    "languages": "Common, plus the language spoken by the noctini's fext master",
+    "name": "Noctiny",
+    "senses": "passive Perception $1",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The noctiny has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "One of the noctiny's weapons is infused with power. Its attacks with this weapon count as magical, and it adds its Charisma bonus to the weapon's damage (included below).",
+            "name": "Pact Wrath"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the noctiny is a 3rd-level spellcaster. Its spellcasting ability score is Charisma (save DC 13, +5 to hit with spell attacks). It knows the following warlock spells.\n\ncantrips (at will): chill touch, eldritch blast, poison spray\n\n1st level (4 slots): armor of agathys, charm person, hellish rebuke, hex\n\n2nd level (2 slots): crown of madness, misty step",
+            "name": "Spellcasting"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 12,
+    "subtype": "noctiny",
+    "type": "humanoid",
+    "wisdom": 11
+}

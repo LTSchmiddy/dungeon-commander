@@ -1,0 +1,62 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 3 (1d4 + 1) necrotic damage, and the target's Strength score is reduced by one-half that amount. The target dies if this reduces its Strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a new shadow rises from the corpse 1d4 hours later.",
+            "name": "Strength Drain"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1/8",
+    "charisma": 8,
+    "condition_immunities": "exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
+    "constitution": 10,
+    "damage_immunities": "necrotic, poison",
+    "damage_resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
+    "dexterity": 13,
+    "hit_dice": "2d8",
+    "hit_points": 9,
+    "id": "shroud",
+    "intelligence": 2,
+    "languages": "Common",
+    "name": "Shroud",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The shroud can move through a space as narrow as 1 inch wide without squeezing.",
+            "name": "Amorphous"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Shrouds instantly become shadows once they cause a total of 12 damage. Any damage they've suffered is subtracted from the shadow's total hit points or abilities.",
+            "name": "Shadow Evolution"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When in dim light or darkness, the shroud can take the Hide action as a bonus action.",
+            "name": "Shroud Stealth"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "While in sunlight, the shroud has disadvantage on attack rolls, ability checks, and saving throws.",
+            "name": "Sunlight Weakness"
+        }
+    ],
+    "speed": "0 ft., fly 30 ft.",
+    "speed_json": {
+        "fly": 30,
+        "hover": true,
+        "walk": 0
+    },
+    "stealth": 3,
+    "strength": 4,
+    "subtype": "",
+    "type": "undead",
+    "vulnerable": "radiant",
+    "wisdom": 10
+}

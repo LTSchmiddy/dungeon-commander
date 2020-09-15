@@ -1,0 +1,85 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The elvish veteran archer makes two melee attacks or three ranged attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit: 7 (1d6 + 4) piercing damage.",
+            "name": "Shortsword"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d8",
+            "desc": "Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage.",
+            "name": "Longbow"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The elvish archer makes one ranged attack against every enemy within 10 feet of a point it can see.",
+            "name": "Volley (Recharge 6)"
+        }
+    ],
+    "alignment": "chaotic good or chaotic neutral",
+    "armor_class": 15,
+    "armor_desc": "studded leather",
+    "challenge_rating": "3",
+    "charisma": 11,
+    "constitution": 12,
+    "dexterity": 16,
+    "hit_dice": "14d8+14",
+    "hit_points": 77,
+    "id": "elvish_veteran_archer",
+    "intelligence": 11,
+    "languages": "Common, Elvish",
+    "name": "Elvish Veteran Archer",
+    "nature": 2,
+    "perception": 5,
+    "senses": "passive Perception $1",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The elvish veteran archer has advantage on Wisdom (Survival) checks to track beasts and on Intelligence (Nature) checks to recall information about beasts.",
+            "name": "Beast Hunter"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The elvish veteran archer has advantage on saving throws against being charmed, and magic can't put the elvish archer to sleep.",
+            "name": "Fey Ancestry"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The elvish veteran archer has advantage on Wisdom (Perception) checks that rely on hearing or sight.",
+            "name": "Keen Hearing and Sight"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The elvish veteran archer's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The elvish veteran archer can use Stealth while traveling at a normal pace.",
+            "name": "Stealthy Traveler"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If the elvish veteran archer surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack.",
+            "name": "Surprise Attack"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 5,
+    "strength": 11,
+    "subtype": "elf",
+    "survival": 3,
+    "type": "Humanoid",
+    "wisdom": 13
+}

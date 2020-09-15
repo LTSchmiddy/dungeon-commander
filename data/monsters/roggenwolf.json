@@ -1,0 +1,45 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d8+3",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) necrotic damage.",
+            "name": "Bite"
+        },
+        {
+            "desc": "The roggenwolf lets loose a howl that can only be heard inside the minds of nearby creatures. Each creature within 30 feet of the roggenwolf that isn't an undead or a construct must succeed on a DC 13 Wisdom saving throw or become frightened and restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending both effects on itself on a success.",
+            "name": "Howl (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": "13",
+    "challenge_rating": "2",
+    "charisma": "14",
+    "constitution": "13",
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks not made with silver",
+    "dexterity": "16",
+    "hit_dice": "11d8+11",
+    "hit_points": "60",
+    "id": "roggenwolf",
+    "intelligence": "5",
+    "languages": "-",
+    "name": "Roggenwolf",
+    "perception": 3,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "desc": "The roggenwolf has advantage on Wisdom (Perception) checks that rely on hearing and smell.",
+            "name": "Keen Hearing and Smell"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "stealth": 5,
+    "strength": "14",
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": "13"
+}

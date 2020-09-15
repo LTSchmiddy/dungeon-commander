@@ -1,0 +1,68 @@
+{
+    "acrobatics": 6,
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The dragon makes one bite attack and two claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d6+3",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "2d10+3",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (2d10 + 3) slashing damage, and the target loses 3 hit point from bleeding at the start of each of its turns for six rounds unless it receives magical healing. Bleeding damage is cumulative; the target loses 3 hp per round for each bleeding wound it has taken from a mithral dragon's claws.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A mithral dragon can spit a 50-foot-long, 5-foot-wide line of metallic shards. Targets in its path take 21 (6d6) magical slashing damage and lose another 5 hit points from bleeding at the start of their turns for 6 rounds; slashing damage is halved by a successful DC 12 Dexterity saving throw, but bleeding damage is not affected. Only magical healing stops the bleeding before 6 rounds. The shards dissolve into wisps of smoke 1 round after the breath weapon's use",
+            "name": "Breath Weapon (Recharge 5-6)"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": 14,
+    "charisma_save": 5,
+    "condition_immunities": "charmed",
+    "constitution": 13,
+    "constitution_save": 4,
+    "damage_immunities": "acid, thunder",
+    "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 22,
+    "dexterity_save": 9,
+    "hit_dice": "16d8+20",
+    "hit_points": 92,
+    "id": "young_mithral_dragon",
+    "insight": 5,
+    "intelligence": 14,
+    "languages": "Celestial, Common, Draconic, Primordial",
+    "name": "Young Mithral Dragon",
+    "perception": 5,
+    "persuasion": 5,
+    "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 15",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the dragon's innate spellcasting ability is Intelligence. It can innately cast the following spells, requiring no material components:\n\nat will: tongues\n\n3/day: enhance ability",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "50 ft., fly 60 ft.",
+    "speed_json": {
+        "fly": 60,
+        "walk": 50
+    },
+    "strength": 13,
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": 15,
+    "wisdom_save": 5
+}

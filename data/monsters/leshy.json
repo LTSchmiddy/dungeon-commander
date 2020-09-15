@@ -1,0 +1,64 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The leshy makes two club attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The leshy appears to change its size, becoming as tall as a massive oak (Gargantuan) or as short as a blade of grass (Tiny). The change is entirely illusory, so the leshy's statistics do not change.",
+            "name": "Change Size"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage.",
+            "name": "Club"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1",
+    "charisma": 16,
+    "constitution": 14,
+    "deception": 5,
+    "dexterity": 12,
+    "hit_dice": "13d8+26",
+    "hit_points": 84,
+    "id": "leshy",
+    "intelligence": 14,
+    "languages": "Common, Elvish, Sylvan",
+    "name": "Leshy",
+    "perception": 4,
+    "senses": "darkvision 60 ft., passive Perception 14",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the leshy's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components:\n\nat will: animal friendship, pass without trace, speak with animals\n\n1/day each: entangle, plant growth, shillelagh, speak with plants, hideous laughter",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A leshy has advantage on Stealth checks if it is at least lightly obscured by foliage.",
+            "name": "Camouflage"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A leshy can mimic the calls and voices of any creature it has heard. To use this ability, the leshy makes a Charisma (Deception) check. Listeners who succeed on an opposed Wisdom (Insight) or Intelligence (Nature)-DM's choice-realize that something is mimicking the sound. The leshy has advantage on the check if it's mimicking a general type of creature (a crow's call, a bear's roar) and not a specific individual's voice.",
+            "name": "Mimicry"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "stealth": 3,
+    "strength": 16,
+    "subtype": "",
+    "survival": 4,
+    "type": "monstrosity",
+    "wisdom": 15
+}

@@ -1,0 +1,78 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The ushabti makes one attack with Medjai's scepter and one with its khopesh.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage plus 10 (3d6) poison damage.",
+            "name": "Medjai's Scepter"
+        },
+        {
+            "attack_bonus": 9,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage.",
+            "name": "Khopesh"
+        }
+    ],
+    "alignment": "unaligned",
+    "arcana": 4,
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "challenge_rating": "9",
+    "charisma": 9,
+    "charisma_save": 3,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 20,
+    "constitution_save": 7,
+    "damage_immunities": "poison; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 17,
+    "history": 4,
+    "hit_dice": "10d10+50",
+    "hit_points": 105,
+    "id": "ushabti",
+    "intelligence": 11,
+    "languages": "Ancient language of DM's choice",
+    "name": "Ushabti",
+    "perception": 8,
+    "senses": "darkvision 60 ft., passive Perception 18",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A creature that starts its turn within 15 feet of the ushabti must make a DC 17 Constitution saving throw, unless the ushabti is incapacitated. On a failed save, the creature has its breath stolen; it takes 9 (2d8) necrotic damage, and until the end of the ushabti's next turn, can't cast spells that require a verbal component or speak louder than a whisper. If a creature's saving throw is successful, the creature is immune to this ushabti's Dynastic Aura for the next 24 hours.",
+            "name": "Dynastic Aura"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If a creature within 30 feet of the ushabti regains hit points from a spell or a magical effect, the creature gains only half the normal number of hit points and the ushabti gains the other half.",
+            "name": "Healing Leech"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The ushabti is immune to any spell or effect that would alter its form.",
+            "name": "Immutable Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The ushabti has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The ushabti's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 21,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 19
+}

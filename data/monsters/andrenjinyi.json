@@ -1,0 +1,92 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The andrenjinyi makes two attacks, one with its bite and one with its constriction. If both attacks hit the same target, then the target is Swallowed Whole.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 15,
+            "damage_dice": "4d12",
+            "desc": "Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 36 (4d12 + 10) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 15,
+            "damage_dice": "4d12",
+            "desc": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 36 (4d12 + 10) bludgeoning damage, and the target is grappled (escape DC 20). Until this grapple ends the target is restrained, and the andrenjinyi can't constrict another target.",
+            "name": "Constrict"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The andrenjinyi can instantaneously teleport between sources of fresh water within 1 mile as an action. It can't move normally or take any other action on the turn when it uses this power. When this power is activated, a rainbow manifests between the origin and destination, lasting for 1 minute.",
+            "name": "Rainbow Arch"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "If the bite and constrict attacks hit the same target in one turn, the creature is swallowed whole. The target is blinded and restrained, and has total cover against attacks and other effects outside the andrenjinyi. The target takes no damage inside the andrenjinyi. The andrenjinyi can have three Medium-sized creatures or four Small-sized creatures swallowed at a time. If the andrenjinyi takes 20 damage or more in a single turn from a swallowed creature, the andrenjinyi must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 5 feet of the andrenjinyi. If the andrenjinyi is slain, a swallowed creature is no longer restrained by it and can escape from the andrenjinyi by using 15 feet of movement, exiting prone. The andrenjinyi can regurgitate swallowed creatures as a free action.",
+            "name": "Swallow Whole"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "When a creature is swallowed by an andrenjinyi, it must make a successful DC 19 Wisdom saving throw each round at the end of its turn or be affected by true polymorph into a new form chosen by the andrenjinyi. The effect is permanent until dispelled or ended with a wish or comparable magic.",
+            "name": "Transmuting Gullet"
+        }
+    ],
+    "alignment": "neutral",
+    "arcana": 5,
+    "armor_class": 18,
+    "armor_desc": "natural armor",
+    "challenge_rating": "15",
+    "charisma": 23,
+    "charisma_save": 11,
+    "constitution": 25,
+    "constitution_save": 12,
+    "damage_immunities": "psychic",
+    "damage_resistances": "acid, cold, fire, lightning",
+    "dexterity": 17,
+    "hit_dice": "13d20+91",
+    "hit_points": 228,
+    "id": "andrenjinyi",
+    "intelligence": 10,
+    "languages": "Common, Celestial, Giant, Sylvan",
+    "name": "Andrenjinyi",
+    "perception": 9,
+    "religion": 5,
+    "senses": "darkvision 60 ft., tremorsense 120 ft., passive Perception 19",
+    "size": "Gargantuan",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The andrenjinyi can breathe air and water.",
+            "name": "Amphibious"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "the andrenjinyi's spellcasting ability is Charisma (spell save DC 19, +11 to hit with spell attacks). It can innately cast the following spells, requiring only verbal components:\n\nat will: create water, speak with animals, stoneshape\n\n3/day each: control weather, dispel magic, reincarnate\n\n1/day each: blight, commune with nature, contagion, flesh to stone, plant growth",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The andrenjinyi has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The andrenjinyi's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        }
+    ],
+    "speed": "60 ft., burrow 20 ft., climb 20 ft., swim 60 ft.",
+    "speed_json": {
+        "burrow": 20,
+        "climb": 20,
+        "swim": 60,
+        "walk": 60
+    },
+    "strength": 30,
+    "subtype": "",
+    "type": "celestial",
+    "wisdom": 18,
+    "wisdom_save": 9
+}

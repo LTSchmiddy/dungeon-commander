@@ -1,0 +1,11 @@
+{
+    "desc": "You have lived in the underbelly of society, doing whatever job came your way. You know other criminal elements and gangs, and still have contacts from your old life... if it even is old. You know far more than most people would expect about the nuances of thieving, assassination, and good old ultraviolence than most, and know how far one can go if they move outside the rules of society.",
+    "equipment": "A crowbar, a set of common clothes with a hood, and a belt pouch containing 15gp.",
+    "feature-desc": "You have one or more contacts from your time in the underworld. One such contact owes you an unfulfilled debt, and you owe a favor to another such contact. Work with your DM to establish the nature of these debts.\n\n Additionally, you know how to get messages to your contacts, and they can pass on those messages to others including members of related criminal organizations. You know how to send messages to your contacts from long distances through a mix of legitimate and seedy travellers and organizations, which you can use to request favors. But remember that in the cutthroat underbelly of society, every favor comes with a debt.",
+    "feature-name": "Old Friends and Old Debts",
+    "id": "scoundrel",
+    "name": "Scoundrel",
+    "skill-proficiencies": "Deception, Stealth",
+    "suggested-characteristics": "Coming soon!",
+    "tool-proficiencies": "Thieves' tools and one gaming set"
+}

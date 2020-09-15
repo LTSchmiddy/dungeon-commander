@@ -1,0 +1,36 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 9,
+    "challenge_rating": "1/8",
+    "charisma": 5,
+    "condition_immunities": "",
+    "constitution": 14,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 8,
+    "hit_dice": "2d10",
+    "hit_points": 15,
+    "id": "camel",
+    "intelligence": 2,
+    "languages": "",
+    "name": "Camel",
+    "senses": "passive Perception 9",
+    "size": "Large",
+    "speed": "50 ft.",
+    "speed_json": {
+        "walk": 50
+    },
+    "strength": 16,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 8
+}

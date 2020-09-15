@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 10,
+            "damage_dice": "4d8",
+            "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 24 (4d8 + 6) piercing damage. If the target is a Large or smaller creature, it must succeed on a DC 18 Dexterity saving throw or be swallowed by the sathaq worm. A swallowed creature is blinded and restrained, has total cover against attacks and other effects outside the worm, and takes 7 (2d6) bludgeoning damage plus 7 (2d6) slashing damage plus 7 (2d6) acid damage at the start of each of the sathaq worm's turns. The sathaq worm can have only one creature swallowed at a time. If the sathaq worm takes 20 damage or more on a single turn from a creature inside it, the sathaq worm must succeed on a DC 15 Constitution saving throw at the end of that turn or regurgitate the swallowed creature, which falls prone in a space within 5 feet of the sathaq worm. If the sathaq worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 10 feet of movement, exiting prone.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "neutral evil",
+    "armor_class": 16,
+    "armor_desc": "natural armor",
+    "challenge_rating": "10",
+    "charisma": 9,
+    "condition_immunities": "exhaustion, paralyzed, petrified, poisoned, unconscious",
+    "constitution": 20,
+    "damage_immunities": "acid, poison",
+    "damage_resistances": "fire; bludgeoning, piercing, and slashing from nonmagical weapons",
+    "dexterity": 6,
+    "hit_dice": "15d12+75",
+    "hit_points": 172,
+    "id": "sathaq_worm",
+    "intelligence": 5,
+    "languages": "understands Deep Speech and Terran, but can't speak",
+    "name": "Sathaq Worm",
+    "perception": 5,
+    "senses": "tremorsense 60 ft., passive Perception 15",
+    "size": "Huge",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The sathaq worms' presence induces pain in creatures native to the Material Plane. Any creature that starts its turn within 30 feet of the sathaq worm must make a DC 17 Fortitude saving throw. On a failed save, the creature is poisoned until the start of its next turn. If a creature's saving throw succeeds, it is immune to the sathaq worm's Agonizing Aura for the next 24 hours.",
+            "name": "Agonizing Aura"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The sathaq worm can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn't disturb the material it moves through.",
+            "name": "Earth Glide"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The sathaq worm deals double damage to objects and structures.",
+            "name": "Siege Monster"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The sathaq worm's stealth bonus is increased to +6 in sand, mud, or dirt.",
+            "name": "Earthen Camoflage"
+        }
+    ],
+    "speed": "20 ft., burrow 20 ft., swim 20 ft.",
+    "speed_json": {
+        "burrow": 20,
+        "swim": 20,
+        "walk": 20
+    },
+    "stealth": 2,
+    "strength": 22,
+    "subtype": "",
+    "type": "elemental",
+    "vulnerable": "thunder",
+    "wisdom": 12
+}

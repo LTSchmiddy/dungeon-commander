@@ -1,0 +1,8 @@
+{
+    "desc": "You gain a +2 bonus to attack and damage rolls made with this magic weapon. In addition, you can make one attack with it as a bonus action on each of your turns.",
+    "id": "scimitar_of_speed",
+    "name": "Scimitar of Speed",
+    "rarity": "very rare",
+    "requires-attunement": "requires attunement",
+    "type": "Weapon (scimitar)"
+}

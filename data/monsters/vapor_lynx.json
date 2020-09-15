@@ -1,0 +1,64 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The vapor lynx makes one bite attack and two claw attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "3d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 17 (3d8 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The vapor lynx exhales a 40- foot radius poison fog, which heavily obscures a spherical area around the lynx. Any breathing creature that ends its turn in the fog must make a DC 14 Constitution saving throw or become poisoned for 1d4 + 1 rounds.",
+            "name": "Poison Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "armor_class": 14,
+    "armor_desc": "natural armor",
+    "challenge_rating": "5",
+    "charisma": 14,
+    "constitution": 16,
+    "dexterity": 18,
+    "hit_dice": "15d10+45",
+    "hit_points": 127,
+    "id": "vapor_lynx",
+    "intelligence": 10,
+    "languages": "Common, Sylvan",
+    "name": "Vapor Lynx",
+    "perception": 4,
+    "senses": "darkvision 60 ft., passive Perception 14",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "the lynx's innate spellcasting ability is Charisma. It can cast the following spell, requiring no material components:\n\n3/day: gaseous form",
+            "name": "Innate Spellcasting"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The vapor lynx spends its time in both gaseous and solid form. Its unique constitution makes it immune to all fog- or gas-related spells and attacks, including its own. A vapor lynx sees clearly through light or heavy obscurement caused by fog, mist, or spells such as fog cloud.",
+            "name": "Smoky Constitution"
+        }
+    ],
+    "speed": "50 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 50
+    },
+    "stealth": 7,
+    "strength": 15,
+    "subtype": "",
+    "type": "monstrosity",
+    "wisdom": 13
+}

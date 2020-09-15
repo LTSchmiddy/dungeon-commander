@@ -1,0 +1,63 @@
+{
+    "actions": [
+        {
+            "desc": "The fey drake makes three bite attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "2d4+5",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (2d4 + 5) piercing damage, and the target must succeed on a DC 16 Constitution saving throw or be poisoned for 1 hour.",
+            "name": "Bite"
+        },
+        {
+            "desc": "The drake breaths a plume of purple gas in a 15-foot cone. Each creature in that area must succeed on a DC 16 Wisdom saving throw or be charmed for 1 minute. While charmed, the creature can't take bonus actions or reactions, and it makes all Intelligence, Wisdom, and Charisma skill checks and saving throws with disadvantage.",
+            "name": "Bewildering Breath (Recharge 5-6)"
+        }
+    ],
+    "alignment": "chaotic neutral",
+    "arcana": 5,
+    "armor_class": "17",
+    "armor_desc": "natural armor",
+    "challenge_rating": "6",
+    "charisma": "18",
+    "constitution": "15",
+    "constitution_save": 5,
+    "deception": 7,
+    "dexterity": "20",
+    "dexterity_save": 8,
+    "hit_dice": "15d6+30",
+    "hit_points": "82",
+    "id": "fey_drake",
+    "intelligence": "15",
+    "languages": "Common, Draconic, Sylvan, telepathy 120 ft.",
+    "name": "Fey Drake",
+    "perception": 6,
+    "senses": "darkvision 120 ft., passive Perception 16",
+    "size": "Small",
+    "special_abilities": [
+        {
+            "desc": "The fey drake has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "desc": "As a bonus action, the fey drake can magically turn invisible until its concentration ends (as if concentrating on a spell). Any equipment the drake wears or carries is invisible with it.",
+            "name": "Superior Invisibility"
+        },
+        {
+            "desc": "The fey drake's innate spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). The fey drake can innately cast the following spells, requiring no material components\nAt will: charm person, color spray, grease\n3/day each: hypnotic pattern, locate creature, suggestion\n1/day each: dominate person, polymorph",
+            "name": "Innate Spellcasting"
+        }
+    ],
+    "speed": "20 ft., fly 80 ft.",
+    "speed_json": {
+        "fly": 80,
+        "walk": 20
+    },
+    "stealth": 8,
+    "strength": "6",
+    "subtype": "",
+    "type": "dragon",
+    "wisdom": "16",
+    "wisdom_save": 6
+}

@@ -1,0 +1,33 @@
+{
+    "actions": [
+        {
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage.",
+            "name": "Bite"
+        }
+    ],
+    "alignment": "chaotic evil",
+    "armor_class": "13",
+    "challenge_rating": "0",
+    "charisma": "8",
+    "constitution": "12",
+    "dexterity": "16",
+    "hit_dice": "1d4+1",
+    "hit_points": "3",
+    "id": "zoog",
+    "intelligence": "11",
+    "languages": "Deep Speech, Void Speech",
+    "name": "Zoog",
+    "perception": 2,
+    "senses": "darkvision 60 ft., passive Perception 12",
+    "size": "Tiny",
+    "speed": "30 ft., climb 30 ft.",
+    "speed_json": {
+        "climb": 30,
+        "walk": 30
+    },
+    "stealth": 5,
+    "strength": "3",
+    "subtype": "",
+    "type": "aberration",
+    "wisdom": "10"
+}

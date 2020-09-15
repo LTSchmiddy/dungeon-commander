@@ -1,0 +1,8 @@
+{
+    "desc": "Your Intelligence score is 19 while you wear this headband. It has no effect on you if your Intelligence is already 19 or higher.",
+    "id": "headband_of_intellect",
+    "name": "Headband of Intellect",
+    "rarity": "uncommon",
+    "requires-attunement": "requires attunement",
+    "type": "Wondrous item"
+}

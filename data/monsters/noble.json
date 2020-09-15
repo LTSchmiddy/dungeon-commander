@@ -1,0 +1,48 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 3,
+            "damage_bonus": 1,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage.",
+            "name": "Rapier"
+        }
+    ],
+    "alignment": "any alignment",
+    "armor_class": 15,
+    "armor_desc": "breastplate",
+    "challenge_rating": "1/8",
+    "charisma": 16,
+    "condition_immunities": "",
+    "constitution": 11,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "deception": 5,
+    "dexterity": 12,
+    "hit_dice": "2d8",
+    "hit_points": 9,
+    "id": "noble",
+    "insight": 4,
+    "intelligence": 12,
+    "languages": "any two languages",
+    "name": "Noble",
+    "persuasion": 5,
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon.",
+            "name": "Parry"
+        }
+    ],
+    "senses": "passive Perception 12",
+    "size": "Medium",
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 11,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 14
+}

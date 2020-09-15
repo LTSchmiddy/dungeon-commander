@@ -1,0 +1,67 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The shabti uses Telekinesis and makes two attacks with its nabboot.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 8,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d4 + 5) bludgeoning damage plus 7 (2d6) necrotic damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or be cursed with tomb taint. The cursed target's speed is reduced to half, and its hit point maximum decreases by 3 (1d6) for every 24 hours that elapse. If the curse reduces the target's hit point maximum to 0, the target dies and its body turns to dust. The curse lasts until removed by the remove curse spell or comparable magic.",
+            "name": "Nabboot"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The shabti targets a creature within 60 feet. The target must succeed on a DC 15 Strength check or the shabti moves it up to 30 feet in any direction (including upward), and it is restrained until the end of the shabti's next turn.",
+            "name": "Telekinesis"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 17,
+    "armor_desc": "natural armor",
+    "challenge_rating": "8",
+    "charisma": 6,
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+    "constitution": 18,
+    "damage_immunities": "poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
+    "dexterity": 20,
+    "hit_dice": "12d8+48",
+    "hit_points": 102,
+    "id": "shabti",
+    "intelligence": 6,
+    "languages": "understands the languages of its creator but can't speak",
+    "name": "Shabti",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The shabti is immune to spells and effects that would alter its form.",
+            "name": "Immutable Form"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The shabti has advantage on saving throws against spells and other magical effects.",
+            "name": "Magic Resistance"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The shabti's weapon attacks are magical.",
+            "name": "Magic Weapons"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "As a bonus action, the shabti commands its armlets to drop to the floor, whereupon they become two giant poisonous snakes. The shabti can mentally direct the serpents (this does not require an action). If the snakes are killed, they dissolve into wisps of smoke which reform around the shabti's forearms, and they can't be turned into snakes for 1 week. These armlets are linked to the shabti at the time of its creation and do not function for other creatures.",
+            "name": "Serpentine Armlets"
+        }
+    ],
+    "speed": "40 ft.",
+    "speed_json": {
+        "walk": 40
+    },
+    "strength": 14,
+    "subtype": "",
+    "type": "construct",
+    "wisdom": 11
+}

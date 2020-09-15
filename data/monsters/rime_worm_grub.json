@@ -1,0 +1,61 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The rime worm makes one tendril attack and one gnash attack.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "1d6",
+            "desc": "Melee Weapon Attack. +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage.",
+            "name": "Tendril"
+        },
+        {
+            "attack_bonus": 5,
+            "damage_dice": "2d8",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage.",
+            "name": "Gnash"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 13,
+    "armor_desc": "natural armor",
+    "challenge_rating": "1",
+    "charisma": 3,
+    "constitution": 16,
+    "constitution_save": 5,
+    "damage_resistances": "cold",
+    "dexterity": 12,
+    "hit_dice": "6d8+18",
+    "hit_points": 45,
+    "id": "rime_worm_grub",
+    "intelligence": 4,
+    "languages": "-",
+    "name": "Rime Worm Grub",
+    "senses": "darkvision 200 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "A rime worm grub can breathe air or water with equal ease.",
+            "name": "Born of Rime"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "At the grub stage, the worm is painfully hungry. Rime worm grubs can make opportunity attacks against enemies who disengage.",
+            "name": "Ravenous"
+        }
+    ],
+    "speed": "30 ft., swim 30 ft, burrow (snow, ice) 20 ft.",
+    "speed_json": {
+        "burrow": 20,
+        "swim": 30,
+        "walk": 30
+    },
+    "strength": 16,
+    "strength_save": 5,
+    "subtype": "",
+    "type": "elemental",
+    "wisdom": 12
+}

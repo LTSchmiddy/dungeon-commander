@@ -1,0 +1,62 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 5,
+            "damage_bonus": 3,
+            "damage_dice": "2d6",
+            "desc": "Melee Weapon Attack: +5 to hit, reach 15 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage. If the target is a creature, it is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the octopus can't use its tentacles on another target.",
+            "name": "Tentacles"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A 20-foot-radius cloud of ink extends all around the octopus if it is underwater. The area is heavily obscured for 1 minute, although a significant current can disperse the ink. After releasing the ink, the octopus can use the Dash action as a bonus action.",
+            "name": "Ink Cloud (Recharges after a Short or Long Rest)"
+        }
+    ],
+    "alignment": "unaligned",
+    "armor_class": 11,
+    "challenge_rating": "1",
+    "charisma": 4,
+    "condition_immunities": "",
+    "constitution": 13,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 13,
+    "hit_dice": "8d10",
+    "hit_points": 52,
+    "id": "giant_octopus",
+    "intelligence": 4,
+    "languages": "",
+    "name": "Giant Octopus",
+    "perception": 4,
+    "senses": "darkvision 60 ft., passive Perception 14",
+    "size": "Large",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "While out of water, the octopus can hold its breath for 1 hour.",
+            "name": "Hold Breath"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The octopus has advantage on Dexterity (Stealth) checks made while underwater.",
+            "name": "Underwater Camouflage"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The octopus can breathe only underwater.",
+            "name": "Water Breathing"
+        }
+    ],
+    "speed": "10 ft., swim 60 ft.",
+    "speed_json": {
+        "swim": 60,
+        "walk": 10
+    },
+    "stealth": 5,
+    "strength": 17,
+    "subtype": "",
+    "type": "beast",
+    "wisdom": 10
+}

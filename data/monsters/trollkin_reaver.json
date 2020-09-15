@@ -1,0 +1,78 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The trollkin raider makes three melee attacks: two with its claws and one with its bite, or two with its battleaxe and one with its handaxe, or it makes two ranged attacks with its handaxes.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage.",
+            "name": "Bite"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d4",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) slashing damage.",
+            "name": "Claw"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d8",
+            "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage or 9 (1d10 + 4) slashing damage if used with two hands. Using the battleaxe two-handed prevents using the handaxe.",
+            "name": "Battleaxe"
+        },
+        {
+            "attack_bonus": 6,
+            "damage_dice": "1d6",
+            "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) slashing damage.",
+            "name": "Handaxe"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "Up to three allies who can hear the trollkin reaver and are within 30 feet of it can each make one melee attack as a reaction.",
+            "name": "Howl of Battle (Recharge 6)"
+        }
+    ],
+    "alignment": "neutral",
+    "armor_class": 14,
+    "armor_desc": "hide armor",
+    "challenge_rating": "4",
+    "charisma": 13,
+    "charisma_save": 3,
+    "constitution": 16,
+    "constitution_save": 5,
+    "dexterity": 13,
+    "hit_dice": "11d8+33",
+    "hit_points": 82,
+    "id": "trollkin_reaver",
+    "intelligence": 11,
+    "intimidation": 5,
+    "languages": "Common, Trollkin",
+    "name": "Trollkin Reaver",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The trollkin reaver regains 10 hit points at the start of its turn. This trait doesn't function if the trollkin took acid or fire damage since the end of its previous turn. The trollkin dies if it starts its turn with 0 hit points and doesn't regenerate.",
+            "name": "Regeneration"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "The trollkin reaver's skin is thick and tough, granting it a +1 bonus to AC. This bonus is already factored into the trollkin's AC.",
+            "name": "Thick Hide"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 19,
+    "subtype": "trollkin",
+    "survival": 3,
+    "type": "humanoid",
+    "wisdom": 12,
+    "wisdom_save": 3
+}

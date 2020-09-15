@@ -1,0 +1,74 @@
+{
+    "actions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The gladiator makes three melee attacks or two ranged attacks.",
+            "name": "Multiattack"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_bonus": 4,
+            "damage_dice": "2d6",
+            "desc": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage, or 13 (2d8 + 4) piercing damage if used with two hands to make a melee attack.",
+            "name": "Spear"
+        },
+        {
+            "attack_bonus": 7,
+            "damage_bonus": 4,
+            "damage_dice": "2d4",
+            "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 9 (2d4 + 4) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone.",
+            "name": "Shield Bash"
+        }
+    ],
+    "alignment": "any alignment",
+    "armor_class": 16,
+    "armor_desc": "studded leather, shield",
+    "athletics": 10,
+    "challenge_rating": "5",
+    "charisma": 15,
+    "condition_immunities": "",
+    "constitution": 16,
+    "constitution_save": 6,
+    "damage_immunities": "",
+    "damage_resistances": "",
+    "damage_vulnerabilities": "",
+    "dexterity": 15,
+    "dexterity_save": 5,
+    "hit_dice": "15d8",
+    "hit_points": 112,
+    "id": "gladiator",
+    "intelligence": 10,
+    "intimidation": 5,
+    "languages": "any one language (usually Common)",
+    "name": "Gladiator",
+    "reactions": [
+        {
+            "attack_bonus": 0,
+            "desc": "The gladiator adds 3 to its AC against one melee attack that would hit it. To do so, the gladiator must see the attacker and be wielding a melee weapon.",
+            "name": "Parry"
+        }
+    ],
+    "senses": "passive Perception 11",
+    "size": "Medium",
+    "special_abilities": [
+        {
+            "attack_bonus": 0,
+            "desc": "The gladiator has advantage on saving throws against being frightened.",
+            "name": "Brave"
+        },
+        {
+            "attack_bonus": 0,
+            "desc": "A melee weapon deals one extra die of its damage when the gladiator hits with it (included in the attack).",
+            "name": "Brute"
+        }
+    ],
+    "speed": "30 ft.",
+    "speed_json": {
+        "walk": 30
+    },
+    "strength": 18,
+    "strength_save": 7,
+    "subtype": "any race",
+    "type": "humanoid",
+    "wisdom": 12
+}
