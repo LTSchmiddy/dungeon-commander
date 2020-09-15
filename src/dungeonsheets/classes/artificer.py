@@ -70,6 +70,50 @@ class BattleSmith(SubClass):
 
 
 class Artificer(CharClass):
+    """
+    Masters of unlocking magic in everyday objects, 
+    artificers are supreme inventors. They see magic
+    as a complex system waiting to be decoded and
+    controlled. Artificers use tools to channel arcane
+    power, crafting temporary and permanent
+    magical objects. To cast a spell, an artificer could
+    use alchemist’s supplies to create a potent elixir,
+    calligrapher’s supplies to inscribe a sigil of
+    power on an ally’s armor, or tinker’s tools to
+    craft a temporary charm. The magic of artificers
+    is tied to their tools and their talents.
+    
+    # Arcane Science
+    In the world of Eberron, arcane magic has been 
+    harnessed as a form of science and deployed
+    throughout society. Artificers reflect this
+    development. Their knowledge of magical
+    devices, and their ability to infuse mundane
+    items with magical energy, allows the grand
+    magical projects of Eberron to continue running.
+    During the Last War, artificers were marshaled
+    on a massive scale. Many lives were saved
+    because of the inventions of brave artificers, but
+    also countless lives were lost because of the
+    mass destruction that artificers’ creations
+    unleashed.
+
+    # Seekers of New Lore
+    Nothing excites an artificer quite like uncovering 
+    a new metal or discovering a source of elemental
+    energy. In artificer circles, new inventions and
+    strange discoveries create the most excitement.
+    Artificers who wish to make a mark must find
+    something fresh, rather than uncover someone
+    else’s work.
+    This drive for novelty pushes artificers to
+    become adventurers. Eberron’s main travel
+    routes and populated regions have long since
+    been explored. Thus, artificers take to the edge
+    of civilization in hopes of making the next great
+    discovery in arcane research.
+    
+    """
     name = "Artificer"
     hit_dice_faces = 8
     subclass_select_level = 3

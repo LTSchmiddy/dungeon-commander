@@ -105,7 +105,11 @@ class CharClass():
 
     @property
     def desc_html(self):
-        return markdown2.markdown(inspect.getdoc(self)).strip()
+        doc = inspect.getdoc(self)
+        if not doc is None:
+            return markdown2.markdown(doc).strip()
+
+        return f"No description for the {self.name} class."
 
     @property
     def features(self):

@@ -3,3 +3,5 @@
 /old_info/
 */venv/
 *__pycache__/
+/library.db
+/out.log

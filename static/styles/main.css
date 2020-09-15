@@ -170,7 +170,7 @@ div.sidebar-content a.sidebar-active {
   padding: 10px;
 }
 
-.character-view details {
+.character-view details, .character-view div {
   padding-left: 10px;
 }
 

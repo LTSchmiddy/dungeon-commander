@@ -68,6 +68,11 @@ class Spell():
         # return inspect.getdoc(self)
 
     @property
+    def desc(self):
+        # return str(cls.__doc__)
+        return inspect.getdoc(self)
+
+    @property
     def component_string(self):
         s = f'{", ".join(self.components)}'
         if "M" in self.components:

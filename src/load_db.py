@@ -1,20 +1,10 @@
 import sys, os, json, inspect
+from typing import Any
 
 import db
 import dungeonsheets
 
-def load_magic_items():
-    read_dir = "./data/magicitems"
-    for i in os.listdir(read_dir):
-        scan_file = os.path.join(read_dir, i)
-
-        json_in = json.load(open(scan_file, 'r', encoding='utf-8'))
-
-        db.tables.DB_Item.add_json(json_in)
-
-    db.Session.commit()
-    db.Session.remove()
-
+# Python-based Data:
 def load_spells():
     spell_list = []
 
@@ -35,6 +25,36 @@ def load_spells():
     print(len(spell_list))
 
 
+# JSON-based Data:
+def _load_json_dir(read_dir: str, db_add_method: Any):
+    for i in os.listdir(read_dir):
+        scan_file = os.path.join(read_dir, i)
+
+        json_in = json.load(open(scan_file, 'r', encoding='utf-8'))
+
+        db_add_method(json_in)
+
+
+
+def load_magic_items():
+    read_dir = "./data/magicitems"
+
+    _load_json_dir(read_dir, db.tables.DB_Item.add_json)
+
+    db.Session.commit()
+    db.Session.remove()
+
+
+def load_weapons():
+    read_dir = "./data/weapons"
+
+    _load_json_dir(read_dir, db.tables.DB_Weapon.add_json)
+
+    db.Session.commit()
+    db.Session.remove()
+
+
+# Other Utilities:
 def dump_weapons():
     weapon_list = []
     out_dir = "./data/weapons"
@@ -54,18 +74,6 @@ def dump_weapons():
         out_file = open(out_path, 'w')
         json.dump(out_dict, out_file, indent=4, sort_keys=True)
         out_file.close()
-
-def load_weapons():
-    read_dir = "./data/weapons"
-    for i in os.listdir(read_dir):
-        scan_file = os.path.join(read_dir, i)
-
-        json_in = json.load(open(scan_file, 'r', encoding='utf-8'))
-
-        db.tables.DB_Weapon.add_json(json_in)
-
-    db.Session.commit()
-    db.Session.remove()
 
 if __name__ == '__main__':
     # dump_weapons()

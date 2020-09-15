@@ -7,16 +7,16 @@ sheet by running ``makesheets`` from the command line.
 
 dungeonsheets_version = "dc_1"
 
-name = "GuyMan"
+name = "Ignis et Umbrae"
 player_name = ""
 
 # Be sure to list Primary class first
-classes = ['Wizard']  # ex: ['Wizard'] or ['Rogue', 'Fighter']
-levels = [5]  # ex: [10] or [3, 2]
-subclasses = ["School of Evocation"]  # ex: ['Necromacy'] or ['Thief', None]
+classes = ['Wizard', 'Rogue']  # ex: ['Wizard'] or ['Rogue', 'Fighter']
+levels = [3, 2]  # ex: [10] or [3, 2]
+subclasses = ["School of Evocation", None]  # ex: ['Necromacy'] or ['Thief', None]
 background = "Spy"
 race = "High Elf"
-alignment = "Neutral"
+alignment = "Chaotic Good"
 
 xp = 0
 hp_max = 22
@@ -25,18 +25,18 @@ inspiration = False  # boolean inspiration value
 
 # Ability Scores
 strength = 8
-dexterity = 12
+dexterity = 14
 constitution = 10
-intelligence = 22
+intelligence = 15
 wisdom = 12
 charisma = 10
 
 # Select what skills you're proficient with
 # ex: skill_proficiencies = ('athletics', 'acrobatics', 'arcana')
-skill_proficiencies = []
+skill_proficiencies = ['arcana', 'medicine', 'investigation']
 
 # Any skills you have "expertise" (Bard/Rogue) in
-skill_expertise = []
+skill_expertise = ["arcana", "stealth"]
 
 # Named features / feats that aren't part of your classes, race, or background.
 # Also include Eldritch Invocations and features you make multiple selection of

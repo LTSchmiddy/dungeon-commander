@@ -95,8 +95,53 @@
                 <span class="label"> {{ s.title().replace("_", " ") }}</span>
                 <span class="base_stat">({{ char.get_char_attr(s).base_ability.capitalize()  }})</span>:
                 <span class="score">{{ char.get_char_attr(s).value_str }}</span>
+                {% if s in char.skill_expertise %}
+                    <span class="proficient">(Expert)</span>
+                {% elif s in char.all_skill_proficiencies %}
+                    <span class="proficient">(Proficient)</span>
+                {% endif %}
             </div>
         {% endfor %}
     </details>
 
+
+    <details class="class-prof-list" open>
+        <summary>
+            Other Proficiencies:
+        </summary>
+        <div class="weapon-profs">
+            <div class="label">
+                Weapons:
+            </div>
+            <ul class="content">
+            {% for w in char.weapon_proficiencies %}
+                <li>
+                    {{ w.name }}
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
+
+        <div class="other-profs">
+            <div class="label">
+                Other Proficiencies:
+            </div>
+            <div>
+                {{ char.proficiencies_text.title() }}
+            </div>
+        </div>
+    </details>
+    <details class="char-equipment">
+        <summary>Equipment</summary>
+        TO BE FILLED
+    </details>
+
+    <details class="char-spell-list">
+        {{ char.spell_slots(1) }}
+        <summary>Spells</summary>
+        {% with spells = char.spells %}
+            {% include "components/spell_list.html" %}
+        {% endwith %}
+
+    </details>
 </div>
