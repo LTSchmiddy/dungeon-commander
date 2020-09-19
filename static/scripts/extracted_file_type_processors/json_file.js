@@ -1,9 +1,11 @@
 
 
 class JsonFileEditorData {
-    constructor(name, path, container_selector = ".editor-content", editor_options = {}) {
+    constructor(elem, name, path, container_selector = ".editor-content", editor_options = {}) {
+        this.elem = elem;
         this.name = name;
         this.path = path;
+        this.editor_type = 'json';
         this.container_selector = container_selector;
         this.editor = null;
         this.original_json = "";
@@ -82,4 +84,29 @@ class JsonFileEditorData {
 
         }
     }
+}
+
+
+
+
+async function _extracted_file_load_json_editor(name, path) {
+    if (!mod_editor_opened_tabs.hasOwnProperty(path)) {
+        console.log(`'${path}' not opened...`);
+        return null;
+    }
+
+    $.post("/panes/campaign_view/editors/json_editor", {name: name, path: path}, async (data, status) => {
+        await extracted_file_show_editor("");
+        // extracted_file_editor_area.get()[0].innerHTML += data;
+        let container = generate_element(data);
+        extracted_file_editor_area.get()[0].appendChild(container);
+
+        let editor_data = mod_editor_opened_tabs[path];
+        editor_data.data_obj = new JsonFileEditorData(container, name, path);
+
+        extracted_file_show_editor(path);
+
+    });
+
+
 }

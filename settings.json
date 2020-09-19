@@ -1,9 +1,9 @@
 {
     "window": {
-        "x": 101,
-        "y": -1278,
-        "width": 912,
-        "height": 804,
+        "x": -1928,
+        "y": -8,
+        "width": 1936,
+        "height": 1056,
         "web-engine": "cef"
     },
     "interface": {
@@ -23,5 +23,12 @@
         "flask-address": "127.0.0.1",
         "flask-port": 10000,
         "jquery-icon-mode": false
+    },
+    "game": {
+        "campaign-dir-path": "./my_campaign",
+        "reload-db-on-start": true
+    },
+    "database": {
+        "echo": false
     }
 }

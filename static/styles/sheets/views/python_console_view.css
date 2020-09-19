@@ -1,0 +1,16 @@
+#python-console-view .python-console-control-pane {
+  height: 30px;
+  width: 100%;
+  padding: 0 10px;
+}
+#python-console-view .python-console {
+  height: calc(100% - 30px);
+  width: 100%;
+  margin: auto;
+  overflow: scroll;
+  background-color: black;
+  color: greenyellow;
+  padding: 10px;
+}
+
+/*# sourceMappingURL=python_console_view.css.map */

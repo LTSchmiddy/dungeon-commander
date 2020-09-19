@@ -56,6 +56,13 @@ default_settings = {
         "flask-address": "127.0.0.1",
         "flask-port": 10000,
         "jquery-icon-mode": False,
+    },
+    "game": {
+        "campaign-dir-path": "./my_campaign",
+        "reload-db-on-start": True
+    },
+    "database": {
+        "echo": False
     }
 }
 

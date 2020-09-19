@@ -7,16 +7,16 @@ sheet by running ``makesheets`` from the command line.
 
 dungeonsheets_version = "dc_1"
 
-name = "Ignis et Umbrae"
+name = "GuyMan"
 player_name = ""
 
 # Be sure to list Primary class first
-classes = ['Wizard', 'Rogue']  # ex: ['Wizard'] or ['Rogue', 'Fighter']
-levels = [3, 2]  # ex: [10] or [3, 2]
-subclasses = ["School of Evocation", None]  # ex: ['Necromacy'] or ['Thief', None]
+classes = ['Wizard']  # ex: ['Wizard'] or ['Rogue', 'Fighter']
+levels = [5]  # ex: [10] or [3, 2]
+subclasses = ["School of Evocation"]  # ex: ['Necromacy'] or ['Thief', None]
 background = "Spy"
 race = "High Elf"
-alignment = "Chaotic Good"
+alignment = "Neutral"
 
 xp = 0
 hp_max = 22
@@ -33,10 +33,10 @@ charisma = 10
 
 # Select what skills you're proficient with
 # ex: skill_proficiencies = ('athletics', 'acrobatics', 'arcana')
-skill_proficiencies = ['arcana', 'medicine', 'investigation']
+skill_proficiencies = []
 
 # Any skills you have "expertise" (Bard/Rogue) in
-skill_expertise = ["arcana", "stealth"]
+skill_expertise = []
 
 # Named features / feats that aren't part of your classes, race, or background.
 # Also include Eldritch Invocations and features you make multiple selection of
@@ -81,7 +81,7 @@ attacks_and_spellcasting = """"""
 spells = ("Fire Bolt",)
 
 # Which spells have been prepared (not including cantrips)
-spells_prepared = ["Minor Illusion"]
+spells_prepared = []
 
 # Wild shapes for Druid
 wild_shapes = ()  # Ex: ('ape', 'wolf', 'ankylosaurus')
@@ -101,4 +101,4 @@ flaws = """TODO: Describe your character's interesting flaws."""
 
 features_and_traits = """Describe any other features and abilities."""
 
-info_dict = {'feature__ElfCantrip': 'MinorIllusion', 'feature__ExtraLanguageRace': 'Infernal'}
+info_dict = {'feature__ElfCantrip': 'Spell'}

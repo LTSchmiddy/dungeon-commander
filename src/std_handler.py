@@ -4,6 +4,8 @@ import io
 import typing
 import types
 import string
+import hashlib
+
 from typing import List
 
 from ansi2html import Ansi2HTMLConverter
@@ -15,11 +17,13 @@ class CustomStdout:
     stream: str
     # old_stdout: io.TextIOWrapper
     substreams: List[io.TextIOWrapper]
+    updated: bool
 
     def __init__(self, old_stdout = None, use_file = True):
         global custom_loggers
         self.level = "INFO"
         self.substreams = []
+        self.updated = False
 
         self.html_converter = Ansi2HTMLConverter(inline=True)
 
@@ -42,6 +46,7 @@ class CustomStdout:
 
         self.write_sanitized(data)
         self.write_html(data)
+        self.updated = True
 
     def write_sanitized(self, data):
         # to_write = str(data)
@@ -70,6 +75,12 @@ class CustomStdout:
 
     def get_html(self):
         return self.stream_html
+
+    def get_html_updated(self):
+        retVal = self.updated
+        if retVal:
+            self.updated = False
+        return retVal
 
     # def get_converted_html(self):
     #     return self.html_converter.convert(self.stream)

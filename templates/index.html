@@ -2,22 +2,32 @@
 {% extends "common/common_ui.html" %}
 {% block content %}
 
-<div class="main-view">
+    <div id="campaign-view" class="main-view">
 
-{% include "components/character_view.html" %}
+        {% include "views/campaign_view.html" %}
 
-<!--
-<div id="editor" class="ace-editor">
-    hello
-</div>
+    </div>
 
-<script>
-    let editor = ace.edit("editor");
-    editor.setTheme("ace/theme/twilight");
-    editor.session.setMode("ace/mode/python");
-</script>
--->
-</div>
+    <div id="settings-editor-view" class="main-view">
+        {% include "views/settings_view.html" %}
+
+    </div>
+
+    <div id="python-console-view" class="main-view">
+        {% include "views/python_console_view.html" %}
+
+    </div>
+
+    <script>
+        const views = [
+            $("#campaign-view"),
+            $("#settings-editor-view"),
+            $("#python-console-view")
+        ];
+
+
+    </script>
+
 
 
 {% endblock %}

@@ -42,7 +42,7 @@ src = """
 	scheduling_queue = (function Queue() {
 		var first, last, item;
 
-		function DB_Item(fn,self) {
+		function Item(fn,self) {
 			this.fn = fn;
 			this.self = self;
 			this.next = void 0;
@@ -50,7 +50,7 @@ src = """
 
 		return {
 			add: function add(fn,self) {
-				item = new DB_Item(fn,self);
+				item = new Item(fn,self);
 				if (last) {
 					last.next = item;
 				}

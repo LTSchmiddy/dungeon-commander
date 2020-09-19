@@ -9,8 +9,6 @@ from viewport.js_api import JsApi
 import viewport
 
 
-
-
 def create_files_module(api: Type[JsApi]):
     def read_json_file(self, filepath):
         file = open(filepath, 'r', encoding='utf-8')

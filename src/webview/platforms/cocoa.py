@@ -19,9 +19,11 @@ from PyObjCTools import AppHelper
 from objc import _objc, nil, super, pyobjc_unicode, registerMetaDataForSelector
 
 from webview.localization import localization
-from webview import _debug, OPEN_DIALOG, FOLDER_DIALOG, SAVE_DIALOG, parse_file_type, escape_string, windows
+from webview import _debug, _user_agent, OPEN_DIALOG, FOLDER_DIALOG, SAVE_DIALOG, parse_file_type, escape_string, windows
 from webview.util import convert_string, parse_api_js, default_html, js_bridge_call
 from webview.js.css import disable_text_select
+
+settings = {}
 
 # This lines allow to load non-HTTPS resources, like a local app as: http://127.0.0.1:5000
 bundle = AppKit.NSBundle.mainBundle()
@@ -60,13 +62,13 @@ class BrowserView:
     class WindowDelegate(AppKit.NSObject):
         def windowShouldClose_(self, window):
             i = BrowserView.get_instance('window', window)
-            i.closing.set()
 
             quit = localization['global.quit']
             cancel = localization['global.cancel']
             msg = localization['global.quitConfirmation']
 
             if not i.confirm_close or BrowserView.display_confirmation_dialog(quit, cancel, msg):
+                i.closing.set()
                 return Foundation.YES
             else:
                 return Foundation.NO
@@ -207,7 +209,7 @@ class BrowserView:
             i = BrowserView.get_instance('webkit', self)
             window = self.window()
 
-            if i.frameless:
+            if i.frameless and i.easy_drag:
                 windowFrame = window.frame()
                 if windowFrame is None:
                     raise RuntimeError('Failed to obtain screen')
@@ -222,7 +224,7 @@ class BrowserView:
             i = BrowserView.get_instance('webkit', self)
             window = self.window()
 
-            if i.frameless:
+            if i.frameless and i.easy_drag:
                 screenFrame = AppKit.NSScreen.mainScreen().frame()
                 if screenFrame is None:
                     raise RuntimeError('Failed to obtain screen')
@@ -289,6 +291,8 @@ class BrowserView:
 
                     return handled
 
+            return True
+
 
     def __init__(self, window):
         BrowserView.instances[window.uid] = self
@@ -324,7 +328,6 @@ class BrowserView:
         self.window = AppKit.NSWindow.alloc().\
             initWithContentRect_styleMask_backing_defer_(rect, window_mask, AppKit.NSBackingStoreBuffered, False).retain()
         self.window.setTitle_(window.title)
-        self.window.setBackgroundColor_(BrowserView.nscolor_from_hex(window.background_color))
         self.window.setMinSize_(AppKit.NSSize(window.min_size[0], window.min_size[1]))
         self.window.setAnimationBehavior_(AppKit.NSWindowAnimationBehaviorDocumentWindow)
         BrowserView.cascade_loc = self.window.cascadeTopLeftFromPoint_(BrowserView.cascade_loc)
@@ -336,10 +339,22 @@ class BrowserView:
 
         self.webkit = BrowserView.WebKitHost.alloc().initWithFrame_(rect).retain()
 
+        user_agent = settings.get('user_agent') or _user_agent
+        if user_agent:
+            self.webkit.setCustomUserAgent_(user_agent)
+
         if window.initial_x is not None and window.initial_y is not None:
             self.move(window.initial_x, window.initial_y)
         else:
             self.window.center()
+
+        if window.transparent:
+            self.window.setOpaque_(False)
+            self.window.setHasShadow_(False)
+            self.window.setBackgroundColor_(BrowserView.nscolor_from_hex(window.background_color, 0))
+            self.webkit.setValue_forKey_(True, 'drawsTransparentBackground')
+        else:
+            self.window.setBackgroundColor_(BrowserView.nscolor_from_hex(window.background_color))
 
         self._browserDelegate = BrowserView.BrowserDelegate.alloc().init().retain()
         self._windowDelegate = BrowserView.WindowDelegate.alloc().init().retain()
@@ -348,15 +363,21 @@ class BrowserView:
         self.window.setDelegate_(self._windowDelegate)
 
         self.frameless = window.frameless
+        self.easy_drag = window.easy_drag
 
         if window.frameless:
             # Make content full size and titlebar transparent
             self.window.setTitlebarAppearsTransparent_(True)
             self.window.setTitleVisibility_(NSWindowTitleHidden)
-
+            self.window.standardWindowButton_(AppKit.NSWindowCloseButton).setHidden_(True)
+            self.window.standardWindowButton_(AppKit.NSWindowMiniaturizeButton).setHidden_(True)
+            self.window.standardWindowButton_(AppKit.NSWindowZoomButton).setHidden_(True)
         else:
             # Set the titlebar color (so that it does not change with the window color)
             self.window.contentView().superview().subviews().lastObject().setBackgroundColor_(AppKit.NSColor.windowBackgroundColor())
+
+        if window.on_top:
+            self.window.setLevel_(AppKit.NSStatusWindowLevel)
 
         try:
             self.webkit.evaluateJavaScript_completionHandler_('', lambda a, b: None)
@@ -377,9 +398,9 @@ class BrowserView:
         self.js_bridge = BrowserView.JSBridge.alloc().initWithObject_(window)
         config.userContentController().addScriptMessageHandler_name_(self.js_bridge, 'jsBridge')
 
-        if window.url:
-            self.url = window.url
-            self.load_url(window.url)
+        if window.real_url:
+            self.url = window.real_url
+            self.load_url(window.real_url)
         elif window.html:
             self.load_html(window.html, '')
         else:
@@ -389,7 +410,6 @@ class BrowserView:
             self.toggle_fullscreen()
 
         self.shown.set()
-
 
     def first_show(self):
         if not self.hidden:
@@ -534,8 +554,7 @@ class BrowserView:
                     save_dlg.setNameFieldStringValue_(save_filename)
 
                 if save_dlg.runModal() == AppKit.NSFileHandlingPanelOKButton:
-                    file = save_dlg.filenames()
-                    self._file_name = tuple(file)
+                    self._file_name = save_dlg.filename()
                 else:
                     self._file_name = None
             else:
@@ -652,7 +671,7 @@ class BrowserView:
         return val
 
     @staticmethod
-    def nscolor_from_hex(hex_string):
+    def nscolor_from_hex(hex_string, alpha=1.0):
         """
         Convert given hex color to NSColor.
 
@@ -671,7 +690,7 @@ class BrowserView:
         )
         rgb = [i / 255.0 for i in rgb]      # Normalize to range(0.0, 1.0)
 
-        return AppKit.NSColor.colorWithSRGBRed_green_blue_alpha_(rgb[0], rgb[1], rgb[2], 1.0)
+        return AppKit.NSColor.colorWithSRGBRed_green_blue_alpha_(rgb[0], rgb[1], rgb[2], alpha)
 
     @staticmethod
     def get_instance(attr, value):
@@ -801,6 +820,14 @@ def toggle_fullscreen(uid):
     BrowserView.instances[uid].toggle_fullscreen()
 
 
+def set_on_top(uid, top):
+    def _set_on_top():
+        level = AppKit.NSStatusWindowLevel if top else AppKit.NSNormalWindowLevel
+        BrowserView.instances[uid].window.setLevel_(level)
+
+    AppHelper.callAfter(_set_on_top)
+
+
 def resize(width, height, uid):
     BrowserView.instances[uid].resize(width, height)
 
@@ -841,8 +868,11 @@ def get_position(uid):
     coordinates = [None, None]
     semaphore = Semaphore(0)
 
-    AppHelper.callAfter(_position, coordinates)
-    semaphore.acquire()
+    try:
+        _position(coordinates)
+    except:
+        AppHelper.callAfter(_position, coordinates)
+        semaphore.acquire()
 
     return coordinates
 
@@ -857,7 +887,14 @@ def get_size(uid):
     dimensions = [None, None]
     semaphore = Semaphore(0)
 
-    AppHelper.callAfter(_size, dimensions)
-    semaphore.acquire()
+    try:
+        _size(dimensions)
+    except:
+        AppHelper.callAfter(_size, dimensions)
+        semaphore.acquire()
 
     return dimensions
+
+
+
+

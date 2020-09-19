@@ -16,7 +16,7 @@ except ImportError:
 from uuid import uuid1
 from threading import Event, Semaphore
 from webview.localization import localization
-from webview import _debug, OPEN_DIALOG, FOLDER_DIALOG, SAVE_DIALOG, parse_file_type, escape_string, windows
+from webview import _debug, _user_agent, OPEN_DIALOG, FOLDER_DIALOG, SAVE_DIALOG, parse_file_type, escape_string, windows
 from webview.util import parse_api_js, default_html, js_bridge_call
 from webview.js.css import disable_text_select
 
@@ -39,6 +39,8 @@ webkit_ver = webkit.get_major_version(), webkit.get_minor_version(), webkit.get_
 old_webkit = webkit_ver[0] < 2 or webkit_ver[1] < 22
 
 renderer = 'gtkwebkit2'
+
+settings = {}
 
 class BrowserView:
     instances = {}
@@ -111,12 +113,28 @@ class BrowserView:
         self.webview.connect('notify::title', self.on_title_change)
         self.webview.connect('decide-policy', self.on_navigation)
 
+        user_agent = settings.get('user_agent') or _user_agent
+        if user_agent:
+            self.webview.get_settings().props.user_agent = user_agent
+
         if window.frameless:
             self.window.set_decorated(False)
-            self.move_progress = False
-            self.webview.connect('button-release-event', self.on_mouse_release)
-            self.webview.connect('button-press-event', self.on_mouse_press)
-            self.window.connect('motion-notify-event', self.on_mouse_move)
+            if window.easy_drag:
+                self.move_progress = False
+                self.webview.connect('button-release-event', self.on_mouse_release)
+                self.webview.connect('button-press-event', self.on_mouse_press)
+                self.window.connect('motion-notify-event', self.on_mouse_move)
+
+        if window.on_top:
+            self.window.set_keep_above(True)
+
+        self.transparent = window.transparent
+        if window.transparent:
+            configure_transparency(self.window)
+            configure_transparency(self.webview)
+            wvbg = self.webview.get_background_color()
+            wvbg.alpha = 0.0
+            self.webview.set_background_color(wvbg)
 
         if _debug:
             self.webview.get_settings().props.enable_developer_extras = True
@@ -126,8 +144,8 @@ class BrowserView:
         self.webview.set_opacity(0.0)
         scrolled_window.add(self.webview)
 
-        if window.url is not None:
-            self.webview.load_uri(window.url)
+        if window.real_url is not None:
+            self.webview.load_uri(window.real_url)
         elif window.html:
             self.webview.load_html(window.html, '')
         else:
@@ -137,6 +155,8 @@ class BrowserView:
             self.toggle_fullscreen()
 
     def close_window(self, *data):
+        self.pywebview_window.closing.set()
+
         for res in self.js_results.values():
             res['semaphore'].release()
 
@@ -155,7 +175,6 @@ class BrowserView:
             gtk.main_quit()
 
     def on_destroy(self, widget=None, *data):
-        self.pywebview_window.closing.set()
         dialog = gtk.MessageDialog(parent=self.window, flags=gtk.DialogFlags.MODAL & gtk.DialogFlags.DESTROY_WITH_PARENT,
                                           type=gtk.MessageType.QUESTION, buttons=gtk.ButtonsType.OK_CANCEL,
                                           message_format=localization['global.quitConfirmation'])
@@ -202,7 +221,7 @@ class BrowserView:
 
             elif js_data['type'] == 'invoke':  # invoke js api's function
                 func_name = js_data['function']
-                value_id = js_data['get_id']
+                value_id = js_data['id']
                 param = js_data['param'] if 'param' in js_data else None
                 return_val = self.js_bridge.call(func_name, param, value_id)
 
@@ -309,7 +328,10 @@ class BrowserView:
         response = dialog.run()
 
         if response == gtk.ResponseType.OK:
-            file_name = dialog.get_filenames()
+            if dialog_type == SAVE_DIALOG:
+                file_name = dialog.get_filename()
+            else:
+                file_name = dialog.get_filenames()
         else:
             file_name = None
 
@@ -414,6 +436,13 @@ def toggle_fullscreen(uid):
     glib.idle_add(_toggle_fullscreen)
 
 
+def set_on_top(uid, top):
+    def _set_on_top():
+        BrowserView.instances[uid].window.set_keep_above(top)
+
+    glib.idle_add(_set_on_top)
+
+
 def resize(width, height, uid):
     def _resize():
         BrowserView.instances[uid].resize(width,height)
@@ -427,19 +456,19 @@ def move(x, y, uid):
 
 
 def hide(uid):
-    BrowserView.instances[uid].hide()
+    glib.idle_add(BrowserView.instances[uid].hide)
 
 
 def show(uid):
-    BrowserView.instances[uid].show()
+    glib.idle_add(BrowserView.instances[uid].show)
 
 
 def minimize(uid):
-    BrowserView.instances[uid].minimize()
+    glib.idle_add(BrowserView.instances[uid].minimize)
 
 
 def restore(uid):
-    BrowserView.instances[uid].restore()
+    glib.idle_add(BrowserView.instances[uid].restore)
 
 
 def get_current_url(uid):
@@ -484,8 +513,55 @@ def evaluate_js(script, uid):
 
 
 def get_position(uid):
-    return BrowserView.instances[uid].window.get_position()
+    def _get_position():
+        result['position'] = BrowserView.instances[uid].window.get_position()
+        semaphore.release()
+
+    result = {}
+    semaphore = Semaphore(0)
+
+    try:
+        _get_position()
+    except:
+        glib.idle_add(_get_position)
+        semaphore.acquire()
+
+    return result['position']
 
 
 def get_size(uid):
-    return BrowserView.instances[uid].window.get_size()
+    def _get_size():
+        result['size'] = BrowserView.instances[uid].window.get_size()
+        semaphore.release()
+
+    result = {}
+    semaphore = Semaphore(0)
+
+    try:
+        _get_size()
+    except:
+        glib.idle_add(_get_size)
+        semaphore.acquire()
+
+    return result['size']
+
+
+def configure_transparency(c):
+    c.set_visual(c.get_screen().get_rgba_visual())
+    c.override_background_color(gtk.StateFlags.ACTIVE, Gdk.RGBA(0, 0, 0, 0))
+    c.override_background_color(gtk.StateFlags.BACKDROP, Gdk.RGBA(0, 0, 0, 0))
+    c.override_background_color(gtk.StateFlags.DIR_LTR, Gdk.RGBA(0, 0, 0, 0))
+    c.override_background_color(gtk.StateFlags.DIR_RTL, Gdk.RGBA(0, 0, 0, 0))
+    c.override_background_color(gtk.StateFlags.FOCUSED, Gdk.RGBA(0, 0, 0, 0))
+    c.override_background_color(gtk.StateFlags.INCONSISTENT, Gdk.RGBA(0, 0, 0, 0))
+    c.override_background_color(gtk.StateFlags.INSENSITIVE, Gdk.RGBA(0, 0, 0, 0))
+    c.override_background_color(gtk.StateFlags.NORMAL, Gdk.RGBA(0, 0, 0, 0))
+    c.override_background_color(gtk.StateFlags.PRELIGHT, Gdk.RGBA(0, 0, 0, 0))
+    c.override_background_color(gtk.StateFlags.SELECTED, Gdk.RGBA(0, 0, 0, 0))
+    transparentWindowStyleProvider = gtk.CssProvider()
+    transparentWindowStyleProvider.load_from_data(b"""
+        GtkWindow {
+            background-color:rgba(0,0,0,0);
+            background-image:none;
+        }""")
+    c.get_style_context().add_provider(transparentWindowStyleProvider, gtk.STYLE_PROVIDER_PRIORITY_APPLICATION)

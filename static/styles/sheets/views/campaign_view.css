@@ -1,0 +1,94 @@
+#campaign-view .reload-btn {
+  width: 100%;
+}
+#campaign-view .file-list, #campaign-view .char-list {
+  width: 100%;
+  /*overflow-x: hidden;*/
+  padding: 5px 10px;
+  margin: 0;
+}
+#campaign-view .content-field {
+  padding: 0;
+}
+#campaign-view #content-field {
+  overflow: hidden;
+}
+#campaign-view #content-field .tab-area {
+  min-height: 30px;
+  background-color: grey;
+  width: 100%;
+  margin: 0;
+  padding-left: 5px;
+  vertical-align: center;
+}
+#campaign-view #content-field .tab-area button {
+  margin: 0;
+}
+#campaign-view #content-field .tab-area .fileclose-btn {
+  background-color: #00000000;
+}
+#campaign-view #content-field .tab-area .fileclose-btn:hover {
+  background-color: orangered;
+  color: white;
+}
+#campaign-view #content-field .tab-area .editor-tab {
+  background-color: lightgrey;
+  height: 100%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+#campaign-view #content-field .tab-area .editor-tab button {
+  background-color: #00000000;
+  border: none;
+  height: 100%;
+  margin: 0;
+}
+#campaign-view #content-field .tab-area .editor-tab.active-tab {
+  background-color: lightsteelblue;
+}
+#campaign-view #content-field .editor-area {
+  height: calc(100% - 30px);
+  width: 100%;
+}
+#campaign-view #content-field .editor-area .fileclose-btn {
+  background-color: #00000000;
+}
+#campaign-view #content-field .editor-area .fileclose-btn:hover {
+  background-color: orangered;
+  color: white;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-topbar {
+  min-height: 30px;
+  padding-left: 10px;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-topbar details {
+  display: inline-block;
+  margin-right: 30px;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-topbar button {
+  border: none;
+  height: 100%;
+  margin: 0;
+  vertical-align: center;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-topbar .editor-drag-handle {
+  cursor: move;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-content {
+  height: calc(100% - 30px);
+}
+#campaign-view #content-field .editor-area .editor-container .editor-content .jsoneditor {
+  min-height: 700px;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-content .jsoneditor .jsoneditor-outer {
+  height: 100%;
+}
+#campaign-view #content-field .editor-area .editor-container .char-display-view {
+  max-height: calc(100vh - 170px);
+  overflow: auto;
+}
+
+/*# sourceMappingURL=campaign_view.css.map */

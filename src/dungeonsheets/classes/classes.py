@@ -102,6 +102,11 @@ class CharClass():
     def desc(self):
         return inspect.getdoc(self)
 
+    @property
+    def long_name(self):
+        if self.subclass is not None:
+            return self.name + f" ({self.subclass.name})"
+        return self.name
 
     @property
     def desc_html(self):

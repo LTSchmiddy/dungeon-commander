@@ -9,14 +9,14 @@
   flex-wrap: nowrap;
 }
 
-.playback-buttons-container {
+.dice-roller-container {
   height: 100%;
   margin: auto 10px;
   align-self: flex-start;
   flex-grow: 0;
   flex-shrink: 0;
 }
-.playback-buttons-container button {
+.dice-roller-container button {
   height: 100%;
 }
 

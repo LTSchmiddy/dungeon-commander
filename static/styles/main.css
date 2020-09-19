@@ -24,7 +24,6 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: scroll;
 }
 
 a, a:visited {
@@ -75,7 +74,7 @@ a:hover {
   position: absolute;
   left: 0;
   height: 100%;
-  width: 400px;
+  width: 550px;
 }
 
 div.sidebar-content {
@@ -112,7 +111,7 @@ div.sidebar-content a.sidebar-active {
   height: 100%;
   overflow: auto;
   padding: 10px;
-  width: calc(100vw - 400px);
+  width: calc(100vw - 550px);
 }
 
 .bottom-bar {
@@ -126,14 +125,14 @@ div.sidebar-content a.sidebar-active {
   flex-wrap: nowrap;
 }
 
-.playback-buttons-container {
+.dice-roller-container {
   height: 100%;
   margin: auto 10px;
   align-self: flex-start;
   flex-grow: 0;
   flex-shrink: 0;
 }
-.playback-buttons-container button {
+.dice-roller-container button {
   height: 100%;
 }
 
@@ -170,8 +169,187 @@ div.sidebar-content a.sidebar-active {
   padding: 10px;
 }
 
-.character-view details, .character-view div {
+#python-console-view .python-console-control-pane {
+  height: 30px;
+  width: 100%;
+  padding: 0 10px;
+}
+#python-console-view .python-console {
+  height: calc(100% - 30px);
+  width: 100%;
+  margin: auto;
+  overflow: scroll;
+  background-color: black;
+  color: greenyellow;
+  padding: 10px;
+}
+
+.character-view {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.character-view.\:container\(width\<\=800px\) {
+  /* Styles for .element if its container is at least 100px wide */
+  display: block;
+  grid-template-columns: auto;
+}
+.character-view details.view-pane {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: grey;
+  max-height: 1000px;
+  overflow: auto;
+}
+.character-view details.view-pane summary {
+  height: 30px;
+  background-color: silver;
+}
+.character-view details.view-pane summary.view-pane-header {
+  border-radius: 8px;
+}
+.character-view details.view-pane .details-content {
+  padding: 5px;
+}
+.character-view details.view-pane .details-content td {
+  padding: 5px 5px;
+}
+.character-view details.view-pane .details-content th {
+  padding: 10px 5px;
+}
+.character-view details.view-pane .sub-content {
+  padding-left: 15px;
+}
+.character-view .label {
+  font-weight: bold;
+}
+.character-view .char-ability-list table.details-content td.base_stat, .character-view .char-skill-list table.details-content td.base_stat {
+  color: grey;
+}
+.character-view .char-ability-list table.details-content .modifier, .character-view .char-ability-list table.details-content .saving-throw, .character-view .char-ability-list table.details-content .score, .character-view .char-skill-list table.details-content .modifier, .character-view .char-skill-list table.details-content .saving-throw, .character-view .char-skill-list table.details-content .score {
+  text-align: center;
+}
+.character-view .char-spell-list {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.char-ace-view {
+  height: calc(100vh - 115px);
+}
+.char-ace-view .char-ace-view-editor {
+  position: relative;
+  width: calc(100%);
+  height: calc(100% - 80px);
+}
+.char-ace-view .char-ace-view-status {
+  position: relative;
+  width: calc(100%);
+  padding: 0 10px;
+}
+.char-ace-view .char-ace-view-status.valid {
+  color: green;
+}
+.char-ace-view .char-ace-view-status.invalid {
+  color: red;
+}
+
+@media screen and (max-width: 640px) {
+  .character-view {
+    display: block;
+    grid-template-columns: auto;
+  }
+}
+#campaign-view .reload-btn {
+  width: 100%;
+}
+#campaign-view .file-list, #campaign-view .char-list {
+  width: 100%;
+  /*overflow-x: hidden;*/
+  padding: 5px 10px;
+  margin: 0;
+}
+#campaign-view .content-field {
+  padding: 0;
+}
+#campaign-view #content-field {
+  overflow: hidden;
+}
+#campaign-view #content-field .tab-area {
+  min-height: 30px;
+  background-color: grey;
+  width: 100%;
+  margin: 0;
+  padding-left: 5px;
+  vertical-align: center;
+}
+#campaign-view #content-field .tab-area button {
+  margin: 0;
+}
+#campaign-view #content-field .tab-area .fileclose-btn {
+  background-color: #00000000;
+}
+#campaign-view #content-field .tab-area .fileclose-btn:hover {
+  background-color: orangered;
+  color: white;
+}
+#campaign-view #content-field .tab-area .editor-tab {
+  background-color: lightgrey;
+  height: 100%;
+  display: inline-block;
+  margin-left: 5px;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+#campaign-view #content-field .tab-area .editor-tab button {
+  background-color: #00000000;
+  border: none;
+  height: 100%;
+  margin: 0;
+}
+#campaign-view #content-field .tab-area .editor-tab.active-tab {
+  background-color: lightsteelblue;
+}
+#campaign-view #content-field .editor-area {
+  height: calc(100% - 30px);
+  width: 100%;
+}
+#campaign-view #content-field .editor-area .fileclose-btn {
+  background-color: #00000000;
+}
+#campaign-view #content-field .editor-area .fileclose-btn:hover {
+  background-color: orangered;
+  color: white;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-topbar {
+  min-height: 30px;
   padding-left: 10px;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-topbar details {
+  display: inline-block;
+  margin-right: 30px;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-topbar button {
+  border: none;
+  height: 100%;
+  margin: 0;
+  vertical-align: center;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-topbar .editor-drag-handle {
+  cursor: move;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-content {
+  height: calc(100% - 30px);
+}
+#campaign-view #content-field .editor-area .editor-container .editor-content .jsoneditor {
+  min-height: 700px;
+}
+#campaign-view #content-field .editor-area .editor-container .editor-content .jsoneditor .jsoneditor-outer {
+  height: 100%;
+}
+#campaign-view #content-field .editor-area .editor-container .char-display-view {
+  max-height: calc(100vh - 170px);
+  overflow: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -126,7 +126,7 @@ div.sidebar-content a.sidebar-active {
 
 
 
-.playback-buttons-container {
+.dice-roller-container {
     /*position: absolute;*/
     /*left: 0;*/
     /*top: 0;*/
@@ -139,7 +139,7 @@ div.sidebar-content a.sidebar-active {
     flex-shrink: 0;
 }
 
-.playback-buttons-container button{
+.dice-roller-container button{
     height: 100%;
 }
 

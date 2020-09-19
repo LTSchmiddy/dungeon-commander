@@ -15,12 +15,10 @@ def initialize(forced_gui=None):
         try:
             import webview.platforms.gtk as guilib
             logger.debug('Using GTK')
-            print('Using GTK')
 
             return True
         except (ImportError, ValueError) as e:
             logger.exception('GTK cannot be loaded')
-            print('GTK cannot be loaded')
 
             return False
 
@@ -29,12 +27,10 @@ def initialize(forced_gui=None):
 
         try:
             import webview.platforms.qt as guilib
-            logger.debug('Using QT')
-            print('Using QT')
+
             return True
         except ImportError as e:
             logger.exception('QT cannot be loaded')
-            print('QT cannot be loaded')
             return False
 
     def import_cocoa():
@@ -97,16 +93,10 @@ def initialize(forced_gui=None):
             raise WebViewException('You must have either QT or GTK with Python extensions installed in order to use pywebview.')
 
     elif platform.system() == 'Windows':
-        if forced_gui == 'qt':
-            guis = [import_qt, import_winforms]
-        else:
-            guis = [import_winforms, import_qt]
-
-        # guis = [import_qt, import_winforms]
-        # guis = [import_qt]
+        guis = [import_winforms]
 
         if not try_import(guis):
-            raise WebViewException('You must have either pythonnet installed in order to use pywebview.')
+            raise WebViewException('You must have pythonnet installed in order to use pywebview.')
     else:
         raise WebViewException('Unsupported platform. Only Windows, Linux, OS X, OpenBSD are supported.')
 

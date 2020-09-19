@@ -1,7 +1,8 @@
-import sys
-import os
-import threading
-import math
+# import sys
+# import os
+# import threading
+# import math
+from typing import List, Dict
 
 import interface_flask
 
@@ -20,7 +21,7 @@ p_gui = current['window']['web-engine']
 # p_gui = 'cef'
 # p_gui = 'qt'
 p_http_server = False
-p_debug = False
+p_debug = True
 
 
 window: wv.window = None
@@ -28,14 +29,19 @@ window: wv.window = None
 window_is_alive = False
 
 
-def create_window(auto_load_ui: bool = True, window_name: str = "Dungeon Commander"):
+def create_main_window(auto_load_ui: bool = True, window_name: str = "Dungeon Commander"):
     global window
+
+    wv_cef.settings.update({
+        'persist_session_cookies': True
+    })
 
     load_addr = interface_flask.get_blank_addr()
     if auto_load_ui:
         load_addr = interface_flask.get_main_addr()
 
     window = wv.create_window(window_name, load_addr, js_api=js_api.JsApi())
+    # window2 = wv.create_window("other_window", html="Hi Alex", js_api=js_api.JsApi())
 
     if p_gui != 'cef':
         if current['window']['x'] is not None:
@@ -50,14 +56,16 @@ def create_window(auto_load_ui: bool = True, window_name: str = "Dungeon Command
     if current['window']['height'] is not None:
         window.initial_height = current['window']['height']
 
+
     window.loaded += on_loaded
     window.closing += on_window_closing
     window.closed += on_window_closed
 
+def create_child_window():
+    pass
 
 
-
-def start_window():
+def start_viewport():
     global p_gui, p_http_server, p_debug, window, window_is_alive
     window_is_alive = True
     wv.start(viewport.bg_tasks.background_thread, window, gui=p_gui, debug=p_debug, http_server=p_http_server)
@@ -86,67 +94,39 @@ def on_window_closed():
     window_is_alive = False
 
 
-def get_cef_instance() -> cef.PyBrowser:
+def get_cef_instance_dict() -> Dict[str, wv_cef.Browser]:
     global window, window_is_alive
 
-    if not window_is_alive:
+    if not window_is_alive and window is not None:
         # print ("ERROR: Window is not active.")
-        return None
+        return {}
 
     if current['window']['web-engine'] != 'cef':
-        # print ("ERROR: Not using CEF Rendering.")
+        print ("ERROR: Not using CEF Rendering.")
+        return {}
+
+    return window.gui.CEF.instances
+
+def get_cef_instance_keys() -> List[str]:
+    instance_dict = get_cef_instance_dict()
+    return list(instance_dict.keys())
+
+
+def get_cef_instance(instance_id: str = 'master') -> cef.PyBrowser:
+    wv_instance = get_wv_cef_instance(instance_id)
+    if wv_instance is None:
         return None
 
-    if not 'master' in window.gui.CEF.instances:
+    return wv_instance.browser
+
+def get_wv_cef_instance(instance_id: str = 'master') -> wv_cef.Browser:
+    instance_dict = get_cef_instance_dict()
+
+    if not instance_id in instance_dict:
         # print ("ERROR: CEF missing 'master' instance.")
         return None
 
-    return window.gui.CEF.instances['master'].browser
+    return instance_dict[instance_id]
 
-def get_wv_cef_instance() -> wv_cef.Browser:
-    global window, window_is_alive
-
-    if not window_is_alive:
-        # print ("ERROR: Window is not active.")
-        return None
-
-    if current['window']['web-engine'] != 'cef':
-        # print ("ERROR: Not using CEF Rendering.")
-        return None
-
-    return window.gui.CEF.instances['master']
-
-#
-# def get_qt_instance() -> wv_qt.BrowserView:
-#     global window, window_is_alive
-#
-#     if not window_is_alive:
-#         print("ERROR: Window is not active.")
-#         return None
-#
-#     if settings['window']['web-engine'] != 'qt':
-#         print("ERROR: Not using qt Rendering.")
-#         return None
-#
-#     return window.gui.BrowserView.instances['master']
-
-
-
-
-
-# import webview.platforms.cef as wcef
-# import webview.platforms.qt as wqt
-from cefpython3 import cefpython as cef
-#
-# def get_cef_instances():
-#     return wcef.instances
-#
-# def get_cef_master() -> wcef.Browser:
-#     return wcef.instances['master']
-#
-# def get_cef_window() -> cef.PyBrowser:
-#     return wcef.instances['master'].browser
-
-# def get_qt_handle():
-#     return int(wqt.BrowserView.instances['master'].videoframe.winId())
-
+# py.exec(`import webview as wv; import viewport; win2 = wv.create_window("other_window", html="Hi Alex", js_api=viewport.js_api.JsApi())`);
+# await py.exec(`import webview as wv; `);

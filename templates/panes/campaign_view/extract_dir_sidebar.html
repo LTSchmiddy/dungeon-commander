@@ -1,0 +1,53 @@
+
+
+<div class="sidebar" id="lib-sidebar">
+    <button class="btn-primary reload-btn" onclick="campaign_view_reload_dir()">Reload</button>
+    <div id="sidebar-content" class="sidebar-content">
+        <strong>Campaign Directory</strong>
+        <div id="directory-list" style="width: 100%;"></div>
+        <hr/>
+        <strong>Loaded Characters</strong>
+        <div id="loaded-characters-list" style="width: 100%;"></div>
+
+    </div>
+</div>
+
+{#{% include "components/library_view/sidebar_logic.html" %}#}
+
+
+
+<script>
+    let campaign_view_sidebar = null;
+
+    let campaign_view_directory_content = null;
+    let campaign_view_characters_content = null;
+
+
+
+    $(document).ready(()=>{
+        campaign_view_sidebar = new Sidebar('lib-sidebar', 'content-field');
+
+        campaign_view_directory_content = $('#directory-list');
+        campaign_view_characters_content = $('#loaded-characters-list');
+        campaign_view_reload_dir();
+        campaign_view_update_loaded_characters();
+    });
+
+    function campaign_view_reload_dir(){
+        campaign_view_directory_content.text("Loading...")
+
+        campaign_view_directory_content.load("/panes/campaign_view/extract_dir_listing");
+        {#mod_editor_sidebar_dir_list.load("/panes/cdb_listing");#}
+    }
+
+    function campaign_view_update_loaded_characters() {
+        campaign_view_characters_content.text("Loading...")
+
+        campaign_view_characters_content.load("/panes/campaign_view/loaded_character_listing");
+    }
+
+
+</script>
+
+
+

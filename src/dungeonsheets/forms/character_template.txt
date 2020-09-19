@@ -102,3 +102,4 @@ flaws = """{{ char.flaws }}"""
 features_and_traits = """{{ char.features_and_traits }}"""
 
 info_dict = {{ char.info_dict }}
+unique = {{ char.unique }}

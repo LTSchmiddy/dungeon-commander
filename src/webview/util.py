@@ -18,11 +18,21 @@ from platform import architecture
 from threading import Thread
 from uuid import uuid4
 
-from .js import api, npo, dom, event
+import webview
+
+from .js import api, npo, dom, event, drag
 
 _token = uuid4().hex
 
-default_html = '<!doctype html><html><head></head><body></body></html>'
+default_html = """
+    <!doctype html>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+        </head>
+        <body></body>
+    </html>
+"""
 
 logger = logging.getLogger('pywebview')
 
@@ -31,21 +41,36 @@ class WebViewException(Exception):
     pass
 
 
-def base_uri(relative_path=''):
-    """ Get absolute path to resource, works for dev and for PyInstaller """
+def get_app_root():
+    """
+    Gets the file root of the application.
+    """
     try:
         # PyInstaller creates a temp folder and stores path in _MEIPASS
-        base_path = sys._MEIPASS
-    except Exception:
+        return sys._MEIPASS
+    except AttributeError:
         if 'pytest' in sys.modules:
             for arg in reversed(sys.argv):
                 path = os.path.realpath(arg.split('::')[0])
                 if os.path.exists(path):
-                    base_path = path if os.path.isdir(path) else os.path.dirname(path)
-                    break
+                    return path if os.path.isdir(path) else os.path.dirname(path)
         else:
-            base_path = os.path.dirname(os.path.realpath(sys.argv[0]))
+            return os.path.dirname(os.path.realpath(sys.argv[0]))
 
+
+def abspath(path):
+    """
+    Make path absolute, using the application root
+    """
+    path = os.fspath(path)
+    if not os.path.isabs(path):
+        path = os.path.join(get_app_root(), path)
+    return os.path.normpath(path)
+
+
+def base_uri(relative_path=''):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    base_path = get_app_root()
     if not os.path.exists(base_path):
         raise ValueError('Path %s does not exist' % base_path)
 
@@ -75,7 +100,11 @@ def parse_file_type(file_type):
 
 def parse_api_js(window, platform, uid=''):
     def get_args(f):
-        return list(inspect.getfullargspec(f).args)
+        try:
+            params = list(inspect.getfullargspec(f).args) # Python 3
+        except AttributeError:
+            params = list(inspect.getargspec(f).args)  # Python 2
+        return params
 
     def generate_func():
         if window._js_api:
@@ -98,7 +127,7 @@ def parse_api_js(window, platform, uid=''):
     except Exception as e:
         logger.exception(e)
 
-    js_code = npo.src + event.src + api.src % (_token, platform, uid, func_list) + dom.src
+    js_code = npo.src + event.src + api.src % (_token, platform, uid, func_list) + dom.src + drag.src % webview.DRAG_REGION_SELECTOR
     return js_code
 
 
@@ -119,6 +148,10 @@ def js_bridge_call(window, func_name, param, value_id):
 
         window.evaluate_js(code)
 
+    if func_name == 'moveWindow':
+        window.move(*param)
+        return
+
     func = window._functions.get(func_name) or getattr(window._js_api, func_name, None)
 
     if func is not None:
@@ -138,13 +171,6 @@ def escape_string(string):
         .replace('"', r'\"') \
         .replace('\n', r'\n')\
         .replace('\r', r'\r')
-
-
-def transform_url(url):
-    if url and '://' not in url:
-        return base_uri(url)
-    else:
-        return url
 
 
 def make_unicode(string):

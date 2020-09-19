@@ -4,9 +4,11 @@ from typing import List
 import db
 import dungeonsheets
 
+from game.campaign import Campaign
 
-class Campaign:
-    campaign_path: str
+current: Campaign = None
 
-    players: List[dungeonsheets.character.Character]
-    npcs: List[dungeonsheets.character.Character]
+def start():
+    global current
+    current =  Campaign()
+

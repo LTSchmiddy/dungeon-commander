@@ -1,0 +1,20 @@
+#python-console-view {
+    $python-console-width: 100%;
+    $python-console-control-size: 30px;
+
+    .python-console-control-pane {
+        height: $python-console-control-size;
+        width: $python-console-width;
+        padding: 0 10px;
+    }
+
+    .python-console {
+        height: calc(100% - #{$python-console-control-size});
+        width: $python-console-width;
+        margin: auto;
+        overflow: scroll;
+        background-color: black;
+        color: greenyellow;
+        padding: 10px;
+    }
+}

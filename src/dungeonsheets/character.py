@@ -9,6 +9,7 @@ import warnings
 import math
 import types
 
+import markdown2
 import jinja2
 
 from dungeonsheets import (armor, background, classes, exceptions, features,
@@ -79,6 +80,7 @@ class Character:
     # Hit points
     hp_max = None
     hp_current = None
+    # hp_temp = None
     # Base stats (ability scores)
     strength = Ability()
     dexterity = Ability()
@@ -142,10 +144,16 @@ class Character:
     custom_features = list()
     feature_choices = list()
 
+    unique = True
+
     info_dict: dict
+    loaded_path: str
+    loaded_id: int
 
     def __init__(self, **attrs):
         self.info_dict = {}
+        self.loaded_path = ""
+        self.loaded_id= 0
 
         if 'info_dict' in attrs:
             self.info_dict = attrs.pop('info_dict')
@@ -157,8 +165,8 @@ class Character:
         my_levels = attrs.pop('levels', [])
         my_subclasses = attrs.pop('subclasses', [])
         # backwards compatability
-        if (len(my_classes) == 0):
-            if ('class' in attrs):
+        if len(my_classes) == 0:
+            if 'class' in attrs:
                 my_classes = [attrs.pop('class')]
                 my_levels = [attrs.pop('level', 1)]
                 my_subclasses = [attrs.pop('subclass', None)]
@@ -179,6 +187,8 @@ class Character:
 
         if self.hp_current is None:
             self.hp_current = self.hp_max
+
+        db.Session.remove()
 
     def clear(self):
         # reset class-definied items
@@ -293,7 +303,7 @@ class Character:
 
     @property
     def classes_and_levels(self):
-        return ' / '.join([f'{c.name} {c.level}'
+        return ' / '.join([f'{c.long_name} {c.level}'
                            for c in self.class_list])
 
     @property
@@ -829,15 +839,23 @@ class Character:
             return ()
 
     @classmethod
-    def load_code(cls, char_string):
+    def load_from_code(cls, char_string):
         char_props = read_character_code(char_string)
-        return cls.load_from_dict(char_props)
+        if isinstance(char_props, Exception):
+            return char_props
+        else:
+            return cls.load_from_dict(char_props)
+
 
     @classmethod
     def load(cls, character_file):
         # Create a character from the character definition
         char_props = read_character_file(character_file)
-        return cls.load_from_dict(char_props)
+        if isinstance(char_props, Exception):
+            return char_props
+        else:
+            return cls.load_from_dict(char_props)
+
 
     @classmethod
     def load_from_dict(cls, char_props):
@@ -850,7 +868,34 @@ class Character:
         char = Character(**char_props)
         return char
 
-    def save_code(self, template_file='character_template.txt'):
+    def load_into_from_code(self, char_string):
+        char_props = read_character_code(char_string)
+        if isinstance(char_props, Exception):
+            return char_props
+        else:
+            self.load_into_from_dict(char_props)
+            return None
+
+    def load_into(self, character_file):
+        # Create a character from the character definition
+        char_props = read_character_file(character_file)
+        if isinstance(char_props, Exception):
+            return char_props
+        else:
+            self.load_into_from_dict(char_props)
+            return None
+
+
+    def load_into_from_dict(self, char_props):
+        my_classes = char_props.get('classes', [])
+        # backwards compatability
+        if (len(my_classes) == 0) and ('character_class' in char_props):
+            char_props['classes'] = [char_props.pop('character_class').lower().capitalize()]
+            char_props['levels'] = [str(char_props.pop('level'))]
+        # Create the character with loaded properties
+        self.__init__(**char_props)
+
+    def save_code(self, template_file='character_template.txt') -> str:
         # Create the template context
         context = dict(
             char=self,
@@ -862,6 +907,9 @@ class Character:
         ).get_template(template_file).render(context)
         # Save the file
         return text
+
+    def save_dict(self):
+        return read_character_code(self.save_code())
 
     def save(self, filename, template_file='character_template.txt'):
         text = self.save_code()
@@ -880,11 +928,18 @@ def read_character_code(p_code: str):
     # create blank module
     module = types.ModuleType('character_module')
     # populate the module with code
-    exec(p_code, module.__dict__)
-    return get_char_props_from_module(module)
-
+    try:
+        exec(p_code, module.__dict__)
+        return get_char_props_from_module(module)
+    except Exception as e:
+        return e
 
 def read_character_file(filename):
+    char_code = open(filename, 'r').read()
+    return read_character_code(char_code)
+
+'''
+def read_character_file_old(filename):
     """Create a character object from the given definition file.
 
     The definition file should be an importable python file, filled
@@ -920,7 +975,7 @@ def read_character_file(filename):
     spec.loader.exec_module(module)
     # Prepare a list of properties for this character
     return get_char_props_from_module(module)
-
+'''
 def get_char_props_from_module(module) -> dict:
     char_props = {}
     for prop_name in dir(module):

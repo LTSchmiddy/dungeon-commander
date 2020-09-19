@@ -3,6 +3,8 @@ from flask import Flask, send_from_directory
 import settings
 from logging.config import dictConfig
 
+import markdown2
+
 dictConfig({
     'version': 1,
     'formatters': {'default': {
@@ -34,14 +36,16 @@ from interface_flask.pages import pages
 from interface_flask.panes import panes
 from interface_flask.api import api
 
-@pages.context_processor
+
+@app.context_processor
 def jinja2_values():
     def to_int(x):
         return int(x)
 
     return dict(
-        settings=settings #,
+        settings=settings, #,
         # to_int=to_int
+        md=markdown2.markdown
     )
 
 

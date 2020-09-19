@@ -30,16 +30,20 @@
 
 
     <dl class="spell-info">
-        <dd>Casting Time: </dd><dt>{{ spell.casting_time }}</dt>
-        <dd>Casting Range: </dd><dt>{{ spell.casting_range }}</dt>
-        <dd>Duration: </dd><dt>{{ spell.duration }}</dt>
-        <dd>Casting Time: </dd><dt>{{ spell.casting_time }}</dt>
-        <dd>Components: </dd><dt>{{ spell.components_string }}</dt>
+        <div><span class="label">Casting Time: </span>{{ spell.casting_time }}</div>
+        <div><span class="label">Casting Range: </span>{{ spell.casting_range }}</div>
+        <div><span class="label">Duration: </span>{{ spell.duration }}</div>
+        <div><span class="label">Casting Time: </span>{{ spell.casting_time }}</div>
+        <div><span class="label">Components: </span>{{ spell.component_string }}</div>
         {% if spell.material_components %}
-            <dd>Required Materials: </dd><dt>{{ spell.materials }}</dt>
+            <div><span class="label">Required Materials: </span>{{ spell.materials }}</div>
         {% endif %}
-        <dd>School of Magic: </dd><dt>{{ spell.magic_school }}</dt>
-        <dd>Available to: </dd><dt>{{ spell.classes }}</dt>
+        <div><span class="label">School of Magic: </span>{{ spell.magic_school }}</div>
+        <div><span class="label">Available to: </span>
+            {% for s in spell.classes %}
+                {{ s }},
+            {% endfor %}
+        </div>
 
     </dl>
 

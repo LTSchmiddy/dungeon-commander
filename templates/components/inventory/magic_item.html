@@ -1,0 +1,11 @@
+<details class="inv-item">
+    <summary>{{ item.name }}</summary>
+    <div class="info">
+        <div class="description">{{ item.item_desc_html|safe }}</div>
+        <div class="rarity"><strong>Rarity:</strong> {{ item.rarity }}</div>
+        <div class="type"><strong>Type:</strong> {{ item.type }}</div>
+        {% if item.attunement %}
+            <div class="attunement">{{ item.attunement }}</div>
+        {% endif %}
+    </div>
+</details>

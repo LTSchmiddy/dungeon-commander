@@ -34,8 +34,7 @@ def blank():
 
 @pages.route('/')
 def index():
-    char1 = dungeonsheets.character.Character.load("char1.py")
-    return render_template("index.html", char=char1)
+    return render_template("index.html")
 
 
 

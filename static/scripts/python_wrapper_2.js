@@ -3,6 +3,7 @@ console.log("loading Python_Wrapper");
 
 window.std_handler__main_stdout = null;
 window.std_handler__main_stdout_as_html = null;
+window.std_handler__main_stdout_updated = null;
 
 let py = null;
 // let py_exec = null;
@@ -10,6 +11,16 @@ let py = null;
 window.addEventListener('pywebviewready', function() {
     
     py = {
+        campaign: {
+            character: {
+                apply_character_text: pywebview.api.campaign.character.apply_character_text,
+                get_character_text: pywebview.api.campaign.character.get_character_text,
+                get_loaded_characters: pywebview.api.campaign.character.get_loaded_characters,
+                load_character: pywebview.api.campaign.character.load_character,
+                save_character: pywebview.api.campaign.character.save_character,
+                unload_character: pywebview.api.campaign.character.unload_character
+            }
+        },
         close_debug: pywebview.api.close_debug,
         exec: pywebview.api.exec,
         files: {

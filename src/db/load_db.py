@@ -29,7 +29,7 @@ def load_spells():
 def _load_json_dir(read_dir: str, db_add_method: Any):
     for i in os.listdir(read_dir):
         scan_file = os.path.join(read_dir, i)
-
+        # print(scan_file)
         json_in = json.load(open(scan_file, 'r', encoding='utf-8'))
 
         db_add_method(json_in)
@@ -49,6 +49,15 @@ def load_weapons():
     read_dir = "./data/weapons"
 
     _load_json_dir(read_dir, db.tables.DB_Weapon.add_json)
+
+    db.Session.commit()
+    db.Session.remove()
+
+def load_reference_sections():
+    read_dir = "./data/sections"
+
+    _load_json_dir(read_dir, db.tables.DB_ReferenceSection.add_json)
+    db.tables.DB_ReferenceSection.generate_reference_structure()
 
     db.Session.commit()
     db.Session.remove()
@@ -75,8 +84,12 @@ def dump_weapons():
         json.dump(out_dict, out_file, indent=4, sort_keys=True)
         out_file.close()
 
-if __name__ == '__main__':
-    # dump_weapons()
+def load_all():
     load_magic_items()
     load_spells()
     load_weapons()
+    load_reference_sections()
+
+if __name__ == '__main__':
+    # dump_weapons()
+    load_all()

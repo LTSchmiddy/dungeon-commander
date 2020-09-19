@@ -12,3 +12,9 @@ function showdown_convert(elem, header_param = 2) {
 
     elem.innerHTML = converter.makeHtml(elem.innerHTML.trim());
 }
+
+function generate_element(code) {
+    let wrapper = document.createElement('div');
+    wrapper.innerHTML = code;
+    return wrapper.firstChild;
+}

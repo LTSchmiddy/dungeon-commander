@@ -1,3 +1,5 @@
+import inspect
+
 from dungeonsheets import armor, spells
 from dungeonsheets.features.features import Feature
 # from dungeonsheets.character import Character
@@ -120,11 +122,15 @@ class ElfCantrip(Feature):
                 new_spell: spells.Spell = spell_found.spell_object()
 
                 self.spells_known = self.spells_prepared = (new_spell,)
-            #
             print("processed...")
-            # print(owner.spells)
         else:
             print("not processed...")
+
+    @property
+    def desc(self):
+        if len (self.spells_known) > 0:
+            return inspect.getdoc(self)[:-1] + f": **{self.spells_known[0].name}**"
+        return inspect.getdoc(self)
 
 class MaskOfTheWild(Feature):
     """You can attempt to hide even when you are only lightly obscured by foliage,

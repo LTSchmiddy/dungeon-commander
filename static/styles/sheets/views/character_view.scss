@@ -1,8 +1,114 @@
+@import '../../cq-prolyfill-mixin';
+
 .character-view {
 
-    details, div {
-        padding-left: 10px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    @include cq-prolyfill("width <= 800px") {
+		/* Styles for .element if its container is at least 100px wide */
+        display: block;
+        grid-template-columns: auto;
+	}
+
+    //details, div {}
+    .char-grid-item {
+        //width: 50%;
+    }
+
+    details.view-pane {
+
+        border-style: solid;
+        border-radius: 10px;
+        border-color: grey;
+        max-height: 1000px;
+        overflow: auto;
+
+        summary {
+            height: 30px;
+            background-color: silver;
+
+        }
+
+        summary.view-pane-header {
+            border-radius: 8px;
+        }
+
+        .details-content {
+            padding: 5px;
+
+            td {
+                padding: 5px 5px;
+            }
+
+            th {
+                padding: 10px 5px;
+            }
+        }
+        .sub-content {
+            padding-left: 15px;
+        }
+    }
+
+    .label {
+        font-weight: bold;
+    }
+
+    .char-header {
+        //width: 100%;
+        //background-color: red;
+
+    }
+
+    .char-ability-list, .char-skill-list{
+        table.details-content {
+            td.base_stat {
+                color: grey;
+            }
+
+            .modifier, .saving-throw, .score {
+                text-align: center;
+            }
+        }
+    }
+
+    .char-spell-list {
+        grid-column-start: 1;
+        grid-column-end: 3;
     }
 
 
+}
+
+.char-ace-view {
+    //position: absolute;
+    //width: calc(100%);
+    height: calc(100vh - 115px);
+
+    .char-ace-view-editor {
+        position: relative;
+        width: calc(100%);
+        height: calc(100% - 80px);
+        //height: calc(100% - 80px);
+    }
+    .char-ace-view-status {
+        position: relative;
+        width: calc(100%);
+        padding: 0 10px;
+        //height: calc(100% - 80px);
+    }
+    .char-ace-view-status.valid {
+        color: green;
+    }
+    .char-ace-view-status.invalid {
+        color: red;
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .character-view {
+        display: block;
+        grid-template-columns: auto;
+    }
 }

@@ -1,0 +1,26 @@
+{% extends "panes/campaign_view/editors/common/editor_base.html" %}
+
+{% block unique_class %} char-editor-container {% endblock %}
+
+{#{% block save_buttons %}
+
+{% endblock %}#}
+
+{% block topbar %}
+    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.save_file()" class="filesave-btn btn-primary">SAVE</button>
+    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.revert_file() " class="filerevert-btn btn-primary">REVERT</button>
+    <span style="padding-left: 30px">Editor Mode:</span>
+    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.set_editor_mode('display') " class="filerevert-btn btn-secondary">Display</button>
+    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.set_editor_mode('ace') " class="filerevert-btn btn-secondary">Text</button> -
+    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.apply_ace_char_text() " class="filerevert-btn btn-secondary">Apply</button>
+
+{% endblock %}
+{% block content %}
+    <div class="char-display-view" data-char-display-id="{{ path }}"></div>
+    <div class="char-ace-view" data-char-ace-id="{{ path }}">
+        <div id="char-ace-editor-id-{{ path }}" class="char-ace-view-editor" data-char-ace-editor-id="{{ path }}"></div>
+        <div id="char-ace-status-id-{{ path }}" class="char-ace-view-status" data-char-ace-status-id="{{ path }}"></div>
+    </div>
+
+{#    <div id="char-ace-editor-id-{{ path }}" class="char-ace-view" data-char-ace-id="{{ path }}"></div>#}
+{% endblock %}

@@ -1,0 +1,13 @@
+<ul class="char-list">
+
+{% for id, char in characters.items() %}
+        <li>
+            <a onclick="extracted_file_load('{{ char.name }}', '{{ id }}?char')">{{ char.name }}</a>
+{#            <details>#}
+{#                <summary></summary>#}
+{##}
+{#            </details>#}
+        </li>
+{% endfor %}
+
+</ul>

@@ -40,7 +40,7 @@ class Sidebar {
             this.contentField.style.width = 'calc(100vw - ' + (e.clientX - this.sidebar.offsetLeft) + 'px)';
             // console.log("should be resizing content");
         }
-
+        window.cqApi.reevaluate(1);
     }
 
     stopResize(e) {

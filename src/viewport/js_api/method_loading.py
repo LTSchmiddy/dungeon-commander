@@ -9,7 +9,7 @@ from viewport.js_api import JsApi
 import viewport
 
 
-from viewport.js_api.modules import file, std, mod_settings
+from viewport.js_api.modules import file, std, mod_settings, campaign
 
 
 def create_api_modules(api: Type[JsApi]):
@@ -17,6 +17,7 @@ def create_api_modules(api: Type[JsApi]):
     file.create_files_module(api)
     std.create_std_module(api)
     mod_settings.create_settings_module(api)
+    campaign.create_campaign_module(api)
 
 
 

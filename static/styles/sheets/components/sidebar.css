@@ -10,7 +10,7 @@
   position: absolute;
   left: 0;
   height: 100%;
-  width: 400px;
+  width: 550px;
 }
 
 div.sidebar-content {
@@ -47,7 +47,7 @@ div.sidebar-content a.sidebar-active {
   height: 100%;
   overflow: auto;
   padding: 10px;
-  width: calc(100vw - 400px);
+  width: calc(100vw - 550px);
 }
 
 /*# sourceMappingURL=sidebar.css.map */
