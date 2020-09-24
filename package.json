@@ -1,0 +1,34 @@
+{
+  "name": "dungeon-commander-webview",
+  "version": "1.0.0",
+  "description": "Client-side JS for Dungeon Commander",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LTSchmiddy/dungeon-commander.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LTSchmiddy/dungeon-commander/issues"
+  },
+  "homepage": "https://github.com/LTSchmiddy/dungeon-commander#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "jsoneditor": "^9.1.0",
+    "pdfjs-dist": "^2.5.207",
+    "popper.js": "^1.16.1",
+    "showdown": "^1.9.1",
+    "sortablejs": "^1.12.0"
+  },
+  "devDependencies": {
+    "sass": "^1.26.11",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}

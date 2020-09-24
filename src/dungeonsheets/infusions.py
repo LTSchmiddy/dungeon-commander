@@ -1,6 +1,11 @@
+import inspect
+from collections import namedtuple
+
+import markdown2
+
 class Infusion:
     name = "Unknown infusion"
-    item = "DB_Item to be infused"
+    item = "Item to be infused"
     prerequisite = ""
     classes = ('Artificer',)
 
@@ -24,6 +29,25 @@ class Infusion:
     def special_material(self):
         return 'worth at least' in self.item.lower()
 
+    @classmethod
+    def get_all(cls):
+        return cls.__subclasses__()
+
+    @property
+    def desc(self):
+        return self.get_desc()
+
+    @classmethod
+    def get_desc(cls):
+        return inspect.getdoc(cls)
+
+    @property
+    def desc_html(self):
+        return self.get_desc_html()
+
+    @classmethod
+    def get_desc_html(cls):
+        return markdown2.markdown(cls.get_desc(), extras=['wiki-tables']).strip()
 
 class BootsOfTheWindingPath(Infusion):
     """While wearing these boots, a creature can teleport up to 15 feet as a
@@ -91,6 +115,35 @@ class HomunculusServant(Infusion):
 
     The homunculus regains 2d6 hit points if the *mending* spell is cast on it.
     If it dies, it vanishes, leaving its heart in its space.
+    ---
+    **Homunculus Servant**
+    *Tiny construct, neutral*
+
+    **Armor Class** 13 (natural armor)<br/>
+   ** Hit Points** equal to homunculus's Constitution modifier + your Intelligence modifier + your level in this class<br/>
+    **Speed **20 ft., fly 30 ft.<br/>
+    **STR** 4 (−3) **DEX** 15 (+2) **CON** 12 (+1) **INT** 10 (+0) **WIS** 10 (+0) **CHA** 7 (−2)<br/>
+    **Saving Throws** Dex +1<br/>
+    **Skills** Perception +4, Stealth +4<br/>
+    **Damage Immunities** poison<br/>
+    **Condition Immunities** exhaustion, poisoned<br/>
+    **Senses** darkvision 60 ft., passive Perception 14<br/>
+    **Languages** understands the languages you speak<br/>
+
+    **Evasion.** If the homunculus is subjected to an effect that allows it to make a Dexterity saving throw to take only
+    half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails. it
+    can't use this trait if it's incapacitated
+
+    **Might of the Master.** The following numbers increase by 1 when your proficiency bonus increases by 1: the
+    homunculus’s skill and saving throw bonuses (above( and the bonuses to hit and damage of its attack (below).
+
+    **Actions (Require Your Bonus Action)**
+    Force Strike. Ranged Weapon Attack: +4 to hit, range 30 ft., one target you can see. Hit: 1d4 + 2 force damage.
+
+    **Reactions**
+    Channel Magic. The homunculus delivers a spell you cast that has a range of touch. The homunculus must be within
+    120 feet of you.
+
     """
 
     name = "Homunculus Servant"
@@ -133,7 +186,8 @@ class RepeatingShot(Infusion):
 
 
 class ReplicateMagicItem(Infusion):
-    """Using this infusion, you replicate a particular magic item. You can
+    """
+    Using this infusion, you replicate a particular magic item. You can
     learn this infusion multiple times; each time you do so, choose a magic
     item that you can make with it, picking from the Replicable Items tables
     below. A table's title tells you the level you must be in the class to
@@ -146,8 +200,72 @@ class ReplicateMagicItem(Infusion):
     among the common magic items in that book when you pick a magic item you
     can replicate with this infusion.
     """
+    RepItem = namedtuple('RepItem', ('name', 'attunement', 'level'))
 
-    name = "Replicate Magic DB_Item"
+    name = "Replicate Magic Item"
+    item_table = {
+        2: (
+            RepItem(name='Alchemy jug', attunement='No', level=2),
+            RepItem(name='Armblade (Eberron: Rising from the Last War)', attunement='Yes', level=2),
+            RepItem(name='Bag of holding', attunement='No', level=2),
+            RepItem(name='Cap of water breathing', attunement='No', level=2),
+            RepItem(name='Goggles of night', attunement='No', level=2),
+            RepItem(name='Prosthetic limb (Eberron: Rising from the Last War)', attunement='Yes', level=2),
+            RepItem(name='Rope of climbing', attunement='No', level=2),
+            RepItem(name='Sending stones', attunement='No', level=2),
+            RepItem(name='Wand of magic detection', attunement='No', level=2),
+            RepItem(name='Wand of secrets', attunement='No', level=2)
+        ),
+        6: (
+            RepItem(name='Boots of elvenkind', attunement='No', level=6),
+            RepItem(name='Cloak of elvenkind', attunement='No', level=6),
+            RepItem(name='Cloak of the manta ray', attunement='No', level=6),
+            RepItem(name='Eyes of charming', attunement='Yes', level=6),
+            RepItem(name='Gloves of thievery', attunement='No', level=6),
+            RepItem(name='Lantern of revealing', attunement='No', level=6),
+            RepItem(name='Pipes of haunting', attunement='No', level=6),
+            RepItem(name='Ring of water walking', attunement='No', level=6),
+            RepItem(name='Wand sheath (Eberron: Rising from the Last War)', attunement='Yes', level=6)
+        ),
+        10: (
+            RepItem(name='Boots of striding and springing', attunement='Yes', level=10),
+            RepItem(name='Boots of the winterlands', attunement='Yes', level=10),
+            RepItem(name='Bracers of archery', attunement='Yes', level=10),
+            RepItem(name='Brooch of shielding', attunement='Yes', level=10),
+            RepItem(name='Cloak of protection', attunement='Yes', level=10),
+            RepItem(name='Eyes of the eagle', attunement='Yes', level=10),
+            RepItem(name='Gauntlets of ogre power', attunement='Yes', level=10),
+            RepItem(name='Gloves of missile snaring', attunement='Yes', level=10),
+            RepItem(name='Gloves of swimming and climbing', attunement='Yes', level=10),
+            RepItem(name='Hat of disguise', attunement='Yes', level=10),
+            RepItem(name='Headband of intellect', attunement='Yes', level=10),
+            RepItem(name='Helm of telepathy', attunement='Yes', level=10),
+            RepItem(name='Medallion of thoughts', attunement='Yes', level=10),
+            RepItem(name='Periapt of wound closure', attunement='Yes', level=10),
+            RepItem(name='Pipes of the sewers', attunement='Yes', level=10),
+            RepItem(name='Quiver of Ehlonna', attunement='No', level=10),
+            RepItem(name='Ring of jumping', attunement='Yes', level=10),
+            RepItem(name='Ring of mind shielding', attunement='Yes', level=10),
+            RepItem(name='Slippers of spider climbing', attunement='Yes', level=10),
+            RepItem(name='Ventilating lung (Eberron: Rising from the Last War)', attunement='Yes', level=10),
+            RepItem(name='Winged boots', attunement='Yes', level=10)
+        ),
+        14: (
+            RepItem(name='Amulet of health', attunement='Yes', level=14),
+            RepItem(name='Arcane propulsion arm (Eberron: Rising from the Last War)', attunement='Yes', level=14),
+            RepItem(name='Belt of hill giant strength', attunement='Yes', level=14),
+            RepItem(name='Boots of levitation', attunement='Yes', level=14),
+            RepItem(name='Boots of speed', attunement='Yes', level=14),
+            RepItem(name='Bracers of defense', attunement='Yes', level=14),
+            RepItem(name='Cloak of the bat', attunement='Yes', level=14),
+            RepItem(name='Dimensional shackles', attunement='No', level=14),
+            RepItem(name='Gem of seeing', attunement='Yes', level=14),
+            RepItem(name='Horn of blasting', attunement='No', level=14),
+            RepItem(name='Ring of free action', attunement='Yes', level=14),
+            RepItem(name='Ring of protection', attunement='Yes', level=14),
+            RepItem(name='Ring of the ram', attunement='Yes', level=14)
+        )
+    }
 
 
 class RepulsionShield(Infusion):

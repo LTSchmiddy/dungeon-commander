@@ -5,7 +5,7 @@ import markdown2
 from dungeonsheets.features import Feature, FeatureSelector
 
 
-class CharClass():
+class CharClass:
     """
     A generic Character Class (not to be confused with builtin class)
     """
@@ -24,6 +24,7 @@ class CharClass():
     num_skill_choices = 2
     spellcasting_ability = None
     spell_slots_by_level = None
+    spells_known_by_level = None
     spells_known = ()
     spells_prepared = ()
     subclass = None
@@ -98,9 +99,6 @@ class CharClass():
         self.spells_known.extend([S() for S in subcls.spells_known])
         self.spells_prepared.extend([S() for S in subcls.spells_prepared])
 
-    @property
-    def desc(self):
-        return inspect.getdoc(self)
 
     @property
     def long_name(self):
@@ -108,13 +106,45 @@ class CharClass():
             return self.name + f" ({self.subclass.name})"
         return self.name
 
-    @property
-    def desc_html(self):
-        doc = inspect.getdoc(self)
+    @classmethod
+    def get_desc(cls):
+        return inspect.getdoc(cls)
+
+    @classmethod
+    def get_desc_html(cls):
+        doc = inspect.getdoc(cls)
         if not doc is None:
             return markdown2.markdown(doc).strip()
 
-        return f"No description for the {self.name} class."
+        return f"No description for the {cls.name} class."
+
+    @classmethod
+    def get_subclass(cls, subcls_id: str):
+        use_cls = None
+        for i in cls.subclasses_available:
+            if i.get_id() == subcls_id:
+                use_cls = i
+                break
+        return use_cls
+
+    @classmethod
+    def all_features(cls):
+        features = ()
+        for key, value in cls.features_by_level.items():
+            features += tuple(value)
+        return features
+
+    @classmethod
+    def get_id(cls):
+        return cls.__name__
+
+    @property
+    def desc(self):
+        return self.get_desc()
+
+    @property
+    def desc_html(self):
+        return self.get_desc_html()
 
     @property
     def features(self):
@@ -147,7 +177,7 @@ class CharClass():
 
 
 
-class SubClass():
+class SubClass:
     """
     A generic subclass object. Add more detail in the __doc__ attribute.
     """
@@ -156,6 +186,7 @@ class SubClass():
     weapon_proficiencies = ()
     _proficiencies_text = ()
     spellcasting_ability = None
+    spells_known_by_level = None
     spell_slots_by_level = None
     spells_known = ()
     spells_prepared = ()
@@ -170,10 +201,32 @@ class SubClass():
     def __repr__(self):
         return "\"{:s}\"".format(self.name)
 
-    @property
-    def desc(self):
-        return inspect.getdoc(self)
+    @classmethod
+    def get_id(cls):
+        return cls.__name__
+
+    @classmethod
+    def get_desc(cls):
+        return inspect.getdoc(cls)
+
+    @classmethod
+    def get_desc_html(cls):
+        return markdown2.markdown(inspect.getdoc(cls)).strip()
+
+    @classmethod
+    def all_features(cls):
+        features = ()
+        for key, value in cls.features_by_level.items():
+            features += tuple(value)
+        return features
+
 
     @property
     def desc_html(self):
-        return markdown2.markdown(inspect.getdoc(self)).strip()
+        return self.get_desc_html()
+
+    @property
+    def desc(self):
+        return self.get_desc()
+
+

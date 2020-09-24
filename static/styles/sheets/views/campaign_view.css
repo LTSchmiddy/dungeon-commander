@@ -7,6 +7,17 @@
   padding: 5px 10px;
   margin: 0;
 }
+#campaign-view .file-list a, #campaign-view .char-list a {
+  display: inline;
+}
+#campaign-view .file-list .close-btn, #campaign-view .char-list .close-btn {
+  background-color: #00000000;
+  padding: 0 10px;
+}
+#campaign-view .file-list .close-btn:hover, #campaign-view .char-list .close-btn:hover {
+  background-color: orangered;
+  color: white;
+}
 #campaign-view .content-field {
   padding: 0;
 }

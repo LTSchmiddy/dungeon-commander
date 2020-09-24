@@ -144,7 +144,7 @@ class Skill():
         elif character.has_feature(RemarkableAthelete):
             if self.ability_name.lower() in ('strength',
                                              'dexterity', 'constitution'):
-                modifier += ceil(character.proficienc_bonus / 2.)
+                modifier += ceil(character.proficiency_bonus / 2.)
 
         # Check for expertise
         is_expert = self.skill_name in character.skill_expertise

@@ -133,10 +133,12 @@ class Artificer(CharClass):
             'Arcana', 'History', 'Investigation',
             'Medicine', 'Nature', 'Perception', 'Sleight of Hand')
     features_by_level = defaultdict(list)
-    features_by_level[1] = [features.MagicalTinkering,
-                            features.FirearmProficiency,
-                            features.ArtificerSpellcasting,
-                            features.ArtificerRitualCasting]
+    features_by_level[1] = [
+        features.ArtificerAbilityScoreImprovement,
+        features.MagicalTinkering,
+        features.FirearmProficiency,
+        features.ArtificerSpellcasting
+    ]
     features_by_level[2] = [features.InfuseItem]
     features_by_level[3] = [features.TheRightToolForTheJob]
     features_by_level[6] = [features.ToolExpertise]

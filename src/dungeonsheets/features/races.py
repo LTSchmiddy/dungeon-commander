@@ -122,9 +122,9 @@ class ElfCantrip(Feature):
                 new_spell: spells.Spell = spell_found.spell_object()
 
                 self.spells_known = self.spells_prepared = (new_spell,)
-            print("processed...")
-        else:
-            print("not processed...")
+            # print("processed...")
+        # else:
+            # print("not processed...")
 
     @property
     def desc(self):

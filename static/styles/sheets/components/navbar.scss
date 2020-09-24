@@ -5,6 +5,10 @@
     width: 100%;
     z-index: 5 !important;
     //height: 40px;
+
+    .dropdown-item-text {
+        color: grey;
+    }
 }
 
 @media (min-width: 590px){

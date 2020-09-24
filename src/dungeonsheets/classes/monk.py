@@ -138,6 +138,39 @@ class KenseiWay(SubClass):
 
 
 class Monk(CharClass):
+    """
+    Whatever their discipline, monks are united in their ability to magically harness the energy that flows in their
+    bodies. Whether channeled as a striking display of combat prowess or a subtler focus of defensive ability and speed,
+    this energy infuses all that a monk does.
+
+    # The Magic of Ki
+    Monks make careful study of a magical energy that most monastic traditions call ki. This energy is an element of the
+    magic that suffuses the multiverse—specifically, the element that flows through living bodies. Monks harness this
+    power within themselves to create magical effects and exceed their bodies’ physical capabilities, and some of their
+    special attacks can hinder the flow of ki in their opponents. Using this energy, monks channel uncanny speed and
+    strength into their unarmed strikes. As they gain experience, their martial training and their mastery of ki gives
+    them more power over their bodies and the bodies of their foes.
+
+    # Training and Asceticism
+    Small walled cloisters dot the landscapes of the worlds of D&D, tiny refuges from the flow of ordinary life, where
+    time seems to stand still. The monks who live there seek personal perfection through contemplation and rigorous
+    training. Many entered the monastery as children, sent to live there when their parents died, when food couldn’t be
+    found to support them, or in return for some kindness that the monks had performed for their families.
+
+    Some monks live entirely apart from the surrounding population, secluded from anything that might impede their
+    spiritual progress. Others are sworn to isolation, emerging only to serve as spies or assassins at the command of
+    their leader, a noble patron, or some other mortal or divine power.
+
+    The majority of monks don’t shun their neighbors, making frequent visits to nearby towns or villages and exchanging
+    their service for food and other goods. As versatile warriors, monks often end up protecting their neighbors from
+    monsters or tyrants.
+
+    For a monk, becoming an adventurer means leaving a structured, communal lifestyle to become a wanderer. This can be
+    a harsh transition, and monks don’t undertake it lightly. Those who leave their cloisters take their work seriously,
+    approaching their adventures as personal tests of their physical and spiritual growth. As a rule, monks care little
+    for material wealth and are driven by a desire to accomplish a greater mission than merely slaying monsters and
+    plundering their treasure.
+    """
     name = 'Monk'
     hit_dice_faces = 8
     subclass_select_level = 3
@@ -158,8 +191,11 @@ class Monk(CharClass):
                             LongDeathWay, DrunkenMasterWay,
                             KenseiWay)
     features_by_level = defaultdict(list)
-    features_by_level[1] = [features.UnarmoredDefenseMonk,
-                            features.MartialArts]
+    features_by_level[1] = [
+        features.MonkAbilityScoreImprovement,
+        features.UnarmoredDefenseMonk,
+        features.MartialArts
+    ]
     features_by_level[2] = [features.Ki, features.FlurryOfBlows,
                             features.PatientDefense, features.StepOfTheWind,
                             features.UnarmoredMovement]

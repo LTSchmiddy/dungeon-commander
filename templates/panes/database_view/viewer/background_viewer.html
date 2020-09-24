@@ -1,0 +1,20 @@
+<div id="background-list-area" class="background-list-area list-area">
+
+</div>
+<div id="background-view-area" class="background-view-area view-area">
+
+</div>
+
+<script>
+    let bg_list_area = $('#background-list-area');
+    let bg_view_area = $('#background-view-area');
+
+    $(document).ready(async ()=>{
+        bg_list_area.html(await load_html("/panes/database_view/background_list"));
+    });
+
+    async function db_viewer_show_bg(id) {
+        bg_view_area.html(await load_html("/panes/database_view/background_view", {'id': id}));
+    }
+
+</script>

@@ -122,6 +122,38 @@ class ZealotPath(SubClass):
 
 
 class Barbarian(CharClass):
+    """
+    Barbarians, different as they might be, are defined by their rage: unbridled, unquenchable, and unthinking fury.
+    More than a mere emotion, their anger is the ferocity of a cornered predator, the unrelenting assault of a storm,
+    the churning turmoil of the sea.
+
+    For some, their rage springs from a communion with fierce animal spirits. Others draw from a roiling reservoir of
+    anger at a world full of pain. For every barbarian, rage is a power that fuels not just a battle frenzy but also
+    uncanny reflexes, resilience, and feats of strength.
+
+    # Primal Instinct
+    People of towns and cities take pride in how their civilized ways set them apart from animals, as if denying one’s
+    own nature was a mark of superiority. To a barbarian, though, civilization is no virtue, but a sign of weakness.
+    The strong embrace their animal nature—keen instincts, primal physicality, and ferocious rage. Barbarians are
+    uncomfortable when hedged in by walls and crowds. They thrive in the wilds of their homelands: the tundra, jungle,
+    or grasslands where their tribes live and hunt.
+
+    Barbarians come alive in the chaos of combat. They can enter a berserk state where rage takes over, giving them
+    superhuman strength and resilience. A barbarian can draw on this reservoir of fury only a few times without resting,
+    but those few rages are usually sufficient to defeat whatever threats arise.
+
+    # A Life of Danger
+    Not every member of the tribes deemed “barbarians” by scions of civilized society has the barbarian class. A true
+    barbarian among these people is as uncommon as a skilled fighter in a town, and he or she plays a similar role as a
+    protector of the people and a leader in times of war. Life in the wild places of the world is fraught with peril:
+    rival tribes, deadly weather, and terrifying monsters. Barbarians charge headlong into that danger so that their
+    people don’t have to.
+
+    Their courage in the face of danger makes barbarians perfectly suited for adventuring. Wandering is often a way of
+    life for their native tribes, and the rootless life of the adventurer is little hardship for a barbarian. Some
+    barbarians miss the close-knit family structures of the tribe, but eventually find them replaced by the bonds formed
+    among the members of their adventuring parties.
+    """
     name = 'Barbarian'
     hit_dice_faces = 12
     subclass_select_level = 3
@@ -138,7 +170,7 @@ class Barbarian(CharClass):
     subclasses_available = (BerserkerPath, TotemWarriorPath, BattleragerPath,
                             AncestralGuardianPath, StormHeraldPath, ZealotPath)
     features_by_level = defaultdict(list)
-    features_by_level[1] = [features.Rage, features.UnarmoredDefenseBarbarian]
+    features_by_level[1] = [features.BarbarianAbilityScoreImprovement, features.Rage, features.UnarmoredDefenseBarbarian]
     features_by_level[2] = [features.RecklessAttack, features.DangerSense]
     features_by_level[5] = [features.ExtraAttackBarbarian,
                             features.FastMovement]

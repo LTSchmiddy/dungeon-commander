@@ -157,6 +157,36 @@ class MonsterSlayer(SubClass):
 
 
 class Ranger(CharClass):
+    """
+    Far from the bustle of cities and towns, past the hedges that shelter the most distant farms from the terrors of the
+    wild, amid the dense-packed trees of trackless forests and across wide and empty plains, rangers keep their unending
+    watch.
+
+    # Deadly Hunters
+    Warriors of the wilderness, rangers specialize in hunting the monsters that threaten the edges of
+    civilization—humanoid raiders, rampaging beasts and monstrosities, terrible giants, and deadly dragons. They learn
+    to track their quarry as a predator does, moving stealthily through the wilds and hiding themselves in brush and
+    rubble. Rangers focus their combat training on techniques that are particularly useful against their specific
+    favored foes.
+
+    Thanks to their familiarity with the wilds, rangers acquire the ability to cast spells that harness nature’s power,
+    much as a druid does. Their spells, like their combat abilities, emphasize speed, stealth, and the hunt. A ranger’s
+    talents and abilities are honed with deadly focus on the grim task of protecting the borderlands.
+
+    # Independent Adventurers
+    Though a ranger might make a living as a hunter, a guide, or a tracker, a ranger’s true calling is to defend the
+    outskirts of civilization from the ravages of monsters and humanoid hordes that press in from the wild. In some
+    places, rangers gather in secretive orders or join forces with druidic circles. Many rangers, though, are
+    independent almost to a fault, knowing that, when a dragon or a band of orcs attacks, a ranger might be the
+    first—and possibly the last—line of defense.
+
+    This fierce independence makes rangers well suited to adventuring, since they are accustomed to life far from the
+    comforts of a dry bed and a hot bath. Faced with city-bred adventurers who grouse and whine about the hardships of
+    the wild, rangers respond with some mixture of amusement, frustration, and compassion. But they quickly learn that
+    other adventurers who can carry their own weight in a fight against civilization’s foes are worth any extra burden.
+    Coddled city folk might not know how to feed themselves or find fresh water in the wild, but they make up for it in
+    other ways.
+    """
     name = 'Ranger'
     hit_dice_faces = 10
     saving_throw_proficiencies = ('strength', 'dexterity')
@@ -173,8 +203,8 @@ class Ranger(CharClass):
                            'Survival')
     num_skill_choices = 3
     features_by_level = defaultdict(list)
-    features_by_level[1] = [features.FavoredEnemy, features.NaturalExplorer]
-    features_by_level[2] = [features.RangerFightingStyle]
+    features_by_level[1] = [features.RangerAbilityScoreImprovement, features.FavoredEnemy, features.NaturalExplorer]
+    features_by_level[2] = [features.RangerFightingStyle,features.RangerSpellcasting]
     features_by_level[3] = [features.PrimevalAwareness]
     features_by_level[5] = [features.ExtraAttackRanger]
     features_by_level[8] = [features.LandsStride]
@@ -185,6 +215,28 @@ class Ranger(CharClass):
     subclasses_available = (Hunter, BeastMaster, GloomStalker,
                             HorizonWalker, MonsterSlayer)
     spellcasting_ability = 'wisdom'
+    spells_known_by_level = {
+        1: 0,
+        2: 2,
+        3: 3,
+        4: 3,
+        5: 4,
+        6: 4,
+        7: 5,
+        8: 5,
+        9: 6,
+        10: 6,
+        11: 7,
+        12: 7,
+        13: 8,
+        14: 8,
+        15: 9,
+        16: 9,
+        17: 10,
+        18: 10,
+        19: 11,
+        20: 11,
+    }
     spell_slots_by_level = {
         # char_lvl: (cantrips, 1st, 2nd, 3rd, ...)
         1:  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0),

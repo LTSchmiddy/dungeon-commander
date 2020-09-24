@@ -1,0 +1,119 @@
+<h1>{{ base_class.name }} - {{ subclass.name }}</h1>
+{#<h2>Description:</h2>#}
+<div class="char-desc">
+    {{ subclass.get_desc_html()|safe }}
+</div>
+<hr/>
+
+{% if subclass.spellcasting_ability %}
+    <h2>Spellcasting</h2>
+    <div class="spellcasting-info">
+        <strong class="label">Spellcasting Ability: </strong>
+        {{ subclass.spellcasting_ability.capitalize() }}
+        {% if subclass.spells_known_by_level %}
+            <div>
+                <strong class="label">Spells Known per Level: </strong>
+                <table class="table">
+                    <tr>
+                        {% for level, value in subclass.spells_known_by_level.items() %}
+                            <th>Lvl {{ level }}</th>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        {% for key, spells in subclass.spells_known_by_level.items() %}
+                            <td>{{ spells }}</td>
+                        {% endfor %}
+                    </tr>
+
+                </table>
+            </div>
+        {% endif %}
+        {% with spellslots = subclass.spell_slots_by_level %}
+            {% if spellslots %}
+                <details class="spellslots">
+                    <summary>Spell Slots per Level</summary>
+                    {% include "panes/database_view/components/class/spellslot_table.html" %}
+                </details>
+            {% endif %}
+        {% endwith %}
+    </div>
+{% endif %}
+
+{# Cleric Domain Spells #}
+{% if hasattr(subclass, '_domain_spells') %}
+    <h2>Domain Spells</h2>
+    <ul class="domain-spell-info">
+
+        {% for key, value in subclass._domain_spells.items() %}
+
+            <li>
+                <strong>Level {{ key }}:</strong>
+                {% for i in value %}
+                    {{ i.name }},
+                {% endfor %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{# Paladin Oath Spells: #}
+{% if hasattr(subclass, '_oath_spells') %}
+    <h2>Oath Spells</h2>
+    <ul class="domain-spell-info">
+
+        {% for key, value in subclass._oath_spells.items() %}
+
+            <li>
+                <strong>Level {{ key }}:</strong>
+                {% for i in value %}
+                    {{ i.name }},
+                {% endfor %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{# Handle Basic Tuples: #}
+{% for i in [
+    'spells_known',
+    'spells_prepared',
+    'weapon_proficiencies',
+    '_proficiencies_text',
+] %}
+
+    {% if isinstance(getattr(subclass, i), tuple) and len(getattr(subclass, i)) > 0 %}
+        <h2>
+            {{ i.replace("_", " ").title() }}
+            {% if i == 'class_skill_choices' and subclass.num_skill_choices > 0%}
+                - Choose {{ subclass.num_skill_choices }}
+            {% endif %}
+        </h2>
+        <ul>
+            {% for j in getattr(subclass, i) %}
+                {% if i in [
+                    'weapon_proficiencies',
+                    'spells_known',
+                    'spells_prepared',
+                ] %}
+                    <li>{{ j.name.capitalize() }}</li>
+                {% else %}
+                    <li>{{ str(j).capitalize() }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+{% endfor %}
+
+
+{% if len(subclass.all_features()) > 0 %}
+
+    <h2>Features</h2>
+    <ul>
+        {% for feature in subclass.all_features() %}
+            <li>
+                {% include "panes/database_view/components/feature_list_item.html" %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

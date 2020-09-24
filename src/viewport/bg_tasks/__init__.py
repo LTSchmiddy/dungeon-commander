@@ -16,7 +16,6 @@ import settings.paths
 from cefpython3 import cefpython as cef
 from viewport.bg_tasks import bg_startup
 
-
 import string
 
 # update_seek_bar = CallJS("update-seek-bar.js")
@@ -25,6 +24,7 @@ import string
 # cef_run_props_thread = True
 
 def background_thread(window: wv.window):
+    import db
     # cef_props_thread = threading.Thread(None, target=update_cef_properties, args=tuple([.5]))
     while viewport.get_cef_instance() is None:
         pass

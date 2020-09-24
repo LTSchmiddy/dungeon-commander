@@ -1,6 +1,6 @@
 from collections import defaultdict
 
-from dungeonsheets import features, weapons
+from dungeonsheets import features, weapons, spells
 from dungeonsheets.classes.classes import CharClass, SubClass
 
 
@@ -48,35 +48,60 @@ class ArcaneTrickster(SubClass):
     """
     name = "Arcane Trickster"
     features_by_level = defaultdict(list)
-    features_by_level[3] = [features.MageHandLegerdemain]
+    features_by_level[3] = [features.ArcaneTricksterSpellcasting, features.MageHandLegerdemain]
     features_by_level[9] = [features.MagicalAmbush]
     features_by_level[13] = [features.VersatileTrickster]
     features_by_level[17] = [features.SpellThief]
     spellcasting_ability = 'intelligence'
+    spells_known_by_level = {
+        1: 0,
+        2: 0,
+        3: 3,
+        4: 4,
+        5: 4,
+        6: 4,
+        7: 5,
+        8: 6,
+        9: 6,
+        10: 7,
+        11: 8,
+        12: 8,
+        13: 9,
+        14: 10,
+        15: 10,
+        16: 11,
+        17: 11,
+        18: 11,
+        19: 12,
+        20: 13,
+    }
     multiclass_spellslots_by_level = {
         # char_lvl: (cantrips, 1st, 2nd, 3rd, ...)
         1:  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
         2:  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
-        3:  (3, 2, 0, 0, 0, 0, 0, 0, 0, 0),
-        4:  (3, 3, 0, 0, 0, 0, 0, 0, 0, 0),
-        5:  (3, 3, 0, 0, 0, 0, 0, 0, 0, 0),
-        6:  (3, 3, 0, 0, 0, 0, 0, 0, 0, 0),
-        7:  (3, 4, 2, 0, 0, 0, 0, 0, 0, 0),
-        8:  (3, 4, 2, 0, 0, 0, 0, 0, 0, 0),
-        9:  (3, 4, 2, 0, 0, 0, 0, 0, 0, 0),
-        10: (4, 4, 3, 0, 0, 0, 0, 0, 0, 0),
-        11: (4, 4, 3, 0, 0, 0, 0, 0, 0, 0),
-        12: (4, 4, 3, 0, 0, 0, 0, 0, 0, 0),
-        13: (4, 4, 3, 2, 0, 0, 0, 0, 0, 0),
-        14: (4, 4, 3, 2, 0, 0, 0, 0, 0, 0),
-        15: (4, 4, 3, 2, 0, 0, 0, 0, 0, 0),
-        16: (4, 4, 3, 3, 0, 0, 0, 0, 0, 0),
-        17: (4, 4, 3, 3, 0, 0, 0, 0, 0, 0),
-        18: (4, 4, 3, 3, 0, 0, 0, 0, 0, 0),
-        19: (4, 4, 3, 3, 1, 0, 0, 0, 0, 0),
-        20: (4, 4, 3, 3, 1, 0, 0, 0, 0, 0),
+        3:  (2, 2, 0, 0, 0, 0, 0, 0, 0, 0),
+        4:  (2, 3, 0, 0, 0, 0, 0, 0, 0, 0),
+        5:  (2, 3, 0, 0, 0, 0, 0, 0, 0, 0),
+        6:  (2, 3, 0, 0, 0, 0, 0, 0, 0, 0),
+        7:  (2, 4, 2, 0, 0, 0, 0, 0, 0, 0),
+        8:  (2, 4, 2, 0, 0, 0, 0, 0, 0, 0),
+        9:  (2, 4, 2, 0, 0, 0, 0, 0, 0, 0),
+        10: (3, 4, 3, 0, 0, 0, 0, 0, 0, 0),
+        11: (3, 4, 3, 0, 0, 0, 0, 0, 0, 0),
+        12: (3, 4, 3, 0, 0, 0, 0, 0, 0, 0),
+        13: (3, 4, 3, 2, 0, 0, 0, 0, 0, 0),
+        14: (3, 4, 3, 2, 0, 0, 0, 0, 0, 0),
+        15: (3, 4, 3, 2, 0, 0, 0, 0, 0, 0),
+        16: (3, 4, 3, 3, 0, 0, 0, 0, 0, 0),
+        17: (3, 4, 3, 3, 0, 0, 0, 0, 0, 0),
+        18: (3, 4, 3, 3, 0, 0, 0, 0, 0, 0),
+        19: (3, 4, 3, 3, 1, 0, 0, 0, 0, 0),
+        20: (3, 4, 3, 3, 1, 0, 0, 0, 0, 0),
     }
 
+    spell_slots_by_level = multiclass_spellslots_by_level
+    spells_known = ()
+    spells_prepared = spells_known
 
 # XGTE
 class Inquisitive(SubClass):
@@ -175,6 +200,8 @@ class Rogue(CharClass):
     As adventurers, rogues fall on both sides of the law. Some are hardened criminals who decide to seek their fortune
     in treasure hoards, while others take up a life of adventure to escape from the law. Some have learned and perfected
     their skills with the explicit purpose of infiltrating ancient ruins and hidden crypts in search of treasure.
+
+    *If you are multiclassing into Rogue, you gain an additional skill proficiency from the Rogue list.*
     """
     name = 'Rogue'
     hit_dice_faces = 8
@@ -188,15 +215,15 @@ class Rogue(CharClass):
                             weapons.Longsword, weapons.Rapier,
                             weapons.Shortsword)
     multiclass_weapon_proficiencies = ()
-    _multiclass_proficiencies_text = ('light armor', "thieves' tools",
-                                      '[choose one skill from Rogue list]')
+    languages = ()
+    _multiclass_proficiencies_text = ('light armor', "thieves' tools",)
     class_skill_choices = ('Acrobatics', 'Athletics', 'Deception',
                            'Insight', 'Intimidation', 'Investigation',
                            'Perception', 'Performance', 'Persuasion',
                            'Sleight of Hand', 'Stealth')
     num_skill_choices = 4
     features_by_level = defaultdict(list)
-    features_by_level[1] = [features.RogueExpertise, features.SneakAttack]
+    features_by_level[1] = [features.RogueAbilityScoreImprovement, features.RogueExpertise, features.SneakAttack, features.ThievesCant]
     features_by_level[2] = [features.CunningAction]
     features_by_level[5] = [features.UncannyDodge]
     features_by_level[7] = [features.Evasion]

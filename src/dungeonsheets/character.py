@@ -8,9 +8,12 @@ import subprocess
 import warnings
 import math
 import types
+import json
 
 import markdown2
 import jinja2
+
+from enum import Enum
 
 from dungeonsheets import (armor, background, classes, exceptions, features,
                            infusions, magic_items, monsters, race, spells,
@@ -62,6 +65,7 @@ multiclass_spellslots_by_level = {
     19: (0, 4, 3, 3, 3, 3, 2, 1, 1, 1),
     20: (0, 4, 3, 3, 3, 3, 2, 2, 1, 1),
 }
+
 
 
 class Character:
@@ -152,8 +156,12 @@ class Character:
 
     def __init__(self, **attrs):
         self.info_dict = {}
-        self.loaded_path = ""
-        self.loaded_id= 0
+
+        if not hasattr(self, 'loaded_path'):
+            self.loaded_path = ""
+
+        if not hasattr(self, 'loaded_id'):
+            self.loaded_id = 0
 
         if 'info_dict' in attrs:
             self.info_dict = attrs.pop('info_dict')
@@ -673,8 +681,10 @@ class Character:
             all_proficiencies += tuple(self.race.proficiencies_text)
         if self.background is not None:
             all_proficiencies += tuple(self.background.proficiencies_text)
+            for i in self.background.features:
+                all_proficiencies += i.proficiencies_text
         # Create a single string out of all the proficiencies
-        for txt in all_proficiencies:
+        for txt in set(all_proficiencies):
             if not final_text:
                 # Capitalize the first entry
                 txt = txt.capitalize()
@@ -762,7 +772,7 @@ class Character:
             except AttributeError:
                 raise AttributeError(f'Weapon class "{weapon}" is not defined')
             weapon_ = NewWeaponClass(wielder=self)
-            weapon_.from_dict(weapon_data.original_json)
+            weapon_.from_dict(weapon_data._original_json)
 
         # Retrieve the weapon class from the weapons module
         elif isinstance(weapon, weapons.Weapon):
@@ -910,6 +920,17 @@ class Character:
 
     def save_dict(self):
         return read_character_code(self.save_code())
+
+    # def save_json(self):
+    #     attr_dict = self.save_dict()
+    #
+    #     json_dict = {}
+    #     for key, value in attr_dict:
+    #         type_key = f"{key}-{str(type(value))}"
+    #         json_dict[type_key] = value
+    #
+    #     return json.dumps(json_dict, indent=4, sort_keys=True)
+
 
     def save(self, filename, template_file='character_template.txt'):
         text = self.save_code()

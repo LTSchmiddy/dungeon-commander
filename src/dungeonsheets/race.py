@@ -1,17 +1,20 @@
+import inspect
 from collections import defaultdict
+
+import markdown2
 
 from dungeonsheets import features as feats
 from dungeonsheets import spells, weapons
 
 
-class Race():
+class Race:
     name = "Unknown"
     size = "medium"
     speed = 30
     owner = None
     languages = ('Common', )
     proficiencies_text = tuple()
-    weapon_proficiences = tuple()
+    weapon_proficiencies = tuple()
     skill_proficiencies = ()
     skill_choices = ()
     num_skill_choices = 0
@@ -47,6 +50,33 @@ class Race():
     def __repr__(self):
         return "\"{:s}\"".format(self.name)
 
+    @classmethod
+    def get_id(cls):
+        return cls.__name__
+
+    @classmethod
+    def get_desc(cls):
+        return inspect.getdoc(cls)
+
+    @classmethod
+    def get_desc_html(cls):
+        return markdown2.markdown(inspect.getdoc(cls)).strip()
+
+    @classmethod
+    def all_features(cls):
+        features_list = cls.features
+        for key, value in cls.features_by_level.items():
+            features_list += tuple(value)
+        return features_list
+
+    @property
+    def desc_html(self):
+        return self.get_desc_html()
+
+    @property
+    def desc(self):
+        return self.get_desc()
+
 
 # Dwarves
 class _Dwarf(Race):
@@ -57,8 +87,8 @@ class _Dwarf(Race):
     constitution_bonus = 2
     proficiencies_text = ('battleaxes', 'handaxes', 'throwing hammers',
                           'warhammers')
-    weapon_proficiences = (weapons.Battleaxe, weapons.Handaxe,
-                           weapons.ThrowingHammer, weapons.Warhammer)
+    weapon_proficiencies = (weapons.Battleaxe, weapons.Handaxe,
+                            weapons.ThrowingHammer, weapons.Warhammer)
     features = (feats.Darkvision, feats.DwarvenResilience, feats.Stonecunning)
 
 
@@ -214,8 +244,8 @@ class HalfElf(Race):
                      'perception', 'performance', 'persuasion', 'religion',
                      'sleight of hand', 'stealth', 'survival')
     num_skill_choices = 2
-    languages = ("Common", "Elvish", "[choose one]")
-    features = (feats.Darkvision, feats.FeyAncestry)
+    languages = ("Common", "Elvish",)
+    features = (feats.Darkvision, feats.FeyAncestry, feats.ExtraLanguageRace)
 
 
 # Half-Orcs

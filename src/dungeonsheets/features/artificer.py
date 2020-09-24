@@ -1,9 +1,16 @@
 from dungeonsheets import spells
 from dungeonsheets.features.features import Feature
+from dungeonsheets import infusions
+
+from dungeonsheets.features import BasicAbilityScoreImprovement
+
+class ArtificerAbilityScoreImprovement(BasicAbilityScoreImprovement):
+    name = "Artificer Ability Score Improvement"
+    source = "Artificer"
 
 
 class _SpecialistSpells(Feature):
-    """Starting at 3rd level, you always have certain spells pre­pared after
+    """Starting at 3rd level, you always have certain spells prepared after
     you reach particular levels in this class, as shown in the Specialization
     Spells table. These spells count as artificer spells for you, but they
     don't count against the number of artificer spells you prepare.
@@ -36,34 +43,69 @@ class _SpecialistSpells(Feature):
 
 # Alchemist
 class ArtificerSpellcasting(Feature):
-    """You have studied the workings of magic and how to channel it through
-    objects. As a result, you have gained the ability to cast spells. To
-    observers, you don't appear to be casting spells in a conventional way; you
-    look as if you're producing wonders using mundane items or out­landish
-    inventions.
+    """
+    You have studied the workings of magic, how to channel it through objects, and how to awaken it within them. As a
+    result, you have gained a limited ability to cast spells. To observers, you don’t appear to be casting spells in a
+    conventional way; you look as if you’re producing wonders through various items.
 
-    **Tools Required** You produce your artificer spell effects through your
-    tools. You must have a spellcasting focus -- specifically thieves' tools or
-    some kind of artisan's tool -- in hand when you cast any spell with this
-    Spellcasting feature. You must be proficient with the tool to use it in
-    this way. See chapter 5, "Equipment," in the Player's Handbook for
-    descriptions of these tools.
+    **Tools Required**
+    You produce your artificer spell effects through your tools. You must have a spellcasting focus – specifically
+    tinker’ tools or some kind of artisan’s tool – in hand when you cast any spell with this Spellcasting feature. You
+    must be proficient with the tool to use it in this way.
 
-    After you gain the Infuse DB_Item feature at 2nd level, you can also use any
-    item bearing one of your infusions as a spellcasting focus.
+    After you gain the Infuse Item feature at 2nd level, you can also use any item bearing one of your infusions as a
+    spellcasting focus.
+
+    **Cantrips**
+    At 1st level, you know two cantrips of your choice from the artificer spell list. At higher levels, you learn
+    additional artificer cantrips of your choice, as shown in the Cantrips Known column of the Artificer table.
+
+    When you gain a level in this class, you can replace one of the artificer cantrips you know with another cantrip
+    from the artificer spell list.
+
+    **Preparing and Casting Spells**
+    The Artificer table shows how many spell slots you have to cast your artificer spells. To cast one of your artificer
+    spells of 1st level or higher, you must expend a slot of the spell’s level or higher. You regain all expended spell
+    slots when you finish a long rest.
+
+    You prepare the list of artificer spells that are available for you to cast, choosing from the artificer spell list.
+    When you do so, choose a number of artificer spells equal to your Intelligence modifier + half your artificer level,
+    rounded down (minimum of one spell). The spells must be of a level for which you have spell slots.
+
+    For example, if you are a 5th-level artificer, you have four 1st-level and two 2nd-level spell slots. With an
+    Intelligence of 14, your list of prepared spells can include four spells of 1st or 2nd level, in any combination.
+    If you prepare the 1st-level spell Cure Wounds, you can cast it using a 1st-level or a 2nd-level slot. Casting the
+    spell doesn’t remove it from your list of prepared spells.
+
+    You can change your list of prepared spells when you finish a long rest. Preparing a new list of artificer spells
+    requires time spent in tinkering with your spellcasting focuses: at least 1 minute per spell level for each spell
+    on your list.
+
+    **Spellcasting Ability**
+    Intelligence is your spellcasting ability for your artificer spells; your understanding of the theory behind magic
+    allows you to wield these spells with superior skill. You use your Intelligence whenever an artificer spell refers
+    to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for
+    an artificer spell you cast and when making an attack roll with one.
+
+    **Spell save DC** = 8 + your proficiency bonus + your Intelligence modifier
+
+    **Spell attack modifier** = your proficiency bonus + your Intelligence modifier
+
+    **Ritual Casting**
+    You can cast an artificer spell as a ritual if that spell has the ritual tag and you have the spell prepared.
     """
 
     name = "Spellcasting"
     source = "Artificer"
 
 
-class ArtificerRitualCasting(Feature):
-    """You can cast an artificer spell as a ritual if that spell has the ritual
-    tag and you have the spell prepared.
-    """
-
-    name = "Ritual Casting"
-    source = "Artificer"
+# class ArtificerRitualCasting(Feature):
+#     """You can cast an artificer spell as a ritual if that spell has the ritual
+#     tag and you have the spell prepared.
+#     """
+#
+#     name = "Ritual Casting"
+#     source = "Artificer"
 
 
 class FirearmProficiency(Feature):
@@ -123,11 +165,11 @@ class InfuseItem(Feature):
     class's description. You learn additional infusions of your choice when you
     reach certain levels in this class, as shown in the Infusions Known column
     of the Artificer table. Whenever you gain a level in this class, you can
-    re­place one of the artificer infusions you learned with a new one.
+    replace one of the artificer infusions you learned with a new one.
 
     **Infusing an item**
-    Whenever you finish a long rest, you can touch a non­magical object and
-    imbue it with one of your artificer in­fusions, turning it into a magic
+    Whenever you finish a long rest, you can touch a nonmagical object and
+    imbue it with one of your artificer infusions, turning it into a magic
     item. An infusion works on only certain kinds of objects, as specified in
     the infusion's description. If the item requires attunement, you can
     attune yourself to it the instant you infuse the item. If you decide to
@@ -142,11 +184,11 @@ class InfuseItem(Feature):
     must touch each of the objects, and each of your infusions can be in only
     one object at a time. Moreover, no object can bear more than one of your
     infusions at a time. If you try to exceed your maximum number of
-    in­fusions, the oldest infusion immediately ends, and then the new
+    infusions, the oldest infusion immediately ends, and then the new
     infusion applies.
     """
 
-    _name = "Infuse DB_Item"
+    _name = "Infuse Item"
     source = "Artificer"
     _infusions = {
             # level: (infusions known, infused items)
@@ -177,6 +219,14 @@ class InfuseItem(Feature):
         infused_items = self._infusions[self.owner.Artificer.level][1]
         name_ext = " ({:d} Infusions Known, {:d} Infused Items)"
         return self._name + name_ext.format(known_infusions, infused_items)
+
+    @classmethod
+    def get_all_infusions(cls):
+        return infusions.Infusion.get_all()
+
+
+
+
 
 
 class ArtificerSpecialist(Feature):
@@ -238,7 +288,7 @@ class MagicItemAdept(Feature):
       usual gold.
     """
 
-    name = "Magic DB_Item Adept"
+    name = "Magic Item Adept"
     source = "Artificer"
 
 
@@ -257,7 +307,7 @@ class SpellStoringItem(Feature):
     ature again to store a spell in an object.
     """
 
-    name = "Spell-Storing DB_Item"
+    name = "Spell-Storing Item"
     source = "Artificer"
 
 
@@ -270,7 +320,7 @@ class MagicItemSavant(Feature):
       or using a magic item.
     """
 
-    name = "Magic DB_Item Savant"
+    name = "Magic Item Savant"
     source = "Artificer"
 
 
@@ -279,7 +329,7 @@ class MagicItemMaster(Feature):
     once.
     """
 
-    name = "Magic DB_Item Master"
+    name = "Magic Item Master"
     source = "Artificer"
 
 
@@ -290,7 +340,7 @@ class SoulOfArtifice(Feature):
     - You gain a +1 bonus to all saving throws per magic item you are currently
       attuned to.
 
-    - If you're reduced to 0 hit points but not killed out­right, you can use
+    - If you're reduced to 0 hit points but not killed outright, you can use
       your reaction to end one of your artificer infusions, causing you to drop
       to 1 hit point instead of 0.
     """
@@ -311,7 +361,7 @@ class AlchemistToolProficiency(Feature):
 
 
 class AlchemistSpells(_SpecialistSpells):
-    """Starting at 3rd level, you always have certain spells pre­pared after
+    """Starting at 3rd level, you always have certain spells prepared after
     you reach particular levels in this class, as shown in the Alchemist Spells
     table. These spells count as artificer spells for you, but they don't count
     against the number of artificer spells you prepare.
@@ -359,7 +409,7 @@ class ExperimentalElixir(Feature):
 
     **3 -- Resilience.** The drinker gains a +1 bonus to AC for 10 minutes.
 
-    **4 -- Boldness.** The drinker can roll a d4 and add the num­ber rolled to
+    **4 -- Boldness.** The drinker can roll a d4 and add the number rolled to
     every attack roll and saving throw they make for the next minute.
 
     **5 -- Flight.** The drinker gains a flying speed of 10 feet for 10
@@ -506,7 +556,7 @@ class EldritchCannon(Feature):
 class ArcaneFirearm(Feature):
     """At 5th level, you know how to turn a wand, staff, or rod into an arcane
     firearm, a conduit for your destructive spells. When you finish a long
-    rest, you can use wood­carver's tools to carve special sigils into a wand,
+    rest, you can use woodcarver's tools to carve special sigils into a wand,
     staff, or rod and thereby turn it into your arcane firearm. The sigils
     disappear from the object if you later carve them on a different item. The
     sigils otherwise last indefinitely.
@@ -658,7 +708,7 @@ class ArcaneJolt(Feature):
 
 
 class ImprovedDefender(Feature):
-    """At 15th level, your Arcane jolt and steel defender be­come more
+    """At 15th level, your Arcane jolt and steel defender become more
     powerful:
 
     - The extra damage and the healing of your Arcane jolt both increase to

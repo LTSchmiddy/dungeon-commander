@@ -1,0 +1,9 @@
+<button class="btn-light class-list-option list-option" onclick="db_viewer_show_class('{{ base_class.get_id() }}')">
+    Base Class: {{ base_class.name }}
+</button>
+
+{% for i in subclasses %}
+    <button class="btn-light subclass-list-option list-option" onclick="db_viewer_show_subclass('{{ base_class.get_id() }}', '{{ i.get_id() }}')">
+        {{ i.name }}
+    </button>
+{% endfor %}

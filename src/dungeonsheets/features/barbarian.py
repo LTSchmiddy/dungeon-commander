@@ -1,5 +1,10 @@
 from dungeonsheets import armor, weapons
 from dungeonsheets.features.features import Feature, FeatureSelector
+from dungeonsheets.features import BasicAbilityScoreImprovement
+
+class BarbarianAbilityScoreImprovement(BasicAbilityScoreImprovement):
+    Name = "Barbarian Ability Score Improvement"
+    source = "Barbarian"
 
 
 # PHB

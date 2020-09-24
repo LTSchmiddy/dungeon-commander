@@ -1,7 +1,34 @@
 from math import ceil
 
 from dungeonsheets.features.features import Feature
+from dungeonsheets import spells
 
+
+from dungeonsheets.features import BasicAbilityScoreImprovement
+
+class RogueAbilityScoreImprovement(BasicAbilityScoreImprovement):
+    """
+    When you reach 4th level, and again at 8th, 10th, 12th, 16th, and 19th level, you can increase one ability score of
+    your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an
+    ability score above 20 using this feature.
+
+    Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.
+    """
+    name = "Rogue Ability Score Improvement"
+    source = "Rogue"
+
+class ThievesCant(Feature):
+    """
+    During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to
+    hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such
+    messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.
+
+    In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether
+    an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area
+    are easy marks or will provide a safe house for thieves on the run.
+    """
+    name = "Thieves' Cant"
+    source = "Rogue"
 
 # PHB
 class RogueExpertise(Feature):
@@ -235,6 +262,51 @@ class DeathStrike(Feature):
 
 
 # Arcane Trickster
+class ArcaneTricksterSpellcasting(Feature):
+    """
+    When you reach 3rd level, you augment your martial prowess with the ability to cast spells.
+
+    **Cantrips**
+    You learn three cantrips: Mage Hand and two other cantrips of your choice from the wizard spell list. You learn
+    another wizard cantrip of your choice at 10th level.
+
+    **Spell Slots**
+    The Arcane Trickster Spellcasting table shows how many spell slots you have to cast your spells of 1st level and
+    higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended
+    spell slots when you finish a long rest.
+
+    For example, if you know the 1st-level spell Charm Person and have a 1st-level and a 2nd-level spell slot available,
+    you can cast Charm Person using either slot.
+
+    **Spells Known of 1st Level and Higher**
+    You know three 1st-level wizard spells of your choice, two of which you must choose from the enchantment and
+    illusion spells on the wizard spell list.
+
+    The Spells Known column of the Arcane Trickster Spellcasting table shows when you learn more wizard spells of 1st
+    level or higher. Each of these spells must be an enchantment or illusion spell of your choice, and must be of a
+    level for which you have spell slots. For instance, when you reach 7th level in this class, you can learn one new
+    spell of 1st or 2nd level.
+
+    The spells you learn at 8th, 14th, and 20th level can come from any school of magic.
+
+    Whenever you gain a level in this class, you can replace one of the wizard spells you know with another spell of
+    your choice from the wizard spell list. The new spell must be of a level for which you have spell slots, and it
+    must be an enchantment or illusion spell, unless you're replacing the spell you gained at 3rd, 8th, 14th, or 20th
+    level from any school of magic.
+
+    **Spellcasting Ability**
+    Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through dedicated
+    study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition,
+    you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an
+    attack roll with one.
+
+    **Spell save DC** = 8 + your proficiency bonus + your Intelligence modifier
+
+    **Spell attack modifier** = your proficiency bonus + your Intelligence modifier
+    """
+    name = "Arcane Trickster Spellcasting"
+    source = "Rogue (Arcane Trickster)"
+
 class MageHandLegerdemain(Feature):
     """Starting at 3rd level, when you cast mage hand, you can make the spectral
     hand invisible, and you can perform the following additional tasks with it:
@@ -255,6 +327,8 @@ class MageHandLegerdemain(Feature):
     """
     name = "Mage Hand Legerdemain"
     source = "Rogue (Arcane Trickster)"
+    spells_known = (spells.MageHand,)
+    spells_prepared = spells_known
 
 
 class MagicalAmbush(Feature):

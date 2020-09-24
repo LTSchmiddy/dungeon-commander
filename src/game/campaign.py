@@ -167,11 +167,41 @@ class Campaign(JsonClass):
             del self.loaded_chars[char.loaded_id]
         if isinstance(char, int):
             del self.loaded_chars[char]
+        if isinstance(char, str):
+            del self.loaded_chars[int(char)]
 
     def save_character(self, char, location=None):
         if isinstance(char, Character):
+            print(char.loaded_path)
             char.save(char.loaded_path)
 
         if isinstance(char, int):
             char_obj = self.loaded_chars[char]
+            print(char_obj.loaded_path)
             char_obj.save(char_obj.loaded_path)
+
+        if isinstance(char, str):
+            char_obj = self.loaded_chars[int(char)]
+            print(char_obj.loaded_path)
+            char_obj.save(char_obj.loaded_path)
+
+
+
+    def reload_character(self, char):
+        my_char: Character = None
+        if isinstance(char, Character):
+            my_char = self.loaded_chars[char.loaded_id]
+        if isinstance(char, int):
+            my_char = self.loaded_chars[char]
+        if isinstance(char, str):
+            my_char = self.loaded_chars[int(char)]
+
+        if my_char is None:
+            print(f"ERROR: {char} not loaded")
+            return
+
+        if isinstance(char.loaded_path, str) and os.path.isfile(char.loaded_path):
+            my_char.load_into(char.loaded_path)
+
+        else:
+            print(f"ERROR: {char.loaded_path} does not exist.")

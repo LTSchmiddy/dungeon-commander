@@ -203,14 +203,13 @@ class WarMagic(SubClass):
 
 class Wizard(CharClass):
     """
-    ### Wizards
     Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave
     of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception,
     and brute-force mind control. Their magic conjures monsters from other planes of existence, glimpses the future,
     or turns slain foes into zombies. Their mightiest spells change one substance into another, call meteors down from
     the sky, or open portals to other worlds.
 
-    ### Scholars of the Arcane
+    # Scholars of the Arcane
     Wild and enigmatic, varied in form and function, the power of magic draws students who seek to master its mysteries.
     Some aspire to become like the gods, shaping reality itself. Though the casting of a typical spell requires merely
     the utterance of a few strange words, fleeting gestures, and sometimes a pinch or clump of exotic materials, these
@@ -220,7 +219,7 @@ class Wizard(CharClass):
     grow in experience. They can also learn them from other wizards, from ancient tomes or inscriptions, and from
     ancient creatures (such as the fey) that are steeped in magic.
 
-    ### The Lure of Knowledge
+    # The Lure of Knowledge
     Wizards’ lives are seldom mundane. The closest a wizard is likely to come to an ordinary life is working as a sage
     or lecturer in a library or university, teaching others the secrets of the multiverse. Other wizards sell their
     services as diviners, serve in military forces, or pursue lives of crime or domination.
@@ -245,9 +244,9 @@ class Wizard(CharClass):
     class_skill_choices = ('Arcana', 'History', 'Investigation',
                            'Medicine', 'Religion')
     features_by_level = defaultdict(list)
-    features_by_level[1] = [features.ArcaneRecovery]
+    features_by_level[1] = [features.WizardAbilityScoreImprovement, features.WizardSpellcasting, features.WizrdSpellbook, features.ArcaneRecovery]
     features_by_level[18] = [features.SpellMastery]
-    features_by_level[18] = [features.SignatureSpells]
+    features_by_level[20] = [features.SignatureSpells]
     subclasses_available = (Abjuration, Conjuration, Divination, Enchantment,
                             Evocation, Illusion, Necromancy, Transmutation,
                             Bladesinging, WarMagic)

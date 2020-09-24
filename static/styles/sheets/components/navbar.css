@@ -5,6 +5,9 @@
   width: 100%;
   z-index: 5 !important;
 }
+.main-nav .dropdown-item-text {
+  color: grey;
+}
 
 @media (min-width: 590px) {
   .main-nav {

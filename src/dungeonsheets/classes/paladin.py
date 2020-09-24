@@ -322,6 +322,35 @@ class OathOfZor(PaladinOath):
 
 
 class Paladin(CharClass):
+    """
+    Whatever their origin and their mission, paladins are united by their oaths to stand against the forces of evil.
+    Whether sworn before a god’s altar and the witness of a priest, in a sacred glade before nature spirits and fey
+    beings, or in a moment of desperation and grief with the dead as the only witness, a paladin’s oath is a powerful
+    bond. It is a source of power that turns a devout warrior into a blessed champion.
+
+    # The Cause of Righteousness
+    A paladin swears to uphold justice and righteousness, to stand with the good things of the world against the
+    encroaching darkness, and to hunt the forces of evil wherever they lurk. Different paladins focus on various
+    aspects of the cause of righteousness, but all are bound by the oaths that grant them power to do their sacred work.
+    Although many paladins are devoted to gods of good, a paladin’s power comes as much from a commitment to justice
+    itself as it does from a god.
+
+    Paladins train for years to learn the skills of combat, mastering a variety of weapons and armor. Even so, their
+    martial skills are secondary to the magical power they wield: power to heal the sick and injured, to smite the
+    wicked and the undead, and to protect the innocent and those who join them in the fight for justice.
+
+    # Beyond the Mundane Life
+    Almost by definition, the life of a paladin is an adventuring life. Unless a lasting injury has taken him or her
+    away from adventuring for a time, every paladin lives on the front lines of the cosmic struggle against evil.
+    Fighters are rare enough among the ranks of the militias and armies of the world, but even fewer people can claim
+    the true calling of a paladin. When they do receive the call, these warriors turn from their former occupations and
+    take up arms to fight evil. Sometimes their oaths lead them into the service of the crown as leaders of elite groups
+    of knights, but even then their loyalty is first to the cause of righteousness, not to crown and country.
+
+    Adventuring paladins take their work seriously. A delve into an ancient ruin or dusty crypt can be a quest driven by
+    a higher purpose than the acquisition of treasure. Evil lurks in dungeons and primeval forests, and even the
+    smallest victory against it can tilt the cosmic balance away from oblivion.
+    """
     name = 'Paladin'
     hit_dice_faces = 10
     subclass_select_level = 3
@@ -336,9 +365,10 @@ class Paladin(CharClass):
     class_skill_choices = ("Athletics", 'Insight', 'Intimidation',
                            'Medicine', 'Persuasion', 'Religion')
     features_by_level = defaultdict(list)
-    features_by_level[1] = [features.DivineSense, features.LayOnHands]
+    features_by_level[1] = [features.PaladinAbilityScoreImprovement, features.DivineSense, features.LayOnHands]
     features_by_level[2] = [features.PaladinFightingStyle,
-                            features.DivineSmite]
+                            features.DivineSmite,
+                            features.PaladinSpellcasting]
     features_by_level[3] = [features.DivineHealth,
                             features.ChannelDivinityPaladin]
     features_by_level[5] = [features.ExtraAttackPaladin]

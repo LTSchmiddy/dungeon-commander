@@ -1,0 +1,20 @@
+<div id="race-list-area" class="race-list-area list-area">
+
+</div>
+<div id="race-view-area" class="race-view-area view-area">
+
+</div>
+
+<script>
+    let race_list_area = $('#race-list-area');
+    let race_view_area = $('#race-view-area');
+
+    $(document).ready(async ()=>{
+        race_list_area.html(await load_html("/panes/database_view/race_list"));
+    });
+
+    async function db_viewer_show_race(id) {
+        race_view_area.html(await load_html("/panes/database_view/race_view", {'id': id}));
+    }
+
+</script>

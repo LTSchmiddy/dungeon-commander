@@ -1,0 +1,106 @@
+{% if hasattr(feature, '_name') %}
+    <strong>{{ feature._name }}:</strong> {{ feature.get_desc_html()|safe }}
+{% else %}
+    <strong>{{ feature.name }}:</strong> {{ feature.get_desc_html()|safe }}
+{% endif %}
+
+{# Feature Spells #}
+{% if hasattr(feature, '_spells') %}
+    <h2>Spells</h2>
+    <ul class="spell-info">
+
+        {% for key, value in feature._spells.items() %}
+
+            <li>
+                <strong>Level {{ key }}:</strong>
+                {% for i in value %}
+                    {{ i.name }},
+                {% endfor %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{# Feature Selectors #}
+{% if hasattr(feature, 'options') %}
+    <ul>
+        {% for key, value in feature.options.items() %}
+            <li>
+                <strong>{{ key }} - </strong>
+                {% with feature = value %}
+                        {% include "panes/database_view/components/feature_list_item.html" %}
+                {% endwith %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+{# Infusions #}
+{% if hasattr(feature, '_infusions') %}
+    <div>
+        <strong class="label">Infusions per Level: </strong>
+        <table class="table">
+            <tr>
+                <th>Level:</th>
+                {% for level, value in feature._infusions.items() %}
+                    <th>Lvl {{ level }}</th>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th>Infusions Known:</th>
+                {% for key, value in feature._infusions.items() %}
+                    <td>{{ value[0] }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th>Infused Items:</th>
+                {% for key, value in feature._infusions.items() %}
+                    <td>{{ value[1] }}</td>
+                {% endfor %}
+            </tr>
+        </table>
+        <p><strong>All Infusions: </strong></p>
+            <ul>
+                {% for i in feature.get_all_infusions() %}
+                    <li>
+                        <strong>{{ i.name }}</strong><br/>
+                        <strong>Item:</strong> {{ i.item }}<br/>
+                        {% if i.prerequisite != "" %}
+                            <strong>Prerequisite:</strong> {{ i.prerequisite }}<br/>
+                        {% endif %}
+                        {{ i.get_desc_html()|safe }}
+
+                        {% if hasattr(i, 'item_table') %}
+                            {% for level, table in i.item_table.items() %}
+                                <hr/>
+                                <p><strong>Level {{ level }} Artificer</strong></p>
+                                <table class="">
+                                    <tr>
+                                        <th>Item</th><th>Attunement</th>
+                                    </tr>
+                                    {% for j in table %}
+                                        <tr>
+                                            <td>{{ j.name }}</td><td>{{ j.attunement }}</td>
+                                        </tr>
+                                    {% endfor %}
+                                </table>
+                            {% endfor %}
+                            <hr/>
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+    </div>
+{% endif %}
+
+{% if len(feature.child_features) > 0 %}
+    <ul>
+    {% for c in feature.child_features %}
+        {% with feature = c %}
+            <li>
+                {% include "panes/database_view/components/feature_list_item.html" %}
+            </li>
+        {% endwith %}
+    {% endfor %}
+    </ul>
+{% endif %}
+

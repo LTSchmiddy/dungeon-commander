@@ -1,4 +1,4 @@
-"""This file describes the heroic adventurer GuyMan.
+"""This file describes the heroic adventurer Ignis et Umbrae.
 
 Modify this file as you level up and then re-generate the character
 sheet by running ``makesheets`` from the command line.
@@ -13,9 +13,8 @@ player_name = ""
 # Be sure to list Primary class first
 classes = ['Wizard', 'Rogue']  # ex: ['Wizard'] or ['Rogue', 'Fighter']
 levels = [3, 2]  # ex: [10] or [3, 2]
-subclasses = ["School of Evocation", None]  # ex: ['Necromacy'] or ['Thief', None]
-
-background = "Spy"
+subclasses = ["School of Evocation", '']  # ex: ['Necromacy'] or ['Thief', None]
+background = "Spy Revised"
 race = "High Elf"
 alignment = "Chaotic Good"
 
@@ -37,7 +36,7 @@ charisma = 10
 skill_proficiencies = ['arcana', 'medicine', 'investigation']
 
 # Any skills you have "expertise" (Bard/Rogue) in
-skill_expertise = ["arcana", "stealth"]
+skill_expertise = ['arcana', 'stealth']
 
 # Named features / feats that aren't part of your classes, race, or background.
 # Also include Eldritch Invocations and features you make multiple selection of
@@ -79,7 +78,7 @@ attacks_and_spellcasting = """"""
 
 # List of known spells
 # Example: spells = ('magic missile', 'mage armor')
-spells = ("Fire Bolt", "Create Bonfire", "Control Flames")
+spells = ("Control Flames", "Create Bonfire", "Fire Bolt")
 
 # Which spells have been prepared (not including cantrips)
 spells_prepared = ["Minor Illusion"]
@@ -102,4 +101,5 @@ flaws = """TODO: Describe your character's interesting flaws."""
 
 features_and_traits = """Describe any other features and abilities."""
 
-info_dict = {'feature__ElfCantrip': 'MinorIllusion', 'feature__ExtraLanguageRace': 'Infernal'}
+info_dict = {'feature__ElfCantrip': 'MinorIllusion', 'feature__ExtraLanguageRace': 'Infernal', 'feature__ExtraToolProficiency': "Alchemists' supplies"}
+unique = True

@@ -44,8 +44,8 @@
     });
 
 </script>
-<script src="/static/scripts/extracted_file_type_processors/json_file.js"></script>
-<script src="/static/scripts/extracted_file_type_processors/character_file.js"></script>
+<script src="/static/scripts/file_editors/json_file.js"></script>
+<script src="/static/scripts/file_editors/character_file.js"></script>
 <script>
 
     function extracted_file_load(name, path) {
@@ -203,23 +203,6 @@
         }).appendTo(extracted_file_tabs);
 
     }
-    /*
-    function extracted_file_save(path) {
-        if (!mod_editor_opened_tabs.hasOwnProperty(path)) {
-            console.log(`'${path}' not opened...`);
-            return;
-        }
-
-    }
-
-
-    function extracted_file_revert(path) {
-        if (!mod_editor_opened_tabs.hasOwnProperty(path)) {
-            console.log(`'${path}' not opened...`);
-            return;
-        }
-
-    }*/
 
     function extracted_file_close(path) {
         if (!mod_editor_opened_tabs.hasOwnProperty(path)) {

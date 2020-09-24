@@ -1,0 +1,5 @@
+{% for i in races %}
+    <button class="btn-info race-list-option list-option" onclick="db_viewer_show_race('{{ i.get_id() }}')">
+        {{ i.name }}
+    </button>
+{% endfor %}

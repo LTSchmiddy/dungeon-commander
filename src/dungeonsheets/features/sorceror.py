@@ -1,6 +1,63 @@
 from dungeonsheets import spells
 from dungeonsheets.features.features import Feature
 
+from dungeonsheets.features import BasicAbilityScoreImprovement
+
+class SorcererAbilityScoreImprovement(BasicAbilityScoreImprovement):
+    name = "Sorcerer Ability Score Improvement"
+    source = "Sorcerer"
+
+
+class SorcererSpellcasting(Feature):
+    """
+    **Spellcasting**
+    An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with
+    arcane magic. This font of magic, whatever its origin, fuels your spells. See Spells Rules for the general rules of
+    spellcasting and the Spells Listing for the sorcerer spell list.
+
+    **Cantrips**
+    At 1st level, you know four cantrips of your choice from the sorcerer spell list. You learn additional sorcerer
+    cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Sorcerer table.
+
+    **Spell Slots**
+    The Sorcerer table shows how many spell slots you have to cast your sorcerer spells of 1st level and higher. To cast
+    one of these sorcerer spells, you must expend a slot of the spell’s level or higher. You regain all expended spell
+    slots when you finish a long rest.
+
+    For example, if you know the 1st-level spell burning hands and have a 1st-level and a 2nd-level spell slot
+    available, you can cast burning hands using either slot.
+
+    **Spells Known of 1st Level and Higher**
+    You know two 1st-level spells of your choice from the sorcerer spell list.
+
+    The Spells Known column of the Sorcerer table shows when you learn more sorcerer spells of your choice. Each of
+    these spells must be of a level for which you have spell slots. For instance, when you reach 3rd level in this
+    class, you can learn one new spell of 1st or 2nd level.
+
+    Additionally, when you gain a level in this class, you can choose one of the sorcerer spells you know and replace
+    it with another spell from the sorcerer spell list, which also must be of a level for which you have spell slots.
+
+    **Spellcasting Ability**
+    Charisma is your spellcasting ability for your sorcerer spells, since the power of your magic relies on your ability
+    to project your will into the world. You use your Charisma whenever a spell refers to your spellcasting ability. In
+    addition, you use your Charisma modifier when setting the saving throw DC for a sorcerer spell you cast and when
+    making an attack roll with one.
+
+    **Spell save DC** = 8 + your proficiency bonus + your Charisma modifier
+
+    **Spell attack modifier** = your proficiency bonus + your Charisma modifier
+
+    **Spellcasting Focus**
+    You can use an arcane focus (see the Adventuring Gear section) as a spellcasting focus for your sorcerer spells.
+
+    **Sorcerous Origin**
+    Choose a sorcerous origin, which describes the source of your innate magical power: Draconic Bloodline, detailed at
+    the end of the class description, or one from another source.
+
+    Your choice grants you features when you choose it at 1st level and again at 6th, 14th, and 18th level.
+    """
+    name = "Sorcerer Spellcasting"
+    source = "Sorcerer"
 
 # PHB
 class FontOfMagic(Feature):
@@ -38,17 +95,6 @@ class FontOfMagic(Feature):
     source = "Sorcerer"
 
 
-class Metamagic(Feature):
-    """At 3rd level, you gain the ability to twist your spells to suit your
-    needs. You gain two of the following Metamagic options of your choice. You
-    gain another one at 10th and 17th level. You can use only one Metamagic
-    option on a spell when you cast it, unless otherwise noted
-
-    """
-    name = "Metamagic"
-    source = "Sorcerer (Metamagic)"
-
-
 class SorcerousRestoration(Feature):
     """At 20th level, you regain 4 expended sorcery points whenever you finish a
     short rest.
@@ -57,9 +103,12 @@ class SorcerousRestoration(Feature):
     name = "Sorcerous Restoration"
     source = "Sorcerer"
 
+class MetamagicChoice(Feature):
+    source = "Sorcerer (Metamagic)"
+
 
 # Metamagic
-class CarefulSpell(Metamagic):
+class CarefulSpell(MetamagicChoice):
     """When you cast a spell that forces other creatures to make a saving throw,
     you can protect some of those creatures from the spell's full force. To do
     so, you spend 1 sorcery point and choose a number o f those creatures up to
@@ -70,7 +119,7 @@ class CarefulSpell(Metamagic):
     name = "Careful Spell"
 
 
-class DistantSpell(Metamagic):
+class DistantSpell(MetamagicChoice):
     """When you cast a spell that has a range of 5 feet or greater, you can spend
     1 sorcery point to double the range of the spell. When you cast a spell
     that has a range of touch, you can spend 1 sorcery point to make the range
@@ -80,7 +129,7 @@ class DistantSpell(Metamagic):
     name = "Distant Spell"
 
 
-class EmpoweredSpell(Metamagic):
+class EmpoweredSpell(MetamagicChoice):
     """When you roll damage for a spell, you can spend 1 sorcery point to reroll a
     number of the damage dice up to your Charisma modifier (minimum of
     one). You must use the new rolls. You can use Empowered Spell even if you
@@ -91,7 +140,7 @@ class EmpoweredSpell(Metamagic):
     name = "Empowered Spell"
 
 
-class ExtendedSpell(Metamagic):
+class ExtendedSpell(MetamagicChoice):
     """When you cast a spell that has a duration of 1 minute or longer, you can
     spend 1 sorcery point to double its duration, to a maximum duration of 24
     hours.
@@ -100,7 +149,7 @@ class ExtendedSpell(Metamagic):
     name = "Extended Spell"
 
 
-class HeightenedSpell(Metamagic):
+class HeightenedSpell(MetamagicChoice):
     """When you cast a spell that forces a creature to make a saving throw to
     resist its effects, you can spend 3 sorcery points to give one target of
     the spell disadvantage on its first saving throw made against the spell
@@ -109,7 +158,7 @@ class HeightenedSpell(Metamagic):
     name = "Heightened Spell"
 
 
-class QuickenedSpell(Metamagic):
+class QuickenedSpell(MetamagicChoice):
     """When you cast a spell that has a casting time of 1 action, you can spend 2
     sorcery points to change the casting time to 1 bonus action for this
     casting.
@@ -118,7 +167,7 @@ class QuickenedSpell(Metamagic):
     name = "Quickened Spell"
 
 
-class SubtleSpell(Metamagic):
+class SubtleSpell(MetamagicChoice):
     """When you cast a spell, you can spend 1 sorcery point to cast it without any
     somatic or verbal components.
 
@@ -126,7 +175,7 @@ class SubtleSpell(Metamagic):
     name = "Subtle Spell"
 
 
-class TwinnedSpell(Metamagic):
+class TwinnedSpell(MetamagicChoice):
     """When you cast a spell that targets only one creature and doesn't have a
     range of self, you can spend a number of sorcery points equal to the
     spell's level to target a second creature in range with the same spell (1
@@ -135,6 +184,27 @@ class TwinnedSpell(Metamagic):
     """
     name = "Twinned Spell"
 
+
+class Metamagic(Feature):
+    """At 3rd level, you gain the ability to twist your spells to suit your
+    needs. You gain two of the following Metamagic options of your choice. You
+    gain another one at 10th and 17th level. You can use only one Metamagic
+    option on a spell when you cast it, unless otherwise noted.
+
+    """
+    name = "Metamagic"
+    source = "Sorcerer (Metamagic)"
+
+    child_features = (
+        CarefulSpell,
+        DistantSpell,
+        EmpoweredSpell,
+        ExtendedSpell,
+        HeightenedSpell,
+        QuickenedSpell,
+        SubtleSpell,
+        TwinnedSpell,
+    )
 
 # Wild Magic
 class WildMagicSurge(Feature):

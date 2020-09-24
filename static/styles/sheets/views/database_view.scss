@@ -1,0 +1,96 @@
+#database-view {
+    .section-selector {
+        background-color: #007bff;
+        position: absolute;
+        height: 100%;
+        width: 200px;
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+        }
+
+        button.active {
+            background-color: lightgrey;
+            color: black;
+        }
+    }
+
+    .section-view-area {
+        position: absolute;
+
+        left: 200px;
+        width: 100%;
+        height: calc(100vh - 110px);
+        //height: 28px;
+
+        .section-view {
+            width: 100%;
+            height: 100%;
+
+            .list-area {
+                position: absolute;
+                width: 200px;
+                height: 100%;
+                background-color: grey;
+                overflow: auto;
+                //border-style: dotted;
+                //border-radius: 10px;
+
+                .list-option {
+                    display: block;
+                    width: 100%;
+                    padding: 5px 10px;
+
+                }
+            }
+
+            .subclass-list-area,  {
+                left: 200px;
+            }
+
+            .view-area {
+                position: absolute;
+                left: 200px;
+                width: calc(100% - 400px);
+                height: 100%;
+                padding: 15px;
+                overflow: auto;
+            }
+
+
+            .class-view-area {
+                left: 400px;
+                width: calc(100% - 600px);
+
+                .spellcasting-info {
+                    padding: 10px;
+
+                    details.spellslots {
+                        margin-top: 20px;
+
+                        summary {
+                            font-size: 18px;
+                        }
+                        .spellslot-table {
+                            th, td {
+                                padding: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .table-result-area {
+                position: absolute;
+                left: 0;
+                width: calc(100% - 200px);
+                height: calc(100% - 40px);
+                padding: 15px;
+                overflow: auto;
+            }
+
+        }
+    }
+}

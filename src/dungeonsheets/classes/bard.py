@@ -137,6 +137,52 @@ class CollegeOfWhispers(SubClass):
 
 
 class Bard(CharClass):
+    """
+    Whether scholar, skald, or scoundrel, a bard weaves magic through
+    words and music to inspire allies, demoralize foes, manipulate minds,
+    create illusions, and even heal wounds.
+
+    # Music and Magic
+    In the worlds of D&D, words and music are not just vibrations of air, but
+    vocalizations with power all their own. The bard is a master of song,
+    speech, and the magic they contain. Bards say that the multiverse was
+    spoken into existence, that the words of the gods gave it shape, and
+    that echoes of these primordial Words of Creation still resound
+    throughout the cosmos. The music of bards is an attempt to snatch and
+    harness those echoes, subtly woven into their spells and powers.  The
+    greatest strength of bards is their sheer versatility. Many bards
+    prefer to stick to the sidelines in combat, using their magic to
+    inspire their allies and hinder their foes from a distance. But bards
+    are capable of defending themselves in melee if necessary, using their
+    magic to bolster their swords and armor. Their spells lean toward
+    charms and illusions rather than blatantly destructive spells. They
+    have a wide-ranging knowledge of many subjects and a natural aptitude
+    that lets them do almost anything well. Bards become masters of the
+    talents they set their minds to perfecting, from musical performance
+    to esoteric knowledge.
+
+    # Learning from Experience
+    True bards are not common in the world. Not every minstrel singing in a tavern or jester
+    cavorting in a royal court is a bard. Discovering the magic hidden in
+    music requires hard study and some measure of natural talent that most
+    troubadours and jongleurs lack. It can be hard to spot the difference
+    between these performers and true bards, though. A bard’s life is
+    spent wandering across the land gathering lore, telling stories, and
+    living on the gratitude of audiences, much like any other entertainer.
+    But a depth of knowledge, a level of musical skill, and a touch of
+    magic set bards apart from their fellows.  Only rarely do bards settle
+    in one place for long, and their natural desire to travel—to find new
+    tales to tell, new skills to learn, and new discoveries beyond the
+    horizon—makes an adventuring career a natural calling. Every adventure
+    is an opportunity to learn, practice a variety of skills, enter long-
+    forgotten tombs, discover lost works of magic, decipher old tomes,
+    travel to strange places, or encounter exotic creatures. Bards love to
+    accompany heroes to witness their deeds firsthand. A bard who can tell
+    an awe-inspiring story from personal experience earns renown among
+    other bards. Indeed, after telling so many stories about heroes
+    accomplishing mighty deeds, many bards take these themes to heart and
+    assume heroic roles themselves.
+    """
     name = 'Bard'
     hit_dice_faces = 8
     subclass_select_level = 3
@@ -161,7 +207,7 @@ class Bard(CharClass):
     subclasses_available = (CollegeOfLore, CollegeOfValor, CollegeOfGlamour,
                             CollegeOfSwords, CollegeOfWhispers)
     features_by_level = defaultdict(list)
-    features_by_level[1] = [features.BardicInspiration]
+    features_by_level[1] = [features.BardAbilityScoreImprovement, features.BardSpellcasting, features.BardicInspiration]
     features_by_level[2] = [features.SongOfRest, features.JackOfAllTrades]
     features_by_level[3] = [features.BardExpertise]
     features_by_level[5] = [features.FontOfInspiration]
@@ -169,6 +215,28 @@ class Bard(CharClass):
     features_by_level[10] = [features.MagicalSecrets]
     features_by_level[20] = [features.SuperiorInspiration]
     spellcasting_ability = 'charisma'
+    spells_known_by_level = {
+        1: 4,
+        2: 5,
+        3: 6,
+        4: 7,
+        5: 8,
+        6: 9,
+        7: 10,
+        8: 11,
+        9: 12,
+        10: 14,
+        11: 15,
+        12: 15,
+        13: 16,
+        14: 18,
+        15: 19,
+        16: 19,
+        17: 20,
+        18: 22,
+        19: 22,
+        20: 22,
+    }
     spell_slots_by_level = {
         # char_lvl: (cantrips, 1st, 2nd, 3rd, ...)
         1:  (2, 2, 0, 0, 0, 0, 0, 0, 0, 0),

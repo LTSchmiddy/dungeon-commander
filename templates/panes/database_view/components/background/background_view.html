@@ -1,0 +1,35 @@
+<h1>{{ bg.name }}</h1>
+<p>
+    {{ bg.get_desc_html()|safe }}
+</p>
+{# Handle Basic Tuples: #}
+{% for i in ['languages', 'weapon_proficiencies', 'proficiencies_text', 'skill_proficiencies', 'skill_choices'] %}
+
+    {% if len(getattr(bg, i)) > 0 %}
+        <h2>
+            {{ i.replace("_", " ").title() }}
+            {% if i == 'skill_choices' and bg.num_skill_choices > 0%}
+                - Choose {{ bg.num_skill_choices }}
+            {% endif %}
+        </h2>
+        <ul>
+            {% for j in getattr(bg, i) %}
+                <li>{{ j.title() }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+{% endfor %}
+<h2>Starting Equipment</h2>
+<p>
+    {{ bg.starting_equipment }}
+</p>
+
+<h2>Features</h2>
+<ul>
+    {% for feature in bg.features %}
+        <li>
+            {% include "panes/database_view/components/feature_list_item.html" %}
+        </li>
+    {% endfor %}
+</ul>

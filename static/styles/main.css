@@ -51,6 +51,9 @@ a:hover {
   width: 100%;
   z-index: 5 !important;
 }
+.main-nav .dropdown-item-text {
+  color: grey;
+}
 
 @media (min-width: 590px) {
   .main-nav {
@@ -268,6 +271,17 @@ div.sidebar-content a.sidebar-active {
   padding: 5px 10px;
   margin: 0;
 }
+#campaign-view .file-list a, #campaign-view .char-list a {
+  display: inline;
+}
+#campaign-view .file-list .close-btn, #campaign-view .char-list .close-btn {
+  background-color: #00000000;
+  padding: 0 10px;
+}
+#campaign-view .file-list .close-btn:hover, #campaign-view .char-list .close-btn:hover {
+  background-color: orangered;
+  color: white;
+}
 #campaign-view .content-field {
   padding: 0;
 }
@@ -349,6 +363,79 @@ div.sidebar-content a.sidebar-active {
 }
 #campaign-view #content-field .editor-area .editor-container .char-display-view {
   max-height: calc(100vh - 170px);
+  overflow: auto;
+}
+
+#database-view .section-selector {
+  background-color: #007bff;
+  position: absolute;
+  height: 100%;
+  width: 200px;
+}
+#database-view .section-selector button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+#database-view .section-selector button.active {
+  background-color: lightgrey;
+  color: black;
+}
+#database-view .section-view-area {
+  position: absolute;
+  left: 200px;
+  width: 100%;
+  height: calc(100vh - 110px);
+}
+#database-view .section-view-area .section-view {
+  width: 100%;
+  height: 100%;
+}
+#database-view .section-view-area .section-view .list-area {
+  position: absolute;
+  width: 200px;
+  height: 100%;
+  background-color: grey;
+  overflow: auto;
+}
+#database-view .section-view-area .section-view .list-area .list-option {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+}
+#database-view .section-view-area .section-view .subclass-list-area {
+  left: 200px;
+}
+#database-view .section-view-area .section-view .view-area {
+  position: absolute;
+  left: 200px;
+  width: calc(100% - 400px);
+  height: 100%;
+  padding: 15px;
+  overflow: auto;
+}
+#database-view .section-view-area .section-view .class-view-area {
+  left: 400px;
+  width: calc(100% - 600px);
+}
+#database-view .section-view-area .section-view .class-view-area .spellcasting-info {
+  padding: 10px;
+}
+#database-view .section-view-area .section-view .class-view-area .spellcasting-info details.spellslots {
+  margin-top: 20px;
+}
+#database-view .section-view-area .section-view .class-view-area .spellcasting-info details.spellslots summary {
+  font-size: 18px;
+}
+#database-view .section-view-area .section-view .class-view-area .spellcasting-info details.spellslots .spellslot-table th, #database-view .section-view-area .section-view .class-view-area .spellcasting-info details.spellslots .spellslot-table td {
+  padding: 5px;
+}
+#database-view .section-view-area .section-view .table-result-area {
+  position: absolute;
+  left: 0;
+  width: calc(100% - 200px);
+  height: calc(100% - 40px);
+  padding: 15px;
   overflow: auto;
 }
 

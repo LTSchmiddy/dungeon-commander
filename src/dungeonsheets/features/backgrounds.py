@@ -160,10 +160,18 @@ class ShipsPassage(Feature):
     need. Your Dungeon Master will determine how long it takes to get where you
     need to go. In return for your free passage, you and your companions are
     expected to assist the crew during the voyage
-
     """
     name = "Ship's Passage"
     source = "Background (Sailor)"
+
+class BadReputation(Feature):
+    """No matter where you go, people are afraid of you due to your reputation. When you are in a civilized settlement,
+     you can get away with minor criminal offenses, such as refusing to pay for food at a tavern or breaking down doors
+     at a local shop, since most people will not report your activity to the authorities.
+    """
+    name = "Bad Reputation"
+    source = "Background (Pirate)"
+
 
 
 class MilitaryRank(Feature):

@@ -1,0 +1,56 @@
+<h1>{{ race.name }}</h1>
+<h2>General Information</h2>
+<ul>
+    {% for i in [
+        'size',
+        'speed',
+        'strength_bonus',
+        'dexterity_bonus',
+        'constitution_bonus',
+        'intelligence_bonus',
+        'wisdom_bonus',
+        'charisma_bonus',
+        'hit_point_bonus',
+    ] %}
+    {% if getattr(race, i) %}
+        <li>
+            <strong>{{ i.replace("_", " ").title() }}</strong>: {{ str(getattr(race, i)).capitalize() }}
+        </li>
+    {% endif %}
+
+    {% endfor %}
+</ul>
+
+{# Handle Basic Tuples: #}
+{% for i in ['languages', 'weapon_proficiencies', 'proficiencies_text', 'skill_proficiencies', 'skill_choices'] %}
+
+    {% if len(getattr(race, i)) > 0 %}
+        <h2>
+            {{ i.replace("_", " ").title() }}
+            {% if i == 'skill_choices' and race.num_skill_choices > 0%}
+                - Choose {{ race.num_skill_choices }}
+            {% endif %}
+        </h2>
+        <ul>
+            {% for j in getattr(race, i) %}
+                {% if i in [
+                    'weapon_proficiencies',
+                    'spells_known',
+                    'spells_prepared',
+                ] %}
+                    <li>{{ j.name.capitalize() }}</li>
+                {% else %}
+                    <li>{{ str(j).capitalize() }}</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+{% endfor %}
+
+<h2>Features</h2>
+<ul>
+    {% for f in race.all_features() %}
+        <li><strong>{{ f.name }}:</strong> {{ f.get_desc_html()|safe }}</li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,11 @@
+<button class="btn-primary" onclick="load_table_result()">load</button>
+<div id="table-result-area" class="table-result-area"></div>
+<script>
+    let table_result_area = $('#table-result-area');
+
+    async function load_table_result() {
+        let table_result_content = await $.post("/panes/database_view/table_result", {table_name: db_view.table});
+        table_result_area.html(table_result_content);
+    }
+
+</script>

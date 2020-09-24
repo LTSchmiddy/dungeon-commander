@@ -8,6 +8,12 @@
 
     </div>
 
+    <div id="database-view" class="main-view">
+
+        {% include "views/database_view.html" %}
+
+    </div>
+
     <div id="settings-editor-view" class="main-view">
         {% include "views/settings_view.html" %}
 
@@ -21,6 +27,7 @@
     <script>
         const views = [
             $("#campaign-view"),
+            $("#database-view"),
             $("#settings-editor-view"),
             $("#python-console-view")
         ];

@@ -18,3 +18,7 @@ function generate_element(code) {
     wrapper.innerHTML = code;
     return wrapper.firstChild;
 }
+
+async function load_html(addr, params) {
+    return await $.post(addr, params);
+}

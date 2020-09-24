@@ -19,3 +19,12 @@ from dungeonsheets.classes.wizard import Wizard
 
 available_classes = [Artificer, Barbarian, Bard, Cleric, Druid, Fighter, Monk, Paladin,
                      Ranger, Rogue, Sorcerer, Warlock, Wizard, RevisedRanger]
+
+
+def get_class(cls_id: str):
+    for i in available_classes:
+        use_cls = None
+        if i.get_id() == cls_id:
+            use_cls = i
+            break
+    return use_cls

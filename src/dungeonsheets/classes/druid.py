@@ -128,6 +128,37 @@ class SporesCircle(SubClass):
 
 
 class Druid(CharClass):
+    """
+    Whether calling on the elemental forces of nature or emulating the creatures of the animal world, druids are an
+    embodiment of nature’s resilience, cunning, and fury. They claim no mastery over nature. Instead, they see
+    themselves as extensions of nature’s indomitable will.
+
+    # Power of Nature
+    Druids revere nature above all, gaining their spells and other magical powers either from the force of nature
+    itself or from a nature deity. Many druids pursue a mystic spirituality of transcendent union with nature rather
+    than devotion to a divine entity, while others serve gods of wild nature, animals, or elemental forces. The ancient
+    druidic traditions are sometimes called the Old Faith, in contrast to the worship of gods in temples and shrines.
+
+    Druid spells are oriented toward nature and animals—the power of tooth and claw, of sun and moon, of fire and storm.
+    Druids also gain the ability to take on animal forms, and some druids make a particular study of this practice, even
+    to the point where they prefer animal form to their natural form.
+
+    # Preserve the Balance
+    For druids, nature exists in a precarious balance. The four elements that make up a world—air, earth, fire, and
+    water—must remain in equilibrium. If one element were to gain power over the others, the world could be destroyed,
+    drawn into one of the elemental planes and broken apart into its component elements. Thus, druids oppose cults of
+    Elemental Evil and others who promote one element to the exclusion of others.
+
+    Druids are also concerned with the delicate ecological balance that sustains plant and animal life, and the need
+    for civilized folk to live in harmony with nature, not in opposition to it. Druids accept that which is cruel in
+    nature, and they hate that which is unnatural, including aberrations (such as beholders and mind flayers) and undead
+    (such as zombies and vampires). Druids sometimes lead raids against such creatures, especially when the monsters
+    encroach on the druids’ territory.
+
+    Druids are often found guarding sacred sites or watching over regions of unspoiled nature. But when a significant
+    danger arises, threatening nature’s balance or the lands they protect, druids take on a more active role in
+    combating the threat, as adventurers.
+    """
     name = 'Druid'
     _wild_shapes = ()
     _circle = ''
@@ -135,7 +166,7 @@ class Druid(CharClass):
     subclass_select_level = 2
     saving_throw_proficiencies = ('intelligence', 'wisdom')
     primary_abilities = ('wisdom',)
-    languages = 'Druidic'
+    languages = ('Druidic',)
     _proficiencies_text = (
         'Light armor', 'medium armor',
         'shields (druids will not wear armor or use shields made of metal)',
@@ -153,6 +184,7 @@ class Druid(CharClass):
                            'Medicine', 'Nature', 'Perception', 'Religion',
                            'Survival')
     features_by_level = defaultdict(list)
+    features_by_level[1] = [features.DruidAbilityScoreImprovement]
     features_by_level[2] = [features.WildShape]
     features_by_level[18] = [features.TimelessBody, features.BeastSpells]
     features_by_level[20] = [features.Archdruid]

@@ -57,6 +57,28 @@ class EldritchKnight(SubClass):
     features_by_level[15] = [features.ArcaneCharge]
     features_by_level[18] = [features.ImprovedWarMagic]
     spellcasting_ability = 'intelligence'
+    spells_known_by_level = {
+        1: 0,
+        2: 0,
+        3: 3,
+        4: 4,
+        5: 4,
+        6: 4,
+        7: 5,
+        8: 6,
+        9: 6,
+        10: 7,
+        11: 8,
+        12: 8,
+        13: 9,
+        14: 10,
+        15: 10,
+        16: 11,
+        17: 11,
+        18: 11,
+        19: 12,
+        20: 13,
+    }
     spell_slots_by_level = {
         # char_lvl: (cantrips, 1st, 2nd, 3rd, ...)
         1:  (0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
@@ -203,6 +225,30 @@ class Gunslinger(SubClass):
 
 
 class Fighter(CharClass):
+    """
+    Fighters are perhaps the most diverse class of characters in the worlds of Dungeons & Dragons. Questing knights,
+    conquering overlords, royal champions, elite foot soldiers, hardened mercenaries, and bandit kings—as fighters,
+    they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat.
+    And they are well acquainted with death, both meting it out and staring it defiantly in the face.
+
+    # Well-Rounded Specialists
+    Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a
+    longsword or a greatsword, use a bow, and even trap foes in a net with some degree of skill. Likewise, a fighter is
+    adept with shields and every form of armor. Beyond that basic degree of familiarity, each fighter specializes in a
+    certain style of combat. Some concentrate on archery, some on fighting with two weapons at once, and some on
+    augmenting their martial skills with magic. This combination of broad general ability and extensive specialization
+    makes fighters superior combatants on battlefields and in dungeons alike.
+
+    # Trained for Danger
+    Not every member of the city watch, the village militia, or the queen’s army is a fighter. Most of these troops are
+    relatively untrained soldiers with only the most basic combat knowledge. Veteran soldiers, military officers,
+    trained bodyguards, dedicated knights, and similar figures are fighters.
+
+    Some fighters feel drawn to use their training as adventurers. The dungeon delving, monster slaying, and other
+    dangerous work common among adventurers is second nature for a fighter, not all that different from the life he or
+    she left behind. There are greater risks, perhaps, but also much greater rewards—few fighters in the city watch have
+    the opportunity to discover a magic flame tongue sword, for example.
+    """
     name = 'Fighter'
     hit_dice_faces = 10
     subclass_select_level = 3
@@ -219,7 +265,7 @@ class Fighter(CharClass):
                            'Athletics', 'History', 'Insight', 'Intimidation',
                            'Perception', 'Survival')
     features_by_level = defaultdict(list)
-    features_by_level[1] = [features.FighterFightingStyle, features.SecondWind]
+    features_by_level[1] = [features.FighterAbilityScoreImprovement, features.FighterFightingStyle, features.SecondWind]
     features_by_level[2] = [features.ActionSurge]
     features_by_level[5] = [features.ExtraAttackFighter]
     features_by_level[9] = [features.Indomitable]

@@ -3,6 +3,20 @@ from dungeonsheets.features.features import Feature, FeatureSelector
 from dungeonsheets.features.ranger import (Archery, Defense, Dueling,
                                            TwoWeaponFighting)
 
+from dungeonsheets.features import BasicAbilityScoreImprovement
+
+class FighterAbilityScoreImprovement(BasicAbilityScoreImprovement):
+    """
+    When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability
+    score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase
+    an ability score above 20 using this feature.
+
+    Using the optional feats rule, you can forgo taking this feature to take a feat of your choice instead.
+    """
+    name = "Fighter Ability Score Improvement"
+    source = "Fighter"
+
+
 # Features added for all PHB classes
 # SCAG and XGTE needed
 
@@ -565,6 +579,10 @@ class EldritchKnightSpellcasting(Feature):
     list. The new spell must be of a level for which you have spell slots, and
     it must be an abjuration or evocation spell, unless you're replacing the
     spell you gained at 8th, 14th, or 20th level.
+
+    **Spell save DC** = 8 + your proficiency bonus + your Intelligence modifier
+
+    **Spell attack modifier** = your proficiency bonus + your Intelligence modifier
 
     """
     name = "Spellcasting"

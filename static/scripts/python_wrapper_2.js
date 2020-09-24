@@ -17,6 +17,7 @@ window.addEventListener('pywebviewready', function() {
                 get_character_text: pywebview.api.campaign.character.get_character_text,
                 get_loaded_characters: pywebview.api.campaign.character.get_loaded_characters,
                 load_character: pywebview.api.campaign.character.load_character,
+                reload_character: pywebview.api.campaign.character.reload_character,
                 save_character: pywebview.api.campaign.character.save_character,
                 unload_character: pywebview.api.campaign.character.unload_character
             }

@@ -1,4 +1,6 @@
 import os
+import textwrap
+
 from flask import Flask, send_from_directory
 import settings
 from logging.config import dictConfig
@@ -32,26 +34,38 @@ app = Flask(__name__, root_path=os.getcwd())
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
-from interface_flask.pages import pages
-from interface_flask.panes import panes
-from interface_flask.api import api
 
+# import interface_flask
+
+from interface_flask.pages import pages
+from interface_flask.panes import panes, campaign, database
+from interface_flask.api import api
+import db
 
 @app.context_processor
 def jinja2_values():
-    def to_int(x):
-        return int(x)
 
     return dict(
         settings=settings, #,
-        # to_int=to_int
-        md=markdown2.markdown
+        int=int,
+        str=str,
+        tuple=tuple,
+        len=len,
+        dir=dir,
+        getattr=getattr,
+        hasattr=hasattr,
+        isinstance=isinstance,
+        exec=exec,
+        eval=eval,
+        ordinal=lambda n: "%d%s" % (n, "tsnrhtdd"[(n // 10 % 10 != 1) * (n % 10 < 4) * n % 10::4]),
+        md=markdown2.markdown,
+        db=db,
+        textwrap=textwrap
     )
-
-
-
 
 app.register_blueprint(pages, url_prefix='/')
 app.register_blueprint(panes, url_prefix='/panes/')
+app.register_blueprint(campaign.campaign_view, url_prefix='/panes/campaign_view')
+app.register_blueprint(database.database_view, url_prefix='/panes/database_view')
 app.register_blueprint(api, url_prefix='/api/')
 

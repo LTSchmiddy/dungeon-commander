@@ -7,7 +7,7 @@ sheet by running ``makesheets`` from the command line.
 
 dungeonsheets_version = "dc_1"
 
-name = "GuyMan"
+name = "Base"
 player_name = ""
 
 # Be sure to list Primary class first

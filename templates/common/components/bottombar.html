@@ -10,6 +10,12 @@
         ">
             <strong>Campaign</strong>
         </button>
+        <button id="database-view-button" class="btn-secondary main-tab" onclick="
+            set_view('database-view');
+            py_console_run = false;
+        ">
+            <strong>Database</strong>
+        </button>
         <button id="settings-editor-view-button" class="btn-secondary secondary-tab" onclick="
             set_view('settings-editor-view');
             py_console_run = false;
@@ -56,5 +62,6 @@
     }
 
     set_view('campaign-view');
+    {#set_view('database-view');#}
 
 </script>

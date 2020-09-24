@@ -1,0 +1,5 @@
+{% for i in background %}
+    <button class="btn-info background-list-option list-option" onclick="db_viewer_show_bg('{{ i.get_id() }}')">
+        {{ i.name }}
+    </button>
+{% endfor %}

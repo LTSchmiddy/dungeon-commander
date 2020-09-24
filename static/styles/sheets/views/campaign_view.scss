@@ -10,7 +10,24 @@
         /*overflow-x: hidden;*/
         padding: 5px 10px;
         margin: 0;
+
+        a {
+            //width: auto;
+            display: inline;
+        }
+
+        .close-btn {
+            background-color: #00000000;
+            padding: 0 10px;
+        }
+
+        .close-btn:hover {
+            background-color: orangered;
+            color: white;
+        }
     }
+
+
 
     .content-field {
         padding: 0;

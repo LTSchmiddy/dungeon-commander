@@ -34,8 +34,10 @@ class Feature():
     spells_known = ()
     spells_prepared = ()
     languages = ()
+    proficiencies_text = ()
     needs_implementation = False  # Set to True if need to find way to compute stats
     info_dict_key_mod = ""
+    child_features = ()
 
     def __init__(self, owner=None):
         self.owner = owner
@@ -57,12 +59,20 @@ class Feature():
 
     @property
     def desc(self):
-        return inspect.getdoc(self)
+        return self.get_desc()
 
+    @classmethod
+    def get_desc(cls):
+        return inspect.getdoc(cls)
 
     @property
     def desc_html(self):
         return markdown2.markdown(self.desc).strip()
+
+    @classmethod
+    def get_desc_html(cls):
+        return markdown2.markdown(cls.get_desc()).strip()
+
 
     @classmethod
     def info_dict_key(cls) -> str:

@@ -1,0 +1,64 @@
+<div id="database-section-selector" class="section-selector">
+    <button class="btn-secondary" data-section-name="background" data-table-name="" onclick="db_view_set_btn(this);">Backgrounds</button>
+    <button class="btn-secondary" data-section-name="class" data-table-name="" onclick="db_view_set_btn(this);">Classes</button>
+    <button class="btn-secondary" data-section-name="race" data-table-name="" onclick="db_view_set_btn(this);">Races</button>
+
+    {% for i in db.Base.metadata.tables.keys() %}
+        <button class="btn-secondary" data-section-name="table" data-table-name="{{ i }}" onclick="db_view_set_btn(this); load_table_result()">{{ i.replace("_", " ").title() }}</button>
+    {% endfor %}
+</div>
+<div id="database-section-view-area" class="section-view-area">
+    <div data-section-name="background" class="section-view">
+        {% include "panes/database_view/viewer/background_viewer.html" %}
+    </div>
+    <div data-section-name="class" class="section-view">
+        {% include "panes/database_view/viewer/class_viewer.html" %}
+    </div>
+    <div data-section-name="race" class="section-view">
+        {% include "panes/database_view/viewer/race_viewer.html" %}
+    </div>
+    <div data-section-name="table" class="section-view">
+        {% include "panes/database_view/viewer/db_table_viewer.html" %}
+    </div>
+</div>
+
+<script>
+    const db_view = {
+        menu: $('#database-section-selector'),
+        view: $('#database-section-view-area'),
+        section: "",
+        table: ""
+    }
+    function db_view_set_btn(button) {
+        let section = $(button).attr('data-section-name');
+        let table = $(button).attr('data-table-name');
+        db_view_set(section, table);
+    }
+
+    function db_view_set(section, table) {
+        db_view.section = section;
+        db_view.table = table;
+        for (let i of db_view.menu.children()) {
+            let sel = $(i);
+
+            if (sel.attr('data-section-name') === section && sel.attr('data-table-name') === table) {
+                sel.addClass('active');
+            } else {
+                sel.removeClass('active');
+            }
+        }
+
+        for (let i of db_view.view.children()) {
+            let sel = $(i);
+
+            if (sel.attr('data-section-name') === section) {
+                sel.show();
+            } else {
+                sel.hide();
+            }
+        }
+    }
+
+    db_view_set('');
+
+</script>

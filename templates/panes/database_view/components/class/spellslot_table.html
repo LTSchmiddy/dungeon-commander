@@ -1,0 +1,17 @@
+<table class="spellslot-table">
+    <tr>
+        <th></th>
+        <th>Cantrips Known</th>
+        {% for i in range(1, 10) %}
+            <th>{{ ordinal(i) }} Level Slots</th>
+        {% endfor %}
+    </tr>
+    {% for char_level, slots in spellslots.items() %}
+        <tr>
+            <th>Lvl {{ char_level }}</th>
+            {% for j in slots %}
+                <td>{{ j }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>

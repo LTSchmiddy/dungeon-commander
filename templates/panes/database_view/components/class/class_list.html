@@ -1,0 +1,8 @@
+{% for i in classes %}
+    <button class="btn-info class-list-option list-option" onclick="
+            db_viewer_show_class('{{ i.get_id() }}');
+            db_viewer_list_subclasses('{{ i.get_id() }}');
+    ">
+        {{ i.name }}
+    </button>
+{% endfor %}

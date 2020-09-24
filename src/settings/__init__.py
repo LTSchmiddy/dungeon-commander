@@ -2,9 +2,10 @@
 
 import sys
 import os
-
+import colorsys
 import json
 
+from colors import *
 # print(sys.argv[0])
 
 
@@ -59,7 +60,17 @@ default_settings = {
     },
     "game": {
         "campaign-dir-path": "./my_campaign",
-        "reload-db-on-start": True
+        "reload-db-on-start": True,
+        "online-sources": {
+            "guide": {
+                "name": "Basic Rules - D&D Beyond",
+                "address": "https://www.dndbeyond.com/sources/basic-rules"
+            },
+            "wiki": {
+                "name": "Dungeons & Dragons 5th Edition Community Wiki",
+                "address": "http://dnd5e.wikidot.com/"
+            }
+        }
     },
     "database": {
         "echo": False
@@ -73,18 +84,30 @@ def load_settings():
     global current
     current = default_settings.copy()
 
-    def recursive_load(main, loaded):
+    def recursive_load_list(main: list, loaded: list):
+        for i in range(0, max(len(main), len(loaded))):
+            # Found in both:
+            if i < len(main) and i < len(loaded):
+                if isinstance(loaded[i], dict):
+                    recursive_load_dict(main[i], loaded[i])
+                elif isinstance(loaded[i], list):
+                    recursive_load_list(main[i], loaded[i])
+                else:
+                    main[i] = loaded[i]
+            # Found in main only:
+            elif i < len(loaded):
+                main.append(loaded[i])
+
+
+    def recursive_load_dict(main: dict, loaded: dict):
         new_update_dict = {}
-
-        # print(json.dumps(main, indent=4))
-
         for key, value in main.items():
             if not (key in loaded):
                 continue
-
             if isinstance(value, dict):
-                recursive_load(value, loaded[key])
-
+                recursive_load_dict(value, loaded[key])
+            elif isinstance(value, list):
+                recursive_load_list(value, loaded[key])
             else:
                 new_update_dict[key] = loaded[key]
 
@@ -92,9 +115,13 @@ def load_settings():
 
     # load preexistent settings file
     if os.path.exists(settings_path) and os.path.isfile(settings_path):
-        imported_settings = json.load(open(settings_path, "r"))
-        # current.update(imported_settings)
-        recursive_load(current, imported_settings)
+        try:
+            imported_settings = json.load(open(settings_path, "r"))
+            # current.update(imported_settings)
+            recursive_load_dict(current, imported_settings)
+        except json.decoder.JSONDecodeError as e:
+            print (color(f"CRITICAL ERROR IN LOADING SETTINGS: {e}", fg='red'))
+            print (color("Using default settings...", fg='yellow'))
 
     # settings file not found
     else:

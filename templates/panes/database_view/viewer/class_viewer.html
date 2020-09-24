@@ -1,0 +1,34 @@
+<div id="class-list-area" class="class-list-area list-area">
+
+</div>
+<div id="subclass-list-area" class="subclass-list-area list-area">
+
+</div>
+
+<div id="class-view-area" class="class-view-area view-area">
+
+</div>
+
+<script>
+    let db_class_list_area = $('#class-list-area');
+    let db_subclass_list_area = $('#subclass-list-area');
+    let db_class_view_area = $('#class-view-area');
+
+    $(document).ready(async ()=>{
+        db_class_list_area.html(await load_html("/panes/database_view/class_list"));
+    });
+
+    async function db_viewer_list_subclasses(class_id) {
+        db_subclass_list_area.html(await load_html("/panes/database_view/subclass_list", {'class_id': class_id}));
+    }
+
+    async function db_viewer_show_class(class_id) {
+        db_class_view_area.html(await load_html("/panes/database_view/class_view", {'class_id': class_id}));
+    }
+
+    async function db_viewer_show_subclass(class_id, subclass_id) {
+        db_class_view_area.html(await load_html("/panes/database_view/subclass_view", {'class_id': class_id, 'subclass_id': subclass_id}));
+    }
+
+
+</script>
