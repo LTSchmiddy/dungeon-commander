@@ -1,8 +1,0 @@
-{
-    "desc": "This helm has 3 charges. While wearing it, you can use an action and expend 1 charge to cast the _teleport_ spell from it. The helm regains 1d3\n\nexpended charges daily at dawn.",
-    "id": "helm_of_teleportation",
-    "name": "Helm of Teleportation",
-    "rarity": "rare",
-    "requires-attunement": "requires attunement",
-    "type": "Wondrous item"
-}

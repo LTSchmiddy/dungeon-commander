@@ -1,8 +1,0 @@
-{
-    "desc": "Your Strength score is 19 while you wear these gauntlets. They have no effect on you if your Strength is already 19 or higher.",
-    "id": "gauntlets_of_ogre_power",
-    "name": "Gauntlets of Ogre Power",
-    "rarity": "uncommon",
-    "requires-attunement": "requires attunement",
-    "type": "Wondrous item"
-}

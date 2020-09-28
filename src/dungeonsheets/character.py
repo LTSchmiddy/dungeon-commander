@@ -15,9 +15,13 @@ import jinja2
 
 from enum import Enum
 
+
+import dungeonsheets
+
+
 from dungeonsheets import (armor, background, classes, exceptions, features,
                            infusions, magic_items, monsters, race, spells,
-                           weapons)
+                           weapons, char_key_order)
 from dungeonsheets.armor import Armor, NoArmor, NoShield, Shield
 
 from dungeonsheets.classes import *
@@ -41,6 +45,16 @@ dice_re = re.compile('(\d+)d(\d+)')
 
 __all__ = ('Artificer', 'Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk',
            'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard', )
+
+type_conversions = {
+    'bool': bool,
+    'int': int,
+    'float': float,
+    'str': str,
+    'list': list,
+    'tuple': tuple,
+    'dict': dict
+}
 
 multiclass_spellslots_by_level = {
     # char_lvl: (cantrips, 1st, 2nd, 3rd, ...)
@@ -272,8 +286,15 @@ class Character:
         elif isinstance(newrace, type) and issubclass(newrace, race.Race):
             self._race = newrace(owner=self)
         elif isinstance(newrace, str):
+            for i in race.available_races:
+                # print(i)
+                if newrace in (i.get_id(), i.name):
+                    self._race = i(owner=self)
+                    return
+            # Let's try the old way:
             try:
                 self._race = findattr(race, newrace)(owner=self)
+
             except AttributeError:
                 msg = (f'Race "{newrace}" not defined. '
                        f'Please add it to ``race.py``')
@@ -555,7 +576,7 @@ class Character:
                 if isinstance(val, str):
                     val = [val]
                 for mitem in val:
-                    new_item = db.Session.query(db.tables.DB_Item).filter(db.tables.DB_Item.id == mitem).first()
+                    new_item = db.Session.query(db.tables.DB_MagicItem).filter(db.tables.DB_MagicItem.id == mitem).first()
 
                     if new_item is None:
                         msg = f'Magic Item "{mitem}" not defined. Please add it to the database.'
@@ -566,7 +587,7 @@ class Character:
                     # try:
                     #     self.magic_items.append(findattr(magic_items, mitem)(owner=self))
                     # except (AttributeError):
-                    #     msg = (f'Magic DB_Item "{mitem}" not defined. '
+                    #     msg = (f'Magic DB_MagicItem "{mitem}" not defined. '
                     #            f'Please add it to ``magic_items.py``')
                     #     warnings.warn(msg)
             elif attr == 'weapon_proficiencies':
@@ -768,7 +789,7 @@ class Character:
                 return
 
             try:
-                NewWeaponClass = findattr(weapons, weapon_data.weap_class)
+                NewWeaponClass = findattr(weapons, weapon_data.base_class)
             except AttributeError:
                 raise AttributeError(f'Weapon class "{weapon}" is not defined')
             weapon_ = NewWeaponClass(wielder=self)
@@ -905,6 +926,22 @@ class Character:
         # Create the character with loaded properties
         self.__init__(**char_props)
 
+    def load_info_json_dict(self, json_dict: dict):
+        char_props = {}
+
+        for type_key, value in json_dict.items():
+            use_type, key = type_key.split('-')[1:]
+            if use_type in ('int', 'float') and value == "":
+                char_props[key] = 0
+            else:
+                char_props[key] = type_conversions[use_type](value)
+
+        self.load_into_from_dict(char_props)
+
+    def load_info_from_json(self, json_str: str):
+        self.load_info_json_dict(json.loads(json_str))
+
+
     def save_code(self, template_file='character_template.txt') -> str:
         # Create the template context
         context = dict(
@@ -921,16 +958,22 @@ class Character:
     def save_dict(self):
         return read_character_code(self.save_code())
 
-    # def save_json(self):
-    #     attr_dict = self.save_dict()
-    #
-    #     json_dict = {}
-    #     for key, value in attr_dict:
-    #         type_key = f"{key}-{str(type(value))}"
-    #         json_dict[type_key] = value
-    #
-    #     return json.dumps(json_dict, indent=4, sort_keys=True)
+    def save_json_dict(self):
+        attr_dict = self.save_dict()
+        json_dict = {}
+        # for key, value in attr_dict.items():
+        #     type_key = f"{str(type(value).__name__)}-{key}"
+        #     json_dict[type_key] = value
 
+        for i in range(0, len(char_key_order.order)):
+            name = char_key_order.order[i]
+            type_key = f"{i}-{str(type(attr_dict[name]).__name__)}-{name}"
+            json_dict[type_key] = attr_dict[name]
+
+        return json_dict
+
+    def save_json(self):
+        return json.dumps(self.save_json_dict(), indent=4, sort_keys=True)
 
     def save(self, filename, template_file='character_template.txt'):
         text = self.save_code()

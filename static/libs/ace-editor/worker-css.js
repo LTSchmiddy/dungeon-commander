@@ -1974,7 +1974,7 @@ var Colors = {
     captiontext         :"Text in caption, size box, and scrollbar arrow box.",
     graytext            :"Grayed (disabled) text. This color is set to #000 if the current display driver does not support a solid gray color.",
     greytext            :"Greyed (disabled) text. This color is set to #000 if the current display driver does not support a solid grey color.",
-    highlight           :"DB_Item(s) selected in a control.",
+    highlight           :"DB_MagicItem(s) selected in a control.",
     highlighttext       :"Text of item(s) selected in a control.",
     inactiveborder      :"Inactive window border.",
     inactivecaption     :"Inactive window caption.",

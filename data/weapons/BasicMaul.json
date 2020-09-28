@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Maul",
     "base_damage": "2d6",
-    "class": "Maul",
     "cost": "10 gp",
     "damage_bonus": 0,
     "damage_type": "b",
+    "description": "",
     "features_applied": false,
     "id": "BasicMaul",
+    "improved": 0,
     "is_finesse": false,
     "name": "Maul",
     "properties": "Heavy, two-handed",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 10
 }

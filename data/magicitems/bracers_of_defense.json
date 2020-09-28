@@ -1,8 +1,0 @@
-{
-    "desc": "While wearing these bracers, you gain a +2 bonus to AC if you are wearing no armor and using no shield.",
-    "id": "bracers_of_defense",
-    "name": "Bracers of Defense",
-    "rarity": "rare",
-    "requires-attunement": "requires attunement",
-    "type": "Wondrous item"
-}

@@ -1,0 +1,15 @@
+{
+    "base_armor_class": 12,
+    "base_class": "HideArmor",
+    "cost": "10 gp",
+    "description": "",
+    "dexterity_mod_max": 2,
+    "id": "BasicHideArmor",
+    "improved": 0,
+    "name": "Hide Armor",
+    "rarity": "common",
+    "stealth_disadvantage": false,
+    "strength_required": null,
+    "type": "armor",
+    "weight": 12
+}

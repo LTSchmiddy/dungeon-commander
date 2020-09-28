@@ -1,15 +1,18 @@
 {
     "ability": "strength",
     "attack_bonus": -5,
+    "base_class": "HeavyPunch",
     "base_damage": "1d4",
-    "class": "HeavyPunch",
     "cost": "0 gp",
     "damage_bonus": 10,
     "damage_type": "b",
     "features_applied": false,
     "id": "BasicHeavyPunch",
+    "improved": 0,
     "is_finesse": false,
     "name": "Heavy Punch",
     "properties": "",
+    "rarity": "common",
+    "type": "Unknown",
     "weight": 1
 }

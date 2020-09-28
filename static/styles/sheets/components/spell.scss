@@ -1,0 +1,32 @@
+details.spell {
+    summary.spell-head {
+        border-top-style: solid;
+        border-top-width: 2px;
+        border-top-color: grey;
+
+
+        height: 30px;
+        background-color: silver;
+        display: grid;
+        grid-template-columns: 20px 1fr 80px 30px 30px 1fr 1fr 1fr 120px 1fr 1fr;
+        vertical-align: center;
+
+        .spell-head-section {
+            overflow: hidden;
+            white-space:nowrap;
+            height: 100%;
+
+        }
+
+        .spell-is-ritual, .spell-is-concentration {
+            font-weight: bold;
+        }
+    }
+
+    .spell-info {
+        .spell-info-section {
+            margin: 10px 20px;
+            display: inline-block;
+        }
+    }
+}

@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Lance",
     "base_damage": "1d12",
-    "class": "Lance",
     "cost": "10gp",
     "damage_bonus": 0,
     "damage_type": "p",
+    "description": "",
     "features_applied": false,
     "id": "BasicLance",
+    "improved": 0,
     "is_finesse": false,
     "name": "Lance",
     "properties": "Reach, special",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 6
 }

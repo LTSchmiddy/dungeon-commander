@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Rapier",
     "base_damage": "1d8",
-    "class": "Rapier",
     "cost": "25 gp",
     "damage_bonus": 0,
     "damage_type": "p",
+    "description": "",
     "features_applied": false,
     "id": "BasicRapier",
+    "improved": 0,
     "is_finesse": true,
     "name": "Rapier",
     "properties": "Finesse",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 2
 }

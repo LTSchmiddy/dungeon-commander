@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Net",
     "base_damage": "-",
-    "class": "Net",
     "cost": "1 gp",
     "damage_bonus": 0,
     "damage_type": "",
+    "description": "",
     "features_applied": false,
     "id": "BasicNet",
+    "improved": 0,
     "is_finesse": false,
     "name": "Net",
     "properties": "Special, thrown (range 5/15)",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 3
 }

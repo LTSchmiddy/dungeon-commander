@@ -1,15 +1,19 @@
 {
     "ability": "dexterity",
     "attack_bonus": 0,
+    "base_class": "Longbow",
     "base_damage": "1d8",
-    "class": "Longbow",
     "cost": "50 gp",
     "damage_bonus": 0,
     "damage_type": "p",
+    "description": "",
     "features_applied": false,
     "id": "BasicLongbow",
+    "improved": 0,
     "is_finesse": false,
     "name": "Longbow",
     "properties": "Ammunition (range 150/600), heavy, two-handed",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 2
 }

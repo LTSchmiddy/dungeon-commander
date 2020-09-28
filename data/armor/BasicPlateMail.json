@@ -1,0 +1,15 @@
+{
+    "base_armor_class": 18,
+    "base_class": "PlateMail",
+    "cost": "1,500 gp",
+    "description": "",
+    "dexterity_mod_max": 0,
+    "id": "BasicPlateMail",
+    "improved": 0,
+    "name": "Plate Mail",
+    "rarity": "common",
+    "stealth_disadvantage": true,
+    "strength_required": 15,
+    "type": "armor",
+    "weight": 65
+}

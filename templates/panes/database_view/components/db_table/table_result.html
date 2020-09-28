@@ -1,29 +1,5 @@
-<table class="db-table-view">
-    <tr class="table table-header">
-        {% for name, column in table.columns.items() %}
-                {% if not column.name.startswith("_") %}
-                    <th>
-                        {{ textwrap.shorten(str(name).replace("_", " ").title(), 20) }}
-                    </th>
-                {% endif %}
-
-
-        {% endfor %}
-    </tr>
-
-    {% for i in result %}
-        <tr>
-            {% for j in range(0, len(table.columns)) %}
-                {% set column = table.columns.items()[j][1] %}
-                {% set data = i[j] %}
-                {% if not column.name.startswith("_") %}
-                    <td>
-                        {{ textwrap.shorten(str(data), 40) }}
-                    </td>
-                {% endif %}
-            {% endfor %}
-        </tr>
-    {% endfor %}
-
-</table>
-
+{% if table.name == 'spell' %}
+    {% include "panes/database_view/components/db_table/spell_result.html" %}
+{% else %}
+    {% include "panes/database_view/components/db_table/generic_table.html" %}
+{% endif %}

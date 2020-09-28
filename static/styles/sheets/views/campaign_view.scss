@@ -152,14 +152,11 @@
                             height: 100%;
                         }
                     }
-
-
                 }
-
-
-                .char-display-view {
+                .char-display-view, .char-json-view {
                     //.character-view {
-                        max-height: calc(100vh - 170px);
+                    //    max-height: calc(100vh - 150px);
+                        height: calc(100vh - 170px);
                         overflow: auto;
                     //}
 

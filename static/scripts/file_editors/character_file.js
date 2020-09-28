@@ -19,6 +19,7 @@ class CharacterEditorData {
         this.editor_view = this.get_editor_view();
         this.editor_container = this.get_editor_container();
         this.display_view = this.get_display_view();
+        this.json_view = this.get_json_view();
         this.ace_view = this.get_ace_view();
         this.ace_editor_container = this.get_ace_editor_container();
         this.ace_status_container = this.get_ace_status_container();
@@ -27,15 +28,34 @@ class CharacterEditorData {
         this._async_construction(editor_options);
     }
 
-    get_editor_options() {
+    get_json_editor_options() {
         let self = this;
 
+        return {
+            modes: ['tree', 'view', 'form', 'preview'],
+
+            onChangeJSON: (current_json)=>{
+                this.on_json_editor_change(current_json);
+            }
+
+        }
     }
 
     async _async_construction(editor_options) {
         this.update_char_display();
         this.load_ace_editor();
         this.get_ace_view().hide();
+
+
+        this.json_editor = new JSONEditor(this.get_json_view().get()[0], this.get_json_editor_options());
+
+        await this.load_char_json();
+
+        this.set_original_json();
+    }
+
+    set_original_json() {
+        this.original_json = copy_json(this.get_json());
     }
 
     // DOM Object Getters:
@@ -63,20 +83,30 @@ class CharacterEditorData {
         return $(`div[data-char-ace-status-id="${this.path}"]`);
     }
 
+
+    get_json_view() {
+        return $(`div[data-char-json-id="${this.path}"]`);
+    }
+
     // Other:
     load_display_view() {
         this.get_display_view().load(`/panes/campaign_view/get_character/${this.path}`);
     }
-
-
 
     load_ace_editor() {
         console.log(this.ace_editor_container.attr('id'));
         this.ace_editor = ace.edit(this.ace_editor_container.attr('id'));
         this.ace_editor.setTheme("ace/theme/cobalt");
         this.ace_editor.session.setMode("ace/mode/python");
-        this.ace_editor.on('change', this.on_editor_change.bind(this));
+        this.ace_editor.on('change', this.on_ace_editor_change.bind(this));
         this.load_ace_char_text();
+    }
+
+    async load_char_json() {
+        let file_json = await py.campaign.character.get_character_json(this.path);
+        if (JSON.stringify(file_json) !== JSON.stringify(this.json_editor.get())) {
+            this.json_editor.set(file_json);
+        }
 
     }
 
@@ -97,8 +127,21 @@ class CharacterEditorData {
             this.ace_status_container.addClass('invalid');
             this.ace_status_container.removeClass('valid');
         }
+    }
 
-        // return result;
+    async apply_char_json() {
+        let result = await py.campaign.character.apply_character_json(this.path, this.json_editor.get());
+        // if (result === null) {
+        //     this.ace_status_container.html(`No errors.`);
+        //     this.ace_status_container.addClass('valid');
+        //     this.ace_status_container.removeClass('invalid');
+        //     // this.update_char_display();
+        // } else {
+        //     console.log(result.args);
+        //     this.ace_status_container.html(`Error : ${result.args.toString().replace(',', ',   ')}`); //"${result.text}"
+        //     this.ace_status_container.addClass('invalid');
+        //     this.ace_status_container.removeClass('valid');
+        // }
     }
 
     switch_to() {
@@ -120,19 +163,39 @@ class CharacterEditorData {
         }
         else if (mode === 'ace') {
             this.display_view.hide();
+            this.json_view.hide();
             this.ace_view.show();
-
+            this.load_ace_char_text();
         }
+        else if (mode === 'json') {
+            this.display_view.hide();
+            this.json_view.show();
+            this.ace_view.hide();
+            this.load_char_json();
+        }
+    }
 
+    get_json() {
+        return this.json_editor.get();
+    }
+
+    set_json(json_obj) {
+        this.json_editor.set(json_obj);
     }
 
     async regenerate_code() {
-        await this.apply_ace_char_text();
+        if (this.mode === 'ace') {
+            await this.apply_ace_char_text();
+        }
+        else if (this.mode === 'json') {
+            await this.apply_char_json();
+        }
+        await this.load_char_json();
         await this.load_ace_char_text();
     }
 
     async save_file() {
-        console.log("saving")
+        console.log("saving");
         py.campaign.character.save_character(this.path);
     }
 
@@ -140,9 +203,17 @@ class CharacterEditorData {
         py.campaign.character.reload_character(this.path);
     }
 
-    async on_editor_change(e) {
-        console.log('applying 1');
+    async on_ace_editor_change(e) {
+        // console.log('applying 1');
         await this.apply_ace_char_text();
+    }
+
+    is_json_original() {
+        return JSON.stringify(this.get_json()) !== JSON.stringify(this.original_json);
+    }
+
+    on_json_editor_change (current_json) {
+        this.apply_char_json();
     }
 }
 

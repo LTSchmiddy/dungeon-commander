@@ -1,6 +1,8 @@
 import os
 
 from flask import *
+from sqlalchemy import text
+
 from settings import current, exec_dir, paths
 
 from sqlalchemy.sql.schema import Table, Column
@@ -113,9 +115,27 @@ def race_view():
 @database_view.route('table_result', methods=['GET', 'POST'])
 def table_result():
     table_name = request.form.get('table_name')
+    search_term = request.form.get('search_term')
+    # is_sql = eval(request.form.get('is_sql').capitalize())
     table: Table = db.Base.metadata.tables[table_name]
 
-    result = db.db_engine.execute(f"SELECT * FROM {table_name}")
+    result = None
+    # print(is_sql)
+    if search_term is not None and search_term != "":
+        if not search_term.startswith("?"):
+            result = db.db_engine.execute(table.select(table.c.name.like(f'%{search_term.strip()}%')))
+        else:
+            result = db.db_engine.execute(table.select(text(search_term[1:].strip())))
+
+
+
+        # if is_sql:
+        #     result = db.db_engine.execute(table.select(text(search_term.strip())))
+        # else:
+        #     result = db.db_engine.execute(table.select(table.c.name.like(f'%{search_term}%')))
+    else:
+        result = db.db_engine.execute(table.select())
+
 
     return render_template(
         "panes/database_view/components/db_table/table_result.html",

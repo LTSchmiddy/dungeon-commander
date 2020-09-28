@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Unarmed",
     "base_damage": "1",
-    "class": "Unarmed",
     "cost": "0 gp",
     "damage_bonus": 0,
     "damage_type": "b",
+    "description": "",
     "features_applied": false,
     "id": "BasicUnarmed",
+    "improved": 0,
     "is_finesse": false,
     "name": "Unarmed",
     "properties": "",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 0
 }

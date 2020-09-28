@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Club",
     "base_damage": "1d4",
-    "class": "Club",
     "cost": "1 sp",
     "damage_bonus": 0,
     "damage_type": "b",
+    "description": "",
     "features_applied": false,
     "id": "BasicClub",
+    "improved": 0,
     "is_finesse": false,
     "name": "Club",
     "properties": "Light",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 2
 }

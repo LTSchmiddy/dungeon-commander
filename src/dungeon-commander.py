@@ -2,6 +2,8 @@ import sys
 import multiprocessing
 import settings.paths
 
+ordinal = lambda n: "%d%s" % (n, "tsnrhtdd"[(n // 10 % 10 != 1) * (n % 10 < 4) * n % 10::4])
+
 if __name__ == "__main__":
     if sys.platform.startswith("win"):
         # On Windows calling this function is necessary.

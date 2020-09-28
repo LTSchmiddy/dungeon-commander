@@ -1,0 +1,15 @@
+{
+    "base_armor_class": 13,
+    "base_class": "ChainShirt",
+    "cost": "50 gp",
+    "description": "",
+    "dexterity_mod_max": 2,
+    "id": "BasicChainShirt",
+    "improved": 0,
+    "name": "Chain Shirt",
+    "rarity": "common",
+    "stealth_disadvantage": false,
+    "strength_required": null,
+    "type": "armor",
+    "weight": 20
+}

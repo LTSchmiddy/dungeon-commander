@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Flail",
     "base_damage": "1d8",
-    "class": "Flail",
     "cost": "10gp",
     "damage_bonus": 0,
     "damage_type": "b",
+    "description": "",
     "features_applied": false,
     "id": "BasicFlail",
+    "improved": 0,
     "is_finesse": false,
     "name": "Flail",
     "properties": "",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 2
 }

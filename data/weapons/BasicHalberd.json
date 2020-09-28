@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Halberd",
     "base_damage": "1d10",
-    "class": "Halberd",
     "cost": "20 gp",
     "damage_bonus": 0,
     "damage_type": "s",
+    "description": "",
     "features_applied": false,
     "id": "BasicHalberd",
+    "improved": 0,
     "is_finesse": false,
     "name": "Halberd",
     "properties": "Heavy, reach, two-handed",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 6
 }

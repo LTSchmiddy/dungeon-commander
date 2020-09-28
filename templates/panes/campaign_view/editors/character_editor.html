@@ -11,17 +11,21 @@
     <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.revert_file() " class="filerevert-btn btn-primary">REVERT</button>
     <span style="padding-left: 30px">Editor Mode:</span>
     <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.set_editor_mode('display') " class="filerevert-btn btn-secondary">Display</button>
-    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.set_editor_mode('ace') " class="filerevert-btn btn-secondary">Text</button> -
-    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.apply_ace_char_text() " class="filerevert-btn btn-secondary">Apply</button>
+    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.set_editor_mode('json') " class="filerevert-btn btn-secondary">JSON</button>
+    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.set_editor_mode('ace') " class="filerevert-btn btn-secondary">Text</button>
+    -
+{#    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.apply_ace_char_text() " class="filerevert-btn btn-secondary">Apply</button>#}
     <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.regenerate_code() " class="filerevert-btn btn-secondary">Regenerate</button>
 
 {% endblock %}
 {% block content %}
     <div class="char-display-view" data-char-display-id="{{ path }}"></div>
+    <div class="char-json-view" data-char-json-id="{{ path }}"></div>
     <div class="char-ace-view" data-char-ace-id="{{ path }}">
         <div id="char-ace-editor-id-{{ path }}" class="char-ace-view-editor" data-char-ace-editor-id="{{ path }}"></div>
         <div id="char-ace-status-id-{{ path }}" class="char-ace-view-status" data-char-ace-status-id="{{ path }}"></div>
     </div>
+
 
 {#    <div id="char-ace-editor-id-{{ path }}" class="char-ace-view" data-char-ace-id="{{ path }}"></div>#}
 {% endblock %}

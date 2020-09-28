@@ -1,15 +1,18 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Talons",
     "base_damage": "1d4",
-    "class": "Talons",
     "cost": "0 gp",
     "damage_bonus": 0,
     "damage_type": "s",
     "features_applied": false,
     "id": "BasicTalons",
+    "improved": 0,
     "is_finesse": false,
     "name": "Talons",
     "properties": "",
+    "rarity": "common",
+    "type": "Unknown",
     "weight": 0
 }

@@ -97,8 +97,8 @@
 #campaign-view #content-field .editor-area .editor-container .editor-content .jsoneditor .jsoneditor-outer {
   height: 100%;
 }
-#campaign-view #content-field .editor-area .editor-container .char-display-view {
-  max-height: calc(100vh - 170px);
+#campaign-view #content-field .editor-area .editor-container .char-display-view, #campaign-view #content-field .editor-area .editor-container .char-json-view {
+  height: calc(100vh - 170px);
   overflow: auto;
 }
 

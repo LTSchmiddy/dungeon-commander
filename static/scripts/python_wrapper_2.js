@@ -13,7 +13,9 @@ window.addEventListener('pywebviewready', function() {
     py = {
         campaign: {
             character: {
+                apply_character_json: pywebview.api.campaign.character.apply_character_json,
                 apply_character_text: pywebview.api.campaign.character.apply_character_text,
+                get_character_json: pywebview.api.campaign.character.get_character_json,
                 get_character_text: pywebview.api.campaign.character.get_character_text,
                 get_loaded_characters: pywebview.api.campaign.character.get_loaded_characters,
                 load_character: pywebview.api.campaign.character.load_character,
@@ -24,6 +26,7 @@ window.addEventListener('pywebviewready', function() {
         },
         close_debug: pywebview.api.close_debug,
         exec: pywebview.api.exec,
+        exec_old: pywebview.api.exec_old,
         files: {
             exists: pywebview.api.files.exists,
             getcwd: pywebview.api.files.getcwd,

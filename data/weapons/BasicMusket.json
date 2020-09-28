@@ -1,15 +1,19 @@
 {
     "ability": "dexterity",
     "attack_bonus": 0,
+    "base_class": "Musket",
     "base_damage": "1d12",
-    "class": "Musket",
     "cost": "300",
     "damage_bonus": 0,
     "damage_type": "p",
+    "description": "",
     "features_applied": false,
     "id": "BasicMusket",
+    "improved": 0,
     "is_finesse": false,
     "name": "Musket",
     "properties": "Ammunition (range 120/480), Two-Handed, Reload 1, Misfire 2",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 10
 }

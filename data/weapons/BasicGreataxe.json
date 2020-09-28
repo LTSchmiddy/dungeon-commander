@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Greataxe",
     "base_damage": "1d12",
-    "class": "Greataxe",
     "cost": "30 gp",
     "damage_bonus": 0,
     "damage_type": "s",
+    "description": "",
     "features_applied": false,
     "id": "BasicGreataxe",
+    "improved": 0,
     "is_finesse": false,
     "name": "Greataxe",
     "properties": "Heavy, two-handed",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 7
 }

@@ -1,8 +1,16 @@
-class Shield():
+from json_class import JsonClass
+from dungeonsheets.item import Item
+
+
+class Shield(Item):
     """A shield that can be worn on one hand."""
     name = "Shield"
     cost = "10 gp"
     base_armor_class = 2
+
+    json_attributes = Item.json_attributes + (
+        "base_armor_class",
+    )
     
     def __str__(self):
         return self.name
@@ -40,7 +48,7 @@ class NoShield(Shield):
         return self.name
 
 
-class Armor():
+class Armor(Item):
     """A piece of armor that can be worn.
     
     Attributes
@@ -64,8 +72,19 @@ class Armor():
       In lbs.
     
     """
+    json_attributes = Item.json_attributes + (
+        "base_class",
+        "base_armor_class",
+        "dexterity_mod_max",
+        "stealth_disadvantage",
+        "strength_required",
+    )
+
+    id = ""
+    base_class = ""
     name = "Unknown Armor"
     cost = "0 gp"
+    type = "armor"
     base_armor_class = 10
     dexterity_mod_max = None
     strength_required = None
@@ -87,6 +106,19 @@ class Armor():
             base_armor_class = cls.base_armor_class + bonus
             
         return NewArmor
+
+    @classmethod
+    def to_base_dict(cls):
+        retVal = cls().save_dict()
+
+        use_id = cls.id
+        if use_id == "":
+            use_id = "Basic" + cls.__name__
+
+        retVal['id'] = use_id
+        retVal['base_class'] = cls.__name__
+        retVal['improved'] = 0
+        return retVal
 
 
 class NoArmor(Armor):
@@ -215,8 +247,9 @@ class ElvenChain(MediumArmor):
     base_armor_class = 14
     dexerity_mod_max = 2
     weight = 20
-    
 
+
+armor_types = [LightArmor, MediumArmor, HeavyArmor]
 light_armors = [PaddedArmor, LeatherArmor, StuddedLeatherArmor]
 medium_armors = [HideArmor, ChainShirt, ScaleMail, Breastplate, HalfPlate]
 heavy_armors = [RingMail, ChainMail, SplintArmor, PlateMail]

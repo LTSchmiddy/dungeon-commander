@@ -1,15 +1,18 @@
 {
     "ability": "dexterity",
     "attack_bonus": 0,
+    "base_class": "RangedWeapon",
     "base_damage": "1d4",
-    "class": "RangedWeapon",
     "cost": "0 gp",
     "damage_bonus": 0,
     "damage_type": "p",
     "features_applied": false,
     "id": "BasicRangedWeapon",
+    "improved": 0,
     "is_finesse": false,
     "name": "Ranged Weapons",
     "properties": "",
+    "rarity": "common",
+    "type": "Unknown",
     "weight": 1
 }

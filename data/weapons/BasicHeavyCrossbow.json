@@ -1,15 +1,19 @@
 {
     "ability": "dexterity",
     "attack_bonus": 0,
+    "base_class": "HeavyCrossbow",
     "base_damage": "1d10",
-    "class": "HeavyCrossbow",
     "cost": "50 gp",
     "damage_bonus": 0,
     "damage_type": "p",
+    "description": "",
     "features_applied": false,
     "id": "BasicHeavyCrossbow",
+    "improved": 0,
     "is_finesse": false,
     "name": "Crossbow, heavy",
     "properties": "Ammunition (range 100/400), heaving, loading, two-handed",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 18
 }

@@ -1,0 +1,15 @@
+{
+    "base_armor_class": 14,
+    "base_class": "Breastplate",
+    "cost": "400 gp",
+    "description": "",
+    "dexterity_mod_max": 2,
+    "id": "BasicBreastplate",
+    "improved": 0,
+    "name": "Breastplate",
+    "rarity": "common",
+    "stealth_disadvantage": false,
+    "strength_required": null,
+    "type": "armor",
+    "weight": 20
+}

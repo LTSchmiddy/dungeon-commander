@@ -1,0 +1,15 @@
+{
+    "base_armor_class": 11,
+    "base_class": "LeatherArmor",
+    "cost": "10 gp",
+    "description": "",
+    "dexterity_mod_max": null,
+    "id": "BasicLeatherArmor",
+    "improved": 0,
+    "name": "Leather Armor",
+    "rarity": "common",
+    "stealth_disadvantage": false,
+    "strength_required": null,
+    "type": "armor",
+    "weight": 10
+}

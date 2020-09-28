@@ -32,7 +32,7 @@ var Perl6HighlightRules = function() {
         "Metamodel::RoleContainer|Metamodel::Trusting|Method|Mix|MixHash|Mixy|Mu|"+
         "NFC|NFD|NFKC|NFKD|Nil|Num|Numeric|NumStr|ObjAt|Order|Pair|Parameter|Perl|"+
         "Pod::Block|Pod::Block::Code|Pod::Block::Comment|Pod::Block::Declarator|"+
-        "Pod::Block::Named|Pod::Block::Para|Pod::Block::Table|Pod::Heading|Pod::DB_Item|"+
+        "Pod::Block::Named|Pod::Block::Para|Pod::Block::Table|Pod::Heading|Pod::DB_MagicItem|"+
         "Positional|PositionalBindFailover|Proc|Proc::Async|Promise|Proxy|PseudoStash|"+
         "QuantHash|Range|Rat|Rational|RatStr|Real|Regex|Routine|Scalar|Scheduler|"+
         "Semaphore|Seq|Set|SetHash|Setty|Signature|Slip|Stash|Str|StrDistance|Stringy|"+

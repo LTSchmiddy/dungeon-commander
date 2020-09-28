@@ -1,15 +1,19 @@
 {
     "ability": "dexterity",
     "attack_bonus": 0,
+    "base_class": "Sling",
     "base_damage": "1d4",
-    "class": "Sling",
     "cost": "1 sp",
     "damage_bonus": 0,
     "damage_type": "b",
+    "description": "",
     "features_applied": false,
     "id": "BasicSling",
+    "improved": 0,
     "is_finesse": false,
     "name": "Sling",
     "properties": "Ammunition (range 30/120)",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 0
 }

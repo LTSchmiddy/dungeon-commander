@@ -6,6 +6,7 @@ import settings
 from logging.config import dictConfig
 
 import markdown2
+import anon_func
 
 dictConfig({
     'version': 1,
@@ -30,6 +31,7 @@ dictConfig({
 # app = Flask(__name__, root_path=os.getcwd(), template_folder="interface_flask/templates", static_folder="static")
 # app = Flask(__name__, root_path=os.getcwd(), template_folder=settings['interface']['template-dir'], static_folder=settings['interface']['static-dir'])
 app = Flask(__name__, root_path=os.getcwd())
+app.jinja_options['extensions'].append('jinja2.ext.do')
 
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.config['TEMPLATES_AUTO_RELOAD'] = True
@@ -46,7 +48,7 @@ import db
 def jinja2_values():
 
     return dict(
-        settings=settings, #,
+        settings=settings,
         int=int,
         str=str,
         tuple=tuple,
@@ -57,10 +59,12 @@ def jinja2_values():
         isinstance=isinstance,
         exec=exec,
         eval=eval,
+        filter=filter,
         ordinal=lambda n: "%d%s" % (n, "tsnrhtdd"[(n // 10 % 10 != 1) * (n % 10 < 4) * n % 10::4]),
         md=markdown2.markdown,
         db=db,
-        textwrap=textwrap
+        textwrap=textwrap,
+        af=anon_func
     )
 
 app.register_blueprint(pages, url_prefix='/')

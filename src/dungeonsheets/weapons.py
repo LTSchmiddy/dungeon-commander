@@ -1,4 +1,6 @@
-class Weapon:
+from dungeonsheets.item import Item
+
+class Weapon(Item):
     id = ""
     name = ""
     cost = "0 gp"
@@ -11,6 +13,19 @@ class Weapon:
     ability = 'strength'
     is_finesse = False
     features_applied = False
+
+    type = "weapon"
+
+    json_attributes = Item.json_attributes + (
+        "base_damage",
+        "damage_bonus",
+        "attack_bonus",
+        "damage_type",
+        "properties",
+        "ability",
+        "is_finesse",
+        "features_applied",
+    )
 
     def __init__(self, wielder=None):
         self.wielder = wielder
@@ -72,26 +87,16 @@ class Weapon:
 
     @classmethod
     def to_base_dict(cls):
+        retVal = cls().save_dict()
+
         use_id = cls.id
         if use_id == "":
             use_id = "Basic" + cls.__name__
 
-
-        return {
-            "id": use_id,
-            "class": cls.__name__,
-            "name": cls.name,
-            "cost" : cls.cost,
-            "base_damage" : cls.base_damage,
-            "damage_bonus" : cls.damage_bonus,
-            "attack_bonus" : cls.attack_bonus,
-            "damage_type" : cls.damage_type,
-            "weight" : cls.weight,  # In lbs
-            "properties" : cls.properties,
-            "ability" : cls.ability,
-            "is_finesse" : cls.is_finesse,
-            "features_applied" : cls.features_applied
-        }
+        retVal['id'] = use_id
+        retVal['base_class'] = cls.__name__
+        retVal['improved'] = 0
+        return retVal
 
 
     def from_dict(self, p_dict):
@@ -627,3 +632,5 @@ monk_weapons = (Shortsword, Unarmed, Club, Dagger, Handaxe, Javelin,
                 LightHammer, Mace, Quarterstaff, Sickle, Spear, SunBolt)
 
 firearms = (Firearm, Blunderbuss, Pistol, Musket)
+
+all_weapons = set(simple_weapons + martial_weapons + firearms + monk_weapons)

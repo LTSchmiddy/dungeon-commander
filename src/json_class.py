@@ -1,10 +1,10 @@
 from __future__ import annotations
-from typing import List
+from typing import List, Tuple
 
 import json
 
 
-def make_dict(obj, attrs: List[str]):
+def make_dict(obj, attrs: (List[str], Tuple[str])):
     retVal = {}
     for i in attrs:
         if hasattr(obj, i):
@@ -16,7 +16,7 @@ def make_dict(obj, attrs: List[str]):
 
 
 class JsonClass:
-    json_attributes: List[str] = []
+    json_attributes: Tuple[str] = ()
 
     def save_dict(self):
         return make_dict(self, self.json_attributes)

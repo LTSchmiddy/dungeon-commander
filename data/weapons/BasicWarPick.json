@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "WarPick",
     "base_damage": "1d8",
-    "class": "WarPick",
     "cost": "5 gp",
     "damage_bonus": 0,
     "damage_type": "p",
+    "description": "",
     "features_applied": false,
     "id": "BasicWarPick",
+    "improved": 0,
     "is_finesse": false,
     "name": "War pick",
     "properties": "",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 2
 }

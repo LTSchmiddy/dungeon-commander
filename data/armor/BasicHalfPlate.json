@@ -1,0 +1,15 @@
+{
+    "base_armor_class": 15,
+    "base_class": "HalfPlate",
+    "cost": "750 gp",
+    "description": "",
+    "dexterity_mod_max": 2,
+    "id": "BasicHalfPlate",
+    "improved": 0,
+    "name": "Half Plate",
+    "rarity": "common",
+    "stealth_disadvantage": true,
+    "strength_required": null,
+    "type": "armor",
+    "weight": 40
+}

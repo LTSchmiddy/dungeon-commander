@@ -16,35 +16,6 @@
                 <div class="char-name"><em>Inspiration!</em></div>
         {% endif %}
     </div>
-{##}
-{#    <details class="char-race" open>#}
-{#        <summary>Race: {{ char.race.name }} </summary>#}
-{#        <div class="race-info"></div>#}
-{#    </details>#}
-{##}
-{#    <details class="char-class-list" open>#}
-{#        <summary>Classes:</summary>#}
-{#    {% for i in range(0, char.num_classes) %}#}
-{#        <details class="char-class" data-class="{{ char.class_names[i] }}">#}
-{#            <summary>{{ char.class_list[i].name }} - Level {{ char.class_list[i].level }}</summary>#}
-{#            <details class="char-class-desc">#}
-{#                <summary>About {{ char.class_list[i].name }}s</summary>#}
-{#                <p>#}
-{#                    {{ char.class_list[i].desc_html|safe }}#}
-{#                </p>#}
-{#            </details>#}
-{#            {% if char.class_list[i].subclass %}#}
-{#                <details class="char-subclass-desc">#}
-{#                    <summary>About {{ char.class_list[i].subclass.name }} </summary>#}
-{#                    <p>#}
-{#                        {{ char.class_list[i].subclass.desc_html|safe }}#}
-{#                    </p>#}
-{#                </details>#}
-{#            {% endif %}#}
-{#        </details>#}
-{##}
-{#    {% endfor %}#}
-{#    </details>#}
 
     <div class="char-grid-item"> {# Left Side #}
         <details class="char-ability-list view-pane" open>
@@ -159,7 +130,7 @@
     </div>
     <div class="char-grid-item"> {# Right Side #}
 
-        <details class="char-about view-pane">
+        <details class="char-about view-pane" open>
             <summary class="view-pane-header">About {{ char.name }}:</summary>
             <div class="details-content">
                 <span class="label">Personality: </span>{{ md(char.personality_traits)|safe }}
@@ -167,13 +138,6 @@
                 <span class="label">Bonds: </span>{{ md(char.bonds)|safe }}
                 <span class="label">Flaws:</span>{{ md(char.flaws)|safe }}
                 <span class="label">Other Traits: </span>{{ md(char.features_and_traits)|safe }}
-
-{#                {{ md("**Personality Traits:** " + char.personality_traits)|safe }}#}
-{#                {{ md("**Ideals:** " + char.ideals)|safe }}#}
-{#                {{ md("**Bonds:** " + char.bonds)|safe }}#}
-{#                {{ md("**Flaws:** " + char.flaws)|safe }}#}
-{#                {{ md("**Other Traits:** " + char.features_and_traits)|safe }}#}
-
             </div>
 
             <div class="details-content"></div>
@@ -229,12 +193,47 @@
 
     </div>
     <details class="char-spell-list view-pane" open>
-        {{ char.spell_slots(1) }}
-        <summary class="view-pane-header">Spells</summary>
+        <summary class="view-pane-header">Spells Prepared</summary>
         <div class="details-content">
-            {% with spells = char.spells %}
-                {% include "components/spells/spell_list.html" %}
-            {% endwith %}
+            {% for i in range(0, 10) if (char.spell_slots(i) != 0) %}
+                <div>
+                    {{ af.tget(i==0, "Cantrips", ordinal(i) + " Level Spell Slots") }}:
+                    {% if i != 0 %}
+                        <span
+                                contenteditable=""
+                                style="display: inline-block; min-width: 20px"
+                        >
+                            {{ char.spell_slots(i) }}
+                        </span>/
+                    {% endif %}
+                    {{ char.spell_slots(i) }}
+                </div>
+                {% with spells = filter(af.func("x", "return x.level == " + str(i)), char.spells_prepared) %}
+                    {% include "components/spells/spell_list.html" %}
+                {% endwith %}
+            {% endfor %}
+        </div>
+    </details>
+    <details class="char-spell-list view-pane">
+        <summary class="view-pane-header">Spells Known</summary>
+        <div class="details-content">
+            {% for i in range(0, 10) if (char.spell_slots(i) != 0) %}
+                <div>
+                    {{ af.tget(i==0, "Cantrips", ordinal(i) + " Level Spell Slots") }}:
+                    {% if i != 0 %}
+                        <span
+                                contenteditable=""
+                                style="display: inline-block; min-width: 20px"
+                        >
+                            {{ char.spell_slots(i) }}
+                        </span>/
+                    {% endif %}
+                    {{ char.spell_slots(i) }}
+                </div>
+                {% with spells = filter(af.func("x", "return x.level == " + str(i)), char.spells) %}
+                    {% include "components/spells/spell_list.html" %}
+                {% endwith %}
+            {% endfor %}
         </div>
     </details>
 

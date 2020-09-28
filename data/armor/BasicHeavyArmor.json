@@ -1,0 +1,15 @@
+{
+    "base_armor_class": 10,
+    "base_class": "HeavyArmor",
+    "cost": "0 gp",
+    "description": "",
+    "dexterity_mod_max": null,
+    "id": "BasicHeavyArmor",
+    "improved": 0,
+    "name": "Heavy Armor",
+    "rarity": "common",
+    "stealth_disadvantage": false,
+    "strength_required": null,
+    "type": "armor",
+    "weight": 0
+}

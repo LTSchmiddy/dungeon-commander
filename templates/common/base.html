@@ -5,20 +5,17 @@
     <title>{% block title %}Dungeon Commander{% endblock %}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/static/libs/bootstrap/css/bootstrap.css">
-
-    <link href="/static/libs/josdejong-json-editor/jsoneditor.min.css" rel="stylesheet" type="text/css">
-    {% if not settings.current['interface']['jquery-icon-mode'] %}
-        <link rel="stylesheet" type="text/css" href="/static/styles/fa5-icons.css">
-    {% endif %}
-    <link rel="stylesheet" type="text/css" href="/static/styles/main.css">
 
 
     {% block style %}{% endblock %}
 
+{#    <script src="/static/pack/bootstrap_base.bundle.js"></script>#}
+{##}
     <script src="/static/libs/jquery/jquery.js"></script>
+    <script src="/static/libs/jquery_resizable_columns/jquery.resizableColumns.js"></script>
     <script src="/static/libs/popper/popper.js"></script>
     <script src="/static/libs/bootstrap/js/bootstrap.js"></script>
+
     <script src="/static/libs/josdejong-json-editor/jsoneditor.js"></script>
     <script src="/static/libs/sortablejs/Sortable.js"></script>
     <script src="/static/libs/ace-editor/ace.js"></script>
@@ -39,8 +36,19 @@
 
 {#    <script src="/static/pack/main.bundle.js"></script>#}
 
+{#    <script src="/static/pack/jquery_resizable_columns.bundle.js"></script>#}
+
     {% block head_scripts %}{% endblock %}
 
+    {% if not settings.current['interface']['jquery-icon-mode'] %}
+        <link rel="stylesheet" type="text/css" href="/static/styles/fa5-icons.css">
+    {% endif %}
+
+
+    <link rel="stylesheet" type="text/css" href="/static/libs/jquery_resizable_columns/jquery.resizableColumns.css">
+    <link rel="stylesheet" type="text/css" href="/static/libs/bootstrap/css/bootstrap.css">
+    <link href="/static/libs/josdejong-json-editor/jsoneditor.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/static/styles/main.css">
 
 </head>
 <body>

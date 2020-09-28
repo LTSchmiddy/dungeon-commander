@@ -10,6 +10,7 @@
       <excludeFolder url="file://$MODULE_DIR$/dist" />
       <excludeFolder url="file://$MODULE_DIR$/dungeon-sheets-master" />
       <excludeFolder url="file://$MODULE_DIR$/my_campaign" />
+      <excludeFolder url="file://$MODULE_DIR$/my_campaign_old" />
       <excludeFolder url="file://$MODULE_DIR$/old_info" />
       <excludeFolder url="file://$MODULE_DIR$/open5e-api-master" />
       <excludeFolder url="file://$MODULE_DIR$/php" />

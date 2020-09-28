@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Handaxe",
     "base_damage": "1d6",
-    "class": "Handaxe",
     "cost": "5 gp",
     "damage_bonus": 0,
     "damage_type": "s",
+    "description": "",
     "features_applied": false,
     "id": "BasicHandaxe",
+    "improved": 0,
     "is_finesse": false,
     "name": "Handaxe",
     "properties": "Light, thrown (range 20/60)",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 2
 }

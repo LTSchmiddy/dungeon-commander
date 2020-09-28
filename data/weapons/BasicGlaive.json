@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Glaive",
     "base_damage": "1d10",
-    "class": "Glaive",
     "cost": "20 gp",
     "damage_bonus": 0,
     "damage_type": "s",
+    "description": "",
     "features_applied": false,
     "id": "BasicGlaive",
+    "improved": 0,
     "is_finesse": false,
     "name": "Glaive",
     "properties": "Heavy, reach, two-handed",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 6
 }

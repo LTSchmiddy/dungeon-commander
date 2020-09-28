@@ -10,3 +10,5 @@
 /build/
 /php/
 /settings.json
+/src/addons/
+/venv/

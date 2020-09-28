@@ -1,0 +1,15 @@
+{
+    "base_armor_class": 17,
+    "base_class": "SplintArmor",
+    "cost": "200 gp",
+    "description": "",
+    "dexterity_mod_max": 0,
+    "id": "BasicSplintArmor",
+    "improved": 0,
+    "name": "Splint Armor",
+    "rarity": "common",
+    "stealth_disadvantage": true,
+    "strength_required": 15,
+    "type": "armor",
+    "weight": 60
+}

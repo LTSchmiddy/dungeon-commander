@@ -82,14 +82,50 @@
                 }
             }
 
+            .db-searchbutton {
+                display: block;
+                position: absolute;
+                top: 0;
+                width: 70px;
+                height: 40px;
+            }
+
+            .db-searchbox-container {
+                position: absolute;
+                //font-size: 30px;
+                border:solid 2px gray;
+                width: calc(100% - 270px);
+                height: 40px;
+                top: 0;
+                left: 70px;
+
+                .db-searchbox {
+                    width: 100%;
+                    height: 100%;
+                    font-size: 30px;
+                }
+            }
+
             .table-result-area {
                 position: absolute;
                 left: 0;
+                top: 40px;
                 width: calc(100% - 200px);
                 height: calc(100% - 40px);
                 padding: 15px;
-                overflow: auto;
+                overflow: scroll;
+                //overflow-y: scroll;
+
+
+                table td {
+                    //border-style: solid;
+                }
             }
+
+            .spell-result {
+                min-width: 1200px;
+            }
+
 
         }
     }

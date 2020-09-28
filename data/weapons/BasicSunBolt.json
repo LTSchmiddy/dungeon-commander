@@ -1,15 +1,19 @@
 {
     "ability": "dexterity",
     "attack_bonus": 0,
+    "base_class": "SunBolt",
     "base_damage": "1d4",
-    "class": "SunBolt",
     "cost": "0 gp",
     "damage_bonus": 0,
     "damage_type": "r",
+    "description": "",
     "features_applied": false,
     "id": "BasicSunBolt",
+    "improved": 0,
     "is_finesse": false,
     "name": "Sun Bolt",
     "properties": "(range 20/60)",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 0
 }

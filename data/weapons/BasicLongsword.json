@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Longsword",
     "base_damage": "1d8",
-    "class": "Longsword",
     "cost": "15 gp",
     "damage_bonus": 0,
     "damage_type": "s",
+    "description": "",
     "features_applied": false,
     "id": "BasicLongsword",
+    "improved": 0,
     "is_finesse": false,
     "name": "Longsword",
     "properties": "Versatile (1d10)",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 3
 }

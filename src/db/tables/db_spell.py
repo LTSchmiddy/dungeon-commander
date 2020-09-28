@@ -56,6 +56,12 @@ class DB_Spell(db.Base):
         return dungeonsheets.spells.__dict__[self.id]
 
     @staticmethod
+    def get_spell_by_id(s_id: str) -> DB_Spell:
+        spell = db.Session.query(DB_Spell).filter(DB_Spell.id==s_id).first()
+        db.Session.remove()
+        return spell
+
+    @staticmethod
     def add_spell_class(cls: Type[dungeonsheets.spells.Spell]):
 
         this_spell = db.Session.query(DB_Spell).filter(DB_Spell.id == cls.get_id()).first()

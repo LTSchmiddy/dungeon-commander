@@ -1,12 +1,45 @@
 <details class="spell" data-spell-id="{{ spell.id }}">
-    <summary>
-        {{ spell.name }} - Level {{ spell.level }}
-        {% if spell.ritual %}
-            <strong>R</strong>
-        {% endif %}
-        {% if spell.concentration %}
-            <strong>C</strong>
-        {% endif %}
+    <summary class="spell-head">
+        <span class="spell-head-section">
+            {{ spell.name }}
+        </span>
+        <span class="spell-head-section">
+            {{ af.tget(spell.level == 0, "Cantrip", "Level " + str(spell.level)) }}
+        </span>
+        <span class="spell-head-section spell-is-ritual">
+            {{ af.tget(spell.ritual, "R", "") }}
+        </span>
+        <span class="spell-head-section spell-is-concentration">
+            {{ af.tget(spell.get_concentration(), "C", "") }}
+        </span>
+        <span class="spell-head-section">
+            {{ spell.casting_time }}
+        </span>
+        <span class="spell-head-section">
+            {{ spell.casting_range }}
+        </span>
+
+        <span class="spell-head-section">
+{#            {{ spell.duration }}#}
+            {{
+                af.tget(
+                    spell.duration.startswith("Concentration, "),
+                    spell.duration.replace("Concentration, ", ""),
+                    spell.duration
+                )
+            }}
+        </span>
+        <span class="spell-head-section">
+            {{ spell.get_short_component_string() }}
+        </span>
+
+        <span class="spell-head-section">
+            {{ spell.magic_school }}
+        </span>
+
+        <span class="spell-head-section">
+            {{ ", ".join(spell.classes) }}
+        </span>
 
     </summary>
 
@@ -14,38 +47,36 @@
         {% if spell.ritual %}
             <p><strong>Can be performed as a ritual.</strong></p>
         {% endif %}
-        {% if spell.concentration %}
+        {% if spell.get_concentration() %}
             <p><strong>Requires concentration to maintain.</strong></p>
         {% endif %}
 
-        <p>{{ spell.desc }}</p>
+        <p>{{ spell.get_desc_html()|safe }}</p>
     </div>
 
-    {% if spell.higher_level != "" %}
-        <div class="higher-level">
-            {{ spell.higher_level }}
-        </div>
-    {% endif %}
+{#    {% if spell.higher_level != "" %}#}
+{#        <div class="higher-level">#}
+{#            {{ spell.higher_level }}#}
+{#        </div>#}
+{#    {% endif %}#}
 
 
 
-    <dl class="spell-info">
-        <div><span class="label">Casting Time: </span>{{ spell.casting_time }}</div>
-        <div><span class="label">Casting Range: </span>{{ spell.casting_range }}</div>
-        <div><span class="label">Duration: </span>{{ spell.duration }}</div>
-        <div><span class="label">Casting Time: </span>{{ spell.casting_time }}</div>
-        <div><span class="label">Components: </span>{{ spell.component_string }}</div>
+    <div class="spell-info">
+        <div class="spell-info-section"><span class="label">ID: </span>{{ spell.get_id() }}</div>
+        <div class="spell-info-section"><span class="label">Casting Time: </span>{{ spell.casting_time }}</div>
+        <div class="spell-info-section"><span class="label">Casting Range: </span>{{ spell.casting_range }}</div>
+        <div class="spell-info-section"><span class="label">Duration: </span>{{ spell.duration }}</div>
+        <div class="spell-info-section"><span class="label">Components: </span>{{ spell.get_component_string() }}</div>
         {% if spell.material_components %}
-            <div><span class="label">Required Materials: </span>{{ spell.materials }}</div>
+            <div class="spell-info-section"><span class="label">Required Materials: </span>{{ spell.materials }}</div>
         {% endif %}
-        <div><span class="label">School of Magic: </span>{{ spell.magic_school }}</div>
-        <div><span class="label">Available to: </span>
-            {% for s in spell.classes %}
-                {{ s }},
-            {% endfor %}
+        <div class="spell-info-section"><span class="label">School of Magic: </span>{{ spell.magic_school }}</div>
+        <div class="spell-info-section"><span class="label">Available to: </span>
+            {{ ", ".join(spell.classes) }}
         </div>
 
-    </dl>
+    </div>
 
 
 </details>

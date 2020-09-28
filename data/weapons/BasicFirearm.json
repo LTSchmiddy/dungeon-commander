@@ -1,15 +1,19 @@
 {
     "ability": "dexterity",
     "attack_bonus": 0,
+    "base_class": "Firearm",
     "base_damage": "1d4",
-    "class": "Firearm",
     "cost": "0 gp",
     "damage_bonus": 0,
     "damage_type": "p",
+    "description": "",
     "features_applied": false,
     "id": "BasicFirearm",
+    "improved": 0,
     "is_finesse": false,
     "name": "Firearm",
     "properties": "",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 1
 }

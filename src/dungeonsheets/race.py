@@ -554,5 +554,9 @@ GGTR_races = [Goblin]
 
 available_races = PHB_races + VOLO_races + EE_races + MONSTER_races + RFTLW_races + GGTR_races
 
+# def add_race(race_class):
+#     global available_races
+#     available_races += race_class
+
 __all__ = tuple([r.name for r in available_races]) + (
     'available_races', 'PHB_races', 'VOLO_races', 'EE_races', 'MONSTER_races', 'RFTLW_races', 'GGTR_races')

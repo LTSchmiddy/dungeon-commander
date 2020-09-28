@@ -1,15 +1,18 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Claws",
     "base_damage": "1d4",
-    "class": "Claws",
     "cost": "0 gp",
     "damage_bonus": 0,
     "damage_type": "s",
     "features_applied": false,
     "id": "BasicClaws",
+    "improved": 0,
     "is_finesse": false,
     "name": "Claws",
     "properties": "",
+    "rarity": "common",
+    "type": "Unknown",
     "weight": 0
 }

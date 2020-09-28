@@ -1,7 +1,10 @@
 import inspect
+import textwrap
+
 import markdown2
 
 from dungeonsheets import weapons
+
 
 
 def create_feature(**params):
@@ -31,6 +34,9 @@ class Feature():
     name = "Generic Feature"
     owner = None
     source = ''  # race, class, background, etc.
+    # skill_proficiencies = ()
+    # skill_choices = ()
+    # num_skill_choices = 0
     spells_known = ()
     spells_prepared = ()
     languages = ()
@@ -63,7 +69,7 @@ class Feature():
 
     @classmethod
     def get_desc(cls):
-        return inspect.getdoc(cls)
+        return textwrap.dedent(inspect.getdoc(cls))
 
     @property
     def desc_html(self):
@@ -71,7 +77,7 @@ class Feature():
 
     @classmethod
     def get_desc_html(cls):
-        return markdown2.markdown(cls.get_desc()).strip()
+        return markdown2.markdown(cls.get_desc(), extras=['cuddled-lists', 'wiki-tables']).strip()
 
 
     @classmethod

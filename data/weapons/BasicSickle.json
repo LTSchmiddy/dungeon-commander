@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Sickle",
     "base_damage": "1d4",
-    "class": "Sickle",
     "cost": "1 gp",
     "damage_bonus": 0,
     "damage_type": "s",
+    "description": "",
     "features_applied": false,
     "id": "BasicSickle",
+    "improved": 0,
     "is_finesse": false,
     "name": "Sickle",
     "properties": "Light",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 2
 }

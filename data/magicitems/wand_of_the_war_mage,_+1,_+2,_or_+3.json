@@ -1,8 +1,0 @@
-{
-    "desc": "While holding this wand, you gain a bonus to spell attack rolls determined by the wand's rarity. In addition, you ignore half cover when making a spell attack.",
-    "id": "wand_of_the_war_mage,_+1,_+2,_or_+3",
-    "name": "Wand of the War Mage, +1, +2, or +3",
-    "rarity": "uncommon (+1), rare (+2), or very rare (+3)",
-    "requires-attunement": "requires attunement by a spellcaster",
-    "type": "Wand"
-}

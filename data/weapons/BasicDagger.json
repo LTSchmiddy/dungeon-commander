@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Dagger",
     "base_damage": "1d4",
-    "class": "Dagger",
     "cost": "2 gp",
     "damage_bonus": 0,
     "damage_type": "p",
+    "description": "",
     "features_applied": false,
     "id": "BasicDagger",
+    "improved": 0,
     "is_finesse": true,
     "name": "Dagger",
     "properties": "Finesse, light, thrown (range 20/60)",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 1
 }

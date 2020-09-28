@@ -1,0 +1,27 @@
+<table id="db-table-view" class="db-table-view">
+    <tr class="table-header">
+        {% for name, column in table.columns.items() %}
+                {% if not column.name.startswith("_") %}
+                    <th>
+                        {{ textwrap.shorten(str(name).replace("_", " ").title(), 20) }}
+                    </th>
+                {% endif %}
+
+
+        {% endfor %}
+    </tr>
+{#    poop#}
+    {% for i in result %}
+        <tr>
+            {% for j in range(0, len(table.columns)) if not table.columns.items()[j][1].name.startswith("_") %}
+                {% set column = table.columns.items()[j][1] %}
+                {% set data = i[j] %}
+                    <td>
+                        {{ textwrap.shorten(str(data), 40) }}
+                    </td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+
+</table>
+

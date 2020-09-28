@@ -1,10 +1,33 @@
+from dungeonsheets.item import Item
+
+class MagicItem(Item):
+    ac_bonus = 0
+    requires_attunement = False
+    needs_implementation = False
+
+    json_attributes = Item.json_attributes + (
+        "ac_bonus",
+        "requires_attunement",
+        "needs_implementation"
+    )
+
+    def __init__(self, owner=None):
+        self.owner = owner
+
+    def __str__(self):
+        return self.id
+
+    def __repr__(self):
+        return '\"{:s}\"'.format(str(self))
+
+
 # from __future__ import annotations
 # import db
 #
 #
 # class MagicItem:
 #     """
-#     Generic Magic DB_Item. Add description here.
+#     Generic Magic Item. Add description here.
 #
 #     """
 #     id=''
@@ -23,7 +46,7 @@
 #     def __repr__(self):
 #         return '\"{:s}\"'.format(str(self))
 #
-#
+
 # class CloakOfProtection(MagicItem):
 #     """
 #     You gain a +1 bonus to AC and Saving Throws while wearing this cloak.

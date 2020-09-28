@@ -1,15 +1,18 @@
 {
     "ability": "strength",
     "attack_bonus": 1,
+    "base_class": "FlameTongue",
     "base_damage": "4d6",
-    "class": "FlameTongue",
     "cost": "50 gp",
     "damage_bonus": 1,
     "damage_type": "f",
     "features_applied": false,
     "id": "BasicFlameTongue",
+    "improved": 0,
     "is_finesse": false,
     "name": "Flame Tongue +1",
     "properties": "Heavy, two-handed",
+    "rarity": "common",
+    "type": "Unknown",
     "weight": 6
 }

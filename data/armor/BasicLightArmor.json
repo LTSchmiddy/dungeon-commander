@@ -1,0 +1,15 @@
+{
+    "base_armor_class": 10,
+    "base_class": "LightArmor",
+    "cost": "0 gp",
+    "description": "",
+    "dexterity_mod_max": null,
+    "id": "BasicLightArmor",
+    "improved": 0,
+    "name": "Light Armor",
+    "rarity": "common",
+    "stealth_disadvantage": false,
+    "strength_required": null,
+    "type": "armor",
+    "weight": 0
+}

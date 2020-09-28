@@ -23,7 +23,8 @@ class Campaign(JsonClass):
     character_dir_name = "characters"
     player_dir_name = "characters/players"
     npc_dir_name = "characters/npcs"
-    addon_dir_name = "addons"
+    py_addon_dir_name = "addons/py"
+    json_addon_dir_name = "addons/json"
     note_dir_name = "notes"
 
     # Instance Values:
@@ -72,7 +73,14 @@ class Campaign(JsonClass):
 
         os.makedirs(self.dir_path)
 
-        for i in [self.player_dir_name, self.npc_dir_name, self.addon_dir_name, self.note_dir_name]:
+        for i in [
+            self.player_dir_name,
+            self.npc_dir_name,
+            self.py_addon_dir_name,
+            self.json_addon_dir_name,
+            self.note_dir_name
+        ]:
+
             os.makedirs(self.get_path(i))
 
         self.save_json_file(self.json_data_path)
@@ -82,6 +90,14 @@ class Campaign(JsonClass):
             self.dir_path = p_path
 
         self.load_json_file(self.json_data_path)
+        self.load_addon_py_modules()
+
+    def load_addon_py_modules(self):
+        for i in os.listdir(self.get_py_addon_path('')):
+            if i == '__pycache__':
+                continue
+            print(db.load_db.load_python_addon_modules(i.replace(".py", ""), open(self.get_py_addon_path(i), 'r', encoding='utf-8').read()))
+
 
     def save_campaign(self, p_path: str = None):
         if p_path is not None:
@@ -103,10 +119,13 @@ class Campaign(JsonClass):
         return os.path.join(self.get_path(self.player_dir_name), p_path)
 
     def get_npc_path(self, p_path: str) -> str:
-        return os.path.join(self.get_path(self.player_dir_name), p_path)
+        return os.path.join(self.get_path(self.npc_dir_name), p_path)
 
-    def get_addon_path(self, p_path: str) -> str:
-        return os.path.join(self.get_path(self.player_dir_name), p_path)
+    def get_py_addon_path(self, p_path: str) -> str:
+        return os.path.join(self.get_path(self.py_addon_dir_name), p_path)
+
+    def get_json_addon_path(self, p_path: str) -> str:
+        return os.path.join(self.get_path(self.json_addon_dir_name), p_path)
 
     def get_note_path(self, p_path: str) -> str:
         return os.path.join(self.get_path(self.player_dir_name), p_path)

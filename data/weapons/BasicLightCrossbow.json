@@ -1,15 +1,19 @@
 {
     "ability": "dexterity",
     "attack_bonus": 0,
+    "base_class": "LightCrossbow",
     "base_damage": "1d8",
-    "class": "LightCrossbow",
     "cost": "25 gp",
     "damage_bonus": 0,
     "damage_type": "p",
+    "description": "",
     "features_applied": false,
     "id": "BasicLightCrossbow",
+    "improved": 0,
     "is_finesse": false,
     "name": "Light crossbow",
     "properties": "Ammunition (range 80/320), loading, two-handed",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 5
 }

@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Greatclub",
     "base_damage": "1d8",
-    "class": "Greatclub",
     "cost": "2 sp",
     "damage_bonus": 0,
     "damage_type": "b",
+    "description": "",
     "features_applied": false,
     "id": "BasicGreatclub",
+    "improved": 0,
     "is_finesse": false,
     "name": "Greatclub",
     "properties": "Two-handed",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 10
 }

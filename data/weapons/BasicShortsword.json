@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "Shortsword",
     "base_damage": "1d6",
-    "class": "Shortsword",
     "cost": "10 gp",
     "damage_bonus": 0,
     "damage_type": "p",
+    "description": "",
     "features_applied": false,
     "id": "BasicShortsword",
+    "improved": 0,
     "is_finesse": true,
     "name": "Shortsword",
     "properties": "Finesse, light",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 0
 }

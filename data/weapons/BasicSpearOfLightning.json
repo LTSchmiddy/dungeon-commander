@@ -1,15 +1,18 @@
 {
     "ability": "strength",
     "attack_bonus": 1,
+    "base_class": "SpearOfLightning",
     "base_damage": "1d6",
-    "class": "SpearOfLightning",
     "cost": "1 gp",
     "damage_bonus": 1,
     "damage_type": "p",
     "features_applied": false,
     "id": "BasicSpearOfLightning",
+    "improved": 0,
     "is_finesse": false,
     "name": "Spear +1",
     "properties": "Thrown (range 20/60), versatile (1d8)",
+    "rarity": "common",
+    "type": "Unknown",
     "weight": 3
 }

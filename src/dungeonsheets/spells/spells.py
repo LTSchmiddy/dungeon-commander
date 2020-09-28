@@ -1,4 +1,5 @@
 import inspect
+import markdown2
 
 def create_spell(**params):
     """Create a new subclass of ``Spell`` with given default parameters.
@@ -60,25 +61,47 @@ class Spell():
 
     @classmethod
     def get_id(cls):
-        return str(cls.__name__)
+        return cls.__name__
 
     @classmethod
     def get_desc(cls):
-        return str(cls.__doc__)
-        # return inspect.getdoc(self)
+        return inspect.getdoc(cls)
+
+    @classmethod
+    def get_desc_html(cls):
+        return markdown2.markdown(inspect.getdoc(cls)).strip()
+
+    @property
+    def desc_html(self):
+        return self.get_desc_html()
 
     @property
     def desc(self):
-        # return str(cls.__doc__)
-        return inspect.getdoc(self)
+        return self.get_desc()
+
+    @classmethod
+    def get_component_string(cls):
+        s = f'{", ".join(cls.components)}'
+        if "M" in cls.components:
+            s += f' ({cls.materials})'
+        return s
+
+    @classmethod
+    def get_short_component_string(cls):
+        return f'{", ".join(cls.components)}'
 
     @property
     def component_string(self):
-        s = f'{", ".join(self.components)}'
-        if "M" in self.components:
-            s += f' ({self.materials})'
-        return s
-    
+        return self.get_component_string()
+
+    @property
+    def short_component_string(self):
+        return self.get_short_component_string()
+
+    @classmethod
+    def get_concentration(cls):
+        return ('concentration' in cls.duration.lower()) or cls._concentration
+
     @property
     def concentration(self):
         return ('concentration' in self.duration.lower()) or self._concentration

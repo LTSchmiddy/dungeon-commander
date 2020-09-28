@@ -10,7 +10,7 @@ class ExtraToolProficiencyBase(Feature):
     proficiencies_text = (blank_message,)
 
     def __init__(self, owner=None):
-        super(ExtraToolProficiencyBase, self).__init__()
+        super(ExtraToolProficiencyBase, self).__init__(owner=None)
 
         if hasattr(owner, 'info_dict'):
             if not self.info_dict_key() in owner.info_dict:
@@ -52,7 +52,7 @@ class PickTwoProficiencyBase(Feature):
     proficiencies_text = (blank_message,)
 
     def __init__(self, owner=None):
-        super(PickTwoProficiencyBase, self).__init__()
+        super(PickTwoProficiencyBase, self).__init__(owner=None)
 
         if hasattr(owner, 'info_dict'):
             if not self.info_dict_key() in owner.info_dict:
@@ -86,7 +86,7 @@ class ExtraLanguageBase(Feature):
     languages = ("[Choose a language]",)
 
     def __init__(self, owner=None):
-        super(ExtraLanguageBase, self).__init__()
+        super(ExtraLanguageBase, self).__init__(owner=None)
 
         if hasattr(owner, 'info_dict'):
             if not self.info_dict_key() in owner.info_dict:
@@ -120,3 +120,24 @@ class ExtraLanguageRace(ExtraLanguageBase):
     name = "Extra Language"
     source = "Race"
     # info_dict_key_mod = "Race"
+
+class ExtraSkillRace(Feature):
+    """You have an additional skill proficiency of your choice"""
+    name = "Extra Skill"
+    source = "Race"
+    # blank_message = "[Choose a Skill]"
+    #
+    # loaded_skill = blank_message
+    #
+    # def __init__(self, owner=None):
+    #     super(ExtraSkillRace, self).__init__(owner=None)
+    #
+    #     if hasattr(owner, 'info_dict'):
+    #         if not self.info_dict_key() in owner.info_dict:
+    #             owner.info_dict[self.info_dict_key()] = self.blank_message
+    #         self.loaded_skill = owner.info_dict[self.info_dict_key()]
+    #         self.owner.skill_proficiencies = (self.loaded_skill,)
+    #
+    # @property
+    # def desc(self):
+    #     return inspect.getdoc(self) + f": **{self.loaded_skill}**"

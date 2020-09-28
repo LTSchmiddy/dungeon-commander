@@ -1,15 +1,19 @@
 {
     "ability": "strength",
     "attack_bonus": 0,
+    "base_class": "LightHammer",
     "base_damage": "1d4",
-    "class": "LightHammer",
     "cost": "2 gp",
     "damage_bonus": 0,
     "damage_type": "b",
+    "description": "",
     "features_applied": false,
     "id": "BasicLightHammer",
+    "improved": 0,
     "is_finesse": false,
     "name": "Light hammer",
     "properties": "Light, thrown (range 20/60)",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 2
 }

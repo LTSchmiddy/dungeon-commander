@@ -1,15 +1,19 @@
 {
     "ability": "dexterity",
     "attack_bonus": 0,
+    "base_class": "Dart",
     "base_damage": "1d4",
-    "class": "Dart",
     "cost": "5 cp",
     "damage_bonus": 0,
     "damage_type": "p",
+    "description": "",
     "features_applied": false,
     "id": "BasicDart",
+    "improved": 0,
     "is_finesse": true,
     "name": "Dart",
     "properties": "Finesse, thrown (range 20/60)",
+    "rarity": "common",
+    "type": "weapon",
     "weight": 0.25
 }

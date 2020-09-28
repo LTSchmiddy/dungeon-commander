@@ -1,0 +1,15 @@
+{
+    "base_armor_class": 14,
+    "base_class": "RingMail",
+    "cost": "30 gp",
+    "description": "",
+    "dexterity_mod_max": 0,
+    "id": "BasicRingMail",
+    "improved": 0,
+    "name": "Ring Mail",
+    "rarity": "common",
+    "stealth_disadvantage": true,
+    "strength_required": null,
+    "type": "armor",
+    "weight": 40
+}

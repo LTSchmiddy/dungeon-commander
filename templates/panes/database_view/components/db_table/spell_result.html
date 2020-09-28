@@ -1,0 +1,12 @@
+
+<div class="spell-result">
+
+{% for i in result %}
+{#    {% set spell = db.tables.DB_Spell.get_spell_by_id(i[0]).spell_object %}#}
+    {% set spell = db.tables.DB_Spell.get_spell_by_id(i[0]).spell_object %}
+    {% include "components/spells/spell.html" %}
+{#    {{ db_spell }}#}
+{#    {{ spell }}#}
+{% endfor %}
+
+</div>

@@ -1,5 +1,6 @@
 import os
 import json
+import anon_func as af
 
 from typing import Type
 
@@ -38,16 +39,9 @@ def create_base_module(api: Type[JsApi]):
             browser.CloseDevTools()
 
     def py_quit(self):
-        # sys.exit(0)
-        # interface_flask.stop_server()
-        # viewport.end_window()
         viewport.window.destroy()
 
-    # def py_exec(self, code: str, newline_marker: str = "; "): #, args=None):
-    def py_exec(self, code: str): #, args=None):
-        # if args is None:
-        #     args = {}
-
+    def py_exec_old(self, code: str):
         exec("global retVal\n" + code)
         global retVal
         out = None
@@ -58,13 +52,15 @@ def create_base_module(api: Type[JsApi]):
         retVal = None
         return out
 
-    # def run_game():
-    #     pass
-
+    def py_exec(self, code: str, args=None):
+        if args is None:
+            args = {}
+        return af.func(tuple(args.keys()), code)(*tuple(args.values()))
 
     api.add_attr(pyprint, 'print')
     api.add_attr(open_debug)
     api.add_attr(close_debug)
     api.add_attr(py_quit, 'quit')
     api.add_attr(py_exec, 'exec')
+    api.add_attr(py_exec_old, 'exec_old')
 

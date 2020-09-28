@@ -33,6 +33,14 @@ def create_character_module(api: Type[JsApi]):
         print(char_id)
         return game.current.loaded_chars[int(char_id)].save_code()
 
+    def get_character_json(self, char_id):
+        print(char_id)
+        return game.current.loaded_chars[int(char_id)].save_json_dict()
+
+    def apply_character_json(self, char_id, json_dict):
+        print(char_id)
+        return game.current.loaded_chars[int(char_id)].load_info_json_dict(json_dict)
+
     def reload_character(self, char_id):
         game.current.save_character(char_id)
 
@@ -77,6 +85,8 @@ def create_character_module(api: Type[JsApi]):
         unload_character,
         save_character,
         get_character_text,
+        get_character_json,
         reload_character,
         apply_character_text,
+        apply_character_json
     ])

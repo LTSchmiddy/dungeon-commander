@@ -1,0 +1,15 @@
+{
+    "base_armor_class": 16,
+    "base_class": "ChainMail",
+    "cost": "75 gp",
+    "description": "",
+    "dexterity_mod_max": 0,
+    "id": "BasicChainMail",
+    "improved": 0,
+    "name": "Chain Mail",
+    "rarity": "common",
+    "stealth_disadvantage": true,
+    "strength_required": 13,
+    "type": "armor",
+    "weight": 55
+}

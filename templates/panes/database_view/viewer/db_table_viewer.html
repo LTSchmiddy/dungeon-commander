@@ -1,11 +1,68 @@
-<button class="btn-primary" onclick="load_table_result()">load</button>
+<button class="btn-primary db-searchbutton" onclick="load_table_result()">Search</button>
+<div class="db-searchbox-container">
+    <div id="db-searchbox" class="db-searchbox"></div>
+
+</div>
 <div id="table-result-area" class="table-result-area"></div>
 <script>
     let table_result_area = $('#table-result-area');
+    let sql_search_bar = null;
 
     async function load_table_result() {
-        let table_result_content = await $.post("/panes/database_view/table_result", {table_name: db_view.table});
+        let table_result_content = await $.post(
+            "/panes/database_view/table_result",
+            {
+                table_name: db_view.table,
+                search_term: sql_search_bar.getValue(),
+                is_sql: false
+            }
+        );
         table_result_area.html(table_result_content);
+
+
+        {#$("#db-table-view").resizableColumns();#}
+
     }
+
+
+    function create_sql_search_bar(elem_id){
+        let el = document.getElementById(elem_id);
+        let editor = ace.edit(el);
+        editor.setOptions({
+            maxLines: 1, // make it 1 line
+            autoScrollEditorIntoView: true,
+            highlightActiveLine: false,
+            printMargin: false,
+            showGutter: false,
+            mode: "ace/mode/sql",
+            theme: "ace/theme/tomorrow_night_eighties"
+        });
+        // remove newlines in pasted text
+        editor.on("paste", function(e) {
+            e.text = e.text.replace(/[\r\n]+/g, " ");
+        });
+        // make mouse position clipping nicer
+        editor.renderer.screenToTextCoordinates = function(x, y) {
+            let pos = this.pixelToScreenCoordinates(x, y);
+            return this.session.screenToDocumentPosition(
+                Math.min(this.session.getScreenLength() - 1, Math.max(pos.row, 0)),
+                Math.max(pos.column, 0)
+            );
+        };
+        editor.commands.addCommand({
+        name: "run_search",
+        exec: (env, args, request) => {
+            load_table_result();
+        }});
+        // disable Enter Shift-Enter keys
+        editor.commands.bindKey("Enter|Shift-Enter", "run_search");
+        return editor;
+    }
+
+    $(document).ready(()=>{
+       sql_search_bar = create_sql_search_bar('db-searchbox');
+    });
+
+
 
 </script>
