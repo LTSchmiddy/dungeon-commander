@@ -66,10 +66,10 @@ ep = 0
 gp = 0
 pp = 0
 
-# TODO: Put your equipped weapons and armor here
-weapons = ["PoopAxe"]  # Example: ('shortsword', 'longsword')
+# TODO: Put your equipped weapon_list and armor here
+weapon_list = ["BasicShortsword"]  # Example: ('shortsword', 'longsword')
 magic_items = ["bag_of_holding"]  # Example: ('ring of protection',)
-armor = "None"  # Eg "leather armor"
+armor = "BasicPaddedArmor"  # Eg "leather armor"
 shield = "None"  # Eg "shield"
 
 equipment = """"""
@@ -81,7 +81,7 @@ attacks_and_spellcasting = """"""
 spells = ("Control Flames", "Create Bonfire", "Fire Bolt")
 
 # Which spells have been prepared (not including cantrips)
-spells_prepared = ["Minor Illusion"]
+spells_prepared = ["Minor Illusion", "Control Flames", "Create Bonfire", "Fire Bolt"]
 
 # Wild shapes for Druid
 wild_shapes = ()  # Ex: ('ape', 'wolf', 'ankylosaurus')

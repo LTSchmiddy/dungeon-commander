@@ -1,6 +1,8 @@
 """Tools for describing a player character."""
+from __future__ import annotations
 __all__ = ('Character',)
 
+import hashlib
 import importlib.util
 import os
 import re
@@ -9,6 +11,8 @@ import warnings
 import math
 import types
 import json
+
+from typing import Any, Dict
 
 import markdown2
 import jinja2
@@ -27,10 +31,17 @@ from dungeonsheets.armor import Armor, NoArmor, NoShield, Shield
 from dungeonsheets.classes import *
 
 from dungeonsheets.dice import read_dice_str
+from dungeonsheets.features import SpellcastingAbility
+from dungeonsheets.item import Item
 from dungeonsheets.stats import (Ability, ArmorClass, Initiative, Skill, Speed,
                                  findattr)
 from dungeonsheets.weapons import Weapon
 
+import colors
+
+import black
+
+import util
 
 def read(fname):
     return open(os.path.join(os.path.dirname(__file__), fname)).read()
@@ -45,6 +56,14 @@ dice_re = re.compile('(\d+)d(\d+)')
 
 __all__ = ('Artificer', 'Barbarian', 'Bard', 'Cleric', 'Druid', 'Fighter', 'Monk',
            'Paladin', 'Ranger', 'Rogue', 'Sorcerer', 'Warlock', 'Wizard', )
+
+wallet_divisors = {
+    'cp': 1,
+    'sp': 10,
+    'ep': 50,
+    'gp': 100,
+    'pp': 1000,
+}
 
 type_conversions = {
     'bool': bool,
@@ -80,7 +99,25 @@ multiclass_spellslots_by_level = {
     20: (0, 4, 3, 3, 3, 3, 2, 2, 1, 1),
 }
 
+blank_str_conversions = {
+    bool: False,
+    int: 0,
+    float: 0.0,
+}
 
+def de_stringify(value, type_str: str) -> Any:
+    if type_str == 'str' or type_str not in type_conversions.keys():
+        return value
+
+    use_type = type_conversions[type_str]
+
+    if isinstance(value, str):
+        if value == "":
+            return blank_str_conversions[use_type]
+
+        return use_type(value)
+
+    return value
 
 class Character:
     """A generic player character.
@@ -148,10 +185,11 @@ class Character:
     gp = 0
     pp = 0
     equipment = ""
-    weapons = list()
+    weapon_list = list()
     magic_items = list()
     armor = None
     shield = None
+    inventory = []
     _proficiencies_text = list()
     # Magic
     spellcasting_ability = None
@@ -162,14 +200,47 @@ class Character:
     custom_features = list()
     feature_choices = list()
 
+    _current_spellslots = {
+        '1': None,
+        '2': None,
+        '3': None,
+        '4': None,
+        '5': None,
+        '6': None,
+        '7': None,
+        '8': None,
+        '9': None
+    }
+
+    # _current_spellslots = {
+    #     1: None,
+    #     2: None,
+    #     3: None,
+    #     4: None,
+    #     5: None,
+    #     6: None,
+    #     7: None,
+    #     8: None,
+    #     9: None
+    # }
+
     unique = True
+
+    spellcasting: Dict[str, SpellcastingAbility]
 
     info_dict: dict
     loaded_path: str
+    props_hash: str = ""
     loaded_id: int
 
+    # last_valid_dict: (dict, None) = None
+
     def __init__(self, **attrs):
+        # if self.last_valid_dict is None:
+        #     self.last_valid_dict = {}
+
         self.info_dict = {}
+        self.spellcasting = {}
 
         if not hasattr(self, 'loaded_path'):
             self.loaded_path = ""
@@ -178,7 +249,8 @@ class Character:
             self.loaded_id = 0
 
         if 'info_dict' in attrs:
-            self.info_dict = attrs.pop('info_dict')
+            self.info_dict.clear()
+            self.info_dict.update(attrs.pop('info_dict'))
 
         """Takes a bunch of attrs and passes them to ``set_attrs``"""
         self.clear()
@@ -204,18 +276,23 @@ class Character:
         self.race = attrs.pop('race', None)
         self.background = attrs.pop('background', None)
         # parse all other attributes
+
+
         self.set_attrs(**attrs)
         self.__set_max_hp(attrs.get('hp_max', None))
 
         if self.hp_current is None:
             self.hp_current = self.hp_max
 
-        db.Session.remove()
+
+        # self.last_valid_dict = attrs
+
+        # db.Session.remove()
 
     def clear(self):
         # reset class-definied items
         self.class_list = list()
-        self.weapons = list()
+        self.weapon_list = list()
         self.magic_items = list()
         self._saving_throw_proficiencies = tuple()
         self.other_weapon_proficiencies = tuple()
@@ -227,6 +304,8 @@ class Character:
         self.infusions = list()
         self.custom_features = list()
         self.feature_choices = list()
+        self.armor = None
+        self.shield = None
 
     def __str__(self):
         return self.name
@@ -315,13 +394,18 @@ class Character:
         elif isinstance(bg, type) and issubclass(bg, background.Background):
             self._background = bg(owner=self)
         elif isinstance(bg, str):
-            try:
-                self._background = findattr(background, bg)(owner=self)
-            except AttributeError:
-                msg = (f'Background "{bg}" not defined. '
-                       f'Please add it to ``background.py``')
-                self._background = background.Background(owner=self)
-                warnings.warn(msg)
+            find_bg = util.list_get(lambda x: x.get_id() == bg, background.available_backgrounds)
+
+            if find_bg is not None:
+                self._background = find_bg(owner=self)
+            else:
+                try:
+                    self._background = findattr(background, bg)(owner=self)
+                except AttributeError:
+                    msg = (f'Background "{bg}" not defined. '
+                           f'Please add it to ``background.py``')
+                    self._background = background.Background(owner=self)
+                    warnings.warn(msg)
 
     @property
     def class_name(self):
@@ -393,6 +477,11 @@ class Character:
                 assert levels >= 0
                 self.hp_max += int(hp_per_lvl * levels)
 
+    def wallet_total(self, unit: str = 'gp'):
+        cp_total = self.cp + (self.sp * 10) + (self.ep * 50) + (self.gp * 100) + (self.pp * 1000)
+        return cp_total / wallet_divisors[unit]
+
+
     @property
     def all_skill_proficiencies(self):
         retVal = self.skill_proficiencies[:]
@@ -413,6 +502,8 @@ class Character:
             wp |= set(getattr(self.race, 'weapon_proficiencies', ()))
         if self.background is not None:
             wp |= set(getattr(self.background, 'weapon_proficiencies', ()))
+        for i in self.features:
+            wp |= set(getattr(i, 'weapon_proficiencies', ()))
         return tuple(wp)
 
     @weapon_proficiencies.setter
@@ -470,7 +561,9 @@ class Character:
 
         return retVal
 
-
+    def update_feature_info_dicts(self):
+        for f in self.features:
+            f.update_info_dict()
 
     @property
     def custom_features_text(self):
@@ -535,6 +628,28 @@ class Character:
                     return multiclass_spellslots_by_level[eff_level][spell_level] + warlock_slots
 
     @property
+    def current_spellslots(self):
+        for key, value in self._current_spellslots.items():
+            if value is None:
+                self._current_spellslots[str(key)] = (self.spell_slots(int(key)))
+
+        return self._current_spellslots
+
+    @current_spellslots.setter
+    def current_spellslots(self, value: dict):
+        self._current_spellslots = value
+
+    def get_current_spellslot(self, spell_level: str) -> int:
+        retVal = self._current_spellslots[str(spell_level)]
+        if isinstance(retVal, int):
+            return retVal
+
+        return self.spell_slots(int(spell_level))
+
+    def set_current_spellslot(self, spell_level: str, value: int):
+        self._current_spellslots[str(spell_level)] = value
+
+    @property
     def spells(self):
         myspells = set(self._spells) | set(self._spells_prepared)
         for f in self.features:
@@ -545,6 +660,19 @@ class Character:
             myspells |= set(c.spells_known) | set(c.spells_prepared)
         if self.race is not None:
             myspells |= set(self.race.spells_known) | set(self.race.spells_prepared)
+        return sorted(tuple(myspells), key=(lambda x: (x.name)))
+
+    @property
+    def spells_known(self):
+        myspells = set(self._spells)
+        for f in self.features:
+            myspells |= set(f.spells_known)
+        for f in self.race.features:
+            myspells |= set(f.spells_known)
+        for c in self.spellcasting_classes:
+            myspells |= set(c.spells_known)
+        if self.race is not None:
+            myspells |= set(self.race.spells_known)
         return sorted(tuple(myspells), key=(lambda x: (x.name)))
 
     @property
@@ -566,10 +694,10 @@ class Character:
         for attr, val in attrs.items():
             if attr == 'dungeonsheets_version':
                 pass # Maybe we'll verify this later?
-            elif attr == 'weapons':
+            elif attr == 'weapon_list':
                 if isinstance(val, str):
                     val = [val]
-                # Treat weapons specially
+                # Treat weapon_list specially
                 for weap in val:
                     self.wield_weapon(weap)
             elif attr == 'magic_items':
@@ -607,16 +735,20 @@ class Character:
                     val = [val]
                 _features = []
                 for f in val:
-                    try:
-                        _features.append(findattr(features, f))
-                    except AttributeError:
-                        msg = (f'Feature "{f}" not defined. '
-                               f'Please add it to ``features.py``')
-                        # create temporary feature
-                        _features.append(features.create_feature(
-                            name=f, source='Unknown',
-                            __doc__="""Unknown Feature. Add to features.py"""))
-                        warnings.warn(msg)
+                    feature_dict = features.Feature.get_subtypes()
+                    if f in feature_dict:
+                        _features.append(feature_dict[f])
+                    else:
+                        try:
+                            _features.append(findattr(features, f))
+                        except AttributeError:
+                            msg = (f'Feature "{f}" not defined. '
+                                   f'Please add it to ``features.py``')
+                            # create temporary feature
+                            _features.append(features.create_feature(
+                                name=f, source='Unknown',
+                                __doc__="""Unknown Feature. Add to features.py"""))
+                            warnings.warn(msg)
                 self.custom_features += tuple(F(owner=self) for F in _features)
             elif (attr == 'spells') or (attr == 'spells_prepared'):
                 # Create a list of actual spell objects
@@ -745,13 +877,23 @@ class Character:
         directly.
 
         """
+        db.Session.remove()
         if new_armor not in ('', 'None', None):
             if isinstance(new_armor, armor.Armor):
-                new_armor = new_armor
+                self.armor = new_armor
             else:
-                NewArmor = findattr(armor, new_armor)
-                new_armor = NewArmor()
-            self.armor = new_armor
+
+                armor_data: db.tables.DB_Armor = db.Session.query(db.tables.DB_Armor).filter(
+                    db.tables.DB_Armor.id == new_armor).first()
+                if new_armor is None:
+                    print(f'Armor "{new_armor}" is not defined')
+                    db.Session.remove()
+                    return
+                self.armor = armor_data.create_object()
+                db.Session.remove()
+
+
+
 
     def wield_shield(self, shield):
         """Accepts a string or Shield class and replaces the current armor.
@@ -763,16 +905,28 @@ class Character:
         directly.
 
         """
+        db.Session.remove()
         if shield not in ('', 'None', None):
-            try:
-                NewShield = findattr(armor, shield)
-            except AttributeError:
-                # Not a string, so just treat it as Armor
-                NewShield = shield
-            self.shield = NewShield()
+            # try:
+            #     NewShield = findattr(armor, shield)
+            # except AttributeError:
+            #     # Not a string, so just treat it as Armor
+            #     NewShield = shield
+            if isinstance(shield, armor.Shield):
+                self.shield = shield
+            else:
+                shield_data: db.tables.DB_Shield = db.Session.query(db.tables.DB_Shield).filter(
+                    db.tables.DB_Shield.id == shield).first()
+                if shield is None:
+                    print(f'Armor "{shield}" is not defined')
+                    db.Session.remove()
+                    return
+                NewShield = shield_data.create_object()
+                db.Session.remove()
+                self.shield = NewShield
 
-    def wield_weapon(self, weapon):
-        """Accepts a string and adds it to the list of wielded weapons.
+    def wield_weapon(self, weapon: (str, Weapon)):
+        """Accepts a string and adds it to the list of wielded weapon_list.
 
         Parameters
         ----------
@@ -786,18 +940,16 @@ class Character:
             weapon_data: db.tables.DB_Weapon = db.Session.query(db.tables.DB_Weapon).filter(db.tables.DB_Weapon.id==weapon).first()
             if weapon_data is None:
                 print(f'Weapon "{weapon}" is not defined')
+                db.Session.remove()
                 return
+            weapon_ = weapon_data.create_object(self)
+            db.Session.remove()
+            # print(f"loaded weapon from string {weapon_}")
 
-            try:
-                NewWeaponClass = findattr(weapons, weapon_data.base_class)
-            except AttributeError:
-                raise AttributeError(f'Weapon class "{weapon}" is not defined')
-            weapon_ = NewWeaponClass(wielder=self)
-            weapon_.from_dict(weapon_data._original_json)
-
-        # Retrieve the weapon class from the weapons module
+        # Retrieve the weapon class from the weapon_list module
         elif isinstance(weapon, weapons.Weapon):
-            weapon_ = type(weapon)(wielder=self)
+            weapon.wielder = self
+            weapon_ = weapon
 
         elif issubclass(weapon, weapons.Weapon):
             weapon_ = weapon(wielder=self)
@@ -805,7 +957,30 @@ class Character:
         else:
             raise AttributeError(f'Weapon "{weapon}" is not defined')
         # Save it to the array
-        self.weapons.append(weapon_)
+
+
+        self.weapon_list.append(weapon_)
+
+    @property
+    def inventory_typedlist(self):
+        return Item.save_item_list(self.inventory)
+
+    @inventory_typedlist.setter
+    def inventory_typedlist(self, value):
+        self.inventory = Item.load_item_list(value)
+
+    def equip_inv_item(self, index):
+        item = self.inventory[index]
+
+        if isinstance(item, Weapon):
+            self.wield_weapon(item)
+        if isinstance(item, Shield):
+            self.wield_shield(item)
+        if isinstance(item, Armor):
+            self.wear_armor(item)
+
+        self.inventory.remove(item)
+
 
     @property
     def hit_dice(self):
@@ -870,7 +1045,7 @@ class Character:
             return ()
 
     @classmethod
-    def load_from_code(cls, char_string):
+    def load_from_code(cls, char_string) -> (Character, Exception):
         char_props = read_character_code(char_string)
         if isinstance(char_props, Exception):
             return char_props
@@ -879,7 +1054,7 @@ class Character:
 
 
     @classmethod
-    def load(cls, character_file):
+    def load(cls, character_file) -> (Character, Exception):
         # Create a character from the character definition
         char_props = read_character_file(character_file)
         if isinstance(char_props, Exception):
@@ -889,7 +1064,16 @@ class Character:
 
 
     @classmethod
-    def load_from_dict(cls, char_props):
+    def load_from_dict(cls, char_props) -> (Character, Exception):
+        try:
+            retVal: Character = cls._load_from_dict(char_props.copy())
+            return retVal
+        except Exception as e:
+            print(colors.color(f"ERROR: Can't generate character from attributes: {e.args}", fg='red'))
+            return e
+
+    @classmethod
+    def _load_from_dict(cls, char_props) -> Character:
         classes = char_props.get('classes', [])
         # backwards compatability
         if (len(classes) == 0) and ('character_class' in char_props):
@@ -899,15 +1083,29 @@ class Character:
         char = Character(**char_props)
         return char
 
-    def load_into_from_code(self, char_string):
+    @property
+    def current_props_hash(self) -> str:
+        # return str(hashlib.md5(str(self.save_dict()).encode()).digest())
+        return str(self.save_dict())
+
+    def update_props_hash(self):
+        # self.props_hash = str(hashlib.md5(str(self.save_dict()).encode()).digest())
+        self.props_hash = str(self.save_dict())
+
+
+    @property
+    def has_been_edited(self) -> bool:
+        return self.current_props_hash != self.props_hash
+
+    def load_into_from_code(self, char_string, verbose = True) -> (None, Exception):
         char_props = read_character_code(char_string)
         if isinstance(char_props, Exception):
             return char_props
         else:
-            self.load_into_from_dict(char_props)
-            return None
+            return self.load_into_from_dict(char_props, verbose)
 
-    def load_into(self, character_file):
+
+    def load_into(self, character_file) -> (None, Exception):
         # Create a character from the character definition
         char_props = read_character_file(character_file)
         if isinstance(char_props, Exception):
@@ -917,7 +1115,23 @@ class Character:
             return None
 
 
-    def load_into_from_dict(self, char_props):
+    def load_into_from_dict(self, char_props, verbose = True) -> (None, Exception):
+        last_valid_dict = self.save_dict()
+        try:
+            self._load_into_from_dict(char_props.copy())
+            return None
+        except Exception as e:
+            if verbose:
+                print(colors.color(f"ERROR: Can't import character attributes: {e.args}", fg='red'))
+
+            if isinstance(last_valid_dict, dict) and len(last_valid_dict) > 0:
+                self._load_into_from_dict(last_valid_dict.copy())
+
+                if verbose:
+                    print(colors.color(f"Reverted to last valid version of character.", fg='yellow'))
+            return e
+
+    def _load_into_from_dict(self, char_props):
         my_classes = char_props.get('classes', [])
         # backwards compatability
         if (len(my_classes) == 0) and ('character_class' in char_props):
@@ -926,7 +1140,7 @@ class Character:
         # Create the character with loaded properties
         self.__init__(**char_props)
 
-    def load_info_json_dict(self, json_dict: dict):
+    def load_info_json_dict(self, json_dict: dict) -> (None, Exception):
         char_props = {}
 
         for type_key, value in json_dict.items():
@@ -936,16 +1150,19 @@ class Character:
             else:
                 char_props[key] = type_conversions[use_type](value)
 
-        self.load_into_from_dict(char_props)
+        return self.load_into_from_dict(char_props)
 
-    def load_info_from_json(self, json_str: str):
-        self.load_info_json_dict(json.loads(json_str))
-
+    def load_info_from_json(self, json_str: str) -> (None, Exception):
+        result = self.load_info_json_dict(json.loads(json_str))
+        if isinstance(result, Exception):
+            return result
+        return None
 
     def save_code(self, template_file='character_template.txt') -> str:
+        # self.update_feature_info_dicts()
         # Create the template context
         context = dict(
-            char=self,
+            char=self
         )
         # Render the template
         src_path = os.path.join(os.path.dirname(__file__), 'forms/')
@@ -953,6 +1170,10 @@ class Character:
             loader=jinja2.FileSystemLoader(src_path or './')
         ).get_template(template_file).render(context)
         # Save the file
+
+        # Format the code with Black:
+        text = black.format_file_contents(text, fast=False, mode=black.FileMode())
+
         return text
 
     def save_dict(self):

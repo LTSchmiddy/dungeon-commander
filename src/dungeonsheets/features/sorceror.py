@@ -1,6 +1,6 @@
 from dungeonsheets import spells
 from dungeonsheets.features.features import Feature
-
+from dungeonsheets.features.spellcasting import SpellcastingAbility
 from dungeonsheets.features import BasicAbilityScoreImprovement
 
 class SorcererAbilityScoreImprovement(BasicAbilityScoreImprovement):
@@ -8,7 +8,7 @@ class SorcererAbilityScoreImprovement(BasicAbilityScoreImprovement):
     source = "Sorcerer"
 
 
-class SorcererSpellcasting(Feature):
+class SorcererSpellcasting(SpellcastingAbility):
     """
     **Spellcasting**
     An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with
@@ -58,6 +58,7 @@ class SorcererSpellcasting(Feature):
     """
     name = "Sorcerer Spellcasting"
     source = "Sorcerer"
+    spell_learning_type = SpellcastingAbility.SpellLearningType.KNOWN
 
 # PHB
 class FontOfMagic(Feature):

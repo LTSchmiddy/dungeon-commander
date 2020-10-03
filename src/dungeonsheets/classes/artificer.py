@@ -121,7 +121,7 @@ class Artificer(CharClass):
     saving_throw_proficiencies = ('intelligence', 'constitution')
     primary_abilities = ('intelligence',)
     _proficiencies_text = (
-            'Light armor', 'Medium armor', 'Shields', 'Simple weapons',
+            'Light armor', 'Medium armor', 'Shields', 'Simple Weapons',
             "Thieve's tools", "Tinker's tools",
             "One type of artisan's tools of your choice")
     _multiclass_proficiencies_text = (

@@ -1,0 +1,44 @@
+<details class="grid-wide view-pane" open>
+    <summary class="view-pane-header">Spells Prepared</summary>
+    <div class="details-content">
+        {% for i in range(0, 10) if (char.spell_slots(i) != 0) %}
+            <div>
+                {{ af.tget(i==0, "Cantrips", ordinal(i) + " Level Spell Slots") }}:
+                {% if i != 0 %}
+                    <span
+                            contenteditable=""
+                            style="display: inline-block; min-width: 20px"
+                    >
+                        {{ char.spell_slots(i) }}
+                    </span>/
+                {% endif %}
+                {{ char.spell_slots(i) }}
+            </div>
+            {% with spells = filter(af.func("x", "return x.level == " + str(i)), char.spells_prepared) %}
+                {% include "components/spells/spell_list.html" %}
+            {% endwith %}
+        {% endfor %}
+    </div>
+</details>
+<details class="grid-wide view-pane">
+    <summary class="view-pane-header">Spells Known</summary>
+    <div class="details-content">
+        {% for i in range(0, 10) if (char.spell_slots(i) != 0) %}
+            <div>
+                {{ af.tget(i==0, "Cantrips", ordinal(i) + " Level Spell Slots") }}:
+                {% if i != 0 %}
+                    <span
+                            contenteditable=""
+                            style="display: inline-block; min-width: 20px"
+                    >
+                        {{ char.spell_slots(i) }}
+                    </span>/
+                {% endif %}
+                {{ char.spell_slots(i) }}
+            </div>
+            {% with spells = filter(af.func("x", "return x.level == " + str(i)), char.spells) %}
+                {% include "components/spells/spell_list.html" %}
+            {% endwith %}
+        {% endfor %}
+    </div>
+</details>

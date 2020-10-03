@@ -3,14 +3,14 @@ from dungeonsheets.features.features import Feature, FeatureSelector
 from dungeonsheets.features.fighter import GreatWeaponFighting, Protection
 from dungeonsheets.features.ranger import Defense, Dueling
 
-
+from dungeonsheets.features.spellcasting import SpellcastingAbility
 from dungeonsheets.features import BasicAbilityScoreImprovement
 
 class PaladinAbilityScoreImprovement(BasicAbilityScoreImprovement):
     name = "Paladin Ability Score Improvement"
     source = "Paladin"
 
-class PaladinSpellcasting(Feature):
+class PaladinSpellcasting(SpellcastingAbility):
     """
     By 2nd level, you have learned to draw on divine magic through meditation and prayer to cast spells as a cleric
     does. See Spells Rules for the general rules of spellcasting and the Spells Listing for the paladin spell list.
@@ -47,6 +47,7 @@ class PaladinSpellcasting(Feature):
     """
     name = "Paladin Spellcasting"
     source = "Paladin"
+    spell_learning_type = SpellcastingAbility.SpellLearningType.PREPARED
 
 # PHB
 class DivineSense(Feature):

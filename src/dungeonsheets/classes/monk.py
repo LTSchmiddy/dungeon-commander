@@ -117,10 +117,10 @@ class DrunkenMasterWay(SubClass):
 
 
 class KenseiWay(SubClass):
-    """Monks of the Way of the Kensei train relentlessly with their weapons, to
+    """Monks of the Way of the Kensei train relentlessly with their weapon_list, to
     the point where the weapon becomes an extension of the body. Founded on a
     mastery of sword fighting, the tradition has expanded to include many
-    different weapons.
+    different weapon_list.
 
     A kensei sees a weapon in much the same way a calligrapher or painter
     regards a pen or brush. Whatever the weapon, the kensei views it as a tool
@@ -177,12 +177,12 @@ class Monk(CharClass):
     saving_throw_proficiencies = ('strength', 'dexterity')
     primary_abilities = ('dexterity', 'wisdom')
     _proficiencies_text = (
-        'simple weapons', 'shortswords', 'unarmed',
+        'simple weapon_list', 'shortswords', 'unarmed',
         "one type of artisan's tools or one musical instrument")
     weapon_proficiencies = (weapons.Shortsword, weapons.Unarmed,
                             weapons.SimpleWeapon)
     multiclass_weapon_proficiencies = weapon_proficiencies
-    _multiclass_proficiencies_text = ('simple weapons', 'shortswords',
+    _multiclass_proficiencies_text = ('simple weapon_list', 'shortswords',
                                       'unarmed')
     class_skill_choices = ('Acrobatics', 'Athletics', 'History', 'Insight',
                            'Religion', 'Stealth')

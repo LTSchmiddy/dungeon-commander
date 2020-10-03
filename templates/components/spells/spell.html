@@ -60,8 +60,19 @@
 {#        </div>#}
 {#    {% endif %}#}
 
+    <div class="spell-info">
+        {% for attr, name in {
+            'source_str': "Spell Source",
+            'casting_ability': "Casting Ability",
+            'spell_save_dc': "Spell Save DC",
+            'spell_attack_modifier': "Spell Attack Modifier"
+        }.items() if getattr(spell, attr) %}
 
+            <div class="spell-info-section"><span class="label">{{ name }}: </span>{{ str(getattr(spell, attr)).capitalize() }}</div>
 
+        {% endfor %}
+    </div>
+    <hr/>
     <div class="spell-info">
         <div class="spell-info-section"><span class="label">ID: </span>{{ spell.get_id() }}</div>
         <div class="spell-info-section"><span class="label">Casting Time: </span>{{ spell.casting_time }}</div>

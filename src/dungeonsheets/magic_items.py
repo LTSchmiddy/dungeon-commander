@@ -20,6 +20,10 @@ class MagicItem(Item):
     def __repr__(self):
         return '\"{:s}\"'.format(str(self))
 
+    @staticmethod
+    def related_db():
+        from db.tables import DB_MagicItem
+        return DB_MagicItem
 
 # from __future__ import annotations
 # import db

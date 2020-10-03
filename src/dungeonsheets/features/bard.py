@@ -1,12 +1,13 @@
 from dungeonsheets.features.features import Feature, FeatureSelector
 from dungeonsheets.features.ranger import Dueling, TwoWeaponFighting
 from dungeonsheets.features import BasicAbilityScoreImprovement
+from dungeonsheets.features.spellcasting import SpellcastingAbility
 
 class BardAbilityScoreImprovement(BasicAbilityScoreImprovement):
     name = "Bard Ability Score Improvement"
     source = "Bard"
 
-class BardSpellcasting(Feature):
+class BardSpellcasting(SpellcastingAbility):
     """
     You have learned to untangle and reshape the fabric of reality in harmony with your wishes and music. Your spells
     are part of your vast repertoire, magic that you can tune to different situations. See Spells Rules for the general
@@ -50,8 +51,9 @@ class BardSpellcasting(Feature):
     **Spellcasting Focus**
     You can use a musical instrument (see the Tools section) as a spellcasting focus for your bard spells.
     """
-    _name = "Bard Spellcasting"
+    name = "Bard Spellcasting"
     source = "Bard"
+    spell_learning_type = SpellcastingAbility.SpellLearningType.KNOWN
 
 
 

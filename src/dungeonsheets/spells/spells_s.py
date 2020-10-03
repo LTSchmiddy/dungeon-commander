@@ -192,7 +192,7 @@ class Seeming(Spell):
     succeeds, it is unaffected by this spell.
 
     The spell disguises physicial
-    appearances as well as clothing, armor, weapons, and equipment. You can make
+    appearances as well as clothing, armor, weapon_list, and equipment. You can make
     each creature seem 1 foot shorter or taller and appear thin, fat, or inbetween.
     You can't change a target's body type, so you must choose a form that has the
     same basic arrangement of limbs. Otherwise, the extent of the illusion is up to

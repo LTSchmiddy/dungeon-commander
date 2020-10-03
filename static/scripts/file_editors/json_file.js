@@ -1,12 +1,13 @@
 
 
-class JsonFileEditorData {
+class JsonFileEditorData extends EditorDataBase {
     constructor(elem, name, path, container_selector = ".editor-content", editor_options = {}) {
-        this.elem = elem;
-        this.name = name;
-        this.path = path;
+        super(elem, name, path, container_selector, editor_options);
+        // this.elem = elem;
+        // this.name = name;
+        // this.path = path;
+        // this.container_selector = container_selector;
         this.editor_type = 'json';
-        this.container_selector = container_selector;
         this.editor = null;
         this.original_json = "";
 
@@ -35,17 +36,11 @@ class JsonFileEditorData {
         this.set_original_json();
     }
 
+
     set_original_json() {
         this.original_json = copy_json(this.get_json());
     }
 
-    get_editor_view() {
-        return extracted_file_get_editor(this.path);
-    }
-
-    get_editor_container() {
-        return this.get_editor_view().children(this.container_selector).get()[0];
-    }
 
     get_json() {
         // console.log(this.editor.get());
@@ -56,9 +51,7 @@ class JsonFileEditorData {
         this.editor.set(json_obj);
     }
 
-    switch_to() {
-        extracted_file_show_editor(this.path);
-    }
+
 
     async save_file() {
         // await py.files.write_json_file(this.path, JSON.stringify(this.get_json()));

@@ -1,6 +1,7 @@
 from dungeonsheets import spells
 from dungeonsheets.features.features import Feature
-from dungeonsheets import infusions
+from dungeonsheets.features.spellcasting import SpellcastingAbility
+from dungeonsheets import infusions, weapons
 
 from dungeonsheets.features import BasicAbilityScoreImprovement
 
@@ -17,32 +18,45 @@ class _SpecialistSpells(Feature):
     """
     _name = "Select One"
     source = "Artificer"
-    _spells = {
+    _specialist_spells = {
             3: [],
             5: [],
             9: [],
             13: [],
             17: []
             }
-    spells_known = []
-    spells_prepared = []
+
+    @property
+    def spells_known(self):
+        spells = []
+        for lvl, sps in self._specialist_spells.items():
+            if self.owner.Artificer.level >= lvl:
+                for i in sps:
+                    spells.append(i())
+        return spells
+
+    # All Domain spells are both known and prepared
+    @property
+    def spells_prepared(self):
+        return self.spells_known
 
     @property
     def name(self):
         return "{:s} Spells".format(self._name)
 
     def __init__(self, owner=None):
-        if owner is not None:
-            level = owner.Artificer.level
-            for lvl, spl in self._spells.items():
-                if level >= lvl:
-                    self.spells_known.extend(spl)
-                    self.spells_prepared.extend(spl)
-        super().__init__(owner=owner)
+        self.owner = owner
+        # if owner is not None:
+        #     level = owner.Artificer.level
+        #     for lvl, spl in self._specialist_spells.items():
+        #         if level >= lvl:
+        #             self.spells_known.extend(spl)
+        #             self.spells_prepared.extend(spl)
+        # super().__init__(owner=owner)
 
 
 # Alchemist
-class ArtificerSpellcasting(Feature):
+class ArtificerSpellcasting(SpellcastingAbility):
     """
     You have studied the workings of magic, how to channel it through objects, and how to awaken it within them. As a
     result, you have gained a limited ability to cast spells. To observers, you don’t appear to be casting spells in a
@@ -95,9 +109,9 @@ class ArtificerSpellcasting(Feature):
     You can cast an artificer spell as a ritual if that spell has the ritual tag and you have the spell prepared.
     """
 
-    name = "Spellcasting"
+    name = "Artificer Spellcasting"
     source = "Artificer"
-
+    spell_learning_type = SpellcastingAbility.SpellLearningType.PREPARED
 
 # class ArtificerRitualCasting(Feature):
 #     """You can cast an artificer spell as a ritual if that spell has the ritual
@@ -109,15 +123,18 @@ class ArtificerSpellcasting(Feature):
 
 
 class FirearmProficiency(Feature):
-    """The secrets of creating and operating gunpowder weapons have been
+    """The secrets of creating and operating gunpowder weapon have been
     discovered in various corners of the D&D multiverse. If your Dungeon Master
     uses the rules on firearms in chapter 9 of the Dungeon Master's Guide and
-    your artificer has been exposed to the operation of such weapons, your
+    your artificer has been exposed to the operation of such weapon, your
     artificer is proficient with them.
     """
 
     name = "Optional Rule: Firearm Proficiency"
     source = "Artificer"
+    weapon_proficiencies = (weapons.FirearmBase,)
+
+
 
 
 class MagicalTinkering(Feature):
@@ -368,7 +385,7 @@ class AlchemistSpells(_SpecialistSpells):
     """
 
     _name = "Alchemist"
-    _spells = {
+    _specialist_spells = {
             3: [spells.HealingWord, spells.RayOfSickness],
             5: [spells.FlamingSphere, spells.MelfsAcidArrow],
             9: [spells.GaseousForm, spells.MassHealingWord],
@@ -484,13 +501,14 @@ class ArtilleristSpells(_SpecialistSpells):
     """
 
     _name = "Artillerist"
-    _spells = {
+    _specialist_spells = {
             3: [spells.Shield, spells.Thunderwave],
             5: [spells.ScorchingRay, spells.Shatter],
             9: [spells.Fireball, spells.WindWall],
             13: [spells.IceStorm, spells.WallOfFire],
             17: [spells.ConeOfCold, spells.WallOfForce]
             }
+
 
 
 class ArtilleristToolProficiency(Feature):
@@ -616,7 +634,7 @@ class BattleSmithSpells(_SpecialistSpells):
     """
 
     _name = "Battle Smith"
-    _spells = {
+    _specialist_spells = {
             3: [spells.Heroism, spells.Shield],
             5: [spells.BrandingSmite, spells.WardingBond],
             9: [spells.AuraOfVitality, spells.ConjureBarrage],
@@ -639,7 +657,7 @@ class BattleReady(Feature):
     """When you reach 3rd level, your combat training and your experiments with
     magic have paid off in two ways:
 
-    - You gain proficiency with martial weapons.
+    - You gain proficiency with martial weapon_list.
 
     - When you attack with a magic weapon, you can use your Intelligence
       modifier, instead of Strength or Dexterity modifier, for the attack and

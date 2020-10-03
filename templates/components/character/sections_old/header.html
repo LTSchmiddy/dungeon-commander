@@ -1,0 +1,16 @@
+<div class="char-header left char-grid-item">
+    <div class="char-name"><span class="label">Name:</span> {{ char.name }}</div>
+    <div class="char-class-level"><span class="label">Class:</span> {{ char.classes_and_levels }}</div>
+    <div class="char-race"><span class="label">Race:</span> {{ char.race.name }}</div>
+    <div class="char-alignment"><span class="label">Alignment:</span> {{ char.alignment }}</div>
+    <div class="char-background"><span class="label">Background:</span> {{ char.background }}</div>
+</div>
+<div class="char-header right char-grid-item">
+    <div class="char-hp"><span class="label">HP:</span> {{ char.hp_current }} / {{ char.hp_max }} </div>
+    <div class="char-speed"><span class="label">Speed:</span> {{ char.speed }} ft. </div>
+    <div class="char-armor-class"><span class="label">Armor Class:</span> {{ char.armor_class }} </div>
+    <div class="char-initiative"><span class="label">Initiative:</span> {{ char.initiative }} </div>
+    {% if char.inspiration %}
+            <div class="char-name"><em>Inspiration!</em></div>
+    {% endif %}
+</div>

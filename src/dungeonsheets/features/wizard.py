@@ -1,7 +1,7 @@
 from dungeonsheets import spells, weapons
 from dungeonsheets.features.features import Feature, FeatureSelector
 
-
+from dungeonsheets.features.spellcasting import SpellcastingAbility
 from dungeonsheets.features import BasicAbilityScoreImprovement
 
 class WizardAbilityScoreImprovement(BasicAbilityScoreImprovement):
@@ -9,7 +9,7 @@ class WizardAbilityScoreImprovement(BasicAbilityScoreImprovement):
     source = "Wizard"
 
 
-class WizardSpellcasting(Feature):
+class WizardSpellcasting(SpellcastingAbility):
     """
     As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true
     power. See Spells Rules for the general rules of spellcasting and the Spells Listing for the wizard spell list.
@@ -64,6 +64,7 @@ class WizardSpellcasting(Feature):
     """
     name = "Wizard Spellcasting"
     source = "Wizard"
+    spell_learning_type = SpellcastingAbility.SpellLearningType.WIZARD
 
 class WizrdSpellbook(Feature):
     """

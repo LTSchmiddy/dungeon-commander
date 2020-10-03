@@ -116,23 +116,23 @@ class Celestial(SubClass):
 
 class Hexblade(SubClass):
     """You have made your pact with a mysterious entity from the Shadowfell-a force
-    that manifests in sentient magic weapons carved from the stuff of
-    shadow. The mighty sword Blackrazor is the most notable of these weapons,
+    that manifests in sentient magic weapon_list carved from the stuff of
+    shadow. The mighty sword Blackrazor is the most notable of these weapon_list,
     which have been spread across the multiverse over the ages. The shadowy
-    force behind these weapons can offer power to warlocks who form pacts with
-    it. Many hexhlade warlocks create weapons that emulate those formed in the
+    force behind these weapon_list can offer power to warlocks who form pacts with
+    it. Many hexhlade warlocks create weapon_list that emulate those formed in the
     Shadowfell. Others forgo such arms, content to weave the dark magic of that
     plane into their spellcasting.
 
-    Because the Raven Queen is known to have forged the first of these weapons,
-    many sages speculate that she and the force are one and that the weapons,
+    Because the Raven Queen is known to have forged the first of these weapon_list,
+    many sages speculate that she and the force are one and that the weapon_list,
     along with hexblade warlocks, are tools she uses to manipulate events on
     the Material Plane to her inscrutable ends
 
     """
     name = "Hexblade Patron"
     weapon_proficiencies = (weapons.MartialWeapon,)
-    _proficiencies_text = ['martial weapons', 'medium armor', 'shields']
+    _proficiencies_text = ['martial weapon_list', 'medium armor', 'shields']
     features_by_level = defaultdict(list)
     features_by_level[1] = [features.HexbladesCurse, features.HexWarrior]
     features_by_level[6] = [features.AccursedSpecter]
@@ -157,7 +157,7 @@ class Warlock(CharClass):
     The magic bestowed on a warlock ranges from minor but lasting alterations to the warlock’s being (such as the
     ability to see in darkness or to read any language) to access to powerful spells. Unlike bookish wizards, warlocks
     supplement their magic with some facility at hand-to-hand combat. They are comfortable in light armor and know how
-    to use simple weapons.
+    to use simple weapon_list.
 
     # Delvers into Secrets
     Warlocks are driven by an insatiable need for knowledge and power, which compels them into their pacts and shapes
@@ -179,13 +179,13 @@ class Warlock(CharClass):
     subclass_select_level = 1
     saving_throw_proficiencies = ('wisdom', 'charisma')
     primary_abilities = ('charisma',)
-    _proficiencies_text = ("light Armor", "simple weapons")
+    _proficiencies_text = ("light Armor", "simple weapon_list")
     class_skill_choices = ('Arcana', 'Deception', 'History',
                            'Intimidation', 'Investigation', 'Nature',
                            'Religion')
     weapon_proficiencies = (weapons.SimpleWeapon,)
     multiclass_weapon_proficiencies = weapon_proficiencies
-    _multiclass_proficiencies_text = ('light armor', 'simple weapons')
+    _multiclass_proficiencies_text = ('light armor', 'simple weapon_list')
     features_by_level = defaultdict(list)
     features_by_level[1] = [features.WarlockAbilityScoreImprovement, features.OtherworldlyPatron]
     features_by_level[2] = [features.EldritchInvocation]

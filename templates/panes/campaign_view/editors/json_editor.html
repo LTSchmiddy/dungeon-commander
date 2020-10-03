@@ -10,6 +10,10 @@
     <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.save_file()" class="filesave-btn btn-primary">SAVE</button>
     <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.revert_file() " class="filerevert-btn btn-primary">REVERT</button>
 
+    {% if path.endswith("campaign.json") %}
+        - <button onclick="py.exec(`game.current.load_json_file(game.current.json_data_path)`);" class="filerevert-btn btn-secondary">Apply Campaign Settings</button>
+    {% endif %}
+
 {% endblock %}
 {% block content %}
 

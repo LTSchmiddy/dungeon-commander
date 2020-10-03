@@ -1,0 +1,7 @@
+{
+    "order" : [
+        "additional_spells.py",
+        "subclass_armorer.py"
+    ],
+    "force": true
+}

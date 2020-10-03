@@ -9,26 +9,29 @@ from colors import *
 # print(sys.argv[0])
 
 
+
 exec_dir, exec_file = os.path.split(os.path.abspath(sys.argv[0]))
 
+exec_dir = exec_dir.replace("\\", "/")
+# If we're executing as the source version, the main .py file  is actually found in the `src` subdirectory
+# of the project, and `exec_dir` is changed to reflect that. We'll create `exec_file_dir` in case we actually need the
+# unmodified path to that script. Obviously, in build mode, these two values will be the same.
+exec_file_dir = exec_dir
 
 def is_build_version():
-    global exec_file
     return exec_file.endswith(".exe")
 
 
 def is_source_version():
-    global exec_file
     return exec_file.endswith(".py")
 
 
 def get_exec_path(path):
-    global exec_dir
     return os.path.join(exec_dir, path)
 
 
 if is_source_version():
-    path_arr = exec_dir.replace("\\", "/").split("/")
+    path_arr = exec_dir.split("/")
     exec_dir = "/".join(path_arr[: len(path_arr) - 1]).replace("/", "\\")
 
 print(f"Is Source: {is_source_version()}")
@@ -61,6 +64,12 @@ default_settings = {
     "game": {
         "campaign-dir-path": "./my_campaign",
         "reload-db-on-start": True,
+        "editors": {
+            "character": {
+                "auto_update_text_default": True,
+                "auto_update_json_default": False,
+            }
+        },
         "online-sources": {
             "guide": {
                 "name": "Basic Rules - D&D Beyond",
@@ -70,7 +79,8 @@ default_settings = {
                 "name": "Dungeons & Dragons 5th Edition Community Wiki",
                 "address": "http://dnd5e.wikidot.com/"
             }
-        }
+        },
+        "global_py_addon_load_order": []
     },
     "database": {
         "echo": False
@@ -144,3 +154,4 @@ def validate_settings() -> list:
 
 # load_settings()
 from settings import paths
+from settings.addon_order import scan_addon_directory

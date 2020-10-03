@@ -1,0 +1,40 @@
+<details class="char-ability-list view-pane" open>
+    <summary class="view-pane-header">Ability Scores:</summary>
+    <table class="details-content table">
+        <tr class="">
+            <th class="label">Ability</th>
+            <th class="score">Score</th>
+            <th class="modifier">Modifier</th>
+            <th class="roll-check"></th>
+            <th class="saving-throw">Saving Throw</th>
+            <th class="roll-saving-throw"></th>
+        </tr>
+        {% for a in [
+            "strength",
+            "dexterity",
+            "constitution",
+            "intelligence",
+            "wisdom",
+            "charisma"
+        ] %}
+            <tr class="ability a-{{ a }}">
+            <td class="label">{{ a.capitalize() }}:</td>
+            <td class="score">{{ char.get_char_attr(a).value }}</td>
+            <td class="modifier">{{ char.get_char_attr(a).modifier_str }}</td>
+            <td class="roll-check"><button class="btn-primary" onclick="quick_dice_roll_skill('{{ char.get_char_attr(a).modifier }}')">Roll Check</button></td>
+            {% if a in char.saving_throw_proficiencies %}
+                <td class="saving-throw">{{ char.get_char_attr(a).saving_throw_str }}</td>
+                <td class="roll-saving-throw">
+                    <button class="btn-primary" onclick="quick_dice_roll_skill('{{ char.get_char_attr(a).saving_throw }}')">Roll Saving Throw</button>
+                </td>
+            {% else %}
+                <td class="saving-throw">{{ char.get_char_attr(a).modifier_str }}</td>
+                <td class="roll-saving-throw">
+                    <button class="btn-primary" onclick="quick_dice_roll_skill('{{ char.get_char_attr(a).modifier }}')">Roll Saving Throw</button>
+                </td>
+            {% endif %}
+
+            </tr>
+        {% endfor %}
+    </table>
+</details>

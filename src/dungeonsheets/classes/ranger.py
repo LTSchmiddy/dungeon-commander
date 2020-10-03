@@ -192,11 +192,11 @@ class Ranger(CharClass):
     saving_throw_proficiencies = ('strength', 'dexterity')
     primary_abilities = ('dexterity', 'wisdom')
     _proficiencies_text = ("light armor", "medium armor", "shields",
-                           "simple weapons", "martial weapons")
+                           "simple weapon_list", "martial weapon_list")
     weapon_proficiencies = (weapons.SimpleWeapon, weapons.MartialWeapon)
     multiclass_weapon_proficiencies = weapon_proficiencies
     _multiclass_proficiencies_text = ('light armor', 'medium armor', 'shields',
-                                      'simple weapons', 'martial weapons',
+                                      'simple weapon_list', 'martial weapon_list',
                                       '[choose one skill from Ranger list]')
     class_skill_choices = ('Animal Handling', 'Athletics', 'Insight',
                            'Investigation', 'Nature', 'Perception', 'Stealth',
@@ -280,7 +280,7 @@ class BeastConclave(SubClass):
 
 
 class HunterConclave(SubClass):
-    """Some rangers seek to master weapons to better protect civilization from the
+    """Some rangers seek to master weapon_list to better protect civilization from the
     terrors of the wilderness. Members of the Hunter Conclave learn specialized
     fighting techniques for use against the most dire threats, from rampaging
     ogres and hordes of orcs to towering giants and terrifying dragons

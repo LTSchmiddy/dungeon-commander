@@ -1,6 +1,6 @@
 from dungeonsheets import spells
 from dungeonsheets.features.features import Feature, FeatureSelector
-
+from dungeonsheets.features.spellcasting import SpellcastingAbility
 from dungeonsheets.features import BasicAbilityScoreImprovement
 
 class DruidAbilityScoreImprovement(BasicAbilityScoreImprovement):
@@ -8,7 +8,7 @@ class DruidAbilityScoreImprovement(BasicAbilityScoreImprovement):
     source = "Druid"
 
 
-class DruidSpellcasting(Feature):
+class DruidSpellcasting(SpellcastingAbility):
     """
     Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will. See Spells
     Rules for the general rules of spellcasting and the Spells Listing for the druid spell list.
@@ -51,6 +51,7 @@ class DruidSpellcasting(Feature):
     """
     name = "Druid Spellcasting"
     source = "Druid"
+    spell_learning_type = SpellcastingAbility.SpellLearningType.PREPARED
 
 # PHB
 class WildShape(Feature):
@@ -619,7 +620,7 @@ class MightySummoner(Feature):
     - The creature appears with more hit points than normal: 2 extra hit
       points per Hit Die it has.
 
-    - The damage from its natural weapons is considered magical for the
+    - The damage from its natural weapon_list is considered magical for the
       purpose of overcoming immunity and resistance to nonmagical attacks and
       damage.
 

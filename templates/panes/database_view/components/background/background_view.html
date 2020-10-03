@@ -4,7 +4,6 @@
 </p>
 {# Handle Basic Tuples: #}
 {% for i in ['languages', 'weapon_proficiencies', 'proficiencies_text', 'skill_proficiencies', 'skill_choices'] %}
-
     {% if len(getattr(bg, i)) > 0 %}
         <h2>
             {{ i.replace("_", " ").title() }}
@@ -13,6 +12,9 @@
             {% endif %}
         </h2>
         <ul>
+{#            {% if not isinstance(j, str) %}
+                {% set j = listj] %}
+            {% endif %}#}
             {% for j in getattr(bg, i) %}
                 <li>{{ j.title() }}</li>
             {% endfor %}

@@ -164,7 +164,7 @@ class App(npyscreen.NPSAppManaged):
                      name="Choose ability scores:", formid='ABILITIES')
         self.addForm("SKILLS", SkillForm, name="Choose skill proficiencies",
                      formid='SKILLS')
-        self.addForm("WEAPONS", WeaponForm, name="Choose weapons",
+        self.addForm("WEAPONS", WeaponForm, name="Choose weapon_list",
                      formid='WEAPONS')
         self.addForm("ARMOR", ArmorForm, name="Choose armor",
                      formid='ARMOR')
@@ -575,7 +575,7 @@ class WeaponForm(LinkedListForm):
     def create(self):
         self.instructions = self.add(
             npyscreen.FixedText, editable=False,
-            value=("Please select your weapons."))
+            value=("Please select your weapon_list."))
         self.remaining = self.add(
             npyscreen.TitleText, name="Remaining:",
             value=3, editable=False)
@@ -711,7 +711,7 @@ class SaveForm(LinkedListForm):
             npyscreen.FixedText, editable=False,
             value=("Your character will be saved in the file given below. "
                    "After saving, edit this file to finish your personality, "
-                   "weapons, etc."))
+                   "weapon_list, etc."))
         self.filename = self.add(
             npyscreen.TitleText, name='Filename:')
         self.make_pdf = self.add(npyscreen.Checkbox, name="Create PDF:",

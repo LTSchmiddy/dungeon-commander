@@ -274,16 +274,16 @@ class Enlargereduce(Spell):
     If there isn't enough room for the target to double its size, the creature or
     object attains the maximum possible size in the space available. Until the spell
      ends, the target also has advantage on Strength checks and Strength saving
-    throws. The target's weapons also grow to match its new size. While these
-    weapons are enlarged, the target's attack with them deal 1d4 extra damage.
+    throws. The target's weapon_list also grow to match its new size. While these
+    weapon_list are enlarged, the target's attack with them deal 1d4 extra damage.
 
 
     Reduce 
     The target's size is halved in all dimensions, and its weight is reduced
      to one-eighth of normal. This reduction decreases its size by one category –
     from Medium to Small, for example. Until the spell ends, the target also has
-    disadvantage on Strength checks and Strength saving throws. The target's weapons
-     also shrink to match its new size. While these weapons are reduced, the
+    disadvantage on Strength checks and Strength saving throws. The target's weapon_list
+     also shrink to match its new size. While these weapon_list are reduced, the
     target's attacks with them deal 1d4 less damage (this can't reduce the damage
     below 1).
     """

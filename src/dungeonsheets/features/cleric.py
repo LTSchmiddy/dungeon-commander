@@ -1,13 +1,14 @@
 from dungeonsheets import spells
 from dungeonsheets.features.features import Feature
 from dungeonsheets.features import BasicAbilityScoreImprovement
+from dungeonsheets.features.spellcasting import SpellcastingAbility
 
 class ClericAbilityScoreImprovement(BasicAbilityScoreImprovement):
     name = "Cleric Ability Score Improvement"
     source = "Cleric"
 
 
-class ClericSpellcasting(Feature):
+class ClericSpellcasting(SpellcastingAbility):
     """
     As a conduit for divine power, you can cast cleric spells. See Spells Rules for the general rules of spellcasting
     and the Spells Listing for the cleric spell list.
@@ -51,6 +52,7 @@ class ClericSpellcasting(Feature):
     """
     name = "Cleric Spellcasting"
     source = "Cleric"
+    spell_learning_type = SpellcastingAbility.SpellLearningType.PREPARED
 
 # Cleric Features
 class ChannelDivinity(Feature):
@@ -600,7 +602,7 @@ class DivineStrikeWar(DivineStrike):
 
 class AvatarOfBattle(Feature):
     """At 17th level, you gain resistance to bludgeoning, piercing, and slashing
-    damage from nonmagical weapons.
+    damage from nonmagical weapon_list.
 
     """
     name = "Avatar of Battle"

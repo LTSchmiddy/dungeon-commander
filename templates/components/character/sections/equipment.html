@@ -1,0 +1,157 @@
+<details class="char-equipment view-pane" open>
+    <summary class="view-pane-header">Equipment</summary>
+    <details class="wallet details-content" open>
+        <summary>
+            Wallet
+        </summary>
+        <div class="sub-content">
+{#            {% set char.weapons = weapon_list %}#}
+            {% for var, name in {
+                "cp": "Copper",
+                "sp": "Silver",
+                "ep": "Electrum",
+                "gp": "Gold",
+                "pp": "Platinum",
+            }.items() %}
+                <div class="coin-field">
+                    <label class="label">{{ name }}:</label>
+                    <input
+                        id="char-editor-display-{{ char.loaded_id }}-{{ var }}"
+                        type="number"
+                        step="1"
+                        min="0"
+                        value="{{ char.get_char_attr(var) }}"
+                        placeholder="0"
+                        onchange="
+                            py.campaign.character.set_char_attr({{ char.loaded_id }}, '{{ var }}', this.value, 'int').then(async ()=>{
+
+                                let cv = await py.campaign.character.call_char_method({{ char.loaded_id }}, 'wallet_total', 'gp');
+                                $('#char-editor-display-{{ char.loaded_id }}-coin-total').text(cv + ' gp');
+                            });
+                            mod_editor_opened_tabs['{{ char.loaded_id }}'].data_obj.on_general_change();
+                        "
+                    >
+                </div>
+            {% endfor %}
+
+                <div class="coin-field">
+                    <label class="label">Total:</label>
+                    <span id="char-editor-display-{{ char.loaded_id }}-coin-total">{{ char.wallet_total('gp')}} gp</span>
+                </div>
+        </div>
+
+    </details>
+    {% set equip_mode = False %}
+    {% if len(weapon_list) %}
+        <details class="weapons details-content" open>
+            <summary>
+                Weapons
+            </summary>
+            <div class="sub-content">
+
+                {% for weapon in weapon_list %}
+    {#            {% for weapon in char.weapon_list %}#}
+                    {% include "components/inventory/weapon.html" %}
+                {% endfor %}
+            </div>
+
+        </details>
+    {% endif %}
+
+    {% if len(char.magic_items) %}
+        <details class="magic-items details-content" open>
+            <summary>
+                Magic Items
+            </summary>
+            <div class="sub-content">
+                {% for item in char.magic_items %}
+                    {% include "components/inventory/magic_item.html" %}
+                {% endfor %}
+            </div>
+
+        </details>
+    {% endif %}
+
+    {% if char.armor or char.shield %}
+        <details class="armor details-content" open>
+            <summary>
+                Armor:
+            </summary>
+            <div class="sub-content">
+                {% if char.armor %}
+                    {% with armor = char.armor %}
+                        {% include "components/inventory/armor.html" %}
+                    {% endwith %}
+                {% endif %}
+                {% if char.shield %}
+                    {% with shield = char.shield %}
+                        {% include "components/inventory/shield.html" %}
+                    {% endwith %}
+                {% endif %}
+            </div>
+        </details>
+    {% endif %}
+
+    {% if len(char.inventory) > 0%}
+        <details class="inventory details-content" open>
+            <summary>
+                Inventory:
+            </summary>
+            <div class="sub-content">
+                {% for item in char.inventory %}
+                    {% if isinstance(item, ds.weapons.Weapon) %}
+                        {% with weapon = item %}
+                            {% set equip_mode = True %}
+                            {% include "components/inventory/weapon.html" %}
+                        {% endwith %}
+                    {% elif isinstance(item, ds.armor.Armor) %}
+                        {% with armor = item %}
+                            {% set equip_mode = True %}
+                            {% include "components/inventory/armor.html" %}
+                        {% endwith %}
+                    {% elif isinstance(item, ds.armor.Shield) %}
+                        {% with shield = item %}
+                            {% set equip_mode = True %}
+                            {% include "components/inventory/shield.html" %}
+                        {% endwith %}
+                    {% elif isinstance(item, ds.magic_item.MagicItem) %}
+                        {% set equip_mode = True %}
+                        {% include "components/inventory/magic_item.html" %}
+
+                    {% endif %}
+
+                {% endfor %}
+            </div>
+        </details>
+    {% endif %}
+
+    <details class="equipment details-content" open>
+        <summary>Other Equipment</summary>
+{#        <textarea style="#}
+        <div
+            id="char-editor-{{ char.loaded_id }}-other-equipment"
+            contenteditable="true"
+            style="
+                min-height: 100px;
+                white-space: pre;
+            "
+            class="subcontent"
+            onchange=""
+        >{{ char.equipment }}</div>
+        <script>
+           $('#char-editor-{{ char.loaded_id }}-other-equipment').on('input', (e)=>{
+                {#console.log(e);#}
+                py.campaign.character.set_char_attr(
+                    {{ char.loaded_id }},
+                    'equipment',
+                    $('#char-editor-{{ char.loaded_id }}-other-equipment').innerText(),
+                    'str'
+                );
+                mod_editor_opened_tabs['{{ char.loaded_id }}'].data_obj.on_general_change();
+           });
+
+        </script>
+
+
+    </details>
+</details>

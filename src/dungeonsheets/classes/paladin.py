@@ -241,7 +241,7 @@ class OathOfRedemption(PaladinOath):
     While redeemers are idealists, they are no fools. Re- deemers know that
     undead, demons, devils, and other supernatural threats can be inherently
     evil. Against such fees, paladins who swear this oath bring the full wrath
-    of their weapons and spells to bear. Yet the re- deemers still pray that,
+    of their weapon_list and spells to bear. Yet the re- deemers still pray that,
     one day, even creatures of wick- edness will invite their own redemption.
 
     **Tenets of Redemption**: The tenets of the Oath of Redemption hold a
@@ -335,7 +335,7 @@ class Paladin(CharClass):
     Although many paladins are devoted to gods of good, a paladin’s power comes as much from a commitment to justice
     itself as it does from a god.
 
-    Paladins train for years to learn the skills of combat, mastering a variety of weapons and armor. Even so, their
+    Paladins train for years to learn the skills of combat, mastering a variety of weapon_list and armor. Even so, their
     martial skills are secondary to the magical power they wield: power to heal the sick and injured, to smite the
     wicked and the undead, and to protect the innocent and those who join them in the fight for justice.
 
@@ -356,12 +356,12 @@ class Paladin(CharClass):
     subclass_select_level = 3
     saving_throw_proficiencies = ('wisdom', 'charisma')
     primary_abilities = ('strength', 'charisma')
-    _proficiencies_text = ('All armor', 'shields', 'simple weapons',
-                           'martial weapons')
+    _proficiencies_text = ('All armor', 'shields', 'simple weapon_list',
+                           'martial weapon_list')
     weapon_proficiencies = (weapons.SimpleWeapon, weapons.MartialWeapon)
     multiclass_weapon_proficiencies = weapon_proficiencies
     _multiclass_proficiencies_text = ('light armor', 'medium armor', 'shields',
-                                      'simple weapons', 'martial weapons')
+                                      'simple weapon_list', 'martial weapon_list')
     class_skill_choices = ("Athletics", 'Insight', 'Intimidation',
                            'Medicine', 'Persuasion', 'Religion')
     features_by_level = defaultdict(list)

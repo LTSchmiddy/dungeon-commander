@@ -1,0 +1,12 @@
+{
+    "base_armor_class": 2,
+    "base_class": "WoodenShield",
+    "cost": "10 gp",
+    "description": "",
+    "id": "BasicWoodenShield",
+    "improved": 0,
+    "name": "Wooden shield",
+    "rarity": "common",
+    "type": "shield",
+    "weight": 0
+}

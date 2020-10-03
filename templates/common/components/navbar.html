@@ -8,12 +8,12 @@
             </button>
             <div class="dropdown-menu">
 
-                <button class="dropdown-item" onclick="pywebview.api.quit()">Quit</button>
+                <button class="dropdown-item" onclick="py.quit()">Quit</button>
 
             </div>
         </li>
-        <li class="nav-item dropdown">
-            {# <a class="nav-link" href="#">Link 2</a> #}
+      {#  <li class="nav-item dropdown">
+            #}{# <a class="nav-link" href="#">Link 2</a> #}{#
             <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
                 Edit
             </button>
@@ -28,8 +28,8 @@
                 View
             </button>
             <div class="dropdown-menu">
-                {#<button class="dropdown-item" onclick="">Open VLC Interface</button>#}
-                {#<a class="dropdown-item" href="{{ url_for('pages.index') }}">Library View</a>#}
+                #}{#<button class="dropdown-item" onclick="">Open VLC Interface</button>#}{#
+                #}{#<a class="dropdown-item" href="{{ url_for('pages.index') }}">Library View</a>#}{#
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -37,10 +37,10 @@
                 Data
             </button>
             <div class="dropdown-menu">
-                {#                  <button class="dropdown-item" onclick="py.pak.unpack_all()">Unpack All</button>#}
-                {#                  <a class="dropdown-item" href="#">Link 3</a>#}
+                #}{#                  <button class="dropdown-item" onclick="py.pak.unpack_all()">Unpack All</button>#}{#
+                #}{#                  <a class="dropdown-item" href="#">Link 3</a>#}{#
             </div>
-        </li>
+        </li>#}
         <li class="nav-item dropdown">
             <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
                 Web
@@ -62,18 +62,36 @@
         </li>
     </ul>
 
+
+
+    <div class="tab-container">
+        <button id="campaign-view-button" class="btn-secondary main-tab" onclick="
+            app_set_view('campaign-view');
+            py_console_run = false;
+        ">
+            <strong>Campaign</strong>
+        </button>
+        <button id="database-view-button" class="btn-secondary main-tab" onclick="
+            app_set_view('database-view');
+            py_console_run = false;
+        ">
+            <strong>Database</strong>
+        </button>
+        <button id="settings-editor-view-button" class="btn-secondary secondary-tab" onclick="
+            app_set_view('settings-editor-view');
+            py_console_run = false;
+        ">
+            <span class="fas fa-cog"></span>
+        </button>
+        <button id="python-console-view-button" class="btn-secondary secondary-tab" onclick="
+            app_set_view('python-console-view');
+            py_console_run = true;
+            if (py_console_get_auto_scroll()) {
+                py_console_scroll_to_bottom();
+            }
+        ">
+            <span class="fas fa-desktop"></span>
+        </button>
+    </div>
 </nav>
 
-    {# <li class="nav-item dropdown">
-              <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-                  Library
-              </button>
-              <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">Link 1</a>
-                  <a class="dropdown-item" href="#">Link 2</a>
-                  <a class="dropdown-item" href="#">Link 3</a>
-              </div>
-            <a class="nav-link" href="#">Link 3</a>
-        </li>
-
-#}

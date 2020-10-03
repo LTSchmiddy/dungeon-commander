@@ -25,15 +25,57 @@
     </div>
 
     <script>
-        const views = [
+        "use strict";
+        const app_views = [
             $("#campaign-view"),
             $("#database-view"),
             $("#settings-editor-view"),
             $("#python-console-view")
         ];
 
+        let app_keymap_scopes = {};
+        let app_current_view = "";
 
-    </script>
+        function app_init_views() {
+            app_views.forEach((value, index, views) => {
+                let this_id = value.attr('id');
+                app_keymap_scopes[this_id] = this_id;
+            });
+        }
+
+
+        function app_set_view(view_id) {
+            app_views.forEach((value, index, views) => {
+                let this_id = value.attr('id');
+
+                let button_tag = this_id + "-button";
+
+                let related_button = $("#" + button_tag);
+
+                if (this_id === view_id){
+                    value.show();
+
+                    if (related_button !== null) {
+                        related_button.addClass('active-view');
+                    }
+                } else {
+                    value.hide();
+                    if (related_button !== null) {
+                        related_button.removeClass('active-view');
+                    }
+                }
+            });
+            app_keymap_scopes[app_current_view] = keymage.getScope();
+
+            app_current_view = view_id;
+            keymage.setScope(app_keymap_scopes[app_current_view]);
+        }
+
+        app_init_views();
+        app_set_view('campaign-view');
+
+
+</script>
 
 
 

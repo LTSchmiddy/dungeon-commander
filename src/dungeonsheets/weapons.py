@@ -1,5 +1,6 @@
 from dungeonsheets.item import Item
 
+
 class Weapon(Item):
     id = ""
     name = ""
@@ -29,6 +30,11 @@ class Weapon(Item):
 
     def __init__(self, wielder=None):
         self.wielder = wielder
+
+    @staticmethod
+    def related_db():
+        from db.tables import DB_Weapon
+        return DB_Weapon
 
     @classmethod
     def improved_version(cls, bonus):
@@ -98,10 +104,6 @@ class Weapon(Item):
         retVal['improved'] = 0
         return retVal
 
-
-    def from_dict(self, p_dict):
-        for key, value in p_dict.items():
-            self.__dict__[key] = value
 
 
 
@@ -529,7 +531,7 @@ class SunBolt(RangedWeapon):
     ability = 'dexterity'
 
     
-# Custom weapons
+# Custom weapon_list
 class HeavyPunch(MeleeWeapon):
     base_damage = "1d4"
     name = "Heavy Punch"
@@ -568,7 +570,12 @@ class Claws(MeleeWeapon):
     ability = 'strength'
 
 
-class Firearm(RangedWeapon):
+class FirearmBase(RangedWeapon):
+    name = 'Firearms'
+    ability = 'dexterity'
+    damage_type = 'p'
+
+class Firearm(FirearmBase):
     name = 'Firearm'
     ability = 'dexterity'
     damage_type = 'p'
@@ -613,7 +620,7 @@ class SpearOfLightning(Spear):
     attack_bonus = 1
 
 
-# Some lists of weapons for easy proficiency resolution
+# Some lists of weapon_list for easy proficiency resolution
 simple_melee_weapons = (Club, Dagger, Greatclub, Handaxe, Javelin,
                         LightHammer, Mace, Quarterstaff, Sickle, Spear)
 simple_ranged_weapons = (LightCrossbow, Dart, Shortbow, Sling)

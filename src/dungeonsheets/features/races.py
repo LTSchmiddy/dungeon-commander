@@ -735,6 +735,18 @@ class MergeWithStone(Feature):
     source = "Race (Earth Genasi)"
 
 
+class FireGenasiDarkvision(Feature):
+    """Accustomed to life underground, you have superior vision in dark and dim
+    conditions. You can see in dim light within 60 feet of you as if it were
+    bright light, and in darkness as if it were dim light. You can't discern color in darkness.
+
+    Your dark vision is a bit different than that of most other creatures. Instead of the
+    shades of gray that most other creatures with darkvision see, you see in shades of red.
+
+    """
+    name = "Darkvision (60')"
+    source = "Race"
+
 class FireResistance(Feature):
     """
     You have resistance to fire damage.
@@ -752,6 +764,8 @@ class ReachToTheBlaze(Feature):
     """
     name = "Reach to the Blaze"
     source = "Race (Fire Genasi)"
+    spells_known = (spells.ProduceFlame,)
+    spells_prepared = spells_known
 
 
 class AcidResistance(Feature):
@@ -873,8 +887,8 @@ class SavingFace(Feature):
     name = "Saving Face"
     source = "Race (HobGoblin)"
 
-class MartialTraining(Feature):     #you have to add the weapons of choice to your sheet
-    """You are proficient with two martial weapons of your choice and with light armor.
+class MartialTraining(Feature):     #you have to add the weapon_list of choice to your sheet
+    """You are proficient with two martial weapon_list of your choice and with light armor.
 
     """
     name = "Martial Training"

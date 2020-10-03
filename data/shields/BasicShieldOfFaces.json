@@ -1,0 +1,12 @@
+{
+    "base_armor_class": 3,
+    "base_class": "ShieldOfFaces",
+    "cost": "10 gp",
+    "description": "",
+    "id": "BasicShieldOfFaces",
+    "improved": 0,
+    "name": "Shield +1",
+    "rarity": "common",
+    "type": "shield",
+    "weight": 0
+}

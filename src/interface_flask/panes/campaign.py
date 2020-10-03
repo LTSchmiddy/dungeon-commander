@@ -24,7 +24,7 @@ def get_character(id: int):
     # character_ref_id = request.form.get('id')
     # char = game.current.loaded_chars[character_ref_id]
     char = game.current.loaded_chars[id]
-
+    # print(char.weapon_list)
     return render_template("components/character/character_view.html", char=char)
 
 # Campaign View Panes

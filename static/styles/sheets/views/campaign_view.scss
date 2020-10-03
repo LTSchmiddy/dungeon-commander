@@ -156,14 +156,36 @@
                 .char-display-view, .char-json-view {
                     //.character-view {
                     //    max-height: calc(100vh - 150px);
-                        height: calc(100vh - 170px);
+                        height: calc(100vh - 100px);
                         overflow: auto;
                     //}
 
                 }
 
+                .char-ace-view {
+
+                    height: calc(100vh - 45px);
+
+                    .char-ace-view-editor {
+                        position: relative;
+                        width: calc(100%);
+                        height: calc(100% - 80px);
+                        //height: calc(100% - 80px);
+                    }
+                    .char-ace-view-status {
+                        position: relative;
+                        width: calc(100%);
+                        padding: 0 10px;
+                        //height: calc(100% - 80px);
+                    }
+                    .char-ace-view-status.valid {
+                        color: green;
+                    }
+                    .char-ace-view-status.invalid {
+                        color: red;
+                    }
+                }
             }
         }
     }
-
 }

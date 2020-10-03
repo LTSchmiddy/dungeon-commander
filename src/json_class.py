@@ -10,7 +10,8 @@ def make_dict(obj, attrs: (List[str], Tuple[str])):
         if hasattr(obj, i):
             retVal[i] = getattr(obj, i)
         else:
-            print(f"ERROR: object '{str(obj)}' does not have attribute '{i}'...")
+            pass
+            # print(f"ERROR: object '{str(obj)}' does not have attribute '{i}'...")
 
     return retVal
 

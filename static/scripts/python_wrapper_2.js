@@ -15,14 +15,20 @@ window.addEventListener('pywebviewready', function() {
             character: {
                 apply_character_json: pywebview.api.campaign.character.apply_character_json,
                 apply_character_text: pywebview.api.campaign.character.apply_character_text,
+                call_char_method: pywebview.api.campaign.character.call_char_method,
+                get_char_attr: pywebview.api.campaign.character.get_char_attr,
                 get_character_json: pywebview.api.campaign.character.get_character_json,
                 get_character_text: pywebview.api.campaign.character.get_character_text,
                 get_loaded_characters: pywebview.api.campaign.character.get_loaded_characters,
+                is_character_edited: pywebview.api.campaign.character.is_character_edited,
                 load_character: pywebview.api.campaign.character.load_character,
                 reload_character: pywebview.api.campaign.character.reload_character,
                 save_character: pywebview.api.campaign.character.save_character,
+                set_char_attr: pywebview.api.campaign.character.set_char_attr,
+                set_char_attr_raw: pywebview.api.campaign.character.set_char_attr_raw,
                 unload_character: pywebview.api.campaign.character.unload_character
-            }
+            },
+            eval_dice: pywebview.api.campaign.eval_dice
         },
         close_debug: pywebview.api.close_debug,
         exec: pywebview.api.exec,

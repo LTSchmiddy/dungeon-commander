@@ -1,21 +1,25 @@
+"use strict";
 
-
-class CharacterEditorData {
+class CharacterEditorData extends EditorDataBase{
     constructor(elem, name, path, container_selector = ".editor-content", editor_options = {}) {
-        this.elem = elem;
-        this.name = name;
-        this.path = path;
+        super(elem, name, path, container_selector, editor_options);
+        // this.elem = elem;
+        // this.name = name;
+        // this.path = path;
+        // this.container_selector = container_selector;
         this.editor_type = 'character';
-        this.container_selector = container_selector;
         this.json_editor = null;
         this.original_json = ""
         this.ace_editor = null;
         // this.ace_editor_session = null;
         this.original_code = "";
 
+        this.regen_on_switch_tabs = true;
+
         this.mode = 'display';
 
         // DOM Objects:
+        // this.editor_tab = this.get_editor_tab();
         this.editor_view = this.get_editor_view();
         this.editor_container = this.get_editor_container();
         this.display_view = this.get_display_view();
@@ -23,6 +27,13 @@ class CharacterEditorData {
         this.ace_view = this.get_ace_view();
         this.ace_editor_container = this.get_ace_editor_container();
         this.ace_status_container = this.get_ace_status_container();
+
+        this.is_changed = false;
+        this._should_check_is_changed = false;
+        this.edit_loop = null;
+        // this.edit_loop = null;
+
+        // char display DOM Object:
 
         // Async Loading:
         this._async_construction(editor_options);
@@ -41,6 +52,12 @@ class CharacterEditorData {
         }
     }
 
+    on_switch_to() {
+        super.on_switch_to();
+        // console.log("Hello");
+
+    }
+
     async _async_construction(editor_options) {
         this.update_char_display();
         this.load_ace_editor();
@@ -50,21 +67,29 @@ class CharacterEditorData {
         this.json_editor = new JSONEditor(this.get_json_view().get()[0], this.get_json_editor_options());
 
         await this.load_char_json();
-
+        this.get_json_view().hide();
         this.set_original_json();
+
+        // this.update_edited_from_file();
+
+        this.edit_loop = async(me, editor, delay= 2000)=>{
+            if (editor._should_check_is_changed) {
+                await editor.update_edited_from_file();
+                editor._should_check_is_changed = false;
+            }
+
+            // console.log("updated");
+
+            setTimeout(()=>{me(me, editor, delay)}, delay);
+        }
+        // edit_loop.bind(edit_loop);
+        this.edit_loop(this.edit_loop, this);
+
     }
+
 
     set_original_json() {
         this.original_json = copy_json(this.get_json());
-    }
-
-    // DOM Object Getters:
-    get_editor_view() {
-        return extracted_file_get_editor(this.path);
-    }
-
-    get_editor_container() {
-        return this.get_editor_view().children(this.container_selector).get()[0];
     }
 
     get_display_view() {
@@ -89,8 +114,9 @@ class CharacterEditorData {
     }
 
     // Other:
-    load_display_view() {
-        this.get_display_view().load(`/panes/campaign_view/get_character/${this.path}`);
+    async load_display_view() {
+        await this.get_display_view().load(`/panes/campaign_view/get_character/${this.path}`);
+        this.get_display_view().trigger('load');
     }
 
     load_ace_editor() {
@@ -114,8 +140,8 @@ class CharacterEditorData {
         this.ace_editor.setValue(await py.campaign.character.get_character_text(this.path), 1);
     }
 
-    async apply_ace_char_text() {
-        let result = await py.campaign.character.apply_character_text(this.path, this.ace_editor.getValue());
+    async apply_ace_char_text(verbose = true) {
+        let result = await py.campaign.character.apply_character_text(this.path, this.ace_editor.getValue(), verbose);
         if (result === null) {
             this.ace_status_container.html(`No errors.`);
             this.ace_status_container.addClass('valid');
@@ -144,34 +170,59 @@ class CharacterEditorData {
         // }
     }
 
-    switch_to() {
-        extracted_file_show_editor(this.path);
-    }
 
     update_char_display() {
         this.load_display_view();
     }
 
+    apply_char() {
+        if (this.mode === 'display') {
+        }
+        else if (this.mode === 'ace') {
+            this.apply_ace_char_text();
+        }
+        else if (this.mode === 'json') {
+            this.apply_char_json();
+        }
+    }
+
+    change_editor_mode(mode) {
+        if (this.regen_on_switch_tabs) {
+            this.apply_char();
+        }
+
+        this.set_editor_mode(mode);
+        this.update_edited_from_file();
+    }
+
     set_editor_mode(mode) {
+
         this.mode = mode;
 
         if (mode === 'display') {
             this.ace_view.hide();
             this.display_view.show();
-            this.load_display_view();
+            if (this.regen_on_switch_tabs) {
+                this.load_display_view();
+            }
             window.cqApi.reevaluate(1);
         }
         else if (mode === 'ace') {
             this.display_view.hide();
             this.json_view.hide();
             this.ace_view.show();
-            this.load_ace_char_text();
+            if (this.regen_on_switch_tabs) {
+                this.load_ace_char_text();
+            }
+
         }
         else if (mode === 'json') {
             this.display_view.hide();
             this.json_view.show();
             this.ace_view.hide();
-            this.load_char_json();
+            if (this.regen_on_switch_tabs) {
+                this.load_char_json();
+            }
         }
     }
 
@@ -183,38 +234,71 @@ class CharacterEditorData {
         this.json_editor.set(json_obj);
     }
 
-    async regenerate_code() {
-        if (this.mode === 'ace') {
-            await this.apply_ace_char_text();
-        }
-        else if (this.mode === 'json') {
-            await this.apply_char_json();
-        }
-        await this.load_char_json();
-        await this.load_ace_char_text();
+    async refresh() {
+        // if (this.mode === 'ace') {
+        //     await this.apply_ace_char_text();
+        // }
+        // else if (this.mode === 'json') {
+        //     await this.apply_char_json();
+        // }
+        this.load_char_json();
+        this.load_ace_char_text();
+        this.load_display_view();
     }
 
     async save_file() {
         console.log("saving");
-        py.campaign.character.save_character(this.path);
+        await py.campaign.character.save_character(this.path);
+        this.update_edited_display(false);
+        // await this.on_general_change();
     }
 
     async revert_file() {
-        py.campaign.character.reload_character(this.path);
+        await py.campaign.character.reload_character(this.path);
+        this.update_edited_display(false);
+        this.refresh();
+    }
+
+    async update_edited_from_file() {
+        this.update_edited_display(await py.campaign.character.is_character_edited(this.path))
+    }
+
+    update_edited_display(is_changed = null) {
+        if (is_changed !== null) {
+            this.is_changed = is_changed;
+        }
+
+        let editor_tab = this.get_editor_tab().get()[0];
+        editor_tab.children[1].children[0].innerText = this.is_changed ? "*" : "";
+    }
+
+    async on_display_change() {
+        await this.on_general_change();
     }
 
     async on_ace_editor_change(e) {
-        // console.log('applying 1');
-        await this.apply_ace_char_text();
+        if ((await py.settings.get_current_settings())['game']['editors']['character']['auto_update_text_default']){
+            await this.apply_ace_char_text(false);
+        }
+        await this.on_general_change();
+    }
+    async on_json_editor_change (current_json) {
+        if ((await py.settings.get_current_settings())['game']['editors']['character']['auto_update_json_default']){
+            await this.apply_char_json();
+        }
+        await this.on_general_change();
     }
 
-    is_json_original() {
-        return JSON.stringify(this.get_json()) !== JSON.stringify(this.original_json);
+    async on_general_change() { //.get()[0]
+        // await py.campaign.character.is_character_edited(this.path) ? "*" : "";
+        if (!this.is_changed) {
+            this.update_edited_from_file();
+        }
+
+        this._should_check_is_changed = true;
+
     }
 
-    on_json_editor_change (current_json) {
-        this.apply_char_json();
-    }
 }
 
 

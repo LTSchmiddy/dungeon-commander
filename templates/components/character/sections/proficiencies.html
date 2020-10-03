@@ -1,0 +1,38 @@
+<details class="class-prof-list view-pane" open>
+    <summary class="view-pane-header">
+        Other Proficiencies:
+    </summary>
+    <div class="details-content">
+        <div class="prof-bonus">
+            <span class="label">Proficiency Bonus:</span> +{{ char.proficiency_bonus }}
+        </div>
+        <div class="weapon-profs">
+            <div class="label">
+                Weapons:
+            </div>
+            <div class="content">
+            {% for w in char.weapon_proficiencies %}
+                    {{ w.name }},
+            {% endfor %}
+            </div>
+        </div>
+
+        <div class="other-profs">
+            <div class="label">
+                Other Proficiencies:
+            </div>
+            <div class="content">
+                {{ char.proficiencies_text.capitalize() }}
+            </div>
+        </div>
+
+        <div class="languages">
+            <div class="label">
+                Languages Known:
+            </div>
+            <div class="content">
+                {{ ", ".join(char.all_languages).title() }}
+            </div>
+        </div>
+    </div>
+</details>

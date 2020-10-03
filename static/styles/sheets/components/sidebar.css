@@ -10,17 +10,55 @@
   position: absolute;
   left: 0;
   height: 100%;
-  width: 550px;
+  width: 300px;
 }
 
 div.sidebar-content {
   margin: 0;
   padding: 20px;
   width: calc(100% - 6px);
-  height: calc(100vh - 110px);
   float: left;
   overflow: scroll;
   overflow-wrap: unset;
+}
+
+div.campaign-dir-sidebar {
+  height: calc(100vh - 320px);
+}
+
+div.quick-dice-area {
+  position: absolute;
+  padding: 5px;
+  bottom: 0;
+  width: calc(100% - 6px);
+  height: 250px;
+}
+div.quick-dice-area .quick-dice-buttons {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+div.quick-dice-area .quick-dice-buttons button {
+  display: block;
+  width: 1fr;
+}
+div.quick-dice-area .quick-dice-text {
+  width: 100%;
+  text-align: center;
+}
+div.quick-dice-area .quick-dice-text input {
+  width: calc(100% - 50px);
+}
+div.quick-dice-area .quick-dice-text button {
+  width: 40px;
+}
+div.quick-dice-area .quick-dice-result {
+  width: 100%;
+  text-align: center;
+  vertical-align: center;
+  font-weight: bold;
+  font-size: 120px;
 }
 
 div.sidebar-content a {
@@ -47,7 +85,7 @@ div.sidebar-content a.sidebar-active {
   height: 100%;
   overflow: auto;
   padding: 10px;
-  width: calc(100vw - 550px);
+  width: calc(100vw - 300px);
 }
 
 /*# sourceMappingURL=sidebar.css.map */

@@ -18,7 +18,7 @@ class Fabricate(Spell):
     Creatures or
     magic items can't be created or transmuted by this spell. You also can't use it
     to create items that ordinarily require a high degree of craftsmanship, such as
-    jewelry, weapons, glass, or armor, unless you have proficiency with the type of
+    jewelry, weapon_list, glass, or armor, unless you have proficiency with the type of
     artisan's tools used to craft such objects.
     """
     name = "Fabricate"

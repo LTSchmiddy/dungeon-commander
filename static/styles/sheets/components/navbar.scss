@@ -22,3 +22,42 @@
         display: none;
     }
 }
+
+.tab-container {
+    //position: relative;
+    //right: 0;
+    display: inline-block;
+    top: 0;
+    height: 100%;
+    width: 80%;
+    margin: auto 0;
+    vertical-align: middle;
+    text-align: right;
+    align-self: stretch;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+
+
+    button {
+
+        //height: calc(100% - 20px);
+        //margin-top: 10px;
+
+    }
+
+    button.main-tab {
+        max-width: 150px;
+    }
+
+    button.secondary-tab {
+        width: 50px;
+    }
+
+
+    button.active-view {
+        background-color: lightgrey;
+        color: black;
+    }
+
+}

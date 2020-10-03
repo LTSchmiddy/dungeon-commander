@@ -1,5 +1,15 @@
 <details class="weapon">
-    <summary>{{ weapon.name }}</summary>
+    <summary>
+        {{ weapon.name }} - {{ weapon.damage }}
+        <div style="
+            display: inline-block;
+            float: right;
+            padding: 0 20px;
+        ">
+            <button class="btn-outline-primary" onclick="quick_dice_roll_skill('{{ weapon.attack_modifier }}')">Roll Attack</button>
+            <button class="btn-outline-primary" onclick="quick_dice_roll('{{ weapon.damage }}')">Roll Damage</button>
+        </div>
+    </summary>
     <div class="info">
         <div class="ability"><strong>Ability:</strong> {{ weapon.ability }}</div>
         <div class="attack_bonus"><strong>Attack Bonus:</strong> {{ weapon.attack_bonus }}</div>

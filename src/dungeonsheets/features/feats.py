@@ -101,15 +101,15 @@ class DefensiveDuelist(Feature):
 
 
 class DualWielder(Feature):
-    """You master fighting with two weapons, gaining the following benefits:
+    """You master fighting with two weapon_list, gaining the following benefits:
 
     • You gain a +1 bonus to AC while you are wielding a separate melee weapon
       in each hand.
 
-    • You can use two-weapon fighting even when the one-handed melee weapons you
+    • You can use two-weapon fighting even when the one-handed melee weapon_list you
       are wielding aren’t light.
 
-    • You can draw or stow two one-handed weapons when you would normally be
+    • You can draw or stow two one-handed weapon_list when you would normally be
       able to draw or stow only one.
     """
 
@@ -247,7 +247,7 @@ class HeavyArmorMaster(Feature):
     • Increase your Strength score by 1, to a maximum of 20.
 
     • While you are wearing heavy armor, bludgeoning, piercing, and slashing
-      damage that you take from non magical weapons is reduced by 3.
+      damage that you take from non magical weapon_list is reduced by 3.
 
     **Prerequisite**: Proficiency with heavy armor
     """
@@ -488,7 +488,7 @@ class Observant(Feature):
 
 
 class PolearmMaster(Feature):
-    """You can keep your enemies at bay with reach weapons. You gain
+    """You can keep your enemies at bay with reach weapon_list. You gain
     the following benefits:
 
     • When you take the Attack action and attack with only a glaive, halberd,
@@ -575,7 +575,7 @@ class Sentinel(Feature):
 
 
 class Sharpshooter(Feature):
-    """You have mastered ranged weapons and can make shots that others find
+    """You have mastered ranged weapon_list and can make shots that others find
     impossible. You gain the following benefits:
 
     • Attacking at long range doesn't impose disadvantage on your ranged weapon
@@ -666,12 +666,12 @@ class SpellSniper(Feature):
 
 
 class TavernBrawler(Feature):
-    """Accustomed to rough-and-tumble fighting using whatever weapons happen to
+    """Accustomed to rough-and-tumble fighting using whatever weapon_list happen to
     be at hand, you gain the following benefits:
 
     • Increase your Strength or Constitution score by 1, to a maximum of 20.
 
-    • You are proficient with improvised weapons and unarmed strikes.
+    • You are proficient with improvised weapon_list and unarmed strikes.
 
     • Your unarmed strike uses a d4 for damage.
 
@@ -701,7 +701,7 @@ class WarCaster(Feature):
       your concentration on a spell when you take damage.
 
     • You can perform the somatic components of spells even when you have
-      weapons or a shield in one or both hands.
+      weapon_list or a shield in one or both hands.
 
     • When a hostile creature’s movement provokes an opportunity attack from
       you, you can use your reaction to cast a spell at the creature, rather
@@ -716,12 +716,12 @@ class WarCaster(Feature):
 
 
 class WeaponMaster(Feature):
-    """You have practiced extensively with a variety of weapons, gaining
+    """You have practiced extensively with a variety of weapon_list, gaining
     the following benefits:
 
     • Increase your Strength or Dexterity score by 1, to a maximum of 20.
 
-    • You gain proficiency with four weapons of your choice.
+    • You gain proficiency with four weapon_list of your choice.
     """
 
     name = 'Weapon Master'
@@ -954,7 +954,7 @@ class DragonHide(Feature):
       this benefit.
 
     • You grow retractable claws from the tips of your fingers. Extending or
-      retracting the claws requires no action. The claws are natural weapons,
+      retracting the claws requires no action. The claws are natural weapon_list,
       which you can use to make unarmed strikes. If you hit with them, you deal
       slashing damage equal to 1d4 + your Strength modifier, instead of
       the normal bludgeoning damage for an unarmed strike.

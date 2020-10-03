@@ -42,29 +42,9 @@
 .character-view .char-ability-list table.details-content .modifier, .character-view .char-ability-list table.details-content .saving-throw, .character-view .char-ability-list table.details-content .score, .character-view .char-skill-list table.details-content .modifier, .character-view .char-skill-list table.details-content .saving-throw, .character-view .char-skill-list table.details-content .score {
   text-align: center;
 }
-.character-view .char-spell-list {
+.character-view .grid-wide {
   grid-column-start: 1;
   grid-column-end: 3;
-}
-
-.char-ace-view {
-  height: calc(100vh - 115px);
-}
-.char-ace-view .char-ace-view-editor {
-  position: relative;
-  width: calc(100%);
-  height: calc(100% - 80px);
-}
-.char-ace-view .char-ace-view-status {
-  position: relative;
-  width: calc(100%);
-  padding: 0 10px;
-}
-.char-ace-view .char-ace-view-status.valid {
-  color: green;
-}
-.char-ace-view .char-ace-view-status.invalid {
-  color: red;
 }
 
 @media screen and (max-width: 640px) {

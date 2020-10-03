@@ -190,7 +190,7 @@ class Samurai(SubClass):
 class Gunslinger(SubClass):
     """Most warriors and combat specialists spend their years perfecting the
     classic arts of swordplay, archery, or polearm tactics. Whether duelist or
-    infantry, martial weapons were seemingly perfected long ago, and the true
+    infantry, martial weapon_list were seemingly perfected long ago, and the true
     challenge is to master them.
 
     However, some minds couldn't stop with the innovation of the
@@ -200,7 +200,7 @@ class Gunslinger(SubClass):
     the first firearms.
 
     This archetype focuses on the ability to design, craft, and utilize
-    powerful, yet dangerous ranged weapons. Through creative innovation and
+    powerful, yet dangerous ranged weapon_list. Through creative innovation and
     immaculate aim, you become a distance force of death on the
     battlefield. However, not being a perfect science, firearms carry an
     inherent instability that can occastionally leave you without a functional
@@ -228,14 +228,14 @@ class Fighter(CharClass):
     """
     Fighters are perhaps the most diverse class of characters in the worlds of Dungeons & Dragons. Questing knights,
     conquering overlords, royal champions, elite foot soldiers, hardened mercenaries, and bandit kings—as fighters,
-    they all share an unparalleled mastery with weapons and armor, and a thorough knowledge of the skills of combat.
+    they all share an unparalleled mastery with weapon_list and armor, and a thorough knowledge of the skills of combat.
     And they are well acquainted with death, both meting it out and staring it defiantly in the face.
 
     # Well-Rounded Specialists
     Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a
     longsword or a greatsword, use a bow, and even trap foes in a net with some degree of skill. Likewise, a fighter is
     adept with shields and every form of armor. Beyond that basic degree of familiarity, each fighter specializes in a
-    certain style of combat. Some concentrate on archery, some on fighting with two weapons at once, and some on
+    certain style of combat. Some concentrate on archery, some on fighting with two weapon_list at once, and some on
     augmenting their martial skills with magic. This combination of broad general ability and extensive specialization
     makes fighters superior combatants on battlefields and in dungeons alike.
 
@@ -254,13 +254,13 @@ class Fighter(CharClass):
     subclass_select_level = 3
     saving_throw_proficiencies = ('strength', 'constitution')
     primary_abilities = ('strength', 'dexterity',)
-    _proficiencies_text = ('All armor', 'shields', 'simple weapons',
-                           'martial weapons')
+    _proficiencies_text = ('All armor', 'shields', 'simple weapon_list',
+                           'martial weapon_list')
     weapon_proficiencies = (weapons.SimpleWeapon, weapons.MartialWeapon)
     multiclass_weapon_proficiencies = weapon_proficiencies
     _multiclass_proficiencies_text = ('light armor', 'medium armor',
-                                      'shields', 'simple weapons',
-                                      'martial weapons')
+                                      'shields', 'simple weapon_list',
+                                      'martial weapon_list')
     class_skill_choices = ('Acrobatics', 'Animal Handling',
                            'Athletics', 'History', 'Insight', 'Intimidation',
                            'Perception', 'Survival')

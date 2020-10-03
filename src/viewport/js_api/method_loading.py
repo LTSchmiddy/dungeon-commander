@@ -3,13 +3,14 @@ import json
 import anon_func as af
 
 from typing import Type
+import game
 
 # import viewport
 
 from viewport.js_api import JsApi
 import viewport
 
-
+# "".is
 from viewport.js_api.modules import file, std, mod_settings, campaign
 
 

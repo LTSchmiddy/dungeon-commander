@@ -439,7 +439,7 @@ class EarthGenasi(_Genasi):
 class FireGenasi(_Genasi):
     name = "Fire Genasi"
     intelligence_bonus = 1
-    features = (feats.Darkvision, feats.FireResistance,
+    features = (feats.FireGenasiDarkvision, feats.FireResistance,
                 feats.ReachToTheBlaze)
 
 
@@ -488,7 +488,7 @@ class HobGoblin(Race):
     size = 'medium'
     speed = 30
     features = (feats.Darkvision, feats.SavingFace)
-    proficiencies_text = ('light armor', '[Chose two martial melee weapons]')
+    proficiencies_text = ('light armor', '[Chose two martial melee weapon_list]')
     languages = ("Common", "Goblin")
 
 class Kobold(Race):

@@ -21,13 +21,13 @@ class UnarmoredDefenseMonk(Feature):
 
 class MartialArts(Feature):
     """At 1st level, your practice of martial arts gives you mastery of combat
-    styles that use unarmed strikes and monk weapons, which are shortswords and
-    any simple melee weapons that don't have the two-handed or heavy
+    styles that use unarmed strikes and monk weapon_list, which are shortswords and
+    any simple melee weapon_list that don't have the two-handed or heavy
     property. You gain the following benefits while you are unarmed or wielding
-    only monk weapons and you aren't wearing armor or wielding a shield:
+    only monk weapon_list and you aren't wearing armor or wielding a shield:
 
     • You can use Dexterity instead of Strength for the attack and damage rolls
-    of your unarmed strikes and monk weapons.
+    of your unarmed strikes and monk weapon_list.
 
     • You can roll a d4 in place of the normal damage of your unarmed strike or
     monk weapon. This die changes as you gain monk levels, as shown in the
@@ -39,7 +39,7 @@ class MartialArts(Feature):
     also make an unarmed strike as a bonus action, assuming you haven't already
     taken a bonus action this turn.
 
-    Certain monasteries use specializepd forms of the monk weapons. For
+    Certain monasteries use specializepd forms of the monk weapon_list. For
     example, you might use a club that is two lengths of w ood connected by a
     short chain (called a nunchaku) or a sickle with a shorter, straighter
     blade (called a kama). Whatever name you use for a monk weapon, you can use
@@ -52,7 +52,7 @@ class MartialArts(Feature):
 
     def weapon_func(self, weapon: weapons.Weapon, **kwargs):
         """
-        Update increasing damage dice and DEX mod of Monk weapons
+        Update increasing damage dice and DEX mod of Monk weapon_list
         """
         is_monk_weapon = any([isinstance(weapon, w)
                               for w in weapons.monk_weapons])
@@ -834,17 +834,17 @@ class IntoxicatedFrenzy(Feature):
 # Way of the Kensei
 class PathOfTheKensei(Feature):
     """When you choose this tradition at 3rd level, your spe- cial martial arts
-    training leads you to master the use of certain weapons. This path also
+    training leads you to master the use of certain weapon_list. This path also
     includes instruction in the deft strokes of calligraphy or painting. You
     gain the following benefits.
 
-    **Kensei Weapons**: Choose two types of weapons to be your kensei weapons:
-    one melee weapon and one ranged weapon. Each of these weapons can be any
+    **Kensei Weapons**: Choose two types of weapon_list to be your kensei weapon_list:
+    one melee weapon and one ranged weapon. Each of these weapon_list can be any
     sim- ple or martial weapon that lacks the heavy and special properties. The
-    longbow is also a valid choice. You gain proficiency with these weapons if
-    you don't already have it. Weapons of the chosen types are monk weapons for
+    longbow is also a valid choice. You gain proficiency with these weapon_list if
+    you don't already have it. Weapons of the chosen types are monk weapon_list for
     you. Many of this tradition's features work only with your kensei
-    weapons. When you reach 6th, 11th, and 17th level in this class. you can
+    weapon_list. When you reach 6th, 11th, and 17th level in this class. you can
     choose another type of weapon-either melee or ranged-to be a kensei weapon
     for you. following the criteria above.
 
@@ -857,7 +857,7 @@ class PathOfTheKensei(Feature):
     **Kensei's Shot**: You can use a bonus action on your turn to make your
     ranged attacks with a kensei weapon more deadly. When you do so, any target
     you hit with a ranged attack using a kensei weapon takes an extra 1d4
-    damage of the weapons type. You retain this benefit un- til the end of the
+    damage of the weapon_list type. You retain this benefit un- til the end of the
     current turn.
 
     **Way ofthe Brush**: You gain proficiency with your choice of
@@ -872,7 +872,7 @@ class OneWithTheBlade(Feature):
     """At 6th level, you extend your ki into your kensei weap- ons, granting you
     the following benefits.
 
-    **Magic Kensei Weapons**: Your attacks with your kensei weapons count as
+    **Magic Kensei Weapons**: Your attacks with your kensei weapon_list count as
     magical for the purpose of over- coming resistance and immunity to
     nonmagical attacks and damage
 
@@ -901,7 +901,7 @@ class SharpenTheBlade(Feature):
 
 
 class UnerringAccuracy(Feature):
-    """At 17th level, your mastery of weapons grants you ex- traordinary
+    """At 17th level, your mastery of weapon_list grants you ex- traordinary
     accuracy. Ifyou miss with an attack roll using a monk weapon on your turn,
     you can reroll it. You can use this feature only once on each of your
     turns.

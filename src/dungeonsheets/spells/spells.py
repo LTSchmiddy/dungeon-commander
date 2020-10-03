@@ -1,6 +1,9 @@
 import inspect
 import markdown2
 
+# from dungeonsheets.stats import AbilityScore
+
+
 def create_spell(**params):
     """Create a new subclass of ``Spell`` with given default parameters.
     
@@ -36,12 +39,16 @@ class Spell():
     _concentration = False
     magic_school = ""
     classes = ()
+
+    casting_ability: (str, None) = None
+    source_str: (str, None) = None
+    owner = None
     
     def __str__(self):
         if len(self.components) == 0:
-            s = self.name
+            s = self.get_id()
         else:
-            s = self.name + ' ({:s}) '.format(','.join(self.components))
+            s = self.get_id() + ' ({:s}) '.format(','.join(self.components))
         # Indicate if this is a ritual or a concentration
         indicators = [('R', self.ritual), ('C', self.concentration), ('$', self.special_material)]
         indicators = tuple(letter for letter, is_active in indicators if is_active)
@@ -50,7 +57,7 @@ class Spell():
         return s
     
     def __repr__(self):
-        return "\"{:s}\"".format(self.name)
+        return "\"{:s}\"".format(self.get_id())
         # return "\"{:s}\"".format(self.name)
 
     def __eq__(self, other):
@@ -58,6 +65,11 @@ class Spell():
 
     def __hash__(self):
         return 0
+
+    def __init__(self, casting_ability="", owner=None, source_str=""):
+        self.casting_ability = casting_ability
+        self.owner = owner
+        self.source_str = source_str
 
     @classmethod
     def get_id(cls):
@@ -118,3 +130,21 @@ class Spell():
     def get_db_spell(self):
         import db
         return db.Session.query(db.tables.DB_Spell).filter(db.tables.DB_Spell.id == self.get_id()).first()
+
+    @property
+    def get_spellcasting_ability_value(self):
+        if self.owner is None:
+            return None
+        return self.owner.get_char_attr(self.casting_ability)
+
+    @property
+    def spell_save_dc(self):
+        if self.owner is None:
+            return None
+        return 8 + self.get_spellcasting_ability_value.modifier + self.owner.proficiency_bonus
+
+    @property
+    def spell_attack_modifier(self):
+        if self.owner is None:
+            return None
+        return self.get_spellcasting_ability_value.modifier + self.owner.proficiency_bonus

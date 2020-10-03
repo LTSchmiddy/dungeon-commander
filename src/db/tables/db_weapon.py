@@ -8,6 +8,8 @@ from sqlalchemy.orm import relationship
 import markdown2
 import db
 
+from dungeonsheets import weapons, stats, character
+
 
 class DB_Weapon(db.Base):
     __tablename__ = 'weapon'
@@ -22,6 +24,7 @@ class DB_Weapon(db.Base):
     type = Column(String, default="Armor")
 
     base_class = Column(String, default="Weapon")
+    improved = Column(Integer, default=0)
     ability = Column(String, default="strength")
     attack_bonus = Column(Integer, default=0)
     base_damage = Column(String, default="1d4")
@@ -39,6 +42,16 @@ class DB_Weapon(db.Base):
         return '\"{:s}\"'.format(str(self))
 
 
+    def create_object(self, wielder: (character.Character, None) = None):
+        # try:
+        NewWeaponClass = stats.findattr(weapons, self.base_class)
+        # except AttributeError:
+        #     raise AttributeError(f'Weapon class "{weapon}" is not defined')
+        weapon_ = NewWeaponClass(wielder=wielder)
+        weapon_.load_dict(self._original_json)
+        return weapon_
+
+    
     @staticmethod
     def add_json(json_data: dict):
         this_item = db.Session.query(DB_Weapon).filter(DB_Weapon.id==json_data["id"]).first()
@@ -61,6 +74,7 @@ class DB_Weapon(db.Base):
         this_item.type = json_data["type"]
 
         this_item.base_class = json_data["base_class"]
+        this_item.improved = json_data["improved"]
         this_item.ability = json_data["ability"]
         this_item.attack_bonus = json_data["attack_bonus"]
         this_item.base_damage = json_data["base_damage"]

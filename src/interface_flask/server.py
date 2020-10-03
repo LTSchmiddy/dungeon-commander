@@ -42,13 +42,16 @@ app.config['TEMPLATES_AUTO_RELOAD'] = True
 from interface_flask.pages import pages
 from interface_flask.panes import panes, campaign, database
 from interface_flask.api import api
+from interface_flask.remote import remote
 import db
 
 @app.context_processor
 def jinja2_values():
+    import dungeonsheets
 
     return dict(
         settings=settings,
+        campaign=campaign.current,
         int=int,
         str=str,
         tuple=tuple,
@@ -60,6 +63,7 @@ def jinja2_values():
         exec=exec,
         eval=eval,
         filter=filter,
+        ds=dungeonsheets,
         ordinal=lambda n: "%d%s" % (n, "tsnrhtdd"[(n // 10 % 10 != 1) * (n % 10 < 4) * n % 10::4]),
         md=markdown2.markdown,
         db=db,
@@ -72,4 +76,5 @@ app.register_blueprint(panes, url_prefix='/panes/')
 app.register_blueprint(campaign.campaign_view, url_prefix='/panes/campaign_view')
 app.register_blueprint(database.database_view, url_prefix='/panes/database_view')
 app.register_blueprint(api, url_prefix='/api/')
+app.register_blueprint(remote, url_prefix='/remote/')
 

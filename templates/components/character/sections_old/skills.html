@@ -1,0 +1,46 @@
+<details class="char-skill-list view-pane" open>
+    <summary class="view-pane-header">Skill Proficiencies:</summary>
+    <table class="details-content table">
+        <tr class="">
+            <th class="base_stat">Ability</th>
+            <th class="label">Skill</th>
+            <th class="modifier">Modifier</th>
+            <th class="roll-check"></th>
+            <th class="proficient">Proficiency</th>
+        </tr>
+    {% for s in [
+        "acrobatics",
+        "animal_handling",
+        "arcana",
+        "athletics",
+        "deception",
+        "history",
+        "insight",
+        "intimidation",
+        "investigation",
+        "medicine",
+        "nature",
+        "perception",
+        "performance",
+        "persuasion",
+        "religion",
+        "sleight_of_hand",
+        "stealth",
+        "survival"
+    ] %}
+        <tr class="skill {{ s }}">
+            <td class="base_stat">{{ char.get_char_attr(s).base_ability.capitalize()  }}</td>
+            <td class="label"> {{ s.title().replace("_", " ") }}</td>
+            <td class="modifier">{{ char.get_char_attr(s).value_str }}</td>
+            <td class="roll-check"><button class="btn-primary">Roll Check</button></td>
+            {% if s in char.skill_expertise %}
+                <td class="proficient">Expert</td>
+            {% elif s in char.all_skill_proficiencies %}
+                <td class="proficient">Proficient</td>
+            {% else %}
+                <td class="proficient"></td>
+            {% endif %}
+        </tr>
+    {% endfor %}
+    </table>
+</details>

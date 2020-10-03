@@ -1,0 +1,56 @@
+<details class="grid-wide view-pane" open>
+    <summary class="view-pane-header">Spells Prepared</summary>
+    <div class="details-content">
+        {% for i in range(0, 10) if (char.spell_slots(i) != 0) %}
+            <div>
+                {{ af.tget(i==0, "Cantrips", ordinal(i) + " Level Spell Slots") }}:
+                 {% if i != 0 %}
+                    <input
+                        id="char-editor{{ char.loaded_id }}-spell-slots"
+                        type="number"
+                        step="1"
+                        min="0"
+                        max="{{ char.spell_slots(i) }}"
+                        value="{{ char.get_current_spellslot(i) }}"
+                        style="
+                            width: 40px;
+                            {#background-color: #00000000;#}
+                            border: none;
+                        "
+                        onchange="
+                            {#console.log(this);#}
+                            {#console.log({{ char.loaded_id }});#}
+                            py.exec(
+                                `
+                                    if new_spellslots.isdigit():
+                                        game.current.loaded_chars[cid].set_current_spellslot({{ i }}, int(new_spellslots))
+                                    else:
+                                        game.current.loaded_chars[cid].set_current_spellslot({{ i }},0)
+                                `,
+                                {cid: {{ char.loaded_id }}, new_spellslots: this.value}
+                            );
+                            mod_editor_opened_tabs['{{ char.loaded_id }}'].data_obj.on_general_change();
+                        "
+                    > /
+                {% endif %}
+                {{ char.spell_slots(i) }}
+            </div>
+            {% with spells = filter(af.func("x", "return x.level == " + str(i)), char.spells_prepared) %}
+                {% include "components/spells/spell_list.html" %}
+            {% endwith %}
+        {% endfor %}
+    </div>
+</details>
+<details class="grid-wide view-pane">
+    <summary class="view-pane-header">Spells Known</summary>
+    <div class="details-content">
+        {% for i in range(0, 10) if (char.spell_slots(i) != 0) %}
+            <div>
+                {{ af.tget(i==0, "Cantrips", ordinal(i) + " Level Spell Slots") }}:
+            </div>
+            {% with spells = filter(af.func("x", "return x.level == " + str(i)), char.spells) %}
+                {% include "components/spells/spell_list.html" %}
+            {% endwith %}
+        {% endfor %}
+    </div>
+</details>

@@ -8,7 +8,8 @@
     let settings_container = $('#settings-view');
 
     let settings_editor = new JSONEditor(settings_container.get()[0], {
-        mode: 'form'
+        {#mode: 'form'#}
+        mode: 'tree'
     });
 
     async function settings_editor_load_settings() {
@@ -22,8 +23,6 @@
     window.addEventListener('pywebviewready', function() {
         settings_editor_load_settings();
     });
-
-
 
 
 </script>

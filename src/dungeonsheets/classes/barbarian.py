@@ -161,10 +161,10 @@ class Barbarian(CharClass):
     primary_abilities = ('strength',)
     weapon_proficiencies = (weapons.SimpleWeapon, weapons.MartialWeapon)
     _proficiencies_text = ('light armor', 'medium armor', 'shields',
-                           'simple weapons', 'martial weapons')
+                           'simple weapon_list', 'martial weapon_list')
     multiclass_weapon_proficiencies = weapon_proficiencies
-    _multiclass_proficiencies_text = ('shields', 'simple weapons',
-                                      'martial weapons')
+    _multiclass_proficiencies_text = ('shields', 'simple weapon_list',
+                                      'martial weapon_list')
     class_skill_choices = ('Animal Handling', 'Athletics',
                            'Intimidation', 'Nature', 'Perception', 'Survival')
     subclasses_available = (BerserkerPath, TotemWarriorPath, BattleragerPath,

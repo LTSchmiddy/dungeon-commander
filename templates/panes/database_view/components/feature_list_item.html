@@ -5,11 +5,11 @@
 {% endif %}
 
 {# Feature Spells #}
-{% if hasattr(feature, '_spells') %}
+{% if hasattr(feature, '_specialist_spells') %}
     <h2>Spells</h2>
     <ul class="spell-info">
 
-        {% for key, value in feature._spells.items() %}
+        {% for key, value in feature._specialist_spells.items() %}
 
             <li>
                 <strong>Level {{ key }}:</strong>

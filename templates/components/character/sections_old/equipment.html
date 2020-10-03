@@ -1,0 +1,26 @@
+<details class="char-equipment view-pane" open>
+    <summary class="view-pane-header">Equipment</summary>
+    <details class="weapons details-content" open>
+        <summary>
+            Weapons
+        </summary>
+        <div class="sub-content">
+            {% for weapon in char.weapons %}
+                {% include "components/inventory/weapon.html" %}
+            {% endfor %}
+        </div>
+
+    </details>
+
+    <details class="magic-items details-content" open>
+        <summary>
+            Magic Items
+        </summary>
+        <div class="sub-content">
+            {% for item in char.magic_items %}
+                {% include "components/inventory/magic_item.html" %}
+            {% endfor %}
+        </div>
+
+    </details>
+</details>

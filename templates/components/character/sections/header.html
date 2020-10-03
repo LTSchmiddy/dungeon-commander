@@ -1,0 +1,58 @@
+<div class="char-header left char-grid-item">
+    <div class="char-name"><span class="label">Name:</span> {{ char.name }}</div>
+    <div class="char-class-level"><span class="label">Class:</span> {{ char.classes_and_levels }}</div>
+    <div class="char-race"><span class="label">Race:</span> {{ char.race.name }}</div>
+    <div class="char-alignment"><span class="label">Alignment:</span> {{ char.alignment }}</div>
+    <div class="char-background"><span class="label">Background:</span> {{ char.background.name }}</div>
+</div>
+<div class="char-header right char-grid-item">
+    <div class="char-hp"><label for="char-editor{{ char.loaded_id }}-hp" class="label">HP:</label>
+        <input
+            id="char-editor{{ char.loaded_id }}-hp"
+            type="number"
+            step="1"
+            min="0"
+            max="{{ char.hp_max }}"
+            value="{{ char.hp_current }}"
+            style="
+                width: 40px;
+                {#background-color: #00000000;#}
+                border: none;
+            "
+            onchange="
+                {#console.log(this);#}
+                {#console.log({{ char.loaded_id }});#}
+                py.campaign.character.set_char_attr({{ char.loaded_id }}, 'hp_current', this.value, 'int');
+                mod_editor_opened_tabs['{{ char.loaded_id }}'].data_obj.on_general_change();
+            "
+        >
+        <span class="label">Max:</span> {{ char.hp_max }}
+    </div>
+    <div class="char-speed"><span class="label">Speed:</span> {{ char.speed }} ft. </div>
+    <div class="char-armor-class"><span class="label">Armor Class:</span> {{ char.armor_class }} </div>
+    <div class="char-initiative"><span class="label">Initiative:</span> {{ char.initiative }} </div>
+
+    <div class="char-name">
+        <label class="label" for="char-editor{{ char.loaded_id }}-inspiration">Inspiration:</label>
+        <input
+            id="char-editor{{ char.loaded_id }}-inspiration"
+            type="checkbox"
+            onchange="
+                py.campaign.character.set_char_attr({{ char.loaded_id }}, 'inspiration', this.checked, 'bool');
+                mod_editor_opened_tabs['{{ char.loaded_id }}'].data_obj.on_general_change();
+            "
+        {{ af.tget(char.inspiration, "checked", "") }}>
+    </div>
+
+</div>
+
+{#
+py.exec(
+    `
+        if new_hp.isdigit():
+            game.current.loaded_chars[cid].hp_current = int(new_hp)
+        else:
+            game.current.loaded_chars[cid].hp_current = 0
+    `,
+    {cid: {{ char.loaded_id }}, new_hp: this.value}
+);#}

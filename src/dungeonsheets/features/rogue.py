@@ -1,5 +1,6 @@
 from math import ceil
 
+from dungeonsheets.features.spellcasting import SpellcastingAbility
 from dungeonsheets.features.features import Feature
 from dungeonsheets import spells
 
@@ -262,7 +263,7 @@ class DeathStrike(Feature):
 
 
 # Arcane Trickster
-class ArcaneTricksterSpellcasting(Feature):
+class ArcaneTricksterSpellcasting(SpellcastingAbility):
     """
     When you reach 3rd level, you augment your martial prowess with the ability to cast spells.
 
@@ -306,6 +307,7 @@ class ArcaneTricksterSpellcasting(Feature):
     """
     name = "Arcane Trickster Spellcasting"
     source = "Rogue (Arcane Trickster)"
+    spell_learning_type = SpellcastingAbility.SpellLearningType.KNOWN
 
 class MageHandLegerdemain(Feature):
     """Starting at 3rd level, when you cast mage hand, you can make the spectral

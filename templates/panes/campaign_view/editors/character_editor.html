@@ -9,14 +9,25 @@
 {% block topbar %}
     <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.save_file()" class="filesave-btn btn-primary">SAVE</button>
     <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.revert_file() " class="filerevert-btn btn-primary">REVERT</button>
-    <span style="padding-left: 30px">Editor Mode:</span>
-    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.set_editor_mode('display') " class="filerevert-btn btn-secondary">Display</button>
-    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.set_editor_mode('json') " class="filerevert-btn btn-secondary">JSON</button>
-    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.set_editor_mode('ace') " class="filerevert-btn btn-secondary">Text</button>
-    -
-{#    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.apply_ace_char_text() " class="filerevert-btn btn-secondary">Apply</button>#}
-    <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.regenerate_code() " class="filerevert-btn btn-secondary">Regenerate</button>
 
+{#    {% if campaign.is_dm %}#}
+        <span style="padding-left: 30px">Editor Mode:</span>
+        <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.change_editor_mode('display') " class="filerevert-btn btn-secondary">Display</button>
+        <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.change_editor_mode('json') " class="filerevert-btn btn-secondary">JSON</button>
+        <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.change_editor_mode('ace') " class="filerevert-btn btn-secondary">Text</button>
+        -
+        <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.apply_char() " class="filerevert-btn btn-secondary">Apply</button>
+        <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.refresh()" class="filerevert-btn btn-secondary">Refresh</button>
+        <label>Auto-Refresh: <input
+                type="checkbox"
+                onclick="
+                            console.log(this.checked);
+                            mod_editor_opened_tabs['{{ path }}'].data_obj.regen_on_switch_tabs = this.checked;
+                        "
+                class="filerevert-btn"
+                checked
+        ></label>
+{#    {% endif %}#}
 {% endblock %}
 {% block content %}
     <div class="char-display-view" data-char-display-id="{{ path }}"></div>

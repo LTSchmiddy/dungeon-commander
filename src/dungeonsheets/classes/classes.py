@@ -2,7 +2,12 @@ import inspect
 from collections import defaultdict
 import markdown2
 
-from dungeonsheets.features import Feature, FeatureSelector
+# from dungeonsheets import Character
+from dungeonsheets.features.features import Feature, FeatureSelector
+from dungeonsheets.features.spellcasting import SpellcastingAbility
+from dungeonsheets.stats import *
+
+
 
 
 class CharClass:
@@ -31,6 +36,10 @@ class CharClass:
     subclasses_available = ()
     features_by_level = defaultdict(list)
 
+    spellcasting: (SpellcastingAbility, None) = None
+
+    # owner: Character
+
     def __init__(self, level, owner=None, subclass=None, feature_choices=[],
                  **params):
         self.level = level
@@ -46,6 +55,9 @@ class CharClass:
                 if issubclass(f, FeatureSelector):
                     fs.append(f(owner=self.owner,
                                 feature_choices=feature_choices))
+                elif issubclass(f, SpellcastingAbility):
+                    self.spellcasting = f(owner=self.owner, owning_class=self)
+                    fs.append(self.spellcasting)
                 elif issubclass(f, Feature):
                     fs.append(f(owner=self.owner))
             self.features_by_level[i] = fs
@@ -83,6 +95,9 @@ class CharClass:
                 if issubclass(f, FeatureSelector):
                     fs.append(f(owner=self.owner,
                                 feature_choices=feature_choices))
+                elif issubclass(f, SpellcastingAbility):
+                    self.spellcasting = f(owner=self.owner, owning_class=subcls)
+                    fs.append(self.spellcasting)
                 elif issubclass(f, Feature):
                     fs.append(f(owner=self.owner))
             self.features_by_level[i].extend(fs)
@@ -165,6 +180,9 @@ class CharClass:
         else:
             return self.spell_slots_by_level[self.level][spell_level]
 
+    def get_spellcasting_ability_value(self) -> AbilityScore:
+        return self.owner.get_char_attr(self.spellcasting_ability)
+
     def __str__(self):
         s = 'Level {:d} {:s}'.format(self.level, self.name)
         if isinstance(self.subclass, SubClass):
@@ -230,3 +248,5 @@ class SubClass:
         return self.get_desc()
 
 
+    def get_spellcasting_ability_value(self) -> AbilityScore:
+        return self.owner.get_char_attr(self.spellcasting_ability)

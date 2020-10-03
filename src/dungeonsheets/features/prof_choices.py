@@ -9,6 +9,7 @@ class ExtraToolProficiencyBase(Feature):
     blank_message = "[Choose a tool]"
     proficiencies_text = (blank_message,)
 
+
     def __init__(self, owner=None):
         super(ExtraToolProficiencyBase, self).__init__(owner=None)
 

@@ -1,0 +1,12 @@
+{
+    "base_armor_class": 2,
+    "base_class": "Shield",
+    "cost": "10 gp",
+    "description": "",
+    "id": "BasicShield",
+    "improved": 0,
+    "name": "Shield",
+    "rarity": "common",
+    "type": "shield",
+    "weight": 0
+}

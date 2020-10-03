@@ -1,0 +1,12 @@
+{
+    "base_armor_class": 0,
+    "base_class": "NoShield",
+    "cost": "0",
+    "description": "",
+    "id": "BasicNoShield",
+    "improved": 0,
+    "name": "No shield",
+    "rarity": "common",
+    "type": "shield",
+    "weight": 0
+}

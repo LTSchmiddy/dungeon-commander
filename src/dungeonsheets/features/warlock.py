@@ -1,13 +1,13 @@
 from dungeonsheets import spells, weapons
 from dungeonsheets.features.features import Feature, FeatureSelector
-
+from dungeonsheets.features.spellcasting import SpellcastingAbility
 from dungeonsheets.features import BasicAbilityScoreImprovement
 
 class WarlockAbilityScoreImprovement(BasicAbilityScoreImprovement):
     name = "Warlock Ability Score Improvement"
     source = "Warlock"
 
-class OtherworldlyPatron(Feature):
+class OtherworldlyPatron(SpellcastingAbility):
     """
     At 1st level, you have struck a bargain with an otherworldly being of your choice. Your choice grants you features
     at 1st level and again at 6th, 10th, and 14th level.
@@ -54,6 +54,7 @@ class OtherworldlyPatron(Feature):
     """
     name = "Otherworldly Patron"
     source = "Warlock"
+    spell_learning_type = SpellcastingAbility.SpellLearningType.KNOWN
 
 
 # All Invocations
@@ -836,8 +837,8 @@ class DarkOnesOwnLuck(Feature):
 class FiendishResilience(Feature):
     """Starting at 10th level, you can choose one damage type when you finish a
     short or long rest. You gain resistance to that damage type until you
-    choose a different one with this feature. Damage from magical weapons or
-    silver weapons ignores this resistance.
+    choose a different one with this feature. Damage from magical weapon_list or
+    silver weapon_list ignores this resistance.
 
     """
     name = "Fiendish Resilience"
@@ -1058,7 +1059,7 @@ class HexbladesCurse(Feature):
 class HexWarrior(Feature):
     """At lst level, you acquire the training necessary to effectively arm
     yourself for battle. You gain proficiency with medium armor, shields, and
-    martial weapons.
+    martial weapon_list.
 
     The influence of your patron also allows you to mystically channel your
     will through a particular weapon. Whenever you finish a long rest, you can

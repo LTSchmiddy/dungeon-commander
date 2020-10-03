@@ -4,19 +4,27 @@ from dungeonsheets.item import Item
 
 class Shield(Item):
     """A shield that can be worn on one hand."""
+    id = ""
     name = "Shield"
     cost = "10 gp"
     base_armor_class = 2
+    type = "shield"
 
     json_attributes = Item.json_attributes + (
         "base_armor_class",
     )
     
     def __str__(self):
-        return self.name
+        return self.id
 
     def __repr__(self):
-        return "\"{:s}\"".format(self.name)
+        # return "\"{:s}\"".format(self.name)
+        return "\"{:s}\"".format(self.id)
+
+    @staticmethod
+    def related_db():
+        from db.tables import DB_Armor
+        return DB_Armor
 
     @classmethod
     def improved_version(cls, bonus):
@@ -27,6 +35,19 @@ class Shield(Item):
             base_armor_class = cls.base_armor_class + bonus
             
         return NewShield
+
+    @classmethod
+    def to_base_dict(cls):
+        retVal = cls().save_dict()
+
+        use_id = cls.id
+        if use_id == "":
+            use_id = "Basic" + cls.__name__
+
+        retVal['id'] = use_id
+        retVal['base_class'] = cls.__name__
+        retVal['improved'] = 0
+        return retVal
 
 
 class WoodenShield(Shield):
@@ -44,9 +65,10 @@ class NoShield(Shield):
     cost = "0"
     base_armor_class = 0
     
-    def __str__(self):
-        return self.name
+    # def __str__(self):
+    #     return self.name
 
+all_shields = (Shield, WoodenShield, ShieldOfFaces, NoShield)
 
 class Armor(Item):
     """A piece of armor that can be worn.
@@ -79,7 +101,6 @@ class Armor(Item):
         "stealth_disadvantage",
         "strength_required",
     )
-
     id = ""
     base_class = ""
     name = "Unknown Armor"
@@ -92,10 +113,15 @@ class Armor(Item):
     weight = 0  # In lbs
     
     def __str__(self):
-        return self.name
+        return self.id
 
     def __repr__(self):
-        return "\"{:s}\"".format(self.name)
+        return "\"{:s}\"".format(self.id)
+
+    @staticmethod
+    def related_db():
+        from db.tables import DB_Shield
+        return DB_Shield
 
     @classmethod
     def improved_version(cls, bonus):
@@ -251,6 +277,6 @@ class ElvenChain(MediumArmor):
 
 armor_types = [LightArmor, MediumArmor, HeavyArmor]
 light_armors = [PaddedArmor, LeatherArmor, StuddedLeatherArmor]
-medium_armors = [HideArmor, ChainShirt, ScaleMail, Breastplate, HalfPlate]
+medium_armors = [HideArmor, ChainShirt, ScaleMail, Breastplate, HalfPlate, ElvenChain]
 heavy_armors = [RingMail, ChainMail, SplintArmor, PlateMail]
 all_armors = light_armors + medium_armors + heavy_armors

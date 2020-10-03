@@ -22,7 +22,7 @@ def findattr(obj, name):
     """
     # Come up with several options
     name = name.strip()
-    # check for +X weapons, armor, shields
+    # check for +X weapon_list, armor, shields
     bonus = 0
     for i in range(1, 11):
         if (f'+{i}' in name) or (f'+ {i}' in name):
@@ -54,7 +54,7 @@ def mod_str(modifier):
         return '{:+}'.format(modifier)
 
 
-AbilityScore = namedtuple('AbilityScore', ('value', 'modifier', 'saving_throw', 'base_value', 'modifier_str', 'saving_throw_str'))
+AbilityScore = namedtuple('AbilityScore', ('value', 'modifier', 'saving_throw', 'base_value', 'modifier_str', 'saving_throw_str', 'base_modifier'))
 SkillScore = namedtuple('SkillScore', ('value', 'value_str', 'base_ability'))
 
 
@@ -92,6 +92,7 @@ class Ability:
             r_mod = getattr(character.race, self.ability_name + "_bonus")
             score += r_mod
 
+        base_modifier = math.floor((base_score - 10) / 2)
         modifier = math.floor((score - 10) / 2)
         # Check for proficiency
         saving_throw = modifier
@@ -106,7 +107,8 @@ class Ability:
             saving_throw=saving_throw,
             base_value=base_score,
             modifier_str=mod_str(modifier),
-            saving_throw_str=mod_str(saving_throw)
+            saving_throw_str=mod_str(saving_throw),
+            base_modifier=base_modifier
         )
 
         return value

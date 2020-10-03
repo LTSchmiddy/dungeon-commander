@@ -1,0 +1,17 @@
+ <details class="char-feature-list view-pane" open>
+    <summary class="view-pane-header">Character Features:</summary>
+    <div class="details-content">
+        {% for f in char.features %}
+            <details class="char-feature" data-class="{{ f }}">
+                <summary>{{ f.name }}</summary>
+                <div class="feature-source"> Source: {{ f.source }}</div>
+                <div class="feature-desc">{{ f.desc_html|safe }}</div>
+                {% if f.needs_implementation %}
+                    <div class="feature-impl"><strong>Requires Manual Implementation</strong></div>
+                {% endif %}
+
+            </details>
+
+        {% endfor %}
+    </div>
+</details>

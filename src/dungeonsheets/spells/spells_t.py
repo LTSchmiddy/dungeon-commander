@@ -304,12 +304,12 @@ class TensersTransformation(Spell):
     gain 50 temporary hit points. If any of these remain when the spell ends, they
     are lost.
     - You have advantage on attack rolls that you make with simple and
-    martial weapons.
+    martial weapon_list.
     - When you hit a target with a weapon attack, that target takes
      an extra 2d12 force
     damage.
     - You have proficiency with all armor, shields,
-    simple weapons, and martial weapons.
+    simple weapon_list, and martial weapon_list.
     - You have proficiency in Strength and
     Constitution saving throws.
     - You can attack twice, instead of once, when you

@@ -562,7 +562,7 @@ class WindWalk(Spell):
     """You and up to ten willing creatures you can see within range assume
     a gaseous form for the duration, appearing as wisps of cloud.
     While in this cloud form, a creature has a flying speed of 300
-    feet and has resistance to damage from nonmagical weapons. The
+    feet and has resistance to damage from nonmagical weapon_list. The
     only actions a creature can take in this form are the Dash action
     or to revert to its normal form.  Reverting takes 1 minute, during
     which time a creature is incapacitated and can't move. Until the

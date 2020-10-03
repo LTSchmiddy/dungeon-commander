@@ -2,14 +2,14 @@ from dungeonsheets import armor, weapons
 from dungeonsheets.features.features import Feature, FeatureSelector
 from dungeonsheets.features.rogue import Evasion, UncannyDodge
 
-
+from dungeonsheets.features.spellcasting import SpellcastingAbility
 from dungeonsheets.features import BasicAbilityScoreImprovement
 
 class RangerAbilityScoreImprovement(BasicAbilityScoreImprovement):
     name = "Ranger Ability Score Improvement"
     source = "Ranger"
 
-class RangerSpellcasting(Feature):
+class RangerSpellcasting(SpellcastingAbility):
     """
     By the time you reach 2nd level, you have learned to use the magical essence of nature to cast spells, much as a
     druid does. See Spells Rules for the general rules of spellcasting and the Spells Listing for the ranger spell list.
@@ -102,7 +102,7 @@ class NaturalExplorer(Feature):
 class Archery(Feature):
     """
     You gain a +2 bonus to attack rolls you make
-    with ranged weapons (included in stats on Character Sheet).
+    with ranged weapon_list (included in stats on Character Sheet).
     """
     name = "Fighting Style (Archery)"
     source = "Ranger"
@@ -125,7 +125,7 @@ class Defense(Feature):
 
 
 class Dueling(Feature):
-    """When you are wielding a melee weapon in one hand and no other weapons, you
+    """When you are wielding a melee weapon in one hand and no other weapon_list, you
     gain a +2 bonus to damage rolls with that weapon.
 
     """
@@ -468,7 +468,7 @@ class DreadAmbusher(Feature):
     which lasts until the end of that turn. If you take the Attack action on
     that turn, you can make one additional weapon attack as part of that
     action. If that attack hits, the target takes an extra 1d8 damage of the
-    weapons damage type.
+    weapon_list damage type.
 
     """
     name = 'Dread Ambusher'

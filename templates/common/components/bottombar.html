@@ -39,7 +39,7 @@
 <script>
     let current_view = "";
     function set_view(view_id) {
-        views.forEach((value, index, views) => {
+        app_views.forEach((value, index, views) => {
             let this_id = value.attr('id');
 
             let button_tag = this_id + "-button";
@@ -61,7 +61,7 @@
         });
     }
 
-    {#set_view('campaign-view');#}
-    set_view('database-view');
+    set_view('campaign-view');
+    {#set_view('database-view');#}
 
 </script>

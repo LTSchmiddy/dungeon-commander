@@ -14,7 +14,7 @@ player_name = "{{ char.player_name }}"
 classes = {{ char.class_names }}  # ex: ['Wizard'] or ['Rogue', 'Fighter']
 levels = {{ char.levels }}  # ex: [10] or [3, 2]
 subclasses = {{ char.subclasses }}  # ex: ['Necromacy'] or ['Thief', None]
-background = "{{ char.background.name }}"
+background = "{{ char.background }}"
 race = "{{ char.race.name }}"
 alignment = "{{ char.alignment }}"
 
@@ -66,8 +66,8 @@ ep = {{ char.ep }}
 gp = {{ char.gp }}
 pp = {{ char.pp }}
 
-# TODO: Put your equipped weapons and armor here
-weapons = {{ char.weapons }}  # Example: ('shortsword', 'longsword')
+# TODO: Put your equipped weapon_list and armor here
+weapon_list = {{ char.weapon_list }}  # Example: ('shortsword', 'longsword')
 magic_items = {{ char.magic_items }}  # Example: ('ring of protection',)
 armor = "{{ char.armor }}"  # Eg "leather armor"
 shield = "{{ char.shield }}"  # Eg "shield"
@@ -81,13 +81,18 @@ attacks_and_spellcasting = """{{ char.attacks_and_spellcasting }}"""
 spells = {{ char._spells }}
 
 # Which spells have been prepared (not including cantrips)
-spells_prepared = {{ char.spells_prepared }}
+spells_prepared = {{ char._spells_prepared }}
+
+
+current_spellslots = {{ char.current_spellslots }}
 
 # Wild shapes for Druid
 wild_shapes = {{ char.all_wild_shapes }}  # Ex: ('ape', 'wolf', 'ankylosaurus')
 
 # Infusions for Artificer
 infusions = {{ char.infusions_text }} # Ex: ('repeating shot', 'replicate magic item')
+
+inventory_typedlist = {{ char.inventory_typedlist }}
 
 # Backstory
 # Describe your backstory here

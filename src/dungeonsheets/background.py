@@ -31,7 +31,10 @@ class Background:
         self.features = tuple([f(owner=self.owner) for f in cls.features])
 
     def __str__(self):
-        return self.name
+        return self.get_id()
+
+    def __repr__(self):
+        return self.get_id()
 
     @classmethod
     def get_id(cls):
@@ -390,7 +393,7 @@ class PirateBadReputation(Pirate):
 
 class Soldier(Background):
     """
-    War has been your life for as long as you care to remember. You trained as a youth, studied the use of weapons and
+    War has been your life for as long as you care to remember. You trained as a youth, studied the use of weapon_list and
     armor, learned basic survival techniques, including how to stay alive on the battlefield. You might have been part
     of a standing national army or a mercenary company, or perhaps a member of a local militia who rose to prominence
     during a recent war.
@@ -695,7 +698,7 @@ class MercenaryVeteran(Background):
     """
     name = "Mercenary Veteran"
     skill_proficiencies = ('athletics', 'persuasion')
-    proficiencies_text = ('Vehicles (Land)')
+    proficiencies_text = ('Vehicles (Land)',)
     starting_equipment = "A uniform of your company (traveler's clothes in quality), an insignia of your rank, a gaming " \
                          "set of your choice, and a pouch containing the remainder of your last wages (10 gp)"
     features = (feats.MercenaryLife, feats.GamingSetProficiency)
@@ -796,7 +799,7 @@ class WaterdhavianNoble(Background):
     features = (feats.KeptInStyle, feats.ExtraLanguage)
 
 
-PHB_backgrounds = [Acolyte, Charlatan, Criminal, Spy, Entertainer,
+PHB_backgrounds = [Acolyte, Charlatan, Criminal, Spy, SpyRevised, Entertainer,
                    Gladiator, FolkHero, GuildArtisan, GuildMerchant, GuildMerchantTwoLanguages,
                    Hermit, Noble, Knight, Outlander, Sage, Sailor,
                    Pirate, PirateBadReputation, Soldier, Urchin]

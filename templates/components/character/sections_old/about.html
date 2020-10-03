@@ -1,0 +1,12 @@
+<details class="char-about view-pane" open>
+    <summary class="view-pane-header">About {{ char.name }}:</summary>
+    <div class="details-content">
+        <span class="label">Personality: </span>{{ md(char.personality_traits)|safe }}
+        <span class="label">Ideals: </span>{{ md(char.ideals)|safe }}
+        <span class="label">Bonds: </span>{{ md(char.bonds)|safe }}
+        <span class="label">Flaws:</span>{{ md(char.flaws)|safe }}
+        <span class="label">Other Traits: </span>{{ md(char.features_and_traits)|safe }}
+    </div>
+
+    <div class="details-content"></div>
+</details>

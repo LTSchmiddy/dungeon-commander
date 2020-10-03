@@ -3,6 +3,7 @@ from dungeonsheets.features.features import Feature, FeatureSelector
 from dungeonsheets.features.ranger import (Archery, Defense, Dueling,
                                            TwoWeaponFighting)
 
+from dungeonsheets.features.spellcasting import SpellcastingAbility
 from dungeonsheets.features import BasicAbilityScoreImprovement
 
 class FighterAbilityScoreImprovement(BasicAbilityScoreImprovement):
@@ -560,7 +561,7 @@ class TripingAttack(Maneuver):
 
 
 # Eldritch Knight
-class EldritchKnightSpellcasting(Feature):
+class EldritchKnightSpellcasting(SpellcastingAbility):
     """You know three 1st-level wizard spells of your choice, two of which you
     must choose from the abjuration and evocation spells on the wizard spell
     list.
@@ -587,6 +588,7 @@ class EldritchKnightSpellcasting(Feature):
     """
     name = "Spellcasting"
     source = "Fighter (Eldritch Knight)"
+    spell_learning_type = SpellcastingAbility.SpellLearningType.KNOWN
 
 
 class WeaponBond(Feature):
@@ -601,7 +603,7 @@ class WeaponBond(Feature):
     existence, you can summon that weapon as a bonus action on your turn,
     causing it to teleport instantly to your hand.
 
-    You can have up to two bonded weapons, but can summon only one at a time
+    You can have up to two bonded weapon_list, but can summon only one at a time
     with your bonus action. If you attempt to bond with a third weapon, you
     must break the bond with one of the other two.
 
@@ -1136,7 +1138,7 @@ class AdeptMarksman(Feature):
     bring their own unique set of weapon properties. Some properties are
     followed by a number, and this number signifies an element of that property
     (outlined below). These properties replace the optional ones presented in
-    the Dungeon Master's Guide. Firearms are ranged weapons.
+    the Dungeon Master's Guide. Firearms are ranged weapon_list.
 
     Reload. The weapon can be fired a number of times equal to its Reload score
     before you must spend 1 attack or 1 action to reload. You must have one

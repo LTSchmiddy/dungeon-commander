@@ -1,5 +1,5 @@
 import sys, os, json, inspect
-from types import ModuleType
+
 from typing import Any
 import importlib
 import importlib.util
@@ -8,18 +8,18 @@ import db
 import dungeonsheets
 
 
-def load_python_addon_modules(p_name: str, p_code: str):
-    # create blank module
-    module = ModuleType(p_name)
-    # populate the module with code
-    try:
-        # module.__dict__.update({'dungeonsheets': dungeonsheets})
-        exec(p_code, module.__dict__)
-        setattr(dungeonsheets.addons, module.__name__, module)
-        return None
-    except Exception as e:
-        return e
-
+# def load_python_addon_modules(p_name: str, p_code: str):
+#     # create blank module
+#     module = ModuleType(p_name)
+#     # populate the module with code
+#     try:
+#         # module.__dict__.update({'dungeonsheets': dungeonsheets})
+#         exec(p_code, module.__dict__)
+#         setattr(dungeonsheets.addons, module.__name__, module)
+#         return None
+#     except Exception as e:
+#         return e
+#
 
 
 # Python-based Data:
@@ -90,6 +90,14 @@ def load_armor():
     db.Session.commit()
     db.Session.remove()
 
+def load_shields():
+    read_dir = "./data/shields"
+
+    _load_json_dir(read_dir, db.tables.DB_Shield.add_json)
+
+    db.Session.commit()
+    db.Session.remove()
+
 # Other Utilities:
 def dump_weapons():
     out_dir = "./data/weapons"
@@ -109,6 +117,20 @@ def dump_armor():
 
     for i in dungeonsheets.armor.all_armors + dungeonsheets.armor.armor_types:
         out_dict = i.to_base_dict()
+        out_path = os.path.join(out_dir, out_dict['id'] + ".json")
+
+        out_file = open(out_path, 'w')
+        json.dump(out_dict, out_file, indent=4, sort_keys=True)
+        out_file.close()
+
+
+def dump_shields():
+    out_dir = "./data/shields"
+
+    for i in dungeonsheets.armor.all_shields:
+        # print(i)
+        out_dict = i.to_base_dict()
+        # print(out_dict)
         out_path = os.path.join(out_dir, out_dict['id'] + ".json")
 
         out_file = open(out_path, 'w')
@@ -143,10 +165,12 @@ def load_all():
     load_spells()
     load_weapons()
     load_armor()
+    load_shields()
     load_reference_sections()
 
 if __name__ == '__main__':
     db.init()
     dump_weapons()
     dump_armor()
+    dump_shields()
     # dump_magic_items()

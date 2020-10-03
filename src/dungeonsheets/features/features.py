@@ -1,10 +1,11 @@
 import inspect
 import textwrap
+from typing import Tuple
 
 import markdown2
 
-from dungeonsheets import weapons
-
+from dungeonsheets import weapons, spells
+# from dungeonsheets.character import Character
 
 
 def create_feature(**params):
@@ -37,18 +38,30 @@ class Feature():
     # skill_proficiencies = ()
     # skill_choices = ()
     # num_skill_choices = 0
-    spells_known = ()
-    spells_prepared = ()
+    weapon_proficiencies = ()
+    spells_known: (Tuple[spells.Spell], Tuple[str]) = ()
+    spells_prepared: (Tuple[spells.Spell], Tuple[str]) = ()
     languages = ()
     proficiencies_text = ()
     needs_implementation = False  # Set to True if need to find way to compute stats
     info_dict_key_mod = ""
     child_features = ()
 
+    _additional_html: (str, bool, None) = None
+
+    auto_load_info_dict = True
+    _default_info_dict = {}
+
+    @classmethod
+    def get_default_info_dict(cls):
+        return cls._default_info_dict
+
     def __init__(self, owner=None):
         self.owner = owner
         self.spells_known = [S() for S in self.spells_known]
         self.spells_prepared = [S() for S in self.spells_prepared]
+        if self.auto_load_info_dict:
+            self.load_info_dict()
 
     def __eq__(self, other):
         return (self.name == other.name) and (self.source == other.source)
@@ -57,11 +70,22 @@ class Feature():
         return 0
 
     def __str__(self):
-        return self.name
+        return self.get_id()
 
     def __repr__(self):
-        return "\"{:s}\"".format(self.name)
+        return "\"{:s}\"".format(self.get_id())
 
+    @classmethod
+    def get_id(cls):
+        return cls.__name__
+
+    @classmethod
+    def get_subtypes(cls) -> dict:
+        retVal = {cls.__name__: cls}
+        for i in cls.__subclasses__():
+            retVal[str(i.__name__)] = i
+            retVal.update(i.get_subtypes())
+        return dict(retVal)
 
     @property
     def desc(self):
@@ -75,6 +99,14 @@ class Feature():
     def desc_html(self):
         return markdown2.markdown(self.desc).strip()
 
+    @property
+    def additional_html(self):
+        return self._additional_html
+
+    @property
+    def use_additional_html(self):
+        return bool(self._additional_html)
+
     @classmethod
     def get_desc_html(cls):
         return markdown2.markdown(cls.get_desc(), extras=['cuddled-lists', 'wiki-tables']).strip()
@@ -83,6 +115,31 @@ class Feature():
     @classmethod
     def info_dict_key(cls) -> str:
         return "feature__" + cls.__name__ + cls.info_dict_key_mod
+
+    def init_info_dict(self):
+        if not hasattr(self.owner, 'info_dict'):
+            setattr(self.owner, 'info_dict', {})
+
+        if not self.info_dict_key() in self.owner.info_dict:
+            self.owner.info_dict[self.info_dict_key()] = self.get_default_info_dict().copy()
+
+    @property
+    def my_info_dict(self):
+        self.init_info_dict()
+
+        return self.owner.info_dict[self.info_dict_key()]
+
+    @my_info_dict.setter
+    def my_info_dict(self, value):
+        self.init_info_dict()
+
+        self.owner.info_dict[self.info_dict_key()] = value
+
+    def load_info_dict(self):
+        pass
+
+    def update_info_dict(self):
+        pass
 
     def weapon_func(self, weapon: weapons.Weapon, **kwargs):
         """

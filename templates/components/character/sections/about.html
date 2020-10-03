@@ -1,0 +1,36 @@
+<details class="char-about view-pane" open>
+    <summary class="view-pane-header">About {{ char.name }}:</summary>
+    <div class="details-content">
+        <span class="label">Personality: </span>{{ md(char.personality_traits)|safe }}
+        <span class="label">Ideals: </span>{{ md(char.ideals)|safe }}
+        <span class="label">Bonds: </span>{{ md(char.bonds)|safe }}
+        <span class="label">Flaws:</span>{{ md(char.flaws)|safe }}
+        <span class="label">Other Traits: </span>{{ md(char.features_and_traits)|safe }}
+        <span class="label">Attacks And Spellcasting: </span>
+        <div
+            id="char-editor-{{ char.loaded_id }}-attacks-spellcasting"
+            contenteditable="true"
+            style="
+                min-height: 100px;
+                white-space: pre;
+            "
+            class="subcontent"
+        >{{ md(char.attacks_and_spellcasting)|safe }}</div>
+
+        <script>
+           $('#char-editor-{{ char.loaded_id }}-attacks-spellcasting').on('input', (e)=>{
+                {#console.log(e);#}
+                py.campaign.character.set_char_attr(
+                    {{ char.loaded_id }},
+                    'attacks_and_spellcasting',
+                    $('#char-editor-{{ char.loaded_id }}-attacks-spellcasting').innerText(),
+                    'str'
+                );
+                mod_editor_opened_tabs['{{ char.loaded_id }}'].data_obj.on_general_change();
+           });
+        </script>
+
+    </div>
+
+    <div class="details-content"></div>
+</details>

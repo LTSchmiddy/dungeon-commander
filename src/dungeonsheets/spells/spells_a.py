@@ -408,7 +408,7 @@ class AntilifeShell(Spell):
     constructs.
     The barrier lasts for the duration. The barrier prevents an
     affected creature from passing or reaching through. An affected creature can
-    cast spells or make attacks with ranged or reach weapons through the barrier.
+    cast spells or make attacks with ranged or reach weapon_list through the barrier.
 
     If you move so that an affect creature is forced to pass through the barrier,
     the spell ends.

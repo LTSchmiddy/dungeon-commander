@@ -19,5 +19,27 @@
     display: none;
   }
 }
+.tab-container {
+  display: inline-block;
+  top: 0;
+  height: 100%;
+  width: 80%;
+  margin: auto 0;
+  vertical-align: middle;
+  text-align: right;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.tab-container button.main-tab {
+  max-width: 150px;
+}
+.tab-container button.secondary-tab {
+  width: 50px;
+}
+.tab-container button.active-view {
+  background-color: lightgrey;
+  color: black;
+}
 
 /*# sourceMappingURL=navbar.css.map */

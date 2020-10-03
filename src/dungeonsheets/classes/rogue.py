@@ -125,7 +125,7 @@ class Inquisitive(SubClass):
 class Mastermind(SubClass):
     """Your focus is on people and on the influence and secrets they have. Many
     spies, courtiers, and schemers follow this archetype, leading lives of
-    intrigue. Words are your weapons as often as knives or poison, and secrets
+    intrigue. Words are your weapon_list as often as knives or poison, and secrets
     and favors are some of your favorite treasures.
 
     """
@@ -161,7 +161,7 @@ class Swashbuckler(SubClass):
     elegance, and charm in equal parts. While some warriors are brutes clad in
     heavy armor, your method of fighting looks almost like a performance.
     Duelists and pirates typically belong to this archetype. A Swashbuckler
-    excels in single combat, and can fight with two weapons while safely
+    excels in single combat, and can fight with two weapon_list while safely
     darting away from an opponent
 
     """
@@ -209,7 +209,7 @@ class Rogue(CharClass):
     saving_throw_proficiencies = ('dexterity', 'intelligence')
     primary_abilities = ('dexterity',)
     _proficiencies_text = (
-        'light armor', 'simple weapons', 'hand crossbows', 'longswords',
+        'light armor', 'simple weapon_list', 'hand crossbows', 'longswords',
         'rapiers', 'shortswords', "thieves' tools")
     weapon_proficiencies = (weapons.SimpleWeapon, weapons.HandCrossbow,
                             weapons.Longsword, weapons.Rapier,

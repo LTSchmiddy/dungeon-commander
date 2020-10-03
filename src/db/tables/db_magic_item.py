@@ -8,6 +8,7 @@ from sqlalchemy import *
 from sqlalchemy.orm import relationship
 import markdown2
 import db
+from dungeonsheets import magic_items, stats
 
 
 # JSON-based Data:
@@ -38,6 +39,14 @@ class DB_MagicItem(db.Base):
     @property
     def item_desc_html(self):
         return markdown2.markdown(self.description)
+
+    def create_object(self):
+
+        # except AttributeError:
+        #     raise AttributeError(f'Weapon class "{weapon}" is not defined')
+        item_ = magic_items.MagicItem()
+        item_.load_dict(self._original_json)
+        return item_
 
     @staticmethod
     def add_json(json_data: dict):

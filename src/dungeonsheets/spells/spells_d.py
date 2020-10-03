@@ -402,7 +402,7 @@ class DimensionDoor(Spell):
 
 
 class DisguiseSelf(Spell):
-    """You make yourself, including your clothing, armor, weapons, and other
+    """You make yourself, including your clothing, armor, weapon_list, and other
     belongings on your person, look different until the spell ends or until you
     use your action to dismiss it.
     You can seem 1 foot shorter or taller and can

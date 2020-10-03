@@ -159,7 +159,7 @@ class TempestDomain(ClericDomain):
                       7: [spells.ControlWater, spells.IceStorm],
                       9: [spells.DestructiveWave, spells.InsectPlague]}
     weapon_proficiencies = (weapons.MartialWeapon,)
-    _proficiencies_text = ('martial weapons', 'heavy armor')
+    _proficiencies_text = ('martial weapon_list', 'heavy armor')
     features_by_level = defaultdict(list)
     features_by_level[1] = [features.WrathOfTheStorm]
     features_by_level[2] = [features.DestructiveWrath]
@@ -215,7 +215,7 @@ class WarDomain(ClericDomain):
                       7: [spells.FreedomOfMovement, spells.Stoneskin],
                       9: [spells.FlameStrike, spells.HoldMonster]}
     weapon_proficiencies = (weapons.MartialWeapon,)
-    _proficiencies_text = ('martial weapons', 'heavy armor')
+    _proficiencies_text = ('martial weapon_list', 'heavy armor')
     features_by_level = defaultdict(list)
     features_by_level[1] = [features.WarPriest]
     features_by_level[2] = [features.GuidedStrike]
@@ -266,7 +266,7 @@ class ForgeDomain(ClericDomain):
     lost to the forces of darkness, liberate mines overrun by ores, and uncover
     rare and wondrous materials necessary to create potent magic items.
     Followers of these gods take great pride in their work, and they are willing
-    to craft and use heavy armor and powerful weapons to protect them. Deities
+    to craft and use heavy armor and powerful weapon_list to protect them. Deities
     of this domain include Gond, Reorx, Onatar, Moradin, Hephaestus, and
     Goibhniu.
 
@@ -330,7 +330,7 @@ class DeathDomain(ClericDomain):
                       7: [spells.Blight, spells.DeathWard],
                       9: [spells.AntilifeShell, spells.Cloudkill]}
     weapon_proficiencies = (weapons.MartialWeapon,)
-    _proficiencies_text = ('martial weapons',)
+    _proficiencies_text = ('martial weapon_list',)
     features_by_level = defaultdict(list)
     features_by_level[1] = [features.Reaper]
     features_by_level[2] = [features.TouchOfDeathCleric] #a different one though
@@ -378,7 +378,7 @@ class Cleric(CharClass):
     saving_throw_proficiencies = ('wisdom', 'charisma')
     primary_abilities = ('wisdom',)
     _proficiencies_text = ('light armor', 'medium armor', 'shields',
-                           'all simple weapons')
+                           'all simple weapon_list')
     weapon_proficiencies = (weapons.SimpleWeapon,)
     multiclass_weapon_proficiencies = ()
     _multiclass_proficiencies_text = ('light armor', 'medium armor', 'shields')

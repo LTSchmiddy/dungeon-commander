@@ -470,7 +470,7 @@ class InvestitureOfStone(Spell):
     """Until the spell ends, bits of rock spread across your body, and you gain the
     following benefits:
     - You have resistance to bludgeoning, piercing, and slashing
-     damage from nonmagical weapons.
+     damage from nonmagical weapon_list.
     - You can use your action to create a small
     earthquake on the ground in a 15-foot radius centered on you. Other creatures on
      that ground must succeed on a Dexterity saving throw or be knocked prone.

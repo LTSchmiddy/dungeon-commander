@@ -46,7 +46,7 @@ class CollegeOfValor(SubClass):
     """
     name = "College of Valor"
     weapon_proficiencies = (weapons.MartialWeapon,)
-    _proficencies_text = ('martial weapons', 'medium armor', 'shields')
+    _proficencies_text = ('martial weapon_list', 'medium armor', 'shields')
     features_by_level = defaultdict(list)
     features_by_level[3] = [features.CombatInspiration]
     features_by_level[6] = [features.BardExtraAttack]
@@ -83,10 +83,10 @@ class CollegeOfSwords(SubClass):
     """Bards of the College of Swords are called blades, and they entertain
     through daring feats of weapon prowess. Blades perform stunts such as sword
     swallowing, knife throwing and juggling, and mock combats. Though they use
-    their weapons to entertain, they are also highly trained and skilled
+    their weapon_list to entertain, they are also highly trained and skilled
     warriors in their own right.
 
-    Their talent with weapons inspires many blades to lead double lives. One
+    Their talent with weapon_list inspires many blades to lead double lives. One
     blade might use a circus troupe as cover for nefarious deeds such as
     assassination, robbery, and blackmail. Other blades strike at the wicked,
     bringingjustice to bear against the cruel and powerful. Most troupes are
@@ -189,7 +189,7 @@ class Bard(CharClass):
     saving_throw_proficiencies = ('dexterity', 'charisma')
     primary_abilities = ('charisma',)
     _proficiencies_text = (
-        'Light armor', 'simple weapons', 'hand crossbows', 'longswords',
+        'Light armor', 'simple weapon_list', 'hand crossbows', 'longswords',
         'rapiers', 'shortswords', 'three musical instruments of your choice')
     weapon_proficiencies = (weapons.HandCrossbow, weapons.Longsword,
                             weapons.Rapier, weapons.Shortsword,

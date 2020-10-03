@@ -10,7 +10,7 @@
 
         {% endfor %}
     </tr>
-{#    poop#}
+
     {% for i in result %}
         <tr>
             {% for j in range(0, len(table.columns)) if not table.columns.items()[j][1].name.startswith("_") %}

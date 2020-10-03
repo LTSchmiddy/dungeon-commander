@@ -18,9 +18,24 @@ from dungeonsheets import character as _char
 from dungeonsheets import exceptions, classes
 from dungeonsheets.stats import mod_str
 
+from pdflatex import *
+import pypdftk
+
 
 """Program to take character definitions and build a PDF of the
 character sheet."""
+
+js_console_make_sheet = """
+await py.exec(`
+
+import game
+
+game.current.loaded_chars[398].to_pdf('eric.pdf')
+
+`);
+"""
+
+pdflatex_path = "./latex/texlive/2020/bin/win32/pdflatex.exe"
 
 bold_re = re.compile(r'\*\*([^*]+)\*\*')
 it_re = re.compile(r'\*([^*]+)\*')
@@ -225,19 +240,31 @@ def create_latex_pdf(character, basename, template, keep_temp_files=False, use_d
     # Compile the PDF
     pdf_file = f'{basename}.pdf'
     output_dir = os.path.abspath(os.path.dirname(pdf_file))
-    tex_command_line = ['pdflatex', '--output-directory', output_dir,
+    # tex_command_line = ['pdflatex', '--output-directory', output_dir,
+    tex_command_line = [pdflatex_path, '--output-directory', output_dir,
                         '-halt-on-error', '-interaction=nonstopmode',
                         tex_file]
     passes = 2 if use_dnd_decorations else 1
+    result = None
     try:
         for i in range(passes):
             result = subprocess.run(tex_command_line,
                                     stdout=subprocess.DEVNULL, timeout=30)
+
+            # pdfl = PDFLaTeX.from_texfile(tex_file)
+            # pdfl.set_output_directory(output_dir)
+            # pdfl.set_interaction_mode(1)
+            # pdfl.add_args('-halt-on-error')
+
+            # pdf_out, log_out, result = pdfl.create_pdf(True, True)
+
     except FileNotFoundError:
         # Remove temporary files
         remove_temp_files(basename)
         raise exceptions.LatexNotFoundError()
-    else:
+    except Exception as e:
+        if result is None:
+            raise e
         if result.returncode == 0 and not keep_temp_files:
             remove_temp_files(basename)
         if result.returncode != 0:
@@ -346,7 +373,7 @@ def create_character_pdf(character, basename, flatten=False):
         'AC': str(character.armor_class),
         'Initiative': str(character.initiative),
         'Speed': str(character.speed),
-        'Passive': 10 + character.perception,
+        'Passive': 10 + character.perception.value,
         # Saving throws (proficiencies handled later)
         'ST Strength': mod_str(character.strength.saving_throw),
         'ST Dexterity': mod_str(character.dexterity.saving_throw),
@@ -355,24 +382,44 @@ def create_character_pdf(character, basename, flatten=False):
         'ST Wisdom': mod_str(character.wisdom.saving_throw),
         'ST Charisma': mod_str(character.charisma.saving_throw),
         # Skills (proficiencies handled below)
-        'Acrobatics': mod_str(character.acrobatics),
-        'Animal': mod_str(character.animal_handling),
-        'Arcana': mod_str(character.arcana),
-        'Athletics': mod_str(character.athletics),
-        'Deception ': mod_str(character.deception),
-        'History ': mod_str(character.history),
-        'Insight': mod_str(character.insight),
-        'Intimidation': mod_str(character.intimidation),
-        'Investigation ': mod_str(character.investigation),
-        'Medicine': mod_str(character.medicine),
-        'Nature': mod_str(character.nature),
-        'Perception ': mod_str(character.perception),
-        'Performance': mod_str(character.performance),
-        'Persuasion': mod_str(character.persuasion),
-        'Religion': mod_str(character.religion),
-        'SleightofHand': mod_str(character.sleight_of_hand),
-        'Stealth ': mod_str(character.stealth),
-        'Survival': mod_str(character.survival),
+        'Acrobatics': mod_str(character.acrobatics.value),
+        'Animal': mod_str(character.animal_handling.value),
+        'Arcana': mod_str(character.arcana.value),
+        'Athletics': mod_str(character.athletics.value),
+        'Deception ': mod_str(character.deception.value),
+        'History ': mod_str(character.history.value),
+        'Insight': mod_str(character.insight.value),
+        'Intimidation': mod_str(character.intimidation.value),
+        'Investigation ': mod_str(character.investigation.value),
+        'Medicine': mod_str(character.medicine.value),
+        'Nature': mod_str(character.nature.value),
+        'Perception ': mod_str(character.perception.value),
+        'Performance': mod_str(character.performance.value),
+        'Persuasion': mod_str(character.persuasion.value),
+        'Religion': mod_str(character.religion.value),
+        'SleightofHand': mod_str(character.sleight_of_hand.value),
+        'Stealth ': mod_str(character.stealth.value),
+        'Survival': mod_str(character.survival.value),
+        # Skills Old:
+        # 'Acrobatics': mod_str(character.acrobatics),
+        # 'Animal': mod_str(character.animal_handling),
+        # 'Arcana': mod_str(character.arcana),
+        # 'Athletics': mod_str(character.athletics),
+        # 'Deception ': mod_str(character.deception),
+        # 'History ': mod_str(character.history),
+        # 'Insight': mod_str(character.insight),
+        # 'Intimidation': mod_str(character.intimidation),
+        # 'Investigation ': mod_str(character.investigation),
+        # 'Medicine': mod_str(character.medicine),
+        # 'Nature': mod_str(character.nature),
+        # 'Perception ': mod_str(character.perception),
+        # 'Performance': mod_str(character.performance),
+        # 'Persuasion': mod_str(character.persuasion),
+        # 'Religion': mod_str(character.religion),
+        # 'SleightofHand': mod_str(character.sleight_of_hand),
+        # 'Stealth ': mod_str(character.stealth),
+        # 'Survival': mod_str(character.survival),
+
         # Hit points
         'HDTotal': character.hit_dice,
         'HPMax': str(character.hp_max),
@@ -427,13 +474,13 @@ def create_character_pdf(character, basename, flatten=False):
             fields[skill_boxes[skill.replace(' ', '_').lower()]] = CHECKBOX_ON
         except KeyError:
             raise KeyError(f"Unknown skill: '{skill}'")
-    # Add weapons
+    # Add weapon_list
     weapon_fields = [('Wpn Name', 'Wpn1 AtkBonus', 'Wpn1 Damage'),
                      ('Wpn Name 2', 'Wpn2 AtkBonus ', 'Wpn2 Damage '),
                      ('Wpn Name 3', 'Wpn3 AtkBonus  ', 'Wpn3 Damage '),]
-    if len(character.weapons) == 0:
+    if len(character.weapon_list) == 0:
         character.wield_weapon('unarmed')
-    for _fields, weapon in zip(weapon_fields, character.weapons):
+    for _fields, weapon in zip(weapon_fields, character.weapon_list):
         name_field, atk_field, dmg_field = _fields
         fields[name_field] = weapon.name
         fields[atk_field] = '{:+d}'.format(weapon.attack_modifier)
@@ -724,3 +771,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+#

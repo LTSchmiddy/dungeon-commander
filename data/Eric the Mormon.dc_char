@@ -66,7 +66,7 @@ ep = 0
 gp = 0
 pp = 0
 
-# TODO: Put your equipped weapons and armor here
+# TODO: Put your equipped weapon_list and armor here
 weapons = []  # Example: ('shortsword', 'longsword')
 magic_items = []  # Example: ('ring of protection',)
 armor = "None"  # Eg "leather armor"

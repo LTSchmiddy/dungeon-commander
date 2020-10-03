@@ -4,6 +4,10 @@ from collections import namedtuple
 from typing import List, Dict
 import os
 import random
+from types import ModuleType
+import hashlib
+
+import colors
 
 import settings
 import db
@@ -12,17 +16,19 @@ from dungeonsheets.character import Character
 
 from json_class import JsonClass
 
+import util
 
 
 class Campaign(JsonClass):
     json_data_filename = 'campaign.json'
-    json_attributes = ['name', 'dir_path', 'max_loaded_chars']
+    json_attributes = ('name', 'dir_path', 'max_loaded_chars', 'is_dm', "addon_load_order")
 
+    is_dm = False
     # Static Values:
 
-    character_dir_name = "characters"
-    player_dir_name = "characters/players"
-    npc_dir_name = "characters/npcs"
+    # character_dir_name = "characters"
+    player_dir_name = "players"
+    npc_dir_name = "npcs"
     py_addon_dir_name = "addons/py"
     json_addon_dir_name = "addons/json"
     note_dir_name = "notes"
@@ -35,6 +41,8 @@ class Campaign(JsonClass):
 
     max_loaded_chars = 1000
     loaded_chars: Dict[int, Character]
+
+    addon_load_order: list
 
     # @property
 
@@ -53,6 +61,7 @@ class Campaign(JsonClass):
         self.npcs = []
 
         self.loaded_chars = {}
+        self.addon_load_order = []
 
         self.start()
 
@@ -73,31 +82,83 @@ class Campaign(JsonClass):
 
         os.makedirs(self.dir_path)
 
-        for i in [
+        self.construct_campaign_directories()
+        self.save_json_file(self.json_data_path)
+
+    def construct_campaign_directories(self):
+        dirs = (
             self.player_dir_name,
-            self.npc_dir_name,
             self.py_addon_dir_name,
             self.json_addon_dir_name,
             self.note_dir_name
-        ]:
+        )
+        if self.is_dm:
+            dirs += (self.npc_dir_name,)
 
-            os.makedirs(self.get_path(i))
+        for i in dirs:
 
-        self.save_json_file(self.json_data_path)
+            util.mkdir_if_missing(self.get_path(i))
 
     def load_campaign(self, p_path: str = None):
         if p_path is not None:
             self.dir_path = p_path
 
+        self.construct_campaign_directories()
+
         self.load_json_file(self.json_data_path)
-        self.load_addon_py_modules()
 
-    def load_addon_py_modules(self):
-        for i in os.listdir(self.get_py_addon_path('')):
-            if i == '__pycache__':
-                continue
-            print(db.load_db.load_python_addon_modules(i.replace(".py", ""), open(self.get_py_addon_path(i), 'r', encoding='utf-8').read()))
 
+        # Load global addons:
+        self.load_py_addon(settings.paths.get_global_py_addons_path(), settings.current["game"]["global_py_addon_load_order"])
+
+        # Load campaign addons:
+        self.load_py_addon(self.get_py_addon_path(''), self.addon_load_order)
+
+    def load_py_addon(self, load_path: str, load_order_list: list):
+        print(f"Scanning addons in '{load_path}' and determining load order...")
+        settings.scan_addon_directory(load_path, load_order_list)
+        print(f"Loading addons from '{load_path}'...")
+        self.load_py_addon_dir(load_path, load_order_list, dungeonsheets.addons)
+
+
+    def load_py_addon_dir(self, load_path: str, load_order_list: list, parent_module):
+        for i in load_order_list:
+            if isinstance(i, str):
+                fullpath = os.path.join(load_path, i)
+                result: (Exception, None) = self.create_py_addon_module(i.replace(".py", ""), open(fullpath, 'r', encoding='utf-8').read())
+                if isinstance(result, ModuleType):
+                    setattr(parent_module, result.__name__, result)
+
+                    print(f"Addon '{fullpath}' loaded successfully")
+
+                elif isinstance(result, Exception):
+                    print(f"Error loading addon '{fullpath}': {result.args}")
+
+
+            elif isinstance(i, dict) and ("name" in i) and ("contents" in i):
+                fullpath = os.path.join(load_path, i['name'])
+
+                result = ModuleType(i['name'])
+                setattr(parent_module, result.__name__, result)
+                print(f"Module '{result.__name__}' added to '{parent_module.__name__}'")
+                self.load_py_addon_dir(fullpath, i['contents'], result)
+
+                if 'force_default_load_order' in i and i['force_default_load_order'] == True:
+                    del i['contents']
+
+
+
+    @staticmethod
+    def create_py_addon_module(p_name: str, p_code: str) -> (ModuleType, Exception):
+        # create blank module
+        module = ModuleType(p_name)
+        # populate the module with code
+        module.__dict__.update({"addons": dungeonsheets.addons})
+        try:
+            exec(p_code, module.__dict__)
+            return module
+        except Exception as e:
+            return e
 
     def save_campaign(self, p_path: str = None):
         if p_path is not None:
@@ -111,9 +172,6 @@ class Campaign(JsonClass):
 
     def get_path(self, p_path: str) -> str:
         return os.path.join(self.dir_path, p_path)
-
-    def get_character_path(self, p_path: str) -> str:
-        return os.path.join(self.get_path(self.character_dir_name), p_path)
 
     def get_player_path(self, p_path: str) -> str:
         return os.path.join(self.get_path(self.player_dir_name), p_path)
@@ -152,6 +210,9 @@ class Campaign(JsonClass):
         }
 
         for i in dir_cont:
+            if i == '__pycache__':
+                continue
+
             fullpath = os.path.join(current_dir, i).replace("\\", "/")
             # print(fullpath)
 
@@ -179,6 +240,7 @@ class Campaign(JsonClass):
         new_id = self.get_new_ref_id()
         new_char.loaded_id = new_id
 
+        new_char.update_props_hash()
         self.loaded_chars[new_id] = new_char
 
     def unload_character(self, char):
@@ -193,21 +255,27 @@ class Campaign(JsonClass):
         if isinstance(char, Character):
             print(char.loaded_path)
             char.save(char.loaded_path)
+            char.update_props_hash()
 
         if isinstance(char, int):
             char_obj = self.loaded_chars[char]
             print(char_obj.loaded_path)
             char_obj.save(char_obj.loaded_path)
+            char_obj.update_props_hash()
 
         if isinstance(char, str):
             char_obj = self.loaded_chars[int(char)]
             print(char_obj.loaded_path)
             char_obj.save(char_obj.loaded_path)
+            char_obj.update_props_hash()
 
 
 
     def reload_character(self, char):
         my_char: Character = None
+
+        result_message: (None, str) = None
+
         if isinstance(char, Character):
             my_char = self.loaded_chars[char.loaded_id]
         if isinstance(char, int):
@@ -220,7 +288,15 @@ class Campaign(JsonClass):
             return
 
         if isinstance(char.loaded_path, str) and os.path.isfile(char.loaded_path):
-            my_char.load_into(char.loaded_path)
+
+            result = my_char.load_into(char.loaded_path)
+            if isinstance(result, Exception):
+                result_message = f"ERROR: Can't import character attributes: {result.args}"
 
         else:
-            print(f"ERROR: {char.loaded_path} does not exist.")
+            result_message = f"ERROR: {char.loaded_path} does not exist."
+
+        if result_message is not None:
+            print(colors.color(result_message, fg='red'))
+
+        return result_message

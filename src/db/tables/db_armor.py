@@ -8,6 +8,7 @@ from sqlalchemy.orm import relationship
 import markdown2
 import db
 
+from dungeonsheets import armor, stats
 
 class DB_Armor(db.Base):
     __tablename__ = 'armor'
@@ -19,10 +20,12 @@ class DB_Armor(db.Base):
     weight = Column(Integer, default=0)
     description = Column(String, default="")
     rarity = Column(String, default="common")
+    base_class = Column(String, default="Armor")
     type = Column(String, default="Armor")
 
     # Armor
     base_armor_class = Column(Integer, default=0)
+    improved = Column(Integer, default=0)
     dexterity_mod_max = Column(Integer, default=None, nullable=True)
     strength_required = Column(Integer, default=None, nullable=True)
     stealth_disadvantage = Column(Boolean, default=False, nullable=False)
@@ -36,6 +39,15 @@ class DB_Armor(db.Base):
     def __repr__(self):
         return '\"{:s}\"'.format(str(self))
 
+
+    def create_object(self):
+        # try:
+        NewArmorClass = stats.findattr(armor, self.base_class)
+        # except AttributeError:
+        #     raise AttributeError(f'Weapon class "{weapon}" is not defined')
+        armor_ = NewArmorClass()
+        armor_.load_dict(self._original_json)
+        return armor_
 
     @staticmethod
     def add_json(json_data: dict):
@@ -55,11 +67,11 @@ class DB_Armor(db.Base):
         this_item.type = json_data["type"]
 
         this_item.base_class = json_data["base_class"]
+        this_item.improved = json_data["improved"]
         this_item.base_armor_class = json_data["base_armor_class"]
         this_item.dexterity_mod_max = json_data["dexterity_mod_max"]
         this_item.strength_required = json_data["strength_required"]
         this_item.stealth_disadvantage = json_data["stealth_disadvantage"]
-
 
         this_item._original_json = json_data
 
