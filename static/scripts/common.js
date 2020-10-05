@@ -46,7 +46,7 @@ function generate_element(code) {
     return wrapper.firstChild;
 }
 
-async function load_html(addr, params) {
+async function load_html(addr, params={}) {
     return await $.post(addr, params);
 }
 

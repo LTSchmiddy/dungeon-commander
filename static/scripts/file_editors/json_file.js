@@ -57,12 +57,13 @@ class JsonFileEditorData extends EditorDataBase {
         // await py.files.write_json_file(this.path, JSON.stringify(this.get_json()));
         await py.files.write_json_file(this.path, this.get_json());
         this.set_original_json();
-
+        await super.save_file();
     }
 
     async revert_file() {
         this.set_json(await py.files.read_json_file(this.path));
         this.set_original_json();
+        await super.revert_file();
     }
 
     is_json_original() {

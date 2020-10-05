@@ -18,7 +18,7 @@ window.pywebview = {
                 "return promise;"
             
             // Added by Alex:
-            console.log("loading " + funcName);
+            // console.log("loading " + funcName);
             let funcPath = funcName.split("__")
             let funcNode = window.pywebview.api;
             for (let i = 0; i < funcPath.length - 1; i++) {

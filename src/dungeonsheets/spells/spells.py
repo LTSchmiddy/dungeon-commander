@@ -43,6 +43,7 @@ class Spell():
     casting_ability: (str, None) = None
     source_str: (str, None) = None
     owner = None
+    is_instance = False
     
     def __str__(self):
         if len(self.components) == 0:
@@ -67,6 +68,7 @@ class Spell():
         return 0
 
     def __init__(self, casting_ability="", owner=None, source_str=""):
+        self.is_instance = True
         self.casting_ability = casting_ability
         self.owner = owner
         self.source_str = source_str

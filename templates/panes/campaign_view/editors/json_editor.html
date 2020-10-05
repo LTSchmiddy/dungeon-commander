@@ -11,7 +11,17 @@
     <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.revert_file() " class="filerevert-btn btn-primary">REVERT</button>
 
     {% if path.endswith("campaign.json") %}
-        - <button onclick="py.exec(`game.current.load_json_file(game.current.json_data_path)`);" class="filerevert-btn btn-secondary">Apply Campaign Settings</button>
+        -
+        <button
+            onclick="
+                py.exec(
+                    `game.current.load_dict(editor_json)`,
+                     {editor_json: mod_editor_opened_tabs['{{ path }}'].data_obj.get_json()}
+                 );
+                campaign_view_update_loaded_characters();
+            "
+            class="filerevert-btn btn-secondary"
+        >Apply Campaign Settings</button>
     {% endif %}
 
 {% endblock %}

@@ -1,0 +1,23 @@
+<strong>Campaign Directory</strong>
+<div id="directory-list" style="width: 100%;">
+
+
+</div>
+
+<script>
+    let campaign_view_directory_content = null;
+
+    window.addEventListener('pywebviewready', ()=>{
+        campaign_view_directory_content = $('#directory-list');
+        campaign_view_reload_dir();
+    });
+
+    async function campaign_view_reload_dir(){
+        campaign_view_directory_content.text("Loading...")
+        let dir_cont = await load_html("/panes/campaign_view/extract_dir_listing");
+
+        campaign_view_directory_content.get()[0].innerHTML = dir_cont;
+    }
+
+
+</script>

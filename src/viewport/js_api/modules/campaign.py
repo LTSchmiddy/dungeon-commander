@@ -11,6 +11,8 @@ import json_class
 
 from dungeonsheets.character import Character, de_stringify
 from dungeonsheets import dice
+
+import util
 import game
 
 def create_campaign_module(api: Type[JsApi]):
@@ -28,8 +30,14 @@ def create_character_module(api: Type[JsApi]):
     def get_loaded_characters(self):
         return list(game.current.loaded_chars.keys())
 
+    def char_id_exists(self, char_id):
+        return int(char_id) in list(game.current.loaded_chars.keys())
+
+    def new_character(self):
+        return game.current.new_character()
+
     def load_character(self, filepath):
-        game.current.load_character(filepath)
+        return game.current.load_character(filepath)
 
     def unload_character(self, filepath):
         game.current.unload_character(filepath)
@@ -107,6 +115,8 @@ def create_character_module(api: Type[JsApi]):
 
     api.add_module_method_list("campaign__character", [
         get_loaded_characters,
+        char_id_exists,
+        new_character,
         load_character,
         unload_character,
         save_character,

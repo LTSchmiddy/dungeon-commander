@@ -23,7 +23,9 @@ class EditorDataBase {
         extracted_file_show_editor(this.path);
     }
 
-    async save_file() {}
+    async save_file() {
+        campaign_view_reload_dir();
+    }
 
     async revert_file() {}
 
@@ -31,5 +33,7 @@ class EditorDataBase {
 
     on_switch_from() {}
 
+    on_close() {
+    }
 
 }

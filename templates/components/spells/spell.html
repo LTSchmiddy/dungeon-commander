@@ -68,13 +68,17 @@
             'spell_attack_modifier': "Spell Attack Modifier"
         }.items() if getattr(spell, attr) %}
 
-            <div class="spell-info-section"><span class="label">{{ name }}: </span>{{ str(getattr(spell, attr)).capitalize() }}</div>
+            <div class="spell-info-section">
+                <span class="label">{{ name }}: </span>
+                {{ af.tget(attr == "casting_ability" , str(getattr(spell, attr)).capitalize(), str(getattr(spell, attr))) }}
+            </div>
 
         {% endfor %}
     </div>
     <hr/>
     <div class="spell-info">
-        <div class="spell-info-section"><span class="label">ID: </span>{{ spell.get_id() }}</div>
+
+
         <div class="spell-info-section"><span class="label">Casting Time: </span>{{ spell.casting_time }}</div>
         <div class="spell-info-section"><span class="label">Casting Range: </span>{{ spell.casting_range }}</div>
         <div class="spell-info-section"><span class="label">Duration: </span>{{ spell.duration }}</div>
@@ -86,7 +90,7 @@
         <div class="spell-info-section"><span class="label">Available to: </span>
             {{ ", ".join(spell.classes) }}
         </div>
-
+        <div class="spell-info-section"><span class="label">ID: </span>{{ spell.get_id() }}</div>
     </div>
 
 

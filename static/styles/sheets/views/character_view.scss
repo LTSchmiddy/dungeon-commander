@@ -4,7 +4,7 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    padding-bottom: 50px;
     @include cq-prolyfill("width <= 800px") {
 		/* Styles for .element if its container is at least 100px wide */
         display: block;

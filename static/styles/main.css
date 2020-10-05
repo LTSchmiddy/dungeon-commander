@@ -241,6 +241,7 @@ details.spell .spell-info .spell-info-section {
 .character-view {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding-bottom: 50px;
 }
 .character-view.\:container\(width\<\=800px\) {
   /* Styles for .element if its container is at least 100px wide */

@@ -1,0 +1,26 @@
+<div id="loaded-characters-list" style="width: 100%;"></div>
+
+
+<script>
+
+    let campaign_view_characters_content = null;
+
+    window.addEventListener('pywebviewready', ()=>{
+        campaign_view_characters_content = $('#loaded-characters-list');
+        campaign_view_update_loaded_characters();
+    });
+
+    function campaign_view_update_loaded_characters() {
+        py.exec(`return game.current.is_dm`).then((is_dm)=>{
+            if (!is_dm) {
+                {#console.log(campaign_view_characters_content.get()[0]);#}
+                campaign_view_characters_content.get()[0].innerHTML = "";
+                return;
+            }
+
+            campaign_view_characters_content.text("Loading...")
+            campaign_view_characters_content.load("/panes/campaign_view/loaded_character_listing");
+        });
+    }
+
+</script>

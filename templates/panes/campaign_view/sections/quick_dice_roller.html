@@ -1,0 +1,105 @@
+<div class="quick-dice-area ui-bar">
+        <div class="quick-dice-buttons">
+            <button onclick="quick_dice_roll('1d4')" class="btn-secondary">d4</button>
+            <button onclick="quick_dice_roll('1d6')" class="btn-secondary">d6</button>
+            <button onclick="quick_dice_roll('1d8')" class="btn-secondary">d8</button>
+            <button onclick="quick_dice_roll('1d10')" class="btn-secondary">d10</button>
+            <button onclick="quick_dice_roll('1d12')" class="btn-secondary">d12</button>
+            <button onclick="quick_dice_roll('1d20')" class="btn-secondary">d20</button>
+            <button onclick="quick_dice_roll_skill_manual()" class="btn-secondary">Skill</button>
+        </div>
+        <div class="quick-dice-text">
+            <input type="text" id="quick-dice-text-box" />
+{#            <script>
+                console.log(document.currentScript.previousElementSibling);
+                console.log(":POOP:");
+                document.currentScript.previousSibling.addEventListener('keyup', function(event) {
+                        // Number 13 is the "Enter" key on the keyboard
+                        if (event.keyCode === 13) {
+                        // Cancel the default action, if needed
+                        event.preventDefault();
+                        // Trigger the button element with a click
+                        quick_dice_roll_manual();
+                    }
+                });
+            </script>#}
+            <button onclick="quick_dice_roll_manual()" class="btn-secondary">Roll</button>
+        </div>
+        <div class="quick-dice-result" id="quick-dice-result" >
+
+        </div>
+        <div class="quick-dice-crit" id="quick-dice-crit" >
+
+        </div>
+    </div>
+<script>
+    let quick_dice_text_box = $('#quick-dice-text-box');
+    let quick_dice_results = $('#quick-dice-result');
+    let quick_dice_crit = $('#quick-dice-crit');
+
+    // DICE:
+    async function quick_dice_roll_skill_manual() {
+        let dice_result = await py.campaign.eval_dice("1d20");
+        let mod_result = quick_dice_text_box.val() === "" ? 0 : await py.campaign.eval_dice(quick_dice_text_box.val());
+
+        quick_dice_results.text(dice_result + mod_result);
+
+        if (dice_result === 20) {
+            quick_dice_crit.text("Critical!");
+            quick_dice_crit.addClass("quick-dice-crit-success");
+            quick_dice_crit.removeClass("quick-dice-crit-failure");
+        }
+
+        else if (dice_result === 1) {
+            quick_dice_crit.text("Critical Failure!");
+            quick_dice_crit.removeClass("quick-dice-crit-success");
+            quick_dice_crit.addClass("quick-dice-crit-failure");
+        }
+        else {
+            quick_dice_crit.text("");
+            quick_dice_crit.removeClass("quick-dice-crit-success");
+            quick_dice_crit.removeClass("quick-dice-crit-failure");
+        }
+    }
+
+
+    async function quick_dice_roll_skill(dice_mod_str) {
+        quick_dice_text_box.val(dice_mod_str);
+        let dice_result = await py.campaign.eval_dice("1d20");
+        {#let dice_result = 1;#}
+        let mod_result = await py.campaign.eval_dice(dice_mod_str);
+
+        quick_dice_results.text(dice_result + mod_result);
+
+        if (dice_result === 20) {
+            quick_dice_crit.text("Critical!");
+            quick_dice_crit.addClass("quick-dice-crit-success");
+            quick_dice_crit.removeClass("quick-dice-crit-failure");
+        }
+
+        else if (dice_result === 1) {
+            quick_dice_crit.text("Critical Failure!");
+            quick_dice_crit.removeClass("quick-dice-crit-success");
+            quick_dice_crit.addClass("quick-dice-crit-failure");
+        }
+        else {
+            quick_dice_crit.text("");
+            quick_dice_crit.removeClass("quick-dice-crit-success");
+            quick_dice_crit.removeClass("quick-dice-crit-failure");
+        }
+    }
+
+    async function quick_dice_roll(dice_str) {
+        quick_dice_text_box.val(dice_str);
+        let result = await py.campaign.eval_dice(dice_str);
+        quick_dice_results.text(result);
+        quick_dice_crit.text("");
+    }
+
+    async function quick_dice_roll_manual() {
+        let result = await py.campaign.eval_dice(quick_dice_text_box.val());
+        quick_dice_results.text(result);
+        quick_dice_crit.text("");
+    }
+
+</script>

@@ -79,7 +79,9 @@ class CharacterEditorData extends EditorDataBase{
             }
 
             // console.log("updated");
-
+            if (editor.edit_loop === null) {
+                return;
+            }
             setTimeout(()=>{me(me, editor, delay)}, delay);
         }
         // edit_loop.bind(edit_loop);
@@ -251,16 +253,20 @@ class CharacterEditorData extends EditorDataBase{
         await py.campaign.character.save_character(this.path);
         this.update_edited_display(false);
         // await this.on_general_change();
+        await super.save_file();
     }
 
     async revert_file() {
+        await super.revert_file();
         await py.campaign.character.reload_character(this.path);
         this.update_edited_display(false);
         this.refresh();
     }
 
     async update_edited_from_file() {
-        this.update_edited_display(await py.campaign.character.is_character_edited(this.path))
+        if (await py.campaign.character.char_id_exists(this.path)){
+            this.update_edited_display(await py.campaign.character.is_character_edited(this.path))
+        }
     }
 
     update_edited_display(is_changed = null) {
@@ -268,8 +274,16 @@ class CharacterEditorData extends EditorDataBase{
             this.is_changed = is_changed;
         }
 
-        let editor_tab = this.get_editor_tab().get()[0];
-        editor_tab.children[1].children[0].innerText = this.is_changed ? "*" : "";
+        let editor_tab = this.get_editor_tab();
+        if (editor_tab === null){
+            return;
+        }
+        let editor_tab_dom = editor_tab.get()[0];
+        editor_tab_dom.children[1].children[1].innerText = this.is_changed ? " *" : "";
+
+        py.campaign.character.get_char_attr(this.path, 'name').then((name)=>{
+            editor_tab_dom.children[1].children[0].innerText = name;
+        });
     }
 
     async on_display_change() {
@@ -296,7 +310,15 @@ class CharacterEditorData extends EditorDataBase{
         }
 
         this._should_check_is_changed = true;
+    }
 
+    async on_close() {
+        this.edit_loop = null;
+        super.on_close();
+        if (await py.exec(`return not game.current.is_dm`)) {
+            await py.campaign.character.unload_character(this.path);
+        }
+        campaign_view_update_loaded_characters();
     }
 
 }

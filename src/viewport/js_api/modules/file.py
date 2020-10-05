@@ -60,6 +60,12 @@ def create_files_module(api: Type[JsApi]):
     def isdir(self, *args):
         return os.path.isdir(*args)
 
+    def file_dialog(self, *args, **kwargs):
+        result = viewport.window.create_file_dialog(*args, **kwargs)
+        print(result)
+        return result
+
+
 
     api.add_module_method_list("files", [
         listdir,
@@ -74,6 +80,7 @@ def create_files_module(api: Type[JsApi]):
         read_file,
         read_json_file,
         write_file,
-        write_json_file
+        write_json_file,
+        file_dialog
     ])
 

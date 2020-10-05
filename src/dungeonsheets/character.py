@@ -119,12 +119,14 @@ def de_stringify(value, type_str: str) -> Any:
 
     return value
 
+file_extension = ".dc_char"
+
 class Character:
     """A generic player character.
 
     """
     # General attirubtes
-    name = ""
+    name = "New Character"
     player_name = ""
     alignment = "Neutral"
     dungeonsheets_version = __version__
@@ -485,8 +487,10 @@ class Character:
     @property
     def all_skill_proficiencies(self):
         retVal = self.skill_proficiencies[:]
-        retVal.extend(self.race.skill_proficiencies)
-        retVal.extend(self.background.skill_proficiencies)
+        if self.race is not None:
+            retVal.extend(self.race.skill_proficiencies)
+        if self.background is not None:
+            retVal.extend(self.background.skill_proficiencies)
         return retVal
 
 
@@ -1201,7 +1205,10 @@ class Character:
         with open(filename, mode='w') as f:
             f.write(text)
 
-    def to_pdf(self, filename, **kwargs):
+    def to_pdf(self, filename=None, **kwargs):
+        if filename is None:
+            filename = self.loaded_path
+
         from dungeonsheets.make_sheets import make_sheet
         if filename.endswith('.pdf'):
             filename = filename.replace('pdf', 'py')

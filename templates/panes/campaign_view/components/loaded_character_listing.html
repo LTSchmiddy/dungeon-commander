@@ -1,10 +1,12 @@
+<strong>Loaded Characters</strong>
 <ul class="char-list">
 
 {% for ref_id, char in characters.items() %}
-        <li>
+        <li data-loaded-char-entry-id="{{ ref_id }}">
             <a class="close-btn" onclick="
                     py.campaign.character.unload_character( {{ ref_id }} );
-                    console.log(this.parentElement);
+                    extracted_file_close( {{ ref_id }} );
+                    {#console.log(this.parentElement);#}
                     this.parentElement.remove();
             ">X</a>
             <a onclick="extracted_file_load('{{ char.name }}', '{{ ref_id }}?char')">{{ char.name }}</a>

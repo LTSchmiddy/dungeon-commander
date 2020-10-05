@@ -11,3 +11,4 @@
 /php/
 /settings.json
 /venv/
+/static/browserify_pack

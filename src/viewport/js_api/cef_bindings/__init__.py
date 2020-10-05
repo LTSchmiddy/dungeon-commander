@@ -18,6 +18,9 @@ cef_bound_properties = [
     ('std_handler__main_stdout', std_handler.my_stdout.get_all),
     ('std_handler__main_stdout_as_html', std_handler.my_stdout.get_html),
     ('std_handler__main_stdout_updated', std_handler.my_stdout.get_html_updated),
+    ('wvOPEN_DIALOG', lambda: wv.OPEN_DIALOG),
+    ('wvFOLDER_DIALOG', lambda: wv.FOLDER_DIALOG),
+    ('wvSAVE_DIALOG',lambda: wv.SAVE_DIALOG),
 ]
 
 

@@ -4,7 +4,7 @@
 {% for i in dir_list['dirs'] %}
     {% with dir_list = dir_list['dirs'][i] %}
         <li>
-            <details>
+            <details draggable="true">
             <summary>{{ i }}</summary>
 
                 {% include "panes/campaign_view/components/extract_dir_listing.html" %}
@@ -16,7 +16,7 @@
 
 {% for i in dir_list['files'] %}
     <li>
-        <a onclick="extracted_file_load('{{ i }}', '{{ dir_list['files'][i] }}')">{{ i }}</a>
+        <a onclick="extracted_file_load('{{ i }}', '{{ dir_list['files'][i] }}')" draggable="true">{{ i }}</a>
     </li>
 {% endfor %}
 

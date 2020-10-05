@@ -8,6 +8,7 @@ from game.campaign import Campaign
 
 current: Campaign = None
 
+
 def start():
     global current
     current =  Campaign()

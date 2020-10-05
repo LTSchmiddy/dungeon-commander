@@ -8,6 +8,23 @@
             </button>
             <div class="dropdown-menu">
 
+                <button
+                    class="dropdown-item"
+                    onclick="
+                        py.campaign.character.new_character()
+                        .then(async (new_id)=>{
+                            campaign_view_update_loaded_characters();
+                            extracted_file_load(await py.campaign.character.get_char_attr(new_id, 'name'), new_id + '?char');
+                        });
+                    "
+                >New Character</button>
+                <button
+                    class="dropdown-item"
+                    onclick="
+                        extracted_file_open_dialog();
+                    "
+                >Open</button>
+{#                <button class="dropdown-item" onclick="">New Character</button>#}
                 <button class="dropdown-item" onclick="py.quit()">Quit</button>
 
             </div>

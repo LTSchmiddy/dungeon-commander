@@ -5,7 +5,8 @@ from typing import List, Dict
 import os
 import random
 from types import ModuleType
-import hashlib
+# import hashlib
+# from tkinter import filedialog
 
 import colors
 
@@ -225,6 +226,16 @@ class Campaign(JsonClass):
 
         return dir_dict
 
+    def new_character(self):
+        new_char = Character()
+        new_char.loaded_path = None
+        new_id = self.get_new_ref_id()
+        new_char.loaded_id = new_id
+
+        new_char.update_props_hash()
+        self.loaded_chars[new_id] = new_char
+        return new_id
+
     def load_character(self, c_path: str):
         if not os.path.isfile(c_path):
             print(f"ERROR: File {c_path} does not exist.")
@@ -237,11 +248,13 @@ class Campaign(JsonClass):
         print(c_path)
         new_char = Character.load(c_path)
         new_char.loaded_path = c_path
+        # new_char.loaded_path = os.path.abspath(c_path)
         new_id = self.get_new_ref_id()
         new_char.loaded_id = new_id
 
         new_char.update_props_hash()
         self.loaded_chars[new_id] = new_char
+        return new_id
 
     def unload_character(self, char):
         if isinstance(char, Character):
@@ -251,24 +264,40 @@ class Campaign(JsonClass):
         if isinstance(char, str):
             del self.loaded_chars[int(char)]
 
-    def save_character(self, char, location=None):
-        if isinstance(char, Character):
-            print(char.loaded_path)
-            char.save(char.loaded_path)
-            char.update_props_hash()
+    def save_character(self, p_char, location=None):
+        char = None
+        if isinstance(p_char, Character):
+            char = p_char
 
-        if isinstance(char, int):
-            char_obj = self.loaded_chars[char]
-            print(char_obj.loaded_path)
-            char_obj.save(char_obj.loaded_path)
-            char_obj.update_props_hash()
+        if isinstance(p_char, int):
+            char = self.loaded_chars[p_char]
 
-        if isinstance(char, str):
-            char_obj = self.loaded_chars[int(char)]
-            print(char_obj.loaded_path)
-            char_obj.save(char_obj.loaded_path)
-            char_obj.update_props_hash()
+        if isinstance(p_char, str):
+            char = self.loaded_chars[int(p_char)]
 
+        # print(os.path.abspath(self.dir_path))
+        # file_types = ('Image Files (*.bmp;*.jpg;*.gif)', 'All files (*.*)')
+        import viewport, webview
+        if char.loaded_path is None or char.loaded_path == "":
+            char.loaded_path = viewport.window.create_file_dialog(
+                dialog_type=webview.SAVE_DIALOG,
+                directory=os.path.abspath(self.dir_path),
+                save_filename=char.name + dungeonsheets.character.file_extension,
+                file_types = (f"Character File (*{dungeonsheets.character.file_extension})",)
+                # file_types = file_types
+            )
+
+            if char.loaded_path is None or char.loaded_path == "":
+                print("File save cancelled.")
+                return
+
+            if not char.loaded_path.endswith(dungeonsheets.character.file_extension):
+                char.loaded_path += dungeonsheets.character.file_extension
+
+            # char.loaded_path = os.path.abspath(char.loaded_path)
+
+        char.save(char.loaded_path)
+        char.update_props_hash()
 
 
     def reload_character(self, char):

@@ -28,7 +28,7 @@ def get_character(id: int):
     return render_template("components/character/character_view.html", char=char)
 
 # Campaign View Panes
-@campaign_view.route('/extract_dir_listing')
+@campaign_view.route('/extract_dir_listing', methods=['GET', 'POST'])
 def campaign_view__extract_dir_listing():
     if len(os.listdir(game.current.dir_path)) == 0:
         return f"ERROR: campaign directory '{game.current.dir_path}' is empty"

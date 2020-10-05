@@ -11,7 +11,9 @@
     <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.revert_file() " class="filerevert-btn btn-primary">REVERT</button>
 
 {#    {% if campaign.is_dm %}#}
-        <span style="padding-left: 30px">Editor Mode:</span>
+
+        <button style="margin-left: 30px" onclick="py.exec(`game.current.loaded_chars[{{ path }}].to_pdf()`)" class="filerevert-btn btn-secondary">Export PDF</button>
+        <span style="margin-left: 30px">Editor Mode:</span>
         <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.change_editor_mode('display') " class="filerevert-btn btn-secondary">Display</button>
         <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.change_editor_mode('json') " class="filerevert-btn btn-secondary">JSON</button>
         <button onclick="mod_editor_opened_tabs['{{ path }}'].data_obj.change_editor_mode('ace') " class="filerevert-btn btn-secondary">Text</button>

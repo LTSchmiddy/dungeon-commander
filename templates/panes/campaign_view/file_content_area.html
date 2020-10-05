@@ -49,9 +49,29 @@
 <script src="/static/scripts/file_editors/character_file.js"></script>
 <script>
 
+    function extracted_file_open_dialog() {
+        py.exec(`import os; return os.path.abspath(game.current.dir_path)`)
+        .then(async(dir_path)=>{await py.files.file_dialog(dialog_type=10, directory=dir_path, allow_multiple=false)
+            .then(async(file_path)=>{
+                for(let i = 0; i < file_path.length; i++) {
+
+                    let path_str = file_path[i].replace(/\\/g, '/');
+                    let path_arr = path_str.split('/');
+                    extracted_file_load(path_arr[path_arr.length-1], path_str);
+                }
+            });
+        });
+    }
+
     function extracted_file_load(name, path) {
         if (path.endsWith(".dc_char")) {
-            py.campaign.character.load_character(path).then(()=>{campaign_view_update_loaded_characters()});
+            py.campaign.character.load_character(path).then(async (new_char_id)=>{
+
+                campaign_view_update_loaded_characters();
+                if (await py.exec(`return not game.current.is_dm`)) {
+                    extracted_file_load(await py.campaign.character.get_char_attr(new_char_id, 'name'), new_char_id + "?char");
+                }
+            });
             return;
         }
         let original_path = path;
@@ -188,9 +208,6 @@
     }
 
     function extracted_file_sort_tabs_to_editor_order() {
-
-
-
         let path_order = extracted_file_editor_area.children('div.editor-container').map((i, el)=>{
 
             return el.getAttribute('data-path');
@@ -219,6 +236,11 @@
             return;
         }
 
+
+        if (mod_editor_opened_tabs[path].data_obj !== null) {
+            mod_editor_opened_tabs[path].data_obj.on_close();
+        }
+
         extracted_file_get_tab(path).remove();
         extracted_file_get_editor(path).remove();
 
@@ -227,6 +249,18 @@
         {#tab_area.children(`div[data-path="${path}"]`).remove();#}
         delete mod_editor_opened_tabs[path];
     }
+
+    window.addEventListener('pywebviewready', async ()=>{
+        if (await py.exec(`return game.current.is_dm`)) {
+            return;
+        }
+
+        (await py.campaign.character.get_loaded_characters()).forEach((item, index)=>{
+            py.campaign.character.get_char_attr(item, 'name').then((char_name)=>{
+                extracted_file_load(char_name, item + "?char");
+            });
+        });
+    });
 
 
 </script>

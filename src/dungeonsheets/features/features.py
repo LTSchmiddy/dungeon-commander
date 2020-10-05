@@ -50,7 +50,11 @@ class Feature():
     _additional_html: (str, bool, None) = None
 
     auto_load_info_dict = True
+    auto_init_spells = True
     _default_info_dict = {}
+
+    spell_ability = None
+    spell_source = name
 
     @classmethod
     def get_default_info_dict(cls):
@@ -58,8 +62,8 @@ class Feature():
 
     def __init__(self, owner=None):
         self.owner = owner
-        self.spells_known = [S() for S in self.spells_known]
-        self.spells_prepared = [S() for S in self.spells_prepared]
+        if self.auto_init_spells:
+            self.init_spells()
         if self.auto_load_info_dict:
             self.load_info_dict()
 
@@ -134,6 +138,10 @@ class Feature():
         self.init_info_dict()
 
         self.owner.info_dict[self.info_dict_key()] = value
+
+    def init_spells(self):
+        self.spells_known = [S(self.spell_ability, self.owner, self.name) for S in self.spells_known]
+        self.spells_prepared = [S(self.spell_ability, self.owner, self.name) for S in self.spells_prepared]
 
     def load_info_dict(self):
         pass

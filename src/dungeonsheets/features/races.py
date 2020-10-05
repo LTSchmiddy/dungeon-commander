@@ -106,22 +106,19 @@ class ElfCantrip(Feature):
     list. Intelligence is your spellcasting ability for it.
 
     """
-    name = "Cantrip"
+    name = "High-Elf Cantrip"
     source = "Race (High-Elf)"
     # needs_implementation = True
 
     def __init__(self, owner=None):
         super(ElfCantrip, self).__init__(owner)
 
-        if hasattr(owner, 'info_dict'):
-            if not self.info_dict_key() in owner.info_dict:
-                owner.info_dict[self.info_dict_key()] = "Spell"
+    def load_info_dict(self):
+        spell_found = db.Session.query(db.tables.DB_Spell).filter(db.tables.DB_Spell.id==self.my_info_dict).first()
+        if spell_found is not None:
+            new_spell: spells.Spell = spell_found.spell_object('intelligence', self.owner, self.name)
 
-            spell_found = db.Session.query(db.tables.DB_Spell).filter(db.tables.DB_Spell.id==owner.info_dict[self.info_dict_key()]).first()
-            if spell_found is not None:
-                new_spell: spells.Spell = spell_found.spell_object()
-
-                self.spells_known = self.spells_prepared = (new_spell,)
+            self.spells_known = self.spells_prepared = (new_spell,)
             # print("processed...")
         # else:
             # print("not processed...")
@@ -161,6 +158,8 @@ class DrowMagic(Feature):
     name = "Drow Magic"
     source = "Race (Dark Elf)"
     spells_known = spells_prepared = (spells.DancingLights,)
+    auto_init_spells = False
+    spell_ability = 'charisma'
 
     def __init__(self, owner=None):
         super(DrowMagic, self).__init__(owner)
@@ -175,6 +174,7 @@ class DrowMagic(Feature):
         else:
             self.spells_known = self.spells_prepared = (spells.DancingLights,)
 
+        self.init_spells()
     # def set_
 
 
@@ -766,6 +766,17 @@ class ReachToTheBlaze(Feature):
     source = "Race (Fire Genasi)"
     spells_known = (spells.ProduceFlame,)
     spells_prepared = spells_known
+    spell_ability = 'constitution'
+    auto_init_spells = True
+
+    def __init__(self, owner):
+        super(ReachToTheBlaze, self).__init__(owner=owner)
+
+        if owner.level >= 3:
+            bh_spell = [spells.BurningHands(self.spell_ability, self.owner, self.name + " (one use per long rest)")]
+            self.spells_known += bh_spell
+            self.spells_prepared += bh_spell
+
 
 
 class AcidResistance(Feature):
