@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": "requires attunement",
+    "cost": "0 gb",
+    "description": "You gain a +1 bonus to AC and saving throws while you wear this cloak.",
+    "id": "Cloakofprotection",
+    "name": "Cloak of Protection",
+    "needs_implementation": false,
+    "rarity": "uncommon",
+    "type": "Wondrous item",
+    "weight": 0
+}

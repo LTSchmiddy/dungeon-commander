@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": false,
+    "cost": "0 gb",
+    "description": "While wearing this helm, you can use an action to cast the _comprehend languages_ spell from it at will.",
+    "id": "Helmofcomprehendinglanguages",
+    "name": "Helm of Comprehending Languages",
+    "needs_implementation": false,
+    "rarity": "uncommon",
+    "type": "Wondrous item",
+    "weight": 0
+}

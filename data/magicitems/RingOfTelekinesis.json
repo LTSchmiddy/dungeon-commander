@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": "requires attunement",
+    "cost": "0 gb",
+    "description": "While wearing this ring, you can cast the _telekinesis_ spell at will, but you can target only objects that aren't being worn or carried.",
+    "id": "Ringoftelekinesis",
+    "name": "Ring of Telekinesis",
+    "needs_implementation": false,
+    "rarity": "very rare",
+    "type": "Ring",
+    "weight": 0
+}

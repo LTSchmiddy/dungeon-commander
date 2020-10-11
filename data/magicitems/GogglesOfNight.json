@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": false,
+    "cost": "0 gb",
+    "description": "While wearing these dark lenses, you have darkvision out to a range of 60 feet. If you already have darkvision, wearing the goggles increases its range by 60 feet.",
+    "id": "Gogglesofnight",
+    "name": "Goggles of Night",
+    "needs_implementation": false,
+    "rarity": "uncommon",
+    "type": "Wondrous item",
+    "weight": 0
+}

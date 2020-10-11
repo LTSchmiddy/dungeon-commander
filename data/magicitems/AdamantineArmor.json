@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": false,
+    "cost": "0 gb",
+    "description": "This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.",
+    "id": "Adamantinearmor",
+    "name": "Adamantine Armor",
+    "needs_implementation": false,
+    "rarity": "uncommon",
+    "type": "Armor (medium or heavy)",
+    "weight": 0
+}

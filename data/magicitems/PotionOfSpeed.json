@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": false,
+    "cost": "0 gb",
+    "description": "When you drink this potion, you gain the effect of the _haste_ spell for 1 minute (no concentration required). The potion's yellow fluid is streaked with black and swirls on its own.",
+    "id": "Potionofspeed",
+    "name": "Potion of Speed",
+    "needs_implementation": false,
+    "rarity": "very rare",
+    "type": "Potion",
+    "weight": 0
+}

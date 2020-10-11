@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": false,
+    "cost": "0 gb",
+    "description": "You are immune to contracting any disease while you wear this pendant. If you are already infected with a disease, the effects of the disease are suppressed you while you wear the pendant.",
+    "id": "Periaptofhealth",
+    "name": "Periapt of Health",
+    "needs_implementation": false,
+    "rarity": "uncommon",
+    "type": "Wondrous item",
+    "weight": 0
+}

@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": "requires attunement",
+    "cost": "0 gb",
+    "description": "Your Constitution score is 19 while you wear this amulet. It has no effect on you if your Constitution is already 19 or higher.",
+    "id": "Amuletofhealth",
+    "name": "Amulet of Health",
+    "needs_implementation": false,
+    "rarity": "rare",
+    "type": "Wondrous item",
+    "weight": 0
+}

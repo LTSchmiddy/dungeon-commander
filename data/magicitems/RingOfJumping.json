@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": "requires attunement",
+    "cost": "0 gb",
+    "description": "While wearing this ring, you can cast the _jump_ spell from it as a bonus action at will, but can target only yourself when you do so.",
+    "id": "Ringofjumping",
+    "name": "Ring of Jumping",
+    "needs_implementation": false,
+    "rarity": "uncommon",
+    "type": "Ring",
+    "weight": 0
+}

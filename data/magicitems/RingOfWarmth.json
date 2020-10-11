@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": "requires attunement",
+    "cost": "0 gb",
+    "description": "While wearing this ring, you have resistance to cold damage. In addition, you and everything you wear and carry are unharmed by temperatures as low as -50 degrees Fahrenheit.",
+    "id": "Ringofwarmth",
+    "name": "Ring of Warmth",
+    "needs_implementation": false,
+    "rarity": "uncommon",
+    "type": "Ring",
+    "weight": 0
+}

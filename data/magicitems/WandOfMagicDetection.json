@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": false,
+    "cost": "0 gb",
+    "description": "This wand has 3 charges. While holding it, you can expend 1 charge as an action to cast the _detect magic_ spell from it. The wand regains 1d3 expended charges daily at dawn.",
+    "id": "Wandofmagicdetection",
+    "name": "Wand of Magic Detection",
+    "needs_implementation": false,
+    "rarity": "uncommon",
+    "type": "Wand",
+    "weight": 0
+}

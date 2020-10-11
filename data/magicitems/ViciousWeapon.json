@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": false,
+    "cost": "0 gb",
+    "description": "When you roll a 20 on your attack roll with this magic weapon, your critical hit deals an extra 2d6 damage of the weapon's type.",
+    "id": "Viciousweapon",
+    "name": "Vicious Weapon",
+    "needs_implementation": false,
+    "rarity": "rare",
+    "type": "Weapon (any)",
+    "weight": 0
+}

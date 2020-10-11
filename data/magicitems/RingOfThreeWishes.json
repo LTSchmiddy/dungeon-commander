@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": false,
+    "cost": "0 gb",
+    "description": "While wearing this ring, you can use an action to expend 1 of its 3 charges to cast the _wish_ spell from it. The ring becomes nonmagical when you use the last charge.",
+    "id": "Ringofthreewishes",
+    "name": "Ring of Three Wishes",
+    "needs_implementation": false,
+    "rarity": "legendary",
+    "type": "Ring",
+    "weight": 0
+}

@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": "requires attunement",
+    "cost": "0 gb",
+    "description": "While holding this shield, you have advantage on saving throws against spells and other magical effects, and spell attacks have disadvantage against you.",
+    "id": "Spellguardshield",
+    "name": "Spellguard Shield",
+    "needs_implementation": false,
+    "rarity": "very rare",
+    "type": "Armor (shield)",
+    "weight": 0
+}

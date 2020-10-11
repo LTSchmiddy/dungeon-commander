@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": false,
+    "cost": "0 gb",
+    "description": "When you drink this potion, you gain the effect of the _gaseous form_ spell for 1 hour (no concentration required) or until you end the effect as a bonus action. This potion's container seems to hold fog that moves and pours like water.",
+    "id": "Potionofgaseousform",
+    "name": "Potion of Gaseous Form",
+    "needs_implementation": false,
+    "rarity": "rare",
+    "type": "Potion",
+    "weight": 0
+}

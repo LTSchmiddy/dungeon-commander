@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": "requires attunement",
+    "cost": "0 gb",
+    "description": "While this polished agate is on your person, you gain a +1 bonus to ability checks and saving throws.",
+    "id": "Stoneofgoodluck(Luckstone)",
+    "name": "Stone of Good Luck (Luckstone)",
+    "needs_implementation": false,
+    "rarity": "uncommon",
+    "type": "Wondrous item",
+    "weight": 0
+}

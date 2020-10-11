@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": false,
+    "cost": "0 gb",
+    "description": "You gain a +1 bonus to AC while you wear this armor. You are considered proficient with this armor even if you lack proficiency with medium armor.",
+    "id": "Elvenchain",
+    "name": "Elven Chain",
+    "needs_implementation": false,
+    "rarity": "rare",
+    "type": "Armor (chain shirt)",
+    "weight": 0
+}

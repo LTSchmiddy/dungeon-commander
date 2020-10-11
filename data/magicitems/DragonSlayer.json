@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": false,
+    "cost": "0 gb",
+    "description": "You gain a +1 bonus to attack and damage rolls made with this magic weapon.\n\nWhen you hit a dragon with this weapon, the dragon takes an extra 3d6 damage of the weapon's type. For the purpose of this weapon, \"dragon\" refers to any creature with the dragon type, including dragon turtles and wyverns.",
+    "id": "Dragonslayer",
+    "name": "Dragon Slayer",
+    "needs_implementation": false,
+    "rarity": "rare",
+    "type": "Weapon (any sword)",
+    "weight": 0
+}

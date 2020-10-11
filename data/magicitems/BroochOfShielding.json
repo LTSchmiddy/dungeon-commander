@@ -1,0 +1,12 @@
+{
+    "ac_bonus": 0,
+    "attunement": "requires attunement",
+    "cost": "0 gb",
+    "description": "While wearing this brooch, you have resistance to force damage, and you have immunity to damage from the _magic missile_ spell.",
+    "id": "Broochofshielding",
+    "name": "Brooch of Shielding",
+    "needs_implementation": false,
+    "rarity": "uncommon",
+    "type": "Wondrous item",
+    "weight": 0
+}
