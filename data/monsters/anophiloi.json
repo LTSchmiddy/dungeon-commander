@@ -18,18 +18,18 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "12",
-    "challenge_rating": "1",
-    "charisma": "6",
+    "armor_class": 12,
+    "challenge_rating": 1.0,
+    "charisma": 6,
     "condition_immunities": "poisoned",
-    "constitution": "14",
+    "constitution": 14,
     "damage_resistances": "poison",
     "damage_vulnerabilities": "cold",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "6d6+12",
-    "hit_points": "33",
+    "hit_points": 33,
     "id": "anophiloi",
-    "intelligence": "5",
+    "intelligence": 5,
     "languages": "-",
     "name": "Anophiloi",
     "senses": "darkvision 60 ft., passive Perception 11",
@@ -51,8 +51,8 @@
         "walk": 30
     },
     "stealth": 4,
-    "strength": "12",
+    "strength": 12,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "12"
+    "wisdom": 12
 }

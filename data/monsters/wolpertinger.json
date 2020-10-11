@@ -18,15 +18,15 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "13",
-    "challenge_rating": "1/4",
-    "charisma": "6",
-    "constitution": "14",
-    "dexterity": "16",
+    "armor_class": 13,
+    "challenge_rating": 0.25,
+    "charisma": 6,
+    "constitution": 14,
+    "dexterity": 16,
     "hit_dice": "2d4+4",
-    "hit_points": "9",
+    "hit_points": 9,
     "id": "wolpertinger",
-    "intelligence": "5",
+    "intelligence": 5,
     "languages": "-",
     "name": "Wolpertinger",
     "senses": "darkvision 60 ft., passive Perception 11",
@@ -51,8 +51,8 @@
         "fly": 30,
         "walk": 30
     },
-    "strength": "6",
+    "strength": 6,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "12"
+    "wisdom": 12
 }

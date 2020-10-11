@@ -30,7 +30,7 @@
     "alignment": "neutral good",
     "armor_class": 12,
     "athletics": 6,
-    "challenge_rating": "2",
+    "challenge_rating": 2.0,
     "charisma": 11,
     "condition_immunities": "",
     "constitution": 14,

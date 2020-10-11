@@ -20,7 +20,7 @@
     "alignment": "unaligned",
     "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 7,
     "condition_immunities": "charmed, frightened, paralyzed, petrified, prone, restrained, stunned",
     "constitution": 8,
@@ -35,7 +35,7 @@
     "perception": 3,
     "senses": "darkvision 60 ft., passive Perception 13",
     "size": "Large",
-    "sleight of Hand": 5,
+    "sleight_of_hand": 5,
     "special_abilities": [
         {
             "attack_bonus": 0,

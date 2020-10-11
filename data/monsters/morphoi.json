@@ -22,7 +22,7 @@
     "alignment": "chaotic evil",
     "armor_class": 13,
     "armor_desc": "may be higher with armor",
-    "challenge_rating": "1/2",
+    "challenge_rating": 0.5,
     "charisma": 15,
     "constitution": 13,
     "dexterity": 16,

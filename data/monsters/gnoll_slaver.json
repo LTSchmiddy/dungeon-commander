@@ -28,17 +28,17 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "chain shirt",
     "athletics": 6,
-    "challenge_rating": "3",
-    "charisma": "12",
-    "constitution": "14",
-    "dexterity": "15",
+    "challenge_rating": 3.0,
+    "charisma": 12,
+    "constitution": 14,
+    "dexterity": 15,
     "hit_dice": "11d8+22",
-    "hit_points": "71",
+    "hit_points": 71,
     "id": "gnoll_slaver",
-    "intelligence": "12",
+    "intelligence": 12,
     "intimidation": 5,
     "languages": "Common, Gnoll",
     "name": "Gnoll Slaver",
@@ -56,8 +56,8 @@
         "walk": 30
     },
     "stealth": 6,
-    "strength": "18",
+    "strength": 18,
     "subtype": "gnoll",
     "type": "humanoid",
-    "wisdom": "11"
+    "wisdom": 11
 }

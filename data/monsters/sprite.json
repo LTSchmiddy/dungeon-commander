@@ -26,7 +26,7 @@
     "alignment": "neutral good",
     "armor_class": 15,
     "armor_desc": "leather armor",
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 11,
     "condition_immunities": "",
     "constitution": 10,

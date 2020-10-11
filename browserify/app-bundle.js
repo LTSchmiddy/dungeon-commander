@@ -15,4 +15,9 @@ window.JSONEditor = require('jsoneditor');
 //include:./node_modules/jsoneditor/dist/jsoneditor.css
 //include:./node_modules/jsoneditor/dist/img
 
-window.pdfjs = require('pdfjs-dist');
+require('jquery-contextmenu');
+//include:./node_modules/jquery-contextmenu/dist/jquery.contextMenu.css
+//include:./node_modules/jquery-contextmenu/dist/font
+
+// window.pdfjs = require('pdfjs-dist');
+// window.pdfjs = require('pdfjs-dist/');

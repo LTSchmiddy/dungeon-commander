@@ -32,7 +32,7 @@
     "arcana": 9,
     "armor_class": 14,
     "armor_desc": "",
-    "challenge_rating": "2",
+    "challenge_rating": 2.0,
     "charisma": 18,
     "condition_immunities": "poisoned",
     "constitution": 12,

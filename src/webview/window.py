@@ -80,6 +80,8 @@ class Window:
         self.gui = None
         self._is_http_server = False
 
+        self.app_flags = []
+
     def _initialize(self, gui, multiprocessing, http_server):
         self.gui = gui
         self.loaded._initialize(multiprocessing)

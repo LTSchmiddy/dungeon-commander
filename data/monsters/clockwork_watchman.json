@@ -23,7 +23,7 @@
     "armor_class": 14,
     "armor_desc": "natural armor",
     "athletics": 4,
-    "challenge_rating": "1/2",
+    "challenge_rating": 0.5,
     "charisma": 1,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
     "constitution": 12,

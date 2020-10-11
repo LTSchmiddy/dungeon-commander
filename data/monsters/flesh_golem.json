@@ -15,7 +15,7 @@
     ],
     "alignment": "neutral",
     "armor_class": 9,
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 5,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
     "constitution": 18,

@@ -13420,7 +13420,7 @@ optin-monster:
     - '4.4'
     - 5.0.0
     - 5.7.0
-  label: Optin Monster
+  label: Optin Creature
   search:
     terms: []
   styles:
@@ -19510,7 +19510,7 @@ truck-loading:
 truck-monster:
   changes:
     - 5.2.0
-  label: Truck Monster
+  label: Truck Creature
   search:
     terms:
       - offroad

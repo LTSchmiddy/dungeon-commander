@@ -22,7 +22,7 @@
     "armor_class": 15,
     "armor_desc": "chain shirt",
     "athletics": 5,
-    "challenge_rating": "3",
+    "challenge_rating": 3.0,
     "charisma": 9,
     "constitution": 14,
     "dexterity": 14,

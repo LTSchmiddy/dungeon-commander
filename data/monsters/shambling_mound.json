@@ -21,7 +21,7 @@
     "alignment": "unaligned",
     "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 5,
     "condition_immunities": "blinded, deafened, exhaustion",
     "constitution": 16,

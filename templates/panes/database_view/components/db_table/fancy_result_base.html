@@ -1,0 +1,76 @@
+
+
+<div
+    class="fancy-table-header {{ custom_class }}"
+    style="
+        grid-template-columns: 20px {{ grid_columns }}
+    "
+>
+    {% for i in range(0, header_prefix_blanks) %}
+        <span class="fancy-table-section"></span>
+    {% endfor %}
+    {% for name, column in table.columns.items() if name in column_names %}
+{#    {% for name in column_names %}#}
+{#        {% set column = table.columns[name]%}#}
+        {%
+            if not column.name.startswith("_")
+            and not type(column.type) == sqltypes.JSON
+        %}
+            <span class="fancy-table-section">
+                {{ textwrap.shorten(str(name).replace("_", " ").title(), 20) }}
+            </span>
+        {% endif %}
+
+
+    {% endfor %}
+
+</div>
+
+<div class="fancy-table-scroller">
+
+    {% for i in result %}
+        <details style="width: 100%">
+            <summary
+                style="
+                    grid-template-columns: 20px {{ grid_columns }}
+                "
+                class="{{ custom_class }}"
+            >
+            {% if prepend_template != "" %}
+                {% include prepend_template %}
+            {% endif %}
+                {%
+                    for j in range(0, len(table.columns)) if
+                    table.columns.items()[j][1].name in column_names
+                    and not table.columns.items()[j][1].name.startswith("_")
+                    and not type(table.columns.items()[j][1].type) == sqltypes.JSON
+                %}
+                    {% set column = table.columns.items()[j][1] %}
+                    {% set data = i[j] %}
+                        <span class="fancy-table-section">
+                            {{ textwrap.shorten(str(data), 40) }}
+                        </span>
+                {% endfor %}
+            </summary>
+
+            <div class="id_view">
+                <span class="label">ID:</span> {{ i[0] }}
+            </div>
+            {% if fill_value != "" and i[list(table.columns.keys()).index(fill_value)].strip() != "" %}
+                <div class="long_view">
+                    {{ md(i[list(table.columns.keys()).index(fill_value)], extras=['tables'])|safe }}
+                </div>
+            {% endif %}
+            {% if details_template != "" %}
+                <div class="long_view">
+                    {% include details_template %}
+                </div>
+            {% endif %}
+
+
+       </details>
+    {% endfor %}
+
+
+
+</div>

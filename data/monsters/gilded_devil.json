@@ -35,7 +35,7 @@
     "alignment": "lawful evil",
     "armor_class": 16,
     "armor_desc": "coin mail",
-    "challenge_rating": "7",
+    "challenge_rating": 7.0,
     "charisma": 17,
     "charisma_save": 6,
     "condition_immunities": "poisoned",
@@ -56,7 +56,7 @@
     "persuasion": 9,
     "senses": "passive Perception $1",
     "size": "Medium",
-    "sleight of Hand": 8,
+    "sleight_of_hand": 8,
     "special_abilities": [
         {
             "attack_bonus": 0,

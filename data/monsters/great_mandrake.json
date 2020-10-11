@@ -16,18 +16,18 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "11",
+    "armor_class": 11,
     "armor_desc": "natural armor",
-    "challenge_rating": "1",
-    "charisma": "12",
+    "challenge_rating": 1.0,
+    "charisma": 12,
     "condition_immunities": "exhaustion, poisoned",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "poison",
-    "dexterity": "8",
+    "dexterity": 8,
     "hit_dice": "8d4+24",
-    "hit_points": "44",
+    "hit_points": 44,
     "id": "great_mandrake",
-    "intelligence": "4",
+    "intelligence": 4,
     "languages": "Common",
     "name": "Great Mandrake",
     "senses": "tremorsense 60 ft. (blind beyond this radius), passive Perception 11",
@@ -36,8 +36,8 @@
     "speed_json": {
         "walk": 10
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "plant",
-    "wisdom": "11"
+    "wisdom": 11
 }

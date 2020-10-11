@@ -12,19 +12,19 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
-    "charisma": "8",
+    "challenge_rating": 4.0,
+    "charisma": 8,
     "condition_immunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "poison",
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "11d10+33",
-    "hit_points": "93",
+    "hit_points": 93,
     "id": "venom_elemental",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "understands Primordial but can't speak",
     "name": "Venom Elemental",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -44,8 +44,8 @@
         "swim": 50,
         "walk": 40
     },
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "elemental",
-    "wisdom": "10"
+    "wisdom": 10
 }

@@ -33,7 +33,7 @@
     "armor_class": 19,
     "armor_desc": "natural armor",
     "athletics": 13,
-    "challenge_rating": "19",
+    "challenge_rating": 19.0,
     "charisma": 20,
     "charisma_save": 11,
     "condition_immunities": "exhaustion",

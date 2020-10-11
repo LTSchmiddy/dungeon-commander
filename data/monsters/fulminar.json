@@ -22,20 +22,20 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "15",
-    "challenge_rating": "9",
-    "charisma": "10",
+    "armor_class": 15,
+    "challenge_rating": 9.0,
+    "charisma": 10,
     "charisma_save": 4,
     "condition_immunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-    "constitution": "14",
+    "constitution": 14,
     "damage_immunities": "poison",
     "damage_resistances": "lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "dexterity": "20",
+    "dexterity": 20,
     "dexterity_save": 9,
     "hit_dice": "15d10+30",
-    "hit_points": "112",
+    "hit_points": 112,
     "id": "fulminar",
-    "intelligence": "8",
+    "intelligence": 8,
     "languages": "Auran",
     "name": "Fulminar",
     "perception": 7,
@@ -61,8 +61,8 @@
         "hover": true
     },
     "stealth": 9,
-    "strength": "10",
+    "strength": 10,
     "subtype": "",
     "type": "elemental",
-    "wisdom": "17"
+    "wisdom": 17
 }

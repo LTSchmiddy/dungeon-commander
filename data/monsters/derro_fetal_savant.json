@@ -14,7 +14,7 @@
     "alignment": "chaotic evil",
     "armor_class": 15,
     "armor_desc": "cage",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 20,
     "charisma_save": 7,
     "condition_immunities": "charmed, frightened",

@@ -22,16 +22,16 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "studded leather",
-    "challenge_rating": "6",
-    "charisma": "14",
-    "constitution": "12",
-    "dexterity": "19",
+    "challenge_rating": 6.0,
+    "charisma": 14,
+    "constitution": 12,
+    "dexterity": 19,
     "hit_dice": "15d8+15",
-    "hit_points": "82",
+    "hit_points": 82,
     "id": "deathsworn_elf",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Common, Elvish",
     "name": "Deathsworn Elf",
     "perception": 7,
@@ -72,9 +72,9 @@
         "walk": 30
     },
     "stealth": 10,
-    "strength": "14",
+    "strength": 14,
     "subtype": "elf",
     "survival": 4,
     "type": "humanoid",
-    "wisdom": "13"
+    "wisdom": 13
 }

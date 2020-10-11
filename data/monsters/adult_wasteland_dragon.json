@@ -32,19 +32,19 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "18",
+    "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "17",
-    "charisma": "16",
-    "constitution": "21",
+    "challenge_rating": 17.0,
+    "charisma": 16,
+    "constitution": 21,
     "constitution_save": 11,
     "damage_immunities": "force",
-    "dexterity": "10",
+    "dexterity": 10,
     "dexterity_save": 6,
     "hit_dice": "18d12+108",
-    "hit_points": "225",
+    "hit_points": 225,
     "id": "adult_wasteland_dragon",
-    "intelligence": "14",
+    "intelligence": 14,
     "languages": "Common, Draconic",
     "legendary_actions": [
         {
@@ -79,8 +79,8 @@
         "walk": 40
     },
     "stealth": 5,
-    "strength": "26",
+    "strength": 26,
     "subtype": "",
     "type": "dragon",
-    "wisdom": "13"
+    "wisdom": 13
 }

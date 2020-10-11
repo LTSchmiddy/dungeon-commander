@@ -24,18 +24,18 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "8",
-    "charisma": "4",
+    "challenge_rating": 8.0,
+    "charisma": 4,
     "condition_immunities": "prone",
-    "constitution": "16",
+    "constitution": 16,
     "damage_resistances": "cold; bludgeoning, piercing and slashing from nonmagical attacks",
-    "dexterity": "13",
+    "dexterity": 13,
     "hit_dice": "10d20+30",
-    "hit_points": "135",
+    "hit_points": 135,
     "id": "ziphius",
-    "intelligence": "9",
+    "intelligence": 9,
     "languages": "Aquan, telepathy 120 ft.",
     "name": "Ziphius",
     "perception": 4,
@@ -64,9 +64,9 @@
         "swim": 60,
         "walk": 10
     },
-    "strength": "19",
+    "strength": 19,
     "strength_save": 7,
     "subtype": "",
     "type": "aberration",
-    "wisdom": "13"
+    "wisdom": 13
 }

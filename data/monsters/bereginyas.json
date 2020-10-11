@@ -20,7 +20,7 @@
     "alignment": "neutral evil",
     "armor_class": 15,
     "armor_desc": "",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 11,
     "constitution": 12,
     "damage_immunities": "bludgeoning",

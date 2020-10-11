@@ -8,18 +8,18 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "10",
+    "armor_class": 10,
     "armor_desc": "natural armor",
-    "challenge_rating": "2",
-    "charisma": "5",
+    "challenge_rating": 2.0,
+    "charisma": 5,
     "condition_immunities": "poisoned",
-    "constitution": "18",
+    "constitution": 18,
     "damage_immunities": "poison",
-    "dexterity": "6",
+    "dexterity": 6,
     "hit_dice": "6d8+24",
-    "hit_points": "51",
+    "hit_points": 51,
     "id": "blood_zombie",
-    "intelligence": "3",
+    "intelligence": 3,
     "languages": "understands the languages it knew in life but can't speak",
     "name": "Blood Zombie",
     "senses": "darkvision 60 ft., passive Perception 8",
@@ -38,9 +38,9 @@
     "speed_json": {
         "walk": 20
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "undead",
-    "wisdom": "6",
+    "wisdom": 6,
     "wisdom_save": 0
 }

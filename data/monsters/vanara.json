@@ -19,15 +19,15 @@
         }
     ],
     "alignment": "neutral good",
-    "armor_class": "13",
-    "challenge_rating": "2",
-    "charisma": "12",
-    "constitution": "12",
-    "dexterity": "16",
+    "armor_class": 13,
+    "challenge_rating": 2.0,
+    "charisma": 12,
+    "constitution": 12,
+    "dexterity": 16,
     "hit_dice": "10d8+10",
-    "hit_points": "55",
+    "hit_points": 55,
     "id": "vanara",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Common, Simian",
     "name": "Vanara",
     "perception": 4,
@@ -53,8 +53,8 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "14",
+    "strength": 14,
     "subtype": "simian",
     "type": "humanoid",
-    "wisdom": "15"
+    "wisdom": 15
 }

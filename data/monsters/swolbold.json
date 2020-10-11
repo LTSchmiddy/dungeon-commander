@@ -12,18 +12,18 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "scale mail",
     "athletics": 6,
-    "challenge_rating": "3",
-    "charisma": "7",
-    "constitution": "15",
+    "challenge_rating": 3.0,
+    "charisma": 7,
+    "constitution": 15,
     "damage_resistances": "bludgeoning",
-    "dexterity": "11",
+    "dexterity": 11,
     "hit_dice": "10d8+20",
-    "hit_points": "65",
+    "hit_points": 65,
     "id": "swolbold",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "Draconic",
     "name": "Swolbold",
     "senses": "darkvision 60 ft., passive Perception 12",
@@ -46,8 +46,8 @@
     "speed_json": {
         "walk": 20
     },
-    "strength": "19",
+    "strength": 19,
     "subtype": "kobold",
     "type": "humanoid",
-    "wisdom": "12"
+    "wisdom": 12
 }

@@ -18,19 +18,19 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "6",
-    "charisma": "8",
+    "challenge_rating": 6.0,
+    "charisma": 8,
     "condition_immunities": "poisoned",
-    "constitution": "17",
+    "constitution": 17,
     "constitution_save": 6,
     "damage_immunities": "fire, poison",
-    "dexterity": "10",
+    "dexterity": 10,
     "hit_dice": "12d12+36",
-    "hit_points": "114",
+    "hit_points": 114,
     "id": "devil_bough",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Abyssal, Infernal, telepathy 120 ft.",
     "name": "Devil Bough",
     "perception": 3,
@@ -56,8 +56,8 @@
     "speed_json": {
         "walk": 10
     },
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "fiend",
-    "wisdom": "10"
+    "wisdom": 10
 }

@@ -22,17 +22,17 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "7",
-    "charisma": "9",
-    "constitution": "19",
+    "challenge_rating": 7.0,
+    "charisma": 9,
+    "constitution": 19,
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
-    "dexterity": "13",
+    "dexterity": 13,
     "hit_dice": "15d8+60",
-    "hit_points": "127",
+    "hit_points": 127,
     "id": "ijiraq",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Sylvan",
     "name": "Ijiraq",
     "perception": 5,
@@ -52,8 +52,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "fey",
-    "wisdom": "15"
+    "wisdom": 15
 }

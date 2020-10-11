@@ -27,7 +27,7 @@
     "alignment": "chaotic good",
     "armor_class": 14,
     "armor_desc": "hide armor",
-    "challenge_rating": "3",
+    "challenge_rating": 3.0,
     "charisma": 9,
     "constitution": 16,
     "dexterity": 14,

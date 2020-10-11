@@ -8,17 +8,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "14",
-    "challenge_rating": "4",
-    "charisma": "3",
+    "armor_class": 14,
+    "challenge_rating": 4.0,
+    "charisma": 3,
     "condition_immunities": "charmed, frightened, paralyzed, petrified, prone, restrained, stunned",
-    "constitution": "10",
+    "constitution": 10,
     "damage_resistances": "bludgeoning, piercing, slashing",
-    "dexterity": "18",
+    "dexterity": 18,
     "hit_dice": "10d10",
-    "hit_points": "55",
+    "hit_points": 55,
     "id": "cats_of_ulthar",
-    "intelligence": "2",
+    "intelligence": 2,
     "languages": "-",
     "name": "Cats of Ulthar",
     "senses": "darkvision 30 ft., passive Perception 12",
@@ -42,8 +42,8 @@
         "walk": 40
     },
     "stealth": 6,
-    "strength": "9",
+    "strength": 9,
     "subtype": "",
     "type": "beasts",
-    "wisdom": "14"
+    "wisdom": 14
 }

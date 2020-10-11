@@ -22,18 +22,18 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "12",
-    "charisma": "7",
-    "constitution": "18",
+    "challenge_rating": 12.0,
+    "charisma": 7,
+    "constitution": 18,
     "damage_immunities": "acid",
     "damage_resistances": "fire",
-    "dexterity": "17",
+    "dexterity": 17,
     "hit_dice": "22d12+88",
-    "hit_points": "231",
+    "hit_points": 231,
     "id": "venom_maw_hydra",
-    "intelligence": "5",
+    "intelligence": 5,
     "languages": "-",
     "legendary_actions": [
         {
@@ -80,8 +80,8 @@
         "walk": 30
     },
     "stealth": 7,
-    "strength": "19",
+    "strength": 19,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "10"
+    "wisdom": 10
 }

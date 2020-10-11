@@ -18,19 +18,19 @@
         }
     ],
     "alignment": "neutral good",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
     "athletics": 5,
-    "challenge_rating": "2",
-    "charisma": "11",
+    "challenge_rating": 2.0,
+    "charisma": 11,
     "condition_immunities": "exhaustion, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-    "constitution": "14",
+    "constitution": 14,
     "damage_immunities": "poison",
-    "dexterity": "11",
+    "dexterity": 11,
     "hit_dice": "6d6+12",
-    "hit_points": "33",
+    "hit_points": 33,
     "id": "pech",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Common, Terran, Undercommon",
     "name": "Pech",
     "perception": 3,
@@ -51,8 +51,8 @@
         "climb": 10,
         "walk": 20
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "elemental",
-    "wisdom": "13"
+    "wisdom": 13
 }

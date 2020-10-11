@@ -12,19 +12,19 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "2",
-    "charisma": "8",
+    "challenge_rating": 2.0,
+    "charisma": 8,
     "condition_immunities": "poisoned",
-    "constitution": "10",
+    "constitution": 10,
     "damage_immunities": "cold, poison",
     "damage_resistances": "fire, lightning",
-    "dexterity": "18",
+    "dexterity": 18,
     "hit_dice": "8d6",
-    "hit_points": "28",
+    "hit_points": 28,
     "id": "wind_demon",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Abyssal, Common, Void Speech",
     "name": "Wind Demon",
     "reactions": [
@@ -51,8 +51,8 @@
         "walk": 30
     },
     "stealth": 8,
-    "strength": "10",
+    "strength": 10,
     "subtype": "demon",
     "type": "fiend",
-    "wisdom": "7"
+    "wisdom": 7
 }

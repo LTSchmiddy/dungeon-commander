@@ -29,7 +29,7 @@
     ],
     "alignment": "lawful evil",
     "armor_class": 12,
-    "challenge_rating": "2",
+    "challenge_rating": 2.0,
     "charisma": 8,
     "condition_immunities": "",
     "constitution": 12,

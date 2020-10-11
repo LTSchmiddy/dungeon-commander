@@ -27,7 +27,7 @@
     "alignment": "neutral",
     "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "6",
+    "challenge_rating": 6.0,
     "charisma": 14,
     "charisma_save": 5,
     "condition_immunities": "charmed",

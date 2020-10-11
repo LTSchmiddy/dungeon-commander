@@ -3,7 +3,7 @@ import os
 from flask import *
 from settings import current, exec_dir, paths
 
-import game
+import game, util
 
 panes = Blueprint(
     'panes',
@@ -20,6 +20,16 @@ from interface_flask.panes import campaign, database
 
 # Panes
 @panes.route('/', methods=['GET', 'POST'])
-def main_pain():
+def main_pane():
     return ""
+
+
+# Campaign View Panes
+@panes.route('/file_tree_dir_listing', methods=['GET', 'POST'])
+def file_tree_view__dir_listing():
+    path = request.form.get('path')
+    if len(os.listdir(path)) == 0:
+        return f"ERROR: directory '{path}' is empty"
+
+    return render_template("components/extract_dir_listing.html", dir_list = util.get_dir_tree(path), dir_name=game.current.name)
 

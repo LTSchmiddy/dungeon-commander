@@ -16,7 +16,7 @@
     "alignment": "neutral",
     "armor_class": 14,
     "armor_desc": "studded leather armor",
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 10,
     "constitution": 11,
     "dexterity": 15,

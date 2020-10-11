@@ -20,7 +20,7 @@
     "alignment": "chaotic evil",
     "armor_class": 19,
     "armor_desc": "natural armor",
-    "challenge_rating": "17",
+    "challenge_rating": 17.0,
     "charisma": 20,
     "charisma_save": 11,
     "condition_immunities": "frightened",

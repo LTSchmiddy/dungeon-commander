@@ -8,18 +8,18 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "12",
+    "armor_class": 12,
     "athletics": 5,
-    "challenge_rating": "2",
-    "charisma": "7",
+    "challenge_rating": 2.0,
+    "charisma": 7,
     "condition_immunities": "exhaustion, frightened, poisoned",
-    "constitution": "10",
+    "constitution": 10,
     "damage_immunities": "poison",
-    "dexterity": "15",
+    "dexterity": 15,
     "hit_dice": "6d10",
-    "hit_points": "33",
+    "hit_points": 33,
     "id": "fear_liath",
-    "intelligence": "8",
+    "intelligence": 8,
     "languages": "any languages it knew in life",
     "name": "Fear Liath",
     "senses": "darkvision 60 ft., passive Perception 12",
@@ -39,8 +39,8 @@
         "walk": 40
     },
     "stealth": 6,
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "undead",
-    "wisdom": "14"
+    "wisdom": 14
 }

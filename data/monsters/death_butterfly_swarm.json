@@ -15,7 +15,7 @@
     "alignment": "chaotic evil",
     "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 15,
     "condition_immunities": "charmed, frightened, paralyzed, petrified, prone, restrained, petrified",
     "constitution": 10,

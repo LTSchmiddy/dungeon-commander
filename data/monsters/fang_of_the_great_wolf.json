@@ -12,18 +12,18 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "8",
-    "constitution": "13",
+    "challenge_rating": 3.0,
+    "charisma": 8,
+    "constitution": 13,
     "damage_resistances": "cold",
-    "dexterity": "13",
+    "dexterity": 13,
     "hit_dice": "10d10+10",
-    "hit_points": "65",
+    "hit_points": 65,
     "id": "fang_of_the_great_wolf",
     "insight": 3,
-    "intelligence": "9",
+    "intelligence": 9,
     "languages": "Common, Goblin, Worg",
     "name": "Fang of the Great Wolf",
     "perception": 5,
@@ -40,8 +40,8 @@
     "speed_json": {
         "walk": 50
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "13"
+    "wisdom": 13
 }

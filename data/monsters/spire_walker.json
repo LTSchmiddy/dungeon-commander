@@ -10,7 +10,7 @@
     "alignment": "chaotic neutral",
     "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
+    "challenge_rating": 3.0,
     "charisma": 14,
     "constitution": 14,
     "damage_immunities": "lightning, thunder",

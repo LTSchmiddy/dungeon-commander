@@ -12,19 +12,19 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "3",
+    "challenge_rating": 3.0,
+    "charisma": 3,
     "condition_immunities": "charmed, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "poison",
     "damage_resistances": "cold, fire, lightning; bludgeoning, slashing, and piercing",
-    "dexterity": "17",
+    "dexterity": 17,
     "hit_dice": "4d8+12",
-    "hit_points": "30",
+    "hit_points": 30,
     "id": "plaresh",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "understands Abyssal but can't speak",
     "name": "Plaresh",
     "senses": "blindsight 30 ft. (blind beyond this radius), tremorsense 60 ft., passive Perception 11",
@@ -49,8 +49,8 @@
         "swim": 30,
         "walk": 30
     },
-    "strength": "2",
+    "strength": 2,
     "subtype": "demon",
     "type": "fiends",
-    "wisdom": "12"
+    "wisdom": 12
 }

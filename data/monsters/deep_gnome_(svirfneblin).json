@@ -18,7 +18,7 @@
     "alignment": "neutral good",
     "armor_class": 15,
     "armor_desc": "chain shirt",
-    "challenge_rating": "1/2",
+    "challenge_rating": 0.5,
     "charisma": 9,
     "condition_immunities": "",
     "constitution": 14,

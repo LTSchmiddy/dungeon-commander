@@ -22,17 +22,17 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "13",
-    "challenge_rating": "8",
-    "charisma": "17",
-    "constitution": "12",
+    "armor_class": 13,
+    "challenge_rating": 8.0,
+    "charisma": 17,
+    "constitution": 12,
     "damage_immunities": "psychic",
     "damage_resistances": "necrotic, radiant",
-    "dexterity": "17",
+    "dexterity": 17,
     "hit_dice": "20d8+20",
-    "hit_points": "110",
+    "hit_points": 110,
     "id": "moon_nymph",
-    "intelligence": "13",
+    "intelligence": 13,
     "languages": "-",
     "name": "Moon Nymph",
     "perception": 5,
@@ -56,8 +56,8 @@
         "walk": 0
     },
     "stealth": 6,
-    "strength": "5",
+    "strength": 5,
     "subtype": "",
     "type": "aberration",
-    "wisdom": "15"
+    "wisdom": 15
 }

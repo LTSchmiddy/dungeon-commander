@@ -390,7 +390,7 @@ class HoldMonster(Spell):
     target one additional creature for each slot level above 5th. The creatures must
      be within 30 feet of each other when you target them.
     """
-    name = "Hold Monster"
+    name = "Hold Creature"
     level = 5
     casting_time = "1 action"
     casting_range = "90 feet"

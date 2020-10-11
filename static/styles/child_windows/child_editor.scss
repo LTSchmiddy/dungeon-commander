@@ -1,0 +1,69 @@
+.child-window-field {
+    top: 40px !important;
+    height: calc(100% - 40px) !important;
+    #campaign-view {
+
+        .sidebar-content-field {
+            position: absolute;
+            right: 0;
+            height: 100%;
+            overflow: auto;
+            width: 100%;
+
+            $editor-topbar-height: 30px;
+            $tab_view_size: 30px;
+
+            .editor-area {
+                //height: calc(100%) !important;
+                //max-height: calc(100%) !important;
+                .editor-container {
+                    //height: calc(100vh - #{$tab_view_size} - #{$editor-topbar-height}) !important;
+
+                    .editor-content {
+                         //height: 100% !important;
+
+                        .jsoneditor {
+                            min-height: 0;
+                            height: 100%;
+                            overflow: auto;
+                            padding-bottom: 20px !important;
+
+                            .jsoneditor-outer {
+
+                            }
+                        }
+
+                        .char-display-view, .char-json-view {
+                            //height: calc(100% - #{$editor-topbar-height}px);
+                            height: calc(100%);
+                            overflow: auto;
+
+                        }
+
+                        .char-ace-view {
+                            //height: calc(100%) !important;
+
+                            .char-ace-view-editor {
+                                position: relative;
+                                width: calc(100%);
+                                //height: calc(100% - 30px) !important;
+                            }
+                            .char-ace-view-status {
+                                position: relative;
+                                width: calc(100%);
+                                padding: 0 10px;
+                            }
+
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.main-view {
+    //background-color: red;
+}

@@ -18,16 +18,16 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "hide armor",
-    "challenge_rating": "2",
-    "charisma": "8",
-    "constitution": "14",
-    "dexterity": "14",
+    "challenge_rating": 2.0,
+    "charisma": 8,
+    "constitution": 14,
+    "dexterity": 14,
     "hit_dice": "10d8+20",
-    "hit_points": "65",
+    "hit_points": 65,
     "id": "black_sun_orc",
-    "intelligence": "9",
+    "intelligence": 9,
     "languages": "Common, Orc",
     "name": "Black Sun Orc",
     "perception": 3,
@@ -57,9 +57,9 @@
         "walk": 30
     },
     "stealth": 4,
-    "strength": "16",
+    "strength": 16,
     "subtype": "orc",
     "survival": 3,
     "type": "humanoid",
-    "wisdom": "12"
+    "wisdom": 12
 }

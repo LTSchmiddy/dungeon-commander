@@ -1,0 +1,32 @@
+
+{% extends "common/base.html" %}
+{% block body %}
+    {% include "common/components/navbar.html" %}
+    <div class="child-window-field">
+        <div id="campaign-view" class="main-view">
+
+            {% include "panes/campaign_view/file_content_area.html" %}
+
+        </div>
+    </div>
+
+
+    <script>
+        "use strict";
+        const app_views = [
+            $("#campaign-view"),
+        ];
+        let app_keymap_scopes = {};
+        let app_current_view = "campaign-view";
+        function app_init_views() {
+            app_views.forEach((value, index, views) => {
+                let this_id = value.attr('id');
+                app_keymap_scopes[this_id] = this_id;
+            });
+        }
+        app_init_views();
+    </script>
+
+
+
+{% endblock %}

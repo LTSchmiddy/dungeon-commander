@@ -24,18 +24,18 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "10",
-    "constitution": "16",
+    "challenge_rating": 3.0,
+    "charisma": 10,
+    "constitution": 16,
     "constitution_save": 5,
-    "dexterity": "14",
+    "dexterity": 14,
     "dexterity_save": 4,
     "hit_dice": "8d10+24",
-    "hit_points": "68",
+    "hit_points": 68,
     "id": "peluda_drake",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "Draconic",
     "name": "Peluda Drake",
     "perception": 4,
@@ -57,8 +57,8 @@
         "walk": 30
     },
     "stealth": 4,
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "dragon",
-    "wisdom": "14"
+    "wisdom": 14
 }

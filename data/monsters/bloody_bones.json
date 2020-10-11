@@ -16,17 +16,17 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "10",
-    "constitution": "12",
+    "challenge_rating": 3.0,
+    "charisma": 10,
+    "constitution": 12,
     "deception": 4,
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "10d8+10",
-    "hit_points": "55",
+    "hit_points": 55,
     "id": "bloody_bones",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "none, but can speak through the use of its Horrific Imitation trait",
     "name": "Bloody Bones",
     "reactions": [
@@ -52,8 +52,8 @@
         "walk": 30
     },
     "stealth": 3,
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "10"
+    "wisdom": 10
 }

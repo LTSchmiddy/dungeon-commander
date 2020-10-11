@@ -14,19 +14,19 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "6",
-    "constitution": "14",
+    "challenge_rating": 3.0,
+    "charisma": 6,
+    "constitution": 14,
     "constitution_save": 4,
     "damage_resistances": "cold",
     "damage_vulnerabilities": "radiant",
-    "dexterity": "17",
+    "dexterity": 17,
     "hit_dice": "17d10+34",
-    "hit_points": "127",
+    "hit_points": 127,
     "id": "ghast_of_leng",
-    "intelligence": "4",
+    "intelligence": 4,
     "languages": "Void Speech",
     "name": "Ghast of Leng",
     "perception": 1,
@@ -50,9 +50,9 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "15",
+    "strength": 15,
     "subtype": "",
     "type": "aberration",
-    "wisdom": "9",
+    "wisdom": 9,
     "wisdom_save": 1
 }

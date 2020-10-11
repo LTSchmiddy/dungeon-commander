@@ -16,17 +16,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "8",
-    "challenge_rating": "3",
-    "charisma": "2",
+    "armor_class": 8,
+    "challenge_rating": 3.0,
+    "charisma": 2,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
-    "constitution": "18",
+    "constitution": 18,
     "damage_immunities": "acid, necrotic",
-    "dexterity": "6",
+    "dexterity": 6,
     "hit_dice": "9d8+36",
-    "hit_points": "76",
+    "hit_points": 76,
     "id": "shadow_ooze",
-    "intelligence": "2",
+    "intelligence": 2,
     "languages": "-",
     "name": "Shadow Ooze",
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
@@ -51,8 +51,8 @@
         "walk": 20
     },
     "stealth": 2,
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "ooze",
-    "wisdom": "6"
+    "wisdom": 6
 }

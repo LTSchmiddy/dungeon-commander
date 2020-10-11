@@ -8,16 +8,16 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "1",
-    "charisma": "5",
-    "constitution": "14",
-    "dexterity": "11",
+    "challenge_rating": 1.0,
+    "charisma": 5,
+    "constitution": 14,
+    "dexterity": 11,
     "hit_dice": "6d10+12",
-    "hit_points": "45",
+    "hit_points": 45,
     "id": "nodosaurus",
-    "intelligence": "2",
+    "intelligence": 2,
     "languages": "-",
     "name": "Nodosaurus",
     "senses": "passive Perception 11",
@@ -32,8 +32,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "beast",
-    "wisdom": "12"
+    "wisdom": 12
 }

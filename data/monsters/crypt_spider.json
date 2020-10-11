@@ -16,19 +16,19 @@
         }
     ],
     "alignment": "lawful evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "2",
-    "charisma": "8",
+    "challenge_rating": 2.0,
+    "charisma": 8,
     "condition_immunities": "poisoned",
-    "constitution": "12",
+    "constitution": 12,
     "damage_immunities": "poison",
     "deception": 1,
-    "dexterity": "16",
+    "dexterity": 16,
     "hit_dice": "7d8+7",
-    "hit_points": "38",
+    "hit_points": 38,
     "id": "crypt_spider",
-    "intelligence": "10",
+    "intelligence": 10,
     "intimidation": 1,
     "languages": "Common, Undercommon",
     "name": "Crypt Spider",
@@ -58,8 +58,8 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "beast",
-    "wisdom": "11"
+    "wisdom": 11
 }

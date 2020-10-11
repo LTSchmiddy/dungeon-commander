@@ -28,7 +28,7 @@
     "armor_class": 18,
     "armor_desc": "natural armor",
     "athletics": 12,
-    "challenge_rating": "12",
+    "challenge_rating": 12.0,
     "charisma": 14,
     "charisma_save": 6,
     "condition_immunities": "paralyzed, prone",

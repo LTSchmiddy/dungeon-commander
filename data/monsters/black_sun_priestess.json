@@ -8,17 +8,17 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "hide armor",
-    "challenge_rating": "3",
-    "charisma": "14",
-    "constitution": "16",
-    "dexterity": "12",
+    "challenge_rating": 3.0,
+    "charisma": 14,
+    "constitution": 16,
+    "dexterity": 12,
     "hit_dice": "9d8+27",
-    "hit_points": "67",
+    "hit_points": 67,
     "id": "black_sun_priestess",
     "insight": 6,
-    "intelligence": "9",
+    "intelligence": 9,
     "intimidation": 6,
     "languages": "Common, Orc",
     "name": "Black Sun Priestess",
@@ -47,8 +47,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "orc",
     "type": "humanoid",
-    "wisdom": "16"
+    "wisdom": 16
 }

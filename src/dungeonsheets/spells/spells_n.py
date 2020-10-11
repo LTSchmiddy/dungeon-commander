@@ -7,7 +7,7 @@ class NegativeEnergyFlood(Spell):
     5d12 necrotic damage on a failed save, or half as much damage on a successful
     one. A target killed by this damage rises up as a zombie at the start of your
     next turn. The zombie pursues whatever creature it can see that is closest to
-    it. Statistics for the zombie are in the Monster Manual. If you target an undead
+    it. Statistics for the zombie are in the Creature Manual. If you target an undead
      with this spell, the target doesn't make a saving throw. Instead, roll 5d12.
     The target gains half the total as temporary hit points.
     """

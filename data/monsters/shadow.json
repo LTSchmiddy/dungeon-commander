@@ -10,7 +10,7 @@
     ],
     "alignment": "chaotic evil",
     "armor_class": 12,
-    "challenge_rating": "1/2",
+    "challenge_rating": 0.5,
     "charisma": 8,
     "condition_immunities": "exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
     "constitution": 13,

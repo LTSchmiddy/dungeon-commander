@@ -27,7 +27,7 @@
     ],
     "alignment": "chaotic evil",
     "armor_class": 11,
-    "challenge_rating": "1",
+    "challenge_rating": 1.0,
     "charisma": 13,
     "condition_immunities": "",
     "constitution": 12,

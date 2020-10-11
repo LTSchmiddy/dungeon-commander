@@ -18,20 +18,20 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
     "athletics": 8,
-    "challenge_rating": "4",
-    "charisma": "12",
+    "challenge_rating": 4.0,
+    "charisma": 12,
     "condition_immunities": "charmed, frightened",
-    "constitution": "18",
+    "constitution": 18,
     "damage_resistances": "necrotic",
     "damage_vulnerabilities": "radiant",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "10d10+40",
-    "hit_points": "95",
+    "hit_points": 95,
     "id": "spawn_of_chernobog",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "understands Common, Umbral, and Undercommon but can't speak",
     "name": "Spawn of Chernobog",
     "senses": "darkvision 60 ft., passive Perception 11",
@@ -51,8 +51,8 @@
         "walk": 40
     },
     "stealth": 3,
-    "strength": "22",
+    "strength": 22,
     "subtype": "",
     "type": "fiend",
-    "wisdom": "12"
+    "wisdom": 12
 }

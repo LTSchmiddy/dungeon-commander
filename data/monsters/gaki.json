@@ -18,19 +18,19 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "14",
-    "challenge_rating": "8",
-    "charisma": "16",
+    "armor_class": 14,
+    "challenge_rating": 8.0,
+    "charisma": 16,
     "charisma_save": 6,
     "condition_immunities": "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
-    "constitution": "17",
+    "constitution": 17,
     "damage_immunities": "cold, necrotic, poison",
     "damage_resistances": "acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "dexterity": "18",
+    "dexterity": 18,
     "hit_dice": "10d8+30",
-    "hit_points": "75",
+    "hit_points": 75,
     "id": "gaki",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "any languages it knew in life",
     "name": "Gaki",
     "perception": 4,
@@ -58,9 +58,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "7",
+    "strength": 7,
     "subtype": "",
     "type": "undead",
-    "wisdom": "12",
+    "wisdom": 12,
     "wisdom_save": 4
 }

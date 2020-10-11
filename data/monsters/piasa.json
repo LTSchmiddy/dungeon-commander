@@ -32,20 +32,20 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
     "athletics": 7,
-    "challenge_rating": "6",
-    "charisma": "7",
-    "constitution": "16",
+    "challenge_rating": 6.0,
+    "charisma": 7,
+    "constitution": 16,
     "constitution_save": 6,
     "damage_vulnerabilities": "poison",
-    "dexterity": "11",
+    "dexterity": 11,
     "dexterity_save": 3,
     "hit_dice": "17d10+51",
-    "hit_points": "144",
+    "hit_points": 144,
     "id": "piasa",
-    "intelligence": "9",
+    "intelligence": 9,
     "languages": "Draconic",
     "name": "Piasa",
     "perception": 4,
@@ -63,8 +63,8 @@
         "walk": 40
     },
     "stealth": 3,
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "dragon",
-    "wisdom": "12"
+    "wisdom": 12
 }

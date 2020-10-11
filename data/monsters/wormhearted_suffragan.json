@@ -14,7 +14,7 @@
         }
     ],
     "alignment": "chaotic evil",
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 8,
     "constitution": 16,
     "damage_resistances": "necrotic; bludgeoning, piercing, and slashing from nonmagical weapons",

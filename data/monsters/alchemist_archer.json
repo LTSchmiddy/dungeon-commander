@@ -18,16 +18,16 @@
         }
     ],
     "alignment": "any alignment",
-    "armor_class": "17",
+    "armor_class": 17,
     "armor_desc": "studded leather",
-    "challenge_rating": "10",
-    "charisma": "10",
-    "constitution": "16",
-    "dexterity": "20",
+    "challenge_rating": 10.0,
+    "charisma": 10,
+    "constitution": 16,
+    "dexterity": 20,
     "hit_dice": "18d8+54",
-    "hit_points": "135",
+    "hit_points": 135,
     "id": "alchemist_archer",
-    "intelligence": "18",
+    "intelligence": 18,
     "intelligence_save": 8,
     "languages": "Common, Elvish",
     "name": "Alchemist Archer",
@@ -53,10 +53,10 @@
         "walk": 30
     },
     "stealth": 9,
-    "strength": "11",
+    "strength": 11,
     "strength_save": 4,
     "subtype": "elf",
     "survival": 6,
     "type": "humanoid",
-    "wisdom": "14"
+    "wisdom": 14
 }

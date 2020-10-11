@@ -20,7 +20,7 @@
     "alignment": "neutral",
     "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "8",
+    "challenge_rating": 8.0,
     "charisma": 10,
     "condition_immunities": "prone",
     "constitution": 18,

@@ -1,5 +1,4 @@
 {
-    " Intimidation": 5,
     "actions": [
         {
             "attack_bonus": 0,
@@ -25,11 +24,11 @@
         }
     ],
     "alignment": "lawful evil",
-    "animal Handling": 4,
+    "animal_handling": 4,
     "armor_class": 18,
     "armor_desc": "plate",
     "athletics": 7,
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 15,
     "charisma_save": 5,
     "constitution": 14,
@@ -38,6 +37,7 @@
     "hit_points": 78,
     "id": "black_knight_commander",
     "intelligence": 12,
+    "intimidation": 5,
     "languages": "any two languages",
     "name": "Black Knight Commander",
     "senses": "passive Perception $1",

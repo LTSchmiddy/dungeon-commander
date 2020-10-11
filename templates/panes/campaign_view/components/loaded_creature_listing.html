@@ -1,0 +1,16 @@
+<strong>Loaded Creatures</strong>
+<ul class="char-list">
+
+{% for ref_id, creature in creatures.items() %}
+        <li data-loaded-char-entry-id="{{ ref_id }}">
+            <a class="close-btn" onclick="
+                    py.campaign.creature.unload_creature( {{ ref_id }} );
+                    extracted_file_close( {{ ref_id }} );
+                    {#console.log(this.parentElement);#}
+                    this.parentElement.remove();
+            ">X</a>
+            <a onclick="extracted_file_load('{{ creature.name }}', '{{ ref_id }}?creature')">{{ creature.name }}</a>
+        </li>
+{% endfor %}
+
+</ul>

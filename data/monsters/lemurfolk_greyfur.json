@@ -17,7 +17,7 @@
     "alignment": "neutral",
     "armor_class": 13,
     "armor_desc": "16 with mage armor",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 10,
     "constitution": 12,
     "dexterity": 16,

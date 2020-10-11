@@ -8,21 +8,21 @@
         }
     ],
     "alignment": "any evil alignment",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "9",
-    "charisma": "17",
+    "challenge_rating": 9.0,
+    "charisma": 17,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
-    "constitution": "15",
+    "constitution": 15,
     "constitution_save": 6,
     "damage_immunities": "poison; bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_resistances": "cold, lightning, necrotic",
-    "dexterity": "13",
+    "dexterity": 13,
     "hit_dice": "14d8+28",
-    "hit_points": "91",
+    "hit_points": 91,
     "id": "hierophant_lich",
     "insight": 9,
-    "intelligence": "12",
+    "intelligence": 12,
     "intelligence_save": 5,
     "languages": "Common, Abyssal, Infernal, Void Speech",
     "legendary_actions": [
@@ -71,9 +71,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "12",
+    "strength": 12,
     "subtype": "",
     "type": "undead",
-    "wisdom": "20",
+    "wisdom": 20,
     "wisdom_save": 9
 }

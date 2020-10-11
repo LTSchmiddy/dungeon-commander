@@ -16,7 +16,7 @@
     "alignment": "unaligned",
     "armor_class": 13,
     "armor_desc": "",
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 2,
     "condition_immunities": "charmed, frightened",
     "constitution": 10,

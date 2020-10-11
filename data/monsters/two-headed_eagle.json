@@ -19,17 +19,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "15",
+    "armor_class": 15,
     "athletics": 8,
-    "challenge_rating": "7",
-    "charisma": "14",
+    "challenge_rating": 7.0,
+    "charisma": 14,
     "condition_immunities": "charmed",
-    "constitution": "16",
-    "dexterity": "21",
+    "constitution": 16,
+    "dexterity": 21,
     "hit_dice": "15d12+45",
-    "hit_points": "142",
+    "hit_points": 142,
     "id": "two-headed_eagle",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "understands Common but can't speak",
     "name": "Two-Headed Eagle",
     "perception": 4,
@@ -54,8 +54,8 @@
         "fly": 100,
         "walk": 20
     },
-    "strength": "20",
+    "strength": 20,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "12"
+    "wisdom": 12
 }

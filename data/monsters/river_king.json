@@ -26,7 +26,7 @@
     "alignment": "chaotic neutral",
     "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "16",
+    "challenge_rating": 16.0,
     "charisma": 17,
     "condition_immunities": "exhaustion",
     "constitution": 20,

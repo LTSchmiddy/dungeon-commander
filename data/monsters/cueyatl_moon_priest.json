@@ -12,17 +12,17 @@
         }
     ],
     "alignment": "lawful evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "studded leather",
-    "challenge_rating": "5",
-    "charisma": "12",
-    "constitution": "12",
+    "challenge_rating": 5.0,
+    "charisma": 12,
+    "constitution": 12,
     "constitution_save": 4,
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "18d6+18",
-    "hit_points": "81",
+    "hit_points": 81,
     "id": "cueyatl_moon_priest",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Cueyatl",
     "medicine": 6,
     "name": "Cueyatl Moon Priest",
@@ -58,8 +58,8 @@
         "swim": 30,
         "walk": 30
     },
-    "strength": "10",
+    "strength": 10,
     "subtype": "",
     "type": "humanoid",
-    "wisdom": "16"
+    "wisdom": 16
 }

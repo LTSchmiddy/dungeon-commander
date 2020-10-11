@@ -18,18 +18,18 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "10",
-    "challenge_rating": "1",
-    "charisma": "1",
+    "armor_class": 10,
+    "challenge_rating": 1.0,
+    "charisma": 1,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
-    "constitution": "13",
+    "constitution": 13,
     "damage_immunities": "poison, psychic",
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks not made with adamantine",
-    "dexterity": "10",
+    "dexterity": 10,
     "hit_dice": "6d6+6",
-    "hit_points": "27",
+    "hit_points": 27,
     "id": "mud_golem",
-    "intelligence": "3",
+    "intelligence": 3,
     "languages": "understands the languages of its creator but can't speak",
     "name": "Mud Golem",
     "senses": "darkvision 60 ft., passive Perception 9",
@@ -48,8 +48,8 @@
     "speed_json": {
         "walk": 20
     },
-    "strength": "15",
+    "strength": 15,
     "subtype": "",
     "type": "construct",
-    "wisdom": "8"
+    "wisdom": 8
 }

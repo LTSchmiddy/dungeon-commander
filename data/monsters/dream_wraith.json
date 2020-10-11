@@ -12,19 +12,19 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "14",
-    "challenge_rating": "5",
-    "charisma": "16",
+    "armor_class": 14,
+    "challenge_rating": 5.0,
+    "charisma": 16,
     "condition_immunities": "poisoned",
-    "constitution": "17",
+    "constitution": 17,
     "damage_immunities": "necrotic, poison",
     "damage_resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_vulnerabilities": "psychic",
-    "dexterity": "18",
+    "dexterity": 18,
     "hit_dice": "8d8+24",
-    "hit_points": "60",
+    "hit_points": 60,
     "id": "dream_wraith",
-    "intelligence": "12",
+    "intelligence": 12,
     "languages": "Common",
     "name": "Dream Wraith",
     "reactions": [
@@ -56,8 +56,8 @@
         "walk": 0
     },
     "stealth": 7,
-    "strength": "6",
+    "strength": 6,
     "subtype": "",
     "type": "undead",
-    "wisdom": "15"
+    "wisdom": 15
 }

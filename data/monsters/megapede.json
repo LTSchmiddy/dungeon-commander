@@ -26,17 +26,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "3",
-    "constitution": "15",
+    "challenge_rating": 3.0,
+    "charisma": 3,
+    "constitution": 15,
     "damage_immunities": "acid",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "10d10+20",
-    "hit_points": "75",
+    "hit_points": 75,
     "id": "megapede",
-    "intelligence": "2",
+    "intelligence": 2,
     "languages": "-",
     "name": "Megapede",
     "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 8",
@@ -52,8 +52,8 @@
         "climb": 40,
         "walk": 40
     },
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "7"
+    "wisdom": 7
 }

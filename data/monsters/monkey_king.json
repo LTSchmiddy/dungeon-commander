@@ -25,22 +25,22 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "21",
+    "armor_class": 21,
     "armor_desc": "natural armor",
-    "challenge_rating": "21",
-    "charisma": "17",
+    "challenge_rating": 21.0,
+    "charisma": 17,
     "condition_immunities": "charmed, frightened, poisoned, stunned",
-    "constitution": "22",
+    "constitution": 22,
     "constitution_save": 13,
     "damage_immunities": "necrotic, poison, radiant",
     "deception": 10,
-    "dexterity": "24",
+    "dexterity": 24,
     "dexterity_save": 14,
     "hit_dice": "25d8+150",
-    "hit_points": "262",
+    "hit_points": 262,
     "id": "monkey_king",
     "insight": 12,
-    "intelligence": "16",
+    "intelligence": 16,
     "languages": "Celestial, Common, Simian",
     "legendary_actions": [
         {
@@ -87,9 +87,9 @@
         "walk": 60
     },
     "stealth": 14,
-    "strength": "19",
+    "strength": 19,
     "subtype": "",
     "type": "celestial",
-    "wisdom": "21",
+    "wisdom": 21,
     "wisdom_save": 12
 }

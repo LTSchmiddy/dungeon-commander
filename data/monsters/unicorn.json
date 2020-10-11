@@ -32,7 +32,7 @@
     ],
     "alignment": "lawful good",
     "armor_class": 12,
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 16,
     "condition_immunities": "charmed, paralyzed, poisoned",
     "constitution": 15,

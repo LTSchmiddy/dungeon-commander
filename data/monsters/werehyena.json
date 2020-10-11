@@ -24,17 +24,17 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "in gnoll form, 14 (natural armor) in hyena or hybrid form",
-    "challenge_rating": "3",
-    "charisma": "10",
-    "constitution": "14",
+    "challenge_rating": 3.0,
+    "charisma": 10,
+    "constitution": 14,
     "damage_immunities": "bludgeoning, piercing, and slashing from nonmagical attacks not made with silver",
-    "dexterity": "16",
+    "dexterity": 16,
     "hit_dice": "9d8+18",
-    "hit_points": "58",
+    "hit_points": 58,
     "id": "werehyena",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Gnoll (can't speak in hyena form)",
     "name": "Werehyena",
     "perception": 2,
@@ -55,8 +55,8 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "11",
+    "strength": 11,
     "subtype": "gnoll, shapechanger",
     "type": "humanoid",
-    "wisdom": "11"
+    "wisdom": 11
 }

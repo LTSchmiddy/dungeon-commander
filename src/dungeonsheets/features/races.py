@@ -420,6 +420,7 @@ class InfernalLegacy(Feature):
     name = "Infernal Legacy"
     source = "Race (Tiefling)"
     spells_known = spells_prepared = (spells.Thaumaturgy,)
+    spell_ability = 'charisma'
 
 
 # Aasimar

@@ -20,20 +20,20 @@
         }
     ],
     "alignment": "lawful good",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "8",
-    "charisma": "18",
+    "challenge_rating": 8.0,
+    "charisma": 18,
     "charisma_save": 7,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened",
-    "constitution": "14",
+    "constitution": 14,
     "damage_resistances": "fire, radiant; bludgeoning, piercing, and slashing from nomagical attacks",
-    "dexterity": "10",
+    "dexterity": 10,
     "hit_dice": "16d8+32",
-    "hit_points": "104",
+    "hit_points": 104,
     "id": "zoryas",
     "insight": 7,
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "all, telepathy 120 ft.",
     "name": "Zoryas",
     "perception": 7,
@@ -62,8 +62,8 @@
         "fly": 40,
         "walk": 30
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "celestial",
-    "wisdom": "18"
+    "wisdom": 18
 }

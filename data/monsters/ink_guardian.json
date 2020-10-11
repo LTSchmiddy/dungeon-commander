@@ -12,18 +12,18 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "8",
-    "challenge_rating": "4",
-    "charisma": "1",
+    "armor_class": 8,
+    "challenge_rating": 4.0,
+    "charisma": 1,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "acid",
     "damage_resistances": "fire, slashing, thunder",
-    "dexterity": "7",
+    "dexterity": 7,
     "hit_dice": "12d10+36",
-    "hit_points": "102",
+    "hit_points": 102,
     "id": "ink_guardian",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "-",
     "name": "Ink Guardian",
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
@@ -50,8 +50,8 @@
     "speed_json": {
         "walk": 20
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "ooze",
-    "wisdom": "6"
+    "wisdom": 6
 }

@@ -20,7 +20,7 @@
     "alignment": "chaotic evil",
     "armor_class": 13,
     "armor_desc": "natural",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 10,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
     "constitution": 12,

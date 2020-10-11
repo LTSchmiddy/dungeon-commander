@@ -12,7 +12,7 @@
     "arcana": 6,
     "armor_class": 12,
     "armor_desc": "15 with _mage armor_",
-    "challenge_rating": "6",
+    "challenge_rating": 6.0,
     "charisma": 11,
     "condition_immunities": "",
     "constitution": 11,

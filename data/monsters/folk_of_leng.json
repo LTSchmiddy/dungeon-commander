@@ -22,7 +22,7 @@
     "arcana": 4,
     "armor_class": 14,
     "armor_desc": "studded leather",
-    "challenge_rating": "2",
+    "challenge_rating": 2.0,
     "charisma": 22,
     "condition_immunities": "frightened",
     "constitution": 18,

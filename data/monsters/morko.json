@@ -20,16 +20,16 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "12",
-    "challenge_rating": "1/4",
-    "charisma": "8",
-    "constitution": "11",
+    "armor_class": 12,
+    "challenge_rating": 0.25,
+    "charisma": 8,
+    "constitution": 11,
     "damage_immunities": "fire, poison",
-    "dexterity": "15",
+    "dexterity": 15,
     "hit_dice": "5d6",
-    "hit_points": "17",
+    "hit_points": 17,
     "id": "morko",
-    "intelligence": "12",
+    "intelligence": 12,
     "languages": "Elvish, Sylvan",
     "name": "Morko",
     "perception": 2,
@@ -46,8 +46,8 @@
         "walk": 30
     },
     "stealth": 6,
-    "strength": "12",
+    "strength": 12,
     "subtype": "",
     "type": "fey",
-    "wisdom": "10"
+    "wisdom": 10
 }

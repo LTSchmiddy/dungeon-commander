@@ -13,18 +13,18 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "13",
-    "challenge_rating": "1",
-    "charisma": "12",
+    "armor_class": 13,
+    "challenge_rating": 1.0,
+    "charisma": 12,
     "condition_immunities": "poisoned",
-    "constitution": "13",
+    "constitution": 13,
     "damage_immunities": "poison",
     "damage_resistances": "cold, fire, lightning",
-    "dexterity": "16",
+    "dexterity": 16,
     "hit_dice": "5d6+5",
-    "hit_points": "22",
+    "hit_points": 22,
     "id": "gumienniki",
-    "intelligence": "14",
+    "intelligence": 14,
     "languages": "Abyssal, Common, Infernal",
     "name": "Gumienniki",
     "reactions": [
@@ -50,8 +50,8 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "12",
+    "strength": 12,
     "subtype": "shapechanger",
     "type": "fiend",
-    "wisdom": "10"
+    "wisdom": 10
 }

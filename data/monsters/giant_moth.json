@@ -12,15 +12,15 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "11",
-    "challenge_rating": "1/8",
-    "charisma": "7",
-    "constitution": "10",
-    "dexterity": "12",
+    "armor_class": 11,
+    "challenge_rating": 0.125,
+    "charisma": 7,
+    "constitution": 10,
+    "dexterity": 12,
     "hit_dice": "2d6",
-    "hit_points": "7",
+    "hit_points": 7,
     "id": "giant_moth",
-    "intelligence": "3",
+    "intelligence": 3,
     "languages": "-",
     "name": "Giant Moth",
     "perception": 2,
@@ -38,8 +38,8 @@
         "walk": 25
     },
     "stealth": 3,
-    "strength": "10",
+    "strength": 10,
     "subtype": "",
     "type": "beast",
-    "wisdom": "10"
+    "wisdom": 10
 }

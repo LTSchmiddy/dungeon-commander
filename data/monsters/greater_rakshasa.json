@@ -16,20 +16,20 @@
         }
     ],
     "alignment": "lawful evil",
-    "armor_class": "18",
+    "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "15",
-    "charisma": "20",
-    "constitution": "18",
+    "challenge_rating": 15.0,
+    "charisma": 20,
+    "constitution": 18,
     "damage_immunities": "bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_vulnerabilities": "piercing from magic weapons wielded by good creatures",
     "deception": 10,
-    "dexterity": "18",
+    "dexterity": 18,
     "hit_dice": "17d8+68",
-    "hit_points": "144",
+    "hit_points": 144,
     "id": "greater_rakshasa",
     "insight": 8,
-    "intelligence": "15",
+    "intelligence": 15,
     "languages": "Common, Infernal",
     "legendary_actions": [
         {
@@ -67,8 +67,8 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "fiend",
-    "wisdom": "16"
+    "wisdom": 16
 }

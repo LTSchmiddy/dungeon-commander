@@ -22,19 +22,19 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "7",
-    "charisma": "10",
-    "constitution": "20",
+    "challenge_rating": 7.0,
+    "charisma": 10,
+    "constitution": 20,
     "constitution_save": 8,
     "damage_immunities": "fire",
     "damage_vulnerabilities": "cold",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "15d12+75",
-    "hit_points": "172",
+    "hit_points": 172,
     "id": "jaanavar_jal",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "-",
     "name": "Jaanavar Jal",
     "perception": 4,
@@ -56,9 +56,9 @@
         "walk": 20
     },
     "stealth": 5,
-    "strength": "20",
+    "strength": 20,
     "strength_save": 8,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "13"
+    "wisdom": 13
 }

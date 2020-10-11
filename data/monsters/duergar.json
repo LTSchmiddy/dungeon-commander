@@ -28,7 +28,7 @@
     "alignment": "lawful evil",
     "armor_class": 16,
     "armor_desc": "scale mail, shield",
-    "challenge_rating": "1",
+    "challenge_rating": 1.0,
     "charisma": 9,
     "condition_immunities": "",
     "constitution": 14,

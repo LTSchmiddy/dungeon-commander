@@ -31,7 +31,7 @@
     "alignment": "lawful evil",
     "armor_class": 15,
     "armor_desc": "chain shirt",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 14,
     "charisma_save": 4,
     "condition_immunities": "charmed, frightened, poisoned",

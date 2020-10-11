@@ -22,7 +22,7 @@
     ],
     "alignment": "neutral good",
     "armor_class": 13,
-    "challenge_rating": "1",
+    "challenge_rating": 1.0,
     "charisma": 10,
     "condition_immunities": "",
     "constitution": 13,

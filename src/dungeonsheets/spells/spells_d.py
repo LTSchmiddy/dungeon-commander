@@ -29,7 +29,7 @@ class DanseMacabre(Spell):
     """Threads of dark power leap from your fingers to pierce up to five Small or
     Medium corpses you can see within range. Each corpse immediately stands up and
     becomes undead. You decide whether it is a zombie or a skeleton (the statistics
-    for zombies and skeletons are in the Monster Manual), and it gains a bonus to
+    for zombies and skeletons are in the Creature Manual), and it gains a bonus to
     its attack and damage rolls equal to your spellcasting ability modifier. You can
      use a bonus action to mentally command the creatures you make with this spell,
     issuing the same command to all of them. To receive the command, a creature must
@@ -699,7 +699,7 @@ class DominateMonster(Spell):
     At Higher Levels: When you cast this spell with
      a 9th-level spell slot, the duration is concentration, up to 8 hours.
     """
-    name = "Dominate Monster"
+    name = "Dominate Creature"
     level = 8
     casting_time = "1 action"
     casting_range = "60 feet"
@@ -878,7 +878,7 @@ class DruidGrove(Spell):
 
     Grove Guardians. You can animate up to four trees in the area, causing them to
     uproot themselves from the ground. These trees have the same statistics as an
-    awakened tree, which appears in the Monster Manual, except they can't speak, and
+    awakened tree, which appears in the Creature Manual, except they can't speak, and
      their bark is covered with druidic symbols. If any creature not immune to this
     effect enters the warded area, the grove guardians fight until they have driven
     off or slain the intruders. The grove guardians also obey your spoken commands

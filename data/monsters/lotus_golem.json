@@ -12,20 +12,20 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "14",
+    "armor_class": 14,
     "athletics": 6,
-    "challenge_rating": "9",
-    "charisma": "4",
+    "challenge_rating": 9.0,
+    "charisma": 4,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
-    "constitution": "14",
+    "constitution": 14,
     "damage_immunities": "cold, fire, poison, psychic",
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine",
-    "dexterity": "19",
+    "dexterity": 19,
     "dexterity_save": 8,
     "hit_dice": "11d10+22",
-    "hit_points": "82",
+    "hit_points": 82,
     "id": "lotus_golem",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "understands the languages of its creator but can't speak",
     "name": "Lotus Golem",
     "perception": 9,
@@ -63,9 +63,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "14",
+    "strength": 14,
     "strength_save": 6,
     "subtype": "",
     "type": "construct",
-    "wisdom": "12"
+    "wisdom": 12
 }

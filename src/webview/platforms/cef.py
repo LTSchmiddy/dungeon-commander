@@ -189,6 +189,8 @@ def _cef_call(func):
 
         if uid not in instances:
             raise Exception('CEF window with uid {0} does not exist'.format(uid))
+            # print('CEF window with uid {0} does not exist'.format(uid))
+            # return
 
         return func(*args, **kwargs)
 

@@ -31,7 +31,7 @@
     "alignment": "chaotic evil",
     "armor_class": 12,
     "armor_desc": "crude armored coat",
-    "challenge_rating": "8",
+    "challenge_rating": 8.0,
     "charisma": 7,
     "constitution": 20,
     "dexterity": 6,

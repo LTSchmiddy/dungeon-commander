@@ -1,0 +1,34 @@
+<ul class="file-list">
+
+{% for i in dir_list['dirs'] %}
+    {% with dir_list = dir_list['dirs'][i] %}
+        <li
+            draggable="true"
+            data-file-tree-type="dir"
+            data-file-tree-path="{{ dir_list['path'] }}"
+{#            ondragover="allowDrop(event);"#}
+        >
+            <details>
+            <summary>{{ i }}</summary>
+
+                {% include "components/extract_dir_listing.html" %}
+            </details>
+        </li>
+
+    {% endwith %}
+{% endfor %}
+
+{% for i in dir_list['files'] %}
+    <li
+        draggable="true"
+        data-file-tree-type="file"
+        data-file-tree-path="{{ dir_list['files'][i] }}"
+    >
+        <a
+{#            ondblclick="extracted_file_load('{{ i }}', '{{ dir_list['files'][i] }}')"#}
+            onclick="open_file_handler('{{ i }}', '{{ dir_list['files'][i] }}')"
+        >{{ i }}</a>
+    </li>
+{% endfor %}
+
+</ul>

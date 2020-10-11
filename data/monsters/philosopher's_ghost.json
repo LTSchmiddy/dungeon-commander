@@ -12,18 +12,18 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "13",
-    "challenge_rating": "4",
-    "charisma": "6",
+    "armor_class": 13,
+    "challenge_rating": 4.0,
+    "charisma": 6,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
-    "constitution": "12",
+    "constitution": 12,
     "damage_immunities": "fire, poison",
     "damage_resistances": "acid, cold; slashing from nonmagical attacks",
-    "dexterity": "17",
+    "dexterity": 17,
     "hit_dice": "14d8+14",
-    "hit_points": "77",
+    "hit_points": 77,
     "id": "philosopher's_ghost",
-    "intelligence": "2",
+    "intelligence": 2,
     "languages": "-",
     "name": "Philosopher's Ghost",
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 10",
@@ -50,8 +50,8 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "9",
+    "strength": 9,
     "subtype": "",
     "type": "ooze",
-    "wisdom": "10"
+    "wisdom": 10
 }

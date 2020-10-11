@@ -32,7 +32,7 @@
     "arcana": 11,
     "armor_class": 17,
     "armor_desc": "half plate",
-    "challenge_rating": "17",
+    "challenge_rating": 17.0,
     "charisma": 20,
     "charisma_save": 11,
     "condition_immunities": "charmed, frightened, poisoned",

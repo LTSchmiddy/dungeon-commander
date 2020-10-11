@@ -10,7 +10,7 @@
     "alignment": "neutral evil",
     "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "10",
+    "challenge_rating": 10.0,
     "charisma": 9,
     "condition_immunities": "exhaustion, paralyzed, petrified, poisoned, unconscious",
     "constitution": 20,

@@ -12,18 +12,18 @@
         }
     ],
     "alignment": "any alignment",
-    "armor_class": "11",
-    "challenge_rating": "1",
-    "charisma": "12",
+    "armor_class": 11,
+    "challenge_rating": 1.0,
+    "charisma": 12,
     "condition_immunities": "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
-    "constitution": "10",
+    "constitution": 10,
     "damage_immunities": "cold, necrotic, poison",
     "damage_resistances": "acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "5d8",
-    "hit_points": "22",
+    "hit_points": 22,
     "id": "phantom",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "any languages it knew in life",
     "name": "Phantom",
     "senses": "darkvision 60 ft., passive Perception 11",
@@ -44,8 +44,8 @@
         "hover": true,
         "walk": 0
     },
-    "strength": "7",
+    "strength": 7,
     "subtype": "",
     "type": "undead",
-    "wisdom": "12"
+    "wisdom": 12
 }

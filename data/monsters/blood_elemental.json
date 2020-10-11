@@ -16,20 +16,20 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "5",
-    "charisma": "5",
+    "challenge_rating": 5.0,
+    "charisma": 5,
     "condition_immunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-    "constitution": "18",
+    "constitution": 18,
     "damage_immunities": "necrotic, psychic",
     "damage_resistances": "acid, fire; bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_vulnerabilities": "poison",
-    "dexterity": "13",
+    "dexterity": 13,
     "hit_dice": "10d10+40",
-    "hit_points": "95",
+    "hit_points": 95,
     "id": "blood_elemental",
-    "intelligence": "5",
+    "intelligence": 5,
     "languages": "Primordial",
     "name": "Blood Elemental",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -52,8 +52,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "elemental",
-    "wisdom": "10"
+    "wisdom": 10
 }

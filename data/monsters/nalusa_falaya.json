@@ -18,16 +18,16 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/2",
-    "charisma": "9",
-    "constitution": "13",
-    "dexterity": "15",
+    "challenge_rating": 0.5,
+    "charisma": 9,
+    "constitution": 13,
+    "dexterity": 15,
     "hit_dice": "6d8+6",
-    "hit_points": "33",
+    "hit_points": 33,
     "id": "nalusa_falaya",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Umbral, Void Speech",
     "name": "Nalusa Falaya",
     "senses": "darkvision 120 ft., passive Perception 11",
@@ -51,8 +51,8 @@
         "walk": 30
     },
     "stealth": 4,
-    "strength": "12",
+    "strength": 12,
     "subtype": "",
     "type": "aberration",
-    "wisdom": "13"
+    "wisdom": 13
 }

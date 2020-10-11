@@ -12,16 +12,16 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "6",
-    "charisma": "7",
-    "constitution": "17",
-    "dexterity": "9",
+    "challenge_rating": 6.0,
+    "charisma": 7,
+    "constitution": 17,
+    "dexterity": 9,
     "hit_dice": "11d12+33",
-    "hit_points": "104",
+    "hit_points": 104,
     "id": "elder_ghost_boar",
-    "intelligence": "7",
+    "intelligence": 7,
     "languages": "understands Common but can't speak it",
     "name": "Elder Ghost Boar",
     "reactions": [
@@ -54,8 +54,8 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "22",
+    "strength": 22,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "12"
+    "wisdom": 12
 }

@@ -32,7 +32,7 @@
     "armor_class": 18,
     "armor_desc": "natural armor",
     "athletics": 14,
-    "challenge_rating": "14",
+    "challenge_rating": 14.0,
     "charisma": 8,
     "constitution": 26,
     "constitution_save": 12,

@@ -22,7 +22,7 @@
     "armor_class": 18,
     "armor_desc": "natural armor",
     "athletics": 11,
-    "challenge_rating": "18",
+    "challenge_rating": 18.0,
     "charisma": 15,
     "charisma_save": 8,
     "condition_immunities": "exhaustion, charmed, frightened, poisoned",

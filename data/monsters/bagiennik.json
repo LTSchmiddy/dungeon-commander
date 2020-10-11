@@ -21,7 +21,7 @@
     "alignment": "chaotic neutral",
     "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
+    "challenge_rating": 3.0,
     "charisma": 11,
     "constitution": 16,
     "dexterity": 18,

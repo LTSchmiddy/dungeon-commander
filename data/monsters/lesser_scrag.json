@@ -18,16 +18,16 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "2",
-    "charisma": "9",
-    "constitution": "15",
-    "dexterity": "10",
+    "challenge_rating": 2.0,
+    "charisma": 9,
+    "constitution": 15,
+    "dexterity": 10,
     "hit_dice": "7d8+14",
-    "hit_points": "45",
+    "hit_points": 45,
     "id": "lesser_scrag",
-    "intelligence": "8",
+    "intelligence": 8,
     "languages": "Abyssal, Aquan",
     "name": "Lesser Scrag",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -47,8 +47,8 @@
         "swim": 40,
         "walk": 10
     },
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "10"
+    "wisdom": 10
 }

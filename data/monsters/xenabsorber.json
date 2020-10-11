@@ -12,17 +12,17 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "15",
-    "constitution": "15",
+    "challenge_rating": 3.0,
+    "charisma": 15,
+    "constitution": 15,
     "deception": 4,
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "10d8+20",
-    "hit_points": "65",
+    "hit_points": 65,
     "id": "xenabsorber",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common",
     "name": "Xenabsorber",
     "perception": 5,
@@ -42,8 +42,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "aberration",
-    "wisdom": "13"
+    "wisdom": 13
 }

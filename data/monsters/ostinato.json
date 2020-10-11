@@ -25,7 +25,7 @@
     "alignment": "chaotic neutral",
     "armor_class": 15,
     "armor_desc": "",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 17,
     "condition_immunities": "charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
     "constitution": 15,

@@ -27,17 +27,17 @@
     ],
     "alignment": "neutral",
     "arcana": 7,
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "15 with mage armor",
-    "challenge_rating": "5",
-    "charisma": "13",
-    "constitution": "12",
-    "dexterity": "14",
+    "challenge_rating": 5.0,
+    "charisma": 13,
+    "constitution": 12,
+    "dexterity": 14,
     "history": 7,
     "hit_dice": "13d8+13",
-    "hit_points": "71",
+    "hit_points": 71,
     "id": "ramag_portal_master",
-    "intelligence": "18",
+    "intelligence": 18,
     "investigation": 7,
     "languages": "Abyssal, Celestial, Common, Giant, Infernal",
     "name": "Ramag Portal Master",
@@ -57,8 +57,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "10",
+    "strength": 10,
     "subtype": "ramag",
     "type": "humanoid",
-    "wisdom": "12"
+    "wisdom": 12
 }

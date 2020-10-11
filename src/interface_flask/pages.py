@@ -27,14 +27,14 @@ pages = Blueprint(
 )
 
 
-# Page endpoints:
-@pages.route('/blank')
-def blank():
-    return ""
 
-@pages.route('/')
+@pages.route('/main')
 def index():
-    return render_template("index.html")
+    return render_template("windows/main.html", window_type='main')
+
+@pages.route('/child/editor')
+def child_editor():
+    return render_template("windows/child_editor.html", window_type='child_editor')
 
 
 

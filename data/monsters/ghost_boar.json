@@ -8,16 +8,16 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "7",
-    "constitution": "16",
-    "dexterity": "10",
+    "challenge_rating": 3.0,
+    "charisma": 7,
+    "constitution": 16,
+    "dexterity": 10,
     "hit_dice": "8d10+24",
-    "hit_points": "68",
+    "hit_points": 68,
     "id": "ghost_boar",
-    "intelligence": "7",
+    "intelligence": 7,
     "languages": "understands Common but can't speak it",
     "name": "Ghost Boar",
     "reactions": [
@@ -46,8 +46,8 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "12"
+    "wisdom": 12
 }

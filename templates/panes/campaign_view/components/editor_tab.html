@@ -1,6 +1,9 @@
-<div class="editor-tab" data-name="{{ name }}" data-path="{{ path }}">
+<div class="editor-tab single-editor-tab" data-name="{{ name }}" data-path="{{ path }}">
     <button onclick="extracted_file_close('{{ path }}')" class="fileclose-btn">X</button>
-    <button onclick="extracted_file_show_editor('{{ path }}')" class="filename-btn"><span class="file-name">{{ name }}</span><span class="file-edited-marker"></span></button>
-
+    <button
+            onclick="extracted_file_show_editor('{{ path }}')"
+            class="filename-btn"
+{#            oncontextmenu="editor_tab_context_menu(event);"#}
+    ><span class="file-name">{{ name }}</span><span class="file-edited-marker"></span></button>
 {#    {{ path }}#}
 </div>

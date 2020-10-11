@@ -20,7 +20,7 @@
     "alignment": "chaotic neutral",
     "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 21,
     "constitution": 15,
     "damage_resistances": "bludgeoning, piercing, and slashing from",

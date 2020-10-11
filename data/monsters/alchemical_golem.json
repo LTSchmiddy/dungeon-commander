@@ -16,19 +16,19 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "9",
-    "charisma": "1",
+    "challenge_rating": 9.0,
+    "charisma": 1,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
-    "constitution": "21",
+    "constitution": 21,
     "damage_immunities": "poison, psychic; bludgeoning, piercing, and slashing from nonmagical attacks not made with adamantine",
     "damage_resistances": "acid, cold, fire, lightning",
-    "dexterity": "7",
+    "dexterity": 7,
     "hit_dice": "14d10+70",
-    "hit_points": "147",
+    "hit_points": 147,
     "id": "alchemical_golem",
-    "intelligence": "7",
+    "intelligence": 7,
     "languages": "understands the languages of its creator but can't speak",
     "name": "Alchemical Golem",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -59,8 +59,8 @@
     "speed_json": {
         "walk": 20
     },
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "construct",
-    "wisdom": "10"
+    "wisdom": 10
 }

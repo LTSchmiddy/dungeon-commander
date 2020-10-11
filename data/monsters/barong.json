@@ -22,22 +22,22 @@
         }
     ],
     "alignment": "lawful good",
-    "armor_class": "20",
+    "armor_class": 20,
     "armor_desc": "natural armor",
-    "challenge_rating": "17",
-    "charisma": "22",
+    "challenge_rating": 17.0,
+    "charisma": 22,
     "charisma_save": 12,
     "condition_immunities": "charmed, exhaustion, frightened",
-    "constitution": "25",
+    "constitution": 25,
     "constitution_save": 13,
     "damage_immunities": "radiant",
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
-    "dexterity": "20",
+    "dexterity": 20,
     "hit_dice": "18d10+126",
-    "hit_points": "225",
+    "hit_points": 225,
     "id": "barong",
     "insight": 12,
-    "intelligence": "18",
+    "intelligence": 18,
     "languages": "all, telepathy 120 ft.",
     "legendary_actions": [
         {
@@ -88,9 +88,9 @@
         "fly": 60,
         "walk": 60
     },
-    "strength": "25",
+    "strength": 25,
     "subtype": "",
     "type": "celestial",
-    "wisdom": "23",
+    "wisdom": 23,
     "wisdom_save": 12
 }

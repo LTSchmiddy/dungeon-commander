@@ -12,16 +12,16 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "13",
-    "challenge_rating": "1/2",
-    "charisma": "8",
-    "constitution": "12",
-    "dexterity": "16",
+    "armor_class": 13,
+    "challenge_rating": 0.5,
+    "charisma": 8,
+    "constitution": 12,
+    "dexterity": 16,
     "hand": 5,
     "hit_dice": "3d6+3",
-    "hit_points": "13",
+    "hit_points": 13,
     "id": "shadow_goblin",
-    "intelligence": "13",
+    "intelligence": 13,
     "languages": "Common, Elvish, Goblin, Umbral",
     "name": "Shadow Goblin",
     "reactions": [
@@ -59,8 +59,8 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "10",
+    "strength": 10,
     "subtype": "goblinoid",
     "type": "humanoid",
-    "wisdom": "12"
+    "wisdom": 12
 }

@@ -11,4 +11,4 @@ class LatexNotFoundError(LatexError):
     """PDFLatex did not execute correctly."""    
 
 class MonsterError(AttributeError):
-    """Error retriving or using a D&D Monster."""
+    """Error retriving or using a D&D Creature."""

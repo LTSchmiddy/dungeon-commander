@@ -24,19 +24,19 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "9",
-    "charisma": "17",
+    "challenge_rating": 9.0,
+    "charisma": 17,
     "condition_immunities": "charmed, exhaustion, poisoned",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "necrotic, poison",
     "damage_resistances": "cold, lightning; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "dexterity": "15",
+    "dexterity": 15,
     "hit_dice": "15d10+45",
-    "hit_points": "127",
+    "hit_points": 127,
     "id": "k\u00fclmking",
-    "intelligence": "12",
+    "intelligence": 12,
     "languages": "Common",
     "name": "K\u00fclmking",
     "perception": 8,
@@ -60,8 +60,8 @@
     "speed_json": {
         "walk": 60
     },
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "undead",
-    "wisdom": "18"
+    "wisdom": 18
 }

@@ -18,7 +18,7 @@
     "alignment": "chaotic evil",
     "armor_class": 11,
     "armor_desc": "hide armor",
-    "challenge_rating": "2",
+    "challenge_rating": 2.0,
     "charisma": 7,
     "condition_immunities": "",
     "constitution": 16,

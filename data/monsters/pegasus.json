@@ -10,7 +10,7 @@
     ],
     "alignment": "chaotic good",
     "armor_class": 12,
-    "challenge_rating": "2",
+    "challenge_rating": 2.0,
     "charisma": 13,
     "charisma_save": 3,
     "condition_immunities": "",

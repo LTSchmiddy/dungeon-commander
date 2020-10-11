@@ -2,7 +2,7 @@
 import sys
 import json
 from viewport.js_api import JsApi
-from viewport.js_api.cef_bindings import cef_bound_properties
+from viewport.cef_bindings import global_bound_properties, unique_bound_properties
 
 from settings import current
 # Config
@@ -30,8 +30,11 @@ def rebuild_api():
 
     cef_props_string = ""
 
-    for i in cef_bound_properties:
-        cef_props_string += f"window.{i[0]} = null;\n"
+    for i in global_bound_properties.keys():
+        cef_props_string += f"window.{i} = null; // global \n"
+
+    for i in unique_bound_properties:
+        cef_props_string += f"window.{i} = null; // unique \n"
 
     iterate_api(api_struct)
 

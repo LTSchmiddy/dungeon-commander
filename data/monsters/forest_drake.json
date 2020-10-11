@@ -22,19 +22,19 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
     "athletics": 5,
-    "challenge_rating": "2",
-    "charisma": "12",
+    "challenge_rating": 2.0,
+    "charisma": 12,
     "condition_immunities": "paralyzed, unconscious",
-    "constitution": "19",
+    "constitution": 19,
     "damage_immunities": "fire",
-    "dexterity": "8",
+    "dexterity": 8,
     "hit_dice": "8d6+32",
-    "hit_points": "60",
+    "hit_points": 60,
     "id": "forest_drake",
-    "intelligence": "12",
+    "intelligence": 12,
     "languages": "Draconic, Druidic, Sylvan",
     "name": "Forest Drake",
     "nature": 3,
@@ -51,8 +51,8 @@
         "climb": 50,
         "walk": 30
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "dragon",
-    "wisdom": "15"
+    "wisdom": 15
 }

@@ -18,19 +18,19 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "8",
-    "charisma": "1",
+    "challenge_rating": 8.0,
+    "charisma": 1,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
-    "constitution": "14",
+    "constitution": 14,
     "damage_immunities": "acid, cold, fire, lightning, necrotic, poison, psychic, radiant, thunder",
     "damage_resistances": "bludgeoning, piercing, and slashing from magical weapons",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "12d10+24",
-    "hit_points": "90",
+    "hit_points": 90,
     "id": "manastorm_golem",
-    "intelligence": "16",
+    "intelligence": 16,
     "languages": "understands the languages of its creator but can't speak",
     "name": "Manastorm Golem",
     "senses": "truesight 120 ft., passive Perception 9",
@@ -62,8 +62,8 @@
         "fly": 60,
         "walk": 60
     },
-    "strength": "6",
+    "strength": 6,
     "subtype": "",
     "type": "construct",
-    "wisdom": "8"
+    "wisdom": 8
 }

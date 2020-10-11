@@ -6,6 +6,8 @@ from typing import List, Dict
 
 import interface_flask
 
+from ansi2html import Ansi2HTMLConverter
+
 import webview as wv
 from webview.platforms import cef as wv_cef
 # from webview.platforms import qt as wv_qt
@@ -14,90 +16,128 @@ from cefpython3 import cefpython as cef
 
 import viewport.js_api
 import viewport.bg_tasks
+import viewport.window_manager
+import viewport.cef_bindings
 
 from settings import current
+import std_handler
+
+import anon_func as af
 
 p_gui = current['window']['web-engine']
 # p_gui = 'cef'
 # p_gui = 'qt'
 p_http_server = False
-p_debug = True
+p_debug = False
 
 
-window: wv.window = None
-# windowThread = None
+main_window: wv.window.Window = None
 window_is_alive = False
 
+wv_cef.settings.update({
+    'persist_session_cookies': True
+})
 
-def create_main_window(auto_load_ui: bool = True, window_name: str = "Dungeon Commander"):
-    global window
+# load_addr = interface_flask.get_blank_addr()
+# if auto_load_ui:
 
-    wv_cef.settings.update({
-        'persist_session_cookies': True
-    })
+windows = viewport.window_manager.WindowManager()
 
-    load_addr = interface_flask.get_blank_addr()
-    if auto_load_ui:
-        load_addr = interface_flask.get_main_addr()
+class HTMLStdout:
+    html_converter = Ansi2HTMLConverter(inline=True)
 
-    window = wv.create_window(window_name, load_addr, js_api=js_api.JsApi())
-    # window2 = wv.create_window("other_window", html="Hi Alex", js_api=js_api.JsApi())
+    stream_html: str
+    window: wv.window.Window
+
+    def __init__(self, p_window: wv.window.Window):
+        self.stream_html = ""
+        self.window = p_window
+
+    def write(self, data):
+        if hasattr(self.window, 'js_py_console_write_stdout'):
+            html_data = self.html_converter.convert(str(data), full=False)
+            self.stream_html += html_data
+            self.window.js_py_console_write_stdout(html_data)
+        else:
+            std_handler.my_stdout.old_stdout.write('js_py_console_write_stdout not exposed yet...\n')
+
+    def flush(self):
+        pass
+
+
+def create_main_window(new_window: wv.window.Window):
+    global main_window, p_gui
 
     if p_gui != 'cef':
         if current['window']['x'] is not None:
-            window.initial_x = current['window']['x']
+            new_window.initial_x = current['window']['x']
 
         if current['window']['y'] is not None:
-            window.initial_y = current['window']['y']
+            new_window.initial_y = current['window']['y']
 
     if current['window']['width'] is not None:
-        window.initial_width = current['window']['width']
+        new_window.initial_width = current['window']['width']
 
     if current['window']['height'] is not None:
-        window.initial_height = current['window']['height']
+        new_window.initial_height = current['window']['height']
+
+    # new_console = HTMLStdout(new_window)
+
+    def on_loaded():
+        setattr(new_window, 'console',  HTMLStdout(new_window))
+        std_handler.my_stdout.substreams.append(new_window.console)
+
+        viewport.cef_bindings.set_unique(new_window, {
+            "cef_console_init": af.func("", """
+                new_window.console.stream_html = ""
+                new_window.console.write(std_handler.my_stdout.get_all())
+            """)
+        })
+
+    def on_window_closing():
+        std_handler.my_stdout.substreams.remove(new_window.console)
+        current['window']['x'] = new_window.x
+        current['window']['y'] = new_window.y
+        current['window']['width'] = new_window.width
+        current['window']['height'] = new_window.height
+
+    def on_window_closed():
+        global main_window, window_is_alive
+        window_is_alive = False
 
 
-    window.loaded += on_loaded
-    window.closing += on_window_closing
-    window.closed += on_window_closed
+    new_window.loaded += on_loaded
+    new_window.closing += on_window_closing
+    new_window.closed += on_window_closed
 
-def create_child_window():
-    pass
+    new_window.app_flags.append('editor')
+
+    main_window = new_window
+
 
 
 def start_viewport():
-    global p_gui, p_http_server, p_debug, window, window_is_alive
+    global p_gui, p_http_server, p_debug, main_window, window_is_alive, windows
     window_is_alive = True
-    wv.start(viewport.bg_tasks.background_thread, window, gui=p_gui, debug=p_debug, http_server=p_http_server)
+
+    load_addr = interface_flask.get_blank_addr()
+
+    windows.new_window(load_addr, create_main_window)
+
+    wv.start(viewport.bg_tasks.background_thread, main_window, gui=p_gui, debug=p_debug, http_server=p_http_server)
     # wv.start(debug=p_debug, http_server=p_http_server)
 
 def confirm_prompt(message: str):
-    global window
-    return window.evaluate_js(f"window.confirm(`{message}`)")
+    global main_window
+
+    return main_window.evaluate_js(f"window.confirm(`{message}`)")
     # return window.evaluate_js(f"console.log(`{message}`);")
 
 
-def on_loaded():
-    # pass
-    js_api.process_js_bindings()
-
-def on_window_closing():
-    current['window']['x'] = window.x
-    current['window']['y'] = window.y
-    current['window']['width'] = window.width
-    current['window']['height'] = window.height
-
-
-
-def on_window_closed():
-    global window, window_is_alive
-    window_is_alive = False
-
-
 def get_cef_instance_dict() -> Dict[str, wv_cef.Browser]:
-    global window, window_is_alive
+    global main_window, window_is_alive
 
-    if not window_is_alive and window is not None:
+    if not window_is_alive and main_window is not None:
         # print ("ERROR: Window is not active.")
         return {}
 
@@ -105,7 +145,7 @@ def get_cef_instance_dict() -> Dict[str, wv_cef.Browser]:
         print ("ERROR: Not using CEF Rendering.")
         return {}
 
-    return window.gui.CEF.instances
+    return main_window.gui.CEF.instances
 
 def get_cef_instance_keys() -> List[str]:
     instance_dict = get_cef_instance_dict()

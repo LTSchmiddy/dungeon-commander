@@ -8,17 +8,17 @@
         }
     ],
     "alignment": "lawful evil",
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "leather armor",
-    "challenge_rating": "1",
-    "charisma": "10",
-    "constitution": "12",
-    "dexterity": "12",
+    "challenge_rating": 1.0,
+    "charisma": 10,
+    "constitution": 12,
+    "dexterity": 12,
     "dexterity_save": 3,
     "hit_dice": "10d6+10",
-    "hit_points": "45",
+    "hit_points": 45,
     "id": "cueyatl_sea_priest",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Aquan, Cueyatl",
     "medicine": 4,
     "name": "Cueyatl Sea Priest",
@@ -57,8 +57,8 @@
         "swim": 30,
         "walk": 30
     },
-    "strength": "10",
+    "strength": 10,
     "subtype": "",
     "type": "humanoid",
-    "wisdom": "14"
+    "wisdom": 14
 }

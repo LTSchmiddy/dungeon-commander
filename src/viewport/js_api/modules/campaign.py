@@ -17,12 +17,21 @@ import game
 
 def create_campaign_module(api: Type[JsApi]):
     create_character_module(api)
+    create_creatures_module(api)
 
     def eval_dice(self, dice_string):
         return dice.eval_dice(dice_string)
 
+    def get_campaign_path(self):
+        return game.current.dir_path
+
+    def get_abs_campaign_path(self):
+        return os.path.abspath(game.current.dir_path)
+
     api.add_module_method_list("campaign", [
-        eval_dice
+        eval_dice,
+        get_campaign_path,
+        get_abs_campaign_path
     ])
 
 
@@ -54,11 +63,11 @@ def create_character_module(api: Type[JsApi]):
 
     def get_character_json(self, char_id):
         # print(char_id)
-        return game.current.loaded_chars[int(char_id)].save_json_dict()
+        return game.current.loaded_chars[int(char_id)].save_json_viewer_dict()
 
-    def apply_character_json(self, char_id, json_dict):
+    def apply_character_json(self, char_id, json_dict, verbose=True):
         # print(char_id)
-        return game.current.loaded_chars[int(char_id)].load_info_json_dict(json_dict)
+        return game.current.loaded_chars[int(char_id)].load_json_viewer_dict(json_dict, verbose)
 
     def reload_character(self, char_id):
         game.current.save_character(char_id)
@@ -131,3 +140,65 @@ def create_character_module(api: Type[JsApi]):
         set_char_attr_raw,
         call_char_method
     ])
+
+
+
+def create_creatures_module(api: Type[JsApi]):
+    def get_loaded_creatures(self):
+        return list(game.current.loaded_creatures.keys())
+
+    def creature_id_exists(self, char_id):
+        return int(char_id) in list(game.current.loaded_creatures.keys())
+
+    def spawn_creature(self, spawn_id):
+        return game.current.spawn_creature(spawn_id)
+
+    def load_creature(self, filepath):
+        return game.current.load_creature(filepath)
+
+    def unload_creature(self, filepath):
+        game.current.unload_creature(filepath)
+
+    def save_creature(self, filepath):
+        game.current.save_creature(filepath)
+
+    # def is_creature_edited(self, filepath):
+    #     return game.current.loaded_chars[int(filepath)].has_been_edited
+
+
+    def get_creature_json(self, char_id):
+        # print(char_id)
+        return game.current.loaded_creatures[int(char_id)].save_json_viewer_dict()
+
+    def apply_creatures_json(self, char_id, json_dict, verbose=True):
+        # print(char_id)
+        return game.current.loaded_creatures[int(char_id)].load_json_viewer_dict(json_dict, verbose)
+
+    api.add_module_method_list("campaign__creature", [
+        get_loaded_creatures,
+        creature_id_exists,
+        spawn_creature,
+        load_creature,
+        unload_creature,
+        save_creature,
+        get_creature_json,
+        apply_creatures_json
+    ])
+
+#     def reload_character(self, char_id):
+#         game.current.save_character(char_id)
+#
+#     def get_char_attr(self, char_id, attr_name):
+#         return game.current.loaded_chars[int(char_id)].get_char_attr(attr_name)
+#
+#     def set_char_attr(self, char_id, attr_name, value, type_str: str):
+#         use_value = de_stringify(value, type_str)
+#         return game.current.loaded_chars[int(char_id)].set_attrs(**{attr_name: use_value})
+#
+#     def set_char_attr_raw(self, char_id, attr_name, value, type_str: str):
+#         use_value = de_stringify(value, type_str)
+#         return setattr(game.current.loaded_chars[int(char_id)], attr_name, use_value)
+#
+#     def call_char_method(self, char_id, method_name, *args):
+#         return game.current.loaded_chars[int(char_id)].get_char_attr(method_name)(*args)
+#

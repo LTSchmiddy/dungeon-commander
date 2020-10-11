@@ -1,5 +1,5 @@
 
-<div class="content-field" id="content-field">
+<div class="sidebar-content-field" id="content-field">
 
 
     <div id="mod-editor-tab-area" class="tab-area">
@@ -15,6 +15,7 @@
 
 
 <script>
+
     let extracted_file_tab_area = $("#mod-editor-tab-area");
     let extracted_file_tabs = $("#mod-editor-file-tabs");
     let extracted_file_editor_area = $("#mod-editor-editor-area");
@@ -43,10 +44,128 @@
         animation: 150
     });
 
+    async function send_editor_to_new_window (path) {
+        await mod_editor_opened_tabs[path].data_obj.dump_state();
+        await py.exec(`
+            import time
+            new_window = viewport.windows.new_window(
+                '/pages/child/editor',
+                 viewport.windows.children.child_editor,
+                 window_name=f_name
+            )
+
+            while not hasattr(new_window, 'js_open_file_handler'):
+                time.sleep(.5)
+
+            new_window.js_open_file_handler(f_name, f_path)
+        `, {
+            f_name: mod_editor_opened_tabs[path].name,
+            f_path: path,
+        });
+    }
+
+    async function send_editor_to_window(path, win_uid) {
+        await mod_editor_opened_tabs[path].data_obj.dump_state();
+        await py.exec(`
+            window = viewport.windows[uid]
+            window.js_open_file_handler(f_name, f_path)
+            window.restore()
+        `, {
+            f_name: mod_editor_opened_tabs[path].name,
+            f_path: path,
+            uid: win_uid,
+        });
+    }
+
+
+    // Context Menu:
+    // some build handler to call asynchronously
+    async function createWindowsMenuInfo(window_dict, name, path) {
+        return {
+            callback: function(key, options) {
+                let m = "clicked: " + key;
+                console.log(m);
+                let keys = key.split('/');
+                if (keys[0] === "move_tab_to_window"){
+                    if (keys[1] === "--new") {
+                        send_editor_to_new_window(path);
+                    } else {
+                        send_editor_to_window(path, keys[1]);
+                    }
+                }
+            },
+            items: context_menu_nesting({
+                "move_tab_to_window": {name: "Open in Alternate Window", items: window_dict},
+                "close": {name: "Close", icon: "fa-close"},
+            })
+        };
+    }
+    // some asynchronous click handler
+    {#$('.single-editor-tab[data-path="{{ path }}"] .filename-btn').on('mouseup', async function(e){#}
+    {#$('.filename-btn').on('click', async function(e){#}
+    /**
+     * @param {Event} e
+     */
+    async function editor_tab_context_menu(e){
+        e.preventDefault();
+        if (e.button !== 2) {
+            return;
+        }
+
+        {#let f_name = $(e.target).parents('.single-editor-tab').get()[0].getAttribute('data-name');#}
+        let f_name = $(e.target).parents('.single-editor-tab').attr('data-name');
+        {#let f_path = $(e.target).parents('.single-editor-tab').get()[0].getAttribute('data-path');#}
+        let f_path = $(e.target).parents('.single-editor-tab').attr('data-path');
+
+        console.log(f_name);
+        console.log(f_path);
+
+        let $this = $(this);
+        console.log("hello");
+        let window_selections = await py.exec(`
+            retVal = {
+                '--new': {
+                    "name": f"--New Window--"
+                }
+            }
+
+            count = 1
+            for key, value in viewport.windows.items():
+                print(my_uid)
+                print(value.uid)
+                if 'editor' not in value.app_flags or my_uid == value.uid:
+                    continue
+
+                retVal[key] = {
+                    "name": f"{count}) {value.title}"
+                }
+                count += 1
+
+            return retVal
+
+        `, {my_uid: window.uid});
+
+        console.log(e.target);
+        let menu_info = await createWindowsMenuInfo(window_selections, f_name, f_path);
+        {#console.log(menu_info);#}
+        // store a callback on the trigger
+        $this.data('menu_info', menu_info, "");
+        let _offset = $this.offset(),
+            position = {
+                x: _offset.left + 10,
+                y: _offset.top + 10
+            }
+        // open the contextMenu asynchronously
+        $this.contextMenu(position);
+    }
+
+
 </script>
 <script src="/static/scripts/file_editors/editor_data_base.js"></script>
 <script src="/static/scripts/file_editors/json_file.js"></script>
 <script src="/static/scripts/file_editors/character_file.js"></script>
+<script src="/static/scripts/file_editors/pdf_file.js"></script>
+<script src="/static/scripts/file_editors/creature_editor.js"></script>
 <script>
 
     function extracted_file_open_dialog() {
@@ -64,18 +183,9 @@
     }
 
     function extracted_file_load(name, path) {
-        if (path.endsWith(".dc_char")) {
-            py.campaign.character.load_character(path).then(async (new_char_id)=>{
 
-                campaign_view_update_loaded_characters();
-                if (await py.exec(`return not game.current.is_dm`)) {
-                    extracted_file_load(await py.campaign.character.get_char_attr(new_char_id, 'name'), new_char_id + "?char");
-                }
-            });
-            return;
-        }
         let original_path = path;
-        path = path.replace("?char", "");
+        {#path = path.replace("?char", "").replace("?creature", "");#}
 
         if (mod_editor_opened_tabs.hasOwnProperty(path)) {
             console.log("File already open...");
@@ -88,24 +198,62 @@
         {#console.log(`Loading ${name}: ${path}`);#}
         // Load Tab:
         $.post("/panes/campaign_view/components/editor_tab", {name: name, path: path}, (data, status) => {
+            let tab_elem = elem_from_src(data);
+            tab_elem.name = name;
+            tab_elem.path = path;
+            tab_elem.original_path = original_path;
 
-            extracted_file_tabs.get()[0].appendChild(generate_element(data));
+            $(tab_elem).on('mouseup', editor_tab_context_menu);
+            extracted_file_tabs.get()[0].appendChild(tab_elem);
+            {#console.log($('.filename-btn'));#}
 
-            mod_editor_opened_tabs[path] = {
+            $.contextMenu({
+                selector: `.single-editor-tab[data-path="${path}"]`,
+                trigger: 'none',
+                build: function($trigger, e) {
+                    e.preventDefault();
+                    console.log($trigger.data('menu_info'));
+
+                    if (typeof $trigger.data('menu_info') === 'undefined') {
+                       return {items: {"windows": {name: "Edit"}}}
+                    }
+
+                    // pull a callback from the trigger
+                    return $trigger.data('menu_info');
+                }
+            });
+
+            {#extracted_file_get_tab(path).#}
+
+            mod_editor_opened_tabs[original_path] = {
                 name: name,
-                path: path,
+                path: original_path,
                 type: 'unknown',
-                data_obj: null
+                data_obj: null,
+                elem_container: null
             };
 
             if (path.endsWith(".json")) {
                 mod_editor_opened_tabs[path].type = 'json';
-                _extracted_file_load_json_editor(name, path);
+                _extracted_file_load_new_editor(name, path, "/panes/campaign_view/editors/json_editor", JsonFileEditorData);
+            {# } #}
+            {#else if (path.endsWith(".pdf")) {#}
+            {#    mod_editor_opened_tabs[path].type = 'pdf';#}
+            {#    _extracted_file_load_new_editor(name, path, "/panes/campaign_view/editors/generic_editor", PdfEditorData);#}
 
             } else if (original_path.endsWith("?char")) {
                 mod_editor_opened_tabs[path].type = 'character';
-                _extracted_file_load_character_editor(name, path)
+                _extracted_file_load_new_editor(name, path, "/panes/campaign_view/editors/character_editor", CharacterEditorData);
+
+            } else if (original_path.endsWith("?creature")) {
+                mod_editor_opened_tabs[path].type = 'character';
+                _extracted_file_load_new_editor(name, path, "/panes/campaign_view/editors/json_editor", CreatureEditorData);
+
+            } else {
+                mod_editor_opened_tabs[path].type = 'generic';
+                _extracted_file_load_new_editor(name, path, "/panes/campaign_view/editors/generic_editor", EditorDataBase);
             }
+
         });
 
     }

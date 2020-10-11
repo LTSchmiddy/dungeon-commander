@@ -10,7 +10,7 @@
     ],
     "alignment": "unaligned",
     "armor_class": 8,
-    "challenge_rating": "2",
+    "challenge_rating": 2.0,
     "charisma": 1,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
     "constitution": 14,

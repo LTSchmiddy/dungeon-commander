@@ -8,7 +8,7 @@ import shutil
 
 import webview as wv
 import viewport
-from viewport.js_api import cef_bindings
+from viewport import cef_bindings
 import interface_flask
 
 import settings
@@ -25,15 +25,15 @@ import string
 
 def background_thread(window: wv.window):
     import db
-    # cef_props_thread = threading.Thread(None, target=update_cef_properties, args=tuple([.5]))
+    # cef_props_thread = threading.Thread(None, target=update_all, args=tuple([.5]))
     while viewport.get_cef_instance() is None:
         pass
 
+
     cef_props_thread = threading.Thread(None, target=update_cef_properties_thread)
-    cef_bindings.declare_cef_callbacks()
     cef_props_thread.start()
 
-    viewport.window.load_url(interface_flask.get_main_addr())
+    viewport.main_window.load_url(interface_flask.get_main_addr())
 
     # cef_main = viewport.get_cef_instance()
     while viewport.window_is_alive:
@@ -42,5 +42,5 @@ def background_thread(window: wv.window):
 
 def update_cef_properties_thread(freq: float = 0.5):
     while viewport.window_is_alive:
-        cef_bindings.update_cef_properties()
+        cef_bindings.update_all()
         time.sleep(freq)

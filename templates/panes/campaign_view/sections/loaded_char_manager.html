@@ -1,13 +1,14 @@
-<div id="loaded-characters-list" style="width: 100%;"></div>
-
+<div id="loaded-characters-list" style="width: 100%; padding-bottom: 20px;"></div>
+<div id="loaded-creatures-list" style="width: 100%; padding-bottom: 20px;"></div>
 
 <script>
 
-    let campaign_view_characters_content = null;
+    let campaign_view_characters_content = $('#loaded-characters-list');
+    let campaign_view_creatures_content = $('#loaded-creatures-list');
 
-    window.addEventListener('pywebviewready', ()=>{
-        campaign_view_characters_content = $('#loaded-characters-list');
+    window.addEventListener('pywebviewready', async ()=>{
         campaign_view_update_loaded_characters();
+        campaign_view_update_loaded_creatures();
     });
 
     function campaign_view_update_loaded_characters() {
@@ -20,6 +21,19 @@
 
             campaign_view_characters_content.text("Loading...")
             campaign_view_characters_content.load("/panes/campaign_view/loaded_character_listing");
+        });
+    }
+
+    function campaign_view_update_loaded_creatures() {
+        py.exec(`return game.current.is_dm`).then((is_dm)=>{
+            if (!is_dm) {
+                {#console.log(campaign_view_characters_content.get()[0]);#}
+                campaign_view_creatures_content.get()[0].innerHTML = "";
+                return;
+            }
+
+            campaign_view_creatures_content.text("Loading...")
+            campaign_view_creatures_content.load("/panes/campaign_view/loaded_creature_listing");
         });
     }
 

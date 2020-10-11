@@ -1,6 +1,6 @@
 #database-view {
     .section-selector {
-        background-color: #007bff;
+        //background-color: #007bff;
         position: absolute;
         height: 100%;
         width: 200px;
@@ -100,31 +100,111 @@
                 left: 70px;
 
                 .db-searchbox {
+                    //width: calc(100% - 500px);
                     width: 100%;
                     height: 100%;
+                    //height: calc(100% - 20px);
                     font-size: 30px;
                 }
+            }
+
+            .db-table-search-settings-container {
+                position: absolute;
+                //border:solid 2px gray;
+                width: calc(100% - 200px);
+                height: 40px;
+                top: 40px;
+                left: 0;
+                padding: 0 10px;
+
+                label {
+                    display: inline-block;
+                    margin-right: 30px;
+                }
+
             }
 
             .table-result-area {
                 position: absolute;
                 left: 0;
-                top: 40px;
+                top: 80px;
                 width: calc(100% - 200px);
-                height: calc(100% - 40px);
-                padding: 15px;
-                overflow: scroll;
+                height: calc(100% - 80px);
+                //overflow: scroll;
                 //overflow-y: scroll;
 
+                .generic-table-scroller {
+                    width: 100%;
+                    height: 100%;
+                    overflow: scroll;
+                    padding: 15px;
+                }
 
                 table td {
                     //border-style: solid;
+                }
+
+
+                .fancy-table-header {
+                    width: 100%;
+                    height: 30px;
+                    //overflow: scroll;
+                    padding: 0 15px;
+                    display: grid;
+                    background-color: silver;
+                    vertical-align: center;
+                    border-top-style: solid;
+                    border-top-width: 2px;
+                    border-top-color: grey;
+
+                }
+
+                .fancy-table-scroller {
+                    width: 100%;
+                    top: 30px;
+                    height: calc(100% - 30px);
+                    overflow: scroll;
+                    padding: 15px;
+
+                    details {
+                        width: 100%;
+                        summary {
+                            border-top-style: solid;
+                            border-top-width: 2px;
+                            border-top-color: grey;
+                            width: 100%;
+                            display: grid;
+                            background-color: silver;
+                            vertical-align: center;
+                            height: 30px;
+                        }
+
+                        .long_view {
+                            padding: 20px;
+                        }
+                        .id_view {
+                            padding: 0 20px;
+                        }
+                    }
+
+                }
+
+                .fancy-table-section {
+                    overflow: hidden;
+                    white-space: nowrap;
+                    height: 100%;
+
+                }
+                .fancy-table-info {
+
+
                 }
             }
 
             .spell-result {
                 min-width: 1200px;
             }
+
 
 
         }

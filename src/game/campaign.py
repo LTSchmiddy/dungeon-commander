@@ -13,7 +13,9 @@ import colors
 import settings
 import db
 import dungeonsheets
+from dungeonsheets import dice
 from dungeonsheets.character import Character
+from dungeonsheets.creatures import Creature
 
 from json_class import JsonClass
 
@@ -43,6 +45,9 @@ class Campaign(JsonClass):
     max_loaded_chars = 1000
     loaded_chars: Dict[int, Character]
 
+    max_loaded_creatures = 1000
+    loaded_creatures: Dict[int, Creature]
+
     addon_load_order: list
 
     # @property
@@ -62,6 +67,8 @@ class Campaign(JsonClass):
         self.npcs = []
 
         self.loaded_chars = {}
+        self.loaded_creatures = {}
+
         self.addon_load_order = []
 
         self.start()
@@ -189,7 +196,7 @@ class Campaign(JsonClass):
     def get_note_path(self, p_path: str) -> str:
         return os.path.join(self.get_path(self.player_dir_name), p_path)
 
-    def get_new_ref_id(self):
+    def get_new_char_ref_id(self):
         next_id = 0
         while True:
             next_id = random.randint(0, self.max_loaded_chars)
@@ -197,39 +204,19 @@ class Campaign(JsonClass):
                 break
         return next_id
 
-    def get_dir_tree(self, current_dir=None):
-        if current_dir is None:
-            current_dir = self.dir_path
+    def get_new_creature_ref_id(self):
+        next_id = 0
+        while True:
+            next_id = random.randint(0, self.max_loaded_creatures)
+            if not next_id in self.loaded_creatures:
+                break
+        return next_id
 
-        dir_cont = os.listdir(current_dir)
-
-        dir_dict = {
-            'path': current_dir,
-            'dirs': {},
-            'files': {}
-
-        }
-
-        for i in dir_cont:
-            if i == '__pycache__':
-                continue
-
-            fullpath = os.path.join(current_dir, i).replace("\\", "/")
-            # print(fullpath)
-
-            if os.path.isfile(fullpath):
-                dir_dict['files'][i] = fullpath
-
-            elif os.path.isdir(fullpath):
-                dir_dict['dirs'][i] = self.get_dir_tree(fullpath)
-
-
-        return dir_dict
-
+    # Character Management
     def new_character(self):
         new_char = Character()
         new_char.loaded_path = None
-        new_id = self.get_new_ref_id()
+        new_id = self.get_new_char_ref_id()
         new_char.loaded_id = new_id
 
         new_char.update_props_hash()
@@ -249,7 +236,7 @@ class Campaign(JsonClass):
         new_char = Character.load(c_path)
         new_char.loaded_path = c_path
         # new_char.loaded_path = os.path.abspath(c_path)
-        new_id = self.get_new_ref_id()
+        new_id = self.get_new_char_ref_id()
         new_char.loaded_id = new_id
 
         new_char.update_props_hash()
@@ -279,7 +266,7 @@ class Campaign(JsonClass):
         # file_types = ('Image Files (*.bmp;*.jpg;*.gif)', 'All files (*.*)')
         import viewport, webview
         if char.loaded_path is None or char.loaded_path == "":
-            char.loaded_path = viewport.window.create_file_dialog(
+            char.loaded_path = viewport.main_window.create_file_dialog(
                 dialog_type=webview.SAVE_DIALOG,
                 directory=os.path.abspath(self.dir_path),
                 save_filename=char.name + dungeonsheets.character.file_extension,
@@ -329,3 +316,89 @@ class Campaign(JsonClass):
             print(colors.color(result_message, fg='red'))
 
         return result_message
+
+
+    # Creature Management:
+    def spawn_creature(self, creature_id):
+        loaded_creature = Creature.load_by_id(creature_id)
+
+        if loaded_creature is None:
+            print(f"No such creature as id: {creature_id}")
+            return
+
+        loaded_creature.loaded_path = None
+        new_id = self.get_new_char_ref_id()
+        loaded_creature.loaded_id = new_id
+        loaded_creature.name += f" {new_id}"
+        loaded_creature.hp_current = dice.eval_dice(loaded_creature.hit_dice)
+
+        # loaded_creature.update_props_hash()
+        self.loaded_creatures[new_id] = loaded_creature
+        return new_id
+
+
+    def load_creature(self, c_path: str):
+        if not os.path.isfile(c_path):
+            print(f"ERROR: File {c_path} does not exist.")
+            return
+
+        for key, value in self.loaded_creatures.items():
+            if c_path == value.loaded_path:
+                return
+
+        print(c_path)
+        loaded_creature = Creature()
+        loaded_creature.load_json_file(c_path)
+        loaded_creature.loaded_path = c_path
+        # new_char.loaded_path = os.path.abspath(c_path)
+        new_id = self.get_new_char_ref_id()
+        loaded_creature.loaded_id = new_id
+
+        # loaded_creature.update_props_hash()
+        self.loaded_creatures[new_id] = loaded_creature
+        return new_id
+
+
+    def unload_creature(self, char):
+        if isinstance(char, Creature):
+            del self.loaded_creatures[char.loaded_id]
+        if isinstance(char, int):
+            del self.loaded_creatures[char]
+        if isinstance(char, str):
+            del self.loaded_creatures[int(char)]
+
+
+    def save_creature(self, p_creature, location=None):
+        creature = None
+        if isinstance(p_creature, Creature):
+            creature = p_creature
+
+        if isinstance(p_creature, int):
+            creature = self.loaded_creatures[p_creature]
+
+        if isinstance(p_creature, str):
+            creature = self.loaded_creatures[int(p_creature)]
+
+        # print(os.path.abspath(self.dir_path))
+        # file_types = ('Image Files (*.bmp;*.jpg;*.gif)', 'All files (*.*)')
+        import viewport, webview
+        if creature.loaded_path is None or creature.loaded_path == "":
+            creature.loaded_path = viewport.main_window.create_file_dialog(
+                dialog_type=webview.SAVE_DIALOG,
+                directory=os.path.abspath(self.dir_path),
+                save_filename=creature.name + dungeonsheets.creatures.file_extension,
+                file_types = (f"Character File (*{dungeonsheets.creatures.file_extension})",)
+                # file_types = file_types
+            )
+
+            if creature.loaded_path is None or creature.loaded_path == "":
+                print("File save cancelled.")
+                return
+
+            if not creature.loaded_path.endswith(dungeonsheets.character.file_extension):
+                creature.loaded_path += dungeonsheets.character.file_extension
+
+            # char.loaded_path = os.path.abspath(char.loaded_path)
+
+        creature.save_json_file(creature.loaded_path)
+        # creature.update_props_hash()

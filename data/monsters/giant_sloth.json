@@ -22,19 +22,19 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
     "athletics": 7,
-    "challenge_rating": "7",
-    "charisma": "10",
+    "challenge_rating": 7.0,
+    "charisma": 10,
     "condition_immunities": "poisoned",
-    "constitution": "19",
+    "constitution": 19,
     "damage_resistances": "poison",
-    "dexterity": "10",
+    "dexterity": 10,
     "hit_dice": "16d10+80",
-    "hit_points": "168",
+    "hit_points": 168,
     "id": "giant_sloth",
-    "intelligence": "3",
+    "intelligence": 3,
     "languages": "-",
     "name": "Giant Sloth",
     "perception": 4,
@@ -55,9 +55,9 @@
         "climb": 20,
         "walk": 20
     },
-    "strength": "19",
+    "strength": 19,
     "strength_save": 7,
     "subtype": "",
     "type": "beast",
-    "wisdom": "12"
+    "wisdom": 12
 }

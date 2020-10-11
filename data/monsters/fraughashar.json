@@ -27,7 +27,7 @@
     "alignment": "neutral evil",
     "armor_class": 15,
     "armor_desc": "leather armor, shield",
-    "challenge_rating": "1/2",
+    "challenge_rating": 0.5,
     "charisma": 7,
     "constitution": 12,
     "damage_immunities": "cold",

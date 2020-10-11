@@ -15,7 +15,7 @@
     "alignment": "unaligned",
     "armor_class": 13,
     "armor_desc": "",
-    "challenge_rating": "1/8",
+    "challenge_rating": 0.125,
     "charisma": 8,
     "constitution": 8,
     "dexterity": 16,
@@ -28,7 +28,7 @@
     "perception": 3,
     "senses": "darkvision 60 ft., passive Perception 13",
     "size": "Tiny",
-    "sleight of Hand": 5,
+    "sleight_of_hand": 5,
     "speed": "30 ft., climb 30 ft., swim 20 ft.",
     "speed_json": {
         "climb": 30,

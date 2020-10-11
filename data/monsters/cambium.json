@@ -46,7 +46,7 @@
     "arcana": 8,
     "armor_class": 19,
     "armor_desc": "natural armor",
-    "challenge_rating": "14",
+    "challenge_rating": 14.0,
     "charisma": 18,
     "charisma_save": 9,
     "condition_immunities": "exhaustion, poisoned",

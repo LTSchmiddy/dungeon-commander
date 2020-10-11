@@ -1,10 +1,10 @@
-<div id="database-section-selector" class="section-selector">
+<div id="database-section-selector" class="section-selector ui-bar">
     <button class="btn-secondary" data-section-name="background" data-table-name="" onclick="db_view_set_btn(this);">Backgrounds</button>
     <button class="btn-secondary" data-section-name="class" data-table-name="" onclick="db_view_set_btn(this);">Classes</button>
     <button class="btn-secondary" data-section-name="race" data-table-name="" onclick="db_view_set_btn(this);">Races</button>
 
     {% for i in db.Base.metadata.tables.keys() %}
-        <button class="btn-secondary" data-section-name="table" data-table-name="{{ i }}" onclick="db_view_set_btn(this); load_table_result()">{{ i.replace("_", " ").title() }}</button>
+        <button class="btn-secondary" data-section-name="table" data-table-name="{{ i }}" onclick="db_view_set_btn(this); db_view_load_table_result()">{{ i.replace("_", " ").title() }}</button>
     {% endfor %}
 </div>
 <div id="database-section-view-area" class="section-view-area">
@@ -27,7 +27,8 @@
         menu: $('#database-section-selector'),
         view: $('#database-section-view-area'),
         section: "",
-        table: ""
+        table: "",
+
     }
     function db_view_set_btn(button) {
         let section = $(button).attr('data-section-name');
@@ -57,6 +58,27 @@
                 sel.hide();
             }
         }
+
+        // updating the search bar for table view:
+        if (db_table_view.ace_sql_search_bar === null) {
+                return
+            }
+
+            if (!db_table_view.ace_sessions.hasOwnProperty(table)) {
+                db_table_view.ace_sessions[table] = new ace.EditSession("");
+                /** @type {ace.EditSession}*/
+                db_table_view.ace_sessions[table].setOptions({
+                    maxLines: 1, // make it 1 line
+                    autoScrollEditorIntoView: true,
+                    highlightActiveLine: false,
+                    printMargin: false,
+                    showGutter: false,
+                    mode: "ace/mode/sql",
+                    theme: "ace/theme/tomorrow_night_eighties"
+                });
+            }
+
+            db_table_view.ace_sql_search_bar.setSession(db_table_view.ace_sessions[table]);
     }
 
     db_view_set('');

@@ -29,7 +29,7 @@
     "armor_class": 15,
     "armor_desc": "",
     "athletics": 8,
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 8,
     "condition_immunities": "paralyzed, prone, unconscious",
     "constitution": 16,

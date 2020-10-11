@@ -19,10 +19,10 @@
         }
     ],
     "alignment": "neutral",
-    "animal Handling": 2,
+    "animal_handling": 2,
     "armor_class": 13,
     "armor_desc": "leather armor",
-    "challenge_rating": "1/2",
+    "challenge_rating": 0.5,
     "charisma": 10,
     "constitution": 15,
     "damage_resistances": "poison",

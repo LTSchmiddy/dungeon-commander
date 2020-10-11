@@ -26,7 +26,7 @@
     "armor_class": 15,
     "armor_desc": "natural armor",
     "athletics": 5,
-    "challenge_rating": "3",
+    "challenge_rating": 3.0,
     "charisma": 14,
     "constitution": 16,
     "dexterity": 16,
@@ -38,7 +38,7 @@
     "name": "Pombero",
     "senses": "darkvision 60 ft., passive Perception 10",
     "size": "Medium",
-    "sleight of Hand": 5,
+    "sleight_of_hand": 5,
     "special_abilities": [
         {
             "attack_bonus": 0,

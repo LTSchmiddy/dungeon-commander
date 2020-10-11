@@ -8,17 +8,17 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "13",
-    "challenge_rating": "1",
-    "charisma": "8",
+    "armor_class": 13,
+    "challenge_rating": 1.0,
+    "charisma": 8,
     "condition_immunities": "charmed, exhaustion, paralyzed, unconscious",
-    "constitution": "14",
+    "constitution": 14,
     "damage_resistances": "cold, necrotic",
-    "dexterity": "16",
+    "dexterity": 16,
     "hit_dice": "8d6+16",
-    "hit_points": "44",
+    "hit_points": 44,
     "id": "alp",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Sylvan, Umbral",
     "name": "Alp",
     "senses": "darkvision 60 ft., passive Perception 13",
@@ -45,8 +45,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "12",
+    "strength": 12,
     "subtype": "shapechanger",
     "type": "fey",
-    "wisdom": "16"
+    "wisdom": 16
 }

@@ -31,7 +31,7 @@
     "armor_class": 16,
     "armor_desc": "scale mail",
     "athletics": 14,
-    "challenge_rating": "13",
+    "challenge_rating": 13.0,
     "charisma": 18,
     "charisma_save": 9,
     "condition_immunities": "",

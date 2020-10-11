@@ -37,7 +37,7 @@
     "alignment": "lawful neutral",
     "armor_class": 17,
     "armor_desc": "scale mail",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 13,
     "constitution": 14,
     "dexterity": 16,

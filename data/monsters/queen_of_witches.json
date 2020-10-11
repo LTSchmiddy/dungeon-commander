@@ -22,7 +22,7 @@
     "arcana": 9,
     "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "17",
+    "challenge_rating": 17.0,
     "charisma": 22,
     "charisma_save": 12,
     "condition_immunities": "blinded, charmed, frightened",

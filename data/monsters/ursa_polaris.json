@@ -26,19 +26,19 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
     "athletics": 8,
-    "challenge_rating": "7",
-    "charisma": "5",
-    "constitution": "18",
+    "challenge_rating": 7.0,
+    "charisma": 5,
+    "constitution": 18,
     "damage_immunities": "cold",
     "damage_vulnerabilities": "fire",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "14d10+56",
-    "hit_points": "133",
+    "hit_points": 133,
     "id": "ursa_polaris",
-    "intelligence": "4",
+    "intelligence": 4,
     "languages": "-",
     "name": "Ursa Polaris",
     "perception": 6,
@@ -59,8 +59,8 @@
         "swim": 30,
         "walk": 40
     },
-    "strength": "20",
+    "strength": 20,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "16"
+    "wisdom": 16
 }

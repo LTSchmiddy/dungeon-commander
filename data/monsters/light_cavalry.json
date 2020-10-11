@@ -18,18 +18,18 @@
         }
     ],
     "alignment": "lawful neutral",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "leather, shield",
     "athletics": 4,
-    "challenge_rating": "1",
-    "charisma": "9",
-    "constitution": "15",
+    "challenge_rating": 1.0,
+    "charisma": 9,
+    "constitution": 15,
     "damage_resistances": "fire",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "6d8+12",
-    "hit_points": "39",
+    "hit_points": 39,
     "id": "light_cavalry",
-    "intelligence": "8",
+    "intelligence": 8,
     "languages": "Common, Draconic",
     "name": "Light Cavalry",
     "perception": 4,
@@ -49,8 +49,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "15",
+    "strength": 15,
     "subtype": "dragonborn",
     "type": "humanoid",
-    "wisdom": "14"
+    "wisdom": 14
 }

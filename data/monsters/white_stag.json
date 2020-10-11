@@ -18,18 +18,18 @@
         }
     ],
     "alignment": "chaotic good",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
     "athletics": 5,
-    "challenge_rating": "2",
-    "charisma": "15",
-    "constitution": "13",
-    "dexterity": "15",
+    "challenge_rating": 2.0,
+    "charisma": 15,
+    "constitution": 13,
+    "dexterity": 15,
     "hit_dice": "7d10+7",
-    "hit_points": "45",
+    "hit_points": 45,
     "id": "white_stag",
     "insight": 4,
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "understands Celestial, Common, Elvish and Sylvan but can't speak",
     "name": "White Stag",
     "perception": 4,
@@ -53,8 +53,8 @@
     "speed_json": {
         "walk": 60
     },
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "celestial",
-    "wisdom": "14"
+    "wisdom": 14
 }

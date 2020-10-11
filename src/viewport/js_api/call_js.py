@@ -27,4 +27,4 @@ class CallJS:
         self.script = open(scripts_directory + path, 'r').read()
 
     def run(self):
-        return viewport.window.evaluate_js(self.script)
+        return viewport.main_window.evaluate_js(self.script)

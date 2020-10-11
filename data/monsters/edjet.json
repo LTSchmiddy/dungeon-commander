@@ -28,19 +28,19 @@
         }
     ],
     "alignment": "lawful neutral",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "chain shirt",
     "athletics": 6,
-    "challenge_rating": "3",
-    "charisma": "13",
-    "constitution": "14",
+    "challenge_rating": 3.0,
+    "charisma": 13,
+    "constitution": 14,
     "constitution_save": 5,
     "damage_resistances": "fire",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "8d8+16",
-    "hit_points": "52",
+    "hit_points": 52,
     "id": "edjet",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Draconic",
     "name": "Edjet",
     "perception": 4,
@@ -60,9 +60,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "17",
+    "strength": 17,
     "strength_save": 6,
     "subtype": "dragonborn",
     "type": "humanoid",
-    "wisdom": "13"
+    "wisdom": 13
 }

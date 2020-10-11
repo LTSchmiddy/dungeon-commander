@@ -26,7 +26,7 @@
     "arcana": 4,
     "armor_class": 16,
     "armor_desc": "breastplate",
-    "challenge_rating": "7",
+    "challenge_rating": 7.0,
     "charisma": 18,
     "charisma_save": 7,
     "constitution": 14,

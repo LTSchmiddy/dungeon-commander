@@ -20,7 +20,7 @@
     "alignment": "chaotic evil",
     "armor_class": 16,
     "armor_desc": "",
-    "challenge_rating": "11",
+    "challenge_rating": 11.0,
     "charisma": 10,
     "charisma_save": 4,
     "condition_immunities": "exhaustion, petrified, prone",

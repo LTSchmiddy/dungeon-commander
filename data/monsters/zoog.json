@@ -6,15 +6,15 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "13",
-    "challenge_rating": "0",
-    "charisma": "8",
-    "constitution": "12",
-    "dexterity": "16",
+    "armor_class": 13,
+    "challenge_rating": 0.0,
+    "charisma": 8,
+    "constitution": 12,
+    "dexterity": 16,
     "hit_dice": "1d4+1",
-    "hit_points": "3",
+    "hit_points": 3,
     "id": "zoog",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Deep Speech, Void Speech",
     "name": "Zoog",
     "perception": 2,
@@ -26,8 +26,8 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "3",
+    "strength": 3,
     "subtype": "",
     "type": "aberration",
-    "wisdom": "10"
+    "wisdom": 10
 }

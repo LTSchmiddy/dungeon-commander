@@ -27,7 +27,7 @@
     "alignment": "neutral evil",
     "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "6",
+    "challenge_rating": 6.0,
     "charisma": 10,
     "constitution": 19,
     "dexterity": 12,

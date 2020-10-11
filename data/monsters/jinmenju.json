@@ -12,20 +12,20 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "9",
-    "charisma": "22",
+    "challenge_rating": 9.0,
+    "charisma": 22,
     "charisma_save": 10,
     "condition_immunities": "exhaustion, prone",
-    "constitution": "19",
+    "constitution": 19,
     "constitution_save": 8,
     "damage_immunities": "bludgeoning, piercing, and slashing from nonmagical attacks",
-    "dexterity": "1",
+    "dexterity": 1,
     "hit_dice": "12d12+48",
-    "hit_points": "126",
+    "hit_points": 126,
     "id": "jinmenju",
-    "intelligence": "17",
+    "intelligence": 17,
     "languages": "all languages known by creatures within 120 feet",
     "legendary_actions": [
         {
@@ -61,8 +61,8 @@
     "speed_json": {
         "walk": 0
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "plant",
-    "wisdom": "8"
+    "wisdom": 8
 }

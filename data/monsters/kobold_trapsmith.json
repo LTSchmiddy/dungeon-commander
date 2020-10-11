@@ -27,7 +27,7 @@
     "alignment": "lawful neutral",
     "armor_class": 14,
     "armor_desc": "leather",
-    "challenge_rating": "1",
+    "challenge_rating": 1.0,
     "charisma": 8,
     "constitution": 12,
     "dexterity": 16,

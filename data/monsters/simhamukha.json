@@ -26,20 +26,20 @@
         }
     ],
     "alignment": "chaotic good",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "8",
-    "charisma": "19",
+    "challenge_rating": 8.0,
+    "charisma": 19,
     "charisma_save": 7,
     "condition_immunities": "poisoned",
-    "constitution": "19",
+    "constitution": 19,
     "damage_immunities": "necrotic, poison, radiant",
     "damage_resistances": "cold, fire, lightning, psychic; bludgeoning, piericing, and slashing damage from nonmagical attacks",
-    "dexterity": "15",
+    "dexterity": 15,
     "hit_dice": "11d12+44",
-    "hit_points": "115",
+    "hit_points": 115,
     "id": "simhamukha",
-    "intelligence": "12",
+    "intelligence": 12,
     "languages": "all, telepathy 120 ft.",
     "name": "Simhamukha",
     "perception": 6,
@@ -67,9 +67,9 @@
     "speed_json": {
         "walk": 50
     },
-    "strength": "21",
+    "strength": 21,
     "strength_save": 8,
     "subtype": "dakini",
     "type": "celestial",
-    "wisdom": "17"
+    "wisdom": 17
 }

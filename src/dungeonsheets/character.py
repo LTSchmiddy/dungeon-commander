@@ -24,7 +24,7 @@ import dungeonsheets
 
 
 from dungeonsheets import (armor, background, classes, exceptions, features,
-                           infusions, magic_items, monsters, race, spells,
+                           infusions, magic_items, creatures, race, spells,
                            weapons, char_key_order)
 from dungeonsheets.armor import Armor, NoArmor, NoShield, Shield
 
@@ -39,7 +39,7 @@ from dungeonsheets.weapons import Weapon
 
 import colors
 
-import black
+# import black
 
 import util
 
@@ -1019,7 +1019,7 @@ class Character:
             prof = 6
         return prof
 
-    def can_assume_shape(self, shape: monsters.Monster):
+    def can_assume_shape(self, shape: creatures.Creature):
         return hasattr(self, 'Druid') and self.Druid.can_assume_shape(shape)
 
     @property
@@ -1144,7 +1144,7 @@ class Character:
         # Create the character with loaded properties
         self.__init__(**char_props)
 
-    def load_info_json_dict(self, json_dict: dict) -> (None, Exception):
+    def load_json_viewer_dict(self, json_dict: dict, verbose=True) -> (None, Exception):
         char_props = {}
 
         for type_key, value in json_dict.items():
@@ -1154,10 +1154,10 @@ class Character:
             else:
                 char_props[key] = type_conversions[use_type](value)
 
-        return self.load_into_from_dict(char_props)
+        return self.load_into_from_dict(char_props, verbose)
 
     def load_info_from_json(self, json_str: str) -> (None, Exception):
-        result = self.load_info_json_dict(json.loads(json_str))
+        result = self.load_json_viewer_dict(json.loads(json_str))
         if isinstance(result, Exception):
             return result
         return None
@@ -1176,29 +1176,29 @@ class Character:
         # Save the file
 
         # Format the code with Black:
-        text = black.format_file_contents(text, fast=False, mode=black.FileMode())
+        # text = black.format_file_contents(text, fast=False, mode=black.FileMode())
 
         return text
 
     def save_dict(self):
         return read_character_code(self.save_code())
 
-    def save_json_dict(self):
+    def save_json_viewer_dict(self):
         attr_dict = self.save_dict()
         json_dict = {}
         # for key, value in attr_dict.items():
         #     type_key = f"{str(type(value).__name__)}-{key}"
         #     json_dict[type_key] = value
 
-        for i in range(0, len(char_key_order.order)):
-            name = char_key_order.order[i]
+        for i in range(0, len(char_key_order.char_order)):
+            name = char_key_order.char_order[i]
             type_key = f"{i}-{str(type(attr_dict[name]).__name__)}-{name}"
             json_dict[type_key] = attr_dict[name]
 
         return json_dict
 
     def save_json(self):
-        return json.dumps(self.save_json_dict(), indent=4, sort_keys=True)
+        return json.dumps(self.save_json_viewer_dict(), indent=4, sort_keys=True)
 
     def save(self, filename, template_file='character_template.txt'):
         text = self.save_code()

@@ -22,7 +22,7 @@
     "armor_class": 15,
     "armor_desc": "chain shirt",
     "athletics": 4,
-    "challenge_rating": "1",
+    "challenge_rating": 1.0,
     "charisma": 11,
     "constitution": 14,
     "damage_resistances": "poison",

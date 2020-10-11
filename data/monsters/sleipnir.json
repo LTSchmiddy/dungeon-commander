@@ -16,20 +16,20 @@
         }
     ],
     "alignment": "neutral good",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
     "athletics": 8,
-    "challenge_rating": "5",
-    "charisma": "10",
+    "challenge_rating": 5.0,
+    "charisma": 10,
     "condition_immunities": "exhaustion",
-    "constitution": "20",
+    "constitution": 20,
     "constitution_save": 8,
     "damage_resistances": "cold",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "10d10+50",
-    "hit_points": "105",
+    "hit_points": 105,
     "id": "sleipnir",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Primordial",
     "name": "Sleipnir",
     "perception": 5,
@@ -55,8 +55,8 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "20",
+    "strength": 20,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "15"
+    "wisdom": 15
 }

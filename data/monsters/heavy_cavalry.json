@@ -24,18 +24,18 @@
         }
     ],
     "alignment": "lawful neutral",
-    "armor_class": "19",
+    "armor_class": 19,
     "armor_desc": "splint, shield",
     "athletics": 4,
-    "challenge_rating": "2",
-    "charisma": "8",
-    "constitution": "17",
+    "challenge_rating": 2.0,
+    "charisma": 8,
+    "constitution": 17,
     "damage_resistances": "fire",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "10d8+30",
-    "hit_points": "75",
+    "hit_points": 75,
     "id": "heavy_cavalry",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Draconic",
     "name": "Heavy Cavalry",
     "senses": "passive Perception 12",
@@ -58,8 +58,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "15",
+    "strength": 15,
     "subtype": "dragonborn",
     "type": "humanoid",
-    "wisdom": "14"
+    "wisdom": 14
 }

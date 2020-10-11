@@ -156,6 +156,104 @@ class Skill():
         return SkillScore(value=modifier, value_str=mod_str(modifier), base_ability=self.ability_name)
 
 
+
+class CreatureAbility:
+    ability_name = None
+
+    def __init__(self, default_value=0):
+        self.default_value = default_value
+        self.creature = None
+
+
+    def __set_name__(self, creature, name):
+        self.ability_name = name
+        self.creature = creature
+
+    def _check_dict(self, obj):
+        if not hasattr(obj, '_ability_scores'):
+            # No ability score dictionary exists
+            obj._ability_scores = {
+                self.ability_name: self.default_value
+            }
+        elif self.ability_name not in obj._ability_scores.keys():
+            # ability score dictionary exists but doesn't have this ability
+            obj._ability_scores[self.ability_name] = self.default_value
+
+    def __get__(self, creature, Creature):
+        # if self.character is not None:
+        #     character = self.character
+
+        self._check_dict(creature)
+        score = creature._ability_scores[self.ability_name]
+        # Adding race bonuses:
+        base_score = score
+
+        base_modifier = math.floor((base_score - 10) / 2)
+        modifier = math.floor((score - 10) / 2)
+        # Check for proficiency
+        saving_throw = modifier
+        if self.ability_name is not None and hasattr(creature, self.ability_name + '_save') and getattr(creature, self.ability_name + '_save') > -1:
+            saving_throw = getattr(creature, self.ability_name + '_save')
+        # Create the named tuple
+        value = AbilityScore(
+            modifier=modifier,
+            value=score,
+            saving_throw=saving_throw,
+            base_value=base_score,
+            modifier_str=mod_str(modifier),
+            saving_throw_str=mod_str(saving_throw),
+            base_modifier=base_modifier
+        )
+
+        return value
+
+    def __set__(self, creature, val):
+        self._check_dict(creature)
+        creature._ability_scores[self.ability_name] = val
+        self.value = val
+
+
+
+class CreatureSkill():
+    """An ability-based skill, such as athletics."""
+
+    def __init__(self, ability: str):
+        self.ability_name = ability
+        self._offset_value = 0
+        self.creature = None
+
+
+    def __set_name__(self, creature, name):
+        self.skill_name = name.lower().replace('_', ' ')
+        self.creature = creature
+
+
+    def __set__(self, creature, value):
+        if creature is None:
+            creature = self.creature
+
+        self.calc_offset_value(value, creature)
+
+
+    def __get__(self, creature, owner):
+        if creature is None:
+            creature = self.creature
+
+        ability = getattr(creature, self.ability_name)
+        modifier = self._offset_value
+
+        return SkillScore(value=modifier, value_str=mod_str(modifier), base_ability=self.ability_name)
+
+    def calc_offset_value(self, total_value=0, creature=None):
+        if creature is None:
+            creature = self.creature
+
+        ability = getattr(creature, self.ability_name)
+
+        self._offset_value = total_value - ability.value
+
+
+
 class ArmorClass:
     """
     The Armor Class of a character

@@ -12,18 +12,18 @@
         }
     ],
     "alignment": "lawful good",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
     "athletics": 9,
-    "challenge_rating": "5",
-    "charisma": "14",
+    "challenge_rating": 5.0,
+    "charisma": 14,
     "condition_immunities": "charmed, frightened",
-    "constitution": "20",
-    "dexterity": "12",
+    "constitution": 20,
+    "dexterity": 12,
     "hit_dice": "10d10+50",
-    "hit_points": "105",
+    "hit_points": 105,
     "id": "aatxe",
-    "intelligence": "10",
+    "intelligence": 10,
     "intimidation": 5,
     "languages": "understands all but can't speak",
     "legendary_actions": [
@@ -66,8 +66,8 @@
     "speed_json": {
         "walk": 50
     },
-    "strength": "22",
+    "strength": 22,
     "subtype": "shapechanger",
     "type": "celestial",
-    "wisdom": "14"
+    "wisdom": 14
 }

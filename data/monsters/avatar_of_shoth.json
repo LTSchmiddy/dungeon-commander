@@ -24,21 +24,21 @@
         }
     ],
     "alignment": "lawful neutral",
-    "armor_class": "18",
+    "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "21",
-    "charisma": "22",
+    "challenge_rating": 21.0,
+    "charisma": 22,
     "charisma_save": 13,
     "condition_immunities": "charmed, frightened, prone",
-    "constitution": "20",
+    "constitution": 20,
     "constitution_save": 12,
     "damage_immunities": "acid, cold, fire",
-    "dexterity": "9",
+    "dexterity": 9,
     "hit_dice": "22d20+110",
-    "hit_points": "341",
+    "hit_points": 341,
     "id": "avatar_of_shoth",
     "insight": 12,
-    "intelligence": "18",
+    "intelligence": 18,
     "languages": "all, telepathy 120 ft.",
     "legendary_actions": [
         {
@@ -87,9 +87,9 @@
         "climb": 30,
         "walk": 30
     },
-    "strength": "20",
+    "strength": 20,
     "subtype": "shoth",
     "type": "aberration",
-    "wisdom": "20",
+    "wisdom": 20,
     "wisdom_save": 12
 }

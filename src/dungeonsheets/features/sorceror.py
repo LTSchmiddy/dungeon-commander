@@ -486,7 +486,7 @@ class HoundOfIllOmen(Feature):
     darkness to harass your foes. As a bonus action, you can spend 3 sorcery
     points to magically summon a hound of ill omen to target one creature you
     can see within 120 feet of you. The hound uses the dire wolf's statistics
-    (see the Monster Manual or appendix C in the Player's Handbook), with the
+    (see the Creature Manual or appendix C in the Player's Handbook), with the
     following changes:
 
     • The hound is size Medium, not Large, and it counts as a monstrosity, not

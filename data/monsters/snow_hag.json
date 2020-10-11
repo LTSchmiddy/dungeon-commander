@@ -17,19 +17,19 @@
     ],
     "alignment": "neutral evil",
     "arcana": 3,
-    "armor_class": "17",
+    "armor_class": 17,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "16",
-    "constitution": "16",
+    "challenge_rating": 3.0,
+    "charisma": 16,
+    "constitution": 16,
     "damage_immunities": "cold",
     "damage_vulnerabilities": "fire",
     "deception": 5,
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "11d8+33",
-    "hit_points": "82",
+    "hit_points": 82,
     "id": "snow_hag",
-    "intelligence": "13",
+    "intelligence": 13,
     "languages": "Common, Giant, Sylvan",
     "name": "Snow Hag",
     "senses": "darkvision 60 ft., passive Perception 12",
@@ -48,9 +48,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "survival": 4,
     "type": "fey",
-    "wisdom": "14"
+    "wisdom": 14
 }

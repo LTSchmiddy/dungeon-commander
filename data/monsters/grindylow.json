@@ -23,17 +23,17 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
     "athletics": 3,
-    "challenge_rating": "1",
-    "charisma": "9",
-    "constitution": "12",
-    "dexterity": "14",
+    "challenge_rating": 1.0,
+    "charisma": 9,
+    "constitution": 12,
+    "dexterity": 14,
     "hit_dice": "5d8+5",
-    "hit_points": "27",
+    "hit_points": 27,
     "id": "grindylow",
-    "intelligence": "8",
+    "intelligence": 8,
     "languages": "Aquan",
     "name": "Grindylow",
     "senses": "darkvision 60 ft., passive Perception 12",
@@ -58,8 +58,8 @@
         "walk": 10
     },
     "stealth": 4,
-    "strength": "13",
+    "strength": 13,
     "subtype": "",
     "type": "aberration",
-    "wisdom": "14"
+    "wisdom": 14
 }

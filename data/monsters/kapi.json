@@ -23,16 +23,16 @@
         }
     ],
     "alignment": "chaotic good",
-    "armor_class": "14",
-    "challenge_rating": "1/2",
-    "charisma": "9",
-    "constitution": "10",
-    "dexterity": "18",
+    "armor_class": 14,
+    "challenge_rating": 0.5,
+    "charisma": 9,
+    "constitution": 10,
+    "dexterity": 18,
     "hand": 6,
     "hit_dice": "3d8",
-    "hit_points": "13",
+    "hit_points": 13,
     "id": "kapi",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Common, Simian",
     "name": "Kapi",
     "senses": "darkvision 60 ft., passive Perception 11",
@@ -53,8 +53,8 @@
         "walk": 30
     },
     "stealth": 6,
-    "strength": "14",
+    "strength": 14,
     "subtype": "simian",
     "type": "humanoid",
-    "wisdom": "13"
+    "wisdom": 13
 }

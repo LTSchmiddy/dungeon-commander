@@ -18,10 +18,10 @@
         }
     ],
     "alignment": "neutral",
-    "animal Handling": 6,
+    "animal_handling": 6,
     "armor_class": 14,
     "armor_desc": "hide armor",
-    "challenge_rating": "3",
+    "challenge_rating": 3.0,
     "charisma": 17,
     "charisma_save": 7,
     "constitution": 17,

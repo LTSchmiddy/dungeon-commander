@@ -22,19 +22,19 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "9",
-    "challenge_rating": "10",
-    "charisma": "8",
+    "armor_class": 9,
+    "challenge_rating": 10.0,
+    "charisma": 8,
     "condition_immunities": "charmed, frightened, poisoned",
-    "constitution": "19",
+    "constitution": 19,
     "constitution_save": 8,
     "damage_immunities": "poison",
     "damage_resistances": "necrotic",
-    "dexterity": "8",
+    "dexterity": 8,
     "hit_dice": "20d12+80",
-    "hit_points": "210",
+    "hit_points": 210,
     "id": "grave_behemoth",
-    "intelligence": "13",
+    "intelligence": 13,
     "languages": "-",
     "name": "Grave Behemoth",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -61,9 +61,9 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "22",
+    "strength": 22,
     "subtype": "",
     "type": "undead",
-    "wisdom": "10",
+    "wisdom": 10,
     "wisdom_save": 4
 }

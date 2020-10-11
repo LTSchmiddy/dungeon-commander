@@ -1,27 +1,36 @@
-<table id="db-table-view" class="db-table-view">
-    <tr class="table-header">
-        {% for name, column in table.columns.items() %}
-                {% if not column.name.startswith("_") %}
-                    <th>
-                        {{ textwrap.shorten(str(name).replace("_", " ").title(), 20) }}
-                    </th>
-                {% endif %}
+<div class="generic-table-scroller">
+    <table id="db-table-view" class="db-table-view">
+        <tr class="table-header">
+            {% for name, column in table.columns.items() %}
+                    {%
+                        if not column.name.startswith("_")
+                        and not type(column.type) == sqltypes.JSON
+                    %}
+                        <th>
+                            {{ textwrap.shorten(str(name).replace("_", " ").title(), 20) }}
+                        </th>
+                    {% endif %}
 
 
-        {% endfor %}
-    </tr>
-
-    {% for i in result %}
-        <tr>
-            {% for j in range(0, len(table.columns)) if not table.columns.items()[j][1].name.startswith("_") %}
-                {% set column = table.columns.items()[j][1] %}
-                {% set data = i[j] %}
-                    <td>
-                        {{ textwrap.shorten(str(data), 40) }}
-                    </td>
             {% endfor %}
         </tr>
-    {% endfor %}
 
-</table>
+        {% for i in result %}
+            <tr>
+                {%
+                    for j in range(0, len(table.columns)) if
+                    not table.columns.items()[j][1].name.startswith("_")
+                    and not type(table.columns.items()[j][1].type) == sqltypes.JSON
+                %}
+                    {% set column = table.columns.items()[j][1] %}
+                    {% set data = i[j] %}
+                        <td>
+                            {{ textwrap.shorten(str(data), 40) }}
+                        </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
 
+    </table>
+
+</div>

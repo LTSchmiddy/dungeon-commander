@@ -18,17 +18,17 @@
         }
     ],
     "alignment": "lawful neutral",
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/2",
-    "charisma": "16",
-    "constitution": "10",
+    "challenge_rating": 0.5,
+    "charisma": 16,
+    "constitution": 10,
     "damage_resistances": "acid, cold, fire",
-    "dexterity": "10",
+    "dexterity": 10,
     "hit_dice": "11d8",
-    "hit_points": "49",
+    "hit_points": 49,
     "id": "sooze",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "all, telepathy 100 ft.",
     "name": "Sooze",
     "perception": 4,
@@ -49,8 +49,8 @@
         "climb": 10,
         "walk": 30
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "shoth",
     "type": "aberration",
-    "wisdom": "14"
+    "wisdom": 14
 }

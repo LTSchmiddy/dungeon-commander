@@ -20,7 +20,7 @@
     "alignment": "neutral evil",
     "armor_class": 15,
     "armor_desc": "",
-    "challenge_rating": "9",
+    "challenge_rating": 9.0,
     "charisma": 8,
     "charisma_save": 3,
     "condition_immunities": "poisoned",

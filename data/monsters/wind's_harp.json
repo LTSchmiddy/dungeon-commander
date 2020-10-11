@@ -16,19 +16,19 @@
         }
     ],
     "alignment": "lawful evil",
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
-    "charisma": "19",
+    "challenge_rating": 4.0,
+    "charisma": 19,
     "charisma_save": 6,
     "condition_immunities": "poisoned",
-    "constitution": "10",
+    "constitution": 10,
     "damage_immunities": "cold, fire, poison",
-    "dexterity": "13",
+    "dexterity": 13,
     "hit_dice": "14d8",
-    "hit_points": "63",
+    "hit_points": 63,
     "id": "wind's_harp",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Infernal",
     "name": "Wind's Harp",
     "reactions": [
@@ -59,9 +59,9 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "10",
+    "strength": 10,
     "subtype": "devil",
     "type": "fiend",
-    "wisdom": "10",
+    "wisdom": 10,
     "wisdom_save": 2
 }

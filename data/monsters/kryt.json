@@ -18,18 +18,18 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "5",
-    "charisma": "6",
+    "challenge_rating": 5.0,
+    "charisma": 6,
     "condition_immunities": "exhaustion",
-    "constitution": "16",
-    "dexterity": "10",
+    "constitution": 16,
+    "dexterity": 10,
     "hit_dice": "16d8+48",
-    "hit_points": "120",
+    "hit_points": 120,
     "id": "kryt",
     "insight": 7,
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "Common",
     "name": "Kryt",
     "perception": 7,
@@ -55,8 +55,8 @@
     "speed_json": {
         "walk": 25
     },
-    "strength": "20",
+    "strength": 20,
     "subtype": "kryt",
     "type": "humanoid",
-    "wisdom": "18"
+    "wisdom": 18
 }

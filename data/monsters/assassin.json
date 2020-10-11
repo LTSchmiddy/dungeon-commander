@@ -24,7 +24,7 @@
     "alignment": "any non-good alignment",
     "armor_class": 15,
     "armor_desc": "studded leather",
-    "challenge_rating": "8",
+    "challenge_rating": 8.0,
     "charisma": 10,
     "condition_immunities": "",
     "constitution": 14,

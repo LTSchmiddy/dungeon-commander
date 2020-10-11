@@ -16,16 +16,16 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "13",
-    "challenge_rating": "1/2",
-    "charisma": "6",
-    "constitution": "16",
-    "dexterity": "17",
+    "armor_class": 13,
+    "challenge_rating": 0.5,
+    "charisma": 6,
+    "constitution": 16,
+    "dexterity": 17,
     "hand": 5,
     "hit_dice": "4d8+12",
-    "hit_points": "30",
+    "hit_points": 30,
     "id": "corpse_thief",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Common",
     "name": "Corpse Thief",
     "senses": "darkvision 60 ft., passive Perception 11",
@@ -41,8 +41,8 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "12",
+    "strength": 12,
     "subtype": "",
     "type": "humanoid",
-    "wisdom": "13"
+    "wisdom": 13
 }

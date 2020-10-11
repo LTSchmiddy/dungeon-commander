@@ -12,17 +12,17 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/2",
-    "charisma": "16",
+    "challenge_rating": 0.5,
+    "charisma": 16,
     "condition_immunities": "charmed",
-    "constitution": "14",
-    "dexterity": "16",
+    "constitution": 14,
+    "dexterity": 16,
     "hit_dice": "3d6+6",
-    "hit_points": "16",
+    "hit_points": 16,
     "id": "foxin",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "understands Common and Sylvan but can't speak",
     "name": "Foxin",
     "perception": 4,
@@ -42,8 +42,8 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "fey",
-    "wisdom": "14"
+    "wisdom": 14
 }

@@ -10,7 +10,7 @@
     "alignment": "neutral",
     "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "0",
+    "challenge_rating": 0.0,
     "charisma": 7,
     "condition_immunities": "charmed, poisoned",
     "constitution": 11,

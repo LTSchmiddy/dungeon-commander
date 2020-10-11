@@ -8,15 +8,15 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "13",
-    "challenge_rating": "2",
-    "charisma": "6",
-    "constitution": "14",
-    "dexterity": "16",
+    "armor_class": 13,
+    "challenge_rating": 2.0,
+    "charisma": 6,
+    "constitution": 14,
+    "dexterity": 16,
     "hit_dice": "8d10+16",
-    "hit_points": "60",
+    "hit_points": 60,
     "id": "giant_vampire_bat",
-    "intelligence": "2",
+    "intelligence": 2,
     "languages": "-",
     "name": "Giant Vampire Bat",
     "senses": "blindsight 60 ft., passive Perception 11",
@@ -36,8 +36,8 @@
         "fly": 60,
         "walk": 10
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "beast",
-    "wisdom": "12"
+    "wisdom": 12
 }

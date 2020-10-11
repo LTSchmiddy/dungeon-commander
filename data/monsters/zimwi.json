@@ -21,7 +21,7 @@
     "alignment": "chaotic evil",
     "armor_class": 17,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 7,
     "constitution": 19,
     "dexterity": 18,

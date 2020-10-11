@@ -1,17 +1,17 @@
 import sys
 import multiprocessing
-import settings.paths
 
 ordinal = lambda n: "%d%s" % (n, "tsnrhtdd"[(n // 10 % 10 != 1) * (n % 10 < 4) * n % 10::4])
 
 if __name__ == "__main__":
+    import std_handler
+    std_handler.init()
+
     if sys.platform.startswith("win"):
         # On Windows calling this function is necessary.
         multiprocessing.freeze_support()
 
-    import std_handler
-    std_handler.init()
-
+    import settings.paths
     settings.load_settings()
 
     # import generate_py_api
@@ -28,13 +28,12 @@ if __name__ == "__main__":
         db.load_db.load_all()
 
 
-
     interface_flask.init()
-    viewport.create_main_window(False)
     interface_flask.start_server()
 
     # launches the main GUI loop:
     viewport.start_viewport()
+
 
     # Shuts down the application:
     print("CLOSED")

@@ -8,17 +8,17 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/4",
-    "charisma": "3",
-    "constitution": "11",
+    "challenge_rating": 0.25,
+    "charisma": 3,
+    "constitution": 11,
     "damage_immunities": "fire",
-    "dexterity": "13",
+    "dexterity": 13,
     "hit_dice": "1d4",
-    "hit_points": "2",
+    "hit_points": 2,
     "id": "exploding_toad",
-    "intelligence": "4",
+    "intelligence": 4,
     "languages": "understands Goblin but can't speak",
     "name": "Exploding Toad",
     "reactions": [
@@ -57,8 +57,8 @@
         "walk": 20
     },
     "stealth": 5,
-    "strength": "1",
+    "strength": 1,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "8"
+    "wisdom": 8
 }

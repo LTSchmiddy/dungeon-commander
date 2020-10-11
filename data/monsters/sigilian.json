@@ -20,19 +20,19 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "14",
-    "challenge_rating": "2",
-    "charisma": "20",
+    "armor_class": 14,
+    "challenge_rating": 2.0,
+    "charisma": 20,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, poisoned, unconscious",
-    "constitution": "14",
+    "constitution": 14,
     "damage_immunities": "poison",
     "damage_resistances": "bludgeoning, piercing and slashing from nonmagical attacks",
     "damage_vulnerabilities": "psychic",
-    "dexterity": "18",
+    "dexterity": 18,
     "hit_dice": "10d8+20",
-    "hit_points": "65",
+    "hit_points": 65,
     "id": "sigilian",
-    "intelligence": "5",
+    "intelligence": 5,
     "languages": "understands Common but can't speak",
     "name": "Sigilian",
     "perception": 2,
@@ -58,8 +58,8 @@
         "walk": 0
     },
     "stealth": 6,
-    "strength": "6",
+    "strength": 6,
     "subtype": "",
     "type": "construct",
-    "wisdom": "10"
+    "wisdom": 10
 }

@@ -33,6 +33,8 @@ class JsApi:
 
         return setattr(cls, name, types.MethodType(func, cls))
 
+
+
     @classmethod
     def add_module_method(cls, module_header: str, method: callable):
         if hasattr(method, "__name__"):
@@ -78,9 +80,3 @@ from viewport.js_api import method_loading
 method_loading.create_api_modules(JsApi)
 
 main_api = JsApi()
-
-
-
-def process_js_bindings():
-    pass
-

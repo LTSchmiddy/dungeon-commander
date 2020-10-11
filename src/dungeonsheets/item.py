@@ -31,6 +31,7 @@ class Item(json_class.JsonClass):
 
     @classmethod
     def get_from_db(cls, item_id: str):
+        # import db
         # print(cls.related_db())
         result: db.Base = db.Session.query(cls.related_db()).filter(
             cls.related_db().id == item_id).first()

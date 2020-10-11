@@ -22,16 +22,16 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "hide armor",
-    "challenge_rating": "2",
-    "charisma": "10",
-    "constitution": "10",
-    "dexterity": "13",
+    "challenge_rating": 2.0,
+    "charisma": 10,
+    "constitution": 10,
+    "dexterity": 13,
     "hit_dice": "17d6",
-    "hit_points": "59",
+    "hit_points": 59,
     "id": "kallikantzaros",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "Sylvan, Undercommon",
     "name": "Kallikantzaros",
     "senses": "darkvision 60 ft., passive Perception 9",
@@ -55,8 +55,8 @@
         "walk": 30
     },
     "stealth": 3,
-    "strength": "15",
+    "strength": 15,
     "subtype": "",
     "type": "fey",
-    "wisdom": "8"
+    "wisdom": 8
 }

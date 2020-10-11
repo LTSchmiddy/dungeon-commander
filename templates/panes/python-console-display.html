@@ -11,8 +11,9 @@
     let py_console_auto_scroll_elem = $('#python-console-auto-scroll-control');
     let py_console_elem = $('#python-console-display-area');
     let py_console_elem_dom = py_console_elem.get(0);
-    let py_console_run = false;
+    let py_console_stdout_text = "";
     let _py_console_needs_to_update = false;
+    let _py_console_first_render = true;
 
 
     function py_console_scroll_to_bottom() {
@@ -22,27 +23,37 @@
         return py_console_auto_scroll_elem.prop('checked');
     }
 
-    async function update_stdout() {
-        if (window.std_handler__main_stdout_updated) {
-            _py_console_needs_to_update = true;
-        }
+    function py_console_write_stdout(write_text) {
+        py_console_stdout_text += write_text;
+        _py_console_needs_to_update = true;
 
-        if (py_console_run) {
-            let out_text = window.std_handler__main_stdout_as_html;
-            py_console_elem.html(out_text);
-
-            if (_py_console_needs_to_update && py_console_auto_scroll_elem.prop('checked')) {
-                py_console_scroll_to_bottom();
-                _py_console_needs_to_update = false;
-            }
+        if (app_current_view === "python-console-view") {
+            py_console_update_render();
         }
-        setTimeout(update_stdout, 250);
     }
 
+    function py_console_update_render() {
+        if (_py_console_first_render === true){
+            py_console_stdout_text = "";
+            cef_console_init();
+            py_console_scroll_to_bottom();
+            _py_console_first_render = false;
+        }
 
-    window.addEventListener('pywebviewready', function() {
-        update_stdout();
-    });
+        py_console_elem.html(py_console_stdout_text);
+
+        if (_py_console_needs_to_update && py_console_auto_scroll_elem.prop('checked')) {
+            py_console_scroll_to_bottom();
+            _py_console_needs_to_update = false;
+        }
+    }
+
+    exposed_functions.push(py_console_write_stdout);
+
+
+
+
+
 
 
 

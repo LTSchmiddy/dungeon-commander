@@ -12,19 +12,19 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/2",
-    "charisma": "10",
+    "challenge_rating": 0.5,
+    "charisma": 10,
     "condition_immunities": "poisoned",
-    "constitution": "10",
+    "constitution": 10,
     "damage_immunities": "fire",
     "damage_resistances": "piercing, poison",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "9d8",
-    "hit_points": "40",
+    "hit_points": 40,
     "id": "execrable_shrub",
-    "intelligence": "7",
+    "intelligence": 7,
     "languages": "-",
     "name": "Execrable Shrub",
     "perception": 4,
@@ -49,8 +49,8 @@
         "burrow": 10,
         "walk": 10
     },
-    "strength": "12",
+    "strength": 12,
     "subtype": "",
     "type": "fiend",
-    "wisdom": "14"
+    "wisdom": 14
 }

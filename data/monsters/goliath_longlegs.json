@@ -26,18 +26,18 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "7",
-    "charisma": "3",
+    "challenge_rating": 7.0,
+    "charisma": 3,
     "condition_immunities": "charmed, frightened, poisoned",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "poison",
-    "dexterity": "15",
+    "dexterity": 15,
     "hit_dice": "12d20+36",
-    "hit_points": "162",
+    "hit_points": 162,
     "id": "goliath_longlegs",
-    "intelligence": "4",
+    "intelligence": 4,
     "languages": "-",
     "name": "Goliath Longlegs",
     "perception": 4,
@@ -66,8 +66,8 @@
         "walk": 20
     },
     "stealth": 5,
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "13"
+    "wisdom": 13
 }

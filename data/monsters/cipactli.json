@@ -18,20 +18,20 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "5",
-    "charisma": "10",
+    "challenge_rating": 5.0,
+    "charisma": 10,
     "condition_immunities": "poisoned",
-    "constitution": "14",
+    "constitution": 14,
     "damage_immunities": "cold, poison",
     "damage_resistances": "lightning",
     "damage_vulnerabilities": "fire",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "12d8+24",
-    "hit_points": "78",
+    "hit_points": 78,
     "id": "cipactli",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Primordial",
     "name": "Cipactli",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -56,8 +56,8 @@
         "walk": 20
     },
     "stealth": 5,
-    "strength": "16",
+    "strength": 16,
     "subtype": "demon",
     "type": "fiend",
-    "wisdom": "10"
+    "wisdom": 10
 }

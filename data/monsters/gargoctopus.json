@@ -30,17 +30,17 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "5",
-    "charisma": "14",
-    "constitution": "12",
-    "dexterity": "13",
+    "challenge_rating": 5.0,
+    "charisma": 14,
+    "constitution": 12,
+    "dexterity": 13,
     "history": 7,
     "hit_dice": "16d10+16",
-    "hit_points": "104",
+    "hit_points": 104,
     "id": "gargoctopus",
-    "intelligence": "19",
+    "intelligence": 19,
     "investigation": 7,
     "languages": "telepathy 100 ft.",
     "name": "Gargoctopus",
@@ -68,8 +68,8 @@
         "walk": 40
     },
     "stealth": 7,
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "16"
+    "wisdom": 16
 }

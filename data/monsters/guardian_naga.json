@@ -17,7 +17,7 @@
     "alignment": "lawful good",
     "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "10",
+    "challenge_rating": 10.0,
     "charisma": 18,
     "charisma_save": 8,
     "condition_immunities": "charmed, poisoned",

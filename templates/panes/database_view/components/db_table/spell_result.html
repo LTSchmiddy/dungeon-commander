@@ -1,5 +1,43 @@
+<div class="spell-result fancy-table-header spell-head">
+    <span class="spell-head-section"></span>
+        <span class="spell-head-section">
+{#            {{ spell.name }}#}
+            Name
+        </span>
+        <span class="spell-head-section">
+{#            {{ af.tget(spell.level == 0, "Cantrip", "Level " + str(spell.level)) }}#}
+            Level
+        </span>
+        <span class="spell-head-section spell-is-ritual">
+{#            {{ af.tget(spell.ritual, "R", "") }}#}
+        </span>
+        <span class="spell-head-section spell-is-concentration">
+{#            {{ af.tget(spell.get_concentration(), "C", "") }}#}
+        </span>
+        <span class="spell-head-section">
+            Casting Time
+        </span>
+        <span class="spell-head-section">
+            Range
+        </span>
 
-<div class="spell-result">
+        <span class="spell-head-section">
+            Duration
+        </span>
+        <span class="spell-head-section">
+{#            {{ spell.get_short_component_string() }}#}
+        </span>
+
+        <span class="spell-head-section">
+            Magic School
+        </span>
+
+        <span class="spell-head-section">
+            Classes
+        </span>
+
+</div>
+<div class="spell-result fancy-table-scroller">
 
 {% for i in result %}
 {#    {% set spell = db.tables.DB_Spell.get_spell_by_id(i[0]).spell_object %}#}

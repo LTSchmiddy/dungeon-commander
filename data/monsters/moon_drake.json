@@ -27,19 +27,19 @@
     ],
     "alignment": "neutral",
     "arcana": 4,
-    "armor_class": "15",
-    "challenge_rating": "5",
-    "charisma": "14",
+    "armor_class": 15,
+    "challenge_rating": 5.0,
+    "charisma": 14,
     "condition_immunities": "paralyzed, unconscious",
-    "constitution": "19",
+    "constitution": 19,
     "damage_resistances": "varies (see Moonbound)",
     "damage_vulnerabilities": "varies (see Moonbound)",
-    "dexterity": "20",
+    "dexterity": 20,
     "hit_dice": "9d8+36",
-    "hit_points": "76",
+    "hit_points": 76,
     "id": "moon_drake",
     "insight": 7,
-    "intelligence": "13",
+    "intelligence": 13,
     "languages": "Celestial, Common, Draconic",
     "name": "Moon Drake",
     "reactions": [
@@ -65,8 +65,8 @@
         "fly": 100,
         "walk": 25
     },
-    "strength": "10",
+    "strength": 10,
     "subtype": "",
     "type": "dragon",
-    "wisdom": "18"
+    "wisdom": 18
 }

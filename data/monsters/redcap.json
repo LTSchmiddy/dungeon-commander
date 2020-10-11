@@ -22,7 +22,7 @@
     "armor_class": 15,
     "armor_desc": "natural armor",
     "athletics": 8,
-    "challenge_rating": "6",
+    "challenge_rating": 6.0,
     "charisma": 8,
     "condition_immunities": "charmed, frightened",
     "constitution": 17,

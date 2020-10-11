@@ -29,7 +29,7 @@
     "alignment": "chaotic good",
     "armor_class": 17,
     "armor_desc": "natural armor",
-    "challenge_rating": "6",
+    "challenge_rating": 6.0,
     "charisma": 15,
     "charisma_save": 5,
     "condition_immunities": "",

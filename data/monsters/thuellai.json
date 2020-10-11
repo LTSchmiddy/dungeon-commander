@@ -35,7 +35,7 @@
     "alignment": "chaotic neutral",
     "armor_class": 17,
     "armor_desc": "",
-    "challenge_rating": "10",
+    "challenge_rating": 10.0,
     "charisma": 14,
     "charisma_save": 6,
     "condition_immunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",

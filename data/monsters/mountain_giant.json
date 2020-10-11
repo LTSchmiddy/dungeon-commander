@@ -22,21 +22,21 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "20",
+    "armor_class": 20,
     "armor_desc": "natural armor",
     "athletics": 15,
-    "challenge_rating": "21",
-    "charisma": "10",
+    "challenge_rating": 21.0,
+    "charisma": 10,
     "charisma_save": 7,
     "condition_immunities": "charmed, frightened, paralyzed, petrified, stunned",
-    "constitution": "22",
+    "constitution": 22,
     "constitution_save": 13,
     "damage_immunities": "cold, fire, lightning, thunder; bludgeoning",
-    "dexterity": "10",
+    "dexterity": 10,
     "hit_dice": "19d20+114",
-    "hit_points": "313",
+    "hit_points": 313,
     "id": "mountain_giant",
-    "intelligence": "14",
+    "intelligence": 14,
     "intelligence_save": 9,
     "languages": "Common, Giant, Terran",
     "legendary_actions": [
@@ -80,9 +80,9 @@
     "speed_json": {
         "walk": 50
     },
-    "strength": "26",
+    "strength": 26,
     "subtype": "",
     "type": "giant",
-    "wisdom": "20",
+    "wisdom": 20,
     "wisdom_save": 12
 }

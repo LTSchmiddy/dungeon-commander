@@ -8,19 +8,19 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "12",
-    "challenge_rating": "1/4",
-    "charisma": "12",
+    "armor_class": 12,
+    "challenge_rating": 0.25,
+    "charisma": 12,
     "condition_immunities": "exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
-    "constitution": "10",
+    "constitution": 10,
     "damage_immunities": "necrotic, poison",
     "damage_resistances": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_vulnerabilities": "radiant",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "4d8",
-    "hit_points": "18",
+    "hit_points": 18,
     "id": "living_shade",
-    "intelligence": "9",
+    "intelligence": 9,
     "languages": "understands Common but can't speak",
     "name": "Living Shade",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -44,8 +44,8 @@
         "walk": 40
     },
     "stealth": 6,
-    "strength": "6",
+    "strength": 6,
     "subtype": "",
     "type": "fey",
-    "wisdom": "10"
+    "wisdom": 10
 }

@@ -15,7 +15,7 @@
     "alignment": "unaligned",
     "armor_class": 16,
     "armor_desc": "",
-    "challenge_rating": "6",
+    "challenge_rating": 6.0,
     "charisma": 1,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
     "constitution": 11,

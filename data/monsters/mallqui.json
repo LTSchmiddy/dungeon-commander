@@ -26,7 +26,7 @@
     "alignment": "lawful neutral",
     "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "8",
+    "challenge_rating": 8.0,
     "charisma": 14,
     "charisma_save": 5,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned",

@@ -14,7 +14,7 @@
     "alignment": "unaligned",
     "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 10,
     "constitution": 17,
     "deception": 4,

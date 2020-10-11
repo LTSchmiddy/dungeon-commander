@@ -26,7 +26,7 @@
     "alignment": "chaotic evil",
     "armor_class": 18,
     "armor_desc": "breastplate and shield",
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 14,
     "charisma_save": 5,
     "constitution": 18,

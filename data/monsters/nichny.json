@@ -16,7 +16,7 @@
     "alignment": "neutral evil",
     "armor_class": 17,
     "armor_desc": "natural armor",
-    "challenge_rating": "6",
+    "challenge_rating": 6.0,
     "charisma": 19,
     "condition_immunities": "charmed, frightened, paralyzed, poisoned, unconscious",
     "constitution": 17,

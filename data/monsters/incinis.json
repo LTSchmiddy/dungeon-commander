@@ -16,19 +16,19 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "17",
+    "armor_class": 17,
     "armor_desc": "natural armor",
-    "challenge_rating": "10",
-    "charisma": "10",
+    "challenge_rating": 10.0,
+    "charisma": 10,
     "condition_immunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-    "constitution": "18",
+    "constitution": 18,
     "damage_immunities": "fire, poison",
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
-    "dexterity": "20",
+    "dexterity": 20,
     "hit_dice": "18d10+72",
-    "hit_points": "171",
+    "hit_points": 171,
     "id": "incinis",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Ignan",
     "name": "Incinis",
     "senses": "darkvision 60 ft., passive Perception 13",
@@ -43,8 +43,8 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "12",
+    "strength": 12,
     "subtype": "",
     "type": "elemental",
-    "wisdom": "16"
+    "wisdom": 16
 }

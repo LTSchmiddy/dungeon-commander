@@ -1,12 +1,60 @@
 "use strict";
 
+/** @type {PyNamespace} */
+let char_ns = null;
+
+window.addEventListener('pywebviewready', (e)=>{
+    char_ns = new PyNamespace('char_editor', async (obj)=>{
+        if (obj.created_new) {
+            await obj.run(`               
+                editors_count = {}
+                
+                def count_total(path):
+                    global editors_count
+                    
+                    #for uid in editors_count.keys():
+                    #    if uid not in viewport.windows.keys():
+                    #    del editors_count[uid]
+                    
+                    retVal = 0
+                    for key, value in editors_count.items():
+                        retVal += len(list(filter(lambda x: x == path, value)))
+                    return retVal
+                    
+                def add_window(uid):
+                    global editors_count
+                    editors_count[uid] = []
+                
+                def add_path(uid, path):
+                    global editors_count
+                    editors_count[uid].append(path)
+                
+                def remove_path(uid, path):
+                    global editors_count
+                    editors_count[uid].remove(path)
+                    
+                def remove_window(uid):
+                    global editors_count
+                    del editors_count[uid]
+            `);
+        }
+
+        await obj.call(`add_window`, [], {uid: window.uid});
+    });
+
+    // $(window).bind('beforeunload', ()=>{
+    $(window).bind('unload', async ()=>{
+        char_ns.cef_call(`remove_window`, [], {uid: window.uid});
+    });
+});
+
+
+
 class CharacterEditorData extends EditorDataBase{
+
     constructor(elem, name, path, container_selector = ".editor-content", editor_options = {}) {
         super(elem, name, path, container_selector, editor_options);
-        // this.elem = elem;
-        // this.name = name;
-        // this.path = path;
-        // this.container_selector = container_selector;
+        this.ref_id = path.replace("?char", "");
         this.editor_type = 'character';
         this.json_editor = null;
         this.original_json = ""
@@ -20,8 +68,8 @@ class CharacterEditorData extends EditorDataBase{
 
         // DOM Objects:
         // this.editor_tab = this.get_editor_tab();
-        this.editor_view = this.get_editor_view();
-        this.editor_container = this.get_editor_container();
+        // this.editor_view = this.get_editor_view();
+        // this.editor_container = this.get_editor_container();
         this.display_view = this.get_display_view();
         this.json_view = this.get_json_view();
         this.ace_view = this.get_ace_view();
@@ -70,6 +118,8 @@ class CharacterEditorData extends EditorDataBase{
         this.get_json_view().hide();
         this.set_original_json();
 
+        await char_ns.call(`add_path`, [], {uid: window.uid, path: this.path});
+
         // this.update_edited_from_file();
 
         this.edit_loop = async(me, editor, delay= 2000)=>{
@@ -117,7 +167,7 @@ class CharacterEditorData extends EditorDataBase{
 
     // Other:
     async load_display_view() {
-        await this.get_display_view().load(`/panes/campaign_view/get_character/${this.path}`);
+        await this.get_display_view().load(`/panes/campaign_view/get_character/${this.ref_id}`);
         this.get_display_view().trigger('load');
     }
 
@@ -131,7 +181,7 @@ class CharacterEditorData extends EditorDataBase{
     }
 
     async load_char_json() {
-        let file_json = await py.campaign.character.get_character_json(this.path);
+        let file_json = await py.campaign.character.get_character_json(this.ref_id);
         if (JSON.stringify(file_json) !== JSON.stringify(this.json_editor.get())) {
             this.json_editor.set(file_json);
         }
@@ -139,11 +189,11 @@ class CharacterEditorData extends EditorDataBase{
     }
 
     async load_ace_char_text() {
-        this.ace_editor.setValue(await py.campaign.character.get_character_text(this.path), 1);
+        this.ace_editor.setValue(await py.campaign.character.get_character_text(this.ref_id), 1);
     }
 
     async apply_ace_char_text(verbose = true) {
-        let result = await py.campaign.character.apply_character_text(this.path, this.ace_editor.getValue(), verbose);
+        let result = await py.campaign.character.apply_character_text(this.ref_id, this.ace_editor.getValue(), verbose);
         if (result === null) {
             this.ace_status_container.html(`No errors.`);
             this.ace_status_container.addClass('valid');
@@ -157,8 +207,8 @@ class CharacterEditorData extends EditorDataBase{
         }
     }
 
-    async apply_char_json() {
-        let result = await py.campaign.character.apply_character_json(this.path, this.json_editor.get());
+    async apply_char_json(verbose = true) {
+        let result = await py.campaign.character.apply_character_json(this.ref_id, this.json_editor.get(), verbose);
         // if (result === null) {
         //     this.ace_status_container.html(`No errors.`);
         //     this.ace_status_container.addClass('valid');
@@ -250,7 +300,7 @@ class CharacterEditorData extends EditorDataBase{
 
     async save_file() {
         console.log("saving");
-        await py.campaign.character.save_character(this.path);
+        await py.campaign.character.save_character(this.ref_id);
         this.update_edited_display(false);
         // await this.on_general_change();
         await super.save_file();
@@ -258,14 +308,14 @@ class CharacterEditorData extends EditorDataBase{
 
     async revert_file() {
         await super.revert_file();
-        await py.campaign.character.reload_character(this.path);
+        await py.campaign.character.reload_character(this.ref_id);
         this.update_edited_display(false);
         this.refresh();
     }
 
     async update_edited_from_file() {
-        if (await py.campaign.character.char_id_exists(this.path)){
-            this.update_edited_display(await py.campaign.character.is_character_edited(this.path))
+        if (await py.campaign.character.char_id_exists(this.ref_id)){
+            this.update_edited_display(await py.campaign.character.is_character_edited(this.ref_id))
         }
     }
 
@@ -281,7 +331,7 @@ class CharacterEditorData extends EditorDataBase{
         let editor_tab_dom = editor_tab.get()[0];
         editor_tab_dom.children[1].children[1].innerText = this.is_changed ? " *" : "";
 
-        py.campaign.character.get_char_attr(this.path, 'name').then((name)=>{
+        py.campaign.character.get_char_attr(this.ref_id, 'name').then((name)=>{
             editor_tab_dom.children[1].children[0].innerText = name;
         });
     }
@@ -298,7 +348,7 @@ class CharacterEditorData extends EditorDataBase{
     }
     async on_json_editor_change (current_json) {
         if ((await py.settings.get_current_settings())['game']['editors']['character']['auto_update_json_default']){
-            await this.apply_char_json();
+            await this.apply_char_json(false);
         }
         await this.on_general_change();
     }
@@ -315,9 +365,12 @@ class CharacterEditorData extends EditorDataBase{
     async on_close() {
         this.edit_loop = null;
         super.on_close();
-        if (await py.exec(`return not game.current.is_dm`)) {
-            await py.campaign.character.unload_character(this.path);
-        }
+        // if (await py.exec(`return not game.current.is_dm`)) {
+        //     await py.campaign.character.unload_character(this.ref_id);
+        // }
+
+        await char_ns.call(`remove_path`, [], {uid: window.uid, path: this.path});
+
         campaign_view_update_loaded_characters();
     }
 
@@ -326,23 +379,24 @@ class CharacterEditorData extends EditorDataBase{
 
 
 
-async function _extracted_file_load_character_editor(name, path) {
-    if (!mod_editor_opened_tabs.hasOwnProperty(path)) {
-        console.log(`'${path}' not opened...`);
-        return null;
-    }
-
-    $.post("/panes/campaign_view/editors/character_editor", {name: name, id: path}, async (data, status) => {
-        await extracted_file_show_editor("");
-        let container = generate_element(data);
-        extracted_file_editor_area.get()[0].appendChild(container);
-
-        let editor_data = mod_editor_opened_tabs[path];
-        editor_data.data_obj = new CharacterEditorData(container, name, path);
-
-        extracted_file_show_editor(path);
-
-    });
-
-
-}
+// async function _extracted_file_load_character_editor(name, path) {
+//     if (!mod_editor_opened_tabs.hasOwnProperty(path)) {
+//         console.log(`'${path}' not opened...`);
+//         return null;
+//     }
+//
+//
+//     $.post("/panes/campaign_view/editors/character_editor", {name: name, id: path}, async (data, status) => {
+//         await extracted_file_show_editor("");
+//         let container = elem_from_src(data);
+//         extracted_file_editor_area.get()[0].appendChild(container);
+//
+//         let editor_data = mod_editor_opened_tabs[path];
+//         editor_data.data_obj = new CharacterEditorData(container, name, path);
+//
+//         extracted_file_show_editor(path);
+//
+//     });
+//
+//
+// }

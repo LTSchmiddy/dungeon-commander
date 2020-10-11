@@ -8,15 +8,15 @@
         }
     ],
     "alignment": "lawful evil",
-    "armor_class": "11",
-    "challenge_rating": "1/2",
-    "charisma": "10",
-    "constitution": "11",
-    "dexterity": "12",
+    "armor_class": 11,
+    "challenge_rating": 0.5,
+    "charisma": 10,
+    "constitution": 11,
+    "dexterity": 12,
     "hit_dice": "6d6",
-    "hit_points": "21",
+    "hit_points": 21,
     "id": "cueyatl",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Cueyatl",
     "name": "Cueyatl",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -46,8 +46,8 @@
         "walk": 30
     },
     "stealth": 3,
-    "strength": "10",
+    "strength": 10,
     "subtype": "",
     "type": "humanoid",
-    "wisdom": "11"
+    "wisdom": 11
 }

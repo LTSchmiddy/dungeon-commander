@@ -13,17 +13,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/2",
-    "charisma": "6",
+    "challenge_rating": 0.5,
+    "charisma": 6,
     "condition_immunities": "poisoned",
-    "constitution": "12",
-    "dexterity": "15",
+    "constitution": 12,
+    "dexterity": 15,
     "hit_dice": "8d6+8",
-    "hit_points": "36",
+    "hit_points": 36,
     "id": "chupacabra",
-    "intelligence": "3",
+    "intelligence": 3,
     "languages": "-",
     "name": "Chupacabra",
     "perception": 3,
@@ -50,8 +50,8 @@
         "walk": 30
     },
     "stealth": 4,
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "12"
+    "wisdom": 12
 }

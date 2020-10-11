@@ -8,18 +8,18 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "8",
-    "challenge_rating": "4",
-    "charisma": "10",
+    "armor_class": 8,
+    "challenge_rating": 4.0,
+    "charisma": 10,
     "condition_immunities": "poisoned",
-    "constitution": "20",
+    "constitution": 20,
     "constitution_save": 7,
     "damage_immunities": "poison",
-    "dexterity": "6",
+    "dexterity": 6,
     "hit_dice": "12d10+60",
-    "hit_points": "126",
+    "hit_points": 126,
     "id": "elophar",
-    "intelligence": "16",
+    "intelligence": 16,
     "languages": "Common, Giant, Infernal",
     "name": "Elophar",
     "senses": "darkvision 60 ft., passive Perception 6",
@@ -42,9 +42,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "19",
+    "strength": 19,
     "subtype": "",
     "type": "undead",
-    "wisdom": "3",
+    "wisdom": 3,
     "wisdom_save": -2
 }

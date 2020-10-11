@@ -16,7 +16,7 @@
     "alignment": "neutral",
     "armor_class": 16,
     "armor_desc": "chain mail) or 18 (chain mail with shield",
-    "challenge_rating": "11",
+    "challenge_rating": 11.0,
     "charisma": 18,
     "charisma_save": 12,
     "condition_immunities": "frightened",

@@ -29,10 +29,10 @@
         }
     ],
     "alignment": "lawful neutral",
-    "animal Handling": 8,
+    "animal_handling": 8,
     "armor_class": 15,
     "armor_desc": "",
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 16,
     "charisma_save": 6,
     "constitution": 13,

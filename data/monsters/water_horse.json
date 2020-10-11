@@ -28,17 +28,17 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "in humanoid form, 14 (natural armor) in horse or hybrid form",
-    "challenge_rating": "4",
-    "charisma": "15",
-    "constitution": "13",
+    "challenge_rating": 4.0,
+    "charisma": 15,
+    "constitution": 13,
     "deception": 4,
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "14d8+14",
-    "hit_points": "77",
+    "hit_points": 77,
     "id": "water_horse",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Sylvan",
     "name": "Water Horse",
     "persuasion": 4,
@@ -58,8 +58,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "shapechanger",
     "type": "fey",
-    "wisdom": "12"
+    "wisdom": 12
 }

@@ -24,20 +24,20 @@
         }
     ],
     "alignment": "lawful evil",
-    "armor_class": "20",
+    "armor_class": 20,
     "armor_desc": "plate, shield",
-    "challenge_rating": "5",
-    "charisma": "15",
-    "constitution": "18",
+    "challenge_rating": 5.0,
+    "charisma": 15,
+    "constitution": 18,
     "constitution_save": 7,
     "damage_immunities": "poisoned",
     "damage_resistances": "poison",
-    "dexterity": "10",
+    "dexterity": 10,
     "handling": 4,
     "hit_dice": "12d8+48",
-    "hit_points": "102",
+    "hit_points": 102,
     "id": "wyvern_knight",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Draconic",
     "name": "Wyvern Knight",
     "perception": 4,
@@ -63,9 +63,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "16",
+    "strength": 16,
     "strength_save": 6,
     "subtype": "any race",
     "type": "humanoid",
-    "wisdom": "12"
+    "wisdom": 12
 }

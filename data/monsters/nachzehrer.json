@@ -18,18 +18,18 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "8",
-    "charisma": "9",
+    "challenge_rating": 8.0,
+    "charisma": 9,
     "condition_immunities": "charmed, exhaustion, frightened, poisoned",
-    "constitution": "18",
+    "constitution": 18,
     "damage_immunities": "necrotic, poison",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "16d8+64",
-    "hit_points": "136",
+    "hit_points": 136,
     "id": "nachzehrer",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "the languages it knew in life",
     "name": "Nachzehrer",
     "senses": "darkvision 60 ft., passive Perception 12",
@@ -50,8 +50,8 @@
         "walk": 30
     },
     "stealth": 7,
-    "strength": "20",
+    "strength": 20,
     "subtype": "",
     "type": "undead",
-    "wisdom": "15"
+    "wisdom": 15
 }

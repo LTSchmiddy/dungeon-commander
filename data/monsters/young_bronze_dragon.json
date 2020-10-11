@@ -29,7 +29,7 @@
     "alignment": "lawful good",
     "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "8",
+    "challenge_rating": 8.0,
     "charisma": 17,
     "charisma_save": 6,
     "condition_immunities": "",

@@ -39,4 +39,4 @@ class JsonClass:
 
     def load_dict(self, p_dict: dict):
         for key, value in p_dict.items():
-            self.__setattr__(key, value)
+            setattr(self, key, value)

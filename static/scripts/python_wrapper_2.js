@@ -1,12 +1,16 @@
 
 console.log("loading Python_Wrapper");
 
-window.std_handler__main_stdout = null;
-window.std_handler__main_stdout_as_html = null;
-window.std_handler__main_stdout_updated = null;
-window.wvOPEN_DIALOG = null;
-window.wvFOLDER_DIALOG = null;
-window.wvSAVE_DIALOG = null;
+window.wvOPEN_DIALOG = null; // global 
+window.wvFOLDER_DIALOG = null; // global 
+window.wvSAVE_DIALOG = null; // global 
+window.expose_js_function = null; // unique 
+window.cef_exec = null; // unique 
+window.cef_ns_exec = null; // unique 
+window.cef_run = null; // unique 
+window.cef_ns_run = null; // unique 
+window.uid = null; // unique 
+window.cef_console_init = null; // unique 
 
 let py = null;
 // let py_exec = null;
@@ -33,11 +37,43 @@ window.addEventListener('pywebviewready', function() {
                 set_char_attr_raw: pywebview.api.campaign.character.set_char_attr_raw,
                 unload_character: pywebview.api.campaign.character.unload_character
             },
-            eval_dice: pywebview.api.campaign.eval_dice
+            creature: {
+                apply_creatures_json: pywebview.api.campaign.creature.apply_creatures_json,
+                creature_id_exists: pywebview.api.campaign.creature.creature_id_exists,
+                get_creature_json: pywebview.api.campaign.creature.get_creature_json,
+                get_loaded_creatures: pywebview.api.campaign.creature.get_loaded_creatures,
+                load_creature: pywebview.api.campaign.creature.load_creature,
+                save_creature: pywebview.api.campaign.creature.save_creature,
+                spawn_creature: pywebview.api.campaign.creature.spawn_creature,
+                unload_creature: pywebview.api.campaign.creature.unload_creature
+            },
+            eval_dice: pywebview.api.campaign.eval_dice,
+            get_abs_campaign_path: pywebview.api.campaign.get_abs_campaign_path,
+            get_campaign_path: pywebview.api.campaign.get_campaign_path
         },
         close_debug: pywebview.api.close_debug,
+        code: {
+            call: pywebview.api.code.call,
+            create_namespace_if_dne: pywebview.api.code.create_namespace_if_dne,
+            create_new_namespace: pywebview.api.code.create_new_namespace,
+            del_var: pywebview.api.code.del_var,
+            delete_namespace: pywebview.api.code.delete_namespace,
+            fexec: pywebview.api.code.fexec,
+            get_globals: pywebview.api.code.get_globals,
+            get_locals: pywebview.api.code.get_locals,
+            get_new_namespace_id: pywebview.api.code.get_new_namespace_id,
+            get_var: pywebview.api.code.get_var,
+            has_var: pywebview.api.code.has_var,
+            list_globals: pywebview.api.code.list_globals,
+            list_locals: pywebview.api.code.list_locals,
+            namespace_exists: pywebview.api.code.namespace_exists,
+            reset: pywebview.api.code.reset,
+            run: pywebview.api.code.run,
+            set_globals: pywebview.api.code.set_globals,
+            set_locals: pywebview.api.code.set_locals,
+            set_var: pywebview.api.code.set_var
+        },
         exec: pywebview.api.exec,
-        exec_old: pywebview.api.exec_old,
         files: {
             exists: pywebview.api.files.exists,
             file_dialog: pywebview.api.files.file_dialog,
@@ -53,6 +89,23 @@ window.addEventListener('pywebviewready', function() {
             remove: pywebview.api.files.remove,
             write_file: pywebview.api.files.write_file,
             write_json_file: pywebview.api.files.write_json_file
+        },
+        main: {
+            call: pywebview.api.main.call,
+            del_var: pywebview.api.main.del_var,
+            fexec: pywebview.api.main.fexec,
+            get_globals: pywebview.api.main.get_globals,
+            get_locals: pywebview.api.main.get_locals,
+            get_var: pywebview.api.main.get_var,
+            global_reset: pywebview.api.main.global_reset,
+            has_var: pywebview.api.main.has_var,
+            list_globals: pywebview.api.main.list_globals,
+            list_locals: pywebview.api.main.list_locals,
+            reset: pywebview.api.main.reset,
+            run: pywebview.api.main.run,
+            set_globals: pywebview.api.main.set_globals,
+            set_locals: pywebview.api.main.set_locals,
+            set_var: pywebview.api.main.set_var
         },
         open_debug: pywebview.api.open_debug,
         print: pywebview.api.print,

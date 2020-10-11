@@ -18,15 +18,15 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "14",
-    "challenge_rating": "6",
-    "charisma": "6",
-    "constitution": "15",
-    "dexterity": "18",
+    "armor_class": 14,
+    "challenge_rating": 6.0,
+    "charisma": 6,
+    "constitution": 15,
+    "dexterity": 18,
     "hit_dice": "16d10+32",
-    "hit_points": "120",
+    "hit_points": 120,
     "id": "fleshpod_hornet",
-    "intelligence": "3",
+    "intelligence": 3,
     "languages": "-",
     "name": "Fleshpod Hornet",
     "perception": 4,
@@ -44,8 +44,8 @@
         "hover": true,
         "walk": 10
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "beast",
-    "wisdom": "12"
+    "wisdom": 12
 }

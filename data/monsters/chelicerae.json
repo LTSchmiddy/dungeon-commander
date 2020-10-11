@@ -23,7 +23,7 @@
     "armor_class": 16,
     "armor_desc": "natural armor",
     "athletics": 9,
-    "challenge_rating": "7",
+    "challenge_rating": 7.0,
     "charisma": 14,
     "charisma_save": 5,
     "condition_immunities": "charmed, poisoned",

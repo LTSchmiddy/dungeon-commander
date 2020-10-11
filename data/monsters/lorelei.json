@@ -20,7 +20,7 @@
     "alignment": "chaotic evil",
     "armor_class": 15,
     "armor_desc": "18 mage armor",
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 23,
     "charisma_save": 9,
     "constitution": 18,

@@ -18,21 +18,21 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
     "athletics": 6,
-    "challenge_rating": "6",
-    "charisma": "14",
+    "challenge_rating": 6.0,
+    "charisma": 14,
     "condition_immunities": "blinded, exhaustion, poisoned",
-    "constitution": "14",
+    "constitution": 14,
     "damage_immunities": "poison",
     "damage_resistances": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_vulnerabilities": "fire",
-    "dexterity": "10",
+    "dexterity": 10,
     "hit_dice": "18d8+36",
-    "hit_points": "117",
+    "hit_points": 117,
     "id": "jiangshi",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "understands any languages it knew in life but can't speak",
     "name": "Jiangshi",
     "perception": 4,
@@ -64,8 +64,8 @@
     "speed_json": {
         "walk": 20
     },
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "undead",
-    "wisdom": "12"
+    "wisdom": 12
 }

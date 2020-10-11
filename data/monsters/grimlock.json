@@ -11,7 +11,7 @@
     "alignment": "neutral evil",
     "armor_class": 11,
     "athletics": 5,
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 6,
     "condition_immunities": "blinded",
     "constitution": 12,

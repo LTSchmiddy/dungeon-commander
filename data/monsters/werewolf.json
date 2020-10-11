@@ -30,7 +30,7 @@
     "alignment": "chaotic evil",
     "armor_class": 11,
     "armor_desc": "11 in humanoid form, 12 (natural armor) in wolf or hybrid form",
-    "challenge_rating": "3",
+    "challenge_rating": 3.0,
     "charisma": 10,
     "condition_immunities": "",
     "constitution": 14,

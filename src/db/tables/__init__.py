@@ -10,6 +10,7 @@ from db.tables.db_weapon import DB_Weapon
 from db.tables.db_magic_item import DB_MagicItem
 from db.tables.db_armor import DB_Armor
 from db.tables.db_shield import DB_Shield
+from db.tables.db_creature import DB_Creature
 
 # __all__ = ('db_spell', 'db_item', 'db_weapon', 'db_reference_section')
 

@@ -11,7 +11,7 @@
     "alignment": "any alignment",
     "armor_class": 16,
     "armor_desc": "chain shirt, shield",
-    "challenge_rating": "1/8",
+    "challenge_rating": 0.125,
     "charisma": 10,
     "condition_immunities": "",
     "constitution": 12,

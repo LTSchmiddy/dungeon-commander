@@ -15,14 +15,24 @@ body {
 .middle-field {
   position: fixed;
   top: 40px;
-  /*display: flex;*/
   left: 0;
   overflow: hidden;
   height: calc(100% - 40px);
   width: 100%;
   z-index: -5;
 }
-.middle-field .main-view {
+
+.child-window-field {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+}
+
+.main-view {
   position: relative;
   left: 0;
   top: 0;
@@ -187,7 +197,7 @@ div.sidebar-content a.sidebar-active {
   background-color: #ffffff;
 }
 
-.content-field {
+.sidebar-content-field {
   position: absolute;
   right: 0;
   height: 100%;
@@ -196,27 +206,28 @@ div.sidebar-content a.sidebar-active {
   width: calc(100vw - 300px);
 }
 
-details.spell summary.spell-head {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: grey;
-  height: 30px;
-  background-color: silver;
-  display: grid;
-  grid-template-columns: 20px 1fr 80px 30px 30px 1fr 1fr 1fr 120px 1fr 1fr;
-  vertical-align: center;
-}
-details.spell summary.spell-head .spell-head-section {
-  overflow: hidden;
-  white-space: nowrap;
-  height: 100%;
-}
-details.spell summary.spell-head .spell-is-ritual, details.spell summary.spell-head .spell-is-concentration {
+details.spell .spell-is-ritual, details.spell .spell-is-concentration {
   font-weight: bold;
 }
 details.spell .spell-info .spell-info-section {
   margin: 10px 20px;
   display: inline-block;
+}
+
+.spell-head {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: grey;
+  height: 30px;
+  background-color: silver;
+  vertical-align: center;
+  display: grid;
+  grid-template-columns: 20px 1fr 80px 30px 30px 1fr 1fr 1fr 120px 1fr 1fr;
+}
+.spell-head .spell-head-section {
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100%;
 }
 
 #settings-editor-view .settings-buttons-area {
@@ -333,7 +344,7 @@ details.spell .spell-info .spell-info-section {
   background-color: orangered;
   color: white;
 }
-#campaign-view .content-field {
+#campaign-view .sidebar-content-field {
   padding: 0;
 }
 #campaign-view #content-field {
@@ -377,6 +388,7 @@ details.spell .spell-info .spell-info-section {
 }
 #campaign-view #content-field .editor-area {
   height: calc(100% - 30px);
+  max-height: calc(100% - 30px);
   width: 100%;
 }
 #campaign-view #content-field .editor-area .fileclose-btn {
@@ -404,40 +416,38 @@ details.spell .spell-info .spell-info-section {
   cursor: move;
 }
 #campaign-view #content-field .editor-area .editor-container .editor-content {
-  height: calc(100% - 30px);
+  height: calc(100vh - 40px - 30px - 30px);
 }
 #campaign-view #content-field .editor-area .editor-container .editor-content .jsoneditor {
-  min-height: 700px;
-}
-#campaign-view #content-field .editor-area .editor-container .editor-content .jsoneditor .jsoneditor-outer {
   height: 100%;
+  overflow: auto;
+  padding-bottom: 50px;
 }
-#campaign-view #content-field .editor-area .editor-container .char-display-view, #campaign-view #content-field .editor-area .editor-container .char-json-view {
-  height: calc(100vh - 100px);
+#campaign-view #content-field .editor-area .editor-container .editor-content .char-display-view, #campaign-view #content-field .editor-area .editor-container .editor-content .char-json-view {
+  height: 100%;
   overflow: auto;
 }
-#campaign-view #content-field .editor-area .editor-container .char-ace-view {
+#campaign-view #content-field .editor-area .editor-container .editor-content .char-ace-view {
   height: calc(100vh - 45px);
 }
-#campaign-view #content-field .editor-area .editor-container .char-ace-view .char-ace-view-editor {
+#campaign-view #content-field .editor-area .editor-container .editor-content .char-ace-view .char-ace-view-editor {
   position: relative;
   width: calc(100%);
   height: calc(100% - 80px);
 }
-#campaign-view #content-field .editor-area .editor-container .char-ace-view .char-ace-view-status {
+#campaign-view #content-field .editor-area .editor-container .editor-content .char-ace-view .char-ace-view-status {
   position: relative;
   width: calc(100%);
   padding: 0 10px;
 }
-#campaign-view #content-field .editor-area .editor-container .char-ace-view .char-ace-view-status.valid {
+#campaign-view #content-field .editor-area .editor-container .editor-content .char-ace-view .char-ace-view-status.valid {
   color: green;
 }
-#campaign-view #content-field .editor-area .editor-container .char-ace-view .char-ace-view-status.invalid {
+#campaign-view #content-field .editor-area .editor-container .editor-content .char-ace-view .char-ace-view-status.invalid {
   color: red;
 }
 
 #database-view .section-selector {
-  background-color: #007bff;
   position: absolute;
   height: 100%;
   width: 200px;
@@ -520,14 +530,72 @@ details.spell .spell-info .spell-info-section {
   height: 100%;
   font-size: 30px;
 }
+#database-view .section-view-area .section-view .db-table-search-settings-container {
+  position: absolute;
+  width: calc(100% - 200px);
+  height: 40px;
+  top: 40px;
+  left: 0;
+  padding: 0 10px;
+}
+#database-view .section-view-area .section-view .db-table-search-settings-container label {
+  display: inline-block;
+  margin-right: 30px;
+}
 #database-view .section-view-area .section-view .table-result-area {
   position: absolute;
   left: 0;
-  top: 40px;
+  top: 80px;
   width: calc(100% - 200px);
-  height: calc(100% - 40px);
-  padding: 15px;
+  height: calc(100% - 80px);
+}
+#database-view .section-view-area .section-view .table-result-area .generic-table-scroller {
+  width: 100%;
+  height: 100%;
   overflow: scroll;
+  padding: 15px;
+}
+#database-view .section-view-area .section-view .table-result-area .fancy-table-header {
+  width: 100%;
+  height: 30px;
+  padding: 0 15px;
+  display: grid;
+  background-color: silver;
+  vertical-align: center;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: grey;
+}
+#database-view .section-view-area .section-view .table-result-area .fancy-table-scroller {
+  width: 100%;
+  top: 30px;
+  height: calc(100% - 30px);
+  overflow: scroll;
+  padding: 15px;
+}
+#database-view .section-view-area .section-view .table-result-area .fancy-table-scroller details {
+  width: 100%;
+}
+#database-view .section-view-area .section-view .table-result-area .fancy-table-scroller details summary {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: grey;
+  width: 100%;
+  display: grid;
+  background-color: silver;
+  vertical-align: center;
+  height: 30px;
+}
+#database-view .section-view-area .section-view .table-result-area .fancy-table-scroller details .long_view {
+  padding: 20px;
+}
+#database-view .section-view-area .section-view .table-result-area .fancy-table-scroller details .id_view {
+  padding: 0 20px;
+}
+#database-view .section-view-area .section-view .table-result-area .fancy-table-section {
+  overflow: hidden;
+  white-space: nowrap;
+  height: 100%;
 }
 #database-view .section-view-area .section-view .spell-result {
   min-width: 1200px;

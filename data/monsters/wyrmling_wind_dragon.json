@@ -15,7 +15,7 @@
     "alignment": "chaotic neutral",
     "armor_class": 14,
     "armor_desc": "",
-    "challenge_rating": "1",
+    "challenge_rating": 1.0,
     "charisma": 14,
     "charisma_save": 4,
     "condition_immunities": "charmed, exhausted, paralyzed",

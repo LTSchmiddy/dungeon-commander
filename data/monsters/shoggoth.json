@@ -15,7 +15,7 @@
     "alignment": "chaotic neutral",
     "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "19",
+    "challenge_rating": 19.0,
     "charisma": 13,
     "condition_immunities": "blinded, deafened, prone, stunned, unconscious",
     "constitution": 28,

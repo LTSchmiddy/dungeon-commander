@@ -20,20 +20,20 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "17",
+    "armor_class": 17,
     "armor_desc": "natural armor",
-    "challenge_rating": "9",
-    "charisma": "12",
+    "challenge_rating": 9.0,
+    "charisma": 12,
     "condition_immunities": "frightened",
-    "constitution": "23",
+    "constitution": 23,
     "constitution_save": 10,
     "damage_immunities": "necrotic",
     "damage_resistances": "cold, radiant",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "15d10+90",
-    "hit_points": "172",
+    "hit_points": 172,
     "id": "ammut",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "none",
     "name": "Ammut",
     "perception": 11,
@@ -57,9 +57,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "20",
+    "strength": 20,
     "strength_save": 9,
     "subtype": "",
     "type": "celestial",
-    "wisdom": "16"
+    "wisdom": 16
 }

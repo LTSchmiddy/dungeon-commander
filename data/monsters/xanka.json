@@ -10,7 +10,7 @@
     "alignment": "unaligned",
     "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 7,
     "condition_immunities": "charmed, exhaustion, frightened,",
     "constitution": 12,

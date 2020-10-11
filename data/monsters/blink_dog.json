@@ -15,7 +15,7 @@
     ],
     "alignment": "lawful good",
     "armor_class": 13,
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 11,
     "condition_immunities": "",
     "constitution": 12,

@@ -16,17 +16,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "18",
+    "challenge_rating": 3.0,
+    "charisma": 18,
     "condition_immunities": "blinded, deafened, frightened",
-    "constitution": "16",
-    "dexterity": "6",
+    "constitution": 16,
+    "dexterity": 6,
     "hit_dice": "8d4+24",
-    "hit_points": "44",
+    "hit_points": 44,
     "id": "gloomflower",
-    "intelligence": "1",
+    "intelligence": 1,
     "languages": "understands all languages known by creatures within 120 feet, but can't speak, telepathy 120 ft.",
     "name": "Gloomflower",
     "senses": "blindsight 120 ft. passive Perception 8",
@@ -45,8 +45,8 @@
     "speed_json": {
         "walk": 10
     },
-    "strength": "10",
+    "strength": 10,
     "subtype": "",
     "type": "plant",
-    "wisdom": "6"
+    "wisdom": 6
 }

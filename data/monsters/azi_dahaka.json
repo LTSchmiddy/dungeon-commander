@@ -20,21 +20,21 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "14",
-    "charisma": "17",
+    "challenge_rating": 14.0,
+    "charisma": 17,
     "charisma_save": 8,
-    "constitution": "19",
+    "constitution": 19,
     "constitution_save": 9,
     "damage_immunities": "lightning",
     "damage_resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks not made with silver",
-    "dexterity": "14",
+    "dexterity": 14,
     "dexterity_save": 7,
     "hit_dice": "15d12+60",
-    "hit_points": "157",
+    "hit_points": 157,
     "id": "azi_dahaka",
-    "intelligence": "14",
+    "intelligence": 14,
     "languages": "Common, Draconic, Infernal",
     "legendary_actions": [
         {
@@ -79,9 +79,9 @@
         "walk": 40
     },
     "stealth": 7,
-    "strength": "21",
+    "strength": 21,
     "subtype": "",
     "type": "dragon",
-    "wisdom": "13",
+    "wisdom": 13,
     "wisdom_save": 6
 }

@@ -12,17 +12,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "7",
-    "challenge_rating": "3",
-    "charisma": "1",
+    "armor_class": 7,
+    "challenge_rating": 3.0,
+    "charisma": 1,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
-    "constitution": "18",
+    "constitution": 18,
     "damage_immunities": "acid, cold",
-    "dexterity": "8",
+    "dexterity": 8,
     "hit_dice": "8d10+32",
-    "hit_points": "76",
+    "hit_points": 76,
     "id": "purple_slime",
-    "intelligence": "2",
+    "intelligence": 2,
     "languages": "-",
     "name": "Purple Slime",
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
@@ -48,8 +48,8 @@
         "walk": 20
     },
     "stealth": 1,
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "ooze",
-    "wisdom": "6"
+    "wisdom": 6
 }

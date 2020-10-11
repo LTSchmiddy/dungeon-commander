@@ -135,7 +135,7 @@ class Spell():
 
     @property
     def get_spellcasting_ability_value(self):
-        if self.owner is None:
+        if self.owner is None or self.casting_ability is None:
             return None
         return self.owner.get_char_attr(self.casting_ability)
 

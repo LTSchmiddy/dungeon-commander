@@ -1,5 +1,52 @@
+{% macro fancy_table(
+    grid_columns = "1fr " * len(table.columns),
+    column_names = table.columns.keys(),
+    fill_value="",
+    details_template="",
+    custom_class = "",
+    prepend_template="",
+    header_prefix_blanks=1,
+    result_template="panes/database_view/components/db_table/fancy_result_base.html"
+) -%}
+    {% include result_template %}
+{%- endmacro %}
+
+
 {% if table.name == 'spell' %}
     {% include "panes/database_view/components/db_table/spell_result.html" %}
+
+{% elif table.name in ['magic_item', 'weapon', 'armor', 'shield'] %}
+    {{
+        fancy_table(
+             "1fr " * (len(table.columns) - 3),
+            tuple(filter(af.func('x', 'return x not in ["description", "id", "features_applied"]'), table.columns.keys())),
+            "description",
+            "",
+            ""
+        )
+    }}
+{% elif table.name == 'reference_section' %}
+    {{
+        fancy_table(
+             "1fr " * (len(table.columns) - 2),
+            tuple(filter(af.func('x', 'return x not in ["content", "id"]'), table.columns.keys())),
+            "content",
+            "",
+            ""
+        )
+    }}
+{% elif table.name == 'creature' %}
+    {{
+        fancy_table(
+            "40px 1fr 1fr 1fr 1fr ",
+            ("name", "challenge_rating", "alignment"),
+            details_template="components/creature/db_description.html",
+            header_prefix_blanks=2,
+            prepend_template="panes/database_view/components/db_table/widgets/creature_button.html"
+
+        )
+    }}
+{#    {% include "components/creature/db_description.html" %}#}
 {% else %}
-    {% include "panes/database_view/components/db_table/generic_table.html" %}
+    {{ fancy_table() }}
 {% endif %}

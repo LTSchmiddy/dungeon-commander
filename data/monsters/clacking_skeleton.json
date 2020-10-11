@@ -24,19 +24,19 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "armor scraps",
-    "challenge_rating": "2",
-    "charisma": "5",
+    "challenge_rating": 2.0,
+    "charisma": 5,
     "condition_immunities": "exhaustion, poisoned",
-    "constitution": "11",
+    "constitution": 11,
     "damage_immunities": "poison",
     "damage_vulnerabilities": "bludgeoning",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "10d8",
-    "hit_points": "45",
+    "hit_points": 45,
     "id": "clacking_skeleton",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "understands all languages it knew in life but can't speak",
     "name": "Clacking Skeleton",
     "senses": "darkvision 60 ft., passive Perception 9",
@@ -51,8 +51,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "undead",
-    "wisdom": "8"
+    "wisdom": 8
 }

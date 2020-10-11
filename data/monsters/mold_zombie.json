@@ -16,18 +16,18 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "5",
+    "challenge_rating": 3.0,
+    "charisma": 5,
     "condition_immunities": "exhaustion, poisoned",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "necrotic, poison",
-    "dexterity": "8",
+    "dexterity": 8,
     "hit_dice": "10d8+30",
-    "hit_points": "75",
+    "hit_points": 75,
     "id": "mold_zombie",
-    "intelligence": "3",
+    "intelligence": 3,
     "languages": "-",
     "name": "Mold Zombie",
     "senses": "darkvision 60 ft., passive Perception 8",
@@ -46,10 +46,10 @@
     "speed_json": {
         "walk": 20
     },
-    "strength": "17",
+    "strength": 17,
     "strength_save": 5,
     "subtype": "",
     "type": "undead",
-    "wisdom": "6",
+    "wisdom": 6,
     "wisdom_save": 0
 }

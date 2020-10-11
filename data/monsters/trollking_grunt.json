@@ -18,16 +18,16 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "hide armor",
-    "challenge_rating": "2",
-    "charisma": "10",
-    "constitution": "16",
-    "dexterity": "13",
+    "challenge_rating": 2.0,
+    "charisma": 10,
+    "constitution": 16,
+    "dexterity": 13,
     "hit_dice": "6d8+18",
-    "hit_points": "45",
+    "hit_points": 45,
     "id": "trollking_grunt",
-    "intelligence": "9",
+    "intelligence": 9,
     "languages": "Common, Trollkin",
     "name": "Trollking Grunt",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -46,8 +46,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "18",
+    "strength": 18,
     "subtype": "trollkin",
     "type": "humanoid",
-    "wisdom": "11"
+    "wisdom": 11
 }

@@ -22,16 +22,16 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "natural armor",
-    "challenge_rating": "2",
-    "charisma": "7",
-    "constitution": "17",
-    "dexterity": "11",
+    "challenge_rating": 2.0,
+    "charisma": 7,
+    "constitution": 17,
+    "dexterity": 11,
     "hit_dice": "5d12+15",
-    "hit_points": "47",
+    "hit_points": 47,
     "id": "yann-an-oed",
-    "intelligence": "8",
+    "intelligence": 8,
     "languages": "Aquan, telepathy 120 ft.",
     "name": "Yann-An-Oed",
     "perception": 4,
@@ -53,8 +53,8 @@
         "walk": 30
     },
     "stealth": 2,
-    "strength": "15",
+    "strength": 15,
     "subtype": "",
     "type": "aberration",
-    "wisdom": "14"
+    "wisdom": 14
 }

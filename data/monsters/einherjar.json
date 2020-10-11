@@ -19,10 +19,10 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "animal Handling": 5,
+    "animal_handling": 5,
     "armor_class": 18,
     "armor_desc": "chain mail and shield",
-    "challenge_rating": "7",
+    "challenge_rating": 7.0,
     "charisma": 11,
     "constitution": 19,
     "damage_resistances": "piercing weapons that are nonmagical",

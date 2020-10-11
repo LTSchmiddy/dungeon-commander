@@ -18,20 +18,20 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "8",
-    "charisma": "3",
+    "challenge_rating": 8.0,
+    "charisma": 3,
     "condition_immunities": "deafened",
-    "constitution": "16",
+    "constitution": 16,
     "constitution_save": 6,
     "damage_resistances": "bludgeoning, piercing",
     "damage_vulnerabilities": "fire",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "15d10+45",
-    "hit_points": "127",
+    "hit_points": 127,
     "id": "arborcyte",
-    "intelligence": "5",
+    "intelligence": 5,
     "languages": "-",
     "name": "Arborcyte",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -46,8 +46,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "21",
+    "strength": 21,
     "subtype": "",
     "type": "plant",
-    "wisdom": "10"
+    "wisdom": 10
 }

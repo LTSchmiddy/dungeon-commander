@@ -15,7 +15,7 @@
     "alignment": "neutral evil",
     "armor_class": 16,
     "armor_desc": "studded leather",
-    "challenge_rating": "6",
+    "challenge_rating": 6.0,
     "charisma": 14,
     "charisma_save": 5,
     "constitution": 16,

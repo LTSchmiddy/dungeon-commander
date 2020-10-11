@@ -24,19 +24,19 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "leather armor",
-    "challenge_rating": "3",
-    "charisma": "9",
+    "challenge_rating": 3.0,
+    "charisma": 9,
     "condition_immunities": "charmed, frightened, paralyzed, petrified, prone, restrained, stunned",
-    "constitution": "13",
+    "constitution": 13,
     "damage_resistances": "piercing, slashing",
     "damage_vulnerabilities": "bludgeoning",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "9d12+9",
-    "hit_points": "67",
+    "hit_points": 67,
     "id": "bar_brawl",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "any two languages",
     "name": "Bar Brawl",
     "senses": "passive Perception 10",
@@ -55,8 +55,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "humanoids",
-    "wisdom": "10"
+    "wisdom": 10
 }

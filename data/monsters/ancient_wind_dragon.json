@@ -39,7 +39,7 @@
     "arcana": 11,
     "armor_class": 20,
     "armor_desc": "natural armor",
-    "challenge_rating": "22",
+    "challenge_rating": 22.0,
     "charisma": 20,
     "charisma_save": 12,
     "condition_immunities": "charmed, exhausted, paralyzed, restrained",

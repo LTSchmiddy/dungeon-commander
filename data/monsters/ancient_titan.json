@@ -27,7 +27,7 @@
     "armor_class": 15,
     "armor_desc": "breastplate",
     "athletics": 14,
-    "challenge_rating": "12",
+    "challenge_rating": 12.0,
     "charisma": 20,
     "charisma_save": 9,
     "constitution": 22,

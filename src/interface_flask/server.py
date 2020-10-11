@@ -7,6 +7,7 @@ from logging.config import dictConfig
 
 import markdown2
 import anon_func
+import sqlalchemy
 
 dictConfig({
     'version': 1,
@@ -54,7 +55,9 @@ def jinja2_values():
         campaign=campaign.current,
         int=int,
         str=str,
+        list=list,
         tuple=tuple,
+        type=type,
         len=len,
         dir=dir,
         getattr=getattr,
@@ -67,11 +70,18 @@ def jinja2_values():
         ordinal=lambda n: "%d%s" % (n, "tsnrhtdd"[(n // 10 % 10 != 1) * (n % 10 < 4) * n % 10::4]),
         md=markdown2.markdown,
         db=db,
+        sqltypes=sqlalchemy.sql.sqltypes,
         textwrap=textwrap,
         af=anon_func
     )
 
-app.register_blueprint(pages, url_prefix='/')
+# Page endpoints:
+@app.route('/blank')
+def blank():
+    return ""
+
+
+app.register_blueprint(pages, url_prefix='/pages/')
 app.register_blueprint(panes, url_prefix='/panes/')
 app.register_blueprint(campaign.campaign_view, url_prefix='/panes/campaign_view')
 app.register_blueprint(database.database_view, url_prefix='/panes/database_view')

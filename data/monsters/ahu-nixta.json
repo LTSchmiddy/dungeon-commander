@@ -24,18 +24,18 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "clockwork armor",
-    "challenge_rating": "3",
-    "charisma": "10",
+    "challenge_rating": 3.0,
+    "charisma": 10,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned, prone",
-    "constitution": "14",
+    "constitution": 14,
     "damage_immunities": "poison, psychic",
-    "dexterity": "15",
+    "dexterity": 15,
     "hit_dice": "9d10+18",
-    "hit_points": "67",
+    "hit_points": 67,
     "id": "ahu-nixta",
-    "intelligence": "19",
+    "intelligence": 19,
     "languages": "Deep Speech, Void Speech",
     "name": "Ahu-Nixta",
     "perception": 3,
@@ -61,8 +61,8 @@
         "swim": 30,
         "walk": 30
     },
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "aberration",
-    "wisdom": "13"
+    "wisdom": 13
 }

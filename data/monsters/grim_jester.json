@@ -15,7 +15,7 @@
     "alignment": "chaotic evil",
     "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "11",
+    "challenge_rating": 11.0,
     "charisma": 20,
     "charisma_save": 9,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
@@ -43,7 +43,7 @@
     ],
     "senses": "darkvision 60 ft., passive Perception 17",
     "size": "Medium",
-    "sleight of Hand": 10,
+    "sleight_of_hand": 10,
     "special_abilities": [
         {
             "attack_bonus": 0,

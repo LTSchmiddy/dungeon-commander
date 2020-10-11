@@ -18,17 +18,17 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "7",
-    "charisma": "11",
-    "constitution": "17",
+    "challenge_rating": 7.0,
+    "charisma": 11,
+    "constitution": 17,
     "constitution_save": 6,
-    "dexterity": "10",
+    "dexterity": 10,
     "hit_dice": "15d10+45",
-    "hit_points": "127",
+    "hit_points": 127,
     "id": "greater_scrag",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Abyssal, Aquan, Giant",
     "name": "Greater Scrag",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -52,9 +52,9 @@
         "swim": 40,
         "walk": 30
     },
-    "strength": "20",
+    "strength": 20,
     "strength_save": 8,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "10"
+    "wisdom": 10
 }

@@ -17,7 +17,7 @@
     ],
     "alignment": "unaligned",
     "armor_class": 12,
-    "challenge_rating": "1",
+    "challenge_rating": 1.0,
     "charisma": 8,
     "condition_immunities": "",
     "constitution": 13,

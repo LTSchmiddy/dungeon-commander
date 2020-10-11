@@ -28,19 +28,19 @@
         }
     ],
     "alignment": "lawful neutral",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "15",
+    "challenge_rating": 3.0,
+    "charisma": 15,
     "condition_immunities": "poisoned",
-    "constitution": "17",
+    "constitution": 17,
     "damage_immunities": "poison",
     "damage_resistances": "fire",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "10d8+30",
-    "hit_points": "75",
+    "hit_points": 75,
     "id": "bathhouse_drake",
-    "intelligence": "12",
+    "intelligence": 12,
     "languages": "Common, Draconic, Primordial",
     "medicine": 6,
     "name": "Bathhouse Drake",
@@ -67,8 +67,8 @@
         "swim": 60,
         "walk": 30
     },
-    "strength": "15",
+    "strength": 15,
     "subtype": "",
     "type": "dragon",
-    "wisdom": "18"
+    "wisdom": 18
 }

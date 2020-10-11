@@ -14,15 +14,15 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "14",
-    "challenge_rating": "1/4",
-    "charisma": "9",
-    "constitution": "12",
-    "dexterity": "18",
+    "armor_class": 14,
+    "challenge_rating": 0.25,
+    "charisma": 9,
+    "constitution": 12,
+    "dexterity": 18,
     "hit_dice": "4d6+4",
-    "hit_points": "18",
+    "hit_points": 18,
     "id": "alliumite",
-    "intelligence": "7",
+    "intelligence": 7,
     "languages": "Sylvan",
     "name": "Alliumite",
     "perception": 3,
@@ -44,9 +44,9 @@
         "walk": 30
     },
     "stealth": 6,
-    "strength": "6",
+    "strength": 6,
     "subtype": "",
     "survival": 3,
     "type": "plant",
-    "wisdom": "12"
+    "wisdom": 12
 }

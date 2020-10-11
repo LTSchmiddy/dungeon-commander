@@ -30,7 +30,7 @@
     "alignment": "neutral good",
     "armor_class": 10,
     "armor_desc": "10 in humanoid form, 11 (natural armor) in bear and hybrid form",
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 12,
     "condition_immunities": "",
     "constitution": 17,

@@ -18,17 +18,17 @@
         }
     ],
     "alignment": "lawful neutral",
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "15 with junk armor",
-    "challenge_rating": "2",
-    "charisma": "9",
-    "constitution": "11",
-    "dexterity": "14",
+    "challenge_rating": 2.0,
+    "charisma": 9,
+    "constitution": 11,
+    "dexterity": 14,
     "dexterity_save": 4,
     "hit_dice": "12d6",
-    "hit_points": "42",
+    "hit_points": 42,
     "id": "junk_shaman",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Common, Draconic",
     "name": "Junk Shaman",
     "senses": "darkvision 60 ft., passive Perception 13",
@@ -55,9 +55,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "6",
+    "strength": 6,
     "subtype": "kobold",
     "type": "humanoid",
-    "wisdom": "17",
+    "wisdom": 17,
     "wisdom_save": 5
 }

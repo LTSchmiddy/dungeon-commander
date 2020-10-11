@@ -22,19 +22,19 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
-    "charisma": "9",
+    "challenge_rating": 4.0,
+    "charisma": 9,
     "condition_immunities": "poisoned",
-    "constitution": "14",
+    "constitution": 14,
     "damage_immunities": "fire, necrotic, poison",
     "damage_resistances": "cold, lightning",
-    "dexterity": "16",
+    "dexterity": 16,
     "hit_dice": "12d6+24",
-    "hit_points": "66",
+    "hit_points": 66,
     "id": "rattok",
-    "intelligence": "14",
+    "intelligence": 14,
     "languages": "Abyssal, Common, Void Speech",
     "name": "Rattok",
     "senses": "darkvision 60 ft., passive Perception 8",
@@ -59,8 +59,8 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "10",
+    "strength": 10,
     "subtype": "demon",
     "type": "fiend",
-    "wisdom": "6"
+    "wisdom": 6
 }

@@ -8,18 +8,18 @@
         }
     ],
     "alignment": "neutral good",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/2",
-    "charisma": "10",
-    "constitution": "10",
+    "challenge_rating": 0.5,
+    "charisma": 10,
+    "constitution": 10,
     "damage_immunities": "radiant",
     "damage_resistances": "bludgeoning, piercing",
-    "dexterity": "10",
+    "dexterity": 10,
     "hit_dice": "5d8",
-    "hit_points": "22",
+    "hit_points": 22,
     "id": "hallowed_reed",
-    "intelligence": "7",
+    "intelligence": 7,
     "languages": "-",
     "name": "Hallowed Reed",
     "perception": 4,
@@ -43,8 +43,8 @@
     "speed_json": {
         "walk": 10
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "celestial",
-    "wisdom": "14"
+    "wisdom": 14
 }

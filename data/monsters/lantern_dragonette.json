@@ -11,7 +11,7 @@
     "arcana": 5,
     "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/2",
+    "challenge_rating": 0.5,
     "charisma": 12,
     "charisma_save": 3,
     "condition_immunities": "paralyzed, unconscious",

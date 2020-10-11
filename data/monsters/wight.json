@@ -30,7 +30,7 @@
     "alignment": "neutral evil",
     "armor_class": 14,
     "armor_desc": "studded leather",
-    "challenge_rating": "3",
+    "challenge_rating": 3.0,
     "charisma": 15,
     "condition_immunities": "poisoned",
     "constitution": 16,

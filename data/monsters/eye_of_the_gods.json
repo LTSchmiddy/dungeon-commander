@@ -12,18 +12,18 @@
         }
     ],
     "alignment": "any alignment (as its creator deity)",
-    "armor_class": "14",
-    "challenge_rating": "1",
-    "charisma": "16",
+    "armor_class": 14,
+    "challenge_rating": 1.0,
+    "charisma": 16,
     "condition_immunities": "charmed, exhaustion, poisoned",
-    "constitution": "12",
+    "constitution": 12,
     "damage_immunities": "necrotic, poison",
     "damage_resistances": "fire, radiant; bludgeoning, piercing, and slashing from nonmagical attacks",
-    "dexterity": "18",
+    "dexterity": 18,
     "hit_dice": "8d6+8",
-    "hit_points": "36",
+    "hit_points": 36,
     "id": "eye_of_the_gods",
-    "intelligence": "13",
+    "intelligence": 13,
     "languages": "all, telepathy 60 ft.",
     "name": "Eye of the Gods",
     "perception": 9,
@@ -53,8 +53,8 @@
         "hover": true,
         "walk": 0
     },
-    "strength": "8",
+    "strength": 8,
     "subtype": "",
     "type": "celestial",
-    "wisdom": "20"
+    "wisdom": 20
 }

@@ -18,20 +18,20 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "natural armor",
     "athletics": 9,
-    "challenge_rating": "7",
-    "charisma": "12",
+    "challenge_rating": 7.0,
+    "charisma": 12,
     "condition_immunities": "charmed, poisoned",
-    "constitution": "20",
+    "constitution": 20,
     "constitution_save": 8,
     "damage_immunities": "poison",
-    "dexterity": "9",
+    "dexterity": 9,
     "hit_dice": "15d10+75",
-    "hit_points": "157",
+    "hit_points": 157,
     "id": "chuhaister",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Giant, Orcish, Sylvan",
     "name": "Chuhaister",
     "reactions": [
@@ -56,8 +56,8 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "22",
+    "strength": 22,
     "subtype": "",
     "type": "giant",
-    "wisdom": "11"
+    "wisdom": 11
 }

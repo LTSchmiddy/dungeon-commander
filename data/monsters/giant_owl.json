@@ -10,7 +10,7 @@
     ],
     "alignment": "neutral",
     "armor_class": 12,
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 10,
     "condition_immunities": "",
     "constitution": 12,

@@ -14,18 +14,18 @@
         }
     ],
     "alignment": "lawful evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "athletics": 4,
-    "challenge_rating": "1",
-    "charisma": "11",
+    "challenge_rating": 1.0,
+    "charisma": 11,
     "condition_immunities": "poisoned",
-    "constitution": "12",
+    "constitution": 12,
     "damage_immunities": "poison",
-    "dexterity": "16",
+    "dexterity": 16,
     "hit_dice": "8d8+8",
-    "hit_points": "44",
+    "hit_points": 44,
     "id": "the_barbed",
-    "intelligence": "8",
+    "intelligence": 8,
     "languages": "Common, Draconic",
     "name": "The Barbed",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -45,8 +45,8 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "14",
+    "strength": 14,
     "subtype": "kobold",
     "type": "humanoid",
-    "wisdom": "10"
+    "wisdom": 10
 }

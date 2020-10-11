@@ -18,19 +18,19 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/2",
-    "charisma": "1",
+    "challenge_rating": 0.5,
+    "charisma": 1,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, petrified, poisoned, prone",
-    "constitution": "11",
+    "constitution": 11,
     "damage_immunities": "poison, psychic",
     "damage_resistances": "bludgeoning, piercing, slashing",
-    "dexterity": "13",
+    "dexterity": 13,
     "hit_dice": "5d8",
-    "hit_points": "22",
+    "hit_points": 22,
     "id": "shard_swarm",
-    "intelligence": "1",
+    "intelligence": 1,
     "languages": "-",
     "name": "Shard Swarm",
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 7",
@@ -58,8 +58,8 @@
         "fly": 30,
         "walk": 0
     },
-    "strength": "3",
+    "strength": 3,
     "subtype": "",
     "type": "constructs",
-    "wisdom": "5"
+    "wisdom": 5
 }

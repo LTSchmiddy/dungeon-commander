@@ -27,7 +27,7 @@
     "alignment": "lawful evil",
     "armor_class": 16,
     "armor_desc": "breastplate",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 14,
     "condition_immunities": "charmed, exhaustion, poisoned",
     "constitution": 12,

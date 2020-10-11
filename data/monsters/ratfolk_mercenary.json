@@ -19,18 +19,18 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "leather armor",
-    "challenge_rating": "2",
-    "charisma": "10",
-    "constitution": "11",
+    "challenge_rating": 2.0,
+    "charisma": 10,
+    "constitution": 11,
     "deception": 2,
-    "dexterity": "18",
+    "dexterity": 18,
     "dexterity_save": 6,
     "hit_dice": "13d6",
-    "hit_points": "45",
+    "hit_points": 45,
     "id": "ratfolk_mercenary",
-    "intelligence": "14",
+    "intelligence": 14,
     "intelligence_save": 4,
     "intimidation": 2,
     "languages": "Common",
@@ -68,8 +68,8 @@
         "walk": 25
     },
     "stealth": 8,
-    "strength": "7",
+    "strength": 7,
     "subtype": "ratfolk",
     "type": "humanoid",
-    "wisdom": "10"
+    "wisdom": 10
 }

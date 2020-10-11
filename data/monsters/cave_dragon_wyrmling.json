@@ -15,7 +15,7 @@
     "alignment": "neutral evil",
     "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "2",
+    "challenge_rating": 2.0,
     "charisma": 12,
     "charisma_save": 3,
     "condition_immunities": "poisoned",

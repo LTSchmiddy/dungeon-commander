@@ -259,7 +259,7 @@ class CharmMonster(Spell):
     each other when you target them.
 
     """
-    name = "Charm Monster"
+    name = "Charm Creature"
     level = 4
     casting_time = "1 action"
     casting_range = "30 feet"
@@ -1498,7 +1498,7 @@ class CreateHomunculus(Spell):
      dagger, taking 2d4 piercing damage that can't be reduced in any way. You then
     drip your blood on the spell's other components and touch them, transforming
     them into a special construct called a homunculus. The statistics of the
-    homunculus are in the Monster Manual. It is your faithful companion, and it dies
+    homunculus are in the Creature Manual. It is your faithful companion, and it dies
      if you die. Whenever you finish a long rest, you can spend up to half your Hit
     Dice if the homunculus is on the same plane of existence as you. When you do so,
      roll each die and add your Constitution modifier to it. Your hit point maximum

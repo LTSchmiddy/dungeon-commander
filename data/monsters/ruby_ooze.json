@@ -16,19 +16,19 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "9",
-    "challenge_rating": "6",
-    "charisma": "1",
+    "armor_class": 9,
+    "challenge_rating": 6.0,
+    "charisma": 1,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
-    "constitution": "18",
+    "constitution": 18,
     "damage_immunities": "acid, fire",
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_vulnerabilities": "lightning",
-    "dexterity": "8",
+    "dexterity": 8,
     "hit_dice": "11d8+44",
-    "hit_points": "93",
+    "hit_points": 93,
     "id": "ruby_ooze",
-    "intelligence": "2",
+    "intelligence": 2,
     "languages": "-",
     "name": "Ruby Ooze",
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
@@ -60,8 +60,8 @@
         "climb": 20,
         "walk": 20
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "ooze",
-    "wisdom": "6"
+    "wisdom": 6
 }

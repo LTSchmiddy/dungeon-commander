@@ -6,17 +6,20 @@
 
 <script>
     let campaign_view_directory_content = null;
+    let campaign_view_file_tree_view = null;
 
     window.addEventListener('pywebviewready', ()=>{
         campaign_view_directory_content = $('#directory-list');
         campaign_view_reload_dir();
     });
 
-    async function campaign_view_reload_dir(){
-        campaign_view_directory_content.text("Loading...")
-        let dir_cont = await load_html("/panes/campaign_view/extract_dir_listing");
 
-        campaign_view_directory_content.get()[0].innerHTML = dir_cont;
+    async function campaign_view_reload_dir(){
+        /** @type {Element} */
+        let dir_view = campaign_view_directory_content.get()[0];
+        {#dir_view.innerHTML = await load_html("/panes/campaign_view/extract_dir_listing");#}
+        campaign_view_file_tree_view = new FileTreeView("campaign_view", await py.campaign.get_abs_campaign_path(), dir_view);
+        dir_view.file_view = campaign_view_file_tree_view;
     }
 
 

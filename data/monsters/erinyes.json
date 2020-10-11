@@ -28,7 +28,7 @@
     "alignment": "lawful evil",
     "armor_class": 18,
     "armor_desc": "plate",
-    "challenge_rating": "12",
+    "challenge_rating": 12.0,
     "charisma": 18,
     "charisma_save": 8,
     "condition_immunities": "poisoned",

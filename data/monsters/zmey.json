@@ -32,7 +32,7 @@
     "alignment": "chaotic evil",
     "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "14",
+    "challenge_rating": 14.0,
     "charisma": 12,
     "charisma_save": 6,
     "condition_immunities": "paralyzed, unconscious",

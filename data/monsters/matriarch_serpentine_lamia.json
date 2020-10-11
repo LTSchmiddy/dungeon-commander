@@ -26,17 +26,17 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "5",
-    "charisma": "19",
-    "constitution": "16",
+    "challenge_rating": 5.0,
+    "charisma": 19,
+    "constitution": 16,
     "deception": 10,
-    "dexterity": "17",
+    "dexterity": 17,
     "hit_dice": "12d8+36",
-    "hit_points": "90",
+    "hit_points": 90,
     "id": "matriarch_serpentine_lamia",
-    "intelligence": "8",
+    "intelligence": 8,
     "intimidation": 10,
     "languages": "Abyssal, Common",
     "name": "Matriarch Serpentine Lamia",
@@ -67,8 +67,8 @@
         "walk": 40
     },
     "stealth": 6,
-    "strength": "12",
+    "strength": 12,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "15"
+    "wisdom": 15
 }

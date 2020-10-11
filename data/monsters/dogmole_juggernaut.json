@@ -21,7 +21,7 @@
     "alignment": "neutral",
     "armor_class": 15,
     "armor_desc": "chain armor",
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 2,
     "constitution": 20,
     "constitution_save": 11,

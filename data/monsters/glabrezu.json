@@ -28,7 +28,7 @@
     "alignment": "chaotic evil",
     "armor_class": 17,
     "armor_desc": "natural armor",
-    "challenge_rating": "9",
+    "challenge_rating": 9.0,
     "charisma": 16,
     "charisma_save": 7,
     "condition_immunities": "poisoned",

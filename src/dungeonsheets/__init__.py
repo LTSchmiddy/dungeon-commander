@@ -1,7 +1,8 @@
 __all__ = ('__version__', 'Character', 'weapons', 'features',
-           'character', 'race', 'background', 'spells', 'classes')
+           'character', 'race', 'background', 'spells', 'classes', 'item')
 
-from dungeonsheets import background, features, race, spells, weapons, addons, armor, item, magic_items
+from dungeonsheets import item
+from dungeonsheets import background, features, race, spells, weapons, addons, armor, magic_items
 from dungeonsheets.character import Character
 
 import os

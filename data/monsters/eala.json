@@ -20,7 +20,7 @@
     "alignment": "unaligned",
     "armor_class": 15,
     "armor_desc": "natural",
-    "challenge_rating": "2",
+    "challenge_rating": 2.0,
     "charisma": 16,
     "constitution": 12,
     "damage_immunities": "fire",

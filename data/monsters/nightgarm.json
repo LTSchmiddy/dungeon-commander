@@ -10,7 +10,7 @@
     "alignment": "chaotic evil",
     "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "6",
+    "challenge_rating": 6.0,
     "charisma": 16,
     "constitution": 18,
     "damage_resistances": "lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",

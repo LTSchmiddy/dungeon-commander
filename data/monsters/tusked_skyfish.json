@@ -26,7 +26,7 @@
     "alignment": "lawful good",
     "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 10,
     "constitution": 17,
     "damage_immunities": "lightning",

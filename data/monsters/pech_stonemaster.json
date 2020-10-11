@@ -18,19 +18,19 @@
         }
     ],
     "alignment": "neutral good",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "natural armor",
     "athletics": 6,
-    "challenge_rating": "4",
-    "charisma": "11",
+    "challenge_rating": 4.0,
+    "charisma": 11,
     "condition_immunities": "exhaustion, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "poison",
-    "dexterity": "11",
+    "dexterity": 11,
     "hit_dice": "10d6+30",
-    "hit_points": "65",
+    "hit_points": 65,
     "id": "pech_stonemaster",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Common, Terran, Undercommon",
     "name": "Pech Stonemaster",
     "perception": 5,
@@ -55,8 +55,8 @@
         "climb": 10,
         "walk": 20
     },
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "elemental",
-    "wisdom": "16"
+    "wisdom": 16
 }

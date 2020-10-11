@@ -8,17 +8,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "8",
-    "challenge_rating": "6",
-    "charisma": "2",
+    "armor_class": 8,
+    "challenge_rating": 6.0,
+    "charisma": 2,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
-    "constitution": "18",
+    "constitution": 18,
     "damage_immunities": "acid, fire, necrotic, slashing",
-    "dexterity": "6",
+    "dexterity": 6,
     "hit_dice": "8d10+32",
-    "hit_points": "76",
+    "hit_points": 76,
     "id": "blood_ooze",
-    "intelligence": "1",
+    "intelligence": 1,
     "languages": "-",
     "name": "Blood Ooze",
     "reactions": [
@@ -48,8 +48,8 @@
         "climb": 20,
         "walk": 20
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "ooze",
-    "wisdom": "8"
+    "wisdom": 8
 }

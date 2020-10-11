@@ -18,15 +18,15 @@
         }
     ],
     "alignment": "lawful neutral",
-    "armor_class": "13",
-    "challenge_rating": "3",
-    "charisma": "7",
-    "constitution": "16",
-    "dexterity": "16",
+    "armor_class": 13,
+    "challenge_rating": 3.0,
+    "charisma": 7,
+    "constitution": 16,
+    "dexterity": 16,
     "hit_dice": "8d8+24",
-    "hit_points": "60",
+    "hit_points": 60,
     "id": "orthrus",
-    "intelligence": "8",
+    "intelligence": 8,
     "languages": "understands Common but can't speak",
     "name": "Orthrus",
     "perception": 5,
@@ -46,10 +46,10 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "15",
+    "strength": 15,
     "subtype": "",
     "survival": 3,
     "type": "monstrosity",
-    "wisdom": "12",
+    "wisdom": 12,
     "wisdom_save": 3
 }

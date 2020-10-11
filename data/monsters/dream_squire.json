@@ -18,18 +18,18 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "chain shirt",
     "athletics": 4,
-    "challenge_rating": "2",
-    "charisma": "8",
+    "challenge_rating": 2.0,
+    "charisma": 8,
     "condition_immunities": "exhaustion",
-    "constitution": "12",
-    "dexterity": "14",
+    "constitution": 12,
+    "dexterity": 14,
     "hit_dice": "13d8+13",
-    "hit_points": "71",
+    "hit_points": 71,
     "id": "dream_squire",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Umbral",
     "name": "Dream Squire",
     "perception": 2,
@@ -55,9 +55,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "15",
+    "strength": 15,
     "subtype": "",
     "type": "fey",
-    "wisdom": "10",
+    "wisdom": 10,
     "wisdom_save": 2
 }

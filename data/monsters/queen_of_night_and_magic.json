@@ -37,7 +37,7 @@
     "arcana": 12,
     "armor_class": 15,
     "armor_desc": "18 with mage armor",
-    "challenge_rating": "21",
+    "challenge_rating": 21.0,
     "charisma": 26,
     "condition_immunities": "charmed, frightened",
     "constitution": 17,

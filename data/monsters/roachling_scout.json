@@ -19,17 +19,17 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "14",
-    "challenge_rating": "2",
-    "charisma": "8",
-    "constitution": "13",
+    "armor_class": 14,
+    "challenge_rating": 2.0,
+    "charisma": 8,
+    "constitution": 13,
     "constitution_save": 3,
-    "dexterity": "18",
+    "dexterity": 18,
     "dexterity_save": 6,
     "hit_dice": "14d6+14",
-    "hit_points": "63",
+    "hit_points": 63,
     "id": "roachling_scout",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common",
     "name": "Roachling Scout",
     "perception": 6,
@@ -59,9 +59,9 @@
         "walk": 25
     },
     "stealth": 6,
-    "strength": "10",
+    "strength": 10,
     "subtype": "roachling",
     "survival": 6,
     "type": "humanoid",
-    "wisdom": "14"
+    "wisdom": 14
 }

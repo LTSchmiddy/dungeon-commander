@@ -27,20 +27,20 @@
     ],
     "alignment": "chaotic evil",
     "arcana": 2,
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "7",
+    "challenge_rating": 3.0,
+    "charisma": 7,
     "condition_immunities": "poisoned",
-    "constitution": "13",
+    "constitution": 13,
     "damage_immunities": "poison",
     "damage_resistances": "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_vulnerabilities": "radiant",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "10d8+10",
-    "hit_points": "55",
+    "hit_points": 55,
     "id": "pishacha",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Abyssal, Common, Darakhul; telepathy 60 ft.",
     "name": "Pishacha",
     "perception": 5,
@@ -56,8 +56,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "shapechanger",
     "type": "fiend",
-    "wisdom": "16"
+    "wisdom": 16
 }

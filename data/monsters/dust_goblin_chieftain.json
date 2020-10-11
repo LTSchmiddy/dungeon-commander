@@ -14,17 +14,17 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "studded leather",
-    "challenge_rating": "3",
-    "charisma": "13",
-    "constitution": "15",
-    "dexterity": "18",
+    "challenge_rating": 3.0,
+    "charisma": 13,
+    "constitution": 15,
+    "dexterity": 18,
     "dexterity_save": 7,
     "hit_dice": "8d6+16",
-    "hit_points": "44",
+    "hit_points": 44,
     "id": "dust_goblin_chieftain",
-    "intelligence": "14",
+    "intelligence": 14,
     "intelligence_save": 5,
     "intimidation": 3,
     "languages": "Common, Goblin, and one ancient language",
@@ -60,9 +60,9 @@
         "walk": 30
     },
     "stealth": 8,
-    "strength": "8",
+    "strength": 8,
     "subtype": "goblinoid",
     "survival": 3,
     "type": "humanoid",
-    "wisdom": "13"
+    "wisdom": 13
 }

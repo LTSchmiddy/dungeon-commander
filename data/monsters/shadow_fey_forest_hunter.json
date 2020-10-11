@@ -22,7 +22,7 @@
     "arcana": 3,
     "armor_class": 15,
     "armor_desc": "chain shirt",
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 16,
     "charisma_save": 6,
     "constitution": 12,

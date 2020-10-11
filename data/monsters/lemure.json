@@ -9,7 +9,7 @@
     ],
     "alignment": "lawful evil",
     "armor_class": 7,
-    "challenge_rating": "0",
+    "challenge_rating": 0.0,
     "charisma": 3,
     "condition_immunities": "charmed, frightened, poisoned",
     "constitution": 11,

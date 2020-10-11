@@ -14,10 +14,10 @@
         }
     ],
     "alignment": "chaotic",
-    "animal Handling": 4,
+    "animal_handling": 4,
     "armor_class": 17,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
+    "challenge_rating": 3.0,
     "charisma": 24,
     "constitution": 13,
     "constitution_save": 3,

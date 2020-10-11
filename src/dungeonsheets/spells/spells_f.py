@@ -246,7 +246,7 @@ class FindGreaterSteed(Spell):
     """You summon a spirit that assumes the form of a loyal, majestic mount. Appearing
     in an unoccupied space within range, the spirit takes on a form you choose: a
     griffon, a pegasus, a peryton, a dire wolf, a rhinoceros, or a saber-toothed
-    tiger. The creature has the statistics provided in the Monster Manual for the
+    tiger. The creature has the statistics provided in the Creature Manual for the
     chosen form, though it is a celestial, a fey, or a fiend (your choice) instead
     of its normal creature type. Additionally, if it has an Intelligence score of 5
     or lower, its Intelligence becomes 6, and it gains the ability to understand one

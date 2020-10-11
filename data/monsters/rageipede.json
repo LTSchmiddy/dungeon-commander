@@ -18,16 +18,16 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "2",
-    "charisma": "3",
-    "constitution": "15",
-    "dexterity": "14",
+    "challenge_rating": 2.0,
+    "charisma": 3,
+    "constitution": 15,
+    "dexterity": 14,
     "hit_dice": "10d6+20",
-    "hit_points": "55",
+    "hit_points": 55,
     "id": "rageipede",
-    "intelligence": "1",
+    "intelligence": 1,
     "languages": "-",
     "name": "Rageipede",
     "senses": "blindsight 30 ft., passive Perception 8",
@@ -47,8 +47,8 @@
         "walk": 30
     },
     "stealth": 4,
-    "strength": "15",
+    "strength": 15,
     "subtype": "",
     "type": "beast",
-    "wisdom": "7"
+    "wisdom": 7
 }

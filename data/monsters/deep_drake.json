@@ -33,7 +33,7 @@
     "armor_class": 17,
     "armor_desc": "natural armor",
     "athletics": 9,
-    "challenge_rating": "9",
+    "challenge_rating": 9.0,
     "charisma": 12,
     "condition_immunities": "paralyzed, unconscious",
     "constitution": 14,

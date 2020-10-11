@@ -25,7 +25,7 @@
     "alignment": "neutral evil",
     "armor_class": 11,
     "armor_desc": "",
-    "challenge_rating": "5",
+    "challenge_rating": 5.0,
     "charisma": 12,
     "charisma_save": 4,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, poisoned, prone",

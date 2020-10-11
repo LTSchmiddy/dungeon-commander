@@ -38,7 +38,7 @@
     "alignment": "neutral",
     "armor_class": 14,
     "armor_desc": "hide armor",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 13,
     "charisma_save": 3,
     "constitution": 16,

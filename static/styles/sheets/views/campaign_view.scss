@@ -1,3 +1,4 @@
+
 #campaign-view {
     $tab_view_size: 30px;
 
@@ -29,7 +30,7 @@
 
 
 
-    .content-field {
+    .sidebar-content-field {
         padding: 0;
 
     }
@@ -45,7 +46,6 @@
             padding-left: 5px;
             vertical-align: center;
 
-            //button.btn-primary {
             button {
                 margin: 0;
             }
@@ -62,9 +62,7 @@
             .editor-tab {
                 background-color: lightgrey;
                 height: 100%;
-                //max-height: 30px;
                 display: inline-block;
-                //max-width: 100px;
 
                 margin-left: 5px;
                 margin-top: 0;
@@ -79,18 +77,6 @@
                     height: 100%;
                     margin: 0;
                 }
-
-
-                //button.fileclose-btn {
-                //    position: relative;
-                //    left: 0;
-                //    width: 30px;
-                //}
-                //button.filename-btn {
-                //    position: relative;
-                //    bottom: 50px;
-                //    left: 30px;
-                //}
             }
 
             .editor-tab.active-tab {
@@ -101,9 +87,8 @@
 
         .editor-area {
             height: calc(100% - #{$tab_view_size});
+            max-height: calc(100% - #{$tab_view_size});
             width: 100%;
-            //background-color: red;
-
 
             .fileclose-btn {
                 background-color: #00000000;
@@ -116,9 +101,6 @@
 
             .editor-container {
                 $editor-topbar-height: 30px;
-
-                //height: 100%;
-                //min-height: 700px;
 
                 .editor-topbar {
                     min-height: $editor-topbar-height;
@@ -142,47 +124,48 @@
                 }
 
                 .editor-content{
-                    height: calc(100% - #{$editor-topbar-height});
-                    //min-height: 700px;
-
+                    height: calc(100vh - 40px - #{$tab_view_size} - #{$editor-topbar-height});
                     .jsoneditor {
-                        min-height: 700px;
+                        //min-height: 700px;
+                        height: 100%;
+                        overflow: auto;
+                        padding-bottom: 50px;
 
                         .jsoneditor-outer {
-                            height: 100%;
+
                         }
                     }
-                }
-                .char-display-view, .char-json-view {
-                    //.character-view {
-                    //    max-height: calc(100vh - 150px);
-                        height: calc(100vh - 100px);
+
+                    .char-display-view, .char-json-view {
+                        //height: calc(100vh - 100px);
+                        height: 100%;
                         overflow: auto;
-                    //}
 
-                }
-
-                .char-ace-view {
-
-                    height: calc(100vh - 45px);
-
-                    .char-ace-view-editor {
-                        position: relative;
-                        width: calc(100%);
-                        height: calc(100% - 80px);
-                        //height: calc(100% - 80px);
                     }
-                    .char-ace-view-status {
-                        position: relative;
-                        width: calc(100%);
-                        padding: 0 10px;
-                        //height: calc(100% - 80px);
+
+                    .char-json-view {
+                        //padding-bottom: 50px;
                     }
-                    .char-ace-view-status.valid {
-                        color: green;
-                    }
-                    .char-ace-view-status.invalid {
-                        color: red;
+
+                    .char-ace-view {
+                        height: calc(100vh - 45px);
+
+                        .char-ace-view-editor {
+                            position: relative;
+                            width: calc(100%);
+                            height: calc(100% - 80px);
+                        }
+                        .char-ace-view-status {
+                            position: relative;
+                            width: calc(100%);
+                            padding: 0 10px;
+                        }
+                        .char-ace-view-status.valid {
+                            color: green;
+                        }
+                        .char-ace-view-status.invalid {
+                            color: red;
+                        }
                     }
                 }
             }

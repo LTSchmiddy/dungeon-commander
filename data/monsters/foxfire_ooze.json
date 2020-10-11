@@ -12,19 +12,19 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "9",
-    "challenge_rating": "10",
-    "charisma": "1",
+    "armor_class": 9,
+    "challenge_rating": 10.0,
+    "charisma": 1,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
-    "constitution": "20",
+    "constitution": 20,
     "damage_immunities": "acid, fire, lightning",
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_vulnerabilities": "cold",
-    "dexterity": "8",
+    "dexterity": 8,
     "hit_dice": "12d10+60",
-    "hit_points": "126",
+    "hit_points": 126,
     "id": "foxfire_ooze",
-    "intelligence": "2",
+    "intelligence": 2,
     "languages": "-",
     "name": "Foxfire Ooze",
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
@@ -55,8 +55,8 @@
         "swim": 20,
         "walk": 20
     },
-    "strength": "19",
+    "strength": 19,
     "subtype": "",
     "type": "ooze",
-    "wisdom": "6"
+    "wisdom": 6
 }

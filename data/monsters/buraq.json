@@ -20,7 +20,7 @@
     "alignment": "lawful good",
     "armor_class": 17,
     "armor_desc": "",
-    "challenge_rating": "11",
+    "challenge_rating": 11.0,
     "charisma": 20,
     "charisma_save": 9,
     "condition_immunities": "charmed, exhaustion, frightened",

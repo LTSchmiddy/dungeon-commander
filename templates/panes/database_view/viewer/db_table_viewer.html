@@ -1,27 +1,104 @@
-<button class="btn-primary db-searchbutton" onclick="load_table_result()">Search</button>
+<button class="btn-primary db-searchbutton" onclick="
+    db_table_view.search_settings_page.val(1);
+    db_view_load_table_result();
+">Search</button>
 <div class="db-searchbox-container">
     <div id="db-searchbox" class="db-searchbox"></div>
-
 </div>
+<div id="db-table-search-settings-container" class="db-table-search-settings-container">
+    <label>
+        Entries per page:
+        <input
+            id="db-table-search-settings-entries"
+            type="number"
+            value="50"
+            step="1"
+            min="1"
+{#            placeholder="50"#}
+            style="
+                margin: 0 5px;
+                width: 50px;
+            "
+{#            onchange=""#}
+        />
+    </label>
+    <label>
+        Page number:
+        <input
+            id="db-table-search-settings-page"
+            type="number"
+            value="1"
+            step="1"
+            min="1"
+            placeholder="1"
+            style="
+                margin: 0 5px;
+                width: 50px;
+            "
+            onchange="
+                db_view_load_table_result();
+            "
+        />
+        of
+        <span
+            id="db-table-search-settings-page-total"
+        ></span>
+    </label>
+    <label>
+        Total Entries:
+        <span
+            id="db-table-search-settings-entries-total"
+        ></span>
+    </label>
+    <label>
+        <span
+            class="label"
+            id="db-table-search-settings-is-loading"
+        ></span>
+    </label>
+</div>
+
 <div id="table-result-area" class="table-result-area"></div>
 <script>
-    let table_result_area = $('#table-result-area');
-    let sql_search_bar = null;
+    const db_table_view = {
+        result_area: $('#table-result-area'),
+        search_settings_entries: $('#db-table-search-settings-entries'),
+        search_settings_page: $('#db-table-search-settings-page'),
+        search_settings_page_total: $('#db-table-search-settings-page-total'),
+        search_settings_entries_total: $('#db-table-search-settings-entries-total'),
+        search_settings_is_loading: $('#db-table-search-settings-is-loading'),
+        ace_sql_search_bar: null,
+        ace_sessions: {}
+    }
+    {#let db_view_table_result_area = $('#table-result-area');#}
+    {#let db_view_table_search_settings_entries = $('#db-table-search-settings-entries');#}
+    {#let db_view_table_search_settings_page = $('#db-table-search-settings-page');#}
+    {#let db_view_table_search_settings_page_total = $('#db-table-search-settings-page-total');#}
+    {#let db_view_table_search_settings_entries_total = $('#db-table-search-settings-entries-total');#}
+    {#let db_view_table_search_settings_is_loading = $('#db-table-search-settings-is-loading');#}
 
-    async function load_table_result() {
-        let table_result_content = await $.post(
+
+    {#let db_view_table_sql_search_bar = null;#}
+
+    async function db_view_load_table_result() {
+        db_table_view.search_settings_is_loading.text("Loading...");
+
+        let result = await $.post(
             "/panes/database_view/table_result",
             {
                 table_name: db_view.table,
-                search_term: sql_search_bar.getValue(),
-                is_sql: false
+                search_term: db_table_view.ace_sql_search_bar.getValue(),
+                entries: db_table_view.search_settings_entries.val(),
+                page: db_table_view.search_settings_page.val() - 1
             }
         );
-        table_result_area.html(table_result_content);
+        {#console.log(result);#}
+        db_table_view.result_area.html(result['table_html']);
+        db_table_view.search_settings_page_total.text(result['total_pages'])
+        db_table_view.search_settings_page.attr('max', result['total_pages']);
+        db_table_view.search_settings_entries_total.text(result['total_entries'])
 
-
-        {#$("#db-table-view").resizableColumns();#}
-
+        db_table_view.search_settings_is_loading.text("");
     }
 
 
@@ -52,7 +129,8 @@
         editor.commands.addCommand({
         name: "run_search",
         exec: (env, args, request) => {
-            load_table_result();
+            db_table_view.search_settings_page.val(1);
+            db_view_load_table_result();
         }});
         // disable Enter Shift-Enter keys
         editor.commands.bindKey("Enter|Shift-Enter", "run_search");
@@ -60,7 +138,7 @@
     }
 
     $(document).ready(()=>{
-       sql_search_bar = create_sql_search_bar('db-searchbox');
+       db_table_view.ace_sql_search_bar = create_sql_search_bar('db-searchbox');
     });
 
 

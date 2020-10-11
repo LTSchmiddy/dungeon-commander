@@ -18,19 +18,19 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "7",
-    "charisma": "1",
+    "challenge_rating": 7.0,
+    "charisma": 1,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
-    "constitution": "17",
+    "constitution": 17,
     "damage_immunities": "necrotic, poison, psychic",
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks not made with adamantine",
-    "dexterity": "16",
+    "dexterity": 16,
     "hit_dice": "8d8+24",
-    "hit_points": "60",
+    "hit_points": 60,
     "id": "bone_golem",
-    "intelligence": "3",
+    "intelligence": 3,
     "languages": "understands the languages of its creator but can't speak",
     "name": "Bone Golem",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -65,8 +65,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "10",
+    "strength": 10,
     "subtype": "",
     "type": "construct",
-    "wisdom": "10"
+    "wisdom": 10
 }

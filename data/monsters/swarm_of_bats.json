@@ -9,7 +9,7 @@
     ],
     "alignment": "unaligned",
     "armor_class": 12,
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 4,
     "condition_immunities": "charmed, frightened, grappled, paralyzed, petrified, prone, restrained, stunned",
     "constitution": 10,

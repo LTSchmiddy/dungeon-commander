@@ -22,7 +22,7 @@
     "arcana": 4,
     "armor_class": 17,
     "armor_desc": "studded leather",
-    "challenge_rating": "6",
+    "challenge_rating": 6.0,
     "charisma": 16,
     "charisma_save": 6,
     "constitution": 14,

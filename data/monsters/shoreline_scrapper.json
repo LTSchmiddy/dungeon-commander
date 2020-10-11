@@ -16,17 +16,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
-    "charisma": "5",
-    "constitution": "16",
+    "challenge_rating": 4.0,
+    "charisma": 5,
+    "constitution": 16,
     "constitution_save": 5,
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "11d10+33",
-    "hit_points": "93",
+    "hit_points": 93,
     "id": "shoreline_scrapper",
-    "intelligence": "3",
+    "intelligence": 3,
     "languages": "-",
     "name": "Shoreline Scrapper",
     "reactions": [
@@ -56,9 +56,9 @@
         "swim": 20,
         "walk": 30
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "survival": 2,
     "type": "beast",
-    "wisdom": "11"
+    "wisdom": 11
 }

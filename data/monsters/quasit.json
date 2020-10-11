@@ -20,7 +20,7 @@
     ],
     "alignment": "chaotic evil",
     "armor_class": 13,
-    "challenge_rating": "1",
+    "challenge_rating": 1.0,
     "charisma": 10,
     "condition_immunities": "poisoned",
     "constitution": 10,

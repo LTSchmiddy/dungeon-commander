@@ -1,4 +1,5 @@
 import os
+from math import ceil
 
 from flask import *
 from sqlalchemy import text
@@ -116,6 +117,8 @@ def race_view():
 def table_result():
     table_name = request.form.get('table_name')
     search_term = request.form.get('search_term')
+    entries = int(request.form.get('entries'))
+    page = int(request.form.get('page'))
     # is_sql = eval(request.form.get('is_sql').capitalize())
     table: Table = db.Base.metadata.tables[table_name]
 
@@ -136,9 +139,22 @@ def table_result():
     else:
         result = db.db_engine.execute(table.select())
 
+    r_list = list(result)
 
-    return render_template(
+    cut_start = min(entries * page, len(r_list)-1)
+    cut_end = min((entries * page) + entries, len(r_list)-1)
+
+
+    # return render_template(
+    r_template = render_template(
         "panes/database_view/components/db_table/table_result.html",
         table=table,
-        result=result
+        result=r_list[cut_start: cut_end]
     )
+
+    return {
+        'table_html': r_template,
+        'total_entries': len(r_list),
+        'total_pages': ceil(len(r_list) / entries),
+        'page_cut': [cut_start, cut_end]
+    }

@@ -18,16 +18,16 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "5",
-    "charisma": "16",
-    "constitution": "16",
-    "dexterity": "11",
+    "challenge_rating": 5.0,
+    "charisma": 16,
+    "constitution": 16,
+    "dexterity": 11,
     "hit_dice": "14d10+42",
-    "hit_points": "119",
+    "hit_points": 119,
     "id": "labyrinth_keeper",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Abyssal",
     "name": "Labyrinth Keeper",
     "perception": 7,
@@ -55,8 +55,8 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "12"
+    "wisdom": 12
 }

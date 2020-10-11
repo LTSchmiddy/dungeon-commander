@@ -12,16 +12,16 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "12",
-    "challenge_rating": "1/2",
-    "charisma": "13",
-    "constitution": "10",
+    "armor_class": 12,
+    "challenge_rating": 0.5,
+    "charisma": 13,
+    "constitution": 10,
     "damage_resistances": "lightning",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "5d6",
-    "hit_points": "17",
+    "hit_points": 17,
     "id": "alkonost",
-    "intelligence": "7",
+    "intelligence": 7,
     "languages": "Common",
     "name": "Alkonost",
     "senses": "darkvision 60 ft., passive Perception 12",
@@ -37,8 +37,8 @@
         "fly": 40,
         "walk": 20
     },
-    "strength": "11",
+    "strength": 11,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "14"
+    "wisdom": 14
 }

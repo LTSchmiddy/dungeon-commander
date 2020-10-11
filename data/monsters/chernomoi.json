@@ -16,7 +16,7 @@
     "alignment": "neutral",
     "armor_class": 13,
     "armor_desc": "",
-    "challenge_rating": "1",
+    "challenge_rating": 1.0,
     "charisma": 16,
     "constitution": 18,
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks not made with silver weapons",

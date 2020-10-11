@@ -10,16 +10,16 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "2",
-    "charisma": "18",
-    "constitution": "15",
-    "dexterity": "10",
+    "challenge_rating": 2.0,
+    "charisma": 18,
+    "constitution": 15,
+    "dexterity": 10,
     "hit_dice": "5d4+10",
-    "hit_points": "22",
+    "hit_points": 22,
     "id": "arcamag",
-    "intelligence": "5",
+    "intelligence": 5,
     "languages": "understands Common but can't speak",
     "name": "Arcamag",
     "senses": "darkvision 60 ft., passive Perception 11",
@@ -41,8 +41,8 @@
         "walk": 10
     },
     "stealth": 4,
-    "strength": "7",
+    "strength": 7,
     "subtype": "shapechanger",
     "type": "monstrosity",
-    "wisdom": "12"
+    "wisdom": 12
 }

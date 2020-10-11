@@ -18,20 +18,20 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "5",
-    "charisma": "15",
+    "challenge_rating": 5.0,
+    "charisma": 15,
     "condition_immunities": "exhaustion, poisoned",
-    "constitution": "16",
+    "constitution": 16,
     "constitution_save": 6,
     "damage_immunities": "necrotic, poison",
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks not made with silver",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "11d8+33",
-    "hit_points": "82",
+    "hit_points": 82,
     "id": "lord_zombie",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "the languages it knew in life",
     "legendary_actions": [
         {
@@ -62,9 +62,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "undead",
-    "wisdom": "13",
+    "wisdom": 13,
     "wisdom_save": 4
 }

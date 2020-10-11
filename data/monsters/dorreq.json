@@ -26,7 +26,7 @@
     "alignment": "neutral evil",
     "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 6,
     "constitution": 13,
     "damage_resistances": "acid, cold, lightning",

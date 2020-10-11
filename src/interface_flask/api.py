@@ -46,5 +46,11 @@ def es6_static(filename):
                                mimetype='text/javascript'
     )
 
-
-
+@api.route('/load_pdf')
+def load_pdf():
+    # path = request.args['path']
+    path = "./data/DnD_BasicRules_2018.pdf"
+    resp = Response(open(path, 'rb').read())
+    resp.headers['Content-Disposition'] = "inline; filename=%s" % path
+    resp.mimetype = 'application/pdf'
+    return resp

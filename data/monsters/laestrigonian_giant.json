@@ -24,16 +24,16 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
-    "charisma": "8",
-    "constitution": "18",
-    "dexterity": "14",
+    "challenge_rating": 4.0,
+    "charisma": 8,
+    "constitution": 18,
+    "dexterity": 14,
     "hit_dice": "10d10+40",
-    "hit_points": "95",
+    "hit_points": 95,
     "id": "laestrigonian_giant",
-    "intelligence": "9",
+    "intelligence": 9,
     "languages": "Common, Giant",
     "name": "Laestrigonian Giant",
     "senses": "passive Perception 10",
@@ -42,8 +42,8 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "20",
+    "strength": 20,
     "subtype": "",
     "type": "giant",
-    "wisdom": "11"
+    "wisdom": 11
 }

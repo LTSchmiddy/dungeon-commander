@@ -16,7 +16,7 @@
     "alignment": "neutral",
     "armor_class": 12,
     "armor_desc": "leather armor",
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 11,
     "constitution": 14,
     "damage_resistances": "poison",

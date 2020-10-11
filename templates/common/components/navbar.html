@@ -75,40 +75,39 @@
             </button>
             <div class="dropdown-menu">
                 <button class="dropdown-item" onclick="py.open_debug()">Open Debug Console</button>
+                <button class="dropdown-item" onclick="location.reload()">Reload Webview</button>
             </div>
         </li>
     </ul>
 
 
-
-    <div class="tab-container">
-        <button id="campaign-view-button" class="btn-secondary main-tab" onclick="
-            app_set_view('campaign-view');
-            py_console_run = false;
-        ">
-            <strong>Campaign</strong>
-        </button>
-        <button id="database-view-button" class="btn-secondary main-tab" onclick="
-            app_set_view('database-view');
-            py_console_run = false;
-        ">
-            <strong>Database</strong>
-        </button>
-        <button id="settings-editor-view-button" class="btn-secondary secondary-tab" onclick="
-            app_set_view('settings-editor-view');
-            py_console_run = false;
-        ">
-            <span class="fas fa-cog"></span>
-        </button>
-        <button id="python-console-view-button" class="btn-secondary secondary-tab" onclick="
-            app_set_view('python-console-view');
-            py_console_run = true;
-            if (py_console_get_auto_scroll()) {
-                py_console_scroll_to_bottom();
-            }
-        ">
-            <span class="fas fa-desktop"></span>
-        </button>
-    </div>
+    {% if window_type == 'main' %}
+        <div class="tab-container">
+            <button id="campaign-view-button" class="btn-secondary main-tab" onclick="
+                app_set_view('campaign-view');
+            ">
+                <strong>Campaign</strong>
+            </button>
+            <button id="database-view-button" class="btn-secondary main-tab" onclick="
+                app_set_view('database-view');
+            ">
+                <strong>Database</strong>
+            </button>
+            <button id="settings-editor-view-button" class="btn-secondary secondary-tab" onclick="
+                app_set_view('settings-editor-view');
+            ">
+                <span class="fas fa-cog"></span>
+            </button>
+            <button id="python-console-view-button" class="btn-secondary secondary-tab" onclick="
+                app_set_view('python-console-view');
+                py_console_update_render();
+                if (py_console_get_auto_scroll()) {
+                    py_console_scroll_to_bottom();
+                }
+            ">
+                <span class="fas fa-desktop"></span>
+            </button>
+        </div>
+    {% endif %}
 </nav>
 

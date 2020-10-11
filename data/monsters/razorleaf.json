@@ -16,19 +16,19 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "5",
-    "charisma": "10",
+    "challenge_rating": 5.0,
+    "charisma": 10,
     "condition_immunities": "blinded, deafened, exhaustion",
-    "constitution": "16",
+    "constitution": 16,
     "damage_resistances": "cold, necrotic",
     "damage_vulnerabilities": "fire",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "15d8+45",
-    "hit_points": "112",
+    "hit_points": 112,
     "id": "razorleaf",
-    "intelligence": "7",
+    "intelligence": 7,
     "languages": "-",
     "name": "Razorleaf",
     "perception": 4,
@@ -52,8 +52,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "plant",
-    "wisdom": "12"
+    "wisdom": 12
 }

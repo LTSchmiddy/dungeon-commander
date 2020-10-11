@@ -27,7 +27,7 @@ def load_spells():
     spell_list = []
 
     for i in dungeonsheets.spells.Spell.__subclasses__():
-    # for key, value in dungeonsheets.spells.__dict__.items():
+        # for key, value in dungeonsheets.spells.__dict__.items():
         if not inspect.isclass(i):
             continue
 
@@ -37,7 +37,6 @@ def load_spells():
     for i in spell_list:
         # print (i.__doc__)
         db.tables.DB_Spell.add_spell_class(i)
-
 
     db.Session.commit()
     db.Session.remove()
@@ -49,10 +48,9 @@ def _load_json_dir(read_dir: str, db_add_method: Any):
     for i in os.listdir(read_dir):
         scan_file = os.path.join(read_dir, i)
         # print(scan_file)
-        json_in = json.load(open(scan_file, 'r', encoding='utf-8'))
+        json_in = json.load(open(scan_file, "r", encoding="utf-8"))
 
         db_add_method(json_in)
-
 
 
 def load_magic_items():
@@ -72,6 +70,7 @@ def load_weapons():
     db.Session.commit()
     db.Session.remove()
 
+
 def load_reference_sections():
     read_dir = "./data/sections"
 
@@ -90,6 +89,7 @@ def load_armor():
     db.Session.commit()
     db.Session.remove()
 
+
 def load_shields():
     read_dir = "./data/shields"
 
@@ -98,28 +98,39 @@ def load_shields():
     db.Session.commit()
     db.Session.remove()
 
+def load_monsters():
+    read_dir = "./data/monsters"
+
+    _load_json_dir(read_dir, db.tables.DB_Creature.add_json)
+
+    db.Session.commit()
+    db.Session.remove()
+
+
+
 # Other Utilities:
 def dump_weapons():
     out_dir = "./data/weapons"
 
     for i in dungeonsheets.weapons.all_weapons:
         out_dict = i.to_base_dict()
-        out_path = os.path.join(out_dir, out_dict['id'] + ".json")
+        out_path = os.path.join(out_dir, out_dict["id"] + ".json")
 
         if "description" not in out_dict:
             out_dict["description"] = ""
-        out_file = open(out_path, 'w')
+        out_file = open(out_path, "w")
         json.dump(out_dict, out_file, indent=4, sort_keys=True)
         out_file.close()
+
 
 def dump_armor():
     out_dir = "./data/armor"
 
     for i in dungeonsheets.armor.all_armors + dungeonsheets.armor.armor_types:
         out_dict = i.to_base_dict()
-        out_path = os.path.join(out_dir, out_dict['id'] + ".json")
+        out_path = os.path.join(out_dir, out_dict["id"] + ".json")
 
-        out_file = open(out_path, 'w')
+        out_file = open(out_path, "w")
         json.dump(out_dict, out_file, indent=4, sort_keys=True)
         out_file.close()
 
@@ -131,12 +142,11 @@ def dump_shields():
         # print(i)
         out_dict = i.to_base_dict()
         # print(out_dict)
-        out_path = os.path.join(out_dir, out_dict['id'] + ".json")
+        out_path = os.path.join(out_dir, out_dict["id"] + ".json")
 
-        out_file = open(out_path, 'w')
+        out_file = open(out_path, "w")
         json.dump(out_dict, out_file, indent=4, sort_keys=True)
         out_file.close()
-
 
 
 def dump_magic_items():
@@ -151,11 +161,11 @@ def dump_magic_items():
     for i in db.Session.query(db.tables.DB_MagicItem).all():
         new_json: dict = i._original_json
 
-        new_json['id'] = new_json['id'].replace("_", " ").title().replace(" ", "")
-        new_json['cost'] = "0 gb"
+        new_json["id"] = new_json["id"].replace("_", " ").title().replace(" ", "")
+        new_json["cost"] = "0 gb"
 
-        out_path = os.path.join(write_dir, new_json['id'] + ".json")
-        out_file = open(out_path, 'w')
+        out_path = os.path.join(write_dir, new_json["id"] + ".json")
+        out_file = open(out_path, "w")
         json.dump(new_json, out_file, indent=4, sort_keys=True)
         out_file.close()
 
@@ -167,10 +177,14 @@ def load_all():
     load_armor()
     load_shields()
     load_reference_sections()
+    load_monsters()
 
-if __name__ == '__main__':
+
+
+if __name__ == "__main__":
     db.init()
-    dump_weapons()
-    dump_armor()
-    dump_shields()
+    # dump_weapons()
+    # dump_armor()
+    # dump_shields()
     # dump_magic_items()
+

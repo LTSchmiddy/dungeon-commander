@@ -18,16 +18,16 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/4",
-    "charisma": "6",
-    "constitution": "10",
-    "dexterity": "13",
+    "challenge_rating": 0.25,
+    "charisma": 6,
+    "constitution": 10,
+    "dexterity": 13,
     "hit_dice": "3d4",
-    "hit_points": "7",
+    "hit_points": 7,
     "id": "archaeopteryx",
-    "intelligence": "2",
+    "intelligence": 2,
     "languages": "-",
     "name": "Archaeopteryx",
     "senses": "passive Perception 12",
@@ -43,8 +43,8 @@
         "fly": 50,
         "walk": 5
     },
-    "strength": "6",
+    "strength": 6,
     "subtype": "",
     "type": "beast",
-    "wisdom": "14"
+    "wisdom": 14
 }

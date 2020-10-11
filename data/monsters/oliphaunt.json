@@ -26,17 +26,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "8",
-    "charisma": "6",
-    "constitution": "23",
-    "dexterity": "9",
+    "challenge_rating": 8.0,
+    "charisma": 6,
+    "constitution": 23,
+    "dexterity": 9,
     "dexterity_save": 2,
     "hit_dice": "9d20+54",
-    "hit_points": "148",
+    "hit_points": 148,
     "id": "oliphaunt",
-    "intelligence": "3",
+    "intelligence": 3,
     "languages": "-",
     "name": "Oliphaunt",
     "senses": "passive Perception 10",
@@ -55,8 +55,8 @@
     "speed_json": {
         "walk": 50
     },
-    "strength": "27",
+    "strength": 27,
     "subtype": "",
     "type": "beast",
-    "wisdom": "11"
+    "wisdom": 11
 }

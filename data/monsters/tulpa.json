@@ -22,19 +22,19 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "13",
-    "challenge_rating": "4",
-    "charisma": "9",
+    "armor_class": 13,
+    "challenge_rating": 4.0,
+    "charisma": 9,
     "condition_immunities": "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
-    "constitution": "14",
+    "constitution": 14,
     "damage_immunities": "cold, necrotic, poison",
     "damage_resistances": "acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
     "damage_vulnerabilities": "radiant",
-    "dexterity": "16",
+    "dexterity": 16,
     "hit_dice": "6d8+12",
-    "hit_points": "39",
+    "hit_points": 39,
     "id": "tulpa",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "the languages spoken by its creator",
     "name": "Tulpa",
     "senses": "darkvision 60 ft., passive Perception 12",
@@ -57,8 +57,8 @@
     "speed_json": {
         "hover": true
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "undead",
-    "wisdom": "14"
+    "wisdom": 14
 }

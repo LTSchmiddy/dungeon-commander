@@ -60,8 +60,11 @@ def create_files_module(api: Type[JsApi]):
     def isdir(self, *args):
         return os.path.isdir(*args)
 
+    def abspath(self, *args):
+        return os.path.abspath(*args)
+
     def file_dialog(self, *args, **kwargs):
-        result = viewport.window.create_file_dialog(*args, **kwargs)
+        result = viewport.main_window.create_file_dialog(*args, **kwargs)
         print(result)
         return result
 

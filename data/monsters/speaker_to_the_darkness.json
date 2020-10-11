@@ -26,20 +26,20 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "scale mail",
-    "challenge_rating": "5",
-    "charisma": "18",
+    "challenge_rating": 5.0,
+    "charisma": 18,
     "charisma_save": 7,
     "condition_immunities": "frightened",
-    "constitution": "18",
+    "constitution": 18,
     "damage_vulnerabilities": "radiant",
-    "dexterity": "16",
+    "dexterity": 16,
     "dexterity_save": 6,
     "hit_dice": "18d6+72",
-    "hit_points": "135",
+    "hit_points": 135,
     "id": "speaker_to_the_darkness",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Abyssal, Deep Speech, Undercommon",
     "name": "Speaker to the Darkness",
     "perception": 2,
@@ -55,8 +55,8 @@
     "speed_json": {
         "walk": 25
     },
-    "strength": "11",
+    "strength": 11,
     "subtype": "derro",
     "type": "humanoid",
-    "wisdom": "9"
+    "wisdom": 9
 }

@@ -18,7 +18,7 @@
     "alignment": "lawful evil",
     "armor_class": 13,
     "armor_desc": "armor scraps",
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 5,
     "condition_immunities": "exhaustion, poisoned",
     "constitution": 15,

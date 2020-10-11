@@ -28,7 +28,7 @@
     "armor_class": 15,
     "armor_desc": "natural armor",
     "athletics": 5,
-    "challenge_rating": "7",
+    "challenge_rating": 7.0,
     "charisma": 10,
     "condition_immunities": "charmed, poisoned, unconscious",
     "constitution": 16,

@@ -22,15 +22,15 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "12",
-    "challenge_rating": "2",
-    "charisma": "14",
-    "constitution": "11",
-    "dexterity": "15",
+    "armor_class": 12,
+    "challenge_rating": 2.0,
+    "charisma": 14,
+    "constitution": 11,
+    "dexterity": 15,
     "hit_dice": "14d6",
-    "hit_points": "49",
+    "hit_points": 49,
     "id": "kitsune",
-    "intelligence": "12",
+    "intelligence": 12,
     "languages": "Common, Sylvan",
     "name": "Kitsune",
     "perception": 4,
@@ -50,8 +50,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "8",
+    "strength": 8,
     "subtype": "shapechanger",
     "type": "fey",
-    "wisdom": "15"
+    "wisdom": 15
 }

@@ -14,20 +14,20 @@
         }
     ],
     "alignment": "lawful evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/2",
-    "charisma": "14",
+    "challenge_rating": 0.5,
+    "charisma": 14,
     "condition_immunities": "poisoned",
-    "constitution": "12",
+    "constitution": 12,
     "damage_immunities": "fire, poison",
     "damage_resistances": "cold; bludgeoning, piercing, and slashing from nonmagical attacks not made with silver",
     "deception": 3,
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "4d4+4",
-    "hit_points": "14",
+    "hit_points": 14,
     "id": "fire_imp",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Infernal",
     "name": "Fire Imp",
     "senses": "darkvision 120 ft., passive Perception 10",
@@ -56,8 +56,8 @@
         "walk": 20
     },
     "stealth": 4,
-    "strength": "5",
+    "strength": 5,
     "subtype": "devil",
     "type": "fiend",
-    "wisdom": "10"
+    "wisdom": 10
 }

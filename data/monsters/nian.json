@@ -24,18 +24,18 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
-    "charisma": "9",
+    "challenge_rating": 4.0,
+    "charisma": 9,
     "condition_immunities": "charmed, paralyzed, poisoned",
-    "constitution": "17",
+    "constitution": 17,
     "damage_immunities": "poison",
-    "dexterity": "11",
+    "dexterity": 11,
     "hit_dice": "12d10+36",
-    "hit_points": "102",
+    "hit_points": 102,
     "id": "nian",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Sylvan, telepathy 60 ft.",
     "name": "Nian",
     "senses": "truesight 60 ft., passive Perception 13",
@@ -60,8 +60,8 @@
         "swim": 30,
         "walk": 50
     },
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "16"
+    "wisdom": 16
 }

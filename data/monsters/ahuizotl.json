@@ -22,16 +22,16 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "2",
-    "charisma": "6",
-    "constitution": "14",
-    "dexterity": "15",
+    "challenge_rating": 2.0,
+    "charisma": 6,
+    "constitution": 14,
+    "dexterity": 15,
     "hit_dice": "13d6+26",
-    "hit_points": "71",
+    "hit_points": 71,
     "id": "ahuizotl",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "-",
     "name": "Ahuizotl",
     "perception": 3,
@@ -52,8 +52,8 @@
         "swim": 30,
         "walk": 30
     },
-    "strength": "16",
+    "strength": 16,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "12"
+    "wisdom": 12
 }

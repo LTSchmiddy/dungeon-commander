@@ -12,17 +12,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "14",
-    "challenge_rating": "4",
-    "charisma": "8",
+    "armor_class": 14,
+    "challenge_rating": 4.0,
+    "charisma": 8,
     "condition_immunities": "blinded, charmed, deafened, frightened, prone",
-    "constitution": "16",
+    "constitution": 16,
     "damage_resistances": "bludgeoning, piercing, and slashing from magical weapons",
-    "dexterity": "18",
+    "dexterity": 18,
     "hit_dice": "8d8+24",
-    "hit_points": "60",
+    "hit_points": 60,
     "id": "arcanaphage",
-    "intelligence": "2",
+    "intelligence": 2,
     "languages": "-",
     "name": "Arcanaphage",
     "perception": 2,
@@ -58,8 +58,8 @@
         "hover": true,
         "walk": 0
     },
-    "strength": "10",
+    "strength": 10,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "10"
+    "wisdom": 10
 }

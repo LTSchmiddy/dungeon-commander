@@ -24,7 +24,7 @@
     "armor_class": 17,
     "armor_desc": "natural armor",
     "athletics": 12,
-    "challenge_rating": "7",
+    "challenge_rating": 7.0,
     "charisma": 9,
     "condition_immunities": "",
     "constitution": 20,

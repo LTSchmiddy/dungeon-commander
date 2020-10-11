@@ -9,7 +9,7 @@
     "alignment": "chaotic neutral",
     "armor_class": 16,
     "armor_desc": "natural armor",
-    "challenge_rating": "7",
+    "challenge_rating": 7.0,
     "charisma": 17,
     "condition_immunities": "exhaustion, grappled, paralyzed, poisoned, prone, restrained, unconscious",
     "constitution": 18,

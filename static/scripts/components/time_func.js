@@ -1,6 +1,6 @@
 'use strict';
 
-console.log("Time Loaded");
+// console.log("Time Loaded");
 
 const time_data = {
     display_max_weeks: 4,

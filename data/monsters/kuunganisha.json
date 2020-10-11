@@ -22,19 +22,19 @@
         }
     ],
     "alignment": "any evil",
-    "armor_class": "13",
-    "challenge_rating": "2",
-    "charisma": "13",
+    "armor_class": 13,
+    "challenge_rating": 2.0,
+    "charisma": 13,
     "condition_immunities": "poisoned",
-    "constitution": "11",
+    "constitution": 11,
     "damage_immunities": "poison",
     "damage_resistances": "fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks not made with silver",
-    "dexterity": "17",
+    "dexterity": 17,
     "hit_dice": "5d6",
-    "hit_points": "17",
+    "hit_points": 17,
     "id": "kuunganisha",
     "insight": 3,
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Abyssal, Common, Infernal",
     "name": "Kuunganisha",
     "senses": "darkvision 120 ft., passive Perception 11",
@@ -63,8 +63,8 @@
         "walk": 20
     },
     "stealth": 5,
-    "strength": "6",
+    "strength": 6,
     "subtype": "",
     "type": "fiend",
-    "wisdom": "12"
+    "wisdom": 12
 }

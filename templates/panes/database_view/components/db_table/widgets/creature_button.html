@@ -1,0 +1,9 @@
+<button
+        title="Spawn {{ i[1] }}"
+        class="btn-outline-secondary"
+        style="display: inline-block; margin-right: 10px"
+        onclick="
+            py.campaign.creature.spawn_creature('{{ i[0] }}')
+            .then(()=>{campaign_view_update_loaded_creatures();});
+        "
+>+</button>

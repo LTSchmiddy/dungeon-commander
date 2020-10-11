@@ -24,17 +24,17 @@
         }
     ],
     "alignment": "lawful evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "in humanoid form, 14 (natural armor) in bat or hybrid form",
-    "challenge_rating": "3",
-    "charisma": "9",
-    "constitution": "12",
+    "challenge_rating": 3.0,
+    "charisma": 9,
+    "constitution": 12,
     "damage_immunities": "bludgeoning, piercing, and slashing from nonmagical attacks not made with silver",
-    "dexterity": "16",
+    "dexterity": 16,
     "hit_dice": "12d8+12",
-    "hit_points": "66",
+    "hit_points": 66,
     "id": "werebat",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common (can't speak in bat form)",
     "name": "Werebat",
     "perception": 3,
@@ -64,8 +64,8 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "12",
+    "strength": 12,
     "subtype": "human, shapechanger",
     "type": "humanoid",
-    "wisdom": "12"
+    "wisdom": 12
 }

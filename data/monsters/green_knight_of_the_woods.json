@@ -24,21 +24,21 @@
         }
     ],
     "alignment": "lawful neutral",
-    "armor_class": "20",
+    "armor_class": 20,
     "armor_desc": "plate, shield",
     "athletics": 7,
-    "challenge_rating": "6",
-    "charisma": "16",
+    "challenge_rating": 6.0,
+    "charisma": 16,
     "condition_immunities": "charmed, frightened",
-    "constitution": "14",
+    "constitution": 14,
     "constitution_save": 5,
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks not made with cold iron",
-    "dexterity": "10",
+    "dexterity": 10,
     "dexterity_save": 3,
     "hit_dice": "12d8+24",
-    "hit_points": "78",
+    "hit_points": 78,
     "id": "green_knight_of_the_woods",
-    "intelligence": "10",
+    "intelligence": 10,
     "intimidation": 6,
     "languages": "Common, Elvish, Sylvan",
     "name": "Green Knight of the Woods",
@@ -72,9 +72,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "survival": 4,
     "type": "fey",
-    "wisdom": "12"
+    "wisdom": 12
 }

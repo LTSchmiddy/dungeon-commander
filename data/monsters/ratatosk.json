@@ -15,7 +15,7 @@
     "alignment": "chaotic neutral",
     "armor_class": 14,
     "armor_desc": "",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 18,
     "charisma_save": 4,
     "constitution": 12,

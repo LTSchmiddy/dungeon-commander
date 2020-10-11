@@ -5,6 +5,14 @@ from sqlalchemy.orm import sessionmaker, scoped_session
 
 import settings
 
+db_type_conversions = {
+    bool: Boolean,
+    int: Integer,
+    float: Float,
+    str: String,
+    list: JSON,
+    dict: JSON,
+}
 
 # engine = create_engine('sqlite:///library.db', echo=True)
 

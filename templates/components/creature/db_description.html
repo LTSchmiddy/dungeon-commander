@@ -1,0 +1,6 @@
+{% set creature = db.tables.DB_Creature.make_instance_from_id(i[0]) %}
+<div></div>
+<pre>
+    {{ creature.save_json_string() }}
+</pre>
+

@@ -13,17 +13,17 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "15",
-    "challenge_rating": "5",
-    "charisma": "14",
-    "constitution": "15",
+    "armor_class": 15,
+    "challenge_rating": 5.0,
+    "charisma": 14,
+    "constitution": 15,
     "damage_immunities": "lightning",
-    "dexterity": "21",
+    "dexterity": 21,
     "dexterity_save": 8,
     "hit_dice": "10d6+20",
-    "hit_points": "55",
+    "hit_points": 55,
     "id": "xiphus",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Elvish, Umbral",
     "name": "Xiphus",
     "perception": 4,
@@ -58,8 +58,8 @@
         "walk": 50
     },
     "stealth": 8,
-    "strength": "14",
+    "strength": 14,
     "subtype": "",
     "type": "fey",
-    "wisdom": "12"
+    "wisdom": 12
 }

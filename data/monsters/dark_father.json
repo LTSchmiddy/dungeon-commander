@@ -10,19 +10,19 @@
         }
     ],
     "alignment": "lawful neutral",
-    "armor_class": "18",
+    "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
-    "charisma": "8",
+    "challenge_rating": 4.0,
+    "charisma": 8,
     "condition_immunities": "exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
-    "constitution": "15",
+    "constitution": 15,
     "damage_immunities": "necrotic, poison",
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "10d8+18",
-    "hit_points": "65",
+    "hit_points": 65,
     "id": "dark_father",
-    "intelligence": "8",
+    "intelligence": 8,
     "languages": "the languages it knew in life",
     "name": "Dark Father",
     "reactions": [
@@ -54,8 +54,8 @@
         "walk": 40
     },
     "stealth": 4,
-    "strength": "6",
+    "strength": 6,
     "subtype": "",
     "type": "undead",
-    "wisdom": "14"
+    "wisdom": 14
 }

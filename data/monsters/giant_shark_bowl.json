@@ -22,18 +22,18 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "6",
-    "challenge_rating": "8",
-    "charisma": "5",
+    "armor_class": 6,
+    "challenge_rating": 8.0,
+    "charisma": 5,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
-    "constitution": "20",
+    "constitution": 20,
     "damage_immunities": "lightning",
     "damage_resistances": "acid, fire, slashing",
-    "dexterity": "3",
+    "dexterity": 3,
     "hit_dice": "15d12+75",
-    "hit_points": "172",
+    "hit_points": 172,
     "id": "giant_shark_bowl",
-    "intelligence": "1",
+    "intelligence": 1,
     "languages": "-",
     "name": "Giant Shark Bowl",
     "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 10",
@@ -65,8 +65,8 @@
         "swim": 20,
         "walk": 20
     },
-    "strength": "23",
+    "strength": 23,
     "subtype": "",
     "type": "ooze",
-    "wisdom": "10"
+    "wisdom": 10
 }

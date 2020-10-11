@@ -27,7 +27,7 @@
     "arcana": 4,
     "armor_class": 14,
     "armor_desc": "",
-    "challenge_rating": "1",
+    "challenge_rating": 1.0,
     "charisma": 16,
     "condition_immunities": "blinded, deafened, exhausted, paralyzed, petrified, poisoned, prone, unconscious",
     "constitution": 14,

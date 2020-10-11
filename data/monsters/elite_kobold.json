@@ -22,16 +22,16 @@
         }
     ],
     "alignment": "lawful neutral",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "leather armor",
-    "challenge_rating": "1",
-    "charisma": "10",
-    "constitution": "14",
-    "dexterity": "17",
+    "challenge_rating": 1.0,
+    "charisma": 10,
+    "constitution": 14,
+    "dexterity": 17,
     "hit_dice": "4d8+8",
-    "hit_points": "26",
+    "hit_points": 26,
     "id": "elite_kobold",
-    "intelligence": "12",
+    "intelligence": 12,
     "languages": "Common, Draconic",
     "name": "Elite Kobold",
     "perception": 4,
@@ -56,8 +56,8 @@
         "walk": 30
     },
     "stealth": 5,
-    "strength": "10",
+    "strength": 10,
     "subtype": "kobold",
     "type": "humanoid",
-    "wisdom": "14"
+    "wisdom": 14
 }

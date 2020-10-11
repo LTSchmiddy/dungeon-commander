@@ -18,19 +18,19 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "20",
+    "armor_class": 20,
     "armor_desc": "natural armor",
     "athletics": 8,
-    "challenge_rating": "6",
-    "charisma": "6",
-    "constitution": "19",
+    "challenge_rating": 6.0,
+    "charisma": 6,
+    "constitution": 19,
     "constitution_save": 7,
-    "dexterity": "8",
+    "dexterity": 8,
     "dexterity_save": 2,
     "hit_dice": "12d12+48",
-    "hit_points": "126",
+    "hit_points": 126,
     "id": "haunted_giant",
-    "intelligence": "5",
+    "intelligence": 5,
     "languages": "Giant",
     "name": "Haunted Giant",
     "perception": 2,
@@ -58,9 +58,9 @@
     "speed_json": {
         "walk": 40
     },
-    "strength": "21",
+    "strength": 21,
     "subtype": "",
     "type": "giant",
-    "wisdom": "9",
+    "wisdom": 9,
     "wisdom_save": 2
 }

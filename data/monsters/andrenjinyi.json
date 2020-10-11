@@ -37,7 +37,7 @@
     "arcana": 5,
     "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "15",
+    "challenge_rating": 15.0,
     "charisma": 23,
     "charisma_save": 11,
     "constitution": 25,

@@ -27,7 +27,7 @@
     "alignment": "any alignment",
     "armor_class": 18,
     "armor_desc": "plate",
-    "challenge_rating": "3",
+    "challenge_rating": 3.0,
     "charisma": 15,
     "condition_immunities": "",
     "constitution": 14,

@@ -7,7 +7,7 @@ from dungeonsheets.stats import Ability
 
 class Monster():
     """A monster that may be encountered when adventuring."""
-    name = "Generic Monster"
+    name = "Generic Creature"
     description = ""
     challenge_rating = 0
     armor_class = 0

@@ -27,18 +27,24 @@ def get_character(id: int):
     # print(char.weapon_list)
     return render_template("components/character/character_view.html", char=char)
 
-# Campaign View Panes
-@campaign_view.route('/extract_dir_listing', methods=['GET', 'POST'])
-def campaign_view__extract_dir_listing():
-    if len(os.listdir(game.current.dir_path)) == 0:
-        return f"ERROR: campaign directory '{game.current.dir_path}' is empty"
-
-    return render_template("panes/campaign_view/components/extract_dir_listing.html", dir_list = game.current.get_dir_tree(), dir_name=game.current.name)
+# # Campaign View Panes
+# @campaign_view.route('/extract_dir_listing', methods=['GET', 'POST'])
+# def campaign_view__extract_dir_listing():
+#     if len(os.listdir(game.current.dir_path)) == 0:
+#         return f"ERROR: campaign directory '{game.current.dir_path}' is empty"
+#
+#     return render_template("panes/campaign_view/components/extract_dir_listing.html", dir_list = game.current.get_dir_tree(), dir_name=game.current.name)
 
 @campaign_view.route('/loaded_character_listing')
 def campaign_view__loaded_character_listing():
     return render_template("panes/campaign_view/components/loaded_character_listing.html",
                            characters=game.current.loaded_chars)
+
+@campaign_view.route('/loaded_creature_listing')
+def campaign_view__loaded_creature_listing():
+    return render_template("panes/campaign_view/components/loaded_creature_listing.html",
+                           creatures=game.current.loaded_creatures)
+
 
 @campaign_view.route('/components/editor_tab', methods=['GET', 'POST'])
 def campaign_view__editor_tab():
@@ -49,7 +55,16 @@ def campaign_view__editor_tab():
 
 
 
+
+
 # Editor Types:
+@campaign_view.route('/editors/generic_editor', methods=['GET', 'POST'])
+def mod_editor__generic_editor():
+    name = request.form.get('name')
+    path = request.form.get('path')
+    return render_template("panes/campaign_view/editors/generic_file_type_editor.html", name=name, path=path)
+
+
 @campaign_view.route('/editors/json_editor', methods=['GET', 'POST'])
 def mod_editor__json_editor():
     name = request.form.get('name')
@@ -60,6 +75,6 @@ def mod_editor__json_editor():
 @campaign_view.route('/editors/character_editor', methods=['GET', 'POST'])
 def mod_editor__character_editor():
     name = request.form.get('name')
-    id_var = request.form.get('id')
+    id_var = request.form.get('path')
 
     return render_template("panes/campaign_view/editors/character_editor.html", name=name, path=id_var)

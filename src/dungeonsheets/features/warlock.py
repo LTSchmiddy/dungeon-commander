@@ -1093,7 +1093,7 @@ class AccursedSpecter(Feature):
     """Starting at 6th level, you can curse the soul of a person you slay,
     temporarily binding it to your service. When you slay a humanoid, you can
     cause its Spirit to rise from its corpse as a specter, the statistics for
-    which are in the Monster Manual. When the specter appears, it gains
+    which are in the Creature Manual. When the specter appears, it gains
     temporary hit points equal to halfyour warlock level. Roll initiative for
     the specter, which has its own turns. It obeys your verbal commands, and it
     gains a special bonus to its attack rolls equal to your Charisma modifier

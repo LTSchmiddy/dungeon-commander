@@ -12,18 +12,18 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "6",
+    "challenge_rating": 3.0,
+    "charisma": 6,
     "condition_immunities": "poisoned",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "poison",
-    "dexterity": "10",
+    "dexterity": 10,
     "hit_dice": "10d10+30",
-    "hit_points": "85",
+    "hit_points": 85,
     "id": "ghoulsteed",
-    "intelligence": "6",
+    "intelligence": 6,
     "languages": "Common, Darakhul",
     "name": "Ghoulsteed",
     "perception": 2,
@@ -47,8 +47,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "undead",
-    "wisdom": "10"
+    "wisdom": 10
 }

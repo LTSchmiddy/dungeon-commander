@@ -67,9 +67,10 @@ def get_blank_addr():
     # return f"http://{address}:{port}/blank"
 
 def get_main_addr():
-    return f"http://{address}:{port}/"
-    # return f"http://{address}:{port}/blank"
+    return f"http://{address}:{port}/pages/main"
 
+def get_addr(path: str):
+    return f"http://{address}:{port}/{path}"
 
 class ServerThread(threading.Thread):
 

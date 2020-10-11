@@ -12,17 +12,17 @@
         }
     ],
     "alignment": "neutral",
-    "armor_class": "11",
-    "challenge_rating": "1/2",
-    "charisma": "2",
+    "armor_class": 11,
+    "challenge_rating": 0.5,
+    "charisma": 2,
     "condition_immunities": "prone",
-    "constitution": "14",
+    "constitution": 14,
     "damage_resistances": "acid",
-    "dexterity": "12",
+    "dexterity": 12,
     "hit_dice": "4d6+8",
-    "hit_points": "22",
+    "hit_points": 22,
     "id": "boot_grabber",
-    "intelligence": "4",
+    "intelligence": 4,
     "languages": "understands Void Speech but can't speak",
     "name": "Boot Grabber",
     "perception": 3,
@@ -47,8 +47,8 @@
         "walk": 20
     },
     "stealth": 3,
-    "strength": "17",
+    "strength": 17,
     "subtype": "",
     "type": "aberration",
-    "wisdom": "12"
+    "wisdom": 12
 }

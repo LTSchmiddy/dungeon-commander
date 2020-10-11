@@ -16,7 +16,7 @@
     "arcana": 7,
     "armor_class": 17,
     "armor_desc": "",
-    "challenge_rating": "8",
+    "challenge_rating": 8.0,
     "charisma": 12,
     "charisma_save": 4,
     "condition_immunities": "blinded, charmed, exhaustion (see Lightform special ability), grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",

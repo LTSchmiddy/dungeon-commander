@@ -22,16 +22,16 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "natural armor",
-    "challenge_rating": "2",
-    "charisma": "10",
-    "constitution": "14",
-    "dexterity": "14",
+    "challenge_rating": 2.0,
+    "charisma": 10,
+    "constitution": 14,
+    "dexterity": 14,
     "hit_dice": "12d8+24",
-    "hit_points": "78",
+    "hit_points": 78,
     "id": "lou_carcolh",
-    "intelligence": "3",
+    "intelligence": 3,
     "languages": "-",
     "name": "Lou Carcolh",
     "perception": 2,
@@ -54,8 +54,8 @@
         "walk": 30
     },
     "stealth": 6,
-    "strength": "15",
+    "strength": 15,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "10"
+    "wisdom": 10
 }

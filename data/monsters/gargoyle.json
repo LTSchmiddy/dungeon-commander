@@ -23,7 +23,7 @@
     "alignment": "chaotic evil",
     "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "2",
+    "challenge_rating": 2.0,
     "charisma": 7,
     "condition_immunities": "exhaustion, petrified, poisoned",
     "constitution": 16,

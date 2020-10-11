@@ -22,21 +22,21 @@
         }
     ],
     "alignment": "any evil alignment",
-    "armor_class": "17",
+    "armor_class": 17,
     "armor_desc": "natural armor",
-    "challenge_rating": "15",
-    "charisma": "20",
+    "challenge_rating": 15.0,
+    "charisma": 20,
     "condition_immunities": "charmed, frightened, paralyzed, poisoned",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "poison; bludgeoning, piercing and slashing from nonmagical attacks",
     "damage_resistances": "cold, fire, necrotic",
     "deception": 10,
-    "dexterity": "16",
+    "dexterity": 16,
     "dexterity_save": 8,
     "hit_dice": "26d8+78",
-    "hit_points": "195",
+    "hit_points": 195,
     "id": "pact_lich",
-    "intelligence": "16",
+    "intelligence": 16,
     "intelligence_save": 8,
     "languages": "any languages it knew in life",
     "legendary_actions": [
@@ -88,8 +88,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "11",
+    "strength": 11,
     "subtype": "",
     "type": "undead",
-    "wisdom": "14"
+    "wisdom": 14
 }

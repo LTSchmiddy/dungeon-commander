@@ -17,7 +17,7 @@
     "arcana": 2,
     "armor_class": 15,
     "armor_desc": "chain shirt",
-    "challenge_rating": "1/4",
+    "challenge_rating": 0.25,
     "charisma": 13,
     "constitution": 10,
     "dexterity": 14,

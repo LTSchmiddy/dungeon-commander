@@ -11,7 +11,7 @@
     "arcana": 18,
     "armor_class": 17,
     "armor_desc": "natural armor",
-    "challenge_rating": "21",
+    "challenge_rating": 21.0,
     "charisma": 16,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
     "constitution": 16,

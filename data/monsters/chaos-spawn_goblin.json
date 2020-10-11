@@ -16,18 +16,18 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "1/2",
-    "charisma": "6",
+    "challenge_rating": 0.5,
+    "charisma": 6,
     "condition_immunities": "frightened",
-    "constitution": "12",
+    "constitution": 12,
     "damage_resistances": "psychic",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "5d6+5",
-    "hit_points": "22",
+    "hit_points": 22,
     "id": "chaos-spawn_goblin",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "telepathy 120 ft.",
     "name": "Chaos-Spawn Goblin",
     "senses": "darkvision 60 ft., passive Perception 10",
@@ -43,8 +43,8 @@
         "walk": 30
     },
     "stealth": 6,
-    "strength": "10",
+    "strength": 10,
     "subtype": "goblinoid",
     "type": "humanoid",
-    "wisdom": "10"
+    "wisdom": 10
 }

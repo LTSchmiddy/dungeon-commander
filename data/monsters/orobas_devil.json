@@ -29,7 +29,7 @@
     "alignment": "lawful evil",
     "armor_class": 19,
     "armor_desc": "natural armor",
-    "challenge_rating": "14",
+    "challenge_rating": 14.0,
     "charisma": 21,
     "condition_immunities": "poisoned",
     "constitution": 28,

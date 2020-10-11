@@ -10,7 +10,7 @@
     "alignment": "neutral",
     "armor_class": 13,
     "armor_desc": "",
-    "challenge_rating": "1/8",
+    "challenge_rating": 0.125,
     "charisma": 6,
     "constitution": 11,
     "dexterity": 17,

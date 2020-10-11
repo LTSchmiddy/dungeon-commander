@@ -16,19 +16,19 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "chain mail",
-    "challenge_rating": "9",
-    "charisma": "8",
+    "challenge_rating": 9.0,
+    "charisma": 8,
     "condition_immunities": "charmed, exhaustion, paralyzed, petrified, poisoned",
-    "constitution": "20",
+    "constitution": 20,
     "damage_immunities": "necrotic, poison",
     "damage_resistances": "bludgeoning, piercing, and slashing from nonmagical attacks not made with silver",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "15d8+75",
-    "hit_points": "142",
+    "hit_points": 142,
     "id": "monarch_skeleton",
-    "intelligence": "12",
+    "intelligence": 12,
     "languages": "the languages it knew in life",
     "name": "Monarch Skeleton",
     "senses": "darkvision 120 ft., passive Perception 12",
@@ -51,9 +51,9 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "21",
+    "strength": 21,
     "subtype": "",
     "type": "undead",
-    "wisdom": "14",
+    "wisdom": 14,
     "wisdom_save": 6
 }

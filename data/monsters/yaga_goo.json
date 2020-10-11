@@ -16,17 +16,17 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "14",
-    "challenge_rating": "5",
-    "charisma": "11",
+    "armor_class": 14,
+    "challenge_rating": 5.0,
+    "charisma": 11,
     "condition_immunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
-    "constitution": "20",
+    "constitution": 20,
     "damage_immunities": "necrotic",
-    "dexterity": "18",
+    "dexterity": 18,
     "hit_dice": "10d6+50",
-    "hit_points": "85",
+    "hit_points": 85,
     "id": "yaga_goo",
-    "intelligence": "14",
+    "intelligence": 14,
     "languages": "understands Common but can't speak",
     "name": "Yaga Goo",
     "reactions": [
@@ -57,9 +57,9 @@
         "walk": 20
     },
     "stealth": 10,
-    "strength": "11",
+    "strength": 11,
     "subtype": "",
     "type": "ooze",
-    "wisdom": "12",
+    "wisdom": 12,
     "wisdom_save": 4
 }

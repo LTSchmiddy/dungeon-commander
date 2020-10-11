@@ -38,7 +38,7 @@
     "armor_class": 18,
     "armor_desc": "natural armor",
     "athletics": 13,
-    "challenge_rating": "14",
+    "challenge_rating": 14.0,
     "charisma": 20,
     "charisma_save": 10,
     "condition_immunities": "charmed",

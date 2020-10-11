@@ -24,17 +24,17 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "13",
+    "armor_class": 13,
     "armor_desc": "leather armor",
-    "challenge_rating": "1",
-    "charisma": "15",
-    "constitution": "11",
+    "challenge_rating": 1.0,
+    "charisma": 15,
+    "constitution": 11,
     "deception": 6,
-    "dexterity": "15",
+    "dexterity": 15,
     "hit_dice": "8d8",
-    "hit_points": "36",
+    "hit_points": 36,
     "id": "serpentine_lamia",
-    "intelligence": "8",
+    "intelligence": 8,
     "intimidation": 6,
     "languages": "Abyssal, Common",
     "name": "Serpentine Lamia",
@@ -60,8 +60,8 @@
         "swim": 20,
         "walk": 30
     },
-    "strength": "12",
+    "strength": 12,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "13"
+    "wisdom": 13
 }

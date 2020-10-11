@@ -20,7 +20,7 @@
     "alignment": "neutral evil",
     "armor_class": 12,
     "armor_desc": "",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 14,
     "condition_immunities": "charmed, exhaustion, frightened, poisoned",
     "constitution": 17,

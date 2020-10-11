@@ -18,17 +18,17 @@
         }
     ],
     "alignment": "chaotic evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "6",
-    "charisma": "7",
-    "constitution": "20",
+    "challenge_rating": 6.0,
+    "charisma": 7,
+    "constitution": 20,
     "damage_immunities": "fire",
-    "dexterity": "13",
+    "dexterity": 13,
     "hit_dice": "10d10+50",
-    "hit_points": "105",
+    "hit_points": 105,
     "id": "desert_troll",
-    "intelligence": "9",
+    "intelligence": 9,
     "languages": "Common, Giant",
     "name": "Desert Troll",
     "perception": 4,
@@ -62,8 +62,8 @@
         "walk": 30
     },
     "stealth": 4,
-    "strength": "20",
+    "strength": 20,
     "subtype": "",
     "type": "giant",
-    "wisdom": "12"
+    "wisdom": 12
 }

@@ -2,7 +2,7 @@ import math
 import warnings
 from collections import defaultdict
 
-from dungeonsheets import exceptions, features, monsters, weapons
+from dungeonsheets import exceptions, features, creatures, weapons
 from dungeonsheets.classes.classes import CharClass, SubClass
 from dungeonsheets.stats import findattr
 
@@ -257,13 +257,13 @@ class Druid(CharClass):
         actual_shapes = []
         # Retrieve the actual monster classes if possible
         for shape in new_shapes:
-            if isinstance(shape, monsters.Monster):
+            if isinstance(shape, creatures.Creature):
                 # Already a monster shape so just add it as is
                 new_shape = shape
             else:
                 # Not already a monster so see if we can find one
                 try:
-                    NewMonster = findattr(monsters, shape)
+                    NewMonster = findattr(creatures, shape)
                     new_shape = NewMonster()
                 except AttributeError:
                     msg = f'Wild shape "{shape}" not found. Please add it to ``monsters.py``'
@@ -272,7 +272,7 @@ class Druid(CharClass):
         # Save the updated list for later
         self._wild_shapes = actual_shapes
 
-    def can_assume_shape(self, shape: monsters.Monster)-> bool:
+    def can_assume_shape(self, shape: creatures.Creature)-> bool:
         """Determine if a given shape meets the requirements for transforming.
 
         See Pg 66 of player's handbook.

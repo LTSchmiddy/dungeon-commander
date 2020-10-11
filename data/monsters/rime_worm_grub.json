@@ -21,7 +21,7 @@
     "alignment": "neutral",
     "armor_class": 13,
     "armor_desc": "natural armor",
-    "challenge_rating": "1",
+    "challenge_rating": 1.0,
     "charisma": 3,
     "constitution": 16,
     "constitution_save": 5,

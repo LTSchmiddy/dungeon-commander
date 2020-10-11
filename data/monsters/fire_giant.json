@@ -24,7 +24,7 @@
     "armor_class": 18,
     "armor_desc": "plate",
     "athletics": 11,
-    "challenge_rating": "9",
+    "challenge_rating": 9.0,
     "charisma": 13,
     "charisma_save": 5,
     "condition_immunities": "",

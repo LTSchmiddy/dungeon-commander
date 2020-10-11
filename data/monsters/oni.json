@@ -29,7 +29,7 @@
     "arcana": 5,
     "armor_class": 16,
     "armor_desc": "chain mail",
-    "challenge_rating": "7",
+    "challenge_rating": 7.0,
     "charisma": 15,
     "charisma_save": 5,
     "condition_immunities": "",

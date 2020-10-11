@@ -12,17 +12,17 @@
         }
     ],
     "alignment": "unaligned",
-    "armor_class": "8",
-    "challenge_rating": "1/2",
-    "charisma": "12",
+    "armor_class": 8,
+    "challenge_rating": 0.5,
+    "charisma": 12,
     "condition_immunities": "exhaustion, poisoned",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "poison",
-    "dexterity": "6",
+    "dexterity": 6,
     "hit_dice": "4d4+12",
-    "hit_points": "22",
+    "hit_points": 22,
     "id": "mandrake",
-    "intelligence": "1",
+    "intelligence": 1,
     "languages": "-",
     "name": "Mandrake",
     "senses": "tremorsense 60 ft. (blind beyond this radius), passive Perception 9",
@@ -31,8 +31,8 @@
     "speed_json": {
         "walk": 5
     },
-    "strength": "10",
+    "strength": 10,
     "subtype": "",
     "type": "plant",
-    "wisdom": "9"
+    "wisdom": 9
 }

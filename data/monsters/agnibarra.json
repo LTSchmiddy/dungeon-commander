@@ -14,17 +14,17 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "12",
-    "challenge_rating": "1",
-    "charisma": "12",
-    "constitution": "16",
+    "armor_class": 12,
+    "challenge_rating": 1.0,
+    "charisma": 12,
+    "constitution": 16,
     "damage_immunities": "fire",
     "damage_vulnerabilities": "cold",
-    "dexterity": "14",
+    "dexterity": 14,
     "hit_dice": "6d6+18",
-    "hit_points": "39",
+    "hit_points": 39,
     "id": "agnibarra",
-    "intelligence": "8",
+    "intelligence": 8,
     "languages": "Common, Ignan",
     "name": "Agnibarra",
     "senses": "passive Perception 10",
@@ -43,8 +43,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "12",
+    "strength": 12,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "10"
+    "wisdom": 10
 }

@@ -22,16 +22,16 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "16",
+    "armor_class": 16,
     "armor_desc": "chain mail",
-    "challenge_rating": "5",
-    "charisma": "18",
-    "constitution": "15",
-    "dexterity": "10",
+    "challenge_rating": 5.0,
+    "charisma": 18,
+    "constitution": 15,
+    "dexterity": 10,
     "hit_dice": "14d8+28",
-    "hit_points": "91",
+    "hit_points": 91,
     "id": "dark_voice",
-    "intelligence": "11",
+    "intelligence": 11,
     "intimidation": 7,
     "languages": "Common, Umbral",
     "name": "Dark Voice",
@@ -56,8 +56,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "dark folk",
     "type": "humanoid",
-    "wisdom": "16"
+    "wisdom": 16
 }

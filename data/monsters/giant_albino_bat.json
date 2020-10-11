@@ -18,16 +18,16 @@
         }
     ],
     "alignment": "neutral evil",
-    "armor_class": "15",
+    "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "3",
-    "charisma": "6",
-    "constitution": "15",
-    "dexterity": "16",
+    "challenge_rating": 3.0,
+    "charisma": 6,
+    "constitution": 15,
+    "dexterity": 16,
     "hit_dice": "9d12+18",
-    "hit_points": "76",
+    "hit_points": 76,
     "id": "giant_albino_bat",
-    "intelligence": "7",
+    "intelligence": 7,
     "languages": "Abyssal, understands Common but can't speak it",
     "name": "Giant Albino Bat",
     "senses": "blindsight 60 ft., passive Perception 11",
@@ -47,8 +47,8 @@
         "fly": 80,
         "walk": 10
     },
-    "strength": "19",
+    "strength": 19,
     "subtype": "",
     "type": "monstrosity",
-    "wisdom": "14"
+    "wisdom": 14
 }

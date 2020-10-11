@@ -592,7 +592,7 @@ class SpectralDefense(Feature):
     source = "Ranger (Horizon Walker)"
 
 
-# Monster Slayer
+# Creature Slayer
 class HuntersSense(Feature):
     """At 3rd level, you gain the ability to peer at a creature and magically
     discern how best to hurt it. As an action, choose one creature you can see
@@ -605,7 +605,7 @@ class HuntersSense(Feature):
 
     """
     _name = "Hunter's Sense"
-    source = "Ranger (Monster Slayer)"
+    source = "Ranger (Creature Slayer)"
 
     @property
     def name(self):
@@ -623,7 +623,7 @@ class SlayersPrey(Feature):
 
     """
     name = "Slayer's Prey"
-    source = "Ranger (Monster Slayer)"
+    source = "Ranger (Creature Slayer)"
 
 
 class SupernaturalDefense(Feature):
@@ -634,7 +634,7 @@ class SupernaturalDefense(Feature):
 
     """
     name = "Supernatural Defense"
-    source = "Ranger (Monster Slayer)"
+    source = "Ranger (Creature Slayer)"
 
 
 class MagicUsersNemesis(Feature):
@@ -647,7 +647,7 @@ class MagicUsersNemesis(Feature):
 
     """
     name = "Magic User's Nemesis"
-    source = "Ranger (Monster Slayer)"
+    source = "Ranger (Creature Slayer)"
 
 
 class SlayersCounter(Feature):
@@ -660,7 +660,7 @@ class SlayersCounter(Feature):
 
     """
     name = "Slayer's Counter"
-    source = "Ranger (Monster Slayer)"
+    source = "Ranger (Creature Slayer)"
 
 
 # Revised Ranger

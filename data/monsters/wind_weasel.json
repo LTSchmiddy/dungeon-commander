@@ -22,16 +22,16 @@
         }
     ],
     "alignment": "chaotic neutral",
-    "armor_class": "13",
-    "challenge_rating": "2",
-    "charisma": "11",
-    "constitution": "14",
-    "dexterity": "16",
+    "armor_class": 13,
+    "challenge_rating": 2.0,
+    "charisma": 11,
+    "constitution": 14,
+    "dexterity": 16,
     "dexterity_save": 5,
     "hit_dice": "8d8+16",
-    "hit_points": "52",
+    "hit_points": 52,
     "id": "wind_weasel",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Sylvan, Umbral",
     "name": "Wind Weasel",
     "perception": 3,
@@ -64,8 +64,8 @@
         "walk": 40
     },
     "stealth": 5,
-    "strength": "12",
+    "strength": 12,
     "subtype": "shapechanger",
     "type": "fey",
-    "wisdom": "12"
+    "wisdom": 12
 }

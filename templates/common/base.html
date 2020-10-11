@@ -5,17 +5,27 @@
     <title>{% block title %}Dungeon Commander{% endblock %}</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script>
+        // Collects exposed js functions here:
+        const exposed_functions = [];
+    </script>
 
     {% block style %}{% endblock %}
 
     <script src="/static/browserify_pack/app-bundle/app-bundle.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/browserify_pack/app-bundle/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/static/browserify_pack/app-bundle/jsoneditor.css">
+    <link rel="stylesheet" type="text/css" href="/static/browserify_pack/app-bundle/jquery.contextMenu.css">
 
 
     <script src="/static/libs/jquery_resizable_columns/jquery.resizableColumns.js"></script>
     <script src="/static/libs/ace-editor/ace.js"></script>
     <script src="/static/libs/cq-prolyfill.js"></script>
     <script src="/static/libs/textarea-autoresize.js"></script>
+    <script src="/static/libs/pdfjs-dist/build/pdf.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="/static/libs/jquery_resizable_columns/jquery.resizableColumns.css">
 
 
 
@@ -25,9 +35,12 @@
 
     {# My JS Files: #}
     <script src="/static/scripts/python_wrapper_2.js"></script>
+    <script src="/static/scripts/client_side_python.js"></script>
+
     <script src="/static/scripts/components/sidebar.js"></script>
     <script src="/static/scripts/components/tab_section_view.js"></script>
     <script src="/static/scripts/components/time_func.js"></script>
+    <script src="/static/scripts/components/file_tree_view.js"></script>
     <script src="/static/scripts/common.js"></script>
 
     {% block head_scripts %}{% endblock %}
@@ -36,10 +49,9 @@
         <link rel="stylesheet" type="text/css" href="/static/styles/fa5-icons.css">
     {% endif %}
 
-    <link rel="stylesheet" type="text/css" href="/static/browserify_pack/app-bundle/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="/static/browserify_pack/app-bundle/jsoneditor.css">
-    <link rel="stylesheet" type="text/css" href="/static/libs/jquery_resizable_columns/jquery.resizableColumns.css">
+
     <link rel="stylesheet" type="text/css" href="/static/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles/children.css">
 
 </head>
 <body>
@@ -47,5 +59,26 @@
 {% block body %}{% endblock %}
 
 {% block foot_scripts %}{% endblock %}
+
+    <script>
+        (function (){
+            // Actually handles exposing all JS functions. Should help with the reload issue.
+            function handle_expose() {
+                {#console.log('preparing for expose js...');#}
+                if (expose_js_function === null){
+                    {#console.log('waiting for exposure method...');#}
+                    setTimeout(handle_expose, 100);
+                } else {
+                    console.log('exposing now...');
+                    _.forEach(exposed_functions, (fn, index)=>{
+                        expose_js_function(fn);
+                    });
+                }
+            }
+            handle_expose();
+        }());
+    </script>
+
+
 </body>
 </html>

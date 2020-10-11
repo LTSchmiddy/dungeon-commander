@@ -15,7 +15,7 @@
     "alignment": "neutral",
     "armor_class": 15,
     "armor_desc": "natural armor",
-    "challenge_rating": "4",
+    "challenge_rating": 4.0,
     "charisma": 5,
     "condition_immunities": "charmed, deafened, frightened, paralyzed, prone, stunned, unconscious",
     "constitution": 18,

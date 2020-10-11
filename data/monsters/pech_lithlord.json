@@ -18,19 +18,19 @@
         }
     ],
     "alignment": "neutral good",
-    "armor_class": "17",
+    "armor_class": 17,
     "armor_desc": "natural armor",
     "athletics": 7,
-    "challenge_rating": "7",
-    "charisma": "13",
+    "challenge_rating": 7.0,
+    "charisma": 13,
     "condition_immunities": "exhaustion, paralyzed, petrified, poisoned, prone, restrained, unconscious",
-    "constitution": "16",
+    "constitution": 16,
     "damage_immunities": "poison",
-    "dexterity": "11",
+    "dexterity": 11,
     "hit_dice": "16d6+48",
-    "hit_points": "104",
+    "hit_points": 104,
     "id": "pech_lithlord",
-    "intelligence": "11",
+    "intelligence": 11,
     "languages": "Common, Terran, Undercommon",
     "name": "Pech Lithlord",
     "perception": 7,
@@ -55,8 +55,8 @@
         "climb": 30,
         "walk": 30
     },
-    "strength": "18",
+    "strength": 18,
     "subtype": "",
     "type": "elemental",
-    "wisdom": "18"
+    "wisdom": 18
 }

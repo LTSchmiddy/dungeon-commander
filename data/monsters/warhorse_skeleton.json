@@ -11,7 +11,7 @@
     "alignment": "lawful evil",
     "armor_class": 13,
     "armor_desc": "barding scraps",
-    "challenge_rating": "1/2",
+    "challenge_rating": 0.5,
     "charisma": 5,
     "condition_immunities": "exhaustion, poisoned",
     "constitution": 15,

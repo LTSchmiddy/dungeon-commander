@@ -17,16 +17,16 @@
     ],
     "alignment": "neutral",
     "arcana": 2,
-    "armor_class": "14",
+    "armor_class": 14,
     "armor_desc": "hide armor",
-    "challenge_rating": "4",
-    "charisma": "12",
-    "constitution": "14",
-    "dexterity": "13",
+    "challenge_rating": 4.0,
+    "charisma": 12,
+    "constitution": 14,
+    "dexterity": 13,
     "hit_dice": "12d8+24",
-    "hit_points": "78",
+    "hit_points": 78,
     "id": "trollkin_shaman",
-    "intelligence": "10",
+    "intelligence": 10,
     "languages": "Common, Trollkin",
     "name": "Trollkin Shaman",
     "nature": 2,
@@ -51,8 +51,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "14",
+    "strength": 14,
     "subtype": "trollkin",
     "type": "humanoid",
-    "wisdom": "16"
+    "wisdom": 16
 }

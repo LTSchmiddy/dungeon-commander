@@ -26,7 +26,7 @@
     "alignment": "unaligned",
     "armor_class": 18,
     "armor_desc": "natural armor",
-    "challenge_rating": "13",
+    "challenge_rating": 13.0,
     "charisma": 1,
     "condition_immunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
     "constitution": 18,

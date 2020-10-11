@@ -13,18 +13,18 @@
     ],
     "alignment": "any alignment",
     "arcana": 7,
-    "armor_class": "12",
+    "armor_class": 12,
     "armor_desc": "15 with mage armor",
-    "challenge_rating": "7",
-    "charisma": "19",
+    "challenge_rating": 7.0,
+    "charisma": 19,
     "charisma_save": 7,
-    "constitution": "10",
-    "dexterity": "14",
+    "constitution": 10,
+    "dexterity": 14,
     "history": 7,
     "hit_dice": "13d8",
-    "hit_points": "58",
+    "hit_points": 58,
     "id": "enchanter",
-    "intelligence": "19",
+    "intelligence": 19,
     "intelligence_save": 7,
     "languages": "Common, Elvish, Sylvan",
     "name": "Enchanter",
@@ -55,8 +55,8 @@
     "speed_json": {
         "walk": 30
     },
-    "strength": "10",
+    "strength": 10,
     "subtype": "elf",
     "type": "humanoid",
-    "wisdom": "13"
+    "wisdom": 13
 }
