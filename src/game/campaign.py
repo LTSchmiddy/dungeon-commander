@@ -151,8 +151,8 @@ class Campaign(JsonClass):
                 print(f"Module '{result.__name__}' added to '{parent_module.__name__}'")
                 self.load_py_addon_dir(fullpath, i['contents'], result)
 
-                if 'force_default_load_order' in i and i['force_default_load_order'] == True:
-                    del i['contents']
+                # if 'force_default_load_order' in i and i['force_default_load_order'] == True:
+                #     del i['contents']
 
 
 

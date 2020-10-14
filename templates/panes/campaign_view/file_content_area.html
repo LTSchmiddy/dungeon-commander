@@ -393,7 +393,6 @@
         extracted_file_get_editor(path).remove();
 
         {#console.log(mod_editor_opened_tabs[path].tab());#}
-
         {#tab_area.children(`div[data-path="${path}"]`).remove();#}
         delete mod_editor_opened_tabs[path];
     }

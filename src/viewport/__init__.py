@@ -57,9 +57,14 @@ class HTMLStdout:
         if hasattr(self.window, 'js_py_console_write_stdout'):
             html_data = self.html_converter.convert(str(data), full=False)
             self.stream_html += html_data
-            self.window.js_py_console_write_stdout(html_data)
+            try:
+                self.window.js_py_console_write_stdout(html_data)
+            except Exception as e:
+                std_handler.my_stdout.old_stdout.write(' - GUI CONSOLE GONE\n')
+                std_handler.my_stdout.old_stdout.write(str(e) + "\n")
+                del self.window.js_py_console_write_stdout
         else:
-            std_handler.my_stdout.old_stdout.write('js_py_console_write_stdout not exposed yet...\n')
+            std_handler.my_stdout.old_stdout.write(' - NO GUI CONSOLE\n')
 
     def flush(self):
         pass
@@ -141,9 +146,9 @@ def get_cef_instance_dict() -> Dict[str, wv_cef.Browser]:
         # print ("ERROR: Window is not active.")
         return {}
 
-    if current['window']['web-engine'] != 'cef':
-        print ("ERROR: Not using CEF Rendering.")
-        return {}
+    # if current['window']['web-engine'] != 'cef':
+    #     print ("ERROR: Not using CEF Rendering.")
+    #     return {}
 
     return main_window.gui.CEF.instances
 
@@ -161,6 +166,15 @@ def get_cef_instance(instance_id: str = 'master') -> cef.PyBrowser:
 
 def get_wv_cef_instance(instance_id: str = 'master') -> wv_cef.Browser:
     instance_dict = get_cef_instance_dict()
+
+    if not instance_id in instance_dict:
+        # print ("ERROR: CEF missing 'master' instance.")
+        return None
+
+    return instance_dict[instance_id]
+
+def get_tk_cef_instance(instance_id: str = 'master') -> wv_cef.Browser:
+    instance_dict = wv.platforms.tk_cef.BrowserView.instances
 
     if not instance_id in instance_dict:
         # print ("ERROR: CEF missing 'master' instance.")

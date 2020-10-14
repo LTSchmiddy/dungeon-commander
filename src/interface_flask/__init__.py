@@ -87,9 +87,10 @@ class ServerThread(threading.Thread):
         # print("server online")
 
     def shutdown(self):
-        print("TRYING TO SHUTDOWN...")
+        print("TRYING TO SHUTDOWN SERVER...")
         # sys.exit(0)
         self.srv.shutdown()
+        print('SERVER SHUTDOWN SUCCESSFUL!')
 
 def start_server():
     global server_thread

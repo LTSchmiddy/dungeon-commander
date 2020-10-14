@@ -36,6 +36,10 @@ window.addEventListener('pywebviewready', (e)=>{
                 def remove_window(uid):
                     global editors_count
                     del editors_count[uid]
+                    
+                def update_loaded_chars(uid):
+                
+                
             `);
         }
 

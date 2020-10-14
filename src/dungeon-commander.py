@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
 
     # Shuts down the application:
-    print("CLOSED")
+    # print("CLOSED")
     game.current.save_campaign()
 
     interface_flask.stop_server()

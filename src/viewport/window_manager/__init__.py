@@ -52,9 +52,12 @@ class WindowManager(Dict[str, wv.window.Window]):
             _cef = viewport.get_cef_instance(new_window.uid)
             _wv_cef = viewport.get_wv_cef_instance(new_window.uid)
 
+            tk = viewport.get_tk_cef_instance(new_window.uid)
+
 
             setattr(new_window, 'cef', _cef)
             setattr(new_window, 'wv_cef', _wv_cef)
+            setattr(new_window, 'tk', tk)
 
             print('on_shown')
             viewport.cef_bindings.set_unique(new_window, {
@@ -69,8 +72,9 @@ class WindowManager(Dict[str, wv.window.Window]):
             })
 
         new_window.shown += onshown
+        new_window.shown += lambda: print('SHOWN ' + new_window.uid)
 
-        new_window.closed += af.func((), "del self[new_window.uid]")
+        # new_window.closed += af.func((), "del self[new_window.uid]")
         asm_func(new_window, **asm_func_args)
 
         setattr(new_window, 'factory', asm_func.__name__)

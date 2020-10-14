@@ -9,6 +9,8 @@ def scan_addon_directory(path: str, addon_list: list):
     found_files = []
     found_dirs = []
 
+    path=path.replace('\\', "/")
+
     force_default_load_order = False
 
     # Check for default_load_order:
@@ -54,9 +56,9 @@ def scan_addon_directory(path: str, addon_list: list):
                 (
                     lambda x: (isinstance(x, dict))
                     and ("name" in x)
+                    and (x["name"] == i)
                     and ("contents" in x)
                     and ("force_default_load_order" in x)
-                    and (x["name"] == i)
                 ),
                 addon_list,
             )

@@ -9,16 +9,33 @@ guilib = None
 forced_gui_ = None
 
 def initialize(forced_gui=None):
+    def import_tk_cef():
+        global guilib
+
+        try:
+            import webview.platforms.tk_cef as guilib
+            logger.debug('Using TK_CEF')
+            print('Using TK_CEF')
+
+            return True
+        except (ImportError, ValueError) as e:
+            logger.exception('TK_CEF cannot be loaded')
+            print('TK_CEF cannot be loaded')
+
+            return False
+
     def import_gtk():
         global guilib
 
         try:
             import webview.platforms.gtk as guilib
             logger.debug('Using GTK')
+            print('Using GTK')
 
             return True
         except (ImportError, ValueError) as e:
             logger.exception('GTK cannot be loaded')
+            print('GTK cannot be loaded')
 
             return False
 
@@ -31,6 +48,7 @@ def initialize(forced_gui=None):
             return True
         except ImportError as e:
             logger.exception('QT cannot be loaded')
+            print('QT cannot be loaded')
             return False
 
     def import_cocoa():
@@ -75,28 +93,37 @@ def initialize(forced_gui=None):
     forced_gui_ = forced_gui
 
     if platform.system() == 'Darwin':
-        if forced_gui == 'qt':
-            guis = [import_qt, import_cocoa]
+        if forced_gui == 'tk_cef':
+            guis = [import_tk_cef, import_cocoa, import_qt]
+        elif forced_gui == 'qt':
+            guis = [import_qt, import_tk_cef, import_cocoa]
         else:
-            guis = [import_cocoa, import_qt]
+            guis = [import_cocoa, import_tk_cef, import_qt]
 
         if not try_import(guis):
-            raise WebViewException('You must have either PyObjC (for Cocoa support) or Qt with Python bindings installed in order to use pywebview.')
+            raise WebViewException('You must have cefpython3, PyObjC (for Cocoa support), or Qt with Python bindings installed in order to use pywebview.')
 
     elif platform.system() == 'Linux' or platform.system() == 'OpenBSD':
-        if forced_gui == 'qt':
-            guis = [import_qt, import_gtk]
+        if forced_gui == 'tk_cef':
+            guis = [import_tk_cef, import_gtk, import_qt]
+        elif forced_gui == 'qt':
+            guis = [import_qt, import_tk_cef, import_gtk]
         else:
-            guis = [import_gtk, import_qt]
+            guis = [import_gtk, import_tk_cef,import_qt]
 
         if not try_import(guis):
-            raise WebViewException('You must have either QT or GTK with Python extensions installed in order to use pywebview.')
+            raise WebViewException('You must have cefpython3, QT, or GTK with Python extensions installed in order to use pywebview.')
 
     elif platform.system() == 'Windows':
-        guis = [import_winforms]
+        if forced_gui == 'tk_cef':
+            guis = [import_tk_cef, import_qt, import_winforms]
+        elif forced_gui == 'qt':
+            guis = [import_qt, import_winforms, import_tk_cef]
+        else:
+            guis = [import_winforms, import_tk_cef, import_qt]
 
         if not try_import(guis):
-            raise WebViewException('You must have pythonnet installed in order to use pywebview.')
+            raise WebViewException('You must have pythonnet, cefpython3, or QT installed in order to use pywebview.')
     else:
         raise WebViewException('Unsupported platform. Only Windows, Linux, OS X, OpenBSD are supported.')
 

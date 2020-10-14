@@ -5,7 +5,10 @@ import shutil
 import sys
 import webbrowser
 
-from ctypes import windll
+try:
+    from ctypes import windll
+except ImportError:
+    windll = None
 from functools import wraps
 from uuid import uuid1
 from threading import Event
@@ -110,8 +113,9 @@ class Browser:
         self.browser.CloseBrowser(True)
 
     def resize(self, width, height):
-        windll.user32.SetWindowPos(self.inner_hwnd, 0, 0, 0, width - 16, height - 38,
-                                   0x0002 | 0x0004 | 0x0010)
+        if windll is not None:
+            windll.user32.SetWindowPos(self.inner_hwnd, 0, 0, 0, width - 16, height - 38,
+                                       0x0002 | 0x0004 | 0x0010)
         self.browser.NotifyMoveOrResizeStarted()
 
     def evaluate_js(self, code):
@@ -259,6 +263,30 @@ def create_browser(window, handle, alert_func):
     cef.PostTask(cef.TID_UI, _create)
 
 
+def create_browser_tk(window, handle, alert_func) -> Browser:
+    def _create():
+        real_url = 'data:text/html,{0}'.format(window.html) if window.html else window.real_url or 'data:text/html,{0}'.format(default_html)
+        cef_browser = cef.CreateBrowserSync(window_info=window_info, url=real_url)
+        browser = Browser(window, handle, cef_browser)
+
+        bindings = cef.JavascriptBindings()
+        bindings.SetObject('external', browser.js_bridge)
+        bindings.SetFunction('alert', alert_func)
+
+        cef_browser.SetJavascriptBindings(bindings)
+        cef_browser.SetClientHandler(LoadHandler())
+
+        instances[window.uid] = browser
+        window.shown.set()
+
+    window_info = cef.WindowInfo()
+    window_info.SetAsChild(handle)
+    # cef.PostTask(cef.TID_UI, _create)
+    print('Window Ready')
+    _create()
+    return instances[window.uid]
+
+
 @_cef_call
 def load_html(html, uid):
     instance = instances[uid]
@@ -301,22 +329,23 @@ def close_window(uid):
     del instances[uid]
 
 
-def shutdown():
-    try:
-        if os.path.exists('blob_storage'):
-            shutil.rmtree('blob_storage')
+def shutdown(delete_cef_files = True):
+    if delete_cef_files:
+        try:
+            if os.path.exists('blob_storage'):
+                shutil.rmtree('blob_storage')
 
-        if os.path.exists('webrtc_event_logs'):
-            shutil.rmtree('webrtc_event_logs')
+            if os.path.exists('webrtc_event_logs'):
+                shutil.rmtree('webrtc_event_logs')
 
-        if os.path.exists('error.log'):
-            os.remove('error.log')
+            if os.path.exists('error.log'):
+                os.remove('error.log')
 
-        if sys.platform == 'win32':
-            _set_dpi_mode(False)
+            if sys.platform == 'win32':
+                _set_dpi_mode(False)
 
-    except Exception as e:
-        logger.debug(e, exc_info=True)
+        except Exception as e:
+            logger.debug(e, exc_info=True)
 
     cef.Shutdown()
 
